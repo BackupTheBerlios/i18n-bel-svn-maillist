@@ -1,0 +1,2333 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [I18n-bel-svn] r142 - in Windows7: omegat	source/x32/Windows/System32/en-US
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/i18n-bel-svn/2011-January/index.html" >
+   <LINK REL="made" HREF="mailto:i18n-bel-svn%40lists.berlios.de?Subject=Re%3A%20%5BI18n-bel-svn%5D%20r142%20-%20in%20Windows7%3A%20omegat%0A%09source/x32/Windows/System32/en-US&In-Reply-To=%3C20110120140745.58CFC480448%40sheep.berlios.de%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000059.html">
+   <LINK REL="Next"  HREF="000061.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[I18n-bel-svn] r142 - in Windows7: omegat	source/x32/Windows/System32/en-US</H1>
+    <B>alex73 at mail.berlios.de</B> 
+    <A HREF="mailto:i18n-bel-svn%40lists.berlios.de?Subject=Re%3A%20%5BI18n-bel-svn%5D%20r142%20-%20in%20Windows7%3A%20omegat%0A%09source/x32/Windows/System32/en-US&In-Reply-To=%3C20110120140745.58CFC480448%40sheep.berlios.de%3E"
+       TITLE="[I18n-bel-svn] r142 - in Windows7: omegat	source/x32/Windows/System32/en-US">alex73 at mail.berlios.de
+       </A><BR>
+    <I>Thu Jan 20 15:07:44 CET 2011</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000059.html">[I18n-bel-svn] r141 - in Windows7/source/x32/Windows:	System32/en-US System32/migwiz/en-US	diagnostics/system/DeviceCenter/en-US
+</A></li>
+        <LI>Next message: <A HREF="000061.html">[I18n-bel-svn] r143 - Windows7/omegat
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#60">[ date ]</a>
+              <a href="thread.html#60">[ thread ]</a>
+              <a href="subject.html#60">[ subject ]</a>
+              <a href="author.html#60">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>Author: alex73
+Date: 2011-01-20 15:07:44 +0100 (Thu, 20 Jan 2011)
+New Revision: 142
+
+Modified:
+   Windows7/omegat/project_save.tmx
+   Windows7/source/x32/Windows/System32/en-US/VAN.dll.rc
+   Windows7/source/x32/Windows/System32/en-US/rasdlg.dll.rc
+   Windows7/source/x32/Windows/System32/en-US/rasmm.dll.rc
+Log:
+Remove nul chars
+
+Modified: Windows7/omegat/project_save.tmx
+===================================================================
+--- Windows7/omegat/project_save.tmx	2011-01-12 11:11:24 UTC (rev 141)
++++ Windows7/omegat/project_save.tmx	2011-01-20 14:07:44 UTC (rev 142)
+@@ -1350,10 +1350,10 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
+-        &lt;seg&gt;%1!s!\n%2!s!\0&lt;/seg&gt;
++        &lt;seg&gt;%1!s!\n%2!s!&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101108T114148Z&quot; changeid=&quot;eratyk&quot;&gt;
+-        &lt;seg&gt;%1!s!\n%2!s!\0&lt;/seg&gt;
++        &lt;seg&gt;%1!s!\n%2!s!&lt;/seg&gt;
+       &lt;/tuv&gt;
+     &lt;/tu&gt;
+     &lt;tu&gt;
+@@ -3846,10 +3846,10 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
+-        &lt;seg&gt;&amp;Configure\0&lt;/seg&gt;
++        &lt;seg&gt;&amp;Configure&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101108T114118Z&quot; changeid=&quot;eratyk&quot;&gt;
+-        &lt;seg&gt;&#1053;&#1072;&#1083;&#1072;&#1076;&#1079;&#1110;&#1094;&#1100;\0&lt;/seg&gt;
++        &lt;seg&gt;&#1053;&#1072;&#1083;&#1072;&#1076;&#1079;&#1110;&#1094;&#1100;&lt;/seg&gt;
+       &lt;/tuv&gt;
+     &lt;/tu&gt;
+     &lt;tu&gt;
+@@ -3894,10 +3894,10 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
+-        &lt;seg&gt;&amp;Connect\0&lt;/seg&gt;
++        &lt;seg&gt;&amp;Connect&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101108T114043Z&quot; changeid=&quot;eratyk&quot;&gt;
+-        &lt;seg&gt;&#1047;&#1083;&#1091;&#1095;&#1099;&#1094;&#1100;\0&lt;/seg&gt;
++        &lt;seg&gt;&#1047;&#1083;&#1091;&#1095;&#1099;&#1094;&#1100;&lt;/seg&gt;
+       &lt;/tuv&gt;
+     &lt;/tu&gt;
+     &lt;tu&gt;
+@@ -4302,10 +4302,10 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
+-        &lt;seg&gt;&amp;Disconnect\0&lt;/seg&gt;
++        &lt;seg&gt;&amp;Disconnect&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101108T114050Z&quot; changeid=&quot;eratyk&quot;&gt;
+-        &lt;seg&gt;&#1040;&#1076;&#1083;&#1091;&#1095;&#1099;&#1094;&#1100;\0&lt;/seg&gt;
++        &lt;seg&gt;&#1040;&#1076;&#1083;&#1091;&#1095;&#1099;&#1094;&#1100;&lt;/seg&gt;
+       &lt;/tuv&gt;
+     &lt;/tu&gt;
+     &lt;tu&gt;
+@@ -13238,10 +13238,10 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
+-        &lt;seg&gt;Access: \0&lt;/seg&gt;
++        &lt;seg&gt;Access: &lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101108T114100Z&quot; changeid=&quot;eratyk&quot;&gt;
+-        &lt;seg&gt;&#1044;&#1086;&#1089;&#1090;&#1091;&#1087;:\0&lt;/seg&gt;
++        &lt;seg&gt;&#1044;&#1086;&#1089;&#1090;&#1091;&#1087;:&lt;/seg&gt;
+       &lt;/tuv&gt;
+     &lt;/tu&gt;
+     &lt;tu&gt;
+@@ -18014,10 +18014,10 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
+-        &lt;seg&gt;Available Network List\0&lt;/seg&gt;
++        &lt;seg&gt;Available Network List&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101108T114145Z&quot; changeid=&quot;eratyk&quot;&gt;
+-        &lt;seg&gt;&#1057;&#1087;&#1110;&#1089; &#1076;&#1072;&#1089;&#1090;&#1091;&#1087;&#1085;&#1099;&#1093; &#1089;&#1077;&#1090;&#1072;&#1082;\0&lt;/seg&gt;
++        &lt;seg&gt;&#1057;&#1087;&#1110;&#1089; &#1076;&#1072;&#1089;&#1090;&#1091;&#1087;&#1085;&#1099;&#1093; &#1089;&#1077;&#1090;&#1072;&#1082;&lt;/seg&gt;
+       &lt;/tuv&gt;
+     &lt;/tu&gt;
+     &lt;tu&gt;
+@@ -25182,10 +25182,10 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
+-        &lt;seg&gt;Configure a Network\0&lt;/seg&gt;
++        &lt;seg&gt;Configure a Network&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101108T114202Z&quot; changeid=&quot;eratyk&quot;&gt;
+-        &lt;seg&gt;&#1053;&#1072;&#1083;&#1072;&#1076;&#1079;&#1110;&#1094;&#1100; &#1089;&#1077;&#1090;&#1082;&#1091;\0&lt;/seg&gt;
++        &lt;seg&gt;&#1053;&#1072;&#1083;&#1072;&#1076;&#1079;&#1110;&#1094;&#1100; &#1089;&#1077;&#1090;&#1082;&#1091;&lt;/seg&gt;
+       &lt;/tuv&gt;
+     &lt;/tu&gt;
+     &lt;tu&gt;
+@@ -25238,10 +25238,10 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
+-        &lt;seg&gt;Configure\0&lt;/seg&gt;
++        &lt;seg&gt;Configure&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101108T114134Z&quot; changeid=&quot;eratyk&quot;&gt;
+-        &lt;seg&gt;&#1053;&#1072;&#1083;&#1072;&#1076;&#1079;&#1110;&#1094;&#1100;\0&lt;/seg&gt;
++        &lt;seg&gt;&#1053;&#1072;&#1083;&#1072;&#1076;&#1079;&#1110;&#1094;&#1100;&lt;/seg&gt;
+       &lt;/tuv&gt;
+     &lt;/tu&gt;
+     &lt;tu&gt;
+@@ -25438,10 +25438,10 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
+-        &lt;seg&gt;Connect To\0&lt;/seg&gt;
++        &lt;seg&gt;Connect To&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101108T114025Z&quot; changeid=&quot;eratyk&quot;&gt;
+-        &lt;seg&gt;&#1047;&#1083;&#1091;&#1095;&#1099;&#1094;&#1100; &#1079;\0&lt;/seg&gt;
++        &lt;seg&gt;&#1047;&#1083;&#1091;&#1095;&#1099;&#1094;&#1100; &#1079;&lt;/seg&gt;
+       &lt;/tuv&gt;
+     &lt;/tu&gt;
+     &lt;tu&gt;
+@@ -25462,18 +25462,18 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
+-        &lt;seg&gt;Connect automatically checkbox\0&lt;/seg&gt;
++        &lt;seg&gt;Connect automatically checkbox&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101108T114146Z&quot; changeid=&quot;eratyk&quot;&gt;
+-        &lt;seg&gt;&#1057;&#1094;&#1103;&#1078;&#1086;&#1082; &#1072;&#1118;&#1090;&#1072;&#1084;&#1072;&#1090;&#1099;&#1095;&#1085;&#1072;&#1075;&#1072; &#1079;&#1083;&#1091;&#1095;&#1101;&#1085;&#1085;&#1103;\0&lt;/seg&gt;
++        &lt;seg&gt;&#1057;&#1094;&#1103;&#1078;&#1086;&#1082; &#1072;&#1118;&#1090;&#1072;&#1084;&#1072;&#1090;&#1099;&#1095;&#1085;&#1072;&#1075;&#1072; &#1079;&#1083;&#1091;&#1095;&#1101;&#1085;&#1085;&#1103;&lt;/seg&gt;
+       &lt;/tuv&gt;
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
+-        &lt;seg&gt;Connect automatically\0&lt;/seg&gt;
++        &lt;seg&gt;Connect automatically&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101108T114057Z&quot; changeid=&quot;eratyk&quot;&gt;
+-        &lt;seg&gt;&#1047;&#1083;&#1091;&#1095;&#1072;&#1094;&#1100; &#1072;&#1118;&#1090;&#1072;&#1084;&#1072;&#1090;&#1099;&#1095;&#1085;&#1072;\0&lt;/seg&gt;
++        &lt;seg&gt;&#1047;&#1083;&#1091;&#1095;&#1072;&#1094;&#1100; &#1072;&#1118;&#1090;&#1072;&#1084;&#1072;&#1090;&#1099;&#1095;&#1085;&#1072;&lt;/seg&gt;
+       &lt;/tuv&gt;
+     &lt;/tu&gt;
+     &lt;tu&gt;
+@@ -25494,10 +25494,10 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
+-        &lt;seg&gt;Connect or disconnect...\0&lt;/seg&gt;
++        &lt;seg&gt;Connect or disconnect...&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101108T113921Z&quot; changeid=&quot;eratyk&quot;&gt;
+-        &lt;seg&gt;&#1047;&#1083;&#1091;&#1095;&#1099;&#1094;&#1100; &#1094;&#1110; &#1072;&#1076;&#1083;&#1091;&#1095;&#1099;&#1094;&#1100;...\0&lt;/seg&gt;
++        &lt;seg&gt;&#1047;&#1083;&#1091;&#1095;&#1099;&#1094;&#1100; &#1094;&#1110; &#1072;&#1076;&#1083;&#1091;&#1095;&#1099;&#1094;&#1100;...&lt;/seg&gt;
+       &lt;/tuv&gt;
+     &lt;/tu&gt;
+     &lt;tu&gt;
+@@ -25510,10 +25510,10 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
+-        &lt;seg&gt;Connect or disconnect:\0&lt;/seg&gt;
++        &lt;seg&gt;Connect or disconnect:&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101108T113834Z&quot; changeid=&quot;eratyk&quot;&gt;
+-        &lt;seg&gt;&#1047;&#1083;&#1091;&#1095;&#1099;&#1094;&#1100; &#1094;&#1110; &#1072;&#1076;&#1083;&#1091;&#1095;&#1099;&#1094;&#1100;:\0&lt;/seg&gt;
++        &lt;seg&gt;&#1047;&#1083;&#1091;&#1095;&#1099;&#1094;&#1100; &#1094;&#1110; &#1072;&#1076;&#1083;&#1091;&#1095;&#1099;&#1094;&#1100;:&lt;/seg&gt;
+       &lt;/tuv&gt;
+     &lt;/tu&gt;
+     &lt;tu&gt;
+@@ -25542,10 +25542,10 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
+-        &lt;seg&gt;Connect to a Network\0&lt;/seg&gt;
++        &lt;seg&gt;Connect to a Network&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101108T114158Z&quot; changeid=&quot;eratyk&quot;&gt;
+-        &lt;seg&gt;&#1047;&#1083;&#1091;&#1095;&#1099;&#1094;&#1100; &#1079; &#1089;&#1077;&#1090;&#1082;&#1072;&#1081;\0&lt;/seg&gt;
++        &lt;seg&gt;&#1047;&#1083;&#1091;&#1095;&#1099;&#1094;&#1100; &#1079; &#1089;&#1077;&#1090;&#1082;&#1072;&#1081;&lt;/seg&gt;
+       &lt;/tuv&gt;
+     &lt;/tu&gt;
+     &lt;tu&gt;
+@@ -25606,10 +25606,10 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
+-        &lt;seg&gt;Connect\0&lt;/seg&gt;
++        &lt;seg&gt;Connect&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101108T114016Z&quot; changeid=&quot;eratyk&quot;&gt;
+-        &lt;seg&gt;&#1047;&#1083;&#1091;&#1095;&#1099;&#1094;&#1100;\0&lt;/seg&gt;
++        &lt;seg&gt;&#1047;&#1083;&#1091;&#1095;&#1099;&#1094;&#1100;&lt;/seg&gt;
+       &lt;/tuv&gt;
+     &lt;/tu&gt;
+     &lt;tu&gt;
+@@ -25630,10 +25630,10 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
+-        &lt;seg&gt;Connected Network List\0&lt;/seg&gt;
++        &lt;seg&gt;Connected Network List&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101108T114157Z&quot; changeid=&quot;eratyk&quot;&gt;
+-        &lt;seg&gt;&#1057;&#1087;&#1110;&#1089; &#1079;&#1083;&#1091;&#1095;&#1072;&#1085;&#1099;&#1093; &#1089;&#1077;&#1090;&#1072;&#1082;\0&lt;/seg&gt;
++        &lt;seg&gt;&#1057;&#1087;&#1110;&#1089; &#1079;&#1083;&#1091;&#1095;&#1072;&#1085;&#1099;&#1093; &#1089;&#1077;&#1090;&#1072;&#1082;&lt;/seg&gt;
+       &lt;/tuv&gt;
+     &lt;/tu&gt;
+     &lt;tu&gt;
+@@ -25966,10 +25966,10 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
+-        &lt;seg&gt;Connections are available\0&lt;/seg&gt;
++        &lt;seg&gt;Connections are available&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101108T113820Z&quot; changeid=&quot;eratyk&quot;&gt;
+-        &lt;seg&gt;&#1025;&#1089;&#1094;&#1100; &#1076;&#1072;&#1089;&#1090;&#1091;&#1087;&#1085;&#1099;&#1103; &#1079;&#1083;&#1091;&#1095;&#1101;&#1085;&#1085;&#1110;\0&lt;/seg&gt;
++        &lt;seg&gt;&#1025;&#1089;&#1094;&#1100; &#1076;&#1072;&#1089;&#1090;&#1091;&#1087;&#1085;&#1099;&#1103; &#1079;&#1083;&#1091;&#1095;&#1101;&#1085;&#1085;&#1110;&lt;/seg&gt;
+       &lt;/tuv&gt;
+     &lt;/tu&gt;
+     &lt;tu&gt;
+@@ -27686,10 +27686,10 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
+-        &lt;seg&gt;Currently connected to:\0&lt;/seg&gt;
++        &lt;seg&gt;Currently connected to:&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101108T113847Z&quot; changeid=&quot;eratyk&quot;&gt;
+-        &lt;seg&gt;&#1047;&#1072;&#1088;&#1072;&#1079; &#1079;&#1083;&#1091;&#1095;&#1072;&#1085;&#1072; &#1079;:\0&lt;/seg&gt;
++        &lt;seg&gt;&#1047;&#1072;&#1088;&#1072;&#1079; &#1079;&#1083;&#1091;&#1095;&#1072;&#1085;&#1072; &#1079;:&lt;/seg&gt;
+       &lt;/tuv&gt;
+     &lt;/tu&gt;
+     &lt;tu&gt;
+@@ -29710,10 +29710,10 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
+-        &lt;seg&gt;Diagnose\0&lt;/seg&gt;
++        &lt;seg&gt;Diagnose&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101108T114020Z&quot; changeid=&quot;eratyk&quot;&gt;
+-        &lt;seg&gt;&#1044;&#1099;&#1103;&#1075;&#1085;&#1086;&#1089;&#1090;&#1099;&#1082;&#1072;\0&lt;/seg&gt;
++        &lt;seg&gt;&#1044;&#1099;&#1103;&#1075;&#1085;&#1086;&#1089;&#1090;&#1099;&#1082;&#1072;&lt;/seg&gt;
+       &lt;/tuv&gt;
+     &lt;/tu&gt;
+     &lt;tu&gt;
+@@ -30118,10 +30118,10 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
+-        &lt;seg&gt;Disconnect from a Network\0&lt;/seg&gt;
++        &lt;seg&gt;Disconnect from a Network&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101108T114200Z&quot; changeid=&quot;eratyk&quot;&gt;
+-        &lt;seg&gt;&#1040;&#1076;&#1083;&#1091;&#1095;&#1099;&#1094;&#1094;&#1072; &#1072;&#1076; &#1089;&#1077;&#1090;&#1082;&#1110;\0&lt;/seg&gt;
++        &lt;seg&gt;&#1040;&#1076;&#1083;&#1091;&#1095;&#1099;&#1094;&#1094;&#1072; &#1072;&#1076; &#1089;&#1077;&#1090;&#1082;&#1110;&lt;/seg&gt;
+       &lt;/tuv&gt;
+     &lt;/tu&gt;
+     &lt;tu&gt;
+@@ -30150,10 +30150,10 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
+-        &lt;seg&gt;Disconnect\0&lt;/seg&gt;
++        &lt;seg&gt;Disconnect&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101108T114017Z&quot; changeid=&quot;eratyk&quot;&gt;
+-        &lt;seg&gt;&#1040;&#1076;&#1083;&#1091;&#1095;&#1099;&#1094;&#1100;\0&lt;/seg&gt;
++        &lt;seg&gt;&#1040;&#1076;&#1083;&#1091;&#1095;&#1099;&#1094;&#1100;&lt;/seg&gt;
+       &lt;/tuv&gt;
+     &lt;/tu&gt;
+     &lt;tu&gt;
+@@ -31927,10 +31927,10 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
+-        &lt;seg&gt;Domain access only\0&lt;/seg&gt;
++        &lt;seg&gt;Domain access only&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101108T114109Z&quot; changeid=&quot;eratyk&quot;&gt;
+-        &lt;seg&gt;&#1044;&#1086;&#1089;&#1090;&#1091;&#1087; &#1090;&#1086;&#1083;&#1100;&#1082;&#1110; &#1076;&#1072; &#1076;&#1072;&#1084;&#1077;&#1085;&#1072;\0&lt;/seg&gt;
++        &lt;seg&gt;&#1044;&#1086;&#1089;&#1090;&#1091;&#1087; &#1090;&#1086;&#1083;&#1100;&#1082;&#1110; &#1076;&#1072; &#1076;&#1072;&#1084;&#1077;&#1085;&#1072;&lt;/seg&gt;
+       &lt;/tuv&gt;
+     &lt;/tu&gt;
+     &lt;tu&gt;
+@@ -34151,10 +34151,10 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
+-        &lt;seg&gt;Excellent\0&lt;/seg&gt;
++        &lt;seg&gt;Excellent&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101108T113951Z&quot; changeid=&quot;eratyk&quot;&gt;
+-        &lt;seg&gt;&#1042;&#1099;&#1076;&#1072;&#1090;&#1085;&#1099;\0&lt;/seg&gt;
++        &lt;seg&gt;&#1042;&#1099;&#1076;&#1072;&#1090;&#1085;&#1099;&lt;/seg&gt;
+       &lt;/tuv&gt;
+     &lt;/tu&gt;
+     &lt;tu&gt;
+@@ -35015,10 +35015,10 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
+-        &lt;seg&gt;Fair\0&lt;/seg&gt;
++        &lt;seg&gt;Fair&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101108T113948Z&quot; changeid=&quot;eratyk&quot;&gt;
+-        &lt;seg&gt;&#1053;&#1077;&#1073;&#1083;&#1072;&#1075;&#1110;\0&lt;/seg&gt;
++        &lt;seg&gt;&#1053;&#1077;&#1073;&#1083;&#1072;&#1075;&#1110;&lt;/seg&gt;
+       &lt;/tuv&gt;
+     &lt;/tu&gt;
+     &lt;tu&gt;
+@@ -38151,10 +38151,10 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
+-        &lt;seg&gt;Good\0&lt;/seg&gt;
++        &lt;seg&gt;Good&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101108T113950Z&quot; changeid=&quot;eratyk&quot;&gt;
+-        &lt;seg&gt;&#1044;&#1086;&#1073;&#1088;&#1099;\0&lt;/seg&gt;
++        &lt;seg&gt;&#1044;&#1086;&#1073;&#1088;&#1099;&lt;/seg&gt;
+       &lt;/tuv&gt;
+     &lt;/tu&gt;
+     &lt;tu&gt;
+@@ -41343,10 +41343,10 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
+-        &lt;seg&gt;Information sent over this network might be visible to others.\0&lt;/seg&gt;
++        &lt;seg&gt;Information sent over this network might be visible to others.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101108T113915Z&quot; changeid=&quot;eratyk&quot;&gt;
+-        &lt;seg&gt;&#1030;&#1085;&#1092;&#1072;&#1088;&#1084;&#1072;&#1094;&#1099;&#1103;, &#1076;&#1072;&#1089;&#1083;&#1072;&#1085;&#1072;&#1103; &#1087;&#1088;&#1072;&#1079; &#1075;&#1101;&#1090;&#1091;&#1102; &#1089;&#1077;&#1090;&#1082;&#1091;, &#1084;&#1086;&#1078;&#1072; &#1073;&#1099;&#1094;&#1100; &#1073;&#1072;&#1095;&#1085;&#1072;&#1102; &#1076;&#1083;&#1103; &#1110;&#1085;&#1096;&#1099;&#1093;.\0&lt;/seg&gt;
++        &lt;seg&gt;&#1030;&#1085;&#1092;&#1072;&#1088;&#1084;&#1072;&#1094;&#1099;&#1103;, &#1076;&#1072;&#1089;&#1083;&#1072;&#1085;&#1072;&#1103; &#1087;&#1088;&#1072;&#1079; &#1075;&#1101;&#1090;&#1091;&#1102; &#1089;&#1077;&#1090;&#1082;&#1091;, &#1084;&#1086;&#1078;&#1072; &#1073;&#1099;&#1094;&#1100; &#1073;&#1072;&#1095;&#1085;&#1072;&#1102; &#1076;&#1083;&#1103; &#1110;&#1085;&#1096;&#1099;&#1093;.&lt;/seg&gt;
+       &lt;/tuv&gt;
+     &lt;/tu&gt;
+     &lt;tu&gt;
+@@ -42183,10 +42183,10 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
+-        &lt;seg&gt;Internet access\0&lt;/seg&gt;
++        &lt;seg&gt;Internet access&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101108T114102Z&quot; changeid=&quot;eratyk&quot;&gt;
+-        &lt;seg&gt;&#1044;&#1086;&#1089;&#1090;&#1091;&#1087; &#1076;&#1072; &#1089;&#1077;&#1094;&#1110;&#1074;&#1072;\0&lt;/seg&gt;
++        &lt;seg&gt;&#1044;&#1086;&#1089;&#1090;&#1091;&#1087; &#1076;&#1072; &#1089;&#1077;&#1094;&#1110;&#1074;&#1072;&lt;/seg&gt;
+       &lt;/tuv&gt;
+     &lt;/tu&gt;
+     &lt;tu&gt;
+@@ -42199,10 +42199,10 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
+-        &lt;seg&gt;Internet and domain access\0&lt;/seg&gt;
++        &lt;seg&gt;Internet and domain access&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101108T114107Z&quot; changeid=&quot;eratyk&quot;&gt;
+-        &lt;seg&gt;&#1044;&#1086;&#1089;&#1090;&#1091;&#1087; &#1076;&#1072; &#1089;&#1077;&#1094;&#1110;&#1074;&#1072; &#1110; &#1076;&#1072;&#1084;&#1077;&#1085;&#1072;\0&lt;/seg&gt;
++        &lt;seg&gt;&#1044;&#1086;&#1089;&#1090;&#1091;&#1087; &#1076;&#1072; &#1089;&#1077;&#1094;&#1110;&#1074;&#1072; &#1110; &#1076;&#1072;&#1084;&#1077;&#1085;&#1072;&lt;/seg&gt;
+       &lt;/tuv&gt;
+     &lt;/tu&gt;
+     &lt;tu&gt;
+@@ -44087,10 +44087,10 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
+-        &lt;seg&gt;Link Pane\0&lt;/seg&gt;
++        &lt;seg&gt;Link Pane&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101108T114155Z&quot; changeid=&quot;eratyk&quot;&gt;
+-        &lt;seg&gt;&#1055;&#1072;&#1085;&#1101;&#1083;&#1100; &#1089;&#1087;&#1072;&#1089;&#1099;&#1083;&#1072;&#1082;\0&lt;/seg&gt;
++        &lt;seg&gt;&#1055;&#1072;&#1085;&#1101;&#1083;&#1100; &#1089;&#1087;&#1072;&#1089;&#1099;&#1083;&#1072;&#1082;&lt;/seg&gt;
+       &lt;/tuv&gt;
+     &lt;/tu&gt;
+     &lt;tu&gt;
+@@ -44927,10 +44927,10 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
+-        &lt;seg&gt;Low\0&lt;/seg&gt;
++        &lt;seg&gt;Low&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101108T113942Z&quot; changeid=&quot;eratyk&quot;&gt;
+-        &lt;seg&gt;&#1053;&#1110;&#1079;&#1082;&#1110;\0&lt;/seg&gt;
++        &lt;seg&gt;&#1053;&#1110;&#1079;&#1082;&#1110;&lt;/seg&gt;
+       &lt;/tuv&gt;
+     &lt;/tu&gt;
+     &lt;tu&gt;
+@@ -45959,10 +45959,10 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
+-        &lt;seg&gt;Media Manager List\0&lt;/seg&gt;
++        &lt;seg&gt;Media Manager List&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101108T114137Z&quot; changeid=&quot;eratyk&quot;&gt;
+-        &lt;seg&gt;&#1057;&#1087;&#1110;&#1089; &#1082;&#1110;&#1088;&#1072;&#1118;&#1085;&#1110;&#1082;&#1072; &#1085;&#1086;&#1089;&#1100;&#1073;&#1110;&#1090;&#1072;&#1118;\0&lt;/seg&gt;
++        &lt;seg&gt;&#1057;&#1087;&#1110;&#1089; &#1082;&#1110;&#1088;&#1072;&#1118;&#1085;&#1110;&#1082;&#1072; &#1085;&#1086;&#1089;&#1100;&#1073;&#1110;&#1090;&#1072;&#1118;&lt;/seg&gt;
+       &lt;/tuv&gt;
+     &lt;/tu&gt;
+     &lt;tu&gt;
+@@ -48159,10 +48159,10 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
+-        &lt;seg&gt;Name: %1!s!\0&lt;/seg&gt;
++        &lt;seg&gt;Name: %1!s!&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101108T114001Z&quot; changeid=&quot;eratyk&quot;&gt;
+-        &lt;seg&gt;&#1053;&#1072;&#1079;&#1074;&#1072;: %1!s!\0&lt;/seg&gt;
++        &lt;seg&gt;&#1053;&#1072;&#1079;&#1074;&#1072;: %1!s!&lt;/seg&gt;
+       &lt;/tuv&gt;
+     &lt;/tu&gt;
+     &lt;tu&gt;
+@@ -48391,10 +48391,10 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
+-        &lt;seg&gt;Network Adapter Header\0&lt;/seg&gt;
++        &lt;seg&gt;Network Adapter Header&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101108T114141Z&quot; changeid=&quot;eratyk&quot;&gt;
+-        &lt;seg&gt;&#1047;&#1072;&#1075;&#1072;&#1083;&#1086;&#1074;&#1072;&#1082; &#1089;&#1077;&#1090;&#1082;&#1072;&#1074;&#1072;&#1075;&#1072; &#1072;&#1076;&#1072;&#1087;&#1090;&#1072;&#1088;&#1072;\0&lt;/seg&gt;
++        &lt;seg&gt;&#1047;&#1072;&#1075;&#1072;&#1083;&#1086;&#1074;&#1072;&#1082; &#1089;&#1077;&#1090;&#1082;&#1072;&#1074;&#1072;&#1075;&#1072; &#1072;&#1076;&#1072;&#1087;&#1090;&#1072;&#1088;&#1072;&lt;/seg&gt;
+       &lt;/tuv&gt;
+     &lt;/tu&gt;
+     &lt;tu&gt;
+@@ -48567,10 +48567,10 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
+-        &lt;seg&gt;Network access might be limited. Open Network and Sharing Center for more information.\0&lt;/seg&gt;
++        &lt;seg&gt;Network access might be limited. Open Network and Sharing Center for more information.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101108T114205Z&quot; changeid=&quot;eratyk&quot;&gt;
+-        &lt;seg&gt;&#1044;&#1086;&#1089;&#1090;&#1091;&#1087; &#1076;&#1072; &#1089;&#1077;&#1090;&#1082;&#1110; &#1084;&#1086;&#1078;&#1072; &#1073;&#1099;&#1094;&#1100; &#1072;&#1073;&#1084;&#1077;&#1078;&#1072;&#1074;&#1072;&#1085;&#1099;. &#1040;&#1076;&#1095;&#1099;&#1085;&#1110;&#1094;&#1077; &#1094;&#1101;&#1085;&#1090;&#1088; &#1089;&#1077;&#1090;&#1072;&#1082; &#1110; &#1072;&#1075;&#1091;&#1083;&#1100;&#1085;&#1072;&#1075;&#1072; &#1076;&#1086;&#1089;&#1090;&#1091;&#1087;&#1091; &#1076;&#1083;&#1103; &#1076;&#1072;&#1076;&#1072;&#1090;&#1082;&#1086;&#1074;&#1072;&#1081; &#1110;&#1085;&#1092;&#1072;&#1088;&#1084;&#1072;&#1094;&#1099;&#1110;.\0&lt;/seg&gt;
++        &lt;seg&gt;&#1044;&#1086;&#1089;&#1090;&#1091;&#1087; &#1076;&#1072; &#1089;&#1077;&#1090;&#1082;&#1110; &#1084;&#1086;&#1078;&#1072; &#1073;&#1099;&#1094;&#1100; &#1072;&#1073;&#1084;&#1077;&#1078;&#1072;&#1074;&#1072;&#1085;&#1099;. &#1040;&#1076;&#1095;&#1099;&#1085;&#1110;&#1094;&#1077; &#1094;&#1101;&#1085;&#1090;&#1088; &#1089;&#1077;&#1090;&#1072;&#1082; &#1110; &#1072;&#1075;&#1091;&#1083;&#1100;&#1085;&#1072;&#1075;&#1072; &#1076;&#1086;&#1089;&#1090;&#1091;&#1087;&#1091; &#1076;&#1083;&#1103; &#1076;&#1072;&#1076;&#1072;&#1090;&#1082;&#1086;&#1074;&#1072;&#1081; &#1110;&#1085;&#1092;&#1072;&#1088;&#1084;&#1072;&#1094;&#1099;&#1110;.&lt;/seg&gt;
+       &lt;/tuv&gt;
+     &lt;/tu&gt;
+     &lt;tu&gt;
+@@ -49183,10 +49183,10 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
+-        &lt;seg&gt;No Internet access\0&lt;/seg&gt;
++        &lt;seg&gt;No Internet access&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101108T114104Z&quot; changeid=&quot;eratyk&quot;&gt;
+-        &lt;seg&gt;&#1041;&#1077;&#1079; &#1076;&#1086;&#1089;&#1090;&#1091;&#1087;&#1091; &#1076;&#1072; &#1089;&#1077;&#1094;&#1110;&#1074;&#1072;\0&lt;/seg&gt;
++        &lt;seg&gt;&#1041;&#1077;&#1079; &#1076;&#1086;&#1089;&#1090;&#1091;&#1087;&#1091; &#1076;&#1072; &#1089;&#1077;&#1094;&#1110;&#1074;&#1072;&lt;/seg&gt;
+       &lt;/tuv&gt;
+     &lt;/tu&gt;
+     &lt;tu&gt;
+@@ -49215,10 +49215,10 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
+-        &lt;seg&gt;No Signal\0&lt;/seg&gt;
++        &lt;seg&gt;No Signal&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101108T113926Z&quot; changeid=&quot;eratyk&quot;&gt;
+-        &lt;seg&gt;&#1053;&#1103;&#1084;&#1072; &#1089;&#1110;&#1075;&#1085;&#1072;&#1083;&#1091;\0&lt;/seg&gt;
++        &lt;seg&gt;&#1053;&#1103;&#1084;&#1072; &#1089;&#1110;&#1075;&#1085;&#1072;&#1083;&#1091;&lt;/seg&gt;
+       &lt;/tuv&gt;
+     &lt;/tu&gt;
+     &lt;tu&gt;
+@@ -49271,10 +49271,10 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
+-        &lt;seg&gt;No connections are available\0&lt;/seg&gt;
++        &lt;seg&gt;No connections are available&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101108T113814Z&quot; changeid=&quot;eratyk&quot;&gt;
+-        &lt;seg&gt;&#1053;&#1103;&#1084;&#1072; &#1076;&#1072;&#1089;&#1090;&#1091;&#1087;&#1085;&#1099;&#1093; &#1079;&#1083;&#1091;&#1095;&#1101;&#1085;&#1085;&#1103;&#1118;\0&lt;/seg&gt;
++        &lt;seg&gt;&#1053;&#1103;&#1084;&#1072; &#1076;&#1072;&#1089;&#1090;&#1091;&#1087;&#1085;&#1099;&#1093; &#1079;&#1083;&#1091;&#1095;&#1101;&#1085;&#1085;&#1103;&#1118;&lt;/seg&gt;
+       &lt;/tuv&gt;
+     &lt;/tu&gt;
+     &lt;tu&gt;
+@@ -49431,10 +49431,10 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
+-        &lt;seg&gt;No network access\0&lt;/seg&gt;
++        &lt;seg&gt;No network access&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101108T114113Z&quot; changeid=&quot;eratyk&quot;&gt;
+-        &lt;seg&gt;&#1041;&#1077;&#1079; &#1076;&#1086;&#1089;&#1090;&#1091;&#1087;&#1091; &#1076;&#1072; &#1089;&#1077;&#1090;&#1082;&#1110;\0&lt;/seg&gt;
++        &lt;seg&gt;&#1041;&#1077;&#1079; &#1076;&#1086;&#1089;&#1090;&#1091;&#1087;&#1091; &#1076;&#1072; &#1089;&#1077;&#1090;&#1082;&#1110;&lt;/seg&gt;
+       &lt;/tuv&gt;
+     &lt;/tu&gt;
+     &lt;tu&gt;
+@@ -49743,10 +49743,10 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
+-        &lt;seg&gt;Not Connectable\0&lt;/seg&gt;
++        &lt;seg&gt;Not Connectable&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101108T114201Z&quot; changeid=&quot;eratyk&quot;&gt;
+-        &lt;seg&gt;&#1053;&#1077;&#1079;&#1083;&#1091;&#1095;&#1072;&#1083;&#1100;&#1085;&#1072;\0&lt;/seg&gt;
++        &lt;seg&gt;&#1053;&#1077;&#1079;&#1083;&#1091;&#1095;&#1072;&#1083;&#1100;&#1085;&#1072;&lt;/seg&gt;
+       &lt;/tuv&gt;
+     &lt;/tu&gt;
+     &lt;tu&gt;
+@@ -49895,10 +49895,10 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
+-        &lt;seg&gt;Not connected - Connections are available\0&lt;/seg&gt;
++        &lt;seg&gt;Not connected - Connections are available&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101108T113908Z&quot; changeid=&quot;eratyk&quot;&gt;
+-        &lt;seg&gt;&#1053;&#1077; &#1079;&#1083;&#1091;&#1095;&#1072;&#1085;&#1072; - &#1025;&#1089;&#1094;&#1100; &#1076;&#1072;&#1089;&#1090;&#1091;&#1087;&#1085;&#1099;&#1103; &#1079;&#1083;&#1091;&#1095;&#1101;&#1085;&#1085;&#1110;\0&lt;/seg&gt;
++        &lt;seg&gt;&#1053;&#1077; &#1079;&#1083;&#1091;&#1095;&#1072;&#1085;&#1072; - &#1025;&#1089;&#1094;&#1100; &#1076;&#1072;&#1089;&#1090;&#1091;&#1087;&#1085;&#1099;&#1103; &#1079;&#1083;&#1091;&#1095;&#1101;&#1085;&#1085;&#1110;&lt;/seg&gt;
+       &lt;/tuv&gt;
+     &lt;/tu&gt;
+     &lt;tu&gt;
+@@ -49911,18 +49911,18 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
+-        &lt;seg&gt;Not connected - No connections are available\0&lt;/seg&gt;
++        &lt;seg&gt;Not connected - No connections are available&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101108T113912Z&quot; changeid=&quot;eratyk&quot;&gt;
+-        &lt;seg&gt;&#1053;&#1077; &#1079;&#1083;&#1091;&#1095;&#1072;&#1085;&#1072; - &#1053;&#1103;&#1084;&#1072; &#1076;&#1072;&#1089;&#1090;&#1091;&#1087;&#1085;&#1099;&#1093; &#1079;&#1083;&#1091;&#1095;&#1101;&#1085;&#1085;&#1103;&#1118;\0&lt;/seg&gt;
++        &lt;seg&gt;&#1053;&#1077; &#1079;&#1083;&#1091;&#1095;&#1072;&#1085;&#1072; - &#1053;&#1103;&#1084;&#1072; &#1076;&#1072;&#1089;&#1090;&#1091;&#1087;&#1085;&#1099;&#1093; &#1079;&#1083;&#1091;&#1095;&#1101;&#1085;&#1085;&#1103;&#1118;&lt;/seg&gt;
+       &lt;/tuv&gt;
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
+-        &lt;seg&gt;Not connected\0&lt;/seg&gt;
++        &lt;seg&gt;Not connected&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101108T113849Z&quot; changeid=&quot;eratyk&quot;&gt;
+-        &lt;seg&gt;&#1053;&#1077; &#1079;&#1083;&#1091;&#1095;&#1072;&#1085;&#1072;\0&lt;/seg&gt;
++        &lt;seg&gt;&#1053;&#1077; &#1079;&#1083;&#1091;&#1095;&#1072;&#1085;&#1072;&lt;/seg&gt;
+       &lt;/tuv&gt;
+     &lt;/tu&gt;
+     &lt;tu&gt;
+@@ -51303,18 +51303,18 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
+-        &lt;seg&gt;Open Network and Sharing Center for more information.\0&lt;/seg&gt;
++        &lt;seg&gt;Open Network and Sharing Center for more information.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101108T114205Z&quot; changeid=&quot;eratyk&quot;&gt;
+-        &lt;seg&gt;&#1040;&#1076;&#1095;&#1099;&#1085;&#1110;&#1094;&#1077; &#1094;&#1101;&#1085;&#1090;&#1088; &#1089;&#1077;&#1090;&#1072;&#1082; &#1110; &#1072;&#1075;&#1091;&#1083;&#1100;&#1085;&#1072;&#1075;&#1072; &#1076;&#1086;&#1089;&#1090;&#1091;&#1087;&#1091; &#1076;&#1083;&#1103; &#1076;&#1072;&#1076;&#1072;&#1090;&#1082;&#1086;&#1074;&#1072;&#1081; &#1110;&#1085;&#1092;&#1072;&#1088;&#1084;&#1072;&#1094;&#1099;&#1110;.\0&lt;/seg&gt;
++        &lt;seg&gt;&#1040;&#1076;&#1095;&#1099;&#1085;&#1110;&#1094;&#1077; &#1094;&#1101;&#1085;&#1090;&#1088; &#1089;&#1077;&#1090;&#1072;&#1082; &#1110; &#1072;&#1075;&#1091;&#1083;&#1100;&#1085;&#1072;&#1075;&#1072; &#1076;&#1086;&#1089;&#1090;&#1091;&#1087;&#1091; &#1076;&#1083;&#1103; &#1076;&#1072;&#1076;&#1072;&#1090;&#1082;&#1086;&#1074;&#1072;&#1081; &#1110;&#1085;&#1092;&#1072;&#1088;&#1084;&#1072;&#1094;&#1099;&#1110;.&lt;/seg&gt;
+       &lt;/tuv&gt;
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
+-        &lt;seg&gt;Open Network and Sharing Center\0&lt;/seg&gt;
++        &lt;seg&gt;Open Network and Sharing Center&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101108T113918Z&quot; changeid=&quot;eratyk&quot;&gt;
+-        &lt;seg&gt;&#1040;&#1076;&#1095;&#1099;&#1085;&#1110;&#1094;&#1100; &#1094;&#1101;&#1085;&#1090;&#1088; &#1089;&#1077;&#1090;&#1072;&#1082; &#1110; &#1072;&#1075;&#1091;&#1083;&#1100;&#1085;&#1072;&#1075;&#1072; &#1076;&#1086;&#1089;&#1090;&#1091;&#1087;&#1091;\0&lt;/seg&gt;
++        &lt;seg&gt;&#1040;&#1076;&#1095;&#1099;&#1085;&#1110;&#1094;&#1100; &#1094;&#1101;&#1085;&#1090;&#1088; &#1089;&#1077;&#1090;&#1072;&#1082; &#1110; &#1072;&#1075;&#1091;&#1083;&#1100;&#1085;&#1072;&#1075;&#1072; &#1076;&#1086;&#1089;&#1090;&#1091;&#1087;&#1091;&lt;/seg&gt;
+       &lt;/tuv&gt;
+     &lt;/tu&gt;
+     &lt;tu&gt;
+@@ -51335,10 +51335,10 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
+-        &lt;seg&gt;Open Without Diagnostics\0&lt;/seg&gt;
++        &lt;seg&gt;Open Without Diagnostics&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101108T114032Z&quot; changeid=&quot;eratyk&quot;&gt;
+-        &lt;seg&gt;&#1040;&#1076;&#1095;&#1099;&#1085;&#1110;&#1094;&#1100; &#1073;&#1077;&#1079; &#1076;&#1099;&#1103;&#1075;&#1085;&#1086;&#1089;&#1090;&#1099;&#1082;&#1110;\0&lt;/seg&gt;
++        &lt;seg&gt;&#1040;&#1076;&#1095;&#1099;&#1085;&#1110;&#1094;&#1100; &#1073;&#1077;&#1079; &#1076;&#1099;&#1103;&#1075;&#1085;&#1086;&#1089;&#1090;&#1099;&#1082;&#1110;&lt;/seg&gt;
+       &lt;/tuv&gt;
+     &lt;/tu&gt;
+     &lt;tu&gt;
+@@ -54679,10 +54679,10 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
+-        &lt;seg&gt;Please select a network first before creating a connection profile.\0&lt;/seg&gt;
++        &lt;seg&gt;Please select a network first before creating a connection profile.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101108T113905Z&quot; changeid=&quot;eratyk&quot;&gt;
+-        &lt;seg&gt;&#1050;&#1072;&#1083;&#1110; &#1083;&#1072;&#1089;&#1082;&#1072;, &#1072;&#1073;&#1103;&#1088;&#1099;&#1094;&#1077; &#1089;&#1077;&#1090;&#1082;&#1091; &#1087;&#1077;&#1088;&#1096; &#1095;&#1099;&#1084; &#1089;&#1090;&#1074;&#1072;&#1088;&#1072;&#1094;&#1100; &#1079;&#1083;&#1091;&#1095;&#1101;&#1085;&#1085;&#1077;.\0&lt;/seg&gt;
++        &lt;seg&gt;&#1050;&#1072;&#1083;&#1110; &#1083;&#1072;&#1089;&#1082;&#1072;, &#1072;&#1073;&#1103;&#1088;&#1099;&#1094;&#1077; &#1089;&#1077;&#1090;&#1082;&#1091; &#1087;&#1077;&#1088;&#1096; &#1095;&#1099;&#1084; &#1089;&#1090;&#1074;&#1072;&#1088;&#1072;&#1094;&#1100; &#1079;&#1083;&#1091;&#1095;&#1101;&#1085;&#1085;&#1077;.&lt;/seg&gt;
+       &lt;/tuv&gt;
+     &lt;/tu&gt;
+     &lt;tu&gt;
+@@ -54983,10 +54983,10 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
+-        &lt;seg&gt;Poor\0&lt;/seg&gt;
++        &lt;seg&gt;Poor&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101108T113932Z&quot; changeid=&quot;eratyk&quot;&gt;
+-        &lt;seg&gt;&#1044;&#1088;&#1101;&#1085;&#1085;&#1099;\0&lt;/seg&gt;
++        &lt;seg&gt;&#1044;&#1088;&#1101;&#1085;&#1085;&#1099;&lt;/seg&gt;
+       &lt;/tuv&gt;
+     &lt;/tu&gt;
+     &lt;tu&gt;
+@@ -56759,10 +56759,10 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
+-        &lt;seg&gt;Properties\0&lt;/seg&gt;
++        &lt;seg&gt;Properties&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101108T114024Z&quot; changeid=&quot;eratyk&quot;&gt;
+-        &lt;seg&gt;&#1059;&#1083;&#1072;&#1089;&#1094;&#1110;&#1074;&#1072;&#1089;&#1094;&#1110;\0&lt;/seg&gt;
++        &lt;seg&gt;&#1059;&#1083;&#1072;&#1089;&#1094;&#1110;&#1074;&#1072;&#1089;&#1094;&#1110;&lt;/seg&gt;
+       &lt;/tuv&gt;
+     &lt;/tu&gt;
+     &lt;tu&gt;
+@@ -58063,10 +58063,10 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
+-        &lt;seg&gt;Refresh\0&lt;/seg&gt;
++        &lt;seg&gt;Refresh&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101108T114150Z&quot; changeid=&quot;eratyk&quot;&gt;
+-        &lt;seg&gt;&#1040;&#1073;&#1085;&#1072;&#1074;&#1110;&#1094;&#1100;\0&lt;/seg&gt;
++        &lt;seg&gt;&#1040;&#1073;&#1085;&#1072;&#1074;&#1110;&#1094;&#1100;&lt;/seg&gt;
+       &lt;/tuv&gt;
+     &lt;/tu&gt;
+     &lt;tu&gt;
+@@ -65063,10 +65063,10 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
+-        &lt;seg&gt;Shows available wireless networks and dial-up and VPN connections that you can connect to.\0&lt;/seg&gt;
++        &lt;seg&gt;Shows available wireless networks and dial-up and VPN connections that you can connect to.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101118T074546Z&quot; changeid=&quot;eratyk&quot;&gt;
+-        &lt;seg&gt;&#1055;&#1072;&#1082;&#1072;&#1079;&#1074;&#1072;&#1077; &#1076;&#1072;&#1089;&#1090;&#1091;&#1087;&#1085;&#1099;&#1103; &#1088;&#1072;&#1076;&#1099;&#1105;&#1089;&#1077;&#1090;&#1082;&#1110;, &#1090;&#1101;&#1083;&#1077;&#1092;&#1086;&#1085;&#1085;&#1099;&#1103; &#1110; VPN-&#1079;&#1083;&#1091;&#1095;&#1101;&#1085;&#1085;&#1110;, &#1079; &#1103;&#1082;&#1110;&#1084;&#1110; &#1074;&#1099; &#1084;&#1086;&#1078;&#1072;&#1094;&#1077; &#1079;&#1083;&#1091;&#1095;&#1099;&#1094;&#1094;&#1072;.\0&lt;/seg&gt;
++        &lt;seg&gt;&#1055;&#1072;&#1082;&#1072;&#1079;&#1074;&#1072;&#1077; &#1076;&#1072;&#1089;&#1090;&#1091;&#1087;&#1085;&#1099;&#1103; &#1088;&#1072;&#1076;&#1099;&#1105;&#1089;&#1077;&#1090;&#1082;&#1110;, &#1090;&#1101;&#1083;&#1077;&#1092;&#1086;&#1085;&#1085;&#1099;&#1103; &#1110; VPN-&#1079;&#1083;&#1091;&#1095;&#1101;&#1085;&#1085;&#1110;, &#1079; &#1103;&#1082;&#1110;&#1084;&#1110; &#1074;&#1099; &#1084;&#1086;&#1078;&#1072;&#1094;&#1077; &#1079;&#1083;&#1091;&#1095;&#1099;&#1094;&#1094;&#1072;.&lt;/seg&gt;
+       &lt;/tuv&gt;
+     &lt;/tu&gt;
+     &lt;tu&gt;
+@@ -65351,10 +65351,10 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
+-        &lt;seg&gt;Signal Strength: %1!s!\0&lt;/seg&gt;
++        &lt;seg&gt;Signal Strength: %1!s!&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101108T113957Z&quot; changeid=&quot;eratyk&quot;&gt;
+-        &lt;seg&gt;&#1052;&#1086;&#1094; &#1089;&#1110;&#1075;&#1085;&#1072;&#1083;&#1091;: %1!s!\0&lt;/seg&gt;
++        &lt;seg&gt;&#1052;&#1086;&#1094; &#1089;&#1110;&#1075;&#1085;&#1072;&#1083;&#1091;: %1!s!&lt;/seg&gt;
+       &lt;/tuv&gt;
+     &lt;/tu&gt;
+     &lt;tu&gt;
+@@ -67871,10 +67871,10 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
+-        &lt;seg&gt;Status\0&lt;/seg&gt;
++        &lt;seg&gt;Status&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101108T114022Z&quot; changeid=&quot;eratyk&quot;&gt;
+-        &lt;seg&gt;&#1057;&#1090;&#1072;&#1085;:\0&lt;/seg&gt;
++        &lt;seg&gt;&#1057;&#1090;&#1072;&#1085;:&lt;/seg&gt;
+       &lt;/tuv&gt;
+     &lt;/tu&gt;
+     &lt;tu&gt;
+@@ -74967,10 +74967,10 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
+-        &lt;seg&gt;This is a new router that has not been configured.\0&lt;/seg&gt;
++        &lt;seg&gt;This is a new router that has not been configured.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101108T114116Z&quot; changeid=&quot;eratyk&quot;&gt;
+-        &lt;seg&gt;&#1043;&#1101;&#1090;&#1072; - &#1085;&#1086;&#1074;&#1099; &#1088;&#1091;&#1090;&#1101;&#1088;, &#1103;&#1082;&#1110; &#1103;&#1096;&#1095;&#1101; &#1085;&#1077; &#1085;&#1072;&#1083;&#1072;&#1076;&#1078;&#1072;&#1085;&#1099;.\0&lt;/seg&gt;
++        &lt;seg&gt;&#1043;&#1101;&#1090;&#1072; - &#1085;&#1086;&#1074;&#1099; &#1088;&#1091;&#1090;&#1101;&#1088;, &#1103;&#1082;&#1110; &#1103;&#1096;&#1095;&#1101; &#1085;&#1077; &#1085;&#1072;&#1083;&#1072;&#1076;&#1078;&#1072;&#1085;&#1099;.&lt;/seg&gt;
+       &lt;/tuv&gt;
+     &lt;/tu&gt;
+     &lt;tu&gt;
+@@ -77879,10 +77879,10 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
+-        &lt;seg&gt;Troubleshoot\0&lt;/seg&gt;
++        &lt;seg&gt;Troubleshoot&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101204T152603Z&quot; changeid=&quot;eratyk&quot;&gt;
+-        &lt;seg&gt;&#1042;&#1099;&#1088;&#1072;&#1096;&#1099;&#1094;&#1100; &#1087;&#1088;&#1072;&#1073;&#1083;&#1077;&#1084;&#1099;\0&lt;/seg&gt;
++        &lt;seg&gt;&#1042;&#1099;&#1088;&#1072;&#1096;&#1099;&#1094;&#1100; &#1087;&#1088;&#1072;&#1073;&#1083;&#1077;&#1084;&#1099;&lt;/seg&gt;
+       &lt;/tuv&gt;
+     &lt;/tu&gt;
+     &lt;tu&gt;
+@@ -78215,10 +78215,10 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
+-        &lt;seg&gt;Turn off wireless\0&lt;/seg&gt;
++        &lt;seg&gt;Turn off wireless&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101108T114019Z&quot; changeid=&quot;eratyk&quot;&gt;
+-        &lt;seg&gt;&#1042;&#1099;&#1082;&#1083;&#1102;&#1095;&#1099;&#1094;&#1100; &#1088;&#1072;&#1076;&#1099;&#1105;\0&lt;/seg&gt;
++        &lt;seg&gt;&#1042;&#1099;&#1082;&#1083;&#1102;&#1095;&#1099;&#1094;&#1100; &#1088;&#1072;&#1076;&#1099;&#1105;&lt;/seg&gt;
+       &lt;/tuv&gt;
+     &lt;/tu&gt;
+     &lt;tu&gt;
+@@ -79271,10 +79271,10 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
+-        &lt;seg&gt;Unified Connection Manager\0&lt;/seg&gt;
++        &lt;seg&gt;Unified Connection Manager&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101108T113902Z&quot; changeid=&quot;eratyk&quot;&gt;
+-        &lt;seg&gt;&#1040;&#1073;'&#1103;&#1076;&#1085;&#1072;&#1085;&#1099; &#1082;&#1110;&#1088;&#1072;&#1118;&#1085;&#1110;&#1082; &#1079;&#1083;&#1091;&#1095;&#1101;&#1085;&#1085;&#1103;&#1118;\0&lt;/seg&gt;
++        &lt;seg&gt;&#1040;&#1073;'&#1103;&#1076;&#1085;&#1072;&#1085;&#1099; &#1082;&#1110;&#1088;&#1072;&#1118;&#1085;&#1110;&#1082; &#1079;&#1083;&#1091;&#1095;&#1101;&#1085;&#1085;&#1103;&#1118;&lt;/seg&gt;
+       &lt;/tuv&gt;
+     &lt;/tu&gt;
+     &lt;tu&gt;
+@@ -81047,10 +81047,10 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
+-        &lt;seg&gt;View Available Network\0&lt;/seg&gt;
++        &lt;seg&gt;View Available Network&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101108T114136Z&quot; changeid=&quot;eratyk&quot;&gt;
+-        &lt;seg&gt;&#1055;&#1088;&#1072;&#1075;&#1083;&#1077;&#1076;&#1079;&#1077;&#1094;&#1100; &#1076;&#1072;&#1089;&#1090;&#1091;&#1087;&#1085;&#1099;&#1103; &#1089;&#1077;&#1090;&#1082;&#1110;\0&lt;/seg&gt;
++        &lt;seg&gt;&#1055;&#1088;&#1072;&#1075;&#1083;&#1077;&#1076;&#1079;&#1077;&#1094;&#1100; &#1076;&#1072;&#1089;&#1090;&#1091;&#1087;&#1085;&#1099;&#1103; &#1089;&#1077;&#1090;&#1082;&#1110;&lt;/seg&gt;
+       &lt;/tuv&gt;
+     &lt;/tu&gt;
+     &lt;tu&gt;
+
+Modified: Windows7/source/x32/Windows/System32/en-US/VAN.dll.rc
+===================================================================
+--- Windows7/source/x32/Windows/System32/en-US/VAN.dll.rc	2011-01-12 11:11:24 UTC (rev 141)
++++ Windows7/source/x32/Windows/System32/en-US/VAN.dll.rc	2011-01-20 14:07:44 UTC (rev 142)
+@@ -4,136 +4,136 @@
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-  2001,  &quot;No connections are available\0&quot;
+-  2002,  &quot;Connections are available\0&quot;
+-  2003,  &quot;Connect or disconnect:\0&quot;
+-  2004,  &quot;Currently connected to:\0&quot;
+-  2005,  &quot;Not connected\0&quot;
+-  2007,  &quot;Unified Connection Manager\0&quot;
+-  2008,  &quot;Please select a network first before creating a connection profile.\0&quot;
+-  2009,  &quot;Not connected - Connections are available\0&quot;
+-  2010,  &quot;Not connected - No connections are available\0&quot;
+-  2012,  &quot;Information sent over this network might be visible to others.\0&quot;
++  2001,  &quot;No connections are available&quot;
++  2002,  &quot;Connections are available&quot;
++  2003,  &quot;Connect or disconnect:&quot;
++  2004,  &quot;Currently connected to:&quot;
++  2005,  &quot;Not connected&quot;
++  2007,  &quot;Unified Connection Manager&quot;
++  2008,  &quot;Please select a network first before creating a connection profile.&quot;
++  2009,  &quot;Not connected - Connections are available&quot;
++  2010,  &quot;Not connected - No connections are available&quot;
++  2012,  &quot;Information sent over this network might be visible to others.&quot;
+ }
+ 
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-  2100,  &quot;Open Network and Sharing Center\0&quot;
+-  2101,  &quot;Connect or disconnect...\0&quot;
+-  2102,  &quot;Troubleshoot\0&quot;
++  2100,  &quot;Open Network and Sharing Center&quot;
++  2101,  &quot;Connect or disconnect...&quot;
++  2102,  &quot;Troubleshoot&quot;
+ }
+ 
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-  2200,  &quot;No Signal\0&quot;
+-  2201,  &quot;Low\0&quot;
+-  2202,  &quot;Poor\0&quot;
+-  2203,  &quot;Fair\0&quot;
+-  2204,  &quot;Good\0&quot;
+-  2205,  &quot;Excellent\0&quot;
++  2200,  &quot;No Signal&quot;
++  2201,  &quot;Low&quot;
++  2202,  &quot;Poor&quot;
++  2203,  &quot;Fair&quot;
++  2204,  &quot;Good&quot;
++  2205,  &quot;Excellent&quot;
+ }
+ 
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-  2210,  &quot;Signal Strength: %1!s!\0&quot;
+-  2211,  &quot;Name: %1!s!\0&quot;
++  2210,  &quot;Signal Strength: %1!s!&quot;
++  2211,  &quot;Name: %1!s!&quot;
+ }
+ 
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-  2300,  &quot;Connect\0&quot;
+-  2301,  &quot;Disconnect\0&quot;
+-  2302,  &quot;Turn off wireless\0&quot;
+-  2303,  &quot;Diagnose\0&quot;
++  2300,  &quot;Connect&quot;
++  2301,  &quot;Disconnect&quot;
++  2302,  &quot;Turn off wireless&quot;
++  2303,  &quot;Diagnose&quot;
+ }
+ 
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-  2304,  &quot;Status\0&quot;
+-  2305,  &quot;Properties\0&quot;
++  2304,  &quot;Status&quot;
++  2305,  &quot;Properties&quot;
+ }
+ 
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-  2400,  &quot;Connect To\0&quot;
+-  2401,  &quot;Shows available wireless networks and dial-up and VPN connections that you can connect to.\0&quot;
+-  2402,  &quot;Open Without Diagnostics\0&quot;
++  2400,  &quot;Connect To&quot;
++  2401,  &quot;Shows available wireless networks and dial-up and VPN connections that you can connect to.&quot;
++  2402,  &quot;Open Without Diagnostics&quot;
+ }
+ 
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-  3001,  &quot;&amp;Connect\0&quot;
+-  3002,  &quot;&amp;Disconnect\0&quot;
+-  3003,  &quot;Connect automatically\0&quot;
++  3001,  &quot;&amp;Connect&quot;
++  3002,  &quot;&amp;Disconnect&quot;
++  3003,  &quot;Connect automatically&quot;
+ }
+ 
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-  3010,  &quot;Access: \0&quot;
+-  3011,  &quot;Internet access\0&quot;
+-  3012,  &quot;No Internet access\0&quot;
+-  3013,  &quot;Internet and domain access\0&quot;
+-  3014,  &quot;Domain access only\0&quot;
+-  3015,  &quot;No network access\0&quot;
++  3010,  &quot;Access: &quot;
++  3011,  &quot;Internet access&quot;
++  3012,  &quot;No Internet access&quot;
++  3013,  &quot;Internet and domain access&quot;
++  3014,  &quot;Domain access only&quot;
++  3015,  &quot;No network access&quot;
+ }
+ 
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-  3100,  &quot;This is a new router that has not been configured.\0&quot;
+-  3101,  &quot;&amp;Configure\0&quot;
+-  3102,  &quot;Configure\0&quot;
++  3100,  &quot;This is a new router that has not been configured.&quot;
++  3101,  &quot;&amp;Configure&quot;
++  3102,  &quot;Configure&quot;
+ }
+ 
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-  4001,  &quot;View Available Network\0&quot;
+-  4005,  &quot;Media Manager List\0&quot;
+-  4006,  &quot;Network Adapter Header\0&quot;
+-  4007,  &quot;Available Network List\0&quot;
+-  4010,  &quot;Configure\0&quot;
+-  4011,  &quot;Connect\0&quot;
+-  4012,  &quot;Disconnect\0&quot;
+-  4013,  &quot;Connect automatically checkbox\0&quot;
+-  4014,  &quot;%1!s!\n%2!s!\0&quot;
+-  4015,  &quot;Refresh\0&quot;
++  4001,  &quot;View Available Network&quot;
++  4005,  &quot;Media Manager List&quot;
++  4006,  &quot;Network Adapter Header&quot;
++  4007,  &quot;Available Network List&quot;
++  4010,  &quot;Configure&quot;
++  4011,  &quot;Connect&quot;
++  4012,  &quot;Disconnect&quot;
++  4013,  &quot;Connect automatically checkbox&quot;
++  4014,  &quot;%1!s!\n%2!s!&quot;
++  4015,  &quot;Refresh&quot;
+ }
+ 
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-  4019,  &quot;Link Pane\0&quot;
+-  4025,  &quot;Connected Network List\0&quot;
+-  4030,  &quot;Connect to a Network\0&quot;
+-  4031,  &quot;Disconnect from a Network\0&quot;
++  4019,  &quot;Link Pane&quot;
++  4025,  &quot;Connected Network List&quot;
++  4030,  &quot;Connect to a Network&quot;
++  4031,  &quot;Disconnect from a Network&quot;
+ }
+ 
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-  4032,  &quot;Not Connectable\0&quot;
+-  4033,  &quot;Configure a Network\0&quot;
++  4032,  &quot;Not Connectable&quot;
++  4033,  &quot;Configure a Network&quot;
+ }
+ 
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-  4100,  &quot;Connect to a Network\0&quot;
++  4100,  &quot;Connect to a Network&quot;
+ }
+ 
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-  4200,  &quot;Network access might be limited. Open Network and Sharing Center for more information.\0&quot;
++  4200,  &quot;Network access might be limited. Open Network and Sharing Center for more information.&quot;
+ }
+ 
+ 1 MESSAGETABLE
+
+Modified: Windows7/source/x32/Windows/System32/en-US/rasdlg.dll.rc
+===================================================================
+--- Windows7/source/x32/Windows/System32/en-US/rasdlg.dll.rc	2011-01-12 11:11:24 UTC (rev 141)
++++ Windows7/source/x32/Windows/System32/en-US/rasdlg.dll.rc	2011-01-20 14:07:44 UTC (rev 142)
+@@ -1641,754 +1641,754 @@
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-  187,  &quot;&amp;No, do not dial\0&quot;
+-  188,  &quot;You (or a program) have requested information from %1. Which connection do you want to use?\0&quot;
+-  189,  &quot;Add Alternate Phone Number\0&quot;
+-  190,  &quot;Dial only first available device\0&quot;
+-  191,  &quot;Dial all devices\0&quot;
++  187,  &quot;&amp;No, do not dial&quot;
++  188,  &quot;You (or a program) have requested information from %1. Which connection do you want to use?&quot;
++  189,  &quot;Add Alternate Phone Number&quot;
++  190,  &quot;Dial only first available device&quot;
++  191,  &quot;Dial all devices&quot;
+ }
+ 
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-  192,  &quot;Dial devices only as needed\0&quot;
+-  193,  &quot;Enter a user name and password with access to the remote network domain.\0&quot;
+-  195,  &quot;The area code must contain only the digits 0 to 9.\0&quot;
+-  196,  &quot;The entry name must contain at least one non-blank character and cannot begin with a period.  Choose a different name.\0&quot;
+-  198,  &quot;The custom authentication configuration DLL could not be loaded. Make sure the custom authentication package is correctly installed.\0&quot;
+-  199,  &quot;The connection selected was established by the Multiprotocol router.\nPlease use the 'Routing and RAS Admin' tool to hang up the connection.\0&quot;
+-  200,  &quot;Comment\0&quot;
+-  201,  &quot;The custom authentication package configuration failed.\0&quot;
+-  202,  &quot;TCP/IP is not installed or is disabled for Routing and Remote Access. In Control Panel, start Network, go to the Services page, choose 'Routing and Remote Access Service' Properties, and press the Network button.\0&quot;
+-  204,  &quot;Do you want to remove the selected device(s) from the list?\0&quot;
+-  205,  &quot;Do you want to delete %1 from the phonebook?\0&quot;
+-  206,  &quot;Do you want to disconnect from %1?\0&quot;
+-  207,  &quot;A file named %1 already exists. Do you want to overwrite it?\0&quot;
++  192,  &quot;Dial devices only as needed&quot;
++  193,  &quot;Enter a user name and password with access to the remote network domain.&quot;
++  195,  &quot;The area code must contain only the digits 0 to 9.&quot;
++  196,  &quot;The entry name must contain at least one non-blank character and cannot begin with a period.  Choose a different name.&quot;
++  198,  &quot;The custom authentication configuration DLL could not be loaded. Make sure the custom authentication package is correctly installed.&quot;
++  199,  &quot;The connection selected was established by the Multiprotocol router.\nPlease use the 'Routing and RAS Admin' tool to hang up the connection.&quot;
++  200,  &quot;Comment&quot;
++  201,  &quot;The custom authentication package configuration failed.&quot;
++  202,  &quot;TCP/IP is not installed or is disabled for Routing and Remote Access. In Control Panel, start Network, go to the Services page, choose 'Routing and Remote Access Service' Properties, and press the Network button.&quot;
++  204,  &quot;Do you want to remove the selected device(s) from the list?&quot;
++  205,  &quot;Do you want to delete %1 from the phonebook?&quot;
++  206,  &quot;Do you want to disconnect from %1?&quot;
++  207,  &quot;A file named %1 already exists. Do you want to overwrite it?&quot;
+ }
+ 
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-  208,  &quot;Syntax errors were found in the script. Do you want to view the error log?\0&quot;
+-  209,  &quot;'%1' is now connected.  \0&quot;
+-  210,  &quot;Right-click the Dial-Up Networking Monitor on the task bar to hang up or check the status of your connection.\0&quot;
+-  212,  &quot;Connected successfully.\0&quot;
+-  214,  &quot;lnk\0&quot;
+-  215,  &quot;Dial-up shortcut files (*.rnk)\0&quot;
+-  216,  &quot;*.rnk\0&quot;
+-  217,  &quot;Create Dial-Up Shortcut\0&quot;
+-  218,  &quot;Link to %1 failed.  Reconnect pending...\0&quot;
+-  219,  &quot;Cannot retrieve framing information.\0&quot;
+-  220,  &quot;Cannot retrieve port information.\0&quot;
+-  221,  &quot;Cannot retrieve projection information.\0&quot;
+-  222,  &quot;Cannot load connection list.\0&quot;
+-  223,  &quot;Client:\0&quot;
++  208,  &quot;Syntax errors were found in the script. Do you want to view the error log?&quot;
++  209,  &quot;'%1' is now connected.  &quot;
++  210,  &quot;Right-click the Dial-Up Networking Monitor on the task bar to hang up or check the status of your connection.&quot;
++  212,  &quot;Connected successfully.&quot;
++  214,  &quot;lnk&quot;
++  215,  &quot;Dial-up shortcut files (*.rnk)&quot;
++  216,  &quot;*.rnk&quot;
++  217,  &quot;Create Dial-Up Shortcut&quot;
++  218,  &quot;Link to %1 failed.  Reconnect pending...&quot;
++  219,  &quot;Cannot retrieve framing information.&quot;
++  220,  &quot;Cannot retrieve port information.&quot;
++  221,  &quot;Cannot retrieve projection information.&quot;
++  222,  &quot;Cannot load connection list.&quot;
++  223,  &quot;Client:&quot;
+ }
+ 
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-  224,  &quot;Details\0&quot;
+-  225,  &quot;Device:\0&quot;
+-  226,  &quot;Network:\0&quot;
+-  227,  &quot;(not connected)\0&quot;
+-  228,  &quot;&amp;Connect...\0&quot;
+-  229,  &quot;Hang &amp;Up\0&quot;
+-  230,  &quot;Dial-up Connection\0&quot;
+-  231,  &quot;Modem configuration set to defaults\0&quot;
+-  232,  &quot;COM1\0&quot;
+-  233,  &quot;Remote Router\0&quot;
+-  234,  &quot;Modem or device\0&quot;
+-  235,  &quot;Enter a username for this interface's account on the remote router.\0&quot;
+-  236,  &quot;An entry named %1 already exists. Please choose a different name.\0&quot;
+-  237,  &quot;You may want to allow sending your password without encryption.\0&quot;
+-  238,  &quot;Password Encryption\0&quot;
++  224,  &quot;Details&quot;
++  225,  &quot;Device:&quot;
++  226,  &quot;Network:&quot;
++  227,  &quot;(not connected)&quot;
++  228,  &quot;&amp;Connect...&quot;
++  229,  &quot;Hang &amp;Up&quot;
++  230,  &quot;Dial-up Connection&quot;
++  231,  &quot;Modem configuration set to defaults&quot;
++  232,  &quot;COM1&quot;
++  233,  &quot;Remote Router&quot;
++  234,  &quot;Modem or device&quot;
++  235,  &quot;Enter a username for this interface's account on the remote router.&quot;
++  236,  &quot;An entry named %1 already exists. Please choose a different name.&quot;
++  237,  &quot;You may want to allow sending your password without encryption.&quot;
++  238,  &quot;Password Encryption&quot;
+ }
+ 
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-  241,  &quot;Phone &amp;number:\0&quot;
+-  242,  &quot;Call Me Back At\0&quot;
+-  243,  &quot;Edit Alternate Phone Number\0&quot;
+-  244,  &quot;Since this connection is currently active, some settings will not take effect until the next time you dial it.\0&quot;
+-  245,  &quot;There are no connections available to all users. You must log on before dialing.\0&quot;
+-  246,  &quot;The phonebook is empty.\n\nTo add an entry, click OK.\0&quot;
+-  247,  &quot;Due to import/export restrictions, data encryption is not available in this version of Windows.\0&quot;
+-  249,  &quot;Error %1: %2\0&quot;
+-  250,  &quot;%1\n\nError %2: %3\0&quot;
+-  251,  &quot;%1\n\nError %2: %3\nDiagnostic: %4\0&quot;
+-  252,  &quot;%1\n\nError %2: %3\nFail Code: %4\0&quot;
+-  253,  &quot;%1\n\nError %2: %3\n\nPress F1 for more information.\0&quot;
+-  254,  &quot;%1\n\nError %2: %3\nName: %4\0&quot;
+-  255,  &quot;%1\n\n%4\0&quot;
++  241,  &quot;Phone &amp;number:&quot;
++  242,  &quot;Call Me Back At&quot;
++  243,  &quot;Edit Alternate Phone Number&quot;
++  244,  &quot;Since this connection is currently active, some settings will not take effect until the next time you dial it.&quot;
++  245,  &quot;There are no connections available to all users. You must log on before dialing.&quot;
++  246,  &quot;The phonebook is empty.\n\nTo add an entry, click OK.&quot;
++  247,  &quot;Due to import/export restrictions, data encryption is not available in this version of Windows.&quot;
++  249,  &quot;Error %1: %2&quot;
++  250,  &quot;%1\n\nError %2: %3&quot;
++  251,  &quot;%1\n\nError %2: %3\nDiagnostic: %4&quot;
++  252,  &quot;%1\n\nError %2: %3\nFail Code: %4&quot;
++  253,  &quot;%1\n\nError %2: %3\n\nPress F1 for more information.&quot;
++  254,  &quot;%1\n\nError %2: %3\nName: %4&quot;
++  255,  &quot;%1\n\n%4&quot;
+ }
+ 
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-  256,  &quot;%1\n\nError %2: %3\nResponse: %4\0&quot;
+-  257,  &quot;Fail Code: 0x%1\n\0&quot;
+-  258,  &quot;Name: %1\n\0&quot;
+-  259,  &quot;%1 CP reported error %2: %3\n\0&quot;
+-  260,  &quot;%1 CP connected successfully.\n\0&quot;
+-  261,  &quot;You can choose which dial-up protocol to use.\0&quot;
+-  262,  &quot;Choose Dial-up Protocol\0&quot;
+-  263,  &quot;Click Finish to save '%1'.\0&quot;
+-  264,  &quot;netcfg.hlp\0&quot;
+-  265,  &quot;&amp;Move successful number to the top of the list on connection\0&quot;
+-  266,  &quot;&amp;New phone number:\0&quot;
+-  267,  &quot;&amp;Phone numbers:\0&quot;
+-  268,  &quot;Phone Numbers\0&quot;
+-  269,  &quot;You may enter a fixed IP address.\0&quot;
+-  270,  &quot;IP Address\0&quot;
+-  271,  &quot;The Internet protocols (TCP/IP), are not installed or are disabled for Remote Access. In Control Panel, start Network, go to the Services page, choose 'Remote Access Service' Properties, and then click Network.\0&quot;
++  256,  &quot;%1\n\nError %2: %3\nResponse: %4&quot;
++  257,  &quot;Fail Code: 0x%1\n&quot;
++  258,  &quot;Name: %1\n&quot;
++  259,  &quot;%1 CP reported error %2: %3\n&quot;
++  260,  &quot;%1 CP connected successfully.\n&quot;
++  261,  &quot;You can choose which dial-up protocol to use.&quot;
++  262,  &quot;Choose Dial-up Protocol&quot;
++  263,  &quot;Click Finish to save '%1'.&quot;
++  264,  &quot;netcfg.hlp&quot;
++  265,  &quot;&amp;Move successful number to the top of the list on connection&quot;
++  266,  &quot;&amp;New phone number:&quot;
++  267,  &quot;&amp;Phone numbers:&quot;
++  268,  &quot;Phone Numbers&quot;
++  269,  &quot;You may enter a fixed IP address.&quot;
++  270,  &quot;IP Address&quot;
++  271,  &quot;The Internet protocols (TCP/IP), are not installed or are disabled for Remote Access. In Control Panel, start Network, go to the Services page, choose 'Remote Access Service' Properties, and then click Network.&quot;
+ }
+ 
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-  272,  &quot;TCP/IP\0&quot;
+-  273,  &quot;IPsec, default policy\0&quot;
+-  275,  &quot; (the current location)\0&quot;
+-  276,  &quot;ISDN\0&quot;
+-  277,  &quot;All available ISDN lines multi-linked\0&quot;
+-  278,  &quot;64K Digital\0&quot;
+-  279,  &quot;56K Digital\0&quot;
+-  280,  &quot;56K Voice\0&quot;
+-  281,  &quot;You may need a special procedure before connecting.\0&quot;
+-  282,  &quot;Choose Logon Options\0&quot;
+-  283,  &quot;%d%%\0&quot;
+-  284,  &quot;Phone number for %s\0&quot;
+-  285,  &quot;&amp;New location:\0&quot;
+-  286,  &quot;&amp;Locations:\0&quot;
+-  287,  &quot;Locations\0&quot;
++  272,  &quot;TCP/IP&quot;
++  273,  &quot;IPsec, default policy&quot;
++  275,  &quot; (the current location)&quot;
++  276,  &quot;ISDN&quot;
++  277,  &quot;All available ISDN lines multi-linked&quot;
++  278,  &quot;64K Digital&quot;
++  279,  &quot;56K Digital&quot;
++  280,  &quot;56K Voice&quot;
++  281,  &quot;You may need a special procedure before connecting.&quot;
++  282,  &quot;Choose Logon Options&quot;
++  283,  &quot;%d%%&quot;
++  284,  &quot;Phone number for %s&quot;
++  285,  &quot;&amp;New location:&quot;
++  286,  &quot;&amp;Locations:&quot;
++  287,  &quot;Locations&quot;
+ }
+ 
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-  288,  &quot;This device will be used to make the connection.\0&quot;
+-  289,  &quot;Select a Device\0&quot;
+-  290,  &quot;Multiple lines cannot be bundled unless you are calling a PPP server.\0&quot;
+-  291,  &quot;Modem\0&quot;
+-  292,  &quot;The modem is not installed.\0&quot;
+-  293,  &quot;Microsoft Point-to-Point Encryption, 128-bit RSA/RC4\0&quot;
+-  294,  &quot;Microsoft Point-to-Point Encryption, 40-bit RSA/RC4\0&quot;
+-  295,  &quot;Multiple Lines\0&quot;
+-  296,  &quot;(Click Configure to set)\0&quot;
+-  297,  &quot;You may enter fixed DNS and WINS addresses.\0&quot;
+-  298,  &quot;Name Server Addresses\0&quot;
+-  300,  &quot;PPP\0&quot;
+-  301,  &quot;PPP multi-link\0&quot;
++  288,  &quot;This device will be used to make the connection.&quot;
++  289,  &quot;Select a Device&quot;
++  290,  &quot;Multiple lines cannot be bundled unless you are calling a PPP server.&quot;
++  291,  &quot;Modem&quot;
++  292,  &quot;The modem is not installed.&quot;
++  293,  &quot;Microsoft Point-to-Point Encryption, 128-bit RSA/RC4&quot;
++  294,  &quot;Microsoft Point-to-Point Encryption, 40-bit RSA/RC4&quot;
++  295,  &quot;Multiple Lines&quot;
++  296,  &quot;(Click Configure to set)&quot;
++  297,  &quot;You may enter fixed DNS and WINS addresses.&quot;
++  298,  &quot;Name Server Addresses&quot;
++  300,  &quot;PPP&quot;
++  301,  &quot;PPP multi-link&quot;
+ }
+ 
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-  304,  &quot;A personal phonebook has been created and initialized with the contents of the system phonebook.\0&quot;
+-  305,  &quot;No alternate phonebook is selected.\0&quot;
+-  306,  &quot;That device cannot be dynamically configured.\0&quot;
+-  307,  &quot;The entry cannot be deleted because it is connected.\0&quot;
+-  308,  &quot;No entry is selected. To create an entry, click New.\0&quot;
+-  309,  &quot;A non-zero IP address must be supplied when 'specify an IP address' is selected.\0&quot;
+-  311,  &quot;(none)\0&quot;
+-  312,  &quot;'%1' is already in the list.\0&quot;
+-  313,  &quot;Help secure my password and my data\0&quot;
+-  314,  &quot;The %1 protocol cannot be selected because it is not installed or is disabled for Remote Access.  To change, in Control Panel start Network, choose Services page, Remote Access Properties, and click Network.\0&quot;
+-  315,  &quot;Cannot save password.\0&quot;
+-  316,  &quot;Cannot display data.\0&quot;
+-  317,  &quot;Cannot get auto-dial information.\0&quot;
+-  318,  &quot;Cannot load dialog.\0&quot;
+-  319,  &quot;Cannot disable shared access.\0&quot;
++  304,  &quot;A personal phonebook has been created and initialized with the contents of the system phonebook.&quot;
++  305,  &quot;No alternate phonebook is selected.&quot;
++  306,  &quot;That device cannot be dynamically configured.&quot;
++  307,  &quot;The entry cannot be deleted because it is connected.&quot;
++  308,  &quot;No entry is selected. To create an entry, click New.&quot;
++  309,  &quot;A non-zero IP address must be supplied when 'specify an IP address' is selected.&quot;
++  311,  &quot;(none)&quot;
++  312,  &quot;'%1' is already in the list.&quot;
++  313,  &quot;Help secure my password and my data&quot;
++  314,  &quot;The %1 protocol cannot be selected because it is not installed or is disabled for Remote Access.  To change, in Control Panel start Network, choose Services page, Remote Access Properties, and click Network.&quot;
++  315,  &quot;Cannot save password.&quot;
++  316,  &quot;Cannot display data.&quot;
++  317,  &quot;Cannot get auto-dial information.&quot;
++  318,  &quot;Cannot load dialog.&quot;
++  319,  &quot;Cannot disable shared access.&quot;
+ }
+ 
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-  320,  &quot;Cannot load property page.\0&quot;
+-  321,  &quot;Cannot load phonebook.\0&quot;
+-  322,  &quot;Cannot load RAS Manager port information.\0&quot;
+-  323,  &quot;Cannot read user preferences from registry.\0&quot;
+-  324,  &quot;Cannot load script information.\0&quot;
+-  325,  &quot;Cannot view script.log with Notepad.\0&quot;
+-  326,  &quot;Cannot edit switch.inf with Notepad.\0&quot;
+-  327,  &quot;Cannot load TAPI information.\0&quot;
+-  329,  &quot;Cannot create new phonebook.\0&quot;
+-  330,  &quot;Cannot enable shared access.\0&quot;
+-  331,  &quot;Cannot connect the phonebook entry.\0&quot;
+-  332,  &quot;Cannot get send/receive buffer.\0&quot;
+-  333,  &quot;Cannot get status information for a port.\0&quot;
+-  334,  &quot;Cannot retrieve protocol information.\0&quot;
+-  335,  &quot;Cannot receive buffer from device.\0&quot;
++  320,  &quot;Cannot load property page.&quot;
++  321,  &quot;Cannot load phonebook.&quot;
++  322,  &quot;Cannot load RAS Manager port information.&quot;
++  323,  &quot;Cannot read user preferences from registry.&quot;
++  324,  &quot;Cannot load script information.&quot;
++  325,  &quot;Cannot view script.log with Notepad.&quot;
++  326,  &quot;Cannot edit switch.inf with Notepad.&quot;
++  327,  &quot;Cannot load TAPI information.&quot;
++  329,  &quot;Cannot create new phonebook.&quot;
++  330,  &quot;Cannot enable shared access.&quot;
++  331,  &quot;Cannot connect the phonebook entry.&quot;
++  332,  &quot;Cannot get send/receive buffer.&quot;
++  333,  &quot;Cannot get status information for a port.&quot;
++  334,  &quot;Cannot retrieve protocol information.&quot;
++  335,  &quot;Cannot receive buffer from device.&quot;
+ }
+ 
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-  336,  &quot;Cannot send buffer to device.\0&quot;
+-  337,  &quot;Cannot retrieve data.\0&quot;
+-  338,  &quot;Cannot save TAPI information.\0&quot;
+-  339,  &quot;Cannot save data.\0&quot;
+-  340,  &quot;The script has halted.\0&quot;
+-  341,  &quot;The script has halted due to an error. Do you want to view the error log?\0&quot;
+-  342,  &quot;Cannot set auto-dial information.\0&quot;
+-  343,  &quot;Cannot delete saved password.\0&quot;
+-  344,  &quot;Cannot write phonebook.\0&quot;
+-  345,  &quot;Writing preferences to registry\0&quot;
+-  346,  &quot;Cannot write the shortcut file.\0&quot;
+-  347,  &quot;OK\0&quot;
+-  348,  &quot;Cannot configure incoming connections.\0&quot;
+-  349,  &quot;Because this connection was started by an application with restricted privileges, you cannot change the properties of the connection. Please use the Network and Sharing Center or Network Connections folder to change the connection settings.\0&quot;
+-  350,  &quot;The Password and Confirm password fields do not match.\0&quot;
+-  351,  &quot;The New Password and Confirm New Password fields do not match.\0&quot;
++  336,  &quot;Cannot send buffer to device.&quot;
++  337,  &quot;Cannot retrieve data.&quot;
++  338,  &quot;Cannot save TAPI information.&quot;
++  339,  &quot;Cannot save data.&quot;
++  340,  &quot;The script has halted.&quot;
++  341,  &quot;The script has halted due to an error. Do you want to view the error log?&quot;
++  342,  &quot;Cannot set auto-dial information.&quot;
++  343,  &quot;Cannot delete saved password.&quot;
++  344,  &quot;Cannot write phonebook.&quot;
++  345,  &quot;Writing preferences to registry&quot;
++  346,  &quot;Cannot write the shortcut file.&quot;
++  347,  &quot;OK&quot;
++  348,  &quot;Cannot configure incoming connections.&quot;
++  349,  &quot;Because this connection was started by an application with restricted privileges, you cannot change the properties of the connection. Please use the Network and Sharing Center or Network Connections folder to change the connection settings.&quot;
++  350,  &quot;The Password and Confirm password fields do not match.&quot;
++  351,  &quot;The New Password and Confirm New Password fields do not match.&quot;
+ }
+ 
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-  352,  &quot;pbk\0&quot;
+-  353,  &quot;Dial-Up Phonebook\0&quot;
+-  354,  &quot;*.pbk\0&quot;
+-  355,  &quot;Open Phonebook\0&quot;
+-  356,  &quot;Clone Phonebook Entry\0&quot;
+-  357,  &quot;Edit Phonebook Entry\0&quot;
+-  358,  &quot;New Phonebook Entry\0&quot;
+-  359,  &quot;Phone number\0&quot;
+-  360,  &quot;Phone numbers\0&quot;
+-  361,  &quot;Network Connections\0&quot;
+-  362,  &quot;You must select at least one network protocol.\0&quot;
+-  363,  &quot;Before you can call PPP servers you must install a network protocol.\0&quot;
+-  364,  &quot;&amp;New prefix:\0&quot;
+-  365,  &quot;&amp;Prefixes:\0&quot;
+-  366,  &quot;Phone Number Prefixes\0&quot;
++  352,  &quot;pbk&quot;
++  353,  &quot;Dial-Up Phonebook&quot;
++  354,  &quot;*.pbk&quot;
++  355,  &quot;Open Phonebook&quot;
++  356,  &quot;Clone Phonebook Entry&quot;
++  357,  &quot;Edit Phonebook Entry&quot;
++  358,  &quot;New Phonebook Entry&quot;
++  359,  &quot;Phone number&quot;
++  360,  &quot;Phone numbers&quot;
++  361,  &quot;Network Connections&quot;
++  362,  &quot;You must select at least one network protocol.&quot;
++  363,  &quot;Before you can call PPP servers you must install a network protocol.&quot;
++  364,  &quot;&amp;New prefix:&quot;
++  365,  &quot;&amp;Prefixes:&quot;
++  366,  &quot;Phone Number Prefixes&quot;
+ }
+ 
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-  369,  &quot;Point-to-point protocol settings to use when %1 initiates a demand-dial connection on interface %2:\0&quot;
+-  370,  &quot;[To change the saved password, click here]\0&quot;
+-  371,  &quot;Removed\0&quot;
++  369,  &quot;Point-to-point protocol settings to use when %1 initiates a demand-dial connection on interface %2:&quot;
++  370,  &quot;[To change the saved password, click here]&quot;
++  371,  &quot;Removed&quot;
+ }
+ 
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-  407,  &quot;&amp;Redial\0&quot;
+-  408,  &quot;You have chosen to disable one or more transports. Doing so requires the routing managers and routing protocols for the disabled transports to be removed from this demand-dial connection.\nTo continue, click Yes. \n \n\n\n\n\n\nTo re-enable the transports, click No.\0&quot;
+-  410,  &quot;Demand-dial interface dial-in account.\0&quot;
+-  411,  &quot;You now need to set the dial-out credentials that interface '%1' will use when connecting to the remote router. These credentials must match the dial-in credentials configured on the remote router. When connecting to a \n \n\n\n\n\n\nWindows NT4/2000 router, the user name must also match the interface name of the remote router.\0&quot;
+-  412,  &quot;mpradmin.hlp\0&quot;
+-  413,  &quot;&amp;Move successful number or address to the top of the list on connection\0&quot;
+-  414,  &quot;&amp;New phone number or address:\0&quot;
+-  415,  &quot;&amp;Phone numbers or addresses:\0&quot;
++  407,  &quot;&amp;Redial&quot;
++  408,  &quot;You have chosen to disable one or more transports. Doing so requires the routing managers and routing protocols for the disabled transports to be removed from this demand-dial connection.\nTo continue, click Yes. \n \n\n\n\n\n\nTo re-enable the transports, click No.&quot;
++  410,  &quot;Demand-dial interface dial-in account.&quot;
++  411,  &quot;You now need to set the dial-out credentials that interface '%1' will use when connecting to the remote router. These credentials must match the dial-in credentials configured on the remote router. When connecting to a \n \n\n\n\n\n\nWindows NT4/2000 router, the user name must also match the interface name of the remote router.&quot;
++  412,  &quot;mpradmin.hlp&quot;
++  413,  &quot;&amp;Move successful number or address to the top of the list on connection&quot;
++  414,  &quot;&amp;New phone number or address:&quot;
++  415,  &quot;&amp;Phone numbers or addresses:&quot;
+ }
+ 
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-  416,  &quot;Numbers and Addresses\0&quot;
+-  420,  &quot;All devices connected.\0&quot;
+-  421,  &quot;Receiving registration results...\0&quot;
+-  422,  &quot;Sending callback information...\0&quot;
+-  423,  &quot;Sending new password...\0&quot;
+-  424,  &quot;Calculating link speed...\0&quot;
+-  425,  &quot;Checking authentication status...\0&quot;
+-  426,  &quot;Registering your computer on the network...\0&quot;
+-  427,  &quot;Retrying authentication...\0&quot;
+-  428,  &quot;Verifying user name and password...\0&quot;
+-  429,  &quot;Authenticated.\0&quot;
+-  430,  &quot;Connecting through %1...\0&quot;
+-  431,  &quot;Dialing...\0&quot;
++  416,  &quot;Numbers and Addresses&quot;
++  420,  &quot;All devices connected.&quot;
++  421,  &quot;Receiving registration results...&quot;
++  422,  &quot;Sending callback information...&quot;
++  423,  &quot;Sending new password...&quot;
++  424,  &quot;Calculating link speed...&quot;
++  425,  &quot;Checking authentication status...&quot;
++  426,  &quot;Registering your computer on the network...&quot;
++  427,  &quot;Retrying authentication...&quot;
++  428,  &quot;Verifying user name and password...&quot;
++  429,  &quot;Authenticated.&quot;
++  430,  &quot;Connecting through %1...&quot;
++  431,  &quot;Dialing...&quot;
+ }
+ 
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-  432,  &quot;Modems connecting...\0&quot;
+-  433,  &quot;Connecting over cable...\0&quot;
+-  434,  &quot;Dialing %1...\0&quot;
+-  436,  &quot;Post-connecting through %1...\0&quot;
+-  437,  &quot;Pre-connecting through %1...\0&quot;
+-  438,  &quot;Connected.\0&quot;
+-  439,  &quot;Device connected.\0&quot;
+-  440,  &quot;Disconnected.\0&quot;
+-  441,  &quot;Modem connected.\0&quot;
+-  442,  &quot;Cable connected.\0&quot;
+-  443,  &quot;Opening port...\0&quot;
+-  444,  &quot;Applying configured settings\0&quot;
+-  445,  &quot;Port opened.\0&quot;
+-  446,  &quot;Post-connect complete.\0&quot;
+-  447,  &quot;Pre-connect complete.\0&quot;
++  432,  &quot;Modems connecting...&quot;
++  433,  &quot;Connecting over cable...&quot;
++  434,  &quot;Dialing %1...&quot;
++  436,  &quot;Post-connecting through %1...&quot;
++  437,  &quot;Pre-connecting through %1...&quot;
++  438,  &quot;Connected.&quot;
++  439,  &quot;Device connected.&quot;
++  440,  &quot;Disconnected.&quot;
++  441,  &quot;Modem connected.&quot;
++  442,  &quot;Cable connected.&quot;
++  443,  &quot;Opening port...&quot;
++  444,  &quot;Applying configured settings&quot;
++  445,  &quot;Port opened.&quot;
++  446,  &quot;Post-connect complete.&quot;
++  447,  &quot;Pre-connect complete.&quot;
+ }
+ 
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-  448,  &quot;Preparing for callback...\0&quot;
+-  449,  &quot;Checking network protocol connections...\0&quot;
+-  450,  &quot;Verifying user name and password...\0&quot;
+-  451,  &quot;Connected, bundling additional lines...\0&quot;
+-  452,  &quot;Unknown state.\0&quot;
+-  453,  &quot;Waiting for callback...\0&quot;
+-  454,  &quot;Waiting for modem reset...\0&quot;
+-  455,  &quot;Make the phone number change permanent?\0&quot;
+-  456,  &quot;scp\0&quot;
+-  457,  &quot;*.scp\0&quot;
+-  458,  &quot;Dial-up script files (*.scp)\0&quot;
+-  459,  &quot;Browse Dial-Up Scripts\0&quot;
+-  460,  &quot;You must select at least one modem or adapter.\0&quot;
+-  461,  &quot;Phone number\0&quot;
++  448,  &quot;Preparing for callback...&quot;
++  449,  &quot;Checking network protocol connections...&quot;
++  450,  &quot;Verifying user name and password...&quot;
++  451,  &quot;Connected, bundling additional lines...&quot;
++  452,  &quot;Unknown state.&quot;
++  453,  &quot;Waiting for callback...&quot;
++  454,  &quot;Waiting for modem reset...&quot;
++  455,  &quot;Make the phone number change permanent?&quot;
++  456,  &quot;scp&quot;
++  457,  &quot;*.scp&quot;
++  458,  &quot;Dial-up script files (*.scp)&quot;
++  459,  &quot;Browse Dial-Up Scripts&quot;
++  460,  &quot;You must select at least one modem or adapter.&quot;
++  461,  &quot;Phone number&quot;
+ }
+ 
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-  464,  &quot;Status\0&quot;
+-  465,  &quot;&amp;New suffix:\0&quot;
+-  466,  &quot;&amp;Suffixes:\0&quot;
+-  467,  &quot;Phone Number Suffixes\0&quot;
+-  470,  &quot;Manual Modem Command Terminal\0&quot;
+-  471,  &quot;After Dial Terminal\0&quot;
+-  472,  &quot;Before Dial Terminal\0&quot;
+-  474,  &quot;10 minutes\0&quot;
+-  475,  &quot;10 seconds\0&quot;
+-  476,  &quot;1 hour\0&quot;
+-  477,  &quot;1 minute\0&quot;
+-  478,  &quot;24 hours\0&quot;
+-  479,  &quot;2 hours\0&quot;
++  464,  &quot;Status&quot;
++  465,  &quot;&amp;New suffix:&quot;
++  466,  &quot;&amp;Suffixes:&quot;
++  467,  &quot;Phone Number Suffixes&quot;
++  470,  &quot;Manual Modem Command Terminal&quot;
++  471,  &quot;After Dial Terminal&quot;
++  472,  &quot;Before Dial Terminal&quot;
++  474,  &quot;10 minutes&quot;
++  475,  &quot;10 seconds&quot;
++  476,  &quot;1 hour&quot;
++  477,  &quot;1 minute&quot;
++  478,  &quot;24 hours&quot;
++  479,  &quot;2 hours&quot;
+ }
+ 
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-  480,  &quot;2 minutes\0&quot;
+-  481,  &quot;30 minutes\0&quot;
+-  482,  &quot;30 seconds\0&quot;
+-  483,  &quot;3 seconds\0&quot;
+-  484,  &quot;4 hours\0&quot;
+-  485,  &quot;4 minutes\0&quot;
+-  486,  &quot;5 minutes\0&quot;
+-  487,  &quot;5 seconds\0&quot;
+-  488,  &quot;8 hours\0&quot;
+-  489,  &quot;never\0&quot;
+-  492,  &quot;Discard multiple line settings for the entry?\0&quot;
+-  493,  &quot;Unavailable device\0&quot;
+-  495,  &quot;Remote Access Preferences\0&quot;
++  480,  &quot;2 minutes&quot;
++  481,  &quot;30 minutes&quot;
++  482,  &quot;30 seconds&quot;
++  483,  &quot;3 seconds&quot;
++  484,  &quot;4 hours&quot;
++  485,  &quot;4 minutes&quot;
++  486,  &quot;5 minutes&quot;
++  487,  &quot;5 seconds&quot;
++  488,  &quot;8 hours&quot;
++  489,  &quot;never&quot;
++  492,  &quot;Discard multiple line settings for the entry?&quot;
++  493,  &quot;Unavailable device&quot;
++  495,  &quot;Remote Access Preferences&quot;
+ }
+ 
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-  500,  &quot;Cannot enable on-demand dialing.\0&quot;
+-  502,  &quot;Cannot disable on-demand dialing.\0&quot;
+-  505,  &quot;VPN1\0&quot;
+-  511,  &quot;When Internet Connection Sharing is enabled, your network adapter will be set to use IP address 192.168.0.1. This might cause your computer to lose connectivity with other computers on your network. If these other computers have static IP addresses, set them to obtain their IP addresses automatically. Are you sure you want to enable Internet Connection Sharing?\0&quot;
++  500,  &quot;Cannot enable on-demand dialing.&quot;
++  502,  &quot;Cannot disable on-demand dialing.&quot;
++  505,  &quot;VPN1&quot;
++  511,  &quot;When Internet Connection Sharing is enabled, your network adapter will be set to use IP address 192.168.0.1. This might cause your computer to lose connectivity with other computers on your network. If these other computers have static IP addresses, set them to obtain their IP addresses automatically. Are you sure you want to enable Internet Connection Sharing?&quot;
+ }
+ 
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-  513,  &quot;%1 using '%2'\0&quot;
+-  514,  &quot;&amp;Connect\0&quot;
+-  515,  &quot;Let the server determine encryption\0&quot;
+-  516,  &quot;Always encrypt my data\0&quot;
+-  517,  &quot;Use MPPE-40 data encryption\0&quot;
+-  518,  &quot;Use MPPE-128 data encryption\0&quot;
+-  519,  &quot;The current encryption selection requires MS-CHAP or EAP authentication.\0&quot;
+-  520,  &quot;Custom Authentication Message\0&quot;
+-  521,  &quot;Connecting to %1...\0&quot;
+-  523,  &quot;Automatic\0&quot;
+-  524,  &quot;Point to Point Tunneling Protocol (PPTP)\0&quot;
+-  525,  &quot;Layer 2 Tunneling Protocol with IPsec (L2TP/IPSec)\0&quot;
+-  526,  &quot;IKEv2\0&quot;
+-  527,  &quot;Secure Socket Tunneling Protocol (SSTP)\0&quot;
++  513,  &quot;%1 using '%2'&quot;
++  514,  &quot;&amp;Connect&quot;
++  515,  &quot;Let the server determine encryption&quot;
++  516,  &quot;Always encrypt my data&quot;
++  517,  &quot;Use MPPE-40 data encryption&quot;
++  518,  &quot;Use MPPE-128 data encryption&quot;
++  519,  &quot;The current encryption selection requires MS-CHAP or EAP authentication.&quot;
++  520,  &quot;Custom Authentication Message&quot;
++  521,  &quot;Connecting to %1...&quot;
++  523,  &quot;Automatic&quot;
++  524,  &quot;Point to Point Tunneling Protocol (PPTP)&quot;
++  525,  &quot;Layer 2 Tunneling Protocol with IPsec (L2TP/IPSec)&quot;
++  526,  &quot;IKEv2&quot;
++  527,  &quot;Secure Socket Tunneling Protocol (SSTP)&quot;
+ }
+ 
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-  529,  &quot;Virtual Private Connection\0&quot;
+-  530,  &quot;Use any form of authentication required including clear text. Do not encrypt data.\0&quot;
+-  531,  &quot;Use any form of authentication that requires passwords to be encrypted. Do not encrypt data.\0&quot;
+-  532,  &quot;Type a name for the entry.\0&quot;
+-  533,  &quot;Encrypt passwords and data.\0&quot;
+-  534,  &quot;Type a port number between 1 and 65535.\0&quot;
+-  535,  &quot;Specify custom authentication and data encryption with the Settings button.\0&quot;
+-  536,  &quot;Use any form of authentication that requires encrypted passwords. Do not encrypt data.\0&quot;
+-  537,  &quot;Encrypt passwords and data.\0&quot;
+-  538,  &quot;Specify custom authentication and data encryption with the Settings button.\0&quot;
+-  539,  &quot;The port number is already used by another entry.\nEnter a unique port number.\0&quot;
+-  540,  &quot;Enter one or more ports for incoming responses.\0&quot;
+-  541,  &quot;Select the entry you want to delete.\0&quot;
+-  542,  &quot;1 second\0&quot;
+-  543,  &quot;Select the entry you want to modify.\0&quot;
++  529,  &quot;Virtual Private Connection&quot;
++  530,  &quot;Use any form of authentication required including clear text. Do not encrypt data.&quot;
++  531,  &quot;Use any form of authentication that requires passwords to be encrypted. Do not encrypt data.&quot;
++  532,  &quot;Type a name for the entry.&quot;
++  533,  &quot;Encrypt passwords and data.&quot;
++  534,  &quot;Type a port number between 1 and 65535.&quot;
++  535,  &quot;Specify custom authentication and data encryption with the Settings button.&quot;
++  536,  &quot;Use any form of authentication that requires encrypted passwords. Do not encrypt data.&quot;
++  537,  &quot;Encrypt passwords and data.&quot;
++  538,  &quot;Specify custom authentication and data encryption with the Settings button.&quot;
++  539,  &quot;The port number is already used by another entry.\nEnter a unique port number.&quot;
++  540,  &quot;Enter one or more ports for incoming responses.&quot;
++  541,  &quot;Select the entry you want to delete.&quot;
++  542,  &quot;1 second&quot;
++  543,  &quot;Select the entry you want to modify.&quot;
+ }
+ 
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-  576,  &quot;20 minutes\0&quot;
+-  579,  &quot;Specify a name for this connection to your workplace.\0&quot;
+-  581,  &quot;Network Application Settings\0&quot;
+-  582,  &quot;Type a name for this connection in the following box.\0&quot;
+-  584,  &quot;Type the name of your ISP in the following box.\0&quot;
+-  585,  &quot;Advanced Properties\0&quot;
+-  586,  &quot;Please type the IP address of the server computer on the private network.\0&quot;
+-  587,  &quot;Advanced Settings\0&quot;
+-  588,  &quot;The entry name begins with a period or contains characters that are not valid. \nChoose a different name.\0&quot;
+-  589,  &quot;Properties\0&quot;
++  576,  &quot;20 minutes&quot;
++  579,  &quot;Specify a name for this connection to your workplace.&quot;
++  581,  &quot;Network Application Settings&quot;
++  582,  &quot;Type a name for this connection in the following box.&quot;
++  584,  &quot;Type the name of your ISP in the following box.&quot;
++  585,  &quot;Advanced Properties&quot;
++  586,  &quot;Please type the IP address of the server computer on the private network.&quot;
++  587,  &quot;Advanced Settings&quot;
++  588,  &quot;The entry name begins with a period or contains characters that are not valid. \nChoose a different name.&quot;
++  589,  &quot;Properties&quot;
+ }
+ 
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-  597,  &quot;Diagnostic Report\0&quot;
+-  598,  &quot;The destination address is an IPv6 address.PPTP does not work over IPv6. The VPN connection type will be set to Automatic.\0&quot;
++  597,  &quot;Diagnostic Report&quot;
++  598,  &quot;The destination address is an IPv6 address.PPTP does not work over IPv6. The VPN connection type will be set to Automatic.&quot;
+ }
+ 
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-  1512,  &quot;Communications Port\0&quot;
++  1512,  &quot;Communications Port&quot;
+ }
+ 
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-  1523,  &quot; channel\0&quot;
+-  1528,  &quot;Direct Connection\0&quot;
+-  1529,  &quot;Select a device for this connection.\0&quot;
+-  1530,  &quot;Verdana Bold\0&quot;
+-  1531,  &quot;12\0&quot;
+-  1532,  &quot;Connection Type\0&quot;
+-  1533,  &quot;Select the type of demand-dial interface you want to create.\0&quot;
+-  1534,  &quot;Select a Device\0&quot;
+-  1535,  &quot;This is the device that will be used to make the connection.\0&quot;
++  1523,  &quot; channel&quot;
++  1528,  &quot;Direct Connection&quot;
++  1529,  &quot;Select a device for this connection.&quot;
++  1530,  &quot;Verdana Bold&quot;
++  1531,  &quot;12&quot;
++  1532,  &quot;Connection Type&quot;
++  1533,  &quot;Select the type of demand-dial interface you want to create.&quot;
++  1534,  &quot;Select a Device&quot;
++  1535,  &quot;This is the device that will be used to make the connection.&quot;
+ }
+ 
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-  1536,  &quot;Phone Number\0&quot;
+-  1537,  &quot;Type the phone number of the remote server or router you are calling.\0&quot;
+-  1538,  &quot;VPN Type\0&quot;
+-  1539,  &quot;Select the type of VPN connection you want to create.\0&quot;
+-  1540,  &quot;Destination Address\0&quot;
+-  1541,  &quot;What is the name or address of the remote router?\0&quot;
+-  1548,  &quot;Router Scripting\0&quot;
+-  1549,  &quot;You can set up a script for connecting to the remote router.\0&quot;
+-  1550,  &quot;Dial-In Credentials\0&quot;
+-  1551,  &quot;Configure the user name and password that the remote router will use when it dials in to this server.\0&quot;
++  1536,  &quot;Phone Number&quot;
++  1537,  &quot;Type the phone number of the remote server or router you are calling.&quot;
++  1538,  &quot;VPN Type&quot;
++  1539,  &quot;Select the type of VPN connection you want to create.&quot;
++  1540,  &quot;Destination Address&quot;
++  1541,  &quot;What is the name or address of the remote router?&quot;
++  1548,  &quot;Router Scripting&quot;
++  1549,  &quot;You can set up a script for connecting to the remote router.&quot;
++  1550,  &quot;Dial-In Credentials&quot;
++  1551,  &quot;Configure the user name and password that the remote router will use when it dials in to this server.&quot;
+ }
+ 
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-  1552,  &quot;Dial-Out Credentials\0&quot;
+-  1553,  &quot;Supply the user name and password to be used when connecting to the remote router.\0&quot;
+-  1554,  &quot;Interface Name\0&quot;
+-  1555,  &quot;You can type a friendly name for this connection.\0&quot;
+-  1556,  &quot;No available devices\0&quot;
+-  1557,  &quot;A user account named %1 already exists on the local computer. Should the demand-dial interface be configured to use this user account?\0&quot;
+-  1559,  &quot;Allow unsecured password\0&quot;
+-  1560,  &quot;Require secured password\0&quot;
+-  1561,  &quot;Use smart card\0&quot;
+-  1562,  &quot;You must select at least one password authentication protocol.\0&quot;
+-  1563,  &quot;No encryption allowed (server will disconnect if it requires encryption)\0&quot;
+-  1564,  &quot;Optional encryption (connect even if no encryption)\0&quot;
+-  1565,  &quot;Require encryption (disconnect if server declines)\0&quot;
+-  1566,  &quot;Maximum strength encryption (disconnect if server declines)\0&quot;
+-  1567,  &quot; (encryption enabled)\0&quot;
++  1552,  &quot;Dial-Out Credentials&quot;
++  1553,  &quot;Supply the user name and password to be used when connecting to the remote router.&quot;
++  1554,  &quot;Interface Name&quot;
++  1555,  &quot;You can type a friendly name for this connection.&quot;
++  1556,  &quot;No available devices&quot;
++  1557,  &quot;A user account named %1 already exists on the local computer. Should the demand-dial interface be configured to use this user account?&quot;
++  1559,  &quot;Allow unsecured password&quot;
++  1560,  &quot;Require secured password&quot;
++  1561,  &quot;Use smart card&quot;
++  1562,  &quot;You must select at least one password authentication protocol.&quot;
++  1563,  &quot;No encryption allowed (server will disconnect if it requires encryption)&quot;
++  1564,  &quot;Optional encryption (connect even if no encryption)&quot;
++  1565,  &quot;Require encryption (disconnect if server declines)&quot;
++  1566,  &quot;Maximum strength encryption (disconnect if server declines)&quot;
++  1567,  &quot; (encryption enabled)&quot;
+ }
+ 
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-  1570,  &quot;The selected EAP package does not provide encryption keys. Select an EAP package that does provide keys or choose not to encrypt.\0&quot;
+-  1571,  &quot;The current encryption selection requires EAP or MS-CHAP v2 logon security method.\0&quot;
+-  1572,  &quot;Protocols and Security\0&quot;
+-  1573,  &quot;Select transports and security options for this connection.\0&quot;
+-  1574,  &quot;The protocols you have selected include PAP and/or CHAP.  If one of these is negotiated, data encryption will not occur. Do you want to keep these settings?\0&quot;
+-  1575,  &quot;To connect to '%1', you must first be connected to '%2'.  Do you want  to connect to '%2' now?\0&quot;
+-  1576,  &quot;Connecting over parallel cable...\0&quot;
+-  1577,  &quot;Connecting over infrared...\0&quot;
+-  1578,  &quot;Parallel cable connected.\0&quot;
+-  1579,  &quot;Infrared connected.\0&quot;
+-  1580,  &quot;This connection was configured to use a data encryption strength that is not supported by the installed software. The security properties of this connection have been reset to the available encryption strengths.\0&quot;
+-  1582,  &quot;Please enter a user name.\0&quot;
+-  1583,  &quot;This user name and password will be saved for your own use. There is already a user name and password saved for all other users of this connection. Do you want to delete the user name and password saved for all other users?\0&quot;
++  1570,  &quot;The selected EAP package does not provide encryption keys. Select an EAP package that does provide keys or choose not to encrypt.&quot;
++  1571,  &quot;The current encryption selection requires EAP or MS-CHAP v2 logon security method.&quot;
++  1572,  &quot;Protocols and Security&quot;
++  1573,  &quot;Select transports and security options for this connection.&quot;
++  1574,  &quot;The protocols you have selected include PAP and/or CHAP.  If one of these is negotiated, data encryption will not occur. Do you want to keep these settings?&quot;
++  1575,  &quot;To connect to '%1', you must first be connected to '%2'.  Do you want  to connect to '%2' now?&quot;
++  1576,  &quot;Connecting over parallel cable...&quot;
++  1577,  &quot;Connecting over infrared...&quot;
++  1578,  &quot;Parallel cable connected.&quot;
++  1579,  &quot;Infrared connected.&quot;
++  1580,  &quot;This connection was configured to use a data encryption strength that is not supported by the installed software. The security properties of this connection have been reset to the available encryption strengths.&quot;
++  1582,  &quot;Please enter a user name.&quot;
++  1583,  &quot;This user name and password will be saved for your own use. There is already a user name and password saved for all other users of this connection. Do you want to delete the user name and password saved for all other users?&quot;
+ }
+ 
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-  1584,  &quot;For example, you could type the name of your workplace or the name of a server you will connect to.\0&quot;
+-  1585,  &quot;Account Information\0&quot;
+-  1586,  &quot;The request cannot be completed at this time. The system must first be restarted before any configuration changes can be made.\0&quot;
+-  1587,  &quot;The request cannot be completed because another network property dialog box is open. Please close all other dialog boxes and then try again.\0&quot;
+-  1588,  &quot;The request cannot be completed because access has been denied.\0&quot;
+-  1589,  &quot;The following message was received from your service provider:\r\n\r\n%1\0&quot;
+-  1590,  &quot;Reconnect %1\0&quot;
+-  1591,  &quot;Service Name\0&quot;
+-  1592,  &quot;What is the name of the service that provides your broadband connection?\0&quot;
+-  1593,  &quot;You will need an account name and password to sign in to your account\0&quot;
+-  1594,  &quot;PPPOE1-0\0&quot;
+-  1595,  &quot;Point-to-Point Protocol over Ethernet (PPPoE)\0&quot;
+-  1596,  &quot;Type of &amp;broadband connection to make:\0&quot;
++  1584,  &quot;For example, you could type the name of your workplace or the name of a server you will connect to.&quot;
++  1585,  &quot;Account Information&quot;
++  1586,  &quot;The request cannot be completed at this time. The system must first be restarted before any configuration changes can be made.&quot;
++  1587,  &quot;The request cannot be completed because another network property dialog box is open. Please close all other dialog boxes and then try again.&quot;
++  1588,  &quot;The request cannot be completed because access has been denied.&quot;
++  1589,  &quot;The following message was received from your service provider:\r\n\r\n%1&quot;
++  1590,  &quot;Reconnect %1&quot;
++  1591,  &quot;Service Name&quot;
++  1592,  &quot;What is the name of the service that provides your broadband connection?&quot;
++  1593,  &quot;You will need an account name and password to sign in to your account&quot;
++  1594,  &quot;PPPOE1-0&quot;
++  1595,  &quot;Point-to-Point Protocol over Ethernet (PPPoE)&quot;
++  1596,  &quot;Type of &amp;broadband connection to make:&quot;
+ }
+ 
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-  1606,  &quot;You must select an EAP method for this connection.\0&quot;
+-  1611,  &quot;Broadband Connection\0&quot;
+-  1612,  &quot;You have selected to use a preshared key but you have not entered one. \nPlease enter a preshared key.\0&quot;
+-  1613,  &quot;Cannot Commit Credentials\0&quot;
++  1606,  &quot;You must select an EAP method for this connection.&quot;
++  1611,  &quot;Broadband Connection&quot;
++  1612,  &quot;You have selected to use a preshared key but you have not entered one. \nPlease enter a preshared key.&quot;
++  1613,  &quot;Cannot Commit Credentials&quot;
+ }
+ 
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-  1634,  &quot;Because the Windows Management Instrumentation (WMI) service has been disabled, Windows cannot display the properties of this connection or the home network.\n\nTo configure the properties of this connection or your home network, first enable the WMI service. To do this, in Administrative Tools in Control Panel, double-click Services, right-click Windows Management Instrumentation, and then click Start.\0&quot;
+-  1635,  &quot;Windows cannot display the properties of this connection. The Windows Management Instrumentation (WMI) information might be corrupted. To correct this, use System Restore to restore Windows to an earlier time (called a restore point). System Restore is located in the System Tools folder in Accessories.\0&quot;
+-  1646,  &quot;Allow incoming echo request\0&quot;
+-  1647,  &quot;Allow incoming timestamp request\0&quot;
++  1634,  &quot;Because the Windows Management Instrumentation (WMI) service has been disabled, Windows cannot display the properties of this connection or the home network.\n\nTo configure the properties of this connection or your home network, first enable the WMI service. To do this, in Administrative Tools in Control Panel, double-click Services, right-click Windows Management Instrumentation, and then click Start.&quot;
++  1635,  &quot;Windows cannot display the properties of this connection. The Windows Management Instrumentation (WMI) information might be corrupted. To correct this, use System Restore to restore Windows to an earlier time (called a restore point). System Restore is located in the System Tools folder in Accessories.&quot;
++  1646,  &quot;Allow incoming echo request&quot;
++  1647,  &quot;Allow incoming timestamp request&quot;
+ }
+ 
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-  1648,  &quot;Allow incoming mask request\0&quot;
+-  1649,  &quot;Allow incoming router request\0&quot;
+-  1650,  &quot;Allow outgoing destination unreachable\0&quot;
+-  1651,  &quot;Allow outgoing source quench\0&quot;
+-  1652,  &quot;Allow outgoing parameter problem\0&quot;
+-  1653,  &quot;Allow outgoing time exceeded\0&quot;
+-  1654,  &quot;Allow redirect\0&quot;
+-  1655,  &quot;log\0&quot;
+-  1656,  &quot;*.log\0&quot;
+-  1657,  &quot;Firewall log files (*.log)\0&quot;
+-  1658,  &quot;Browse\0&quot;
++  1648,  &quot;Allow incoming mask request&quot;
++  1649,  &quot;Allow incoming router request&quot;
++  1650,  &quot;Allow outgoing destination unreachable&quot;
++  1651,  &quot;Allow outgoing source quench&quot;
++  1652,  &quot;Allow outgoing parameter problem&quot;
++  1653,  &quot;Allow outgoing time exceeded&quot;
++  1654,  &quot;Allow redirect&quot;
++  1655,  &quot;log&quot;
++  1656,  &quot;*.log&quot;
++  1657,  &quot;Firewall log files (*.log)&quot;
++  1658,  &quot;Browse&quot;
+ }
+ 
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-  1665,  &quot;Messages sent to this computer will be repeated back to the sender. This is commonly used for troubleshooting, for example, to ping a computer.\0&quot;
+-  1666,  &quot;Data sent to this computer can be acknowledged with a confirmation message indicating the time that the data was received.\0&quot;
+-  1667,  &quot;This computer will listen for and respond to requests for more information about the public network to which it is attached.\0&quot;
+-  1668,  &quot;This computer will respond to requests for information about the routes it recognizes.\0&quot;
+-  1669,  &quot;Data sent over the Internet that fails to reach this computer due to an error will be discarded and acknowledged with a &quot;&quot;destination unreachable&quot;&quot; message explaining the failure.\0&quot;
+-  1670,  &quot;When this computer's ability to process incoming data cannot keep up with the rate of a transmission, data will be dropped and the sender will be asked to slow down.\0&quot;
+-  1671,  &quot;When this computer discards data it has received due to a problematic header, it will reply to the sender with a &quot;&quot;bad header&quot;&quot; error message.\0&quot;
+-  1672,  &quot;When this computer discards an incomplete data transmission because the entire transmission required more time than allowed, it will reply to the sender with a &quot;&quot;time expired&quot;&quot; message.\0&quot;
+-  1673,  &quot;Data sent from this computer will be rerouted if the default path changes.\0&quot;
+-  1675,  &quot;The value entered for the log file size is not valid. Enter a value between 1 and 32767 KB.\0&quot;
++  1665,  &quot;Messages sent to this computer will be repeated back to the sender. This is commonly used for troubleshooting, for example, to ping a computer.&quot;
++  1666,  &quot;Data sent to this computer can be acknowledged with a confirmation message indicating the time that the data was received.&quot;
++  1667,  &quot;This computer will listen for and respond to requests for more information about the public network to which it is attached.&quot;
++  1668,  &quot;This computer will respond to requests for information about the routes it recognizes.&quot;
++  1669,  &quot;Data sent over the Internet that fails to reach this computer due to an error will be discarded and acknowledged with a &quot;&quot;destination unreachable&quot;&quot; message explaining the failure.&quot;
++  1670,  &quot;When this computer's ability to process incoming data cannot keep up with the rate of a transmission, data will be dropped and the sender will be asked to slow down.&quot;
++  1671,  &quot;When this computer discards data it has received due to a problematic header, it will reply to the sender with a &quot;&quot;bad header&quot;&quot; error message.&quot;
++  1672,  &quot;When this computer discards an incomplete data transmission because the entire transmission required more time than allowed, it will reply to the sender with a &quot;&quot;time expired&quot;&quot; message.&quot;
++  1673,  &quot;Data sent from this computer will be rerouted if the default path changes.&quot;
++  1675,  &quot;The value entered for the log file size is not valid. Enter a value between 1 and 32767 KB.&quot;
+ }
+ 
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-  1685,  &quot;Your user account does not have permission to use this connection. Usually, this is because you are logged in as Guest.\0&quot;
+-  1686,  &quot;Type a user name and password. (If you have forgotten an existing account name or password, contact your network administrator.)\0&quot;
+-  1688,  &quot;ISP N&amp;ame\0&quot;
+-  1689,  &quot;Company N&amp;ame\0&quot;
+-  1690,  &quot;What is the phone number you will use to make this connection?\n\0&quot;
+-  1691,  &quot;Static Routes for Remote Networks\0&quot;
+-  1692,  &quot;A static route is a manually defined, permanent route between two networks.\0&quot;
+-  1693,  &quot;Destination\0&quot;
+-  1694,  &quot;Network Mask/Prefix length\0&quot;
++  1685,  &quot;Your user account does not have permission to use this connection. Usually, this is because you are logged in as Guest.&quot;
++  1686,  &quot;Type a user name and password. (If you have forgotten an existing account name or password, contact your network administrator.)&quot;
++  1688,  &quot;ISP N&amp;ame&quot;
++  1689,  &quot;Company N&amp;ame&quot;
++  1690,  &quot;What is the phone number you will use to make this connection?\n&quot;
++  1691,  &quot;Static Routes for Remote Networks&quot;
++  1692,  &quot;A static route is a manually defined, permanent route between two networks.&quot;
++  1693,  &quot;Destination&quot;
++  1694,  &quot;Network Mask/Prefix length&quot;
+ }
+ 
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-  1696,  &quot;Metric\0&quot;
+-  1697,  &quot;Destination is required.\0&quot;
+-  1698,  &quot;Network mask is required.\0&quot;
+-  1699,  &quot;Metric is required.\0&quot;
+-  1700,  &quot;Invalid mask.\0&quot;
+-  1701,  &quot;Cannot add duplicate route.\0&quot;
+-  1702,  &quot;Cannot load diagnostic functions\0&quot;
+-  1704,  &quot;Enter a valid file name.\0&quot;
+-  1706,  &quot;Enter a valid e-mail address.\0&quot;
+-  1710,  &quot;No diagnostic log file is available.\0&quot;
+-  1711,  &quot;Unable to launch explorer.exe to load the diagnostic log file.\0&quot;
++  1696,  &quot;Metric&quot;
++  1697,  &quot;Destination is required.&quot;
++  1698,  &quot;Network mask is required.&quot;
++  1699,  &quot;Metric is required.&quot;
++  1700,  &quot;Invalid mask.&quot;
++  1701,  &quot;Cannot add duplicate route.&quot;
++  1702,  &quot;Cannot load diagnostic functions&quot;
++  1704,  &quot;Enter a valid file name.&quot;
++  1706,  &quot;Enter a valid e-mail address.&quot;
++  1710,  &quot;No diagnostic log file is available.&quot;
++  1711,  &quot;Unable to launch explorer.exe to load the diagnostic log file.&quot;
+ }
+ 
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-  1713,  &quot;This process can take several minutes. Do you want to continue?\0&quot;
+-  1715,  &quot;Cannot export log to the file you specified. There might not be enough disk space.\0&quot;
+-  1717,  &quot;Cannot send the log. Make sure that Microsoft Outlook is installed and configured correctly.\0&quot;
+-  1718,  &quot;Generating report...\0&quot;
+-  1720,  &quot;Writing to file is finished.\0&quot;
+-  1722,  &quot;Sending e-mail is finished.\0&quot;
+-  1724,  &quot;Operation was unsuccessful.\0&quot;
+-  1727,  &quot;Browse for Folder\0&quot;
++  1713,  &quot;This process can take several minutes. Do you want to continue?&quot;
++  1715,  &quot;Cannot export log to the file you specified. There might not be enough disk space.&quot;
++  1717,  &quot;Cannot send the log. Make sure that Microsoft Outlook is installed and configured correctly.&quot;
++  1718,  &quot;Generating report...&quot;
++  1720,  &quot;Writing to file is finished.&quot;
++  1722,  &quot;Sending e-mail is finished.&quot;
++  1724,  &quot;Operation was unsuccessful.&quot;
++  1727,  &quot;Browse for Folder&quot;
+ }
+ 
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-  1728,  &quot;Finished\0&quot;
++  1728,  &quot;Finished&quot;
+ }
+ 
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-  1749,  &quot;PPTP does not work over IPv6. The VPN connection type will be set to Automatic.\0&quot;
+-  1750,  &quot;The current VPN connection settings include PPTP as the connection type and PAP as an allowed authentication protocol. Data is not encrypted when PPTP and PAP are used. Change the security settings or use a different connection type.\0&quot;
+-  1751,  &quot;The protocols you have selected include PAP and/or CHAP. The current VPN selection might not encrypt data. Do you want to keep the VPN selection?\0&quot;
+-  1753,  &quot;TCP/IPv6\0&quot;
++  1749,  &quot;PPTP does not work over IPv6. The VPN connection type will be set to Automatic.&quot;
++  1750,  &quot;The current VPN connection settings include PPTP as the connection type and PAP as an allowed authentication protocol. Data is not encrypted when PPTP and PAP are used. Change the security settings or use a different connection type.&quot;
++  1751,  &quot;The protocols you have selected include PAP and/or CHAP. The current VPN selection might not encrypt data. Do you want to keep the VPN selection?&quot;
++  1753,  &quot;TCP/IPv6&quot;
+ }
+ 
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-  1772,  &quot;Invalid prefix length.\0&quot;
+-  1773,  &quot;Invalid destination address\0&quot;
++  1772,  &quot;Invalid prefix length.&quot;
++  1773,  &quot;Invalid destination address&quot;
+ }
+ 
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-  7301,  &quot;Incoming TCP/IP Properties\0&quot;
+-  7302,  &quot;You must choose a value from %1 to %2 for this field.\0&quot;
+-  7306,  &quot;Incoming Connections Error\0&quot;
+-  7307,  &quot;Incoming Connections General Error\0&quot;
+-  7308,  &quot;Incoming Connections\0&quot;
+-  7309,  &quot;Incoming Connections Networking Error\0&quot;
+-  7310,  &quot;Incoming Connections Multilink Status Error\0&quot;
+-  7311,  &quot;Incoming Connections Error\0&quot;
++  7301,  &quot;Incoming TCP/IP Properties&quot;
++  7302,  &quot;You must choose a value from %1 to %2 for this field.&quot;
++  7306,  &quot;Incoming Connections Error&quot;
++  7307,  &quot;Incoming Connections General Error&quot;
++  7308,  &quot;Incoming Connections&quot;
++  7309,  &quot;Incoming Connections Networking Error&quot;
++  7310,  &quot;Incoming Connections Multilink Status Error&quot;
++  7311,  &quot;Incoming Connections Error&quot;
+ }
+ 
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-  7312,  &quot;Incoming Connections Initialization Error\0&quot;
+-  7313,  &quot;Incoming Connections TCP/IP Properties Error\0&quot;
+-  7315,  &quot;Incoming Connections Error\0&quot;
+-  7316,  &quot;Generic\0&quot;
+-  7317,  &quot;Device\0&quot;
+-  7318,  &quot;Miscellaneous Database\0&quot;
+-  7319,  &quot;User Database\0&quot;
+-  7320,  &quot;Protocol Database\0&quot;
+-  7321,  &quot;You must enter a logon name for the new user or press cancel.\0&quot;
+-  7322,  &quot;The password you entered was too short.\0&quot;
+-  7323,  &quot;The passwords entered are not the same.  Please re-enter them.\0&quot;
+-  7324,  &quot;An internal error has occurred.  \0&quot;
+-  7325,  &quot;Listview\0&quot;
+-  7326,  &quot;An error has occurred while attempting to commit the changes you have made to the local user database.  \0&quot;
+-  7327,  &quot;You have insufficient privileges to add a user to the local system database.  \0&quot;
++  7312,  &quot;Incoming Connections Initialization Error&quot;
++  7313,  &quot;Incoming Connections TCP/IP Properties Error&quot;
++  7315,  &quot;Incoming Connections Error&quot;
++  7316,  &quot;Generic&quot;
++  7317,  &quot;Device&quot;
++  7318,  &quot;Miscellaneous Database&quot;
++  7319,  &quot;User Database&quot;
++  7320,  &quot;Protocol Database&quot;
++  7321,  &quot;You must enter a logon name for the new user or press cancel.&quot;
++  7322,  &quot;The password you entered was too short.&quot;
++  7323,  &quot;The passwords entered are not the same.  Please re-enter them.&quot;
++  7324,  &quot;An internal error has occurred.  &quot;
++  7325,  &quot;Listview&quot;
++  7326,  &quot;An error has occurred while attempting to commit the changes you have made to the local user database.  &quot;
++  7327,  &quot;You have insufficient privileges to add a user to the local system database.  &quot;
+ }
+ 
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-  7328,  &quot;The user you are trying create already exists in the local user database.\0&quot;
+-  7329,  &quot;The user was not added to the local user database because the password you entered was rejected.\0&quot;
+-  7330,  &quot;Unable to reload the system user database because of an internal error.\0&quot;
+-  7331,  &quot;An internal error has occurred:  The local user database handle is corrupt.\0&quot;
+-  7332,  &quot;Unable to load the resources necessary to display the user tab.\0&quot;
+-  7333,  &quot;An internal error occurred while attempting to rollback the changes you made to the local user database.  \0&quot;
+-  7334,  &quot;The device database handle is corrupt.\0&quot;
+-  7335,  &quot;Unable to load the resources necessary to display the general tab.\0&quot;
+-  7336,  &quot;An error has occurred while attempting to commit some of the device/vpn related changes you have made.  \0&quot;
+-  7337,  &quot;An internal error occurred.\0&quot;
+-  7338,  &quot;An internal error occurred: The networking component database handle is corrupt.\0&quot;
+-  7339,  &quot;An internal error has occurred.  \0&quot;
+-  7340,  &quot;An error has occurred while attempting to commit the changes you have made to the networking components.\0&quot;
+-  7341,  &quot;An internal error occurred.\0&quot;
+-  7342,  &quot;Unable to commit the changes you made to the TCP/IP protocol to the system.  \0&quot;
++  7328,  &quot;The user you are trying create already exists in the local user database.&quot;
++  7329,  &quot;The user was not added to the local user database because the password you entered was rejected.&quot;
++  7330,  &quot;Unable to reload the system user database because of an internal error.&quot;
++  7331,  &quot;An internal error has occurred:  The local user database handle is corrupt.&quot;
++  7332,  &quot;Unable to load the resources necessary to display the user tab.&quot;
++  7333,  &quot;An internal error occurred while attempting to rollback the changes you made to the local user database.  &quot;
++  7334,  &quot;The device database handle is corrupt.&quot;
++  7335,  &quot;Unable to load the resources necessary to display the general tab.&quot;
++  7336,  &quot;An error has occurred while attempting to commit some of the device/vpn related changes you have made.  &quot;
++  7337,  &quot;An internal error occurred.&quot;
++  7338,  &quot;An internal error occurred: The networking component database handle is corrupt.&quot;
++  7339,  &quot;An internal error has occurred.  &quot;
++  7340,  &quot;An error has occurred while attempting to commit the changes you have made to the networking components.&quot;
++  7341,  &quot;An internal error occurred.&quot;
++  7342,  &quot;Unable to commit the changes you made to the TCP/IP protocol to the system.  &quot;
+ }
+ 
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-  7344,  &quot;Unable to display the TCPIP properties.\0&quot;
+-  7346,  &quot;Unable to load TCP/IP properties from the system.  \0&quot;
+-  7348,  &quot;Incoming Connections depend on the Routing and Remote Access service which was unable to start.  For more information, check the system event log.\0&quot;
+-  7349,  &quot;Unable to allow the editing of networking components at this time because they are currently being modified elsewhere.\0&quot;
+-  7350,  &quot;The new user you entered was not added to the local user database because  the name or password entered violated a system policy (it was too large, too small, or ill-formed).  \0&quot;
+-  7351,  &quot;The system is unable to delete the requested user.  \0&quot;
+-  7352,  &quot;Unable to remove the selected network component because it is in use.\0&quot;
+-  7353,  &quot;Incoming Connections Warning\0&quot;
+-  7354,  &quot;Any users that you delete will be permanently removed from the system even if cancel is pressed.  Are you sure you want to permanently remove %s? \0&quot;
+-  7355,  &quot;You are about to switch to a system management console.  This Incoming Connections property sheet will be closed and any changes you may have made will be committed to the system.  Is it ok to continue?\0&quot;
+-  7356,  &quot;Your Network Mask value has been changed.  A zero bit in a mask can only be followed by other zero bits.  For example, a Network Mask value, expressed in decimal dotted notation, of 255.255.0.0, is valid, but 255.0.255.0 is not.  \n\0&quot;
+-  7357,  &quot;Who may connect to this computer?\0&quot;
+-  7358,  &quot;You can specify the users who can connect to this computer.\0&quot;
+-  7359,  &quot;How will people connect?\0&quot;
++  7344,  &quot;Unable to display the TCPIP properties.&quot;
++  7346,  &quot;Unable to load TCP/IP properties from the system.  &quot;
++  7348,  &quot;Incoming Connections depend on the Routing and Remote Access service which was unable to start.  For more information, check the system event log.&quot;
++  7349,  &quot;Unable to allow the editing of networking components at this time because they are currently being modified elsewhere.&quot;
++  7350,  &quot;The new user you entered was not added to the local user database because  the name or password entered violated a system policy (it was too large, too small, or ill-formed).  &quot;
++  7351,  &quot;The system is unable to delete the requested user.  &quot;
++  7352,  &quot;Unable to remove the selected network component because it is in use.&quot;
++  7353,  &quot;Incoming Connections Warning&quot;
++  7354,  &quot;Any users that you delete will be permanently removed from the system even if cancel is pressed.  Are you sure you want to permanently remove %s? &quot;
++  7355,  &quot;You are about to switch to a system management console.  This Incoming Connections property sheet will be closed and any changes you may have made will be committed to the system.  Is it ok to continue?&quot;
++  7356,  &quot;Your Network Mask value has been changed.  A zero bit in a mask can only be followed by other zero bits.  For example, a Network Mask value, expressed in decimal dotted notation, of 255.255.0.0, is valid, but 255.0.255.0 is not.  \n&quot;
++  7357,  &quot;Who may connect to this computer?&quot;
++  7358,  &quot;You can specify the users who can connect to this computer.&quot;
++  7359,  &quot;How will people connect?&quot;
+ }
+ 
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-  7360,  &quot;You can choose the devices your computer uses to accept incoming connections.\0&quot;
+-  7361,  &quot;Incoming Virtual Private Network (VPN) Connection\0&quot;
+-  7362,  &quot;Another computer can connect to yours through a VPN connection\0&quot;
+-  7363,  &quot;Networking software allows this computer to accept connections from other kinds of computers\0&quot;
+-  7364,  &quot;Networking software allows this computer to accept connections from other kinds of computers.\0&quot;
+-  7365,  &quot;Completing the New Connection Wizard\0&quot;
+-  7366,  &quot; \0&quot;
+-  7367,  &quot;Incoming Connections\0&quot;
+-  7371,  &quot;No hardware capable of accepting calls is installed.\0&quot;
+-  7372,  &quot; \0&quot;
+-  7373,  &quot;Assign specified &amp;network number:\0&quot;
+-  7374,  &quot;Assign &amp;network numbers sequentially from:\0&quot;
+-  7375,  &quot;New User\0&quot;
++  7360,  &quot;You can choose the devices your computer uses to accept incoming connections.&quot;
++  7361,  &quot;Incoming Virtual Private Network (VPN) Connection&quot;
++  7362,  &quot;Another computer can connect to yours through a VPN connection&quot;
++  7363,  &quot;Networking software allows this computer to accept connections from other kinds of computers&quot;
++  7364,  &quot;Networking software allows this computer to accept connections from other kinds of computers.&quot;
++  7365,  &quot;Completing the New Connection Wizard&quot;
++  7366,  &quot; &quot;
++  7367,  &quot;Incoming Connections&quot;
++  7371,  &quot;No hardware capable of accepting calls is installed.&quot;
++  7372,  &quot; &quot;
++  7373,  &quot;Assign specified &amp;network number:&quot;
++  7374,  &quot;Assign &amp;network numbers sequentially from:&quot;
++  7375,  &quot;New User&quot;
+ }
+ 
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-  7378,  &quot;No devices capable of accepting direct connections are currently installed.\0&quot;
+-  7379,  &quot;New Incoming Connection Warning\0&quot;
+-  7380,  &quot;Because Routing and Remote access is already configured, you must use the Routing and Remote Access system console to configure this machine to receive incoming connections.  Cancel changes and switch to this console?\n\0&quot;
+-  7381,  &quot;A&amp;ssign network number automatically\0&quot;
+-  7382,  &quot;A&amp;ssign network numbers automatically\0&quot;
+-  7384,  &quot;to\0&quot;
+-  7385,  &quot;Communications Port (%s)\0&quot;
+-  7386,  &quot;Network Connections does not display some specialized options for inbound connections that have been set using the Local User Manager or Remote Access Policy consoles.  For complete and correct information on incoming connections, you will need to use these consoles.\0&quot;
+-  7387,  &quot;The user callback mode you have selected requires you to enter a valid callback number.\0&quot;
+-  7388,  &quot;Windows must reboot to complete the operation.  Is it ok to reboot now?\0&quot;
+-  7389,  &quot;The currently selected device has no configuration options available.\0&quot;
+-  7390,  &quot;Invalid Range\0&quot;
+-  7391,  &quot;You have requested that '%1' be disabled for Incoming Connections.  In order to disable this, you must stop the 'Server' service.  Once stopped, any shared directories or printers on this computer will no longer be available to any other computer.  Do you want to bring up a system console that will allow you to stop the 'Server' service?\r\n\nUnder Computer Management, click System Tools and then click Services.  In the right pane, right-click Server and click stop.\0&quot;
++  7378,  &quot;No devices capable of accepting direct connections are currently installed.&quot;
++  7379,  &quot;New Incoming Connection Warning&quot;
++  7380,  &quot;Because Routing and Remote access is already configured, you must use the Routing and Remote Access system console to configure this machine to receive incoming connections.  Cancel changes and switch to this console?\n&quot;
++  7381,  &quot;A&amp;ssign network number automatically&quot;
++  7382,  &quot;A&amp;ssign network numbers automatically&quot;
++  7384,  &quot;to&quot;
++  7385,  &quot;Communications Port (%s)&quot;
++  7386,  &quot;Network Connections does not display some specialized options for inbound connections that have been set using the Local User Manager or Remote Access Policy consoles.  For complete and correct information on incoming connections, you will need to use these consoles.&quot;
++  7387,  &quot;The user callback mode you have selected requires you to enter a valid callback number.&quot;
++  7388,  &quot;Windows must reboot to complete the operation.  Is it ok to reboot now?&quot;
++  7389,  &quot;The currently selected device has no configuration options available.&quot;
++  7390,  &quot;Invalid Range&quot;
++  7391,  &quot;You have requested that '%1' be disabled for Incoming Connections.  In order to disable this, you must stop the 'Server' service.  Once stopped, any shared directories or printers on this computer will no longer be available to any other computer.  Do you want to bring up a system console that will allow you to stop the 'Server' service?\r\n\nUnder Computer Management, click System Tools and then click Services.  In the right pane, right-click Server and click stop.&quot;
+ }
+ 
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-  7392,  &quot;This serial port is not enabled for use in a direct connection to another computer.  It will be enabled after you complete this wizard.  You can then configure the port speed and other properties by right-clicking the icon for this connection and selecting Properties.\n\0&quot;
+-  7393,  &quot;Incoming Connections\0&quot;
+-  7394,  &quot;The IP address pool you've entered is invalid.\0&quot;
+-  7395,  &quot;The mask provided is invalid.\0&quot;
+-  7396,  &quot;The start address entered for the TCP/IP pool is invalid.  It must lie between 1.0.0.0 and 224.0.0.0 and it must not be in the form 127.x.x.x.\0&quot;
+-  7397,  &quot;The TCP/IP pool entered is invalid because the address is more specific than the mask.\0&quot;
+-  7398,  &quot;The start address must be less than the end address.\0&quot;
+-  7399,  &quot;The Routing and Remote Access Service is in the process of stopping.  Until it stops, the Incoming Connections option is not available.  Please wait a few moments and retry.\0&quot;
+-  7400,  &quot;%s (%s)\0&quot;
+-  7401,  &quot;%s (%d channels)\0&quot;
+-  7403,  &quot;You must enable at least one Internet Protocol.\0&quot;
+-  7406,  &quot;You do not have sufficient privileges to set up Incoming Connections\0&quot;
++  7392,  &quot;This serial port is not enabled for use in a direct connection to another computer.  It will be enabled after you complete this wizard.  You can then configure the port speed and other properties by right-clicking the icon for this connection and selecting Properties.\n&quot;
++  7393,  &quot;Incoming Connections&quot;
++  7394,  &quot;The IP address pool you've entered is invalid.&quot;
++  7395,  &quot;The mask provided is invalid.&quot;
++  7396,  &quot;The start address entered for the TCP/IP pool is invalid.  It must lie between 1.0.0.0 and 224.0.0.0 and it must not be in the form 127.x.x.x.&quot;
++  7397,  &quot;The TCP/IP pool entered is invalid because the address is more specific than the mask.&quot;
++  7398,  &quot;The start address must be less than the end address.&quot;
++  7399,  &quot;The Routing and Remote Access Service is in the process of stopping.  Until it stops, the Incoming Connections option is not available.  Please wait a few moments and retry.&quot;
++  7400,  &quot;%s (%s)&quot;
++  7401,  &quot;%s (%d channels)&quot;
++  7403,  &quot;You must enable at least one Internet Protocol.&quot;
++  7406,  &quot;You do not have sufficient privileges to set up Incoming Connections&quot;
+ }
+ 
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-  7410,  &quot;&amp;Allow access\0&quot;
+-  7411,  &quot;Invalid IPv6 prefix\0&quot;
++  7410,  &quot;&amp;Allow access&quot;
++  7411,  &quot;Invalid IPv6 prefix&quot;
+ }
+ 
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-  29900,  &quot;Cannot load the Remote Access Connection Manager service.\0&quot;
+-  29901,  &quot;Cannot load the file MPRAPI.DLL in the system32 directory.\0&quot;
++  29900,  &quot;Cannot load the Remote Access Connection Manager service.&quot;
++  29901,  &quot;Cannot load the file MPRAPI.DLL in the system32 directory.&quot;
+ }
+ 
+
+Modified: Windows7/source/x32/Windows/System32/en-US/rasmm.dll.rc
+===================================================================
+--- Windows7/source/x32/Windows/System32/en-US/rasmm.dll.rc	2011-01-12 11:11:24 UTC (rev 141)
++++ Windows7/source/x32/Windows/System32/en-US/rasmm.dll.rc	2011-01-20 14:07:44 UTC (rev 142)
+@@ -4,33 +4,33 @@
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-  204,  &quot;Connecting\0&quot;
+-  205,  &quot;Disconnecting\0&quot;
+-  206,  &quot;Connected\0&quot;
+-  207,  &quot;Connected\0&quot;
++  204,  &quot;Connecting&quot;
++  205,  &quot;Disconnecting&quot;
++  206,  &quot;Connected&quot;
++  207,  &quot;Connected&quot;
+ }
+ 
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-  208,  &quot;Connected\0&quot;
+-  209,  &quot;Connected\0&quot;
+-  210,  &quot;This connection is not available because there is a problem with your modem or network adapter\0&quot;
+-  211,  &quot;Dormant: Server Unavailable\0&quot;
+-  212,  &quot;Dormant: Waiting to reconnect\0&quot;
++  208,  &quot;Connected&quot;
++  209,  &quot;Connected&quot;
++  210,  &quot;This connection is not available because there is a problem with your modem or network adapter&quot;
++  211,  &quot;Dormant: Server Unavailable&quot;
++  212,  &quot;Dormant: Waiting to reconnect&quot;
+ }
+ 
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-  300,  &quot;Dial-up and VPN\0&quot;
+-  301,  &quot;This connection requires an active Internet connection\0&quot;
+-  302,  &quot;Your network administrator has blocked you from connecting to this network\0&quot;
++  300,  &quot;Dial-up and VPN&quot;
++  301,  &quot;This connection requires an active Internet connection&quot;
++  302,  &quot;Your network administrator has blocked you from connecting to this network&quot;
+ }
+ 
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-  310,  &quot;Dial-up and VPN\0&quot;
++  310,  &quot;Dial-up and VPN&quot;
+ }
+ 
+
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000059.html">[I18n-bel-svn] r141 - in Windows7/source/x32/Windows:	System32/en-US System32/migwiz/en-US	diagnostics/system/DeviceCenter/en-US
+</A></li>
+	<LI>Next message: <A HREF="000061.html">[I18n-bel-svn] r143 - Windows7/omegat
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#60">[ date ]</a>
+              <a href="thread.html#60">[ thread ]</a>
+              <a href="subject.html#60">[ subject ]</a>
+              <a href="author.html#60">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/i18n-bel-svn">More information about the I18n-bel-svn
+mailing list</a><br>
+</body></html>

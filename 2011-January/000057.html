@@ -1,0 +1,1316 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [I18n-bel-svn] r139 - in Windows7: . omegat	source/x32/Windows/System32/en-US
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/i18n-bel-svn/2011-January/index.html" >
+   <LINK REL="made" HREF="mailto:i18n-bel-svn%40lists.berlios.de?Subject=Re%3A%20%5BI18n-bel-svn%5D%20r139%20-%20in%20Windows7%3A%20.%20omegat%0A%09source/x32/Windows/System32/en-US&In-Reply-To=%3C20110107225310.8872E4804D8%40sheep.berlios.de%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000056.html">
+   <LINK REL="Next"  HREF="000058.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[I18n-bel-svn] r139 - in Windows7: . omegat	source/x32/Windows/System32/en-US</H1>
+    <B>eratyk at mail.berlios.de</B> 
+    <A HREF="mailto:i18n-bel-svn%40lists.berlios.de?Subject=Re%3A%20%5BI18n-bel-svn%5D%20r139%20-%20in%20Windows7%3A%20.%20omegat%0A%09source/x32/Windows/System32/en-US&In-Reply-To=%3C20110107225310.8872E4804D8%40sheep.berlios.de%3E"
+       TITLE="[I18n-bel-svn] r139 - in Windows7: . omegat	source/x32/Windows/System32/en-US">eratyk at mail.berlios.de
+       </A><BR>
+    <I>Fri Jan  7 23:53:09 CET 2011</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000056.html">[I18n-bel-svn] r138 - in Windows7: . omegat source/x32/Windows	source/x32/Windows/System32/en-US source/x32/Windows/diagnostics	source/x32/Windows/diagnostics/system	source/x32/Windows/diagnostics/system/DeviceCenter	source/x32/Windows/diagnostics/system/DeviceCenter/en-US
+</A></li>
+        <LI>Next message: <A HREF="000058.html">[I18n-bel-svn] r140 - in Windows7: omegat	source/x32/Windows/System32/en-US
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#57">[ date ]</a>
+              <a href="thread.html#57">[ thread ]</a>
+              <a href="subject.html#57">[ subject ]</a>
+              <a href="author.html#57">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>Author: eratyk
+Date: 2011-01-07 23:53:09 +0100 (Fri, 07 Jan 2011)
+New Revision: 139
+
+Added:
+   Windows7/source/x32/Windows/System32/en-US/netcenter.dll.rc
+Modified:
+   Windows7/js-trans.txt
+   Windows7/omegat/learned_words.txt
+   Windows7/omegat/project_save.tmx
+Log:
+
+
+Modified: Windows7/js-trans.txt
+===================================================================
+--- Windows7/js-trans.txt	2011-01-05 08:53:03 UTC (rev 138)
++++ Windows7/js-trans.txt	2011-01-07 22:53:09 UTC (rev 139)
+@@ -20,10 +20,10 @@
+ x32/Program Files/Windows Sidebar/Gadgets/CPU.Gadget/en-US/js/cpu.js
+ 
+ I:var L_PROCESSOR_TEXT = &quot;CPU usage&quot;;
+-O:var L_PROCESSOR_TEXT = &quot;&#208;&#151;&#208;&#176;&#208;&#189;&#209;&#143;&#209;&#130;&#208;&#176;&#209;&#129;&#209;&#134;&#209;&#140; CPU&quot;;
++O:var L_PROCESSOR_TEXT = &quot;&#208;&#151;&#208;&#176;&#208;&#189;&#209;&#143;&#209;&#130;&#208;&#176;&#209;&#129;&#209;&#134;&#209;&#140; &#208;&#191;&#209;&#128;&#208;&#176;&#209;&#134;&#209;&#141;&#209;&#129;&#208;&#176;&#209;&#128;&#208;&#176;&quot;;
+ 
+ I:var L_MEMORY_TEXT	= &quot;Random access memory (RAM)&quot;;
+-O:var L_MEMORY_TEXT	= &quot;&#208;&#159;&#208;&#176;&#208;&#188;&#209;&#143;&#209;&#134;&#209;&#140; &#208;&#176;&#208;&#180;&#208;&#178;&#208;&#190;&#208;&#187;&#209;&#140;&#208;&#189;&#208;&#176;&#208;&#179;&#208;&#176; &#208;&#180;&#208;&#190;&#209;&#129;&#209;&#130;&#209;&#131;&#208;&#191;&#209;&#131; (RAM)&quot;;
++O:var L_MEMORY_TEXT	= &quot;&#208;&#159;&#208;&#176;&#208;&#188;&#209;&#143;&#209;&#134;&#209;&#140; &#208;&#176;&#208;&#180;&#208;&#178;&#208;&#190;&#208;&#187;&#209;&#140;&#208;&#189;&#208;&#176;&#208;&#179;&#208;&#176; &#208;&#180;&#208;&#190;&#209;&#129;&#209;&#130;&#209;&#131;&#208;&#191;&#209;&#131;&quot;;
+ 
+ x32/Program Files/Windows Sidebar/Gadgets/Currency.Gadget/en-US/js/localizedStrings.js
+ 
+@@ -315,79 +315,79 @@
+ O:var L_NONE_TEXT	= &quot;&#208;&#189;&#209;&#143;&#208;&#188;&#208;&#176;&quot;;
+ 
+ I:var L_BARN_TEXT	= &quot;Barn&quot;;
+-O:var L_BARN_TEXT	= &quot;Barn&quot;;
++O:var L_BARN_TEXT	= &quot;&#208;&#148;&#208;&#183;&#208;&#178;&#208;&#181;&#209;&#128;&#209;&#139;&quot;;
+ 
+ I:var L_BLINDS_TEXT	= &quot;Blinds&quot;;
+-O:var L_BLINDS_TEXT	= &quot;Blinds&quot;;
++O:var L_BLINDS_TEXT	= &quot;&#208;&#150;&#208;&#176;&#208;&#187;&#209;&#142;&#208;&#183;&#209;&#150;&quot;;
+ 
+ I:var L_CHECKERBOARD_TEXT = &quot;Checkerboard&quot;;
+-O:var L_CHECKERBOARD_TEXT = &quot;Checkerboard&quot;;
++O:var L_CHECKERBOARD_TEXT = &quot;&#208;&#168;&#208;&#176;&#209;&#133;&#208;&#188;&#208;&#176;&#209;&#130;&#208;&#189;&#208;&#176;&#209;&#143; &#208;&#180;&#208;&#190;&#209;&#136;&#208;&#186;&#208;&#176;&quot;;
+ 
+ I:var L_DISSOLVE_TEXT	= &quot;Dissolve&quot;;
+-O:var L_DISSOLVE_TEXT	= &quot;Dissolve&quot;;
++O:var L_DISSOLVE_TEXT	= &quot;&#208;&#160;&#208;&#176;&#209;&#129;&#209;&#129;&#209;&#139;&#208;&#191;&#208;&#176;&#208;&#189;&#208;&#189;&#208;&#181;&quot;;
+ 
+ I:var L_FADE_TEXT	= &quot;Fade&quot;;
+-O:var L_FADE_TEXT	= &quot;Fade&quot;;
++O:var L_FADE_TEXT	= &quot;&#208;&#161;&#208;&#187;&#208;&#176;&#208;&#177;&#208;&#181;&#208;&#189;&#208;&#189;&#208;&#181;&quot;;
+ 
+ I:var L_INSET_TEXT	= &quot;Inset&quot;;
+-O:var L_INSET_TEXT	= &quot;Inset&quot;;
++O:var L_INSET_TEXT	= &quot;&#208;&#163;&#208;&#186;&#208;&#187;&#208;&#181;&#208;&#185;&#208;&#178;&#208;&#176;&#208;&#189;&#208;&#189;&#208;&#181;&quot;;
+ 
+ I:var L_PLUS_TEXT	= &quot;Plus&quot;;
+-O:var L_PLUS_TEXT	= &quot;Plus&quot;;
++O:var L_PLUS_TEXT	= &quot;&#208;&#159;&#208;&#187;&#209;&#142;&#209;&#129;&quot;;
+ 
+ I:var L_PIXELATE_TEXT	= &quot;Pixelate&quot;;
+-O:var L_PIXELATE_TEXT	= &quot;Pixelate&quot;;
++O:var L_PIXELATE_TEXT	= &quot;&#208;&#159;&#209;&#150;&#208;&#186;&#209;&#129;&#208;&#181;&#208;&#187;&#209;&#150;&#208;&#183;&#208;&#176;&#208;&#178;&#208;&#176;&#208;&#189;&#208;&#189;&#208;&#181;&quot;;
+ 
+ I:var L_RADIALWIPE_TEXT = &quot;Radial Wipe&quot;;
+-O:var L_RADIALWIPE_TEXT = &quot;Radial Wipe&quot;;
++O:var L_RADIALWIPE_TEXT = &quot;&#208;&#160;&#208;&#176;&#208;&#180;&#209;&#139;&#209;&#143;&#208;&#187;&#209;&#140;&#208;&#189;&#208;&#176;&#208;&#181; &#209;&#129;&#209;&#134;&#209;&#150;&#209;&#128;&#208;&#176;&#208;&#189;&#208;&#189;&#208;&#181;&quot;;
+ 
+ I:var L_SLIDE_TEXT	= &quot;Slide&quot;;
+-O:var L_SLIDE_TEXT	= &quot;Slide&quot;;
++O:var L_SLIDE_TEXT	= &quot;&#208;&#154;&#208;&#190;&#209;&#158;&#208;&#183;&#208;&#176;&#208;&#189;&#208;&#189;&#208;&#181;&quot;;
+ 
+ I:var L_SPIRAL_TEXT	= &quot;Spiral&quot;;
+-O:var L_SPIRAL_TEXT	= &quot;Spiral&quot;;
++O:var L_SPIRAL_TEXT	= &quot;&#208;&#161;&#208;&#191;&#209;&#150;&#209;&#128;&#208;&#176;&#208;&#187;&#209;&#140;&quot;;
+ 
+ I:var L_STRETCH_TEXT	= &quot;Stretch&quot;;
+-O:var L_STRETCH_TEXT	= &quot;Stretch&quot;;
++O:var L_STRETCH_TEXT	= &quot;&#208;&#159;&#208;&#181;&#209;&#128;&#208;&#176;&#209;&#128;&#208;&#176;&#209;&#129;&#209;&#134;&#209;&#143;&#208;&#179;&#208;&#178;&#208;&#176;&#208;&#189;&#208;&#189;&#208;&#181;&quot;;
+ 
+ I:var L_WIPE_TEXT	= &quot;Wipe&quot;;
+-O:var L_WIPE_TEXT	= &quot;Wipe&quot;;
++O:var L_WIPE_TEXT	= &quot;&#208;&#146;&#209;&#139;&#209;&#134;&#209;&#150;&#209;&#128;&#208;&#176;&#208;&#189;&#208;&#189;&#208;&#181;&quot;;
+ 
+ I:var L_WHEEL_TEXT	= &quot;Wheel&quot;;
+-O:var L_WHEEL_TEXT	= &quot;Wheel&quot;;
++O:var L_WHEEL_TEXT	= &quot;&#208;&#154;&#208;&#190;&#208;&#187;&#208;&#176;&quot;;
+ 
+ I:var L_PREVIOUS_TEXT	= &quot;Previous&quot;;
+-O:var L_PREVIOUS_TEXT	= &quot;Previous&quot;;
++O:var L_PREVIOUS_TEXT	= &quot;&#208;&#159;&#208;&#176;&#208;&#191;&#209;&#143;&#209;&#128;&#209;&#141;&#208;&#180;&#208;&#189;&#209;&#150;&quot;;
+ 
+ I:var L_PLAY_TEXT	= &quot;Play&quot;;
+-O:var L_PLAY_TEXT	= &quot;Play&quot;;
++O:var L_PLAY_TEXT	= &quot;&#208;&#159;&#208;&#176;&#208;&#186;&#208;&#176;&#208;&#183;&#208;&#178;&#208;&#176;&#209;&#134;&#209;&#140;&quot;;
+ 
+ I:var L_PAUSE_TEXT	= &quot;Pause&quot;;
+-O:var L_PAUSE_TEXT	= &quot;Pause&quot;;
++O:var L_PAUSE_TEXT	= &quot;&#208;&#159;&#209;&#128;&#209;&#139;&#208;&#191;&#209;&#139;&#208;&#189;&#209;&#150;&#209;&#134;&#209;&#140;&quot;;
+ 
+ I:var L_NEXT_TEXT	= &quot;Next&quot;;
+-O:var L_NEXT_TEXT	= &quot;Next&quot;;
++O:var L_NEXT_TEXT	= &quot;&#208;&#157;&#208;&#176;&#209;&#129;&#209;&#130;&#209;&#131;&#208;&#191;&#208;&#189;&#209;&#139;&quot;;
+ 
+ I:var L_VIEW_TEXT	= &quot;View&quot;;
+-O:var L_VIEW_TEXT	= &quot;View&quot;;
++O:var L_VIEW_TEXT	= &quot;&#208;&#159;&#209;&#128;&#208;&#176;&#208;&#179;&#208;&#187;&#208;&#181;&#208;&#180;&#208;&#183;&#208;&#181;&#209;&#134;&#209;&#140;&quot;;
+ 
+ I:var L_SECONDS_TEXT	= &quot;seconds&quot;;
+-O:var L_SECONDS_TEXT	= &quot;seconds&quot;;
++O:var L_SECONDS_TEXT	= &quot;&#209;&#129;&#208;&#181;&#208;&#186;&#209;&#131;&#208;&#189;&#208;&#180;&quot;;
+ 
+ I:var L_MINUTES_TEXT	= &quot;minutes&quot;;
+-O:var L_MINUTES_TEXT	= &quot;minutes&quot;;
++O:var L_MINUTES_TEXT	= &quot;&#209;&#133;&#208;&#178;&#209;&#150;&#208;&#187;&#209;&#150;&#208;&#189;&quot;;
+ 
+ I:var L_MINUTE_TEXT	= &quot;minute&quot;;
+-O:var L_MINUTE_TEXT	= &quot;minute&quot;;
++O:var L_MINUTE_TEXT	= &quot;&#209;&#133;&#208;&#178;&#209;&#150;&#208;&#187;&#209;&#150;&#208;&#189;&#209;&#131;&quot;;
+ 
+ I:var L_PICTURESLIBNAME_TEXT = &quot;Pictures Library&quot;;
+-O:var L_PICTURESLIBNAME_TEXT = &quot;Pictures Library&quot;;
++O:var L_PICTURESLIBNAME_TEXT = &quot;&#208;&#145;&#209;&#150;&#208;&#177;&#208;&#187;&#209;&#150;&#209;&#143;&#209;&#130;&#209;&#141;&#208;&#186;&#208;&#176; ''&#208;&#146;&#209;&#150;&#208;&#180;&#208;&#176;&#209;&#128;&#209;&#139;&#209;&#129;&#209;&#139;''&quot;;
+ 
+ I:var L_PICTURESNAME_TEXT = &quot;Sample Pictures&quot;;
+-O:var L_PICTURESNAME_TEXT = &quot;Sample Pictures&quot;;
++O:var L_PICTURESNAME_TEXT = &quot;&#208;&#163;&#208;&#183;&#208;&#190;&#209;&#128;&#208;&#189;&#209;&#139;&#209;&#143; &#208;&#178;&#209;&#150;&#208;&#180;&#208;&#176;&#209;&#128;&#209;&#139;&#209;&#129;&#209;&#139;&quot;;
+ 
+ I:var L_CHOOSEFOLDER_TEXT	= &quot;Show items from this folder in Slide Show:&quot;;
+-O:var L_CHOOSEFOLDER_TEXT	= &quot;Show items from this folder in Slide Show:&quot;;
++O:var L_CHOOSEFOLDER_TEXT	= &quot;&#208;&#159;&#208;&#176;&#208;&#186;&#208;&#176;&#208;&#183;&#208;&#178;&#208;&#176;&#209;&#134;&#209;&#140; &#209;&#141;&#208;&#187;&#208;&#181;&#208;&#188;&#208;&#181;&#208;&#189;&#209;&#130;&#209;&#139; &#208;&#183; &#208;&#179;&#209;&#141;&#209;&#130;&#208;&#176;&#208;&#179;&#208;&#176; &#208;&#186;&#208;&#176;&#209;&#130;&#208;&#176;&#208;&#187;&#208;&#190;&#208;&#179;&#209;&#131; &#209;&#129;&#208;&#187;&#208;&#176;&#208;&#185;&#208;&#180;&#208;&#176;&#208;&#188;&#209;&#150;:&quot;;
+ 
+ x32/Program Files/Windows Sidebar/Gadgets/Weather.Gadget/en-US/js/localizedStrings.js
+ 
+
+Modified: Windows7/omegat/learned_words.txt
+===================================================================
+--- Windows7/omegat/learned_words.txt	2011-01-05 08:53:03 UTC (rev 138)
++++ Windows7/omegat/learned_words.txt	2011-01-07 22:53:09 UTC (rev 139)
+@@ -435,3 +435,4 @@
+ &#208;&#183;&#208;&#187;&#209;&#131;&#209;&#135;&#208;&#176;&#208;&#189;&#208;&#189;&#209;&#143;
+ &#208;&#134;&#208;&#189;&#209;&#150;&#209;&#134;&#209;&#139;&#209;&#143;&#208;&#187;&#209;&#150;&#208;&#183;&#208;&#176;&#208;&#178;&#208;&#176;&#208;&#189;&#208;&#189;&#208;&#181;
+ &#209;&#150;&#208;&#189;&#209;&#150;&#209;&#134;&#209;&#139;&#209;&#143;&#208;&#187;&#209;&#150;&#208;&#183;&#208;&#176;&#208;&#178;&#208;&#176;&#208;&#189;&#208;&#189;&#209;&#143;
++&#208;&#186;&#208;&#176;&#208;&#188;&#208;&#191;'&#209;&#142;&#209;&#130;&#208;&#176;&#209;&#128;&#208;&#176;&#209;&#133;
+
+Modified: Windows7/omegat/project_save.tmx
+===================================================================
+--- Windows7/omegat/project_save.tmx	2011-01-05 08:53:03 UTC (rev 138)
++++ Windows7/omegat/project_save.tmx	2011-01-07 22:53:09 UTC (rev 139)
+@@ -206,6 +206,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;%1 (roaming on %2)&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110107T221446Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;%1 (&#209;&#128;&#208;&#190;&#209;&#158;&#208;&#188;&#209;&#150;&#208;&#189;&#208;&#179; &#209;&#131; %2)&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;%1 - %2&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100715T130359Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -8438,6 +8446,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;(This computer)&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110107T200816Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#147;&#209;&#141;&#209;&#130;&#209;&#139; &#208;&#186;&#208;&#176;&#208;&#188;&#208;&#191;'&#209;&#142;&#209;&#130;&#208;&#176;&#209;&#128;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;(Waiting for)&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101009T152514Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -8534,6 +8550,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;* Unknown *&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110107T220501Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;* &#208;&#157;&#208;&#181;&#208;&#178;&#209;&#143;&#208;&#180;&#208;&#190;&#208;&#188;&#208;&#176; *&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;*.bmp;*.dib&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100723T105846Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -12654,6 +12678,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Access files and printers located on other network computers, or change sharing settings.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110107T215422Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#144;&#209;&#130;&#209;&#128;&#209;&#139;&#208;&#188;&#208;&#176;&#209;&#134;&#209;&#140; &#208;&#180;&#208;&#190;&#209;&#129;&#209;&#130;&#209;&#131;&#208;&#191; &#208;&#180;&#208;&#176; &#209;&#132;&#208;&#176;&#208;&#185;&#208;&#187;&#208;&#176;&#209;&#158; &#209;&#150; &#208;&#180;&#209;&#128;&#209;&#131;&#208;&#186;&#208;&#176;&#209;&#128;&#208;&#176;&#208;&#186;, &#209;&#128;&#208;&#176;&#208;&#183;&#208;&#188;&#208;&#181;&#209;&#136;&#209;&#135;&#208;&#176;&#208;&#189;&#209;&#139;&#209;&#133; &#208;&#189;&#208;&#176; &#209;&#150;&#208;&#189;&#209;&#136;&#209;&#139;&#209;&#133; &#208;&#186;&#208;&#176;&#208;&#188;&#208;&#191;'&#209;&#142;&#209;&#130;&#208;&#176;&#209;&#128;&#208;&#176;&#209;&#133;, &#209;&#134;&#209;&#150; &#208;&#183;&#208;&#188;&#209;&#143;&#208;&#189;&#209;&#150;&#209;&#134;&#209;&#140; &#208;&#189;&#208;&#176;&#208;&#187;&#208;&#176;&#208;&#180;&#209;&#139; &#208;&#176;&#208;&#179;&#209;&#131;&#208;&#187;&#209;&#140;&#208;&#189;&#208;&#176;&#208;&#179;&#208;&#176; &#208;&#180;&#208;&#190;&#209;&#129;&#209;&#130;&#209;&#131;&#208;&#191;&#209;&#131;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Access is denied.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100711T193945Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -12694,6 +12726,30 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Access type&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110107T215537Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#162;&#209;&#139;&#208;&#191; &#208;&#180;&#208;&#190;&#209;&#129;&#209;&#130;&#209;&#131;&#208;&#191;&#209;&#131;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Access type:&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110107T201015Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#162;&#209;&#139;&#208;&#191; &#208;&#180;&#208;&#190;&#209;&#129;&#209;&#130;&#209;&#131;&#208;&#191;&#209;&#131;:&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Access type: %1&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110107T221335Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#162;&#209;&#139;&#208;&#191; &#208;&#180;&#208;&#190;&#209;&#129;&#209;&#130;&#209;&#131;&#208;&#191;&#209;&#131;: %1&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Access:&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101005T053650Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -17454,6 +17510,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Available to join&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110107T221048Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#148;&#208;&#176;&#209;&#129;&#209;&#130;&#209;&#131;&#208;&#191;&#208;&#189;&#209;&#139; &#208;&#180;&#208;&#187;&#209;&#143; &#208;&#180;&#208;&#176;&#208;&#187;&#209;&#131;&#209;&#135;&#209;&#141;&#208;&#189;&#208;&#189;&#209;&#143;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Available types&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100707T061330Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -20526,6 +20590,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Change adapter settings&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110107T221308Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#151;&#208;&#188;&#209;&#143;&#208;&#189;&#209;&#150;&#209;&#134;&#209;&#140; &#208;&#189;&#208;&#176;&#208;&#187;&#208;&#176;&#208;&#180;&#209;&#139; &#208;&#176;&#208;&#180;&#208;&#176;&#208;&#191;&#209;&#130;&#208;&#176;&#209;&#128;&#208;&#176;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Change advanced color management settings for displays, scanners, and printers&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101030T154858Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -20550,6 +20622,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Change advanced sharing settings&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110107T221321Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#151;&#208;&#188;&#209;&#143;&#208;&#189;&#209;&#150;&#209;&#134;&#209;&#140; &#208;&#180;&#208;&#176;&#208;&#180;&#208;&#176;&#209;&#130;&#208;&#186;&#208;&#190;&#208;&#178;&#209;&#139;&#209;&#143; &#208;&#189;&#208;&#176;&#208;&#187;&#208;&#176;&#208;&#180;&#209;&#139; &#208;&#176;&#208;&#179;&#209;&#131;&#208;&#187;&#209;&#140;&#208;&#189;&#208;&#176;&#208;&#179;&#208;&#176; &#208;&#180;&#208;&#190;&#209;&#129;&#209;&#130;&#209;&#131;&#208;&#191;&#209;&#131;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Change an Account&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101030T171433Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -21342,6 +21422,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Change your networking settings&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110107T201008Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#151;&#208;&#188;&#209;&#143;&#208;&#189;&#209;&#150;&#209;&#134;&#209;&#140; &#208;&#178;&#208;&#176;&#209;&#136;&#209;&#139;&#209;&#143; &#209;&#129;&#208;&#181;&#209;&#130;&#208;&#186;&#208;&#176;&#208;&#178;&#209;&#139;&#209;&#143; &#208;&#189;&#208;&#176;&#208;&#187;&#208;&#176;&#208;&#180;&#209;&#139;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Change your view.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100928T135813Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -21678,6 +21766,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Check network status, change network settings and set preferences for sharing files and printers.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110107T220105Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#159;&#209;&#128;&#208;&#176;&#208;&#178;&#208;&#181;&#209;&#128;&#209;&#139;&#209;&#134;&#209;&#140; &#209;&#129;&#209;&#130;&#208;&#176;&#208;&#189; &#209;&#129;&#208;&#181;&#209;&#130;&#208;&#186;&#209;&#150;, &#208;&#183;&#208;&#188;&#209;&#143;&#208;&#189;&#209;&#150;&#209;&#134;&#209;&#140; &#209;&#129;&#208;&#181;&#209;&#130;&#208;&#186;&#208;&#176;&#208;&#178;&#209;&#139;&#209;&#143; &#208;&#189;&#208;&#176;&#208;&#187;&#208;&#176;&#208;&#180;&#209;&#139; &#209;&#150; &#208;&#191;&#209;&#128;&#209;&#139;&#208;&#183;&#208;&#189;&#208;&#176;&#209;&#135;&#209;&#139;&#209;&#134;&#209;&#140; &#208;&#191;&#208;&#176;&#209;&#128;&#208;&#176;&#208;&#188;&#208;&#181;&#209;&#130;&#209;&#128;&#209;&#139; &#208;&#180;&#208;&#187;&#209;&#143; &#208;&#176;&#208;&#179;&#209;&#131;&#208;&#187;&#209;&#140;&#208;&#189;&#208;&#176;&#208;&#180;&#208;&#176;&#209;&#129;&#209;&#130;&#209;&#131;&#208;&#191;&#208;&#189;&#209;&#139;&#209;&#133; &#209;&#132;&#208;&#176;&#208;&#185;&#208;&#187;&#208;&#176;&#209;&#158; &#209;&#150; &#208;&#180;&#209;&#128;&#209;&#131;&#208;&#186;&#208;&#176;&#209;&#128;&#208;&#176;&#208;&#186;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Check processor speed&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101028T083512Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -23262,6 +23358,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Click to troubleshoot problems&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110107T221713Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#159;&#209;&#129;&#209;&#130;&#209;&#128;&#209;&#139;&#208;&#186;&#208;&#189;&#209;&#150;&#209;&#134;&#208;&#181;, &#208;&#186;&#208;&#176;&#208;&#177; &#208;&#178;&#209;&#139;&#209;&#128;&#208;&#176;&#209;&#136;&#209;&#139;&#209;&#134;&#209;&#140; &#208;&#191;&#209;&#128;&#208;&#176;&#208;&#177;&#208;&#187;&#208;&#181;&#208;&#188;&#209;&#139;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Click to view blocked programs.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100723T061323Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -24726,6 +24830,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Connect or disconnect&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110107T200941Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#151;&#208;&#187;&#209;&#131;&#209;&#135;&#209;&#139;&#209;&#134;&#209;&#140; &#209;&#134;&#209;&#150; &#208;&#176;&#208;&#180;&#208;&#187;&#209;&#131;&#209;&#135;&#209;&#139;&#209;&#134;&#209;&#140;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Connect or disconnect...&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101005T053246Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -24758,6 +24870,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Connect or reconnect to a wireless, wired, dial-up, or VPN network connection.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110107T215139Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#151;&#208;&#187;&#209;&#131;&#209;&#135;&#209;&#139;&#209;&#134;&#209;&#140; &#209;&#134;&#209;&#150; &#208;&#191;&#208;&#181;&#209;&#128;&#208;&#176;&#208;&#183;&#208;&#187;&#209;&#131;&#209;&#135;&#209;&#139;&#209;&#134;&#209;&#140; &#208;&#183; &#208;&#186;&#208;&#176;&#208;&#177;&#208;&#181;&#208;&#187;&#209;&#140;&#208;&#189;&#209;&#139;&#208;&#188;, &#209;&#130;&#209;&#141;&#208;&#187;&#208;&#181;&#209;&#132;&#208;&#190;&#208;&#189;&#208;&#189;&#209;&#139;&#208;&#188;, VPN &#209;&#134;&#209;&#150; &#209;&#128;&#208;&#176;&#208;&#180;&#209;&#139;&#209;&#145;&#209;&#129;&#208;&#181;&#209;&#130;&#208;&#186;&#208;&#176;&#208;&#178;&#209;&#139;&#208;&#188; &#208;&#183;&#208;&#187;&#209;&#131;&#209;&#135;&#209;&#141;&#208;&#189;&#208;&#189;&#208;&#181;&#208;&#188;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Connect speed:&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100919T190524Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -25118,6 +25238,30 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Connection line&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110107T221842Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#155;&#209;&#150;&#208;&#189;&#209;&#150;&#209;&#143; &#208;&#183;&#208;&#187;&#209;&#131;&#209;&#135;&#209;&#141;&#208;&#189;&#208;&#189;&#209;&#143;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Connection name&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110107T215533Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#157;&#208;&#176;&#208;&#183;&#208;&#178;&#208;&#176; &#208;&#183;&#208;&#187;&#209;&#131;&#209;&#135;&#209;&#141;&#208;&#189;&#208;&#189;&#209;&#143;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Connection name: %1&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110107T221348Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#157;&#208;&#176;&#208;&#183;&#208;&#178;&#208;&#176; &#208;&#183;&#208;&#187;&#209;&#131;&#209;&#135;&#209;&#141;&#208;&#189;&#208;&#189;&#209;&#143;: %1&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Connection state&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101111T082009Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -25144,8 +25288,8 @@
+       &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Connection to %s was terminated.  Do you want to reconnect?&lt;/seg&gt;
+       &lt;/tuv&gt;
+-      &lt;tuv lang=&quot;be&quot; changedate=&quot;20101119T222741Z&quot; changeid=&quot;eratyk&quot;&gt;
+-        &lt;seg&gt;&#208;&#151;&#208;&#187;&#209;&#131;&#209;&#135;&#209;&#141;&#208;&#189;&#208;&#189;&#208;&#181; &#208;&#183; %s &#208;&#191;&#208;&#181;&#209;&#128;&#208;&#176;&#209;&#128;&#208;&#178;&#208;&#176;&#208;&#189;&#208;&#176;&#208;&#181;. &#208;&#159;&#208;&#181;&#209;&#128;&#208;&#176;&#208;&#183;&#208;&#187;&#209;&#131;&#209;&#135;&#209;&#139;&#209;&#134;&#209;&#134;&#208;&#176;?&lt;/seg&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110107T223101Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#151;&#208;&#187;&#209;&#131;&#209;&#135;&#209;&#141;&#208;&#189;&#208;&#189;&#208;&#181; &#208;&#183; %s &#208;&#191;&#208;&#181;&#209;&#128;&#208;&#176;&#209;&#128;&#208;&#178;&#208;&#176;&#208;&#189;&#208;&#176;&#208;&#181;. &#208;&#159;&#208;&#181;&#209;&#128;&#208;&#176;&#208;&#183;&#208;&#187;&#209;&#131;&#209;&#135;&#209;&#139;&#209;&#134;&#209;&#140;?&lt;/seg&gt;
+       &lt;/tuv&gt;
+     &lt;/tu&gt;
+     &lt;tu&gt;
+@@ -25166,6 +25310,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Connections:&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110107T201029Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#151;&#208;&#187;&#209;&#131;&#209;&#135;&#209;&#141;&#208;&#189;&#208;&#189;&#209;&#150;:&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Connects to a network drive.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100919T185724Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -26606,6 +26758,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Critical&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110107T223053Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#154;&#209;&#128;&#209;&#139;&#209;&#130;&#209;&#139;&#209;&#135;&#208;&#189;&#209;&#139;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Critical battery action&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101209T192553Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -28814,6 +28974,22 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Diagnose and repair&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110107T220130Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#148;&#209;&#139;&#209;&#143;&#208;&#179;&#208;&#189;&#208;&#176;&#208;&#183;&#208;&#176;&#208;&#178;&#208;&#176;&#209;&#134;&#209;&#140; &#209;&#150; &#208;&#178;&#209;&#139;&#208;&#191;&#209;&#128;&#208;&#176;&#208;&#178;&#209;&#150;&#209;&#134;&#209;&#140;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Diagnose and repair network problems, or get troubleshooting information.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110107T215525Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#148;&#209;&#139;&#209;&#143;&#208;&#179;&#208;&#189;&#208;&#176;&#208;&#183;&#208;&#176;&#208;&#178;&#208;&#176;&#209;&#134;&#209;&#140; &#209;&#150; &#208;&#178;&#209;&#139;&#208;&#191;&#209;&#128;&#208;&#176;&#208;&#178;&#209;&#150;&#209;&#134;&#209;&#140; &#209;&#129;&#208;&#181;&#209;&#130;&#208;&#186;&#208;&#176;&#208;&#178;&#209;&#139;&#209;&#143; &#208;&#191;&#209;&#128;&#208;&#176;&#208;&#177;&#208;&#187;&#208;&#181;&#208;&#188;&#209;&#139; &#209;&#134;&#209;&#150; &#208;&#176;&#209;&#130;&#209;&#128;&#209;&#139;&#208;&#188;&#208;&#176;&#209;&#134;&#209;&#140; &#209;&#150;&#208;&#189;&#209;&#132;&#208;&#176;&#209;&#128;&#208;&#188;&#208;&#176;&#209;&#134;&#209;&#139;&#209;&#142; &#208;&#176;&#208;&#177; &#208;&#178;&#209;&#139;&#209;&#128;&#208;&#176;&#209;&#136;&#209;&#141;&#208;&#189;&#208;&#189;&#209;&#150; &#208;&#191;&#209;&#128;&#208;&#176;&#208;&#177;&#208;&#187;&#208;&#181;&#208;&#188;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Diagnose your computer's memory problems&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101028T090152Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -31007,6 +31183,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Domain network&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110107T215750Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#148;&#208;&#176;&#208;&#188;&#208;&#181;&#208;&#189;&#208;&#189;&#208;&#176;&#209;&#143; &#209;&#129;&#208;&#181;&#209;&#130;&#208;&#186;&#208;&#176;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Domain: %s&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100727T084617Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -36063,6 +36247,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;For sharing and discovery to work properly, make sure the settings in your firewall program match the following settings.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110107T220930Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#154;&#208;&#176;&#208;&#177; &#208;&#176;&#208;&#179;&#209;&#131;&#208;&#187;&#209;&#140;&#208;&#189;&#209;&#139; &#208;&#180;&#208;&#190;&#209;&#129;&#209;&#130;&#209;&#131;&#208;&#191; &#209;&#150; &#208;&#178;&#209;&#139;&#208;&#189;&#208;&#176;&#209;&#133;&#208;&#190;&#208;&#180;&#209;&#129;&#209;&#130;&#208;&#178;&#208;&#176; &#208;&#191;&#209;&#128;&#208;&#176;&#209;&#134;&#208;&#176;&#208;&#178;&#208;&#176;&#208;&#187;&#209;&#150; &#208;&#191;&#209;&#128;&#208;&#176;&#208;&#178;&#209;&#150;&#208;&#187;&#209;&#140;&#208;&#189;&#208;&#176;, &#208;&#191;&#208;&#181;&#209;&#128;&#208;&#176;&#208;&#186;&#208;&#176;&#208;&#189;&#208;&#176;&#208;&#185;&#209;&#134;&#208;&#181;&#209;&#129;&#209;&#143;, &#209;&#136;&#209;&#130;&#208;&#190; &#208;&#189;&#208;&#176;&#208;&#187;&#208;&#176;&#208;&#180;&#209;&#139; &#208;&#178;&#208;&#176;&#209;&#136;&#208;&#176;&#208;&#185; &#208;&#191;&#209;&#128;&#208;&#176;&#208;&#179;&#209;&#128;&#208;&#176;&#208;&#188;&#209;&#139; &#208;&#183;&#208;&#176;&#209;&#129;&#208;&#187;&#208;&#190;&#208;&#189;&#209;&#131; &#208;&#176;&#208;&#180;&#208;&#191;&#208;&#176;&#208;&#178;&#209;&#143;&#208;&#180;&#208;&#176;&#209;&#142;&#209;&#134;&#209;&#140; &#208;&#189;&#208;&#176;&#209;&#129;&#209;&#130;&#209;&#131;&#208;&#191;&#208;&#189;&#209;&#139;&#208;&#188; &#208;&#191;&#208;&#176;&#209;&#128;&#208;&#176;&#208;&#188;&#208;&#181;&#209;&#130;&#209;&#128;&#208;&#176;&#208;&#188;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;For testing purposes only.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101206T194725Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -38343,6 +38535,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Home network&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110107T220137Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#165;&#208;&#176;&#209;&#130;&#208;&#189;&#209;&#143;&#209;&#143; &#209;&#129;&#208;&#181;&#209;&#130;&#208;&#186;&#208;&#176;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Home network\nIf all the computers on this network are at your home, and you recognize them, this is a trusted home network.  Don't choose this for public places such as coffee shops or airports.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101204T154710Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -38391,6 +38591,22 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;HomeGroup status: %1&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110107T221415Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#161;&#209;&#130;&#208;&#176;&#208;&#189; &#209;&#133;&#208;&#176;&#209;&#130;&#208;&#189;&#209;&#143;&#208;&#185; &#208;&#179;&#209;&#128;&#209;&#131;&#208;&#191;&#209;&#139;: %1&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;HomeGroup:&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110107T201021Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#165;&#208;&#176;&#209;&#130;&#208;&#189;&#209;&#143;&#209;&#143; &#208;&#179;&#209;&#128;&#209;&#131;&#208;&#191;&#208;&#176;:&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Homegroup&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100713T071419Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -41695,6 +41911,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Joined&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110107T221100Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#148;&#208;&#176;&#208;&#187;&#209;&#131;&#209;&#135;&#208;&#176;&#208;&#189;&#209;&#139;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Joke Program&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101118T164746Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -42839,6 +43063,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Limited connectivity&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110107T221740Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#144;&#208;&#177;&#208;&#188;&#208;&#181;&#208;&#182;&#208;&#176;&#208;&#178;&#208;&#176;&#208;&#189;&#208;&#176;&#209;&#143; &#208;&#183;&#208;&#187;&#209;&#131;&#209;&#135;&#208;&#176;&#208;&#187;&#209;&#140;&#208;&#189;&#208;&#176;&#209;&#129;&#209;&#134;&#209;&#140;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Lin&amp;e up Icons&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100904T192303Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -45583,6 +45815,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Microsoft-Windows-Network and Sharing Center&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110107T215836Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;Microsoft-Windows-Network and Sharing Center&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Microsoft-Windows-NetworkLocationWizard/Operational\r\n&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101205T192201Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -46649,8 +46889,8 @@
+       &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Multiple Types&lt;/seg&gt;
+       &lt;/tuv&gt;
+-      &lt;tuv lang=&quot;be&quot; changedate=&quot;20100713T064841Z&quot; changeid=&quot;eratyk&quot;&gt;
+-        &lt;seg&gt;&#208;&#168;&#208;&#188;&#208;&#176;&#209;&#130;&#208;&#187;&#209;&#150;&#208;&#186;&#209;&#150;&#209;&#143; &#209;&#130;&#209;&#139;&#208;&#191;&#209;&#139;&lt;/seg&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110107T221656Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#157;&#208;&#181;&#208;&#186;&#208;&#176;&#208;&#187;&#209;&#140;&#208;&#186;&#209;&#150; &#209;&#130;&#209;&#139;&#208;&#191;&#208;&#176;&#209;&#158;&lt;/seg&gt;
+       &lt;/tuv&gt;
+     &lt;/tu&gt;
+     &lt;tu&gt;
+@@ -46663,6 +46903,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Multiple networks&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110107T221642Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#157;&#208;&#181;&#208;&#186;&#208;&#176;&#208;&#187;&#209;&#140;&#208;&#186;&#209;&#150; &#209;&#129;&#208;&#181;&#209;&#130;&#208;&#176;&#208;&#186;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Music&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100711T193303Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -47367,6 +47615,22 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Network and Sharing Center active networks list updated.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110107T215956Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#161;&#208;&#191;&#209;&#150;&#209;&#129; &#208;&#176;&#208;&#186;&#209;&#130;&#209;&#139;&#209;&#158;&#208;&#189;&#209;&#139;&#209;&#133; &#209;&#129;&#208;&#181;&#209;&#130;&#208;&#176;&#208;&#186; &#209;&#134;&#209;&#141;&#208;&#189;&#209;&#130;&#209;&#128;&#209;&#131; &#209;&#129;&#208;&#181;&#209;&#130;&#208;&#176;&#208;&#186; &#209;&#150; &#208;&#176;&#208;&#179;&#209;&#131;&#208;&#187;&#209;&#140;&#208;&#189;&#208;&#176;&#208;&#179;&#208;&#176; &#208;&#180;&#208;&#190;&#209;&#129;&#209;&#130;&#209;&#131;&#208;&#191;&#209;&#131; &#208;&#176;&#208;&#177;&#208;&#189;&#208;&#190;&#209;&#158;&#208;&#187;&#208;&#181;&#208;&#189;&#209;&#139;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Network and sharing center help&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110107T215639Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#148;&#208;&#176;&#208;&#178;&#208;&#181;&#208;&#180;&#208;&#186;&#208;&#176; &#209;&#134;&#209;&#141;&#208;&#189;&#209;&#130;&#209;&#128;&#209;&#131; &#209;&#129;&#208;&#181;&#209;&#130;&#208;&#176;&#208;&#186; &#209;&#150; &#208;&#176;&#208;&#179;&#209;&#131;&#208;&#187;&#209;&#140;&#208;&#189;&#208;&#176;&#208;&#179;&#208;&#176; &#208;&#180;&#208;&#190;&#209;&#129;&#209;&#130;&#209;&#131;&#208;&#191;&#209;&#131;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Network drive&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100721T100547Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -47375,6 +47639,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Network icon&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110107T222113Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#151;&#208;&#189;&#208;&#176;&#209;&#135;&#208;&#176;&#208;&#186; &#209;&#129;&#208;&#181;&#209;&#130;&#208;&#186;&#209;&#150;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Network location&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101028T183910Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -47463,6 +47735,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Network name: %1&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110107T221327Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#157;&#208;&#176;&#208;&#183;&#208;&#178;&#208;&#176; &#209;&#129;&#208;&#181;&#209;&#130;&#208;&#186;&#209;&#150;: %1&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Network type&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101108T135653Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -47471,6 +47751,30 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Network type: %1&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110107T221355Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#162;&#209;&#139;&#208;&#191; &#209;&#129;&#208;&#181;&#209;&#130;&#208;&#186;&#209;&#150;: %1&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Network type: Domain network&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110107T215802Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#162;&#209;&#139;&#208;&#191; &#209;&#129;&#208;&#181;&#209;&#130;&#208;&#186;&#209;&#150;: &#208;&#180;&#208;&#176;&#208;&#188;&#208;&#181;&#208;&#189;&#208;&#189;&#208;&#176;&#209;&#143; &#209;&#129;&#208;&#181;&#209;&#130;&#208;&#186;&#208;&#176;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Network type: Public network&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110107T215830Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#162;&#209;&#139;&#208;&#191; &#209;&#129;&#208;&#181;&#209;&#130;&#208;&#186;&#209;&#150;: &#208;&#191;&#209;&#131;&#208;&#177;&#208;&#187;&#209;&#150;&#209;&#135;&#208;&#189;&#208;&#176;&#209;&#143; &#209;&#129;&#208;&#181;&#209;&#130;&#208;&#186;&#208;&#176;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Network...&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100912T161435Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -54663,6 +54967,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Private network&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110107T220205Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#159;&#209;&#128;&#209;&#139;&#208;&#178;&#208;&#176;&#209;&#130;&#208;&#189;&#208;&#176;&#209;&#143; &#209;&#129;&#208;&#181;&#209;&#130;&#208;&#186;&#208;&#176;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Problem Copying&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100716T090821Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -55575,6 +55887,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Public network&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110107T215813Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#159;&#209;&#131;&#208;&#177;&#208;&#187;&#209;&#150;&#209;&#135;&#208;&#189;&#208;&#176;&#209;&#143; &#209;&#129;&#208;&#181;&#209;&#130;&#208;&#186;&#208;&#176;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Public network\nIf you don't recognize all the computers on the network (for example, you're in a coffee shop or airport, or you have mobile broadband), this is a public network and is not trusted.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101204T170439Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -56127,6 +56447,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Ready to create&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110107T221013Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#147;&#208;&#176;&#209;&#130;&#208;&#190;&#208;&#178;&#209;&#139; &#208;&#180;&#208;&#176; &#209;&#129;&#209;&#130;&#208;&#178;&#208;&#176;&#209;&#128;&#209;&#141;&#208;&#189;&#208;&#189;&#209;&#143;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Ready to erase disc&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100715T093102Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -56353,8 +56681,8 @@
+       &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Reconnect&lt;/seg&gt;
+       &lt;/tuv&gt;
+-      &lt;tuv lang=&quot;be&quot; changedate=&quot;20100919T190849Z&quot; changeid=&quot;eratyk&quot;&gt;
+-        &lt;seg&gt;&#208;&#159;&#208;&#181;&#209;&#128;&#208;&#176;&#208;&#183;&#208;&#187;&#209;&#131;&#209;&#135;&#209;&#139;&#209;&#134;&#209;&#134;&#208;&#176;&lt;/seg&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110107T223044Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#159;&#208;&#181;&#209;&#128;&#208;&#176;&#208;&#183;&#208;&#187;&#209;&#131;&#209;&#135;&#209;&#139;&#209;&#134;&#209;&#140;&lt;/seg&gt;
+       &lt;/tuv&gt;
+     &lt;/tu&gt;
+     &lt;tu&gt;
+@@ -60599,6 +60927,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;See full map&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110107T200850Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#159;&#208;&#176;&#208;&#177;&#208;&#176;&#209;&#135;&#209;&#139;&#209;&#134;&#209;&#140; &#208;&#191;&#208;&#190;&#209;&#158;&#208;&#189;&#209;&#131;&#209;&#142; &#208;&#188;&#208;&#176;&#208;&#191;&#209;&#131;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;See installed printers and add new ones.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101107T190437Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -62071,6 +62407,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Set up a new connection or network&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110107T201050Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#163;&#209;&#129;&#209;&#130;&#208;&#176;&#208;&#187;&#209;&#143;&#208;&#178;&#208;&#176;&#209;&#134;&#209;&#140; &#208;&#189;&#208;&#190;&#208;&#178;&#208;&#176;&#208;&#181; &#208;&#183;&#208;&#187;&#209;&#131;&#209;&#135;&#209;&#141;&#208;&#189;&#208;&#189;&#208;&#181; &#209;&#134;&#209;&#150; &#209;&#129;&#208;&#181;&#209;&#130;&#208;&#186;&#209;&#131;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Set up a new connection with RemoteApp and Desktop Connections&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100927T164208Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -62087,6 +62431,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Set up a wireless, broadband, dial-up, ad hoc, or VPN connection; or set up a router or access point.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110107T214734Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#163;&#209;&#129;&#209;&#130;&#208;&#176;&#208;&#187;&#209;&#143;&#208;&#178;&#208;&#176;&#209;&#134;&#209;&#140; &#209;&#136;&#209;&#139;&#209;&#128;&#208;&#190;&#208;&#186;&#208;&#176;&#208;&#191;&#208;&#176;&#208;&#187;&#208;&#190;&#209;&#129;&#208;&#189;&#208;&#176;&#208;&#181;, &#209;&#130;&#209;&#141;&#208;&#187;&#208;&#181;&#209;&#132;&#208;&#190;&#208;&#189;&#208;&#189;&#208;&#176;&#208;&#181;, &#208;&#188;&#209;&#150;&#208;&#182;&#208;&#186;&#208;&#176;&#208;&#188;&#208;&#191;'&#209;&#142;&#209;&#130;&#208;&#176;&#209;&#128;&#208;&#189;&#208;&#176;&#208;&#181;, VPN &#209;&#134;&#209;&#150; &#209;&#128;&#208;&#176;&#208;&#180;&#209;&#139;&#209;&#145;&#208;&#183;&#208;&#187;&#209;&#131;&#209;&#135;&#209;&#141;&#208;&#189;&#208;&#189;&#208;&#181;, &#209;&#128;&#209;&#131;&#209;&#130;&#209;&#141;&#209;&#128; &#209;&#134;&#209;&#150; &#208;&#186;&#209;&#128;&#208;&#190;&#208;&#191;&#208;&#186;&#209;&#131; &#208;&#180;&#208;&#190;&#209;&#129;&#209;&#130;&#209;&#131;&#208;&#191;&#209;&#131;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Set up an ad hoc (computer-to-computer) network&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100927T163736Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -62999,6 +63351,22 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Show me all the files and folders I am sharing&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110107T220315Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#159;&#208;&#176;&#208;&#186;&#208;&#176;&#208;&#183;&#208;&#176;&#209;&#134;&#209;&#140; &#208;&#188;&#208;&#189;&#208;&#181; &#209;&#158;&#209;&#129;&#208;&#181; &#209;&#132;&#208;&#176;&#208;&#185;&#208;&#187;&#209;&#139; &#209;&#150; &#208;&#186;&#208;&#176;&#209;&#130;&#208;&#176;&#208;&#187;&#208;&#190;&#208;&#179;&#209;&#150;, &#208;&#180;&#208;&#176; &#209;&#143;&#208;&#186;&#209;&#150;&#209;&#133; &#209;&#143; &#208;&#180;&#208;&#176;&#209;&#142; &#208;&#176;&#208;&#179;&#209;&#131;&#208;&#187;&#209;&#140;&#208;&#189;&#209;&#139; &#208;&#180;&#208;&#190;&#209;&#129;&#209;&#130;&#209;&#131;&#208;&#191;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Show me all the shared network folders on this computer&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110107T220440Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#159;&#208;&#176;&#208;&#186;&#208;&#176;&#208;&#183;&#208;&#176;&#209;&#134;&#209;&#140; &#208;&#188;&#208;&#189;&#208;&#181; &#209;&#158;&#209;&#129;&#208;&#181; &#208;&#176;&#208;&#179;&#209;&#131;&#208;&#187;&#209;&#140;&#208;&#189;&#208;&#176;&#208;&#180;&#208;&#176;&#209;&#129;&#209;&#130;&#209;&#131;&#208;&#191;&#208;&#189;&#209;&#139;&#209;&#143; &#209;&#129;&#208;&#181;&#209;&#130;&#208;&#186;&#208;&#176;&#208;&#178;&#209;&#139;&#209;&#143; &#208;&#186;&#208;&#176;&#209;&#130;&#208;&#176;&#208;&#187;&#208;&#190;&#208;&#179;&#209;&#150; &#208;&#189;&#208;&#176; &#208;&#179;&#209;&#141;&#209;&#130;&#209;&#139;&#208;&#188; &#208;&#186;&#208;&#176;&#208;&#188;&#208;&#191;'&#209;&#142;&#209;&#130;&#208;&#176;&#209;&#128;&#209;&#139;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Show more details...&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101118T074342Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -63823,6 +64191,46 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Signal strength: Excellent&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110107T220238Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#156;&#208;&#190;&#209;&#134; &#209;&#129;&#209;&#150;&#208;&#179;&#208;&#189;&#208;&#176;&#208;&#187;&#209;&#131;: &#208;&#146;&#209;&#139;&#208;&#180;&#208;&#176;&#209;&#130;&#208;&#189;&#209;&#139;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Signal strength: Fair&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110107T220223Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#156;&#208;&#190;&#209;&#134; &#209;&#129;&#209;&#150;&#208;&#179;&#208;&#189;&#208;&#176;&#208;&#187;&#209;&#131;: &#208;&#157;&#208;&#181;&#208;&#177;&#208;&#187;&#208;&#176;&#208;&#179;&#209;&#150;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Signal strength: Good&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110107T220228Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#156;&#208;&#190;&#209;&#134; &#209;&#129;&#209;&#150;&#208;&#179;&#208;&#189;&#208;&#176;&#208;&#187;&#209;&#131;: &#208;&#148;&#208;&#190;&#208;&#177;&#209;&#128;&#209;&#139;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Signal strength: Poor&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110107T220218Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#156;&#208;&#190;&#209;&#134; &#209;&#129;&#209;&#150;&#208;&#179;&#208;&#189;&#208;&#176;&#208;&#187;&#209;&#131;: &#208;&#148;&#209;&#128;&#209;&#141;&#208;&#189;&#208;&#189;&#209;&#139;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Signal strength: Very good&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110107T220233Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#156;&#208;&#190;&#209;&#134; &#209;&#129;&#209;&#150;&#208;&#179;&#208;&#189;&#208;&#176;&#208;&#187;&#209;&#131;: &#208;&#146;&#208;&#181;&#208;&#187;&#209;&#140;&#208;&#188;&#209;&#150; &#208;&#180;&#208;&#190;&#208;&#177;&#209;&#128;&#209;&#139;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Signature Update Folder%0&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100707T115053Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -70839,6 +71247,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;The service to detect this status is disabled.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110107T222157Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#161;&#208;&#187;&#209;&#131;&#208;&#182;&#208;&#177;&#208;&#176;, &#209;&#143;&#208;&#186;&#208;&#176;&#209;&#143; &#208;&#178;&#209;&#139;&#209;&#143;&#209;&#158;&#208;&#187;&#209;&#143;&#208;&#181; &#208;&#179;&#209;&#141;&#209;&#130;&#209;&#139; &#209;&#129;&#209;&#130;&#208;&#176;&#208;&#189;, &#208;&#178;&#209;&#139;&#208;&#186;&#208;&#187;&#209;&#142;&#209;&#135;&#208;&#176;&#208;&#189;&#208;&#176;&#209;&#143;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;The service to detect this status is turned off.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101204T172023Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -72503,6 +72919,38 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;This computer %1 is connected to network %2 and the Internet.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110107T221948Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#147;&#209;&#141;&#209;&#130;&#209;&#139; &#208;&#186;&#208;&#176;&#208;&#188;&#208;&#191;'&#209;&#142;&#209;&#130;&#208;&#176;&#209;&#128; %1 &#208;&#183;&#208;&#187;&#209;&#131;&#209;&#135;&#208;&#176;&#208;&#189;&#209;&#139; &#208;&#183; &#209;&#129;&#208;&#181;&#209;&#130;&#208;&#186;&#208;&#176;&#208;&#185; %2 &#209;&#150; &#209;&#129;&#208;&#181;&#209;&#134;&#209;&#150;&#208;&#178;&#208;&#176;&#208;&#188;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;This computer %1 is connected to network %2 but not the Internet.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110107T222008Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#147;&#209;&#141;&#209;&#130;&#209;&#139; &#208;&#186;&#208;&#176;&#208;&#188;&#208;&#191;'&#209;&#142;&#209;&#130;&#208;&#176;&#209;&#128; %1 &#208;&#183;&#208;&#187;&#209;&#131;&#209;&#135;&#208;&#176;&#208;&#189;&#209;&#139; &#208;&#183; &#209;&#129;&#208;&#181;&#209;&#130;&#208;&#186;&#208;&#176;&#208;&#185; %2, &#208;&#176;&#208;&#187;&#208;&#181; &#208;&#189;&#208;&#181; &#208;&#183; &#209;&#129;&#208;&#181;&#209;&#134;&#209;&#150;&#208;&#178;&#208;&#176;&#208;&#188;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;This computer %1 is not connected to a network.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110107T221928Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#147;&#209;&#141;&#209;&#130;&#209;&#139; &#208;&#186;&#208;&#176;&#208;&#188;&#208;&#191;'&#209;&#142;&#209;&#130;&#208;&#176;&#209;&#128; %1 &#208;&#189;&#208;&#181; &#208;&#183;&#208;&#187;&#209;&#131;&#209;&#135;&#208;&#176;&#208;&#189;&#209;&#139; &#208;&#183; &#209;&#129;&#208;&#181;&#209;&#130;&#208;&#186;&#208;&#176;&#208;&#185;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;This computer doesn't meet security standards defined by your network administrator.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110107T222109Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#147;&#209;&#141;&#209;&#130;&#209;&#139; &#208;&#186;&#208;&#176;&#208;&#188;&#208;&#191;'&#209;&#142;&#209;&#130;&#208;&#176;&#209;&#128; &#208;&#189;&#208;&#181; &#208;&#176;&#208;&#180;&#208;&#191;&#208;&#176;&#208;&#178;&#209;&#143;&#208;&#180;&#208;&#176;&#208;&#181; &#209;&#129;&#209;&#130;&#208;&#176;&#208;&#189;&#208;&#180;&#208;&#176;&#209;&#128;&#209;&#130;&#208;&#176;&#208;&#188; &#208;&#177;&#209;&#143;&#209;&#129;&#208;&#191;&#208;&#181;&#208;&#186;&#209;&#150;, &#208;&#178;&#209;&#139;&#208;&#183;&#208;&#189;&#208;&#176;&#209;&#135;&#208;&#176;&#208;&#189;&#209;&#139;&#208;&#188; &#208;&#178;&#208;&#176;&#209;&#136;&#209;&#139;&#208;&#188; &#209;&#129;&#208;&#181;&#209;&#130;&#208;&#186;&#208;&#176;&#208;&#178;&#209;&#139;&#208;&#188; &#208;&#176;&#208;&#180;&#208;&#188;&#209;&#150;&#208;&#189;&#209;&#150;&#209;&#129;&#209;&#130;&#209;&#128;&#208;&#176;&#209;&#130;&#208;&#176;&#209;&#128;&#208;&#176;&#208;&#188;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;This computer has been configured to require a disk to be present during startup.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100925T060142Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -79407,6 +79855,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;View computers and devices&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110107T220114Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#159;&#209;&#128;&#208;&#176;&#208;&#179;&#208;&#187;&#208;&#181;&#208;&#180;&#208;&#183;&#208;&#181;&#209;&#134;&#209;&#140; &#208;&#186;&#208;&#176;&#208;&#188;&#208;&#191;'&#209;&#142;&#209;&#130;&#208;&#176;&#209;&#128;&#209;&#139; &#209;&#150; &#208;&#191;&#209;&#128;&#209;&#139;&#208;&#187;&#208;&#176;&#208;&#180;&#209;&#139;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;View current accessibility settings&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101107T172028Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -79607,6 +80063,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;View status&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110107T200901Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#159;&#209;&#128;&#208;&#176;&#208;&#179;&#208;&#187;&#208;&#181;&#208;&#180;&#208;&#183;&#208;&#181;&#209;&#134;&#209;&#140; &#209;&#129;&#209;&#130;&#208;&#176;&#208;&#189;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;View sync results&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101028T083409Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -79663,6 +80127,22 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;View your active networks&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110107T200930Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#159;&#209;&#128;&#208;&#176;&#208;&#179;&#208;&#187;&#208;&#181;&#208;&#180;&#208;&#183;&#209;&#140;&#209;&#134;&#208;&#181; &#208;&#178;&#208;&#176;&#209;&#136;&#209;&#139;&#209;&#143; &#208;&#176;&#208;&#186;&#209;&#130;&#209;&#139;&#209;&#158;&#208;&#189;&#209;&#139;&#209;&#143; &#209;&#129;&#208;&#181;&#209;&#130;&#208;&#186;&#209;&#150;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;View your basic network information and set up connections&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110107T200800Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#159;&#209;&#128;&#208;&#176;&#208;&#179;&#208;&#187;&#208;&#181;&#208;&#180;&#208;&#183;&#209;&#140;&#209;&#134;&#208;&#181; &#208;&#178;&#208;&#176;&#209;&#136;&#209;&#131;&#209;&#142; &#208;&#176;&#209;&#129;&#208;&#189;&#208;&#190;&#209;&#158;&#208;&#189;&#209;&#131;&#209;&#142; &#209;&#129;&#208;&#181;&#209;&#130;&#208;&#186;&#208;&#176;&#208;&#178;&#209;&#131;&#209;&#142; &#209;&#150;&#208;&#189;&#209;&#132;&#208;&#176;&#209;&#128;&#208;&#188;&#208;&#176;&#209;&#134;&#209;&#139;&#209;&#142; &#209;&#150; &#209;&#158;&#209;&#129;&#209;&#130;&#208;&#176;&#208;&#187;&#209;&#142;&#208;&#185;&#209;&#134;&#208;&#181; &#208;&#183;&#208;&#187;&#209;&#131;&#209;&#135;&#209;&#141;&#208;&#189;&#208;&#189;&#209;&#150;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Views&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100723T175032Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -79831,6 +80311,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;WORKGROUP&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110107T220505Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;WORKGROUP&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Wait&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101010T054056Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -82911,6 +83399,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Work network&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110107T220146Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#159;&#209;&#128;&#208;&#176;&#209;&#134;&#208;&#190;&#209;&#158;&#208;&#189;&#208;&#176;&#209;&#143; &#208;&#188;&#208;&#181;&#209;&#130;&#208;&#186;&#208;&#176;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Work network\nIf all the computers on this network are at your workplace, and you recognize them, this is a trusted work network.  Don't choose this for public places such as coffee shops or airports.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101204T162555Z&quot; changeid=&quot;eratyk&quot;&gt;
+
+Added: Windows7/source/x32/Windows/System32/en-US/netcenter.dll.rc
+===================================================================
+--- Windows7/source/x32/Windows/System32/en-US/netcenter.dll.rc	                        (rev 0)
++++ Windows7/source/x32/Windows/System32/en-US/netcenter.dll.rc	2011-01-07 22:53:09 UTC (rev 139)
+@@ -0,0 +1,261 @@
++1 MUI &quot;Data_1481.bin&quot;
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++1, 	&quot;Network and Sharing Center&quot;
++2, 	&quot;Check network status, change network settings and set preferences for sharing files and printers.&quot;
++10, 	&quot;View computers and devices&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++16, 	&quot;Network and Sharing Center&quot;
++19, 	&quot;Set up a connection or network&quot;
++22, 	&quot;Internet&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++37, 	&quot;Diagnose and repair&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++51, 	&quot;Unknown&quot;
++55, 	&quot;Do you want to turn on %s?&quot;
++56, 	&quot;This service \&quot;%s\&quot;&quot;
++58, 	&quot;&amp;Turn this on&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++82, 	&quot;Category&quot;
++83, 	&quot;Public network&quot;
++84, 	&quot;Home network&quot;
++85, 	&quot;Work network&quot;
++86, 	&quot;Private network&quot;
++88, 	&quot;Signal strength: Poor&quot;
++89, 	&quot;Signal strength: Fair&quot;
++90, 	&quot;Signal strength: Good&quot;
++91, 	&quot;Signal strength: Very good&quot;
++92, 	&quot;Signal strength: Excellent&quot;
++93, 	&quot;Internet&quot;
++94, 	&quot;No Internet access&quot;
++95, 	&quot;No network access&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++96, 	&quot;Internet and domain access&quot;
++97, 	&quot;Domain access only&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++115, 	&quot;Show me all the files and folders I am sharing&quot;
++116, 	&quot;Show me all the shared network folders on this computer&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++180, 	&quot;* Unknown *&quot;
++181, 	&quot;WORKGROUP&quot;
++182, 	&quot;Security Shield Icon&quot;
++184, 	&quot;For sharing and discovery to work properly, make sure the settings in your firewall program match the following settings.&quot;
++185, 	&quot;Ready to create&quot;
++186, 	&quot;Available to join&quot;
++187, 	&quot;Joined&quot;
++188, 	&quot;Manage wireless networks&quot;
++189, 	&quot;Change adapter settings&quot;
++190, 	&quot;Change advanced sharing settings&quot;
++191, 	&quot;Network name: %1&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++192, 	&quot;Access type: %1&quot;
++193, 	&quot;Connection name: %1&quot;
++194, 	&quot;Network type: %1&quot;
++195, 	&quot;HomeGroup status: %1&quot;
++196, 	&quot;%1 (%2)&quot;
++197, 	&quot;%1 (%2)&quot;
++198, 	&quot;%1 (roaming on %2)&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++507, 	&quot;(This computer)&quot;
++508, 	&quot;Multiple networks&quot;
++509, 	&quot;Internet&quot;
++510, 	&quot;Network&quot;
++511, 	&quot;Click to troubleshoot problems&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++512, 	&quot;Not connected&quot;
++513, 	&quot;Limited connectivity&quot;
++514, 	&quot;Icon&quot;
++515, 	&quot;Connection line&quot;
++516, 	&quot;This computer %1 is not connected to a network.&quot;
++517, 	&quot;This computer %1 is connected to network %2 and the Internet.&quot;
++518, 	&quot;This computer %1 is connected to network %2 but not the Internet.&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++1179, 	&quot;View your basic network information and set up connections&quot;
++1180, 	&quot;See full map&quot;
++1181, 	&quot;Network access might be limited.&quot;
++1182, 	&quot;View status&quot;
++1183, 	&quot;This computer doesn't meet security standards defined by your network administrator.&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++1185, 	&quot;You are currently not connected to any networks.&quot;
++1188, 	&quot;Network icon&quot;
++1195, 	&quot;Network&quot;
++1196, 	&quot;Unknown&quot;
++1197, 	&quot;The service to detect this status is disabled.&quot;
++1198, 	&quot;More information...&quot;
++1199, 	&quot;View your active networks&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++1200, 	&quot;Connect or disconnect&quot;
++1201, 	&quot;Change your networking settings&quot;
++1202, 	&quot;Access type:&quot;
++1203, 	&quot;HomeGroup:&quot;
++1204, 	&quot;Connections:&quot;
++1206, 	&quot;Connect to a network&quot;
++1207, 	&quot;Set up a new connection or network&quot;
++1208, 	&quot;Set up a wireless, broadband, dial-up, ad hoc, or VPN connection; or set up a router or access point.&quot;
++1209, 	&quot;Connect to a network&quot;
++1210, 	&quot;Connect or reconnect to a wireless, wired, dial-up, or VPN network connection.&quot;
++1211, 	&quot;Choose homegroup and sharing options&quot;
++1212, 	&quot;Access files and printers located on other network computers, or change sharing settings.&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++1217, 	&quot;Troubleshoot problems&quot;
++1218, 	&quot;Diagnose and repair network problems, or get troubleshooting information.&quot;
++1219, 	&quot;Connection name&quot;
++1220, 	&quot;Network name&quot;
++1222, 	&quot;Access type&quot;
++1228, 	&quot;Network and sharing center help&quot;
++1229, 	&quot;Network type&quot;
++1230, 	&quot;Domain network&quot;
++1231, 	&quot;Network type: Domain network&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++1232, 	&quot;Public network&quot;
++1233, 	&quot;Network type: Public network&quot;
++}
++
++1 MESSAGETABLE
++{
++268435505,  	&quot;Response Time&quot;
++805306368,  	&quot;Info&quot;
++805306369,  	&quot;Start&quot;
++805306370,  	&quot;Stop&quot;
++1342177284,  	&quot;Information&quot;
++-1879048191,  	&quot;Microsoft-Windows-Network and Sharing Center&quot;
++-1342171280,  	&quot;Network and Sharing Center active networks list updated.&quot;
++}
++
++
++1 VERSIONINFO
++FILEVERSION 6,1,7600,16385
++PRODUCTVERSION 6,1,7600,16385
++FILEOS 0x40004
++FILETYPE 0x2
++{
++BLOCK &quot;StringFileInfo&quot;
++{
++	BLOCK &quot;040904B0&quot;
++	{
++		VALUE &quot;CompanyName&quot;, &quot;Microsoft Corporation&quot;
++		VALUE &quot;FileDescription&quot;, &quot;Network Center control panel&quot;
++		VALUE &quot;FileVersion&quot;, &quot;6.1.7600.16385 (win7_rtm.090713-1255)&quot;
++		VALUE &quot;InternalName&quot;, &quot;NETCENTER&quot;
++		VALUE &quot;LegalCopyright&quot;, &quot;&#169; Microsoft Corporation. All rights reserved.&quot;
++		VALUE &quot;OriginalFilename&quot;, &quot;NETCENTER.DLL.MUI&quot;
++		VALUE &quot;ProductName&quot;, &quot;Microsoft&#174; Windows&#174; Operating System&quot;
++		VALUE &quot;ProductVersion&quot;, &quot;6.1.7600.16385&quot;
++		VALUE &quot;OleSelfRegister&quot;, &quot;&quot;
++	}
++}
++
++BLOCK &quot;VarFileInfo&quot;
++{
++	VALUE &quot;Translation&quot;, 0x0409 0x04B0
++}
++}
++
+
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000056.html">[I18n-bel-svn] r138 - in Windows7: . omegat source/x32/Windows	source/x32/Windows/System32/en-US source/x32/Windows/diagnostics	source/x32/Windows/diagnostics/system	source/x32/Windows/diagnostics/system/DeviceCenter	source/x32/Windows/diagnostics/system/DeviceCenter/en-US
+</A></li>
+	<LI>Next message: <A HREF="000058.html">[I18n-bel-svn] r140 - in Windows7: omegat	source/x32/Windows/System32/en-US
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#57">[ date ]</a>
+              <a href="thread.html#57">[ thread ]</a>
+              <a href="subject.html#57">[ subject ]</a>
+              <a href="author.html#57">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/i18n-bel-svn">More information about the I18n-bel-svn
+mailing list</a><br>
+</body></html>

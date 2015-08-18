@@ -1,0 +1,1611 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [I18n-bel-svn] r166 - / Windows7/omegat	Windows7/source/Windows/System32
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/i18n-bel-svn/2011-February/index.html" >
+   <LINK REL="made" HREF="mailto:i18n-bel-svn%40lists.berlios.de?Subject=Re%3A%20%5BI18n-bel-svn%5D%20r166%20-%20/%20Windows7/omegat%0A%09Windows7/source/Windows/System32&In-Reply-To=%3C20110217131743.63A494813EB%40sheep.berlios.de%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000083.html">
+   <LINK REL="Next"  HREF="000085.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[I18n-bel-svn] r166 - / Windows7/omegat	Windows7/source/Windows/System32</H1>
+    <B>eratyk at mail.berlios.de</B> 
+    <A HREF="mailto:i18n-bel-svn%40lists.berlios.de?Subject=Re%3A%20%5BI18n-bel-svn%5D%20r166%20-%20/%20Windows7/omegat%0A%09Windows7/source/Windows/System32&In-Reply-To=%3C20110217131743.63A494813EB%40sheep.berlios.de%3E"
+       TITLE="[I18n-bel-svn] r166 - / Windows7/omegat	Windows7/source/Windows/System32">eratyk at mail.berlios.de
+       </A><BR>
+    <I>Thu Feb 17 14:17:42 CET 2011</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000083.html">[I18n-bel-svn] r165 - / Windows7 Windows7/omegat
+</A></li>
+        <LI>Next message: <A HREF="000085.html">[I18n-bel-svn] r167 - Android-2.3/omegat
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#84">[ date ]</a>
+              <a href="thread.html#84">[ thread ]</a>
+              <a href="subject.html#84">[ subject ]</a>
+              <a href="author.html#84">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>Author: eratyk
+Date: 2011-02-17 14:17:42 +0100 (Thu, 17 Feb 2011)
+New Revision: 166
+
+Added:
+   Windows7/source/Windows/System32/tcpipcfg.dll.rc
+Modified:
+   Windows7/omegat/project_save.tmx
+   slovy_na_abmerkavan'ne.txt
+Log:
+
+
+Modified: Windows7/omegat/project_save.tmx
+===================================================================
+--- Windows7/omegat/project_save.tmx	2011-02-16 18:27:12 UTC (rev 165)
++++ Windows7/omegat/project_save.tmx	2011-02-17 13:17:42 UTC (rev 166)
+@@ -3254,6 +3254,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;&amp;Alternate DNS server:&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110217T081454Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#144;&#208;&#187;&#209;&#140;&#209;&#130;&#209;&#141;&#209;&#128;&#208;&#189;&#208;&#176;&#209;&#130;&#209;&#139;&#209;&#158;&#208;&#189;&#209;&#139; DNS-&#209;&#129;&#208;&#181;&#209;&#128;&#208;&#178;&#208;&#181;&#209;&#128;:&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;&amp;Always On Top&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101111T094918Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -3414,6 +3422,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;&amp;Automatic metric&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110217T092527Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#144;&#209;&#158;&#209;&#130;&#208;&#176;&#208;&#188;&#208;&#176;&#209;&#130;&#209;&#139;&#209;&#135;&#208;&#189;&#208;&#176;&#209;&#143; &#208;&#188;&#208;&#181;&#209;&#130;&#209;&#128;&#209;&#139;&#208;&#186;&#208;&#176;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;&amp;Automatically fix file system errors&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100707T091540Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -4286,6 +4302,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;&amp;DNS server:&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110217T073957Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;DNS-&#209;&#129;&#208;&#181;&#209;&#128;&#208;&#178;&#208;&#181;&#209;&#128;:&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;&amp;Dataset&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110121T165227Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -4334,6 +4358,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;&amp;Default gateway:&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110217T081238Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#159;&#208;&#181;&#209;&#128;&#208;&#176;&#208;&#180;&#208;&#178;&#209;&#139;&#208;&#183;&#208;&#189;&#208;&#176;&#209;&#135;&#208;&#176;&#208;&#189;&#209;&#139; &#209;&#136;&#208;&#187;&#209;&#142;&#208;&#183;:&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;&amp;Default scale (96 DPI) - fit more information&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101011T173841Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -4646,6 +4678,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;&amp;Domain suffix:&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110217T075402Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#161;&#209;&#131;&#209;&#132;&#209;&#150;&#208;&#186;&#209;&#129; &#208;&#180;&#208;&#176;&#208;&#188;&#208;&#181;&#208;&#189;&#208;&#176;:&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;&amp;Domain:&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110108T150921Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -5174,6 +5214,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;&amp;Gateway:&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110217T075643Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#168;&#208;&#187;&#209;&#142;&#208;&#183;:&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;&amp;Get device information from the Internet&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110104T172334Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -5406,6 +5454,22 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;&amp;IP address:&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110217T075709Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;IP-&#208;&#176;&#208;&#180;&#209;&#128;&#208;&#176;&#209;&#129;:&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;&amp;IPv6 address:&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110217T093149Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;IPv6-&#208;&#176;&#208;&#180;&#209;&#128;&#208;&#176;&#209;&#129;:&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;&amp;Identify&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100921T190032Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -5982,6 +6046,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;&amp;Metric:&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110217T075652Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#156;&#208;&#181;&#209;&#130;&#209;&#128;&#209;&#139;&#208;&#186;&#208;&#176;:&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;&amp;Minimize&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100927T203155Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -6406,6 +6478,22 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;&amp;Obtain an IP address automatically&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110217T081215Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#144;&#209;&#130;&#209;&#128;&#209;&#139;&#208;&#188;&#208;&#187;&#209;&#150;&#208;&#178;&#208;&#176;&#209;&#134;&#209;&#140; IP-&#208;&#176;&#208;&#180;&#209;&#128;&#208;&#176;&#209;&#129; &#208;&#176;&#209;&#158;&#209;&#130;&#208;&#176;&#208;&#188;&#208;&#176;&#209;&#130;&#209;&#139;&#209;&#135;&#208;&#189;&#208;&#176;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;&amp;Obtain an IPv6 address automatically&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110217T093343Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#144;&#209;&#130;&#209;&#128;&#209;&#139;&#208;&#188;&#208;&#187;&#209;&#150;&#208;&#178;&#208;&#176;&#209;&#134;&#209;&#140; IPv6-&#208;&#176;&#208;&#180;&#209;&#128;&#208;&#176;&#209;&#129; &#208;&#176;&#209;&#158;&#209;&#130;&#208;&#176;&#208;&#188;&#208;&#176;&#209;&#130;&#209;&#139;&#209;&#135;&#208;&#189;&#208;&#176;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;&amp;Old password:&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110108T150334Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -6806,6 +6894,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;&amp;Preferred DNS server:&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110217T081427Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#159;&#208;&#176;&#208;&#182;&#208;&#176;&#208;&#180;&#208;&#176;&#208;&#189;&#209;&#139; DNS-&#209;&#129;&#208;&#181;&#209;&#128;&#208;&#178;&#208;&#181;&#209;&#128;:&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;&amp;Press:&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100728T130140Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -7086,6 +7182,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;&amp;Register this connection's addresses in DNS&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110217T080539Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#160;&#209;&#141;&#208;&#179;&#209;&#150;&#209;&#129;&#209;&#130;&#209;&#128;&#208;&#176;&#208;&#178;&#208;&#176;&#209;&#134;&#209;&#140; &#208;&#176;&#208;&#180;&#209;&#128;&#208;&#176;&#209;&#129;&#209;&#139; &#208;&#179;&#209;&#141;&#209;&#130;&#208;&#176;&#208;&#179;&#208;&#176; &#208;&#183;&#208;&#187;&#209;&#131;&#209;&#135;&#209;&#141;&#208;&#189;&#208;&#189;&#209;&#143; &#209;&#158; DNS&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;&amp;Remote Access Preferences...&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110126T134112Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -8118,6 +8222,22 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;&amp;Subnet mask:&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110217T075715Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#156;&#208;&#176;&#209;&#129;&#208;&#186;&#208;&#176; &#208;&#191;&#208;&#176;&#208;&#180;&#209;&#129;&#208;&#181;&#209;&#130;&#208;&#186;&#209;&#150;:&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;&amp;Subnet prefix length:&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110217T093225Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#148;&#208;&#176;&#209;&#158;&#208;&#182;&#209;&#139;&#208;&#189;&#209;&#143; &#208;&#191;&#209;&#128;&#209;&#141;&#209;&#132;&#209;&#150;&#208;&#186;&#209;&#129;&#208;&#176; &#208;&#191;&#208;&#176;&#208;&#180;&#209;&#129;&#208;&#181;&#209;&#130;&#208;&#186;&#209;&#150;:&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;&amp;Suspend&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110127T082645Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -8590,6 +8710,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;&amp;Use default gateway on remote network&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110217T091421Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#154;&#208;&#176;&#209;&#128;&#209;&#139;&#209;&#129;&#209;&#130;&#208;&#176;&#209;&#134;&#209;&#140; &#208;&#191;&#208;&#181;&#209;&#128;&#208;&#176;&#208;&#180;&#208;&#178;&#209;&#139;&#208;&#183;&#208;&#189;&#208;&#176;&#209;&#135;&#208;&#176;&#208;&#189;&#209;&#139; &#209;&#136;&#208;&#187;&#209;&#142;&#208;&#183; &#209;&#131; &#208;&#176;&#208;&#180;&#208;&#180;&#208;&#176;&#208;&#187;&#208;&#181;&#208;&#189;&#208;&#176;&#208;&#185; &#209;&#129;&#208;&#181;&#209;&#130;&#209;&#134;&#209;&#139;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;&amp;Use dialing rules&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110108T150305Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -8606,6 +8734,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;&amp;Use this connection's DNS suffix in DNS registration&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110217T080744Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#154;&#208;&#176;&#209;&#128;&#209;&#139;&#209;&#129;&#209;&#130;&#208;&#176;&#209;&#134;&#209;&#140; DNS-&#209;&#129;&#209;&#131;&#209;&#132;&#209;&#150;&#208;&#186;&#209;&#129; &#208;&#179;&#209;&#141;&#209;&#130;&#208;&#176;&#208;&#179;&#208;&#176; &#208;&#183;&#208;&#187;&#209;&#131;&#209;&#135;&#209;&#141;&#208;&#189;&#208;&#189;&#209;&#143; &#209;&#158; DNS-&#209;&#128;&#209;&#141;&#208;&#179;&#209;&#150;&#209;&#129;&#209;&#130;&#209;&#128;&#208;&#176;&#209;&#134;&#209;&#139;&#209;&#150;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;&amp;Use this program&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100315T140930Z&quot; changeid=&quot;Ales Koshal [icq#:706101]&quot;&gt;
+@@ -8646,6 +8782,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;&amp;Validate settings, if changed, upon exit&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110217T093144Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#159;&#208;&#176;&#209;&#134;&#208;&#178;&#209;&#143;&#209;&#128;&#208;&#180;&#208;&#182;&#208;&#176;&#209;&#134;&#209;&#140; &#208;&#189;&#208;&#176;&#208;&#187;&#208;&#176;&#208;&#180;&#209;&#139; &#208;&#191;&#208;&#176;&#208;&#180;&#209;&#135;&#208;&#176;&#209;&#129; &#208;&#178;&#209;&#139;&#208;&#185;&#209;&#129;&#209;&#134;&#209;&#143;, &#208;&#186;&#208;&#176;&#208;&#187;&#209;&#150; &#209;&#143;&#208;&#189;&#209;&#139; &#208;&#183;&#208;&#188;&#208;&#181;&#208;&#189;&#208;&#181;&#208;&#189;&#209;&#139;&#209;&#143;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;&amp;Vertical&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110121T170256Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -8742,6 +8886,22 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;&amp;WINS addresses, in order of use:&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110217T085427Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;WINS-&#208;&#176;&#208;&#180;&#209;&#128;&#208;&#176;&#209;&#129;&#209;&#139;, &#209;&#131; &#208;&#191;&#208;&#176;&#209;&#128;&#208;&#176;&#208;&#180;&#208;&#186;&#209;&#131; &#208;&#186;&#208;&#176;&#209;&#128;&#209;&#139;&#209;&#129;&#209;&#130;&#208;&#176;&#208;&#189;&#208;&#189;&#209;&#143;:&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;&amp;WINS server:&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110217T090522Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;WINS-&#209;&#129;&#208;&#181;&#209;&#128;&#208;&#178;&#208;&#181;&#209;&#128;:&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;&amp;Wait:&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101118T081001Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -13590,6 +13750,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;A&amp;utomatic metric&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110217T075538Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#144;&#209;&#158;&#209;&#130;&#208;&#176;&#208;&#188;&#208;&#176;&#209;&#130;&#209;&#139;&#209;&#135;&#208;&#189;&#208;&#176;&#209;&#143; &#208;&#188;&#208;&#181;&#209;&#130;&#209;&#128;&#209;&#139;&#208;&#186;&#208;&#176;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;A&amp;utomatically adjust clock for Daylight Saving Time&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110120T151812Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -14350,6 +14518,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Ad&amp;vanced...&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110217T081559Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#148;&#208;&#176;&#208;&#180;&#208;&#176;&#209;&#130;&#208;&#186;&#208;&#190;&#208;&#178;&#208;&#176;...&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Adapter Description&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101123T214129Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -16238,6 +16414,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Alternate Configuration&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110217T092711Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#144;&#208;&#187;&#209;&#140;&#209;&#130;&#209;&#141;&#209;&#128;&#208;&#189;&#208;&#176;&#209;&#130;&#209;&#139;&#209;&#158;&#208;&#189;&#208;&#176;&#209;&#143; &#208;&#186;&#208;&#176;&#208;&#189;&#209;&#132;&#209;&#150;&#208;&#179;&#209;&#131;&#209;&#128;&#208;&#176;&#209;&#134;&#209;&#139;&#209;&#143;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Alternate Manually Configured&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110210T124631Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -16254,6 +16438,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Alternate WI&amp;NS server:&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110217T093107Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#144;&#208;&#187;&#209;&#140;&#209;&#130;&#209;&#141;&#209;&#128;&#208;&#189;&#208;&#176;&#209;&#130;&#209;&#139;&#209;&#158;&#208;&#189;&#209;&#139; WINS-&#209;&#129;&#208;&#181;&#209;&#128;&#208;&#178;&#208;&#181;&#209;&#128;:&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Altitude&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101106T190631Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -17246,6 +17438,30 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Append &amp;primary and connection specific DNS suffixes&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110217T080214Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#148;&#208;&#176;&#208;&#187;&#209;&#131;&#209;&#135;&#208;&#176;&#209;&#134;&#209;&#140; DNS-&#209;&#129;&#209;&#131;&#209;&#132;&#209;&#150;&#208;&#186;&#209;&#129;&#209;&#139; &#208;&#183;&#208;&#187;&#209;&#131;&#209;&#135;&#209;&#141;&#208;&#189;&#208;&#189;&#209;&#143; &#209;&#150; &#208;&#176;&#209;&#129;&#208;&#189;&#208;&#190;&#209;&#158;&#208;&#189;&#209;&#139;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Append parent suffi&amp;xes of the primary DNS suffix&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110217T080251Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#148;&#208;&#176;&#208;&#187;&#209;&#131;&#209;&#135;&#208;&#176;&#209;&#134;&#209;&#140; &#208;&#177;&#208;&#176;&#209;&#134;&#209;&#140;&#208;&#186;&#208;&#190;&#209;&#158;&#209;&#129;&#208;&#186;&#209;&#150;&#209;&#143; &#209;&#129;&#209;&#131;&#209;&#132;&#209;&#150;&#208;&#186;&#209;&#129;&#209;&#139; &#208;&#179;&#208;&#176;&#208;&#187;&#208;&#190;&#209;&#158;&#208;&#189;&#208;&#176;&#208;&#179;&#208;&#176; DNS-&#209;&#129;&#209;&#131;&#209;&#132;&#209;&#150;&#208;&#186;&#209;&#129;&#208;&#176;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Append t&amp;hese DNS suffixes (in order):&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110217T080343Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#148;&#208;&#176;&#208;&#187;&#209;&#131;&#209;&#135;&#209;&#139;&#209;&#134;&#209;&#140; &#208;&#179;&#209;&#141;&#209;&#130;&#209;&#139;&#209;&#143; DNS-&#209;&#129;&#209;&#131;&#209;&#132;&#209;&#150;&#208;&#186;&#209;&#129;&#209;&#139; (&#209;&#131; &#208;&#191;&#208;&#176;&#209;&#128;&#208;&#176;&#208;&#180;&#208;&#186;&#209;&#131;):&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Apple&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101111T100619Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -18734,6 +18950,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Au&amp;tomatic private IP address&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110217T093020Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#144;&#209;&#158;&#209;&#130;&#208;&#176;&#208;&#188;&#208;&#176;&#209;&#130;&#209;&#139;&#209;&#135;&#208;&#189;&#209;&#139; &#208;&#191;&#209;&#128;&#209;&#139;&#208;&#178;&#208;&#176;&#209;&#130;&#208;&#189;&#209;&#139; IP-&#208;&#176;&#208;&#180;&#209;&#128;&#208;&#176;&#209;&#129;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Audio&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100915T144014Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -29838,6 +30062,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;D&amp;NS server addresses, in order of use:&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110217T085435Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#144;&#208;&#180;&#209;&#128;&#208;&#176;&#209;&#129;&#209;&#139; DNS-&#209;&#129;&#208;&#181;&#209;&#128;&#208;&#178;&#208;&#181;&#209;&#128;&#208;&#176;, &#209;&#131; &#208;&#191;&#208;&#176;&#209;&#128;&#208;&#176;&#208;&#180;&#208;&#186;&#209;&#131; &#208;&#186;&#208;&#176;&#209;&#128;&#209;&#139;&#209;&#129;&#209;&#130;&#208;&#176;&#208;&#189;&#208;&#189;&#209;&#143;:&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;D&amp;ata Disc...&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100909T135146Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -29958,6 +30190,22 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;DNS&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110217T075718Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;DNS&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;DNS &amp;suffix for this connection:&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110217T080412Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;DNS-&#209;&#129;&#209;&#131;&#209;&#132;&#209;&#150;&#208;&#186;&#209;&#129; &#208;&#180;&#208;&#187;&#209;&#143; &#208;&#179;&#209;&#141;&#209;&#130;&#208;&#176;&#208;&#179;&#208;&#176; &#208;&#183;&#208;&#187;&#209;&#131;&#209;&#135;&#209;&#141;&#208;&#189;&#208;&#189;&#209;&#143;:&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;DNS Server&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110216T163445Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -30510,6 +30758,22 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;De&amp;fault gateways:&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110217T075449Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#159;&#208;&#181;&#209;&#128;&#208;&#176;&#208;&#180;&#208;&#178;&#209;&#139;&#208;&#183;&#208;&#189;&#208;&#176;&#209;&#135;&#208;&#176;&#208;&#189;&#209;&#139;&#209;&#143; &#209;&#136;&#208;&#187;&#209;&#142;&#208;&#183;&#209;&#139;:&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;De&amp;fault:&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110217T090410Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#159;&#208;&#181;&#209;&#128;&#208;&#176;&#208;&#180;&#208;&#178;&#209;&#139;&#208;&#183;&#208;&#189;&#208;&#176;&#209;&#135;&#208;&#176;&#208;&#189;&#208;&#176;:&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;De&amp;lete&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110108T144220Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -31654,6 +31918,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Di&amp;sable NetBIOS over TCP/IP&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110217T090434Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#146;&#209;&#139;&#208;&#186;&#208;&#187;&#209;&#142;&#209;&#135;&#209;&#139;&#209;&#134;&#209;&#140; NetBIOS &#208;&#191;&#209;&#128;&#208;&#176;&#208;&#183; TCP/IP&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Di&amp;splay:&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100922T092032Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -32022,6 +32294,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Disable class based route addition&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110217T092513Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#146;&#209;&#139;&#208;&#186;&#208;&#187;&#209;&#142;&#209;&#135;&#209;&#139;&#209;&#134;&#209;&#140; &#208;&#180;&#208;&#176;&#208;&#180;&#208;&#176;&#208;&#178;&#208;&#176;&#208;&#189;&#208;&#189;&#208;&#181; &#208;&#188;&#208;&#176;&#209;&#128;&#209;&#136;&#209;&#128;&#209;&#131;&#209;&#130;&#208;&#176;, &#209;&#143;&#208;&#186;&#208;&#190;&#208;&#181; &#208;&#176;&#208;&#177;&#208;&#176;&#208;&#191;&#209;&#150;&#209;&#128;&#208;&#176;&#208;&#181;&#209;&#134;&#209;&#134;&#208;&#176; &#208;&#189;&#208;&#176; &#208;&#186;&#208;&#187;&#208;&#176;&#209;&#129;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Disable idle&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101212T102644Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -34231,6 +34511,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Down&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110217T075756Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#163;&#208;&#189;&#209;&#150;&#208;&#183;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Download&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101103T080855Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -34775,6 +35063,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;E&amp;nable NetBIOS over TCP/IP&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110217T090427Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#163;&#208;&#186;&#208;&#187;&#209;&#142;&#209;&#135;&#209;&#139;&#209;&#134;&#209;&#140; NetBIOS &#208;&#191;&#209;&#128;&#208;&#176;&#208;&#183; TCP/IP&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;E&amp;nable transparency&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101006T063041Z&quot; changeid=&quot;alex&quot;&gt;
+@@ -35087,6 +35383,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Edi&amp;t...&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110217T075452Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#160;&#209;&#141;&#208;&#180;&#208;&#176;&#208;&#179;&#208;&#176;&#208;&#178;&#208;&#176;&#209;&#134;&#209;&#140;...&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Edit&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100706T132855Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -35415,6 +35719,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Enable &amp;LMHOSTS lookup&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110217T085727Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#163;&#208;&#186;&#208;&#187;&#209;&#142;&#209;&#135;&#209;&#139;&#209;&#134;&#209;&#140; LMHOSTS-&#208;&#191;&#208;&#190;&#209;&#136;&#209;&#131;&#208;&#186;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Enable Aero Peek&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100723T131818Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -40471,6 +40783,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Generic1&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110217T075430Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;Generic1&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Genre&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100725T063559Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -42487,6 +42807,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;I&amp;mport LMHOSTS...&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110217T085747Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#134;&#208;&#188;&#208;&#191;&#208;&#176;&#209;&#128;&#209;&#130;&#208;&#176;&#208;&#178;&#208;&#176;&#209;&#134;&#209;&#140; LMHOSTS...&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;I&amp;nstall...&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110108T150819Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -42495,6 +42823,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;I&amp;nterface metric:&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110217T075557Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#156;&#208;&#181;&#209;&#130;&#209;&#128;&#209;&#139;&#208;&#186;&#208;&#176; &#209;&#150;&#208;&#189;&#209;&#130;&#209;&#141;&#209;&#128;&#209;&#132;&#209;&#141;&#208;&#185;&#209;&#129;&#208;&#176;:&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;I've shared a folder with you&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101130T164002Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -42655,6 +42991,22 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;IP Settings&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110217T075410Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#157;&#208;&#176;&#208;&#187;&#208;&#176;&#208;&#180;&#209;&#139; IP&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;IP add&amp;resses&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110217T075417Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;IP-&#208;&#176;&#208;&#180;&#209;&#128;&#208;&#176;&#209;&#129;&#209;&#139;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;IP address&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110127T082842Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -42663,6 +43015,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;IP addresses starting with %1 are not valid because they are reserved for loopback addresses. Please specify some other valid value between %2 and %3.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110217T094716Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;IP-&#208;&#176;&#208;&#180;&#209;&#128;&#208;&#176;&#209;&#129;&#209;&#139; &#208;&#183; %1 &#208;&#183;'&#209;&#143;&#209;&#158;&#208;&#187;&#209;&#143;&#209;&#142;&#209;&#134;&#209;&#134;&#208;&#176; &#208;&#189;&#208;&#181;&#208;&#180;&#208;&#176;&#208;&#191;&#209;&#131;&#209;&#136;&#209;&#135;&#208;&#176;&#208;&#187;&#209;&#140;&#208;&#189;&#209;&#139;&#208;&#188;&#209;&#150;, &#208;&#177;&#208;&#190; &#209;&#143;&#208;&#189;&#209;&#139; &#208;&#183;&#208;&#176;&#209;&#128;&#209;&#141;&#208;&#183;&#208;&#181;&#209;&#128;&#208;&#178;&#208;&#176;&#208;&#178;&#208;&#176;&#208;&#189;&#209;&#139;&#209;&#143; &#208;&#180;&#208;&#187;&#209;&#143; &#208;&#191;&#209;&#143;&#209;&#134;&#208;&#181;&#208;&#187;&#209;&#140;&#208;&#189;&#209;&#139;&#209;&#133; &#208;&#176;&#208;&#180;&#209;&#128;&#208;&#176;&#209;&#129;&#208;&#190;&#209;&#158;. &#208;&#154;&#208;&#176;&#208;&#187;&#209;&#150; &#208;&#187;&#208;&#176;&#209;&#129;&#208;&#186;&#208;&#176;, &#208;&#176;&#208;&#183;&#208;&#189;&#208;&#176;&#209;&#135;&#209;&#134;&#208;&#181; &#209;&#150;&#208;&#189;&#209;&#136;&#208;&#176;&#208;&#181; &#208;&#180;&#208;&#176;&#208;&#191;&#209;&#131;&#209;&#136;&#209;&#135;&#208;&#176;&#208;&#187;&#209;&#140;&#208;&#189;&#208;&#176;&#208;&#181; &#208;&#183;&#208;&#189;&#208;&#176;&#209;&#135;&#209;&#141;&#208;&#189;&#208;&#189;&#208;&#181; &#208;&#191;&#208;&#176;&#208;&#188;&#209;&#150;&#208;&#182; %2 &#209;&#150; %3.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;IPsec: AES 128&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110216T151118Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -43231,6 +43591,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;If LMHOSTS lookup is enabled, it applies to all connections for which TCP/IP is enabled.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110217T085649Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#154;&#208;&#176;&#208;&#187;&#209;&#150; LMHOSTS-&#208;&#191;&#208;&#190;&#209;&#136;&#209;&#131;&#208;&#186; &#209;&#131;&#208;&#186;&#208;&#187;&#209;&#142;&#209;&#135;&#208;&#176;&#208;&#189;&#209;&#139;, &#209;&#145;&#208;&#189; &#209;&#131;&#208;&#182;&#209;&#139;&#208;&#178;&#208;&#176;&#208;&#181;&#209;&#134;&#209;&#134;&#208;&#176; &#208;&#180;&#208;&#176; &#209;&#158;&#209;&#129;&#209;&#150;&#209;&#133; &#208;&#183;&#208;&#187;&#209;&#131;&#209;&#135;&#209;&#141;&#208;&#189;&#208;&#189;&#209;&#143;&#209;&#158;, &#208;&#180;&#208;&#187;&#209;&#143; &#209;&#143;&#208;&#186;&#209;&#150;&#209;&#133; &#209;&#131;&#208;&#186;&#208;&#187;&#209;&#142;&#209;&#135;&#208;&#176;&#208;&#189;&#209;&#139; TCP/IP.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;If a &amp;number fails, try the next number&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110108T144306Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -43343,6 +43711,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;If this computer is used on more than one network, enter the alternate IP settings below.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110217T092946Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#154;&#208;&#176;&#208;&#187;&#209;&#150; &#208;&#179;&#209;&#141;&#209;&#130;&#209;&#139; &#208;&#186;&#208;&#176;&#208;&#188;&#208;&#191;'&#209;&#142;&#209;&#130;&#208;&#176;&#209;&#128; &#208;&#186;&#208;&#176;&#209;&#128;&#209;&#139;&#209;&#129;&#209;&#130;&#208;&#176;&#208;&#181;&#209;&#134;&#209;&#134;&#208;&#176; &#209;&#158; &#208;&#189;&#208;&#181;&#208;&#186;&#208;&#176;&#208;&#187;&#209;&#140;&#208;&#186;&#209;&#150;&#209;&#133; &#209;&#129;&#208;&#181;&#209;&#130;&#208;&#186;&#208;&#176;&#209;&#133;, &#209;&#131;&#208;&#178;&#209;&#143;&#208;&#180;&#208;&#183;&#209;&#150;&#209;&#134;&#208;&#181; &#208;&#189;&#209;&#150;&#208;&#182;&#209;&#141;&#208;&#185; &#208;&#176;&#208;&#187;&#209;&#140;&#209;&#130;&#209;&#141;&#209;&#128;&#208;&#189;&#208;&#176;&#209;&#130;&#209;&#139;&#209;&#158;&#208;&#189;&#209;&#139;&#209;&#143; &#208;&#189;&#208;&#176;&#208;&#187;&#208;&#176;&#208;&#180;&#209;&#139; IP.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;If this file is modified, the editing software might store a temporary, unencrypted, copy of the file.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100707T114354Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -45439,6 +45815,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Invalid IP or subnet mask address.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110217T094236Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#157;&#208;&#181;&#208;&#180;&#208;&#176;&#208;&#191;&#209;&#131;&#209;&#136;&#209;&#135;&#208;&#176;&#208;&#187;&#209;&#140;&#208;&#189;&#209;&#139; &#208;&#176;&#208;&#180;&#209;&#128;&#208;&#176;&#209;&#129; IP &#209;&#134;&#209;&#150; &#208;&#188;&#208;&#176;&#209;&#129;&#208;&#186;&#209;&#150; &#208;&#191;&#208;&#176;&#208;&#180;&#209;&#129;&#208;&#181;&#209;&#130;&#208;&#186;&#209;&#150;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Invalid Installed&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101103T080654Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -49951,6 +50335,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Microsoft TCP/IP&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110217T093502Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;Microsoft TCP/IP&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Microsoft Web Rating System&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101021T130241Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -51879,6 +52271,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;NetBIOS setting&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110217T085800Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#157;&#208;&#176;&#208;&#187;&#208;&#176;&#208;&#180;&#208;&#176; NetBIOS&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;NetShell: folder displayed\r\n&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101205T200506Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -53871,6 +54271,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;O&amp;btain DNS server address automatically&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110217T081318Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#144;&#209;&#130;&#209;&#128;&#209;&#139;&#208;&#188;&#208;&#187;&#209;&#150;&#208;&#178;&#208;&#176;&#209;&#134;&#209;&#140; &#208;&#176;&#208;&#180;&#209;&#128;&#208;&#176;&#209;&#129; DNS-&#209;&#129;&#208;&#181;&#209;&#128;&#208;&#178;&#208;&#181;&#209;&#128;&#208;&#176; &#208;&#176;&#209;&#158;&#209;&#130;&#208;&#176;&#208;&#188;&#208;&#176;&#209;&#130;&#209;&#139;&#209;&#135;&#208;&#189;&#208;&#176;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;O&amp;pen All Users&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100723T055114Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -56335,6 +56743,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;PPP link&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110217T092615Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#161;&#209;&#131;&#208;&#178;&#209;&#143;&#208;&#183;&#209;&#140; PPP&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;PPP multilink framing&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110216T151426Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -59247,6 +59663,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Preferred &amp;WINS server:&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110217T093057Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#159;&#208;&#176;&#208;&#182;&#208;&#176;&#208;&#180;&#208;&#176;&#208;&#189;&#209;&#139; WINS-&#209;&#129;&#208;&#181;&#209;&#128;&#208;&#178;&#208;&#181;&#209;&#128;:&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Preferred plans&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110101T181446Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -62287,6 +62711,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Remo&amp;ve&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110217T075439Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#146;&#209;&#139;&#208;&#180;&#208;&#176;&#208;&#187;&#209;&#150;&#209;&#134;&#209;&#140;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Remo&amp;ve All&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100707T080530Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -64639,6 +65071,22 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;S&amp;ubnet mask:&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110217T081233Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#156;&#208;&#176;&#209;&#129;&#208;&#186;&#208;&#176; &#208;&#191;&#208;&#176;&#208;&#180;&#209;&#129;&#208;&#181;&#209;&#130;&#208;&#186;&#209;&#150;:&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;S&amp;ubnet prefix length:&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110217T093357Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#148;&#208;&#176;&#209;&#158;&#208;&#182;&#209;&#139;&#208;&#189;&#209;&#143; &#208;&#191;&#209;&#128;&#209;&#141;&#209;&#132;&#209;&#150;&#208;&#186;&#209;&#129;&#208;&#176; &#208;&#191;&#208;&#176;&#208;&#180;&#209;&#129;&#208;&#181;&#209;&#130;&#208;&#186;&#209;&#150;:&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;S&amp;witch To&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100707T075037Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -73863,6 +74311,46 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;TCP/IP Address&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110217T075704Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;TCP/IP-&#208;&#176;&#208;&#180;&#209;&#128;&#208;&#176;&#209;&#129;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;TCP/IP DNS Server&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110217T074130Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;DNS-&#209;&#129;&#208;&#181;&#209;&#128;&#208;&#178;&#208;&#181;&#209;&#128; TCP/IP&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;TCP/IP Domain Suffix&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110217T074152Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#161;&#209;&#131;&#209;&#132;&#209;&#150;&#208;&#186;&#209;&#129; &#208;&#180;&#208;&#176;&#208;&#188;&#208;&#181;&#208;&#189;&#208;&#176; TCP/IP&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;TCP/IP Gateway Address&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110217T075637Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#144;&#208;&#180;&#209;&#128;&#208;&#176;&#209;&#129; &#209;&#136;&#208;&#187;&#209;&#142;&#208;&#183;&#208;&#176; TCP/IP&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;TCP/IP WINS Server&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110217T090452Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;WINS-&#209;&#129;&#208;&#181;&#209;&#128;&#208;&#178;&#208;&#181;&#209;&#128; TCP/IP&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;TIFF image&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100723T135321Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -75143,6 +75631,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;The adapter requires at least one IP address.  Please enter one.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110217T093951Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#144;&#208;&#180;&#208;&#176;&#208;&#191;&#209;&#130;&#208;&#176;&#209;&#128; &#208;&#191;&#208;&#176;&#209;&#130;&#209;&#128;&#208;&#176;&#208;&#177;&#209;&#131;&#208;&#181; &#208;&#191;&#209;&#128;&#209;&#139;&#208;&#189;&#208;&#176;&#208;&#188;&#209;&#129;&#209;&#150; &#208;&#176;&#208;&#180;&#208;&#183;&#209;&#150;&#208;&#189; IP-&#208;&#176;&#208;&#180;&#209;&#128;&#208;&#176;&#209;&#129;. &#208;&#154;&#208;&#176;&#208;&#187;&#209;&#150; &#208;&#187;&#208;&#176;&#209;&#129;&#208;&#186;&#208;&#176;, &#209;&#131;&#208;&#178;&#209;&#143;&#208;&#180;&#208;&#183;&#209;&#150;&#209;&#134;&#208;&#181; &#209;&#143;&#208;&#179;&#208;&#190;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;The additional information may help Microsoft create a solution.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100928T154854Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -76479,6 +76975,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;The following three settings are applied to all connections with TCP/IP enabled. For resolution of unqualified names:&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110217T080013Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#157;&#208;&#176;&#209;&#129;&#209;&#130;&#209;&#131;&#208;&#191;&#208;&#189;&#209;&#139;&#209;&#143; &#209;&#130;&#209;&#128;&#209;&#139; &#208;&#189;&#208;&#176;&#208;&#187;&#208;&#176;&#208;&#180;&#209;&#139; &#209;&#158;&#208;&#182;&#209;&#139;&#208;&#178;&#208;&#176;&#209;&#142;&#209;&#134;&#209;&#134;&#208;&#176; &#208;&#180;&#208;&#176; &#209;&#158;&#209;&#129;&#209;&#150;&#209;&#133; &#208;&#183;&#208;&#187;&#209;&#131;&#209;&#135;&#209;&#141;&#208;&#189;&#208;&#189;&#209;&#143;&#209;&#158; &#208;&#183; &#209;&#131;&#208;&#186;&#208;&#187;&#209;&#142;&#209;&#135;&#208;&#176;&#208;&#189;&#209;&#139;&#208;&#188; TCP/IP. &#208;&#148;&#208;&#187;&#209;&#143; &#208;&#180;&#208;&#176;&#208;&#183;&#208;&#178;&#208;&#190;&#208;&#187;&#209;&#131; &#208;&#189;&#208;&#181;&#208;&#191;&#209;&#128;&#209;&#139;&#208;&#180;&#208;&#176;&#209;&#130;&#208;&#189;&#209;&#139;&#209;&#133; &#208;&#189;&#208;&#176;&#208;&#183;&#208;&#178;&#208;&#176;&#209;&#158;:&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;The format could not be interrupted.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100721T123637Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -77775,6 +78279,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;The subnet mask that you have entered for the IP address is not valid.  Please enter a valid mask.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110217T093654Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#156;&#208;&#176;&#209;&#129;&#208;&#186;&#208;&#176; &#208;&#191;&#208;&#176;&#208;&#180;&#209;&#129;&#208;&#181;&#209;&#130;&#208;&#186;&#209;&#150;, &#209;&#143;&#208;&#186;&#209;&#131;&#209;&#142; &#208;&#178;&#209;&#139; &#209;&#158;&#208;&#178;&#209;&#143;&#208;&#187;&#209;&#150; &#208;&#180;&#208;&#187;&#209;&#143; IP-&#208;&#176;&#208;&#180;&#209;&#128;&#208;&#176;&#209;&#129;&#208;&#176;, &#208;&#189;&#208;&#181;&#208;&#180;&#208;&#176;&#208;&#191;&#209;&#131;&#209;&#136;&#209;&#135;&#208;&#176;&#208;&#187;&#209;&#140;&#208;&#189;&#208;&#176;&#209;&#143;. &#208;&#154;&#208;&#176;&#208;&#187;&#209;&#150; &#208;&#187;&#208;&#176;&#209;&#129;&#208;&#186;&#208;&#176;, &#209;&#131;&#208;&#178;&#209;&#143;&#208;&#180;&#208;&#183;&#209;&#150;&#209;&#134;&#208;&#181; &#208;&#180;&#208;&#176;&#208;&#191;&#209;&#131;&#209;&#136;&#209;&#135;&#208;&#176;&#208;&#187;&#209;&#140;&#208;&#189;&#209;&#131;&#209;&#142; &#208;&#188;&#208;&#176;&#209;&#129;&#208;&#186;&#209;&#131;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;The syntax for the page range is invalid.\nEnter either a single page number or a single page range.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100918T125408Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -79287,6 +79799,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;This checkbox only applies when you are connected to a local network and a dial-up network simultaneously.  When checked, data that cannot be sent on the local network is forwarded to the dial-up network.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110217T091339Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#147;&#209;&#141;&#209;&#130;&#208;&#176;&#209;&#143; &#208;&#191;&#209;&#130;&#209;&#131;&#209;&#136;&#208;&#186;&#208;&#176; &#209;&#158;&#208;&#182;&#209;&#139;&#208;&#178;&#208;&#176;&#208;&#181;&#209;&#134;&#209;&#134;&#208;&#176; &#209;&#130;&#208;&#190;&#208;&#187;&#209;&#140;&#208;&#186;&#209;&#150; &#208;&#186;&#208;&#176;&#208;&#187;&#209;&#150; &#208;&#178;&#209;&#139; &#208;&#176;&#208;&#180;&#208;&#189;&#208;&#176;&#209;&#135;&#208;&#176;&#209;&#129;&#208;&#190;&#208;&#178;&#208;&#176; &#208;&#183;&#208;&#187;&#209;&#131;&#209;&#135;&#208;&#176;&#208;&#189;&#209;&#139; &#208;&#183; &#208;&#187;&#208;&#176;&#208;&#186;&#208;&#176;&#208;&#187;&#209;&#140;&#208;&#189;&#208;&#176;&#208;&#185; &#209;&#150; &#209;&#130;&#209;&#141;&#208;&#187;&#208;&#181;&#209;&#132;&#208;&#190;&#208;&#189;&#208;&#189;&#208;&#176;&#208;&#185; &#209;&#129;&#208;&#181;&#209;&#130;&#208;&#186;&#208;&#176;&#208;&#185;. &#208;&#154;&#208;&#176;&#208;&#187;&#209;&#150; &#209;&#143;&#208;&#189;&#208;&#176; &#209;&#129;&#209;&#130;&#208;&#176;&#209;&#150;&#209;&#134;&#209;&#140;, &#208;&#183;&#208;&#178;&#208;&#181;&#209;&#129;&#209;&#130;&#208;&#186;&#209;&#150;, &#209;&#143;&#208;&#186;&#209;&#150;&#209;&#143; &#208;&#189;&#208;&#181; &#208;&#188;&#208;&#190;&#208;&#179;&#209;&#131;&#209;&#134;&#209;&#140; &#208;&#177;&#209;&#139;&#209;&#134;&#209;&#140; &#208;&#180;&#208;&#176;&#209;&#129;&#208;&#187;&#208;&#176;&#208;&#189;&#209;&#139;&#209;&#143; &#208;&#191;&#209;&#128;&#208;&#176;&#208;&#183; &#208;&#187;&#208;&#176;&#208;&#186;&#208;&#176;&#208;&#187;&#209;&#140;&#208;&#189;&#209;&#131;&#209;&#142; &#209;&#129;&#208;&#181;&#209;&#130;&#208;&#186;&#209;&#131;, &#208;&#189;&#208;&#176;&#208;&#186;&#209;&#150;&#209;&#128;&#208;&#190;&#209;&#158;&#208;&#178;&#208;&#176;&#209;&#142;&#209;&#134;&#209;&#134;&#208;&#176; &#209;&#158; &#209;&#130;&#209;&#141;&#208;&#187;&#208;&#181;&#209;&#132;&#208;&#190;&#208;&#189;&#208;&#189;&#209;&#131;&#209;&#142; &#209;&#129;&#208;&#181;&#209;&#130;&#208;&#186;&#209;&#131;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;This computer %1 is connected to network %2 and the Internet.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110107T221948Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -83663,6 +84183,38 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;U&amp;se IP header compression&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110217T092658Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#154;&#208;&#176;&#209;&#128;&#209;&#139;&#209;&#129;&#209;&#130;&#208;&#176;&#209;&#134;&#209;&#140; &#209;&#129;&#209;&#134;&#209;&#150;&#209;&#129;&#208;&#186; IP-&#208;&#183;&#208;&#176;&#208;&#179;&#208;&#176;&#208;&#187;&#208;&#190;&#209;&#158;&#208;&#186;&#208;&#176;&#209;&#158;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;U&amp;se the following IP address:&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110217T081230Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#154;&#208;&#176;&#209;&#128;&#209;&#139;&#209;&#129;&#209;&#130;&#208;&#176;&#209;&#134;&#209;&#140; &#208;&#189;&#208;&#176;&#209;&#129;&#209;&#130;&#209;&#131;&#208;&#191;&#208;&#189;&#209;&#139; IP-&#208;&#176;&#208;&#180;&#209;&#128;&#208;&#176;&#209;&#129;:&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;U&amp;se the following IPv6 address:&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110217T093351Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#154;&#208;&#176;&#209;&#128;&#209;&#139;&#209;&#129;&#209;&#130;&#208;&#176;&#209;&#134;&#209;&#140; &#208;&#189;&#208;&#176;&#209;&#129;&#209;&#130;&#209;&#131;&#208;&#191;&#208;&#189;&#209;&#139; IPv6-&#208;&#176;&#208;&#180;&#209;&#128;&#208;&#176;&#209;&#129;:&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;U&amp;ser configured&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110217T093045Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#161;&#208;&#186;&#208;&#176;&#208;&#189;&#209;&#132;&#209;&#150;&#208;&#179;&#209;&#131;&#209;&#128;&#208;&#176;&#208;&#178;&#208;&#176;&#208;&#189;&#209;&#139; &#208;&#186;&#208;&#176;&#209;&#128;&#209;&#139;&#209;&#129;&#209;&#130;&#208;&#176;&#208;&#187;&#209;&#140;&#208;&#189;&#209;&#150;&#208;&#186;&#208;&#176;&#208;&#188;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;U.S.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100924T180539Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -85423,6 +85975,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Us&amp;e the following DNS server addresses:&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110217T081355Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#154;&#208;&#176;&#209;&#128;&#209;&#139;&#209;&#129;&#209;&#130;&#208;&#176;&#209;&#134;&#209;&#140; &#208;&#189;&#208;&#176;&#209;&#129;&#209;&#130;&#209;&#131;&#208;&#191;&#208;&#189;&#209;&#139;&#209;&#143; &#208;&#176;&#208;&#180;&#209;&#128;&#208;&#176;&#209;&#129;&#209;&#139; DNS-&#209;&#129;&#208;&#181;&#209;&#128;&#208;&#178;&#208;&#181;&#209;&#128;&#208;&#176;:&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Usage&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100706T135504Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -85495,6 +86055,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Use NetBIOS setting from the DHCP server. If static IP address is used or the DHCP server does not provide NetBIOS setting, enable NetBIOS over TCP/IP.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110217T090404Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#154;&#208;&#176;&#209;&#128;&#209;&#139;&#209;&#129;&#209;&#130;&#208;&#176;&#208;&#185;&#209;&#134;&#208;&#181; &#208;&#189;&#208;&#176;&#208;&#187;&#208;&#176;&#208;&#180;&#209;&#131; NetBIOS DHCP-&#209;&#129;&#208;&#181;&#209;&#128;&#208;&#178;&#208;&#181;&#209;&#128;&#208;&#176;. &#208;&#154;&#208;&#176;&#208;&#187;&#209;&#150; &#209;&#129;&#209;&#130;&#208;&#176;&#209;&#130;&#209;&#139;&#209;&#135;&#208;&#189;&#209;&#139; IP-&#208;&#176;&#208;&#180;&#209;&#128;&#208;&#176;&#209;&#129; &#209;&#129;&#208;&#186;&#208;&#176;&#209;&#128;&#209;&#139;&#209;&#129;&#209;&#130;&#208;&#176;&#208;&#189;&#209;&#139; &#209;&#134;&#209;&#150; DHCP-&#209;&#129;&#208;&#181;&#209;&#128;&#208;&#178;&#208;&#181;&#209;&#128; &#208;&#189;&#208;&#181; &#208;&#180;&#208;&#176;&#209;&#129;&#209;&#130;&#208;&#176;&#209;&#158;&#208;&#187;&#209;&#143;&#208;&#181; NetBIOS, &#209;&#131;&#208;&#186;&#208;&#187;&#209;&#142;&#209;&#135;&#209;&#139;&#209;&#134;&#208;&#181; NetBIOS &#208;&#191;&#209;&#128;&#208;&#176;&#208;&#183; TCP/IP.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Use Paste to put them in the new location.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101107T165649Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -86159,6 +86727,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Va&amp;lidate settings upon exit&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110217T081556Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#159;&#208;&#176;&#209;&#134;&#208;&#178;&#209;&#143;&#209;&#128;&#208;&#180;&#208;&#182;&#208;&#176;&#209;&#134;&#209;&#140; &#208;&#189;&#208;&#176;&#208;&#187;&#208;&#176;&#208;&#180;&#209;&#139; &#208;&#191;&#208;&#176;&#208;&#180;&#209;&#135;&#208;&#176;&#209;&#129; &#208;&#178;&#209;&#139;&#208;&#185;&#209;&#129;&#209;&#134;&#209;&#143;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Validating identity&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110127T092146Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -87143,6 +87719,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;WINS&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110217T081601Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;WINS&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;WINS Server&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110216T163458Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -91255,6 +91839,22 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;You can get IP settings assigned automatically if your network supports this capability. Otherwise, you need to ask your network administrator for the appropriate IP settings.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110217T081144Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#146;&#209;&#139; &#208;&#188;&#208;&#190;&#208;&#182;&#208;&#176;&#209;&#134;&#208;&#181; &#208;&#176;&#209;&#130;&#209;&#128;&#209;&#139;&#208;&#188;&#208;&#187;&#209;&#150;&#208;&#178;&#208;&#176;&#209;&#134;&#209;&#140; &#208;&#176;&#209;&#158;&#209;&#130;&#208;&#176;&#208;&#188;&#208;&#176;&#209;&#130;&#209;&#139;&#209;&#135;&#208;&#189;&#208;&#176; &#208;&#191;&#209;&#128;&#209;&#139;&#208;&#183;&#208;&#189;&#208;&#176;&#209;&#135;&#208;&#176;&#208;&#189;&#209;&#139;&#209;&#143; &#208;&#189;&#208;&#176;&#208;&#187;&#208;&#176;&#208;&#180;&#209;&#139; IP, &#208;&#186;&#208;&#176;&#208;&#187;&#209;&#150; &#208;&#178;&#208;&#176;&#209;&#136;&#208;&#176;&#209;&#143; &#209;&#129;&#208;&#181;&#209;&#130;&#208;&#186;&#208;&#176; &#208;&#188;&#208;&#176;&#208;&#181; &#209;&#130;&#208;&#176;&#208;&#186;&#209;&#131;&#209;&#142; &#208;&#183;&#208;&#180;&#208;&#190;&#208;&#187;&#209;&#140;&#208;&#189;&#208;&#176;&#209;&#129;&#209;&#134;&#209;&#140;. &#208;&#163; &#208;&#176;&#208;&#180;&#208;&#178;&#208;&#176;&#209;&#128;&#208;&#190;&#209;&#130;&#208;&#189;&#209;&#139;&#208;&#188; &#208;&#178;&#209;&#139;&#208;&#191;&#208;&#176;&#208;&#180;&#208;&#186;&#209;&#131; &#208;&#178;&#208;&#176;&#208;&#188; &#208;&#189;&#208;&#181;&#208;&#176;&#208;&#177;&#209;&#133;&#208;&#190;&#208;&#180;&#208;&#189;&#208;&#176; &#209;&#129;&#208;&#191;&#209;&#139;&#209;&#130;&#208;&#176;&#209;&#134;&#209;&#140; &#209;&#131; &#208;&#178;&#208;&#176;&#209;&#136;&#208;&#176;&#208;&#179;&#208;&#176; &#209;&#129;&#208;&#181;&#209;&#130;&#208;&#186;&#208;&#176;&#208;&#178;&#208;&#176;&#208;&#179;&#208;&#176; &#208;&#176;&#208;&#180;&#208;&#188;&#209;&#150;&#208;&#189;&#209;&#150;&#209;&#129;&#209;&#130;&#209;&#128;&#208;&#176;&#209;&#130;&#208;&#176;&#209;&#128;&#208;&#176; &#208;&#176;&#208;&#180;&#208;&#191;&#208;&#176;&#208;&#178;&#208;&#181;&#208;&#180;&#208;&#189;&#209;&#139;&#209;&#143; &#208;&#189;&#208;&#176;&#208;&#187;&#208;&#176;&#208;&#180;&#209;&#139; IP.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;You can get IPv6 settings assigned automatically if your network supports this capability. Otherwise, you need to ask your network administrator for the appropriate IPv6 settings.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110217T093303Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#146;&#209;&#139; &#208;&#188;&#208;&#190;&#208;&#182;&#208;&#176;&#209;&#134;&#208;&#181; &#208;&#176;&#209;&#130;&#209;&#128;&#209;&#139;&#208;&#188;&#208;&#187;&#209;&#150;&#208;&#178;&#208;&#176;&#209;&#134;&#209;&#140; &#208;&#176;&#209;&#158;&#209;&#130;&#208;&#176;&#208;&#188;&#208;&#176;&#209;&#130;&#209;&#139;&#209;&#135;&#208;&#189;&#208;&#176; &#208;&#191;&#209;&#128;&#209;&#139;&#208;&#183;&#208;&#189;&#208;&#176;&#209;&#135;&#208;&#176;&#208;&#189;&#209;&#139;&#209;&#143; &#208;&#189;&#208;&#176;&#208;&#187;&#208;&#176;&#208;&#180;&#209;&#139; IPv6, &#208;&#186;&#208;&#176;&#208;&#187;&#209;&#150; &#208;&#178;&#208;&#176;&#209;&#136;&#208;&#176;&#209;&#143; &#209;&#129;&#208;&#181;&#209;&#130;&#208;&#186;&#208;&#176; &#208;&#188;&#208;&#176;&#208;&#181; &#209;&#130;&#208;&#176;&#208;&#186;&#209;&#131;&#209;&#142; &#208;&#183;&#208;&#180;&#208;&#190;&#208;&#187;&#209;&#140;&#208;&#189;&#208;&#176;&#209;&#129;&#209;&#134;&#209;&#140;. &#208;&#163; &#208;&#176;&#208;&#180;&#208;&#178;&#208;&#176;&#209;&#128;&#208;&#190;&#209;&#130;&#208;&#189;&#209;&#139;&#208;&#188; &#208;&#178;&#209;&#139;&#208;&#191;&#208;&#176;&#208;&#180;&#208;&#186;&#209;&#131; &#208;&#178;&#208;&#176;&#208;&#188; &#208;&#189;&#208;&#181;&#208;&#176;&#208;&#177;&#209;&#133;&#208;&#190;&#208;&#180;&#208;&#189;&#208;&#176; &#209;&#129;&#208;&#191;&#209;&#139;&#209;&#130;&#208;&#176;&#209;&#134;&#209;&#140; &#209;&#131; &#208;&#178;&#208;&#176;&#209;&#136;&#208;&#176;&#208;&#179;&#208;&#176; &#209;&#129;&#208;&#181;&#209;&#130;&#208;&#186;&#208;&#176;&#208;&#178;&#208;&#176;&#208;&#179;&#208;&#176; &#208;&#176;&#208;&#180;&#208;&#188;&#209;&#150;&#208;&#189;&#209;&#150;&#209;&#129;&#209;&#130;&#209;&#128;&#208;&#176;&#209;&#130;&#208;&#176;&#209;&#128;&#208;&#176; &#208;&#176;&#208;&#180;&#208;&#191;&#208;&#176;&#208;&#178;&#208;&#181;&#208;&#180;&#208;&#189;&#209;&#139;&#209;&#143; &#208;&#189;&#208;&#176;&#208;&#187;&#208;&#176;&#208;&#180;&#209;&#139; IPv6.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;You can include a folder only once in the same library.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100725T092107Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -92095,6 +92695,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;You have entered an address that is missing its subnet mask.  Please add a subnet mask&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110217T094122Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#146;&#209;&#139; &#209;&#158;&#208;&#178;&#209;&#143;&#208;&#187;&#209;&#150; &#208;&#176;&#208;&#180;&#209;&#128;&#208;&#176;&#209;&#129;, &#208;&#176;&#208;&#187;&#208;&#181; &#208;&#189;&#208;&#181; &#208;&#176;&#208;&#183;&#208;&#189;&#208;&#176;&#209;&#135;&#209;&#139;&#208;&#187;&#209;&#150; &#208;&#188;&#208;&#176;&#209;&#129;&#208;&#186;&#209;&#131; &#208;&#191;&#208;&#176;&#208;&#180;&#209;&#129;&#208;&#181;&#209;&#130;&#208;&#186;&#209;&#150;. &#208;&#154;&#208;&#176;&#208;&#187;&#209;&#150; &#208;&#187;&#208;&#176;&#209;&#129;&#208;&#186;&#208;&#176;, &#208;&#180;&#208;&#176;&#208;&#180;&#208;&#176;&#208;&#185;&#209;&#134;&#208;&#181; &#209;&#143;&#208;&#181;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;You have entered too many page ranges.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100918T125131Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -96185,8 +96793,8 @@
+       &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;|Back|Forward|Stop|Refresh|Home|Search|Favorites|Print|Size|Edit|Tools|Media|History|Mail|Full Screen||&lt;/seg&gt;
+       &lt;/tuv&gt;
+-      &lt;tuv lang=&quot;be&quot; changedate=&quot;20100910T151832Z&quot; changeid=&quot;eratyk&quot;&gt;
+-        &lt;seg&gt;|&#208;&#157;&#208;&#176;&#208;&#183;&#208;&#176;&#208;&#180;|&#208;&#163;&#208;&#191;&#208;&#181;&#209;&#128;&#208;&#176;&#208;&#180;|&#208;&#161;&#208;&#191;&#209;&#139;&#208;&#189;&#209;&#150;&#209;&#134;&#209;&#140;|&#208;&#144;&#208;&#177;&#208;&#189;&#208;&#176;&#208;&#178;&#209;&#150;&#209;&#134;&#209;&#140;|&#208;&#148;&#208;&#176;&#209;&#133;&#208;&#176;&#209;&#130;&#209;&#139;|&#208;&#159;&#208;&#190;&#209;&#136;&#209;&#131;&#208;&#186;|&#208;&#144;&#208;&#177;&#209;&#128;&#208;&#176;&#208;&#189;&#208;&#176;&#208;&#181;|&#208;&#148;&#209;&#128;&#209;&#131;&#208;&#186;|&#208;&#159;&#208;&#176;&#208;&#188;&#208;&#181;&#209;&#128;|&#208;&#160;&#209;&#141;&#208;&#180;&#208;&#176;&#208;&#179;&#208;&#176;&#208;&#178;&#208;&#176;&#209;&#134;&#209;&#140;|&#208;&#134;&#208;&#189;&#209;&#129;&#209;&#130;&#209;&#128;&#209;&#131;&#208;&#188;&#208;&#181;&#208;&#189;&#209;&#130;&#209;&#139;|&#208;&#156;&#208;&#181;&#208;&#180;&#209;&#139;&#209;&#143;|&#208;&#147;&#209;&#150;&#209;&#129;&#209;&#130;&#208;&#190;&#209;&#128;&#209;&#139;&#209;&#143;|&#208;&#159;&#208;&#190;&#209;&#136;&#209;&#130;&#208;&#176;|&#208;&#159;&#208;&#190;&#209;&#158;&#208;&#189;&#209;&#139; &#209;&#141;&#208;&#186;&#209;&#128;&#208;&#176;&#208;&#189;||&lt;/seg&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110217T091616Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;|&#208;&#157;&#208;&#176;&#208;&#183;&#208;&#176;&#208;&#180;|&#208;&#157;&#208;&#176;&#208;&#191;&#208;&#181;&#209;&#128;&#208;&#176;&#208;&#180;|&#208;&#161;&#208;&#191;&#209;&#139;&#208;&#189;&#209;&#150;&#209;&#134;&#209;&#140;|&#208;&#144;&#208;&#177;&#208;&#189;&#208;&#176;&#208;&#178;&#209;&#150;&#209;&#134;&#209;&#140;|&#208;&#148;&#208;&#176;&#209;&#133;&#208;&#176;&#209;&#130;&#209;&#139;|&#208;&#159;&#208;&#190;&#209;&#136;&#209;&#131;&#208;&#186;|&#208;&#144;&#208;&#177;&#209;&#128;&#208;&#176;&#208;&#189;&#208;&#176;&#208;&#181;|&#208;&#148;&#209;&#128;&#209;&#131;&#208;&#186;|&#208;&#159;&#208;&#176;&#208;&#188;&#208;&#181;&#209;&#128;|&#208;&#160;&#209;&#141;&#208;&#180;&#208;&#176;&#208;&#179;&#208;&#176;&#208;&#178;&#208;&#176;&#209;&#134;&#209;&#140;|&#208;&#134;&#208;&#189;&#209;&#129;&#209;&#130;&#209;&#128;&#209;&#131;&#208;&#188;&#208;&#181;&#208;&#189;&#209;&#130;&#209;&#139;|&#208;&#156;&#208;&#181;&#208;&#180;&#209;&#139;&#209;&#143;|&#208;&#147;&#209;&#150;&#209;&#129;&#209;&#130;&#208;&#190;&#209;&#128;&#209;&#139;&#209;&#143;|&#208;&#159;&#208;&#190;&#209;&#136;&#209;&#130;&#208;&#176;|&#208;&#159;&#208;&#190;&#209;&#158;&#208;&#189;&#209;&#139; &#209;&#141;&#208;&#186;&#209;&#128;&#208;&#176;&#208;&#189;||&lt;/seg&gt;
+       &lt;/tuv&gt;
+     &lt;/tu&gt;
+     &lt;tu&gt;
+
+Added: Windows7/source/Windows/System32/tcpipcfg.dll.rc
+===================================================================
+--- Windows7/source/Windows/System32/tcpipcfg.dll.rc	                        (rev 0)
++++ Windows7/source/Windows/System32/tcpipcfg.dll.rc	2011-02-17 13:17:42 UTC (rev 166)
+@@ -0,0 +1,489 @@
++1 MUI &quot;Data_1643.bin&quot;
++
++2304 DIALOGEX 0, 0, 212, 63
++STYLE DS_FIXEDSYS | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
++EXSTYLE WS_EX_CONTEXTHELP
++CAPTION &quot;TCP/IP DNS Server&quot;
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++FONT 8, &quot;MS Shell Dlg&quot;
++{
++   CONTROL &quot;&amp;DNS server:&quot;, -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 7, 7, 84, 8 
++   CONTROL &quot;&quot;, 1055, &quot;msctls_netaddress&quot;, 0x50810080, 7, 18, 176, 12 
++   CONTROL &quot;OK&quot;, 1, BUTTON, BS_DEFPUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 101, 42, 50, 14 
++   CONTROL &quot;Cancel&quot;, 2, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 155, 42, 50, 14 
++}
++
++2305 DIALOGEX 0, 0, 227, 63
++STYLE DS_FIXEDSYS | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
++EXSTYLE WS_EX_CONTEXTHELP
++CAPTION &quot;TCP/IP Domain Suffix&quot;
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++FONT 8, &quot;MS Shell Dlg&quot;
++{
++   CONTROL &quot;&amp;Domain suffix:&quot;, -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 7, 7, 55, 8 
++   CONTROL &quot;&quot;, 1056, &quot;msctls_netaddress&quot;, 0x50810080, 7, 18, 214, 14 
++   CONTROL &quot;OK&quot;, 1, BUTTON, BS_DEFPUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 117, 43, 50, 14 
++   CONTROL &quot;Cancel&quot;, 2, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 171, 43, 50, 14 
++}
++
++2308 DIALOGEX 0, 0, 252, 218
++STYLE DS_FIXEDSYS | WS_CHILD | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
++EXSTYLE WS_EX_CONTEXTHELP
++CAPTION &quot;IP Settings&quot;
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++FONT 8, &quot;MS Shell Dlg&quot;
++{
++   CONTROL &quot;IP add&amp;resses&quot;, -1, BUTTON, BS_GROUPBOX | WS_CHILD | WS_VISIBLE, 7, 7, 238, 81 
++   CONTROL &quot;Generic1&quot;, 1016, &quot;SysListView32&quot;, LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_NOSORTHEADER | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 16, 20, 220, 43 
++   CONTROL &quot;&amp;Add...&quot;, 1017, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 78, 67, 50, 14 
++   CONTROL &quot;&amp;Edit...&quot;, 1018, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 132, 67, 50, 14 
++   CONTROL &quot;Remo&amp;ve&quot;, 1019, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 186, 67, 50, 14 
++   CONTROL &quot;De&amp;fault gateways:&quot;, -1, BUTTON, BS_GROUPBOX | WS_CHILD | WS_VISIBLE, 7, 92, 238, 81 
++   CONTROL &quot;Generic1&quot;, 1004, &quot;SysListView32&quot;, LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_NOSORTHEADER | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 16, 105, 220, 43 
++   CONTROL &quot;A&amp;dd...&quot;, 1020, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 78, 152, 50, 14 
++   CONTROL &quot;Edi&amp;t...&quot;, 1021, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 132, 152, 50, 14 
++   CONTROL &quot;Re&amp;move&quot;, 1022, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 186, 152, 50, 14 
++   CONTROL &quot;&quot;, -1, BUTTON, BS_GROUPBOX | WS_CHILD | WS_VISIBLE, 7, 180, 238, 31 
++   CONTROL &quot;A&amp;utomatic metric&quot;, 1030, BUTTON, BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 13, 180, 66, 9 
++   CONTROL &quot;I&amp;nterface metric:&quot;, 1073, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 15, 195, 57, 8 
++   CONTROL &quot;&quot;, 1029, EDIT, ES_LEFT | ES_AUTOHSCROLL | ES_NUMBER | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 80, 193, 50, 12 
++}
++
++2309 DIALOGEX 0, 0, 212, 87
++STYLE DS_FIXEDSYS | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
++EXSTYLE WS_EX_CONTEXTHELP
++CAPTION &quot;TCP/IP Gateway Address&quot;
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++FONT 8, &quot;MS Shell Dlg&quot;
++{
++   CONTROL &quot;&amp;Gateway:&quot;, -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 7, 9, 55, 8 
++   CONTROL &quot;&quot;, 1027, &quot;SysIPAddress32&quot;, 0x50010080, 80, 7, 83, 12 
++   CONTROL &quot;&quot;, -1, BUTTON, BS_GROUPBOX | WS_CHILD | WS_VISIBLE, 7, 26, 198, 32 
++   CONTROL &quot;A&amp;utomatic metric&quot;, 1090, BUTTON, BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 13, 26, 66, 9 
++   CONTROL &quot;&amp;Metric:&quot;, 1091, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 13, 40, 51, 8 
++   CONTROL &quot;&quot;, 1028, EDIT, ES_LEFT | ES_AUTOHSCROLL | ES_NUMBER | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 80, 38, 83, 12 
++   CONTROL &quot;OK&quot;, 1, BUTTON, BS_DEFPUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 101, 66, 50, 14 
++   CONTROL &quot;Cancel&quot;, 2, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 155, 66, 50, 14 
++}
++
++2310 DIALOGEX 0, 0, 212, 70
++STYLE DS_FIXEDSYS | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
++EXSTYLE WS_EX_CONTEXTHELP
++CAPTION &quot;TCP/IP Address&quot;
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++FONT 8, &quot;MS Shell Dlg&quot;
++{
++   CONTROL &quot;&amp;IP address:&quot;, -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 7, 9, 60, 8 
++   CONTROL &quot;&quot;, 1025, &quot;SysIPAddress32&quot;, 0x50010080, 80, 7, 83, 12 
++   CONTROL &quot;&amp;Subnet mask:&quot;, -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 7, 27, 63, 8 
++   CONTROL &quot;&quot;, 1026, &quot;SysIPAddress32&quot;, 0x50010080, 80, 25, 83, 12 
++   CONTROL &quot;OK&quot;, 1, BUTTON, BS_DEFPUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 101, 49, 50, 14 
++   CONTROL &quot;Cancel&quot;, 2, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 155, 49, 50, 14 
++}
++
++2322 DIALOGEX 0, 0, 252, 238
++STYLE DS_FIXEDSYS | WS_CHILD | WS_VISIBLE | WS_CAPTION
++CAPTION &quot;DNS&quot;
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++FONT 8, &quot;MS Shell Dlg&quot;
++{
++   CONTROL &quot;D&amp;NS server addresses, in order of use:&quot;, -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 7, 7, 167, 8 
++   CONTROL &quot;&quot;, 1040, LISTBOX, LBS_STANDARD | LBS_NOINTEGRALHEIGHT | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 7, 17, 214, 36 
++   CONTROL &quot;&amp;Add...&quot;, 1041, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 63, 57, 50, 14 
++   CONTROL &quot;&amp;Edit...&quot;, 1042, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 117, 57, 50, 14 
++   CONTROL &quot;Remo&amp;ve&quot;, 1043, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 171, 57, 50, 14 
++   CONTROL &quot;Up&quot;, 1044, BUTTON, BS_PUSHBUTTON | BS_ICON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 227, 17, 18, 16 
++   CONTROL &quot;Down&quot;, 1045, BUTTON, BS_PUSHBUTTON | BS_ICON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 227, 37, 18, 16 
++   CONTROL &quot;The following three settings are applied to all connections with TCP/IP enabled. For resolution of unqualified names:&quot;, 1059, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 7, 77, 224, 17 
++   CONTROL &quot;Append &amp;primary and connection specific DNS suffixes&quot;, 1046, BUTTON, BS_AUTORADIOBUTTON | BS_TOP | BS_MULTILINE | WS_CHILD | WS_VISIBLE | WS_GROUP | WS_TABSTOP, 7, 97, 230, 10 
++   CONTROL &quot;Append parent suffi&amp;xes of the primary DNS suffix&quot;, 1047, BUTTON, BS_AUTOCHECKBOX | BS_TOP | BS_MULTILINE | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 20, 109, 201, 10 
++   CONTROL &quot;Append t&amp;hese DNS suffixes (in order):&quot;, 1048, BUTTON, BS_AUTORADIOBUTTON | BS_TOP | BS_MULTILINE | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 7, 121, 201, 10 
++   CONTROL &quot;&quot;, 1049, LISTBOX, LBS_STANDARD | LBS_NOINTEGRALHEIGHT | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 7, 133, 214, 36 
++   CONTROL &quot;A&amp;dd...&quot;, 1050, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 63, 173, 50, 14 
++   CONTROL &quot;Edi&amp;t...&quot;, 1051, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 117, 173, 50, 14 
++   CONTROL &quot;Re&amp;move&quot;, 1052, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 171, 173, 50, 14 
++   CONTROL &quot;Up&quot;, 1053, BUTTON, BS_PUSHBUTTON | BS_ICON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 227, 133, 18, 16 
++   CONTROL &quot;Down&quot;, 1054, BUTTON, BS_PUSHBUTTON | BS_ICON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 227, 153, 18, 16 
++   CONTROL &quot;DNS &amp;suffix for this connection:&quot;, 1032, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 7, 197, 100, 8 
++   CONTROL &quot;&quot;, 1031, &quot;msctls_netaddress&quot;, 0x50810080, 108, 194, 113, 14 
++   CONTROL &quot;&amp;Register this connection's addresses in DNS&quot;, 1057, BUTTON, BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 7, 209, 214, 12 
++   CONTROL &quot;&amp;Use this connection's DNS suffix in DNS registration&quot;, 1058, BUTTON, BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 7, 220, 214, 12 
++}
++
++2323 DIALOGEX 0, 0, 252, 218
++STYLE DS_FIXEDSYS | WS_CHILD | WS_VISIBLE | WS_CAPTION
++CAPTION &quot;General&quot;
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++FONT 8, &quot;MS Shell Dlg&quot;
++{
++   CONTROL &quot;You can get IP settings assigned automatically if your network supports this capability. Otherwise, you need to ask your network administrator for the appropriate IP settings.&quot;, 1008, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 7, 7, 229, 32 
++   CONTROL &quot;&quot;, -1, BUTTON, BS_GROUPBOX | WS_CHILD | WS_VISIBLE, 7, 58, 238, 62 
++   CONTROL &quot;&amp;Obtain an IP address automatically&quot;, 1000, BUTTON, BS_AUTORADIOBUTTON | BS_TOP | BS_MULTILINE | WS_CHILD | WS_VISIBLE | WS_GROUP | WS_TABSTOP, 13, 44, 223, 10 
++   CONTROL &quot;U&amp;se the following IP address:&quot;, 1001, BUTTON, BS_AUTORADIOBUTTON | BS_TOP | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 13, 57, 105, 10 
++   CONTROL &quot;&amp;IP address:&quot;, 1005, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 16, 72, 85, 8 
++   CONTROL &quot;&quot;, 1002, &quot;SysIPAddress32&quot;, 0x50010080, 132, 70, 83, 12 
++   CONTROL &quot;S&amp;ubnet mask:&quot;, 1006, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 16, 88, 88, 8 
++   CONTROL &quot;&quot;, 1003, &quot;SysIPAddress32&quot;, 0x50010080, 132, 86, 83, 12 
++   CONTROL &quot;&amp;Default gateway:&quot;, 1007, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 16, 104, 93, 8 
++   CONTROL &quot;&quot;, 1004, &quot;SysIPAddress32&quot;, 0x50010080, 132, 102, 83, 12 
++   CONTROL &quot;&quot;, -1, BUTTON, BS_GROUPBOX | WS_CHILD | WS_VISIBLE, 7, 141, 238, 46 
++   CONTROL &quot;O&amp;btain DNS server address automatically&quot;, 1009, BUTTON, BS_AUTORADIOBUTTON | BS_TOP | BS_MULTILINE | WS_CHILD | WS_VISIBLE | WS_GROUP | WS_TABSTOP, 13, 127, 223, 10 
++   CONTROL &quot;Us&amp;e the following DNS server addresses:&quot;, 1010, BUTTON, BS_AUTORADIOBUTTON | BS_TOP | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 13, 140, 141, 10 
++   CONTROL &quot;&amp;Preferred DNS server:&quot;, 1013, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 16, 155, 93, 8 
++   CONTROL &quot;&quot;, 1011, &quot;SysIPAddress32&quot;, 0x50010080, 132, 153, 83, 12 
++   CONTROL &quot;&amp;Alternate DNS server:&quot;, 1014, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 16, 171, 95, 8 
++   CONTROL &quot;&quot;, 1012, &quot;SysIPAddress32&quot;, 0x50010080, 132, 169, 83, 12 
++   CONTROL &quot;Va&amp;lidate settings upon exit&quot;, 1098, BUTTON, BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 16, 197, 150, 8 
++   CONTROL &quot;Ad&amp;vanced...&quot;, 1015, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 185, 197, 60, 14 
++}
++
++2324 DIALOGEX 0, 0, 252, 218
++STYLE DS_FIXEDSYS | WS_CHILD | WS_VISIBLE | WS_CAPTION
++CAPTION &quot;WINS&quot;
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++FONT 8, &quot;MS Shell Dlg&quot;
++{
++   CONTROL &quot;&amp;WINS addresses, in order of use:&quot;, -1, BUTTON, BS_GROUPBOX | WS_CHILD | WS_VISIBLE, 7, 7, 238, 78 
++   CONTROL &quot;&quot;, 1060, LISTBOX, LBS_STANDARD | LBS_NOINTEGRALHEIGHT | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 16, 20, 193, 39 
++   CONTROL &quot;&amp;Add...&quot;, 1061, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 51, 64, 50, 14 
++   CONTROL &quot;&amp;Edit...&quot;, 1062, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 105, 64, 50, 14 
++   CONTROL &quot;Remo&amp;ve&quot;, 1063, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 159, 64, 50, 14 
++   CONTROL &quot;&amp;Up&quot;, 1064, BUTTON, BS_PUSHBUTTON | BS_ICON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 218, 20, 18, 16 
++   CONTROL &quot;&amp;Down&quot;, 1065, BUTTON, BS_PUSHBUTTON | BS_ICON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 218, 40, 18, 16 
++   CONTROL &quot;If LMHOSTS lookup is enabled, it applies to all connections for which TCP/IP is enabled.&quot;, 1072, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 7, 89, 238, 18 
++   CONTROL &quot;Enable &amp;LMHOSTS lookup&quot;, 1066, BUTTON, BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 7, 111, 107, 10 
++   CONTROL &quot;I&amp;mport LMHOSTS...&quot;, 1067, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 155, 109, 90, 14 
++   CONTROL &quot;NetBIOS setting&quot;, -1, BUTTON, BS_GROUPBOX | WS_CHILD | WS_VISIBLE, 7, 131, 238, 80 
++   CONTROL &quot;Use NetBIOS setting from the DHCP server. If static IP address is used or the DHCP server does not provide NetBIOS setting, enable NetBIOS over TCP/IP.&quot;, 1074, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 31, 152, 205, 27 
++   CONTROL &quot;De&amp;fault:&quot;, 1070, BUTTON, BS_AUTORADIOBUTTON | WS_CHILD | WS_VISIBLE | WS_GROUP | WS_TABSTOP, 14, 142, 153, 10 
++   CONTROL &quot;E&amp;nable NetBIOS over TCP/IP&quot;, 1068, BUTTON, BS_AUTORADIOBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 14, 182, 169, 10 
++   CONTROL &quot;Di&amp;sable NetBIOS over TCP/IP&quot;, 1069, BUTTON, BS_AUTORADIOBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 14, 195, 169, 10 
++}
++
++2326 DIALOGEX 0, 0, 212, 62
++STYLE DS_FIXEDSYS | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
++EXSTYLE WS_EX_CONTEXTHELP
++CAPTION &quot;TCP/IP WINS Server&quot;
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++FONT 8, &quot;MS Shell Dlg&quot;
++{
++   CONTROL &quot;&amp;WINS server:&quot;, -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 7, 7, 90, 8 
++   CONTROL &quot;&quot;, 1071, &quot;SysIPAddress32&quot;, 0x50010080, 7, 17, 83, 12 
++   CONTROL &quot;OK&quot;, 1, BUTTON, BS_DEFPUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 101, 41, 50, 14 
++   CONTROL &quot;Cancel&quot;, 2, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 155, 41, 50, 14 
++}
++
++2330 DIALOGEX 0, 0, 252, 218
++STYLE WS_CHILD | WS_CAPTION | WS_SYSMENU
++CAPTION &quot;IP Settings&quot;
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++FONT 8, &quot;MS Shell Dlg&quot;
++{
++   CONTROL &quot;This checkbox only applies when you are connected to a local network and a dial-up network simultaneously.  When checked, data that cannot be sent on the local network is forwarded to the dial-up network.&quot;, 1033, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 7, 7, 216, 35 
++   CONTROL &quot;&quot;, 1037, BUTTON, BS_GROUPBOX | WS_CHILD | WS_VISIBLE, 7, 56, 238, 31 
++   CONTROL &quot;&amp;Use default gateway on remote network&quot;, 1030, BUTTON, BS_AUTOCHECKBOX | BS_TOP | BS_MULTILINE | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 14, 56, 142, 10 
++   CONTROL &quot;Disable class based route addition&quot;, 1092, BUTTON, BS_AUTOCHECKBOX | BS_MULTILINE | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 17, 70, 219, 10 
++   CONTROL &quot;&quot;, 1093, BUTTON, BS_GROUPBOX | WS_CHILD | WS_VISIBLE, 7, 94, 238, 31 
++   CONTROL &quot;&amp;Automatic metric&quot;, 1034, BUTTON, BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 13, 94, 66, 9 
++   CONTROL &quot;I&amp;nterface metric:&quot;, 1035, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 15, 107, 57, 8 
++   CONTROL &quot;&quot;, 1036, EDIT, ES_LEFT | ES_AUTOHSCROLL | ES_NUMBER | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 80, 105, 50, 12 
++   CONTROL &quot;PPP link&quot;, 1032, BUTTON, BS_GROUPBOX | WS_CHILD | WS_VISIBLE, 7, 131, 238, 31 
++   CONTROL &quot;U&amp;se IP header compression&quot;, 1031, BUTTON, BS_AUTOCHECKBOX | BS_TOP | BS_MULTILINE | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 17, 143, 138, 10 
++}
++
++2331 DIALOGEX 0, 0, 252, 218
++STYLE WS_CHILD | WS_VISIBLE | WS_CAPTION
++CAPTION &quot;General&quot;
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++FONT 8, &quot;MS Shell Dlg&quot;
++{
++   CONTROL &quot;You can get IP settings assigned automatically if your network supports this capability. Otherwise, you need to ask your network administrator for the appropriate IP settings.&quot;, 1008, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 7, 7, 218, 29 
++   CONTROL &quot;&quot;, -1, BUTTON, BS_GROUPBOX | WS_CHILD | WS_VISIBLE, 7, 58, 238, 30 
++   CONTROL &quot;&amp;Obtain an IP address automatically&quot;, 1000, BUTTON, BS_AUTORADIOBUTTON | BS_TOP | BS_MULTILINE | WS_CHILD | WS_VISIBLE | WS_GROUP | WS_TABSTOP, 13, 44, 223, 10 
++   CONTROL &quot;U&amp;se the following IP address:&quot;, 1001, BUTTON, BS_AUTORADIOBUTTON | BS_TOP | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 13, 57, 105, 10 
++   CONTROL &quot;&amp;IP address:&quot;, 1005, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 16, 72, 92, 8 
++   CONTROL &quot;&quot;, 1002, &quot;SysIPAddress32&quot;, 0x50010080, 132, 70, 83, 12 
++   CONTROL &quot;&quot;, -1, BUTTON, BS_GROUPBOX | WS_CHILD | WS_VISIBLE, 7, 110, 238, 46 
++   CONTROL &quot;O&amp;btain DNS server address automatically&quot;, 1009, BUTTON, BS_AUTORADIOBUTTON | BS_TOP | BS_MULTILINE | WS_CHILD | WS_VISIBLE | WS_GROUP | WS_TABSTOP, 13, 96, 223, 10 
++   CONTROL &quot;Us&amp;e the following DNS server addresses:&quot;, 1010, BUTTON, BS_AUTORADIOBUTTON | BS_TOP | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 13, 109, 141, 10 
++   CONTROL &quot;&amp;Preferred DNS server:&quot;, 1013, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 16, 124, 96, 8 
++   CONTROL &quot;&quot;, 1011, &quot;SysIPAddress32&quot;, 0x50010080, 132, 122, 83, 12 
++   CONTROL &quot;&amp;Alternate DNS server:&quot;, 1014, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 16, 140, 96, 8 
++   CONTROL &quot;&quot;, 1012, &quot;SysIPAddress32&quot;, 0x50010080, 132, 138, 83, 12 
++   CONTROL &quot;Ad&amp;vanced...&quot;, 1015, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 185, 162, 60, 14 
++}
++
++2334 DIALOGEX 0, 0, 252, 218
++STYLE DS_FIXEDSYS | WS_CHILD | WS_VISIBLE | WS_CAPTION
++CAPTION &quot;Alternate Configuration&quot;
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++FONT 8, &quot;MS Shell Dlg&quot;
++{
++   CONTROL &quot;If this computer is used on more than one network, enter the alternate IP settings below.&quot;, -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 7, 7, 238, 20 
++   CONTROL &quot;&quot;, -1, BUTTON, BS_GROUPBOX | WS_CHILD | WS_VISIBLE, 7, 48, 238, 158 
++   CONTROL &quot;Au&amp;tomatic private IP address&quot;, 1070, BUTTON, BS_AUTORADIOBUTTON | BS_TOP | WS_CHILD | WS_VISIBLE | WS_GROUP | WS_TABSTOP, 16, 34, 213, 10 
++   CONTROL &quot;U&amp;ser configured&quot;, 1071, BUTTON, BS_AUTORADIOBUTTON | BS_TOP | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 16, 48, 65, 10 
++   CONTROL &quot;&amp;IP address:&quot;, 1072, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 18, 64, 91, 8 
++   CONTROL &quot;&quot;, 1073, &quot;SysIPAddress32&quot;, 0x50010000, 134, 62, 83, 12 
++   CONTROL &quot;S&amp;ubnet mask:&quot;, 1074, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 18, 80, 96, 8 
++   CONTROL &quot;&quot;, 1075, &quot;SysIPAddress32&quot;, 0x50010000, 134, 78, 83, 12 
++   CONTROL &quot;&amp;Default gateway:&quot;, 1076, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 18, 96, 95, 8 
++   CONTROL &quot;&quot;, 1077, &quot;SysIPAddress32&quot;, 0x50010000, 134, 94, 83, 12 
++   CONTROL &quot;&amp;Preferred DNS server:&quot;, 1078, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 17, 120, 97, 8 
++   CONTROL &quot;&quot;, 1079, &quot;SysIPAddress32&quot;, 0x50010000, 133, 118, 83, 12 
++   CONTROL &quot;&amp;Alternate DNS server:&quot;, 1080, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 17, 136, 94, 8 
++   CONTROL &quot;&quot;, 1081, &quot;SysIPAddress32&quot;, 0x50010000, 133, 134, 83, 12 
++   CONTROL &quot;Preferred &amp;WINS server:&quot;, 1082, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 18, 160, 98, 8 
++   CONTROL &quot;&quot;, 1083, &quot;SysIPAddress32&quot;, 0x50010000, 134, 158, 83, 12 
++   CONTROL &quot;Alternate WI&amp;NS server:&quot;, 1084, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 18, 176, 96, 8 
++   CONTROL &quot;&quot;, 1085, &quot;SysIPAddress32&quot;, 0x50010000, 134, 174, 83, 12 
++   CONTROL &quot;&amp;Validate settings, if changed, upon exit&quot;, 1086, BUTTON, BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 18, 195, 150, 8 
++}
++
++2337 DIALOGEX 0, 0, 302, 70
++STYLE DS_FIXEDSYS | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
++EXSTYLE WS_EX_CONTEXTHELP
++CAPTION &quot;TCP/IP Address&quot;
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++FONT 8, &quot;MS Shell Dlg&quot;
++{
++   CONTROL &quot;&amp;IPv6 address:&quot;, -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 7, 9, 60, 8 
++   CONTROL &quot;&quot;, 1025, &quot;msctls_netaddress&quot;, 0x50810080, 80, 7, 176, 12 
++   CONTROL &quot;&amp;Subnet prefix length:&quot;, -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 7, 27, 88, 8 
++   CONTROL &quot;&quot;, 1026, EDIT, ES_LEFT | ES_AUTOHSCROLL | ES_NUMBER | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 80, 25, 20, 12 
++   CONTROL &quot;OK&quot;, 1, BUTTON, BS_DEFPUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 101, 49, 50, 14 
++   CONTROL &quot;Cancel&quot;, 2, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 155, 49, 50, 14 
++}
++
++2338 DIALOGEX 0, 0, 302, 87
++STYLE DS_FIXEDSYS | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
++EXSTYLE WS_EX_CONTEXTHELP
++CAPTION &quot;TCP/IP Gateway Address&quot;
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++FONT 8, &quot;MS Shell Dlg&quot;
++{
++   CONTROL &quot;&amp;Gateway:&quot;, -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 7, 9, 55, 8 
++   CONTROL &quot;&quot;, 1027, &quot;msctls_netaddress&quot;, 0x50810080, 80, 7, 176, 12 
++   CONTROL &quot;&quot;, -1, BUTTON, BS_GROUPBOX | WS_CHILD | WS_VISIBLE, 7, 26, 198, 32 
++   CONTROL &quot;A&amp;utomatic metric&quot;, 1090, BUTTON, BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 13, 26, 66, 9 
++   CONTROL &quot;&amp;Metric:&quot;, 1091, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 13, 40, 51, 8 
++   CONTROL &quot;&quot;, 1028, EDIT, ES_LEFT | ES_AUTOHSCROLL | ES_NUMBER | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 80, 38, 83, 12 
++   CONTROL &quot;OK&quot;, 1, BUTTON, BS_DEFPUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 101, 66, 50, 14 
++   CONTROL &quot;Cancel&quot;, 2, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 155, 66, 50, 14 
++}
++
++2339 DIALOGEX 0, 0, 346, 218
++STYLE DS_FIXEDSYS | WS_CHILD | WS_VISIBLE | WS_CAPTION
++CAPTION &quot;General&quot;
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++FONT 8, &quot;MS Shell Dlg&quot;
++{
++   CONTROL &quot;You can get IPv6 settings assigned automatically if your network supports this capability. Otherwise, you need to ask your network administrator for the appropriate IPv6 settings.&quot;, 1008, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 7, 7, 314, 32 
++   CONTROL &quot;&quot;, -1, BUTTON, BS_GROUPBOX | WS_CHILD | WS_VISIBLE, 7, 58, 332, 62 
++   CONTROL &quot;&amp;Obtain an IPv6 address automatically&quot;, 1000, BUTTON, BS_AUTORADIOBUTTON | BS_TOP | BS_MULTILINE | WS_CHILD | WS_VISIBLE | WS_GROUP | WS_TABSTOP, 13, 44, 223, 10 
++   CONTROL &quot;U&amp;se the following IPv6 address:&quot;, 1001, BUTTON, BS_AUTORADIOBUTTON | BS_TOP | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 13, 57, 112, 10 
++   CONTROL &quot;&amp;IPv6 address:&quot;, 1005, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 16, 72, 85, 8 
++   CONTROL &quot;&quot;, 1002, &quot;msctls_netaddress&quot;, 0x50810080, 132, 70, 176, 12 
++   CONTROL &quot;S&amp;ubnet prefix length:&quot;, 1006, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 16, 88, 88, 8 
++   CONTROL &quot;&quot;, 1003, EDIT, ES_LEFT | ES_AUTOHSCROLL | ES_NUMBER | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 132, 86, 20, 12 
++   CONTROL &quot;&amp;Default gateway:&quot;, 1007, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 16, 104, 93, 8 
++   CONTROL &quot;&quot;, 1004, &quot;msctls_netaddress&quot;, 0x50810080, 132, 102, 176, 12 
++   CONTROL &quot;&quot;, -1, BUTTON, BS_GROUPBOX | WS_CHILD | WS_VISIBLE, 7, 141, 332, 46 
++   CONTROL &quot;O&amp;btain DNS server address automatically&quot;, 1009, BUTTON, BS_AUTORADIOBUTTON | BS_TOP | BS_MULTILINE | WS_CHILD | WS_VISIBLE | WS_GROUP | WS_TABSTOP, 13, 127, 223, 10 
++   CONTROL &quot;Us&amp;e the following DNS server addresses:&quot;, 1010, BUTTON, BS_AUTORADIOBUTTON | BS_TOP | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 13, 140, 141, 10 
++   CONTROL &quot;&amp;Preferred DNS server:&quot;, 1013, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 16, 155, 93, 8 
++   CONTROL &quot;&quot;, 1011, &quot;msctls_netaddress&quot;, 0x50810080, 132, 153, 176, 12 
++   CONTROL &quot;&amp;Alternate DNS server:&quot;, 1014, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 16, 171, 95, 8 
++   CONTROL &quot;&quot;, 1012, &quot;msctls_netaddress&quot;, 0x50810080, 132, 169, 176, 12 
++   CONTROL &quot;Va&amp;lidate settings upon exit&quot;, 1098, BUTTON, BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 16, 197, 150, 8 
++   CONTROL &quot;Ad&amp;vanced...&quot;, 1015, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 272, 197, 67, 14 
++}
++
++2340 DIALOGEX 0, 0, 346, 198
++STYLE WS_CHILD | WS_VISIBLE | WS_CAPTION
++CAPTION &quot;General&quot;
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++FONT 8, &quot;MS Shell Dlg&quot;
++{
++   CONTROL &quot;You can get IPv6 settings assigned automatically if your network supports this capability. Otherwise, you need to ask your network administrator for the appropriate IPv6 settings.&quot;, 1008, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 7, 7, 314, 32 
++   CONTROL &quot;&quot;, -1, BUTTON, BS_GROUPBOX | WS_CHILD | WS_VISIBLE, 7, 58, 332, 45 
++   CONTROL &quot;&amp;Obtain an IPv6 address automatically&quot;, 1000, BUTTON, BS_AUTORADIOBUTTON | BS_TOP | BS_MULTILINE | WS_CHILD | WS_VISIBLE | WS_GROUP | WS_TABSTOP, 13, 44, 223, 10 
++   CONTROL &quot;U&amp;se the following IPv6 address:&quot;, 1001, BUTTON, BS_AUTORADIOBUTTON | BS_TOP | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 13, 57, 112, 10 
++   CONTROL &quot;&amp;IPv6 address:&quot;, 1005, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 16, 72, 85, 8 
++   CONTROL &quot;&quot;, 1002, &quot;msctls_netaddress&quot;, 0x50810080, 132, 70, 176, 12 
++   CONTROL &quot;S&amp;ubnet prefix length:&quot;, 1006, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 16, 88, 88, 8 
++   CONTROL &quot;&quot;, 1003, EDIT, ES_LEFT | ES_AUTOHSCROLL | ES_NUMBER | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 132, 86, 20, 12 
++   CONTROL &quot;&quot;, -1, BUTTON, BS_GROUPBOX | WS_CHILD | WS_VISIBLE, 7, 121, 332, 46 
++   CONTROL &quot;O&amp;btain DNS server address automatically&quot;, 1009, BUTTON, BS_AUTORADIOBUTTON | BS_TOP | BS_MULTILINE | WS_CHILD | WS_VISIBLE | WS_GROUP | WS_TABSTOP, 13, 107, 223, 10 
++   CONTROL &quot;Us&amp;e the following DNS server addresses:&quot;, 1010, BUTTON, BS_AUTORADIOBUTTON | BS_TOP | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 13, 120, 141, 10 
++   CONTROL &quot;&amp;Preferred DNS server:&quot;, 1013, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 16, 135, 93, 8 
++   CONTROL &quot;&quot;, 1011, &quot;msctls_netaddress&quot;, 0x50810080, 132, 133, 176, 12 
++   CONTROL &quot;&amp;Alternate DNS server:&quot;, 1014, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 16, 151, 95, 8 
++   CONTROL &quot;&quot;, 1012, &quot;msctls_netaddress&quot;, 0x50810080, 132, 149, 176, 12 
++   CONTROL &quot;Ad&amp;vanced...&quot;, 1015, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 262, 177, 67, 14 
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++23001, 	&quot;Microsoft TCP/IP&quot;
++23002, 	&quot;The subnet mask that you have entered for the IP address is not valid.  Please enter a valid mask.&quot;
++23003, 	&quot;The adapter requires at least one IP address.  Please enter one.&quot;
++23004, 	&quot;You have entered an address that is missing its subnet mask.  Please add a subnet mask&quot;
++23005, 	&quot;Invalid IP or subnet mask address.&quot;
++23006, 	&quot;IP addresses starting with %1 are not valid because they are reserved for loopback addresses. Please specify some other valid value between %2 and %3.&quot;
++23007, 	&quot;%1 is not a valid entry as the first field of a host IP address. Please specify a value between %2 and %3.&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++23008, 	&quot;DHCP protocol will attempt to automatically configure your workstation during system initialization. Any parameters specified in these property pages will override any values obtained by DHCP. Do you want to enable DHCP?&quot;
++23009, 	&quot;IP address&quot;
++23010, 	&quot;Subnet mask&quot;
++23011, 	&quot;Subnet prefix length&quot;
++23012, 	&quot;Invalid IP address&quot;
++23013, 	&quot;Invalid default gateway address&quot;
++23015, 	&quot;You have not selected an item. Select one first.&quot;
++23016, 	&quot;DHCP Enabled&quot;
++23017, 	&quot;Automatic configuration only&quot;
++23020, 	&quot;Domain name is not a valid name.&quot;
++23021, 	&quot;The current setting of search method requires at least one DNS suffix. Please enter one or change the setting.&quot;
++23022, 	&quot;Domain suffix is not a valid suffix.&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++23024, 	&quot;Advanced TCP/IP Settings&quot;
++23027, 	&quot;IP security&quot;
++23028, 	&quot;IP security protects the confidentiality, integrity and authenticity of IP packets between two computers on a network. IP security settings apply to all connections for which TCP/IP is enabled.&quot;
++23029, 	&quot;PPP settings&quot;
++23030, 	&quot;PPP&quot;
++23031, 	&quot;SLIP settings&quot;
++23032, 	&quot;SLIP&quot;
++23036, 	&quot;Cannot create file %1. Try again, providing a different filename.&quot;
++23037, 	&quot;Configuration failed to find the system path.  Copy the LMHOSTS file to the directory %SystemRoot%\\system32\\drivers\\etc.&quot;
++23038, 	&quot;Configuration was not able to copy the LMHOSTS file.  Please copy the LMHOSTS file to the directory %1\\drivers\\etc.&quot;
++23039, 	&quot;The static IP address that was just configured is already in use on the network. Please reconfigure a different IP address.&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++23040, 	&quot;In order to configure TCP/IP, you must install and enable a network adapter card.&quot;
++23041, 	&quot;%1 is not a valid entry.  Please specify a value between %2 and %3.&quot;
++23042, 	&quot;Out of memory.&quot;
++23043, 	&quot;Error&quot;
++23046, 	&quot;IP addresses must be unique for each network card.  Please remove the duplicate IP address from the IP addresses list in the Advanced dialog box.&quot;
++23047, 	&quot;The IP address %1 you have entered for this network adapter is already assigned to another adapter '%2' on this computer. If the same address is assigned to both adapters and they both become active, only one of them will use this address.  This may result in incorrect system configuration. \n\nDo you want to fix the problem by entering a different IP address for this adapter in the list of IP addresses in the Advanced dialog box?&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++23061, 	&quot;The DNS server list is empty. The local IP address will be configured as the primary DNS server address because Microsoft DNS server is installed on this machine.&quot;
++23062, 	&quot;Metric&quot;
++23063, 	&quot;Please enter a metric between 1 and %1.&quot;
++23064, 	&quot;Gateway&quot;
++23065, 	&quot;The IP address %1 you have entered for this network adapter is already assigned to another adapter (%2) which is no longer present in the computer.  If the same address is assigned to both adapters and they both become active, only one of them will use this address.  This may result in incorrect system configuration. \n\nDo you want to remove the static IP configuration for the absent adapter?&quot;
++23066, 	&quot;You entered an invalid subnet mask. The subnet mask has to be contiguous. Please enter a valid mask.&quot;
++23067, 	&quot;The DNS domain name '%1' is not a valid DNS name.&quot;
++23068, 	&quot;The '%1' in the answer file contains invalid DNS name.\nThe Domain Suffix '%2' is not a valid DNS name.&quot;
++23069, 	&quot;IP settings of '%1' in the answer file is invalid.\nInvalid IP or subnet mask address.&quot;
++23070, 	&quot;IP settings of '%1' in the answer file is invalid.\nDHCP is disabled and there are no static IP addresses.&quot;
++23071, 	&quot;IP settings of '%1' in the answer file is invalid.\nDHCP is disabled and there are no subnet masks for IP addresses.&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++23072, 	&quot;The DNS domain of '%1' in the answer file is not a valid DNS name.&quot;
++23073, 	&quot;The '%1' of '%2' in the answer file contains an invalid IP address '%3'.&quot;
++23074, 	&quot;The computer DNS domain name '%1' is not a valid DNS name.&quot;
++23075, 	&quot;%1%2&quot;
++23077, 	&quot;The '%1' of '%2' in the answer file contains an invalid setting '%3'.&quot;
++23078, 	&quot;The DNS server '%1' is already on the list.&quot;
++23079, 	&quot;The DNS suffix '%1' is already on the list.&quot;
++23080, 	&quot;The WINS server '%1' is already on the list.&quot;
++23081, 	&quot;The IP address '%1' is already on the list.&quot;
++23082, 	&quot;The default gateway '%1' is already on the list.&quot;
++23083, 	&quot;The alternate DNS server cannot be the same as the preferred DNS server. Please enter a different IP address for the alternate DNS server.&quot;
++23084, 	&quot;The combination of IP address and subnet mask is invalid. All of the bits in the host address portion of the IP address are set to 1. Please enter a valid combination of IP address and subnet mask.&quot;
++23085, 	&quot;The combination of IP address and subnet mask is invalid. All of the bits in the host address portion of the IP address are set to 0. Please enter a valid combination of IP address and subnet mask.&quot;
++23086, 	&quot;The combination of IP address and subnet mask is invalid. All of the bits in the network address portion of the IP address are set to 0. Please enter a valid combination of IP address and subnet mask.&quot;
++23087, 	&quot;Automatic&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++23088, 	&quot;Warning - Multiple default gateways are intended to provide redundancy to a single network (such as an intranet or the Internet). They will not function properly when the gateways are on two separate, disjoint networks (such as one on your intranet and one on the Internet). Do you want to save this configuration?&quot;
++23089, 	&quot;Warning - The default gateway is not on the same network segment (subnet) that is defined by the IP address and subnet mask. Do you want to save this configuration?&quot;
++23090, 	&quot;You entered an invalid prefix length. IPv6 prefix length must be between 0 and 128 (inclusive). Please enter a valid prefix length.&quot;
++23091, 	&quot;The DNS server '%1' is not a valid IP address.&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++24002, 	&quot;All Files (*.*)&quot;
++24005, 	&quot;Unknown network card.&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++24500, 	&quot;Validate TCP/IP settings&quot;
++24501, 	&quot;You have modified static TCP/IP settings. Would you like to validate them? To confirm, press 'Next'. To cancel, press 'Cancel'.&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++50001, 	&quot;Transmission Control Protocol/Internet Protocol. The default wide area network protocol that provides communication across diverse interconnected networks.&quot;
++50002, 	&quot;TCP/IP version 6. The latest version of the internet protocol that provides communication across diverse interconnected networks.&quot;
++50003, 	&quot;TCP/IP Protocol Driver&quot;
++50004, 	&quot;NetIO Legacy TDI Support Driver&quot;
++50005, 	&quot;Message-oriented TCP/IP and TCP/IPv6 Protocol (SMB session)&quot;
++50006, 	&quot;Microsoft NetbiosSmb Device Driver&quot;
++}
++
++
++1 VERSIONINFO
++FILEVERSION 6,1,7600,16385
++PRODUCTVERSION 6,1,7600,16385
++FILEOS 0x40004
++FILETYPE 0x2
++{
++BLOCK &quot;StringFileInfo&quot;
++{
++	BLOCK &quot;040904B0&quot;
++	{
++		VALUE &quot;CompanyName&quot;, &quot;Microsoft Corporation&quot;
++		VALUE &quot;FileDescription&quot;, &quot;Network Configuration Objects&quot;
++		VALUE &quot;FileVersion&quot;, &quot;6.1.7600.16385 (win7_rtm.090713-1255)&quot;
++		VALUE &quot;InternalName&quot;, &quot;netcfgx.dll&quot;
++		VALUE &quot;LegalCopyright&quot;, &quot;&#169; Microsoft Corporation. All rights reserved.&quot;
++		VALUE &quot;OriginalFilename&quot;, &quot;netcfgx.dll.mui&quot;
++		VALUE &quot;ProductName&quot;, &quot;Microsoft&#174; Windows&#174; Operating System&quot;
++		VALUE &quot;ProductVersion&quot;, &quot;6.1.7600.16385&quot;
++	}
++}
++
++BLOCK &quot;VarFileInfo&quot;
++{
++	VALUE &quot;Translation&quot;, 0x0409 0x04B0
++}
++}
++
+
+Modified: slovy_na_abmerkavan'ne.txt
+===================================================================
+--- slovy_na_abmerkavan'ne.txt	2011-02-16 18:27:12 UTC (rev 165)
++++ slovy_na_abmerkavan'ne.txt	2011-02-17 13:17:42 UTC (rev 166)
+@@ -38,4 +38,5 @@
+ Malfunction(-ing)
+ flush
+ subnet
+-expire
+\ No newline at end of file
++expire
++loopback
+
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000083.html">[I18n-bel-svn] r165 - / Windows7 Windows7/omegat
+</A></li>
+	<LI>Next message: <A HREF="000085.html">[I18n-bel-svn] r167 - Android-2.3/omegat
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#84">[ date ]</a>
+              <a href="thread.html#84">[ thread ]</a>
+              <a href="subject.html#84">[ subject ]</a>
+              <a href="author.html#84">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/i18n-bel-svn">More information about the I18n-bel-svn
+mailing list</a><br>
+</body></html>

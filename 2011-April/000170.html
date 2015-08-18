@@ -1,0 +1,2828 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [I18n-bel-svn] r252 - Android/omegat
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/i18n-bel-svn/2011-April/index.html" >
+   <LINK REL="made" HREF="mailto:i18n-bel-svn%40lists.berlios.de?Subject=Re%3A%20%5BI18n-bel-svn%5D%20r252%20-%20Android/omegat&In-Reply-To=%3C20110418161336.EC2B24814B6%40sheep.berlios.de%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000169.html">
+   <LINK REL="Next"  HREF="000171.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[I18n-bel-svn] r252 - Android/omegat</H1>
+    <B>klyok at mail.berlios.de</B> 
+    <A HREF="mailto:i18n-bel-svn%40lists.berlios.de?Subject=Re%3A%20%5BI18n-bel-svn%5D%20r252%20-%20Android/omegat&In-Reply-To=%3C20110418161336.EC2B24814B6%40sheep.berlios.de%3E"
+       TITLE="[I18n-bel-svn] r252 - Android/omegat">klyok at mail.berlios.de
+       </A><BR>
+    <I>Mon Apr 18 18:13:36 CEST 2011</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000169.html">[I18n-bel-svn] r251 - Android/omegat
+</A></li>
+        <LI>Next message: <A HREF="000171.html">[I18n-bel-svn] r253 - Windows7/source/Program Files/Internet	Explorer/en-US
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#170">[ date ]</a>
+              <a href="thread.html#170">[ thread ]</a>
+              <a href="subject.html#170">[ subject ]</a>
+              <a href="author.html#170">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>Author: klyok
+Date: 2011-04-18 18:13:36 +0200 (Mon, 18 Apr 2011)
+New Revision: 252
+
+Modified:
+   Android/omegat/ignored_words.txt
+   Android/omegat/learned_words.txt
+   Android/omegat/project_save.tmx
+Log:
+?\208?\159?\208?\181?\209?\128?\208?\176?\208?\186?\208?\187?\208?\176?\209?\158 ?\208?\186?\208?\190?\208?\187?\209?\140?\208?\186?\209?\150 ?\209?\128?\208?\176?\208?\180?\208?\186?\208?\190?\209?\158, ?\209?\136?\209?\130?\208?\190-?\208?\189?\209?\150?\209?\136?\209?\130?\208?\190 ?\208?\178?\209?\139?\208?\191?\209?\128?\208?\176?\208?\178?\209?\150?\209?\158.
+Vending .apk ?\208?\176?\208?\188?\208?\176?\208?\187?\209?\140 ?\209?\129?\208?\186?\208?\190?\208?\189?\209?\135?\208?\176?\208?\189?\209?\139.
+
+Modified: Android/omegat/ignored_words.txt
+===================================================================
+--- Android/omegat/ignored_words.txt	2011-04-16 15:15:06 UTC (rev 251)
++++ Android/omegat/ignored_words.txt	2011-04-18 16:13:36 UTC (rev 252)
+@@ -44,6 +44,8 @@
+ android.intent.action.DIAL
+ android.intent.action.MAIN
+ android-weberror.png
++answer
++answer.py
+ APN
+ app
+ AppleWebKit
+@@ -60,6 +62,7 @@
+ BackupTransportService
+ Beispiel
+ Belarusian
++bin
+ bin-signed.zip
+ bluetooth
+ Bluetooth
+@@ -72,6 +75,7 @@
+ cell
+ ChainsDD
+ CHAP
++checkout.google.com
+ CID
+ client
+ color
+@@ -117,6 +121,7 @@
+ Dies
+ display_images_key
+ DisplayName
++dl
+ DNS
+ Dock.ogg
+ dot
+@@ -156,6 +161,7 @@
+ Fake
+ FDN
+ file
++files
+ FlylinkDC
+ forget
+ fra-FRA
+@@ -177,8 +183,10 @@
+ HCO
+ HH
+ HIDE
++hl
+ hotseat_browser
+ hotseat_phone
++href
+ http
+ HTTP
+ ic_list_drafts
+@@ -212,6 +220,7 @@
+ K&#1073;
+ l
+ LAC
++lang
+ Latin
+ LatinIME
+ like
+@@ -234,6 +243,7 @@
+ mailbox_name_display_sent
+ mailbox_name_display_trash
+ Market
++market.android.com
+ media
+ MEID
+ menu_stats_last_unplugged
+@@ -285,6 +295,7 @@
+ PPP
+ prefetch_images_key
+ prefetch_pages_key
++privacy.html
+ PRO
+ ProjectMenu
+ Protocol
+@@ -299,6 +310,7 @@
+ Re
+ red
+ refresh_interval
++region
+ rmnet0
+ RSSI
+ RUIM
+@@ -340,6 +352,7 @@
+ style
+ su
+ Superuser
++support
+ synth&#232;se
+ synthesis
+ system
+@@ -354,10 +367,12 @@
+ toggle
+ T-Online
+ TransDroid
++true
+ TTLS
+ TTY
+ U
+ u0020
++u0020%
+ u003E
+ u066A
+ UDP
+@@ -368,6 +383,7 @@
+ un
+ Undock.ogg
+ Unlock.ogg
++URI
+ URL
+ USB
+ use_my_location
+
+Modified: Android/omegat/learned_words.txt
+===================================================================
+--- Android/omegat/learned_words.txt	2011-04-16 15:15:06 UTC (rev 251)
++++ Android/omegat/learned_words.txt	2011-04-18 16:13:36 UTC (rev 252)
+@@ -1,6 +1,5 @@
+ Android-&#1091;
+ s-&#1075;&#1072;
+-u0020%
+ u00200123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ&#1040;&#1041;&#1042;&#1043;&#1168;&#1044;&#1045;&#1025;&#1046;&#1047;&#1030;&#1049;&#1050;&#1051;&#1052;&#1053;&#1054;&#1055;&#1056;&#1057;&#1058;&#1059;&#1038;&#1060;&#1061;&#1062;&#1063;&#1064;&#1067;&#1068;&#1069;&#1070;&#1071;
+ u0020ABCDEFGHIJKLMNOPQRSTUVWXYZ&#1040;&#1041;&#1042;&#1043;&#1168;&#1044;&#1045;&#1025;&#1046;&#1047;&#1030;&#1049;&#1050;&#1051;&#1052;&#1053;&#1054;&#1055;&#1056;&#1057;&#1058;&#1059;&#1038;&#1060;&#1061;&#1062;&#1063;&#1064;&#1067;&#1068;&#1069;&#1070;&#1071;
+ u0020&#1052;&#1072;&#1075;&#1095;&#1099;&#1084;&#1072;
+@@ -46,6 +45,7 @@
+ &#1074;&#1072;&#1096;&#1072;&#1103;
+ &#1042;&#1072;&#1096;&#1072;&#1103;
+ &#1074;&#1072;&#1096;&#1091;&#1102;
++&#1042;&#1072;&#1096;&#1091;&#1102;
+ &#1074;&#1072;&#1096;&#1099;&#1103;
+ &#1042;&#1072;&#1096;&#1099;&#1103;
+ &#1074;&#1110;&#1076;&#1078;&#1101;&#1090;
+@@ -67,7 +67,9 @@
+ &#1074;&#1099;&#1089;&#1072;&#1082;&#1072;&#1103;&#1082;&#1072;&#1089;&#1085;&#1072;
+ &#1042;&#1099;&#1089;&#1090;&#1072;&#1083;&#1105;&#1118;&#1074;&#1072;&#1077;&#1094;&#1094;&#1072;
+ &#1074;&#1099;&#1089;&#1090;&#1072;&#1083;&#1105;&#1118;&#1074;&#1072;&#1094;&#1100;
++&#1042;&#1099;&#1089;&#1090;&#1072;&#1083;&#1105;&#1118;&#1074;&#1072;&#1102;&#1094;&#1094;&#1072;
+ &#1074;&#1099;&#1089;&#1090;&#1072;&#1083;&#1102;&#1077;&#1094;&#1094;&#1072;
++&#1074;&#1099;&#1089;&#1090;&#1072;&#1083;&#1102;&#1081;&#1094;&#1077;
+ &#1074;&#1099;&#1089;&#1090;&#1072;&#1083;&#1103;&#1074;&#1072;&#1094;&#1100;
+ &#1042;&#1099;&#1089;&#1090;&#1072;&#1083;&#1103;&#1074;&#1072;&#1094;&#1100;
+ &#1075;&#1072;&#1076;&#1079;
+@@ -78,11 +80,16 @@
+ &#1075;&#1072;&#1088;&#1090;&#1072;&#1095;&#1099;
+ &#1075;&#1072;&#1089;&#1083;&#1086;
+ &#1043;&#1041;
++&#1043;&#1043;
+ &#1043;&#1110;&#1096;&#1087;&#1072;&#1085;&#1089;&#1082;&#1072;&#1103;
+ &#1043;&#1055;
+ &#1043;&#1088;&#1072;&#1077;&#1094;&#1094;&#1072;
+ &#1076;&#1072;&#1074;&#1077;&#1088;&#1095;&#1099;&#1103;
+ &#1076;&#1086;&#1089;&#1103;&#1075;&#1072;&#1084;
++&#1076;&#1101;&#1073;&#1110;&#1090;&#1072;&#1074;&#1072;&#1077;
++&#1076;&#1101;&#1073;&#1110;&#1090;&#1072;&#1074;&#1072;&#1102;
++&#1044;&#1101;&#1073;&#1110;&#1090;&#1072;&#1074;&#1072;&#1102;
++&#1076;&#1101;&#1073;&#1110;&#1090;&#1085;&#1072;&#1103;
+ &#1077;&#1081;&#1085;&#1099;&#1093;
+ &#1077;&#1081;&#1085;&#1099;&#1103;
+ &#1078;&#1099;&#1074;&#1110;&#1083;&#1100;&#1085;&#1110;&#1082;&#1072;&#1118;
+@@ -106,6 +113,7 @@
+ &#1110;&#1085;&#1090;&#1101;&#1088;&#1092;&#1101;&#1081;&#1089;&#1072;&#1084;
+ &#1110;&#1085;&#1090;&#1101;&#1088;&#1092;&#1101;&#1081;&#1089;&#1091;
+ &#1110;&#1085;&#1096;
++&#1082;&#1072;&#1088;&#1099;&#1089;&#1090;&#1072;&#1083;&#1100;&#1085;&#1110;&#1094;&#1082;&#1110;&#1103;
+ &#1082;&#1041;
+ &#1050;&#1073;
+ &#1050;&#1110;&#1088;&#1072;&#1118;&#1085;&#1110;&#1082;&#1072;&#1056;&#1072;&#1093;&#1091;&#1085;&#1082;&#1072;&#1118;
+@@ -126,6 +134,7 @@
+ &#1052;&#1073;
+ &#1084;&#1042;
+ &#1084;&#1110;&#1083;&#1110;&#1089;&#1101;&#1082;&#1091;&#1085;&#1076;&#1072;&#1093;
++&#1052;&#1052;
+ &#1084;&#1086;&#1078;&#1085;&#1072;&#1089;&#1100;&#1094;&#1103;&#1084;&#1110;
+ &#1084;&#1086;&#1078;&#1085;&#1072;&#1089;&#1100;&#1094;&#1103;&#1118;
+ &#1084;&#1101;&#1076;&#1099;&#1103;
+@@ -195,6 +204,7 @@
+ &#1088;&#1072;&#1079;&#1073;&#1083;&#1103;&#1082;&#1072;&#1074;&#1072;&#1085;&#1100;&#1085;&#1103;
+ &#1088;&#1072;&#1079;&#1073;&#1083;&#1103;&#1082;&#1072;&#1074;&#1072;&#1094;&#1100;
+ &#1088;&#1072;&#1079;&#1100;&#1073;&#1110;&#1088;&#1072;&#1083;&#1100;&#1085;&#1110;&#1082;&#1091;
++&#1088;&#1072;&#1089;&#1087;&#1088;&#1072;&#1094;&#1086;&#1118;&#1085;&#1110;&#1082;&#1072;
+ &#1088;&#1072;&#1089;&#1087;&#1088;&#1072;&#1094;&#1086;&#1118;&#1085;&#1110;&#1082;&#1072;&#1084;
+ &#1088;&#1072;&#1089;&#1087;&#1088;&#1072;&#1094;&#1086;&#1118;&#1085;&#1110;&#1082;&#1091;
+ &#1088;&#1072;&#1089;&#1087;&#1088;&#1072;&#1094;&#1086;&#1118;&#1085;&#1110;&#1094;&#1090;&#1074;&#1072;
+@@ -240,6 +250,8 @@
+ &#1057;&#1100;&#1085;
+ &#1057;&#1100;&#1094;&#1110;&#1096;&#1072;&#1085;&#1099;&#1103;
+ &#1057;&#1100;&#1094;&#1103;&#1075;&#1074;&#1072;&#1083;&#1100;&#1085;&#1110;&#1082;
++&#1089;&#1100;&#1094;&#1103;&#1075;&#1074;&#1072;&#1085;&#1072;&#1075;&#1072;
++&#1089;&#1100;&#1094;&#1103;&#1075;&#1074;&#1072;&#1085;&#1072;&#1077;
+ &#1057;&#1100;&#1094;&#1103;&#1075;&#1074;&#1072;&#1085;&#1072;&#1077;
+ &#1089;&#1101;&#1082;
+ &#1058;
+
+Modified: Android/omegat/project_save.tmx
+===================================================================
+--- Android/omegat/project_save.tmx	2011-04-16 15:15:06 UTC (rev 251)
++++ Android/omegat/project_save.tmx	2011-04-18 16:13:36 UTC (rev 252)
+@@ -1845,6 +1845,22 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;%1$s (invalid)&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T145618Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;%1$s (&#1093;&#1110;&#1073;&#1085;&#1099;)&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;%1$s Billing Agreement&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T160408Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1055;&#1072;&#1075;&#1072;&#1076;&#1085;&#1077;&#1085;&#1100;&#1085;&#1077; &#1072;&#1087;&#1083;&#1072;&#1090;&#1099; %1$s&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;%1$s and %2$d others&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110324T222949Z&quot; changeid=&quot;klyok&quot;&gt;
+@@ -1990,11 +2006,19 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
+-        &lt;seg&gt;%1$s &#8211; %2$s&lt;/seg&gt;
++        &lt;seg&gt;%1$s will be removed from this phone.&lt;/seg&gt;
+       &lt;/tuv&gt;
+-      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110322T103852Z&quot; changeid=&quot;klyok&quot;&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T152217Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;%1$s &#1074;&#1099;&#1089;&#1090;&#1072;&#1083;&#1102;&#1077;&#1094;&#1094;&#1072; &#1079; &#1075;&#1101;&#1090;&#1072;&#1075;&#1072; &#1090;&#1101;&#1083;&#1077;&#1092;&#1086;&#1085;&#1091;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;%1$s &#8211; %2$s&lt;/seg&gt;
+       &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T153451Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;%1$s &#8212; %2$s&lt;/seg&gt;
++      &lt;/tuv&gt;
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
+@@ -2886,6 +2910,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;/&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T144422Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;/data/eri.xml&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110324T161647Z&quot; changeid=&quot;klyok&quot;&gt;
+@@ -4030,6 +4062,22 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;&lt;a href=\&quot;<A HREF="http://checkout.google.com/files/privacy.html?hl=%lang%&amp;amp;dl=%region%\&amp;quot;&amp;gt;Google">http://checkout.google.com/files/privacy.html?hl=%lang%&amp;dl=%region%\&quot;&gt;Google</A> Checkout Billing and Privacy Policy&lt;/a&gt;&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T160148Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&lt;a href=\&quot;<A HREF="http://checkout.google.com/files/privacy.html?hl=%lang%&amp;amp;dl=%region%\&amp;quot;&amp;gt;&#1055;&#1088;&#1072;&#1074;&#1110;&#1083;&#1099;">http://checkout.google.com/files/privacy.html?hl=%lang%&amp;dl=%region%\&quot;&gt;&#1055;&#1088;&#1072;&#1074;&#1110;&#1083;&#1099;</A> &#1050;&#1072;&#1089;&#1099; Google &#1110; &#1072;&#1087;&#1083;&#1072;&#1090;&#1099;&lt;/a&gt;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;&lt;a href=\&quot;<A HREF="http://market.android.com/support/bin/answer.py?answer=134336&amp;amp;hl=%lang%\&amp;quot;&amp;gt;Refund">http://market.android.com/support/bin/answer.py?answer=134336&amp;hl=%lang%\&quot;&gt;Refund</A> Policy&lt;/a&gt;&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T160354Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&lt;a href=\&quot;<A HREF="http://market.android.com/support/bin/answer.py?answer=134336&amp;amp;hl=%lang%\&amp;quot;&amp;gt;&#1055;&#1088;&#1072;&#1074;&#1110;&#1083;&#1099;">http://market.android.com/support/bin/answer.py?answer=134336&amp;hl=%lang%\&quot;&gt;&#1055;&#1088;&#1072;&#1074;&#1110;&#1083;&#1099;</A> &#1074;&#1103;&#1088;&#1090;&#1072;&#1094;&#1100; &#1075;&#1088;&#1086;&#1096;&#1099;&lt;/a&gt;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;&lt;b0&gt;^2&lt;/b0&gt;&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110401T195448Z&quot; changeid=&quot;klyok&quot;&gt;
+@@ -4110,6 +4158,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;&lt;b&gt;^1%&lt;/b&gt; \u0020\u0020^2/^3&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T153147Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&lt;b&gt;^1%&lt;/b&gt; \u0020\u0020^2/^3&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;&lt;br&gt;&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110401T182025Z&quot; changeid=&quot;klyok&quot;&gt;
+@@ -5077,6 +5133,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;A manual update is required.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T155043Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1058;&#1088;&#1101;&#1073;&#1072; &#1072;&#1073;&#1085;&#1072;&#1074;&#1110;&#1094;&#1100; &#1089;&#1072;&#1084;&#1072;&#1089;&#1090;&#1086;&#1081;&#1085;&#1072;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;A network error has occurred.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110326T211718Z&quot; changeid=&quot;klyok&quot;&gt;
+@@ -5338,6 +5402,22 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;About the developer&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T154717Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1055;&#1088;&#1072; &#1088;&#1072;&#1089;&#1087;&#1088;&#1072;&#1094;&#1086;&#1118;&#1085;&#1110;&#1082;&#1072;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Above average&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T153400Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1042;&#1099;&#1096;&#1101;&#1081; &#1079;&#1072; &#1089;&#1103;&#1088;&#1101;&#1076;&#1085;&#1103;&#1077;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Accept&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110325T102617Z&quot; changeid=&quot;klyok&quot;&gt;
+@@ -5538,6 +5618,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Account number&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T151214Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1053;&#1091;&#1084;&#1072;&#1088; &#1088;&#1072;&#1093;&#1091;&#1085;&#1082;&#1091;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Account options&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110324T213411Z&quot; changeid=&quot;klyok&quot;&gt;
+@@ -5890,6 +5978,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Add card&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T151604Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1044;&#1072;&#1076;&#1072;&#1094;&#1100; &#1082;&#1072;&#1088;&#1090;&#1082;&#1091;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Add contact&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110125T153144Z&quot; changeid=&quot;alex73&quot;&gt;
+@@ -6098,6 +6194,22 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Address&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T150623Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1040;&#1076;&#1088;&#1072;&#1089;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Address for this account&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T150619Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1040;&#1076;&#1088;&#1072;&#1089; &#1075;&#1101;&#1090;&#1072;&#1075;&#1072; &#1088;&#1072;&#1093;&#1091;&#1085;&#1082;&#1091;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Adjust the brightness of the screen&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110331T123819Z&quot; changeid=&quot;klyok&quot;&gt;
+@@ -6596,6 +6708,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Allow automatic updating&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T155009Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1044;&#1072;&#1079;&#1074;&#1086;&#1083;&#1110;&#1094;&#1100; &#1089;&#1072;&#1084;&#1072;&#1088;&#1091;&#1096;&#1085;&#1072; &#1072;&#1073;&#1085;&#1072;&#1118;&#1083;&#1103;&#1094;&#1094;&#1072;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Allow data roaming?&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110128T081721Z&quot; changeid=&quot;alex73&quot;&gt;
+@@ -8516,6 +8636,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Android Market Terms of Service&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T160428Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1059;&#1084;&#1086;&#1074;&#1099; &#1072;&#1073;&#1089;&#1083;&#1091;&#1075;&#1086;&#1118;&#1074;&#1072;&#1085;&#1100;&#1085;&#1103; &#1050;&#1088;&#1072;&#1084;&#1099; Android.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Android Market notification&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110325T104902Z&quot; changeid=&quot;klyok&quot;&gt;
+@@ -8548,6 +8676,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Android market accepts&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T150022Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1050;&#1072;&#1088;&#1084;&#1072; Android &#1087;&#1088;&#1099;&#1084;&#1072;&#1077;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Android version&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110331T124524Z&quot; changeid=&quot;klyok&quot;&gt;
+@@ -8828,6 +8964,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Application uninstall not successful&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T152411Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1053;&#1077; &#1118;&#1076;&#1072;&#1083;&#1086;&#1089;&#1103; &#1074;&#1099;&#1089;&#1090;&#1072;&#1083;&#1103;&#1074;&#1072;&#1094;&#1100; &#1087;&#1088;&#1072;&#1075;&#1088;&#1072;&#1084;&#1091;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Application version&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110326T085121Z&quot; changeid=&quot;klyok&quot;&gt;
+@@ -9340,6 +9484,22 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Authorizing purchase&#8230;&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T145514Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;[&#1085;/&#1076;]&#1057;&#1087;&#1088;&#1072;&#1118;&#1076;&#1078;&#1074;&#1072;&#1077;&#1094;&#1094;&#1072; &#1087;&#1072;&#1082;&#1091;&#1087;&#1082;&#1072;&#8230;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Authorizing&#8230;&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T121723Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;[&#1085;/&#1076;]&#1057;&#1087;&#1088;&#1072;&#1118;&#1076;&#1078;&#1074;&#1072;&#1102;&#1094;&#1094;&#1072; &#1087;&#1072;&#1118;&#1085;&#1072;&#1084;&#1086;&#1094;&#1090;&#1074;&#1099;&#8230;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Auto&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110325T075232Z&quot; changeid=&quot;klyok&quot;&gt;
+@@ -9580,6 +9740,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Average&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T153355Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1057;&#1103;&#1088;&#1101;&#1076;&#1085;&#1077;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Awake time&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110331T125026Z&quot; changeid=&quot;klyok&quot;&gt;
+@@ -9692,6 +9860,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Background data disabled&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T155056Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1047;&#1072;&#1073;&#1072;&#1088;&#1086;&#1085;&#1077;&#1085;&#1072; &#1079;&#1083;&#1091;&#1095;&#1072;&#1094;&#1094;&#1072; &#1085;&#1072; &#1079;&#1072;&#1076;&#1085;&#1110;&#1084; &#1087;&#1083;&#1103;&#1085;&#1077;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Backing up ADW settings...&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110325T085558Z&quot; changeid=&quot;klyok&quot;&gt;
+@@ -9788,6 +9964,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Bank account information&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T151209Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1047;&#1100;&#1074;&#1077;&#1089;&#1090;&#1082;&#1110; &#1087;&#1088;&#1072; &#1073;&#1072;&#1085;&#1082;&#1072;&#1118;&#1089;&#1082;&#1110; &#1088;&#1072;&#1093;&#1091;&#1085;&#1072;&#1082;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Basic panel&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110326T081959Z&quot; changeid=&quot;klyok&quot;&gt;
+@@ -9988,6 +10172,38 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Below average&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T153352Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1053;&#1110;&#1078;&#1101;&#1081; &#1079;&#1072; &#1089;&#1103;&#1088;&#1101;&#1076;&#1085;&#1103;&#1077;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Bill my %1$s account&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T150108Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1059;&#1085;&#1077;&#1089;&#1100;&#1094;&#1110; &#1091; &#1084;&#1086;&#1081; &#1088;&#1072;&#1093;&#1091;&#1085;&#1072;&#1082; %1$s&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Billing address&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T150613Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1040;&#1076;&#1088;&#1072;&#1089; &#1072;&#1087;&#1083;&#1072;&#1090;&#1099;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Billing information&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T150646Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1047;&#1100;&#1074;&#1077;&#1089;&#1090;&#1082;&#1110; &#1087;&#1088;&#1072; &#1072;&#1087;&#1083;&#1072;&#1090;&#1091;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Birthday&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110324T144250Z&quot; changeid=&quot;klyok&quot;&gt;
+@@ -10164,6 +10380,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Building/Floor/Apt (optional)&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T144512Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1041;&#1091;&#1076;&#1099;&#1085;&#1072;&#1082;, &#1087;&#1072;&#1074;&#1077;&#1088;&#1093;, &#1087;&#1072;&#1082;&#1086;&#1081; (&#1085;&#1077; &#1072;&#1073;&#1072;&#1074;&#1103;&#1079;&#1082;&#1086;&#1074;&#1072;)&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Built-in keyboard settings&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110402T232246Z&quot; changeid=&quot;klyok&quot;&gt;
+@@ -10196,6 +10420,30 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Buy&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T144233Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1050;&#1091;&#1087;&#1110;&#1094;&#1100;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Buy now&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T144711Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1050;&#1091;&#1087;&#1110;&#1094;&#1100; &#1079;&#1072;&#1088;&#1072;&#1079;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Buy now: %s&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T151608Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1050;&#1091;&#1087;&#1110;&#1094;&#1100; &#1079;&#1072;&#1088;&#1072;&#1079;: %s&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Bytes received: %1$d&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110402T232944Z&quot; changeid=&quot;klyok&quot;&gt;
+@@ -10844,6 +11092,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Call the developer&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T154759Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1058;&#1101;&#1083;&#1077;&#1092;&#1072;&#1085;&#1072;&#1074;&#1072;&#1094;&#1100; &#1088;&#1072;&#1089;&#1087;&#1088;&#1072;&#1094;&#1086;&#1118;&#1085;&#1110;&#1082;&#1091;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Call using&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110304T132222Z&quot; changeid=&quot;klyok&quot;&gt;
+@@ -11005,6 +11261,22 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Can check if you have a license for this application from Market&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T155243Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1052;&#1086;&#1078;&#1072;&#1094;&#1077; &#1089;&#1087;&#1088;&#1072;&#1118;&#1076;&#1079;&#1110;&#1094;&#1100;, &#1094;&#1110; &#1084;&#1072;&#1077;&#1094;&#1077; &#1074;&#1099; &#1083;&#1110;&#1094;&#1101;&#1085;&#1079;&#1110;&#1102; &#1079; &#1082;&#1088;&#1072;&#1084;&#1099; &#1085;&#1072; &#1075;&#1101;&#1090;&#1091;&#1102; &#1087;&#1088;&#1072;&#1075;&#1088;&#1072;&#1084;&#1091;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Can't process refund&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T152734Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1053;&#1077;&#1083;&#1100;&#1075;&#1072; &#1074;&#1103;&#1088;&#1085;&#1091;&#1094;&#1100; &#1075;&#1088;&#1086;&#1096;&#1099;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Can't tether when USB storage in use&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110331T131821Z&quot; changeid=&quot;klyok&quot;&gt;
+@@ -11029,6 +11301,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Cancel download&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T153120Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1057;&#1082;&#1072;&#1089;&#1072;&#1074;&#1072;&#1094;&#1100; &#1089;&#1100;&#1094;&#1103;&#1075;&#1074;&#1072;&#1094;&#1100;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Cancel sync&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110325T071218Z&quot; changeid=&quot;klyok&quot;&gt;
+@@ -11185,6 +11465,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Card number&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T144245Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1053;&#1091;&#1084;&#1072;&#1088; &#1082;&#1072;&#1088;&#1090;&#1082;&#1110;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Care must be used with permission, as it is possible to get application components into an unusable, inconsistent, or unstable state.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110326T213949Z&quot; changeid=&quot;klyok&quot;&gt;
+@@ -11193,6 +11481,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Carrier Terms of Service.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T160759Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1059;&#1084;&#1086;&#1074;&#1099; &#1072;&#1073;&#1089;&#1083;&#1091;&#1075;&#1086;&#1118;&#1074;&#1072;&#1085;&#1100;&#1085;&#1103; &#1072;&#1087;&#1101;&#1088;&#1072;&#1090;&#1072;&#1088;&#1072;&#1084;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Carrier data policy&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110313T101054Z&quot; changeid=&quot;klyok&quot;&gt;
+@@ -12968,6 +13264,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;County&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T151244Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1040;&#1082;&#1088;&#1091;&#1075;&#1072;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Create contact&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot;&gt;
+@@ -13122,6 +13426,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Currently downloading&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T153020Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1047;&#1072;&#1088;&#1072;&#1079; &#1089;&#1100;&#1094;&#1103;&#1075;&#1074;&#1072;&#1077;&#1094;&#1094;&#1072;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Custom&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110322T100039Z&quot; changeid=&quot;klyok&quot;&gt;
+@@ -14068,6 +14380,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Did you mean: ^1&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T153901Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1052;&#1086;&#1078;&#1072;, &#1074;&#1099; &#1084;&#1077;&#1083;&#1110; &#1085;&#1072; &#1118;&#1074;&#1072;&#1079;&#1077;: ^1&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Dies ist ein Beispiel f&#252;r Sprachsynthese in Deutsch.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110326T105432Z&quot; changeid=&quot;klyok&quot;&gt;
+@@ -14108,6 +14428,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Direct Debit billing information&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T150918Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1047;&#1100;&#1074;&#1077;&#1089;&#1090;&#1082;&#1110; &#1087;&#1072; &#1087;&#1088;&#1086;&#1089;&#1090;&#1072;&#1077; &#1076;&#1101;&#1073;&#1110;&#1090;&#1072;&#1074;&#1072;&#1077; &#1072;&#1087;&#1083;&#1072;&#1094;&#1077;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Direct access to hardware on the handset.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110323T081557Z&quot; changeid=&quot;klyok&quot;&gt;
+@@ -14898,6 +15226,22 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Download paused&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T122241Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1055;&#1088;&#1099;&#1087;&#1099;&#1085;&#1110;&#1083;&#1110; &#1089;&#1100;&#1094;&#1103;&#1075;&#1074;&#1072;&#1094;&#1100;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Download unsuccessful&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T122246Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1055;&#1072;&#1089;&#1100;&#1087;&#1103;&#1093;&#1086;&#1074;&#1072; &#1089;&#1100;&#1094;&#1103;&#1075;&#1085;&#1091;&#1083;&#1110;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Download was unsuccessful, please try again.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110325T103522Z&quot; changeid=&quot;klyok&quot;&gt;
+@@ -14922,6 +15266,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Downloading&#8230;&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T122232Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1057;&#1100;&#1094;&#1103;&#1075;&#1074;&#1072;&#1077;&#1094;&#1094;&#1072;&#8230;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Downloads&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110416T144708Z&quot; changeid=&quot;klyok&quot;&gt;
+@@ -14930,6 +15282,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Downloads can be returned for a full refund within 24 hours of purchase.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T144829Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1062;&#1072;&#1083;&#1082;&#1072;&#1084; &#1074;&#1103;&#1088;&#1085;&#1091;&#1094;&#1100; &#1075;&#1088;&#1086;&#1096;&#1099; &#1079;&#1072; &#1089;&#1100;&#1094;&#1103;&#1075;&#1085;&#1091;&#1090;&#1072;&#1077; &#1084;&#1086;&#1078;&#1085;&#1072; &#1094;&#1103;&#1075;&#1072;&#1084; 24 &#1075;&#1072;&#1076;&#1079;&#1110;&#1085;&#1072;&#1118; &#1087;&#1072;&#1089;&#1100;&#1083;&#1103; &#1090;&#1072;&#1075;&#1086;, &#1103;&#1082; &#1082;&#1091;&#1087;&#1110;&#1083;&#1110;. &lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Drafts&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110324T202915Z&quot; changeid=&quot;klyok&quot;&gt;
+@@ -15782,6 +16142,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Enter Your Address&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T150650Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1059;&#1087;&#1110;&#1096;&#1099;&#1094;&#1077; &#1074;&#1072;&#1096; &#1072;&#1076;&#1088;&#1072;&#1089;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Enter a city or postal code:&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110326T084329Z&quot; changeid=&quot;klyok&quot;&gt;
+@@ -16174,6 +16542,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Excellent!&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T153404Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1042;&#1099;&#1076;&#1072;&#1090;&#1085;&#1072;!&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Exchange&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110324T212721Z&quot; changeid=&quot;klyok&quot;&gt;
+@@ -16198,6 +16574,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Existing user data will be saved.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T154138Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1030;&#1089;&#1085;&#1099;&#1103; &#1082;&#1072;&#1088;&#1099;&#1089;&#1090;&#1072;&#1083;&#1100;&#1085;&#1110;&#1094;&#1082;&#1110;&#1103; &#1076;&#1072;&#1076;&#1079;&#1077;&#1085;&#1099;&#1103; &#1079;&#1072;&#1093;&#1072;&#1074;&#1072;&#1102;&#1094;&#1094;&#1072;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Exiting Emergency Callback Mode&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110219T135852Z&quot; changeid=&quot;klyok&quot;&gt;
+@@ -16214,6 +16598,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Expiration date&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T144255Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1058;&#1101;&#1088;&#1084;&#1110;&#1085; &#1076;&#1079;&#1077;&#1103;&#1085;&#1100;&#1085;&#1103;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Export to SD card&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110302T114023Z&quot; changeid=&quot;klyok&quot;&gt;
+@@ -16505,6 +16897,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Featured&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T151907Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1055;&#1088;&#1099;&#1082;&#1084;&#1077;&#1095;&#1072;&#1085;&#1099;&#1103;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Features only needed for application developers.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110323T081847Z&quot; changeid=&quot;klyok&quot;&gt;
+@@ -16729,6 +17129,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Flag as inappropriate&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T154858Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1040;&#1076;&#1079;&#1085;&#1072;&#1095;&#1099;&#1094;&#1100; &#1103;&#1082; &#1085;&#1077;&#1072;&#1076;&#1087;&#1072;&#1074;&#1077;&#1076;&#1085;&#1072;&#1077;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Flag content&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110325T102208Z&quot; changeid=&quot;klyok&quot;&gt;
+@@ -17498,6 +17906,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Google Checkout Terms of Service.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T160111Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1059;&#1084;&#1086;&#1074;&#1099; &#1072;&#1073;&#1089;&#1083;&#1091;&#1075;&#1086;&#1118;&#1074;&#1072;&#1085;&#1100;&#1085;&#1103; &#1050;&#1072;&#1089;&#1072;&#1102; Google.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Google Mail&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110326T181638Z&quot; changeid=&quot;klyok&quot;&gt;
+@@ -18003,6 +18419,46 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;I agree to Google Checkout &lt;a href=\&quot;%s\&quot;&gt;Terms of Service&lt;/a&gt;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T160120Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1071; &#1087;&#1072;&#1075;&#1072;&#1076;&#1078;&#1072;&#1102;&#1089;&#1103; &#1079; &lt;a href=\&quot;%s\&quot;&gt;&#1091;&#1084;&#1086;&#1074;&#1072;&#1084;&#1110; &#1072;&#1073;&#1089;&#1083;&#1091;&#1075;&#1086;&#1118;&#1074;&#1072;&#1085;&#1100;&#1085;&#1103;&lt;/a&gt; &#1050;&#1072;&#1089;&#1072;&#1102; Google.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;I agree to Google Checkout Terms of Service.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T160115Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1071; &#1087;&#1072;&#1075;&#1072;&#1076;&#1078;&#1072;&#1102;&#1089;&#1103; &#1079; &#1091;&#1084;&#1086;&#1074;&#1072;&#1084;&#1110; &#1072;&#1073;&#1089;&#1083;&#1091;&#1075;&#1086;&#1118;&#1074;&#1072;&#1085;&#1100;&#1085;&#1103; &#1050;&#1072;&#1089;&#1072;&#1102; Google.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;I don't use or want it.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T152511Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1053;&#1077; &#1074;&#1099;&#1082;&#1072;&#1088;&#1099;&#1089;&#1090;&#1086;&#1118;&#1074;&#1072;&#1102; &#1072;&#1073;&#1086; &#1085;&#1077; &#1093;&#1072;&#1095;&#1091; &#1075;&#1101;&#1090;&#1091;&#1102; &#1087;&#1088;&#1072;&#1075;&#1088;&#1072;&#1084;&#1091;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;I need more space on my phone.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T152552Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1052;&#1085;&#1077; &#1090;&#1088;&#1101;&#1073;&#1072; &#1073;&#1086;&#1083;&#1077;&#1081; &#1087;&#1088;&#1072;&#1089;&#1090;&#1086;&#1088;&#1099; &#1085;&#1072; &#1090;&#1101;&#1083;&#1077;&#1092;&#1086;&#1085;&#1077;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;I'd rather not say.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T152632Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1052;&#1085;&#1077; &#1085;&#1077; &#1093;&#1072;&#1094;&#1077;&#1083;&#1072;&#1089;&#1103; &#1073; &#1082;&#1072;&#1079;&#1072;&#1094;&#1100;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;I/O Error&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110302T114501Z&quot; changeid=&quot;klyok&quot;&gt;
+@@ -18707,6 +19163,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Insufficient storage available.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T160728Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;[&#1085;/&#1076;]&#1041;&#1088;&#1072;&#1082;&#1091;&#1077; &#1087;&#1088;&#1072;&#1089;&#1090;&#1086;&#1088;&#1099; &#1118; &#1089;&#1093;&#1086;&#1074;&#1110;&#1096;&#1095;&#1099;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Interface&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110219T181359Z&quot; changeid=&quot;klyok&quot;&gt;
+@@ -18835,6 +19299,38 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Invalid address&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T145541Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1061;&#1110;&#1073;&#1085;&#1099; &#1072;&#1076;&#1088;&#1072;&#1089;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Invalid city&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T145550Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1061;&#1110;&#1073;&#1085;&#1099; &#1075;&#1086;&#1088;&#1072;&#1076;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Invalid credit card&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T151443Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1061;&#1110;&#1073;&#1085;&#1072;&#1103; &#1082;&#1088;&#1101;&#1076;&#1099;&#1090;&#1085;&#1072;&#1103; &#1082;&#1072;&#1088;&#1090;&#1082;&#1072;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Invalid credit card number&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T145533Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1061;&#1110;&#1073;&#1085;&#1099; &#1085;&#1091;&#1084;&#1072;&#1088; &#1082;&#1088;&#1101;&#1076;&#1099;&#1090;&#1085;&#1072;&#1077; &#1082;&#1072;&#1088;&#1090;&#1082;&#1110;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Invalid folder for syncing&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110324T224245Z&quot; changeid=&quot;klyok&quot;&gt;
+@@ -18843,6 +19339,22 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Invalid month&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T145522Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1061;&#1110;&#1073;&#1085;&#1099; &#1084;&#1077;&#1089;&#1103;&#1094;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Invalid name&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T145537Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1061;&#1110;&#1073;&#1085;&#1072;&#1077; &#1110;&#1084;&#1103;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Invalid or missing package name.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110325T104229Z&quot; changeid=&quot;klyok&quot;&gt;
+@@ -18851,6 +19363,30 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Invalid phone number&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T145604Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1061;&#1110;&#1073;&#1085;&#1099; &#1090;&#1101;&#1083;&#1077;&#1092;&#1086;&#1085;&#1085;&#1099; &#1085;&#1091;&#1084;&#1072;&#1088;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Invalid postal code&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T145559Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1061;&#1110;&#1073;&#1085;&#1099; &#1110;&#1085;&#1076;&#1101;&#1082;&#1089;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Invalid state&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T145545Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1061;&#1110;&#1073;&#1085;&#1072;&#1103; &#1074;&#1086;&#1073;&#1083;&#1072;&#1089;&#1100;&#1094;&#1100;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Invalid username or password.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110324T145716Z&quot; changeid=&quot;klyok&quot;&gt;
+@@ -18859,6 +19395,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Invalid year&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T145526Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1061;&#1110;&#1073;&#1085;&#1099; &#1075;&#1086;&#1076;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;It can be used to copy data between your computer and your device, install applications on your device without notification, and read log data.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110402T232740Z&quot; changeid=&quot;klyok&quot;&gt;
+@@ -18947,6 +19491,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;It's defective.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T152706Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1055;&#1088;&#1072;&#1075;&#1088;&#1072;&#1084;&#1072; &#1073;&#1083;&#1072;&#1075;&#1072;&#1103;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;It's likely that this app is malicious and attempting to grant superuser access without your knowledge.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110329T160935Z&quot; changeid=&quot;klyok&quot;&gt;
+@@ -18955,6 +19507,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;It's malicious.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T152522Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1043;&#1101;&#1090;&#1072; &#1079;&#1083;&#1072;&#1084;&#1099;&#1089;&#1085;&#1072;&#1103; &#1087;&#1088;&#1072;&#1075;&#1088;&#1072;&#1084;&#1072;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;It's recommended that you uninstall it now.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110329T160941Z&quot; changeid=&quot;klyok&quot;&gt;
+@@ -19075,6 +19635,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Just in&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T152113Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;[&#1085;/&#1076;]&#1040;&#1087;&#1086;&#1096;&#1085;&#1110;&#1103;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;KB&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110322T104645Z&quot; changeid=&quot;klyok&quot;&gt;
+@@ -19348,6 +19916,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Launch error&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T121903Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1044;&#1072;&#1083;&#1110; &#1093;&#1110;&#1073;&#1091;, &#1082;&#1072;&#1083;&#1110; &#1079;&#1072;&#1087;&#1091;&#1089;&#1082;&#1072;&#1083;&#1110;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Launcher&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110321T143247Z&quot; changeid=&quot;klyok&quot;&gt;
+@@ -19708,6 +20284,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Location&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T150607Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1052;&#1077;&#1089;&#1094;&#1072;&#1079;&#1085;&#1072;&#1093;&#1086;&#1076;&#1078;&#1072;&#1085;&#1100;&#1085;&#1077;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Location &amp; security&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110331T081717Z&quot; changeid=&quot;klyok&quot;&gt;
+@@ -19924,6 +20508,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;MM&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T144402Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1052;&#1052;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;MM-dd-yyyy&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110321T154529Z&quot; changeid=&quot;klyok&quot;&gt;
+@@ -20132,6 +20724,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Make sure all words are spelled correctly.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T153708Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1059;&#1087;&#1101;&#1118;&#1085;&#1110;&#1094;&#1077;&#1089;&#1103;, &#1096;&#1090;&#1086; &#1074;&#1099; &#1118;&#1089;&#1077; &#1089;&#1083;&#1086;&#1074;&#1099; &#1085;&#1072;&#1087;&#1110;&#1089;&#1072;&#1083;&#1110; &#1073;&#1077;&#1079; &#1087;&#1072;&#1084;&#1099;&#1083;&#1072;&#1082;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Make this my primary account&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110315T142943Z&quot; changeid=&quot;klyok&quot;&gt;
+@@ -20716,6 +21316,30 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Market content&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T154812Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1047;&#1100;&#1084;&#1077;&#1089;&#1100;&#1094;&#1110;&#1074;&#1072; &#1082;&#1088;&#1072;&#1084;&#1099;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Market license check&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T155217Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1057;&#1087;&#1088;&#1072;&#1118;&#1076;&#1079;&#1110;&#1094;&#1100; &#1083;&#1110;&#1094;&#1101;&#1085;&#1079;&#1110;&#1102; &#1072;&#1076; &#1082;&#1088;&#1072;&#1084;&#1099;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Market needs background data to be enabled.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T155119Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1050;&#1088;&#1072;&#1084;&#1077; &#1090;&#1088;&#1101;&#1073;&#1072;, &#1082;&#1072;&#1073; &#1076;&#1072;&#1079;&#1074;&#1072;&#1083;&#1103;&#1083;&#1072;&#1089;&#1103; &#1079;&#1083;&#1091;&#1095;&#1072;&#1094;&#1094;&#1072; &#1085;&#1072; &#1079;&#1072;&#1076;&#1085;&#1110;&#1084; &#1087;&#1083;&#1103;&#1085;&#1077;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Maximum alarm duration&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110321T152628Z&quot; changeid=&quot;klyok&quot;&gt;
+@@ -20988,6 +21612,22 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Missing ID&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T122340Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1040;&#1076;&#1089;&#1091;&#1090;&#1085;&#1110;&#1095;&#1072;&#1077; &#1072;&#1079;&#1085;&#1072;&#1095;&#1072;&#1083;&#1100;&#1085;&#1110;&#1082;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Missing search query&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T153755Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1053;&#1103;&#1084;&#1072; &#1079;&#1072;&#1087;&#1099;&#1090;&#1091;, &#1096;&#1090;&#1086; &#1096;&#1091;&#1082;&#1072;&#1094;&#1100;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Missing shared library.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110325T103919Z&quot; changeid=&quot;klyok&quot;&gt;
+@@ -21076,6 +21716,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Mobile phone billed on this account&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T151040Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1055;&#1077;&#1088;&#1072;&#1089;&#1086;&#1118;&#1085;&#1072;&#1084;&#1091; &#1090;&#1101;&#1083;&#1077;&#1092;&#1086;&#1085;&#1091; &#1074;&#1099;&#1089;&#1090;&#1072;&#1074;&#1110;&#1083;&#1110; &#1088;&#1072;&#1093;&#1091;&#1085;&#1072;&#1082; &#1085;&#1072; &#1075;&#1101;&#1090;&#1099; &#1082;&#1086;&#1085;&#1090;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Mobile: %s&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110324T164128Z&quot; changeid=&quot;klyok&quot;&gt;
+@@ -21404,6 +22052,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;My comment&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T144149Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1052;&#1072;&#1103; &#1079;&#1072;&#1118;&#1074;&#1072;&#1075;&#1072;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;My downloads&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110325T102347Z&quot; changeid=&quot;klyok&quot;&gt;
+@@ -21420,6 +22076,22 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;My rating&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T144207Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1052;&#1072;&#1103; &#1072;&#1094;&#1101;&#1085;&#1082;&#1072;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;My review&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T144057Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1052;&#1086;&#1081; &#1074;&#1086;&#1076;&#1075;&#1091;&#1082;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;N&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110322T101528Z&quot; changeid=&quot;klyok&quot;&gt;
+@@ -21452,6 +22124,22 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Name on card&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T144531Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1030;&#1084;&#1103; &#1085;&#1072; &#1082;&#1072;&#1088;&#1090;&#1094;&#1099;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Name on this account&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T151124Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1030;&#1084;&#1103; &#1076;&#1083;&#1103; &#1075;&#1101;&#1090;&#1072;&#1075;&#1072; &#1088;&#1072;&#1093;&#1091;&#1085;&#1082;&#1091;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Name prefix&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110304T134508Z&quot; changeid=&quot;klyok&quot;&gt;
+@@ -22036,6 +22724,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;No ID passed with URI.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T144033Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;URI &#1085;&#1077; &#1079;&#1100;&#1084;&#1103;&#1096;&#1095;&#1072;&#1077; &#1072;&#1079;&#1085;&#1072;&#1095;&#1072;&#1083;&#1100;&#1085;&#1110;&#1082;&#1091;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;No Internet calling account&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110219T155529Z&quot; changeid=&quot;klyok&quot;&gt;
+@@ -22220,6 +22916,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;No categories available.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T153305Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1053;&#1103;&#1084;&#1072; &#1076;&#1072;&#1089;&#1090;&#1091;&#1087;&#1085;&#1099;&#1093; &#1082;&#1072;&#1090;&#1101;&#1075;&#1086;&#1088;&#1099;&#1081;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;No changes were made.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110219T195602Z&quot; changeid=&quot;klyok&quot;&gt;
+@@ -22324,6 +23028,22 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;No downloads from Android Market.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T153048Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1053;&#1110;&#1095;&#1086;&#1075;&#1072; &#1085;&#1103; &#1089;&#1100;&#1094;&#1103;&#1075;&#1074;&#1072;&#1083;&#1110; &#1079; &#1082;&#1088;&#1072;&#1084;&#1099; Android.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;No featured apps available.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T153157Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1053;&#1103;&#1084;&#1072; &#1087;&#1088;&#1099;&#1082;&#1084;&#1077;&#1095;&#1072;&#1085;&#1099;&#1093; &#1087;&#1088;&#1072;&#1075;&#1088;&#1072;&#1084;&#1072;&#1118;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;No installed accessibility services.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110402T233815Z&quot; changeid=&quot;klyok&quot;&gt;
+@@ -22380,6 +23100,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;No matching content in Android Market.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T152148Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1040;&#1076;&#1087;&#1072;&#1074;&#1077;&#1076;&#1085;&#1072;&#1075;&#1072; &#1079;&#1100;&#1084;&#1077;&#1089;&#1090;&#1091; &#1085;&#1103;&#1084;&#1072; &#1118; &#1082;&#1088;&#1072;&#1084;&#1077; Android.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;No more room on this Home screen.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110321T145032Z&quot; changeid=&quot;klyok&quot;&gt;
+@@ -22452,6 +23180,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;No permissions required.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T153458Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1044;&#1072;&#1079;&#1074;&#1086;&#1083;&#1091; &#1085;&#1103; &#1090;&#1088;&#1101;&#1073;&#1072;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;No pictures are available on the phone.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110125T152300Z&quot; changeid=&quot;alex73&quot;&gt;
+@@ -22492,6 +23228,22 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;No search query passed with URI.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T153813Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;URI &#1085;&#1077; &#1087;&#1077;&#1088;&#1072;&#1076;&#1072;&#1118; &#1079;&#1072;&#1087;&#1099;&#1090;&#1091;, &#1096;&#1090;&#1086; &#1096;&#1091;&#1082;&#1072;&#1094;&#1100;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;No search results&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T153531Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1053;&#1110;&#1095;&#1086;&#1075;&#1072; &#1085;&#1077; &#1079;&#1085;&#1072;&#1081;&#1096;&#1083;&#1110;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;No service&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110313T124830Z&quot; changeid=&quot;klyok&quot;&gt;
+@@ -22628,6 +23380,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Non-refundable purchase&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T154513Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1050;&#1091;&#1087;&#1083;&#1103;, &#1079;&#1100; &#1103;&#1082;&#1086;&#1077; &#1085;&#1077;&#1083;&#1100;&#1075;&#1072; &#1074;&#1103;&#1088;&#1085;&#1091;&#1094;&#1100; &#1075;&#1088;&#1086;&#1096;&#1099;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;None&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot;&gt;
+@@ -22652,6 +23412,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;None of the accounts on your phone are supported by Google Checkout.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T160241Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1053;&#1110;&#1074;&#1086;&#1076;&#1085;&#1099; &#1079; &#1088;&#1072;&#1093;&#1091;&#1085;&#1082;&#1072;&#1118; &#1074;&#1072;&#1096;&#1072;&#1075;&#1072; &#1090;&#1101;&#1083;&#1077;&#1092;&#1086;&#1085;&#1091; &#1085;&#1077; &#1087;&#1072;&#1076;&#1090;&#1088;&#1099;&#1084;&#1074;&#1072;&#1077;&#1094;&#1094;&#1072; &#1050;&#1072;&#1089;&#1072;&#1102; Google. &lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Noon&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110324T152228Z&quot; changeid=&quot;klyok&quot;&gt;
+@@ -22788,6 +23556,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Not usable for this purchase&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T151438Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1053;&#1077; &#1118;&#1078;&#1099;&#1074;&#1072;&#1077;&#1094;&#1094;&#1072; &#1076;&#1083;&#1103; &#1075;&#1101;&#1090;&#1072;&#1077; &#1082;&#1091;&#1087;&#1083;&#1110;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Note&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110125T152226Z&quot; changeid=&quot;alex73&quot;&gt;
+@@ -22862,32 +23638,32 @@
+       &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Notify Android Market that there is objectionable content on this page or within this application.&lt;/seg&gt;
+       &lt;/tuv&gt;
+-      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110416T144549Z&quot; changeid=&quot;klyok&quot;&gt;
+-        &lt;seg&gt;&#1055;&#1072;&#1074;&#1077;&#1076;&#1072;&#1084;&#1110;&#1094;&#1100; &#1082;&#1088;&#1072;&#1084;&#1091; Android, &#1075;&#1101;&#1090;&#1072;&#1103; &#1089;&#1090;&#1072;&#1088;&#1086;&#1085;&#1082;&#1072; &#1094;&#1110; &#1087;&#1088;&#1072;&#1075;&#1088;&#1072;&#1084;&#1072; &#1084;&#1072;&#1077; &#1085;&#1077;&#1087;&#1072;&#1078;&#1072;&#1076;&#1072;&#1085;&#1099; &#1079;&#1100;&#1084;&#1077;&#1089;&#1090;.&lt;/seg&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T160535Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1055;&#1072;&#1074;&#1077;&#1076;&#1072;&#1084;&#1110;&#1094;&#1100; &#1082;&#1088;&#1072;&#1084;&#1077; Android, &#1096;&#1090;&#1086; &#1075;&#1101;&#1090;&#1072;&#1103; &#1089;&#1090;&#1072;&#1088;&#1086;&#1085;&#1082;&#1072; &#1094;&#1110; &#1087;&#1088;&#1072;&#1075;&#1088;&#1072;&#1084;&#1072; &#1084;&#1072;&#1077; &#1085;&#1077;&#1087;&#1072;&#1078;&#1072;&#1076;&#1072;&#1085;&#1099; &#1079;&#1100;&#1084;&#1077;&#1089;&#1090;.&lt;/seg&gt;
+       &lt;/tuv&gt;
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Notify Android Market that there is objectionable content on this page or within this game.&lt;/seg&gt;
+       &lt;/tuv&gt;
+-      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110416T144612Z&quot; changeid=&quot;klyok&quot;&gt;
+-        &lt;seg&gt;&#1055;&#1072;&#1074;&#1077;&#1076;&#1072;&#1084;&#1110;&#1094;&#1100; &#1082;&#1088;&#1072;&#1084;&#1091; Android, &#1075;&#1101;&#1090;&#1072;&#1103; &#1089;&#1090;&#1072;&#1088;&#1086;&#1085;&#1082;&#1072; &#1094;&#1110; &#1075;&#1091;&#1083;&#1100;&#1085;&#1103; &#1084;&#1072;&#1077; &#1085;&#1077;&#1087;&#1072;&#1078;&#1072;&#1076;&#1072;&#1085;&#1099; &#1079;&#1100;&#1084;&#1077;&#1089;&#1090;.&lt;/seg&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T160540Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1055;&#1072;&#1074;&#1077;&#1076;&#1072;&#1084;&#1110;&#1094;&#1100; &#1082;&#1088;&#1072;&#1084;&#1077; Android, &#1096;&#1090;&#1086; &#1075;&#1101;&#1090;&#1072;&#1103; &#1089;&#1090;&#1072;&#1088;&#1086;&#1085;&#1082;&#1072; &#1094;&#1110; &#1075;&#1091;&#1083;&#1100;&#1085;&#1103; &#1084;&#1072;&#1077; &#1085;&#1077;&#1087;&#1072;&#1078;&#1072;&#1076;&#1072;&#1085;&#1099; &#1079;&#1100;&#1084;&#1077;&#1089;&#1090;.&lt;/seg&gt;
+       &lt;/tuv&gt;
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Notify Android Market that there is objectionable content on this page or within this ringtone.&lt;/seg&gt;
+       &lt;/tuv&gt;
+-      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110416T144638Z&quot; changeid=&quot;klyok&quot;&gt;
+-        &lt;seg&gt;&#1055;&#1072;&#1074;&#1077;&#1076;&#1072;&#1084;&#1110;&#1094;&#1100; &#1082;&#1088;&#1072;&#1084;&#1091; Android, &#1075;&#1101;&#1090;&#1072;&#1103; &#1089;&#1090;&#1072;&#1088;&#1086;&#1085;&#1082;&#1072; &#1094;&#1110; &#1084;&#1101;&#1083;&#1105;&#1076;&#1099;&#1103; &#1084;&#1072;&#1077; &#1085;&#1077;&#1087;&#1072;&#1078;&#1072;&#1076;&#1072;&#1085;&#1099; &#1079;&#1100;&#1084;&#1077;&#1089;&#1090;.&lt;/seg&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T160553Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1055;&#1072;&#1074;&#1077;&#1076;&#1072;&#1084;&#1110;&#1094;&#1100; &#1082;&#1088;&#1072;&#1084;&#1077; Android, &#1096;&#1090;&#1086; &#1075;&#1101;&#1090;&#1072;&#1103; &#1089;&#1090;&#1072;&#1088;&#1086;&#1085;&#1082;&#1072; &#1094;&#1110; &#1084;&#1101;&#1083;&#1105;&#1076;&#1099;&#1103; &#1084;&#1072;&#1077; &#1085;&#1077;&#1087;&#1072;&#1078;&#1072;&#1076;&#1072;&#1085;&#1099; &#1079;&#1100;&#1084;&#1077;&#1089;&#1090;.&lt;/seg&gt;
+       &lt;/tuv&gt;
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Notify Android Market that there is objectionable content on this page or within this wallpaper.&lt;/seg&gt;
+       &lt;/tuv&gt;
+-      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110416T144630Z&quot; changeid=&quot;klyok&quot;&gt;
+-        &lt;seg&gt;&#1055;&#1072;&#1074;&#1077;&#1076;&#1072;&#1084;&#1110;&#1094;&#1100; &#1082;&#1088;&#1072;&#1084;&#1091; Android, &#1075;&#1101;&#1090;&#1072;&#1103; &#1089;&#1090;&#1072;&#1088;&#1086;&#1085;&#1082;&#1072; &#1094;&#1110; &#1096;&#1087;&#1072;&#1083;&#1077;&#1088;&#1099; &#1084;&#1072;&#1102;&#1094;&#1100; &#1085;&#1077;&#1087;&#1072;&#1078;&#1072;&#1076;&#1072;&#1085;&#1099; &#1079;&#1100;&#1084;&#1077;&#1089;&#1090;.&lt;/seg&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T160547Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1055;&#1072;&#1074;&#1077;&#1076;&#1072;&#1084;&#1110;&#1094;&#1100; &#1082;&#1088;&#1072;&#1084;&#1077; Android, &#1096;&#1090;&#1086; &#1075;&#1101;&#1090;&#1072;&#1103; &#1089;&#1090;&#1072;&#1088;&#1086;&#1085;&#1082;&#1072; &#1094;&#1110; &#1096;&#1087;&#1072;&#1083;&#1077;&#1088;&#1099; &#1084;&#1072;&#1102;&#1094;&#1100; &#1085;&#1077;&#1087;&#1072;&#1078;&#1072;&#1076;&#1072;&#1085;&#1099; &#1079;&#1100;&#1084;&#1077;&#1089;&#1090;.&lt;/seg&gt;
+       &lt;/tuv&gt;
+     &lt;/tu&gt;
+     &lt;tu&gt;
+@@ -23428,6 +24204,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Open application&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T153129Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1040;&#1076;&#1095;&#1099;&#1085;&#1110;&#1094;&#1100; &#1087;&#1088;&#1072;&#1075;&#1088;&#1072;&#1084;&#1091;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Open in Browser&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110401T190507Z&quot; changeid=&quot;klyok&quot;&gt;
+@@ -24244,6 +25028,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Pay for this with&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T150118Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1047;&#1072;&#1087;&#1083;&#1072;&#1094;&#1110;&#1094;&#1100; &#1079; &#1076;&#1072;&#1087;&#1072;&#1084;&#1086;&#1075;&#1072;&#1102;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Pay phone&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110125T074058Z&quot; changeid=&quot;alex73&quot;&gt;
+@@ -24326,6 +25118,22 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Permissions changed&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T154156Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1044;&#1072;&#1079;&#1074;&#1086;&#1083;&#1099; &#1079;&#1100;&#1084;&#1103;&#1085;&#1110;&#1083;&#1110;&#1089;&#1103;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Permissions have changed for %1$d of %2$d apps with updates available.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T154301Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1059; &#1085;&#1072;&#1103;&#1118;&#1085;&#1099;&#1093; &#1072;&#1073;&#1085;&#1072;&#1118;&#1083;&#1077;&#1085;&#1100;&#1085;&#1103;&#1093; %1$d &#1079; %2$d &#1087;&#1088;&#1072;&#1075;&#1088;&#1072;&#1084;&#1072;&#1118; &#1079;&#1100;&#1084;&#1103;&#1085;&#1110;&#1083;&#1110;&#1089;&#1103; &#1076;&#1072;&#1079;&#1074;&#1086;&#1083;&#1099;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Personal data&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110403T002529Z&quot; changeid=&quot;klyok&quot;&gt;
+@@ -24382,6 +25190,22 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Phone number&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T144600Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1058;&#1101;&#1083;&#1077;&#1092;&#1086;&#1085;&#1085;&#1099; &#1085;&#1091;&#1084;&#1072;&#1088;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Phone number will only be used in case of order problems and for account verification.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T144654Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1058;&#1101;&#1083;&#1077;&#1092;&#1086;&#1085;&#1085;&#1099; &#1085;&#1091;&#1084;&#1072;&#1088; &#1084;&#1086;&#1078;&#1072; &#1089;&#1087;&#1072;&#1090;&#1088;&#1101;&#1073;&#1110;&#1094;&#1094;&#1072; &#1090;&#1086;&#1083;&#1100;&#1082;&#1110; &#1082;&#1072;&#1083;&#1110; &#1087;&#1072;&#1118;&#1089;&#1090;&#1072;&#1085;&#1091;&#1094;&#1100; &#1087;&#1088;&#1072;&#1073;&#1083;&#1077;&#1084;&#1099; &#1094;&#1110; &#1082;&#1072;&#1073; &#1087;&#1072;&#1094;&#1100;&#1074;&#1077;&#1088;&#1076;&#1079;&#1110;&#1094;&#1100; &#1088;&#1072;&#1093;&#1091;&#1085;&#1072;&#1082;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Phone number, signal, etc.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110331T124726Z&quot; changeid=&quot;klyok&quot;&gt;
+@@ -24670,6 +25494,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Please add a new account.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T155444Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1050;&#1072;&#1083;&#1110; &#1083;&#1072;&#1089;&#1082;&#1072;, &#1076;&#1072;&#1076;&#1072;&#1081;&#1094;&#1077; &#1085;&#1086;&#1074;&#1099; &#1088;&#1072;&#1093;&#1091;&#1085;&#1072;&#1082;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Please add at least one recipient.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110326T182728Z&quot; changeid=&quot;klyok&quot;&gt;
+@@ -24694,6 +25526,22 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Please enter a valid credit card or visit checkout.google.com to edit your payment methods.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T151559Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1050;&#1072;&#1083;&#1110; &#1083;&#1072;&#1089;&#1082;&#1072;, &#1091;&#1087;&#1110;&#1096;&#1099;&#1094;&#1077; &#1095;&#1099;&#1085;&#1085;&#1091;&#1102; &#1082;&#1088;&#1101;&#1076;&#1099;&#1090;&#1085;&#1091;&#1102; &#1082;&#1072;&#1088;&#1090;&#1082;&#1091;, &#1072;&#1073;&#1086; &#1085;&#1072;&#1074;&#1077;&#1076;&#1072;&#1081;&#1094;&#1077; checkout.google.com, &#1082;&#1072;&#1073; &#1079;&#1100;&#1084;&#1103;&#1085;&#1110;&#1094;&#1100; &#1089;&#1074;&#1072;&#1077; &#1089;&#1087;&#1086;&#1089;&#1072;&#1073;&#1099; &#1072;&#1087;&#1083;&#1072;&#1095;&#1074;&#1072;&#1094;&#1100;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Please enter your billing address to be stored in your Google account.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T150810Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1050;&#1072;&#1083;&#1110; &#1083;&#1072;&#1089;&#1082;&#1072;, &#1091;&#1087;&#1110;&#1096;&#1099;&#1094;&#1077; &#1072;&#1076;&#1088;&#1072;&#1089; &#1072;&#1087;&#1083;&#1072;&#1090;&#1099;, &#1082;&#1072;&#1073; &#1079;&#1072;&#1093;&#1072;&#1074;&#1072;&#1094;&#1100; &#1103;&#1075;&#1086; &#1118; &#1074;&#1072;&#1096;&#1099;&#1084; &#1088;&#1072;&#1093;&#1091;&#1085;&#1082;&#1091; Google.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Please insert a SIM card into the phone.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110326T205958Z&quot; changeid=&quot;klyok&quot;&gt;
+@@ -24742,6 +25590,22 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Please open remaining apps from the Downloads list to approve new permissions and start update.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T154441Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1050;&#1072;&#1083;&#1110; &#1083;&#1072;&#1089;&#1082;&#1072;, &#1072;&#1076;&#1095;&#1099;&#1085;&#1110;&#1094;&#1077; &#1072;&#1089;&#1090;&#1072;&#1090;&#1085;&#1110;&#1103; &#1087;&#1088;&#1072;&#1075;&#1088;&#1072;&#1084;&#1099; &#1089;&#1072; &#1089;&#1100;&#1087;&#1110;&#1089;&#1091; &#1089;&#1100;&#1094;&#1103;&#1075;&#1074;&#1072;&#1085;&#1072;&#1075;&#1072;, &#1082;&#1072;&#1073; &#1091;&#1093;&#1074;&#1072;&#1083;&#1110;&#1094;&#1100; &#1085;&#1086;&#1074;&#1099;&#1103; &#1076;&#1072;&#1079;&#1074;&#1086;&#1083;&#1099; &#1076;&#1099; &#1087;&#1072;&#1095;&#1072;&#1094;&#1100; &#1072;&#1073;&#1085;&#1072;&#1118;&#1083;&#1103;&#1094;&#1100;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Please pick a valid credit card or visit checkout.google.com to edit your payment methods.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T151532Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1050;&#1072;&#1083;&#1110; &#1083;&#1072;&#1089;&#1082;&#1072;, &#1072;&#1073;&#1103;&#1088;&#1099;&#1094;&#1077; &#1095;&#1099;&#1085;&#1085;&#1091;&#1102; &#1082;&#1088;&#1101;&#1076;&#1099;&#1090;&#1085;&#1091;&#1102; &#1082;&#1072;&#1088;&#1090;&#1082;&#1091;, &#1072;&#1073;&#1086; &#1085;&#1072;&#1074;&#1077;&#1076;&#1072;&#1081;&#1094;&#1077; checkout.google.com, &#1082;&#1072;&#1073; &#1079;&#1100;&#1084;&#1103;&#1085;&#1110;&#1094;&#1100; &#1089;&#1074;&#1072;&#1077; &#1089;&#1087;&#1086;&#1089;&#1072;&#1073;&#1099; &#1072;&#1087;&#1083;&#1072;&#1095;&#1074;&#1072;&#1094;&#1100;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Please see the User Guide or contact Customer Care.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110324T145207Z&quot; changeid=&quot;klyok&quot;&gt;
+@@ -24750,6 +25614,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Please tell us why you removed this item:&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T152404Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1050;&#1072;&#1083;&#1110; &#1083;&#1072;&#1089;&#1082;&#1072;, &#1088;&#1072;&#1089;&#1087;&#1072;&#1074;&#1103;&#1076;&#1079;&#1110;&#1094;&#1077;, &#1095;&#1072;&#1084;&#1091; &#1074;&#1099; &#1089;&#1100;&#1094;&#1077;&#1088;&#1083;&#1110; &#1087;&#1088;&#1072;&#1075;&#1088;&#1072;&#1084;&#1091;:&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Please try again in %d seconds.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110401T201101Z&quot; changeid=&quot;klyok&quot;&gt;
+@@ -24838,6 +25710,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Please visit checkout.google.com to fix it.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T150517Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1050;&#1072;&#1083;&#1110; &#1083;&#1072;&#1089;&#1082;&#1072;, &#1085;&#1072;&#1074;&#1077;&#1076;&#1072;&#1081;&#1094;&#1077; checkout.google.com, &#1082;&#1072;&#1073; &#1088;&#1072;&#1079;&#1100;&#1074;&#1103;&#1079;&#1072;&#1094;&#1100; &#1103;&#1077;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Please wait while loading...&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110326T091907Z&quot; changeid=&quot;klyok&quot;&gt;
+@@ -24888,8 +25768,8 @@
+       &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Poor&lt;/seg&gt;
+       &lt;/tuv&gt;
+-      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110326T110545Z&quot; changeid=&quot;klyok&quot;&gt;
+-        &lt;seg&gt;&#1044;&#1088;&#1101;&#1085;&#1085;&#1099;&lt;/seg&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T153341Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1044;&#1088;&#1101;&#1085;&#1085;&#1072;&lt;/seg&gt;
+       &lt;/tuv&gt;
+     &lt;/tu&gt;
+     &lt;tu&gt;
+@@ -24982,6 +25862,22 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Post a comment&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T144231Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1042;&#1099;&#1082;&#1072;&#1079;&#1072;&#1094;&#1094;&#1072;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Post comment&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T153140Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1042;&#1099;&#1082;&#1072;&#1079;&#1072;&#1094;&#1094;&#1072;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Postal address&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110125T152217Z&quot; changeid=&quot;alex73&quot;&gt;
+@@ -24998,6 +25894,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Postal code&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T144550Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1030;&#1085;&#1076;&#1101;&#1082;&#1089;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Potentially malicious app detected&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110322T093001Z&quot; changeid=&quot;klyok&quot;&gt;
+@@ -25046,6 +25950,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Powered by Google Checkout&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T160047Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1055;&#1088;&#1072;&#1094;&#1091;&#1077; &#1085;&#1072; &#1050;&#1072;&#1089;&#1077; Google&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Preferences&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110306T131137Z&quot; changeid=&quot;klyok&quot;&gt;
+@@ -25182,6 +26094,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Press OK to update %3$d apps with no permission changes.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T154342Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1053;&#1072;&#1094;&#1110;&#1089;&#1100;&#1085;&#1110;&#1094;&#1077; &#171;&#1044;&#1086;&#1073;&#1088;&#1072;&#187;, &#1082;&#1072;&#1073; &#1072;&#1073;&#1085;&#1072;&#1074;&#1110;&#1094;&#1100; %3$d &#1087;&#1088;&#1072;&#1075;&#1088;&#1072;&#1084;&#1072;&#1118;, &#1096;&#1090;&#1086; &#1085;&#1077; &#1079;&#1100;&#1084;&#1103;&#1085;&#1110;&#1083;&#1110; &#1076;&#1072;&#1079;&#1074;&#1086;&#1083;&#1072;&#1118;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Press Space key twice to insert \&quot;.\&quot;&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110402T230142Z&quot; changeid=&quot;klyok&quot;&gt;
+@@ -25510,6 +26430,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Quit&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T155122Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1042;&#1099;&#1081;&#1089;&#1100;&#1094;&#1110;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Quoted text&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110324T204614Z&quot; changeid=&quot;klyok&quot;&gt;
+@@ -25558,6 +26486,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Rate it!&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T144225Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1040;&#1094;&#1072;&#1085;&#1110;&#1094;&#1100;!&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Re-type new PIN&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110331T124313Z&quot; changeid=&quot;klyok&quot;&gt;
+@@ -25806,6 +26742,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Refund&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T145435Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1042;&#1103;&#1088;&#1085;&#1091;&#1094;&#1100; &#1075;&#1088;&#1086;&#1096;&#1099;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Refund of %1$s was unsuccessful.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110325T103541Z&quot; changeid=&quot;klyok&quot;&gt;
+@@ -25822,6 +26766,22 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Refunding&#8230;&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T121812Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1042;&#1103;&#1088;&#1090;&#1072;&#1102;&#1094;&#1094;&#1072; &#1075;&#1088;&#1086;&#1096;&#1099;&#8230;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Refunds are available only the first time you purchase an item, so you are not eligible to request any other refunds for this item.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T154702Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1042;&#1103;&#1088;&#1090;&#1072;&#1094;&#1100; &#1075;&#1088;&#1086;&#1096;&#1099; &#1084;&#1086;&#1078;&#1085;&#1072; &#1090;&#1086;&#1083;&#1100;&#1082;&#1110; &#1082;&#1072;&#1083;&#1110; &#1074;&#1099; &#1087;&#1077;&#1088;&#1096;&#1099; &#1088;&#1072;&#1079; &#1082;&#1091;&#1087;&#1083;&#1103;&#1077;&#1094;&#1077; &#1085;&#1077;&#1096;&#1090;&#1072;, &#1090;&#1072;&#1084;&#1091; &#1074;&#1099; &#1085;&#1103; &#1084;&#1072;&#1077;&#1094;&#1077; &#1087;&#1088;&#1072;&#1074;&#1072; &#1073;&#1086;&#1083;&#1077;&#1081; &#1079;&#1072;&#1087;&#1099;&#1090;&#1074;&#1072;&#1094;&#1094;&#1072;, &#1082;&#1072;&#1073; &#1074;&#1072;&#1084; &#1074;&#1103;&#1088;&#1085;&#1091;&#1083;&#1110; &#1075;&#1088;&#1086;&#1096;&#1099; &#1079;&#1072; &#1075;&#1101;&#1090;&#1091;&#1102; &#1087;&#1088;&#1072;&#1075;&#1088;&#1072;&#1084;&#1091;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Regional&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110313T102638Z&quot; changeid=&quot;klyok&quot;&gt;
+@@ -26270,6 +27230,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Report a defective or malicious application:&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T152717Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1055;&#1072;&#1074;&#1077;&#1076;&#1072;&#1084;&#1110;&#1094;&#1100; &#1087;&#1088;&#1072; &#1073;&#1083;&#1072;&#1075;&#1091;&#1102; &#1072;&#1073;&#1086; &#1079;&#1083;&#1072;&#1084;&#1099;&#1089;&#1085;&#1091;&#1102; &#1087;&#1088;&#1072;&#1075;&#1088;&#1072;&#1084;&#1091;:&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Report spam&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110326T181802Z&quot; changeid=&quot;klyok&quot;&gt;
+@@ -27382,6 +28350,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Saving billing information&#8230;&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T151332Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1047;&#1072;&#1093;&#1086;&#1118;&#1074;&#1072;&#1102;&#1094;&#1094;&#1072; &#1079;&#1100;&#1074;&#1077;&#1089;&#1090;&#1082;&#1110; &#1072;&#1087;&#1083;&#1072;&#1090;&#1099;&#8230;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Saving contact\u2026&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110301T125535Z&quot; changeid=&quot;klyok&quot;&gt;
+@@ -27398,6 +28374,22 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Saving credit card&#8230;&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T151312Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1047;&#1072;&#1093;&#1086;&#1118;&#1074;&#1072;&#1077;&#1094;&#1094;&#1072; &#1082;&#1088;&#1101;&#1076;&#1099;&#1090;&#1085;&#1072;&#1103; &#1082;&#1072;&#1088;&#1090;&#1082;&#1072;&#8230;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Saving debit card&#8230;&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T151323Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1047;&#1072;&#1093;&#1086;&#1118;&#1074;&#1072;&#1077;&#1094;&#1094;&#1072; &#1076;&#1101;&#1073;&#1110;&#1090;&#1085;&#1072;&#1103; &#1082;&#1072;&#1088;&#1090;&#1082;&#1072;&#8230;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Saving display options\u2026&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110314T073201Z&quot; changeid=&quot;klyok&quot;&gt;
+@@ -27614,6 +28606,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Screenshot&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T155324Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1047;&#1076;&#1099;&#1084;&#1072;&#1082; &#1101;&#1082;&#1088;&#1072;&#1085;&#1091;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Scrollable widget support&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110325T091419Z&quot; changeid=&quot;klyok&quot;&gt;
+@@ -27646,6 +28646,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Search Android Market&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T153505Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1064;&#1091;&#1082;&#1072;&#1094;&#1100; &#1091; &#1082;&#1088;&#1072;&#1084;&#1077; Android&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Search contacts&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110125T151321Z&quot; changeid=&quot;alex73&quot;&gt;
+@@ -28102,6 +29110,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Select location&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T150127Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1040;&#1073;&#1088;&#1072;&#1094;&#1100; &#1084;&#1077;&#1089;&#1094;&#1072;&#1079;&#1085;&#1072;&#1093;&#1086;&#1076;&#1078;&#1072;&#1085;&#1100;&#1085;&#1077;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Select news topics&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110326T085109Z&quot; changeid=&quot;klyok&quot;&gt;
+@@ -28118,6 +29134,22 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Select payment&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T150002Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1040;&#1073;&#1088;&#1072;&#1094;&#1100; &#1072;&#1087;&#1083;&#1072;&#1090;&#1091;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Select payment method&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T150012Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1040;&#1073;&#1088;&#1072;&#1094;&#1100; &#1089;&#1087;&#1086;&#1089;&#1072;&#1073; &#1072;&#1087;&#1083;&#1072;&#1095;&#1074;&#1072;&#1094;&#1100;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Select photo from Gallery&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110306T121930Z&quot; changeid=&quot;klyok&quot;&gt;
+@@ -28519,6 +29551,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Send email to developer&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T154738Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1051;&#1110;&#1089;&#1090;&#1072;&#1074;&#1072;&#1094;&#1100; &#1088;&#1072;&#1089;&#1087;&#1088;&#1072;&#1094;&#1086;&#1118;&#1085;&#1110;&#1082;&#1091;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Send keep-alive&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110316T193527Z&quot; changeid=&quot;klyok&quot;&gt;
+@@ -29575,6 +30615,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Show all ^1 results for: &lt;b&gt;^2&lt;/b&gt;&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T154030Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1055;&#1072;&#1082;&#1072;&#1079;&#1072;&#1094;&#1100; &#1091;&#1089;&#1077; ^1 &#1074;&#1099;&#1085;&#1110;&#1082;&#1072;&#1118; &#1076;&#1083;&#1103;: &lt;b&gt;^2&lt;/b&gt;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Show all contacts&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110125T151637Z&quot; changeid=&quot;alex73&quot;&gt;
+@@ -29583,6 +30631,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Show all results for: &lt;b&gt;^1&lt;/b&gt;&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T154017Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1055;&#1072;&#1082;&#1072;&#1079;&#1072;&#1094;&#1100; &#1091;&#1089;&#1077; &#1074;&#1099;&#1085;&#1110;&#1082;&#1110; &#1076;&#1083;&#1103;: &lt;b&gt;^1&lt;/b&gt;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Show alphabetical separators&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110307T103229Z&quot; changeid=&quot;klyok&quot;&gt;
+@@ -30231,6 +31287,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Sorry, there's not enough space to install this item.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T122329Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1042;&#1099;&#1073;&#1072;&#1095;&#1072;&#1081;&#1094;&#1077;, &#1073;&#1088;&#1072;&#1082;&#1091;&#1077; &#1074;&#1086;&#1083;&#1100;&#1085;&#1072;&#1077; &#1087;&#1088;&#1072;&#1089;&#1090;&#1086;&#1088;&#1099;, &#1082;&#1072;&#1073; &#1091;&#1089;&#1090;&#1072;&#1083;&#1103;&#1074;&#1072;&#1094;&#1100; &#1075;&#1101;&#1090;&#1072;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Sorry, this video cannot be played.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110322T100804Z&quot; changeid=&quot;klyok&quot;&gt;
+@@ -30279,6 +31343,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Sorry, we can't give you a refund at this time.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T152808Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1042;&#1099;&#1073;&#1072;&#1095;&#1072;&#1081;&#1094;&#1077;, &#1079;&#1072;&#1088;&#1072;&#1079; &#1084;&#1099; &#1085;&#1103; &#1084;&#1086;&#1078;&#1072;&#1084; &#1074;&#1103;&#1088;&#1085;&#1091;&#1094;&#1100; &#1074;&#1072;&#1084; &#1075;&#1088;&#1086;&#1096;&#1099;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Sorry, weather currently unavailable.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110326T084942Z&quot; changeid=&quot;klyok&quot;&gt;
+@@ -30535,6 +31607,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Starting download&#8230;&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T122226Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1055;&#1072;&#1095;&#1099;&#1085;&#1072;&#1077;&#1084; &#1089;&#1100;&#1094;&#1103;&#1075;&#1074;&#1072;&#1094;&#1100;&#8230;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Starting feature code sequence\u2026&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110316T201407Z&quot; changeid=&quot;klyok&quot;&gt;
+@@ -30679,6 +31759,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Street and house number&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T144439Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1042;&#1091;&#1083;&#1110;&#1094;&#1072; &#1110; &#1085;&#1091;&#1084;&#1072;&#1088; &#1076;&#1086;&#1084;&#1091;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Style of status icon to show&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110322T094120Z&quot; changeid=&quot;klyok&quot;&gt;
+@@ -30735,6 +31823,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Subtotal&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T145930Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1055;&#1088;&#1072;&#1084;&#1077;&#1078;&#1082;&#1072;&#1074;&#1099; &#1074;&#1099;&#1085;&#1110;&#1082;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Successful&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110331T075754Z&quot; changeid=&quot;klyok&quot;&gt;
+@@ -30783,6 +31879,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Suggestions:&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T153631Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1055;&#1088;&#1072;&#1087;&#1072;&#1085;&#1086;&#1074;&#1099;:&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Sun&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110322T103102Z&quot; changeid=&quot;klyok&quot;&gt;
+@@ -31271,6 +32375,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Tap here to discover thousands of great applications and games in Market&#8230;&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T155613Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1053;&#1072;&#1094;&#1110;&#1089;&#1100;&#1085;&#1110;&#1094;&#1077; &#1090;&#1091;&#1090;, &#1082;&#1072;&#1073; &#1087;&#1072;&#1073;&#1072;&#1095;&#1099;&#1094;&#1100; &#1090;&#1099;&#1089;&#1103;&#1095;&#1099; &#1074;&#1099;&#1076;&#1072;&#1090;&#1085;&#1099;&#1093; &#1087;&#1088;&#1072;&#1075;&#1088;&#1072;&#1084;&#1072;&#1118; &#1110; &#1075;&#1091;&#1083;&#1100;&#1085;&#1103;&#1118; &#1079; &#1082;&#1088;&#1072;&#1084;&#1099;&#8230;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Tap on center color to confirm.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110401T201521Z&quot; changeid=&quot;klyok&quot;&gt;
+@@ -31328,6 +32440,22 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Tax&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T145934Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1055;&#1072;&#1076;&#1072;&#1090;&#1072;&#1082;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Taxes have been updated to reflect a different billing address.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T150217Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1055;&#1072;&#1076;&#1072;&#1090;&#1072;&#1082; &#1072;&#1073;&#1085;&#1086;&#1074;&#1110;&#1094;&#1094;&#1072;, &#1082;&#1072;&#1073; &#1072;&#1076;&#1083;&#1102;&#1089;&#1090;&#1088;&#1072;&#1074;&#1072;&#1094;&#1100; &#1110;&#1085;&#1096;&#1099; &#1072;&#1076;&#1088;&#1072;&#1089; &#1072;&#1087;&#1083;&#1072;&#1090;&#1099;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Technology News&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110313T104541Z&quot; changeid=&quot;klyok&quot;&gt;
+@@ -31360,6 +32488,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Tell Market if you find the application or this screen to have objectionable content&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T155000Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1055;&#1072;&#1074;&#1077;&#1076;&#1072;&#1084;&#1110;&#1094;&#1077; &#1082;&#1088;&#1072;&#1084;&#1077;, &#1082;&#1072;&#1083;&#1110; &#1074;&#1099;&#1103;&#1074;&#1110;&#1083;&#1072;&#1089;&#1103;, &#1096;&#1090;&#1086; &#1087;&#1088;&#1072;&#1075;&#1088;&#1072;&#1084;&#1072; &#1085;&#1072; &#1075;&#1101;&#1090;&#1099;&#1084; &#1101;&#1082;&#1088;&#1072;&#1085;&#1077; &#1084;&#1072;&#1077; &#1085;&#1077;&#1087;&#1072;&#1078;&#1072;&#1076;&#1072;&#1085;&#1072;&#1077; &#1079;&#1100;&#1084;&#1077;&#1089;&#1100;&#1094;&#1110;&#1074;&#1072;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Tentative: %s&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110326T083500Z&quot; changeid=&quot;klyok&quot;&gt;
+@@ -31856,6 +32992,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;The application %1$s %2$s will replace the currently installed %3$s.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T154105Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1055;&#1088;&#1072;&#1075;&#1088;&#1072;&#1084;&#1072; %1$s %2$s &#1079;&#1072;&#1084;&#1077;&#1085;&#1110;&#1094;&#1100; &#1091;&#1089;&#1090;&#1072;&#1083;&#1103;&#1074;&#1072;&#1085;&#1091;&#1102; &#1079;&#1072;&#1088;&#1072;&#1079; %3$s.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;The application %1$s (process %2$s) has stopped unexpectedly.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110327T075138Z&quot; changeid=&quot;klyok&quot;&gt;
+@@ -32511,6 +33655,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;There are no matches in Android Market for the search: &lt;b&gt;^1&lt;/b&gt;&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T153605Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1053;&#1110;&#1095;&#1086;&#1075;&#1072; &#1085;&#1077; &#1079;&#1085;&#1072;&#1081;&#1096;&#1083;&#1110;, &#1082;&#1072;&#1083;&#1110; &#1096;&#1091;&#1082;&#1072;&#1083;&#1110; &#1118; &#1082;&#1088;&#1072;&#1084;&#1077; Android &#1085;&#1072;&#1089;&#1090;&#1091;&#1087;&#1085;&#1072;&#1077;: &lt;b&gt;^1&lt;/b&gt;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;There is a new version of the su binary available.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110329T160731Z&quot; changeid=&quot;klyok&quot;&gt;
+@@ -32575,6 +33727,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;There is no similar content in Android Market.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T153627Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1053;&#1103;&#1084;&#1072; &#1087;&#1072;&#1076;&#1086;&#1073;&#1085;&#1072;&#1075;&#1072; &#1079;&#1100;&#1084;&#1077;&#1089;&#1090;&#1091; &#1118; &#1082;&#1088;&#1072;&#1084;&#1077; Android.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;There is not enough storage left.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110402T060741Z&quot; changeid=&quot;klyok&quot;&gt;
+@@ -32607,6 +33767,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;There was a problem processing your request.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T150435Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1042;&#1099;&#1103;&#1074;&#1110;&#1083;&#1072;&#1089;&#1103; &#1087;&#1088;&#1072;&#1073;&#1083;&#1077;&#1084;&#1072;, &#1082;&#1072;&#1083;&#1110; &#1089;&#1087;&#1088;&#1072;&#1073;&#1072;&#1074;&#1072;&#1083;&#1110; &#1072;&#1087;&#1088;&#1072;&#1094;&#1072;&#1074;&#1072;&#1094;&#1100; &#1074;&#1072;&#1096; &#1079;&#1072;&#1087;&#1099;&#1090;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;There was a problem setting the regulatory domain.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110331T120519Z&quot; changeid=&quot;klyok&quot;&gt;
+@@ -32639,6 +33807,22 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;There were errors in the information you provided.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T145655Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1052;&#1072;&#1102;&#1094;&#1094;&#1072; &#1093;&#1110;&#1073;&#1099; &#1118; &#1087;&#1072;&#1076;&#1072;&#1076;&#1079;&#1077;&#1085;&#1099;&#1093; &#1074;&#1072;&#1084;&#1110; &#1079;&#1100;&#1074;&#1077;&#1089;&#1090;&#1082;&#1072;&#1093;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;There were problems processing your request.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T150528Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1042;&#1099;&#1103;&#1074;&#1110;&#1083;&#1110;&#1089;&#1103; &#1087;&#1088;&#1072;&#1073;&#1083;&#1077;&#1084;&#1099;, &#1082;&#1072;&#1083;&#1110; &#1089;&#1087;&#1088;&#1072;&#1073;&#1072;&#1074;&#1072;&#1083;&#1110; &#1072;&#1087;&#1088;&#1072;&#1094;&#1072;&#1074;&#1072;&#1094;&#1100; &#1074;&#1072;&#1096; &#1079;&#1072;&#1087;&#1099;&#1090;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;This &amp; future events&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110321T124232Z&quot; changeid=&quot;klyok&quot;&gt;
+@@ -32871,6 +34055,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;This application has access to the following:&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T153416Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1043;&#1101;&#1090;&#1072;&#1103; &#1087;&#1088;&#1072;&#1075;&#1088;&#1072;&#1084;&#1072; &#1084;&#1072;&#1077; &#1076;&#1086;&#1089;&#1090;&#1091;&#1087; &#1076;&#1072; &#1085;&#1072;&#1089;&#1090;&#1091;&#1087;&#1085;&#1072;&#1075;&#1072;:&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;This application will be restarted right way.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110402T220821Z&quot; changeid=&quot;klyok&quot;&gt;
+@@ -33066,6 +34258,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;This item can be installed again on your phone at no charge.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T152242Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1043;&#1101;&#1090;&#1091;&#1102; &#1087;&#1088;&#1072;&#1075;&#1088;&#1072;&#1084;&#1091; &#1084;&#1086;&#1078;&#1085;&#1072; &#1073;&#1091;&#1076;&#1079;&#1077; &#1079;&#1072;&#1076;&#1072;&#1088;&#1084;&#1072; &#1118;&#1089;&#1090;&#1072;&#1083;&#1103;&#1074;&#1072;&#1094;&#1100; &#1079;&#1085;&#1086;&#1118;&#1082;&#1091;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;This login is already in use for the account \&quot;%s\&quot;.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110324T222146Z&quot; changeid=&quot;klyok&quot;&gt;
+@@ -33633,6 +34833,22 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Top free&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T152038Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1044;&#1072;&#1088;&#1084;&#1086;&#1074;&#1099;&#1103; &#1087;&#1072;&#1087;&#1091;&#1083;&#1103;&#1088;&#1085;&#1099;&#1103;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Top paid&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T152018Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1055;&#1083;&#1072;&#1090;&#1085;&#1099;&#1103; &#1087;&#1072;&#1087;&#1091;&#1083;&#1103;&#1088;&#1085;&#1099;&#1103;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Total&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110402T055609Z&quot; changeid=&quot;klyok&quot;&gt;
+@@ -33900,6 +35116,22 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Try different keywords.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T153723Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1055;&#1072;&#1089;&#1087;&#1088;&#1072;&#1073;&#1091;&#1081;&#1094;&#1077; &#1110;&#1085;&#1096;&#1099;&#1103; &#1082;&#1083;&#1102;&#1095;&#1072;&#1074;&#1099;&#1103; &#1089;&#1083;&#1086;&#1074;&#1099;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Try more general keywords.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T153740Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1055;&#1072;&#1089;&#1087;&#1088;&#1072;&#1073;&#1091;&#1081;&#1094;&#1077; &#1073;&#1086;&#1083;&#1100;&#1096; &#1072;&#1075;&#1091;&#1083;&#1100;&#1085;&#1099;&#1103; &#1082;&#1083;&#1102;&#1095;&#1072;&#1074;&#1099;&#1103; &#1089;&#1083;&#1086;&#1074;&#1099;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Try to stretch icons/widgets so they don't overlap&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110401T201744Z&quot; changeid=&quot;klyok&quot;&gt;
+@@ -33916,6 +35148,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Try uninstalling at a later time, or uninstall now and request a refund later in \&quot;My downloads\&quot;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T152939Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1055;&#1072;&#1089;&#1087;&#1088;&#1072;&#1073;&#1091;&#1081;&#1094;&#1077; &#1074;&#1099;&#1089;&#1090;&#1072;&#1083;&#1103;&#1074;&#1072;&#1094;&#1100; &#1087;&#1072;&#1079;&#1100;&#1085;&#1077;&#1081;, &#1072;&#1073;&#1086; &#1074;&#1099;&#1089;&#1090;&#1072;&#1083;&#1102;&#1081;&#1094;&#1077; &#1079;&#1072;&#1088;&#1072;&#1079;, &#1072; &#1074;&#1103;&#1088;&#1085;&#1091;&#1094;&#1100; &#1075;&#1088;&#1086;&#1096;&#1099; &#1079;&#1072;&#1087;&#1099;&#1090;&#1072;&#1081;&#1094;&#1077;&#1089;&#1103; &#1087;&#1072;&#1079;&#1100;&#1085;&#1077;&#1081; &#1087;&#1088;&#1072;&#1079; &#171;&#1052;&#1072;&#1105; &#1089;&#1100;&#1094;&#1103;&#1075;&#1085;&#1091;&#1090;&#1072;&#1077;&#187;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Tu&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110322T103148Z&quot; changeid=&quot;klyok&quot;&gt;
+@@ -34236,6 +35476,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Type the credit card info you would like to use with Google Checkout.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T160052Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1059;&#1087;&#1110;&#1096;&#1099;&#1094;&#1077; &#1079;&#1100;&#1074;&#1077;&#1089;&#1090;&#1082;&#1110; &#1082;&#1088;&#1101;&#1076;&#1099;&#1090;&#1085;&#1072;&#1077; &#1082;&#1072;&#1088;&#1090;&#1082;&#1110;, &#1103;&#1082;&#1091;&#1102; &#1074;&#1099; &#1093;&#1086;&#1095;&#1072;&#1094;&#1077; &#1074;&#1099;&#1082;&#1072;&#1088;&#1099;&#1089;&#1090;&#1086;&#1118;&#1074;&#1072;&#1094;&#1100; &#1085;&#1072; &#1050;&#1072;&#1089;&#1077; Google.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;UDP&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110219T165414Z&quot; changeid=&quot;klyok&quot;&gt;
+@@ -34670,6 +35918,38 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Uninstall &amp; cancel&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T152201Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1042;&#1099;&#1089;&#1090;&#1072;&#1083;&#1103;&#1074;&#1072;&#1094;&#1100; &#1110; &#1089;&#1082;&#1072;&#1089;&#1072;&#1074;&#1072;&#1094;&#1100;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Uninstall &amp; refund&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T145457Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1042;&#1099;&#1089;&#1090;&#1072;&#1083;&#1103;&#1074;&#1072;&#1094;&#1100; &#1110; &#1074;&#1103;&#1088;&#1085;&#1091;&#1094;&#1100; &#1075;&#1088;&#1086;&#1096;&#1099;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Uninstall anyway&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T152745Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1059;&#1089;&#1077; &#1088;&#1086;&#1118;&#1085;&#1072; &#1074;&#1099;&#1089;&#1090;&#1072;&#1083;&#1103;&#1074;&#1072;&#1094;&#1100;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Uninstall application&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T152154Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1042;&#1099;&#1089;&#1090;&#1072;&#1083;&#1103;&#1074;&#1072;&#1094;&#1100; &#1087;&#1088;&#1072;&#1075;&#1088;&#1072;&#1084;&#1091;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Uninstall application?&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110324T183334Z&quot; changeid=&quot;klyok&quot;&gt;
+@@ -34718,6 +35998,22 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Uninstalling application&#8230;&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T152949Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1042;&#1099;&#1089;&#1090;&#1072;&#1083;&#1105;&#1118;&#1074;&#1072;&#1077;&#1094;&#1094;&#1072; &#1087;&#1088;&#1072;&#1075;&#1088;&#1072;&#1084;&#1072;&#8230;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Uninstalling updates&#8230;&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T153012Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1042;&#1099;&#1089;&#1090;&#1072;&#1083;&#1105;&#1118;&#1074;&#1072;&#1102;&#1094;&#1094;&#1072; &#1072;&#1073;&#1085;&#1072;&#1118;&#1083;&#1077;&#1085;&#1100;&#1085;&#1110;&#8230;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Uninstalling\u2026&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110324T183552Z&quot; changeid=&quot;klyok&quot;&gt;
+@@ -34918,6 +36214,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Unrated&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T153320Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1041;&#1077;&#1079; &#1072;&#1094;&#1101;&#1085;&#1082;&#1110;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Unread&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110401T185624Z&quot; changeid=&quot;klyok&quot;&gt;
+@@ -34990,6 +36294,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Update all&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T153055Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1040;&#1073;&#1085;&#1072;&#1074;&#1110;&#1094;&#1100; &#1091;&#1089;&#1105;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Update of \&quot;%1$s\&quot; unsuccessful.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110325T103155Z&quot; changeid=&quot;klyok&quot;&gt;
+@@ -35022,6 +36334,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Updates&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T155003Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1040;&#1073;&#1085;&#1072;&#1118;&#1083;&#1077;&#1085;&#1100;&#1085;&#1110;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Updates are available&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110325T103726Z&quot; changeid=&quot;klyok&quot;&gt;
+@@ -35206,6 +36526,38 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Use a credit card&#8230;&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T145854Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1050;&#1088;&#1101;&#1076;&#1099;&#1090;&#1085;&#1072;&#1102; &#1082;&#1072;&#1088;&#1090;&#1082;&#1072;&#1102;&#8230;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Use a debit card&#8230;&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T145906Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1044;&#1101;&#1073;&#1110;&#1090;&#1072;&#1074;&#1072;&#1102; &#1082;&#1072;&#1088;&#1090;&#1082;&#1072;&#1102;&#8230;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Use another credit card&#8230;&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T145856Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1030;&#1085;&#1096;&#1072;&#1102; &#1082;&#1088;&#1101;&#1076;&#1099;&#1090;&#1085;&#1072;&#1102; &#1082;&#1072;&#1088;&#1090;&#1082;&#1072;&#1102;&#8230;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Use another debit card&#8230;&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T145912Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1030;&#1085;&#1096;&#1072;&#1102; &#1076;&#1101;&#1073;&#1110;&#1090;&#1072;&#1074;&#1072;&#1102; &#1082;&#1072;&#1088;&#1090;&#1082;&#1072;&#1102;&#8230;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Use assisted GPS&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110406T071434Z&quot; changeid=&quot;klyok&quot;&gt;
+@@ -35872,6 +37224,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;View more applications&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T154730Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1047;&#1110;&#1088;&#1085;&#1091;&#1094;&#1100; &#1073;&#1086;&#1083;&#1077;&#1081; &#1087;&#1088;&#1072;&#1075;&#1088;&#1072;&#1084;&#1072;&#1118;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;View work address&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110304T134201Z&quot; changeid=&quot;klyok&quot;&gt;
+@@ -35888,6 +37248,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Visit the developer's Web page&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T154749Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1053;&#1072;&#1074;&#1077;&#1076;&#1072;&#1094;&#1100; &#1073;&#1072;&#1095;&#1099;&#1085;&#1091; &#1088;&#1072;&#1089;&#1087;&#1088;&#1072;&#1094;&#1086;&#1118;&#1085;&#1110;&#1082;&#1072;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Voice&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110323T074521Z&quot; changeid=&quot;klyok&quot;&gt;
+@@ -36689,6 +38057,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;YY&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T144420Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1043;&#1043;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Yahoo&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110322T100045Z&quot; changeid=&quot;klyok&quot;&gt;
+@@ -37221,6 +38597,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;You must accept Checkout Terms of Service before purchase.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T160225Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1055;&#1077;&#1088;&#1072;&#1076; &#1090;&#1099;&#1084;, &#1103;&#1082; &#1082;&#1091;&#1087;&#1083;&#1103;&#1094;&#1100;, &#1074;&#1099; &#1084;&#1091;&#1089;&#1110;&#1094;&#1077; &#1087;&#1088;&#1099;&#1085;&#1103;&#1094;&#1100; &#1091;&#1084;&#1086;&#1074;&#1099; &#1072;&#1073;&#1089;&#1083;&#1091;&#1075;&#1086;&#1118;&#1074;&#1072;&#1085;&#1100;&#1085;&#1103; &#1050;&#1072;&#1089;&#1072;&#1102; Google.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;You must add at least one recipient.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110324T204642Z&quot; changeid=&quot;klyok&quot;&gt;
+@@ -37277,6 +38661,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;You previously bought this item and received a refund.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T154540Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1056;&#1072;&#1085;&#1077;&#1081; &#1074;&#1099; &#1118;&#1078;&#1086; &#1082;&#1091;&#1087;&#1083;&#1103;&#1083;&#1110; &#1075;&#1101;&#1090;&#1072; &#1076;&#1099; &#1074;&#1103;&#1088;&#1085;&#1091;&#1083;&#1110; &#1075;&#1088;&#1086;&#1096;&#1099;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;You will lose ALL data on the card!&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110331T131213Z&quot; changeid=&quot;klyok&quot;&gt;
+@@ -37293,6 +38685,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Your %1$s billing address will be stored in your Google account.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T150818Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1040;&#1076;&#1088;&#1072;&#1089; &#1072;&#1087;&#1083;&#1072;&#1090;&#1099; %1$s &#1079;&#1072;&#1093;&#1072;&#1074;&#1072;&#1077;&#1094;&#1094;&#1072; &#1118; &#1074;&#1072;&#1096;&#1099;&#1084; &#1088;&#1072;&#1093;&#1091;&#1085;&#1082;&#1091; Google.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Your SIM card does not allow a connection to this network.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110219T195803Z&quot; changeid=&quot;klyok&quot;&gt;
+@@ -37389,6 +38789,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Your credit card was not charged.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T150553Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;[&#1085;/&#1076;]&#1042;&#1072;&#1096;&#1072; &#1082;&#1088;&#1101;&#1076;&#1099;&#1090;&#1085;&#1072;&#1103; &#1082;&#1072;&#1088;&#1090;&#1072; &#1085;&#1077; &#1073;&#1103;&#1088;&#1101;&#1094;&#1094;&#1072;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Your email will appear shortly.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110401T184553Z&quot; changeid=&quot;klyok&quot;&gt;
+@@ -37397,6 +38805,22 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Your full name as it appears on your account&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T151157Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1042;&#1072;&#1096;&#1072;&#1077; &#1087;&#1086;&#1118;&#1085;&#1072;&#1077; &#1110;&#1084;&#1103; &#1090;&#1072;&#1082;, &#1103;&#1082; &#1103;&#1075;&#1086; &#1079;&#1072;&#1087;&#1110;&#1089;&#1072;&#1083;&#1110; &#1118; &#1074;&#1072;&#1096;&#1099;&#1084; &#1088;&#1072;&#1093;&#1091;&#1085;&#1082;&#1091;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Your item will be downloaded.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T151650Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1047;&#1072;&#1087;&#1099;&#1090;&#1072;&#1085;&#1072;&#1077; &#1074;&#1072;&#1084;&#1110; &#1089;&#1100;&#1094;&#1103;&#1075;&#1085;&#1077;&#1094;&#1094;&#1072;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Your location&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110323T081249Z&quot; changeid=&quot;klyok&quot;&gt;
+@@ -37454,6 +38878,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Your order is complete.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T151746Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;[&#1085;/&#1076;]&#1042;&#1099; &#1079;&#1088;&#1072;&#1073;&#1110;&#1083;&#1110; &#1079;&#1072;&#1082;&#1072;&#1079;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Your personal information&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110323T081153Z&quot; changeid=&quot;klyok&quot;&gt;
+@@ -37545,6 +38977,30 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Your purchase could not be refunded.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T121855Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1053;&#1077;&#1083;&#1100;&#1075;&#1072; &#1074;&#1103;&#1088;&#1085;&#1091;&#1094;&#1100; &#1075;&#1088;&#1086;&#1096;&#1099; &#1079;&#1072; &#1074;&#1072;&#1096;&#1091;&#1102; &#1087;&#1072;&#1082;&#1091;&#1087;&#1082;&#1091;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Your purchase has been refunded.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T121836Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1042;&#1103;&#1088;&#1085;&#1091;&#1083;&#1110; &#1075;&#1088;&#1086;&#1096;&#1091; &#1079;&#1072; &#1074;&#1072;&#1096;&#1091;&#1102; &#1087;&#1072;&#1082;&#1091;&#1087;&#1082;&#1091;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Your purchase will be canceled, and you will not be charged.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T152341Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1042;&#1072;&#1096;&#1072;&#1103; &#1082;&#1091;&#1087;&#1083;&#1103; &#1089;&#1082;&#1072;&#1089;&#1091;&#1077;&#1094;&#1094;&#1072;: &#1074;&#1099; &#1085;&#1077; &#1072;&#1087;&#1083;&#1072;&#1094;&#1110;&#1094;&#1077;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Your settings have changed.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110402T235805Z&quot; changeid=&quot;klyok&quot;&gt;
+@@ -37561,6 +39017,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Your updates will start shortly.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T153111Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1061;&#1091;&#1090;&#1082;&#1072; &#1087;&#1072;&#1095;&#1085;&#1077; &#1072;&#1073;&#1085;&#1072;&#1118;&#1083;&#1103;&#1094;&#1094;&#1072;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;ZIP code&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110304T134451Z&quot; changeid=&quot;klyok&quot;&gt;
+@@ -37569,6 +39033,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Zip Code&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T144522Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1055;&#1072;&#1096;&#1090;&#1086;&#1074;&#1099; &#1110;&#1085;&#1076;&#1101;&#1082;&#1089;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Zoom effect speed&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110325T081405Z&quot; changeid=&quot;klyok&quot;&gt;
+@@ -37577,6 +39049,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;\&quot;%1$s\&quot; could not be launched.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T121915Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1053;&#1077;&#1083;&#1100;&#1075;&#1072; &#1079;&#1072;&#1087;&#1091;&#1089;&#1100;&#1094;&#1110;&#1094;&#1100; &#171;%1$s&#187;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;\&quot;%1$s\&quot; has been removed because it is known to damage your phone or cause loss of data.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110326T211934Z&quot; changeid=&quot;klyok&quot;&gt;
+@@ -37816,6 +39296,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;\u0020&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T153419Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;\u0020&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;\u0020(Read-only)&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110331T125324Z&quot; changeid=&quot;klyok&quot;&gt;
+@@ -38112,6 +39600,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;by %1$s&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T151809Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1072;&#1076; %1$s&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;bytes&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110326T113628Z&quot; changeid=&quot;klyok&quot;&gt;
+@@ -38648,6 +40144,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;downloads&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T153033Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1089;&#1100;&#1094;&#1103;&#1075;&#1074;&#1072;&#1085;&#1072;&#1077;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;dt&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110316T200142Z&quot; changeid=&quot;klyok&quot;&gt;
+@@ -39240,6 +40744,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;market&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T154815Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1082;&#1088;&#1072;&#1084;&#1072;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;measure application storage space&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110323T122403Z&quot; changeid=&quot;klyok&quot;&gt;
+@@ -39864,6 +41376,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;search&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110418T153510Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1096;&#1091;&#1082;&#1072;&#1094;&#1100;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;sec&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110324T152143Z&quot; changeid=&quot;klyok&quot;&gt;
+
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000169.html">[I18n-bel-svn] r251 - Android/omegat
+</A></li>
+	<LI>Next message: <A HREF="000171.html">[I18n-bel-svn] r253 - Windows7/source/Program Files/Internet	Explorer/en-US
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#170">[ date ]</a>
+              <a href="thread.html#170">[ thread ]</a>
+              <a href="subject.html#170">[ subject ]</a>
+              <a href="author.html#170">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/i18n-bel-svn">More information about the I18n-bel-svn
+mailing list</a><br>
+</body></html>

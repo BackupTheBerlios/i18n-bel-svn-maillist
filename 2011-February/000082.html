@@ -1,0 +1,3107 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [I18n-bel-svn] r164 - in Windows7/source: Program Files/Common	Files/microsoft shared/ink Windows/System32
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/i18n-bel-svn/2011-February/index.html" >
+   <LINK REL="made" HREF="mailto:i18n-bel-svn%40lists.berlios.de?Subject=Re%3A%20%5BI18n-bel-svn%5D%20r164%20-%20in%20Windows7/source%3A%20Program%20Files/Common%0A%09Files/microsoft%20shared/ink%20Windows/System32&In-Reply-To=%3C20110215062705.4BFEB480A86%40sheep.berlios.de%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000081.html">
+   <LINK REL="Next"  HREF="000083.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[I18n-bel-svn] r164 - in Windows7/source: Program Files/Common	Files/microsoft shared/ink Windows/System32</H1>
+    <B>alex73 at mail.berlios.de</B> 
+    <A HREF="mailto:i18n-bel-svn%40lists.berlios.de?Subject=Re%3A%20%5BI18n-bel-svn%5D%20r164%20-%20in%20Windows7/source%3A%20Program%20Files/Common%0A%09Files/microsoft%20shared/ink%20Windows/System32&In-Reply-To=%3C20110215062705.4BFEB480A86%40sheep.berlios.de%3E"
+       TITLE="[I18n-bel-svn] r164 - in Windows7/source: Program Files/Common	Files/microsoft shared/ink Windows/System32">alex73 at mail.berlios.de
+       </A><BR>
+    <I>Tue Feb 15 07:27:04 CET 2011</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000081.html">[I18n-bel-svn] r163 - in Windows7: omegat source/Program Files	source/Program Files/Common Files source/Program Files/Common	Files/microsoft shared source/Program Files/Common	Files/microsoft shared/ink
+</A></li>
+        <LI>Next message: <A HREF="000083.html">[I18n-bel-svn] r165 - / Windows7 Windows7/omegat
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#82">[ date ]</a>
+              <a href="thread.html#82">[ thread ]</a>
+              <a href="subject.html#82">[ subject ]</a>
+              <a href="author.html#82">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>Author: alex73
+Date: 2011-02-15 07:27:04 +0100 (Tue, 15 Feb 2011)
+New Revision: 164
+
+Added:
+   Windows7/source/Program Files/Common Files/microsoft shared/ink/tabskb.dll.rc
+Removed:
+   Windows7/source/Program Files/Common Files/microsoft shared/ink/tabskb.dll.mui.rc
+Modified:
+   Windows7/source/Program Files/Common Files/microsoft shared/ink/InputPersonalization.exe.rc
+   Windows7/source/Program Files/Common Files/microsoft shared/ink/mshwLatin.dll.rc
+   Windows7/source/Program Files/Common Files/microsoft shared/ink/rtscom.dll.rc
+   Windows7/source/Windows/System32/netshell.dll.rc
+Log:
+Update source files
+
+Modified: Windows7/source/Program Files/Common Files/microsoft shared/ink/InputPersonalization.exe.rc
+===================================================================
+--- Windows7/source/Program Files/Common Files/microsoft shared/ink/InputPersonalization.exe.rc	2011-02-13 18:05:18 UTC (rev 163)
++++ Windows7/source/Program Files/Common Files/microsoft shared/ink/InputPersonalization.exe.rc	2011-02-15 06:27:04 UTC (rev 164)
+@@ -1,38 +1,10 @@
+-1 MUI &quot;Data_4.bin&quot;
++#pragma code_page(65001)
++#include &lt;resources.h&gt;
+ 
+ 1 MESSAGETABLE
+ {
+-805306369,  	&quot;Start&quot;
+-805306370,  	&quot;Stop&quot;
+-1342177284,  	&quot;Information&quot;
+--1879048191,  	&quot;Microsoft-Windows-TabletPC-InputPersonalization&quot;
++  805306369,  &quot;Start\r\n&quot;
++  805306370,  &quot;Stop\r\n&quot;
++  1342177284,  &quot;Information\r\n&quot;
++  2415919105,  &quot;Microsoft-Windows-TabletPC-InputPersonalization\r\n&quot;
+ }
+-
+-
+-1 VERSIONINFO
+-FILEVERSION 6,1,7600,16385
+-PRODUCTVERSION 6,1,7600,16385
+-FILEOS 0x40004
+-FILETYPE 0x1
+-{
+-BLOCK &quot;StringFileInfo&quot;
+-{
+-	BLOCK &quot;040904B0&quot;
+-	{
+-		VALUE &quot;CompanyName&quot;, &quot;Microsoft Corporation&quot;
+-		VALUE &quot;FileDescription&quot;, &quot;Input Personalization Server&quot;
+-		VALUE &quot;FileVersion&quot;, &quot;6.1.7600.16385 (win7_rtm.090713-1255)&quot;
+-		VALUE &quot;InternalName&quot;, &quot;InputPersonalization.exe&quot;
+-		VALUE &quot;LegalCopyright&quot;, &quot;&#169; Microsoft Corporation. All rights reserved.&quot;
+-		VALUE &quot;OriginalFilename&quot;, &quot;InputPersonalization.exe.mui&quot;
+-		VALUE &quot;ProductName&quot;, &quot;Microsoft&#174; Windows&#174; Operating System&quot;
+-		VALUE &quot;ProductVersion&quot;, &quot;6.1.7600.16385&quot;
+-	}
+-}
+-
+-BLOCK &quot;VarFileInfo&quot;
+-{
+-	VALUE &quot;Translation&quot;, 0x0409 0x04B0
+-}
+-}
+-
+
+Modified: Windows7/source/Program Files/Common Files/microsoft shared/ink/mshwLatin.dll.rc
+===================================================================
+--- Windows7/source/Program Files/Common Files/microsoft shared/ink/mshwLatin.dll.rc	2011-02-13 18:05:18 UTC (rev 163)
++++ Windows7/source/Program Files/Common Files/microsoft shared/ink/mshwLatin.dll.rc	2011-02-15 06:27:04 UTC (rev 164)
+@@ -1,38 +1,10 @@
+-1 MUI &quot;Data_9.bin&quot;
++#pragma code_page(65001)
++#include &lt;resources.h&gt;
+ 
+ 1 MESSAGETABLE
+ {
+-805306369,  	&quot;Start&quot;
+-805306370,  	&quot;Stop&quot;
+-1342177284,  	&quot;Information&quot;
+--1879048191,  	&quot;Microsoft-Windows-TabletPC-CoreInkRecognition&quot;
++  805306369,  &quot;Start\r\n&quot;
++  805306370,  &quot;Stop\r\n&quot;
++  1342177284,  &quot;Information\r\n&quot;
++  2415919105,  &quot;Microsoft-Windows-TabletPC-CoreInkRecognition\r\n&quot;
+ }
+-
+-
+-1 VERSIONINFO
+-FILEVERSION 6,1,7600,16385
+-PRODUCTVERSION 6,1,7600,16385
+-FILEOS 0x40004
+-FILETYPE 0x2
+-{
+-BLOCK &quot;StringFileInfo&quot;
+-{
+-	BLOCK &quot;040904B0&quot;
+-	{
+-		VALUE &quot;CompanyName&quot;, &quot;Microsoft Corporation&quot;
+-		VALUE &quot;FileDescription&quot;, &quot;Microsoft Generic Latin Handwriting Recognizer&quot;
+-		VALUE &quot;FileVersion&quot;, &quot;6.1.7600.16385 (win7_rtm.090713-1255)&quot;
+-		VALUE &quot;InternalName&quot;, &quot;MSHWLATIN.DLL&quot;
+-		VALUE &quot;LegalCopyright&quot;, &quot;&#169; Microsoft Corporation. All rights reserved.&quot;
+-		VALUE &quot;OriginalFilename&quot;, &quot;MSHWLATIN.DLL.MUI&quot;
+-		VALUE &quot;ProductName&quot;, &quot;Microsoft&#174; Windows&#174; Operating System&quot;
+-		VALUE &quot;ProductVersion&quot;, &quot;6.1.7600.16385&quot;
+-	}
+-}
+-
+-BLOCK &quot;VarFileInfo&quot;
+-{
+-	VALUE &quot;Translation&quot;, 0x0409 0x04B0
+-}
+-}
+-
+
+Modified: Windows7/source/Program Files/Common Files/microsoft shared/ink/rtscom.dll.rc
+===================================================================
+--- Windows7/source/Program Files/Common Files/microsoft shared/ink/rtscom.dll.rc	2011-02-13 18:05:18 UTC (rev 163)
++++ Windows7/source/Program Files/Common Files/microsoft shared/ink/rtscom.dll.rc	2011-02-15 06:27:04 UTC (rev 164)
+@@ -1,38 +1,10 @@
+-1 MUI &quot;Data_10.bin&quot;
++#pragma code_page(65001)
++#include &lt;resources.h&gt;
+ 
+ 1 MESSAGETABLE
+ {
+-805306369,  	&quot;Start&quot;
+-805306370,  	&quot;Stop&quot;
+-1342177284,  	&quot;Information&quot;
+--1879048191,  	&quot;Microsoft-Windows-TabletPC-Platform-Manipulations&quot;
++  805306369,  &quot;Start\r\n&quot;
++  805306370,  &quot;Stop\r\n&quot;
++  1342177284,  &quot;Information\r\n&quot;
++  2415919105,  &quot;Microsoft-Windows-TabletPC-Platform-Manipulations\r\n&quot;
+ }
+-
+-
+-1 VERSIONINFO
+-FILEVERSION 6,1,7600,16385
+-PRODUCTVERSION 6,1,7600,16385
+-FILEOS 0x40004
+-FILETYPE 0x2
+-{
+-BLOCK &quot;StringFileInfo&quot;
+-{
+-	BLOCK &quot;040904B0&quot;
+-	{
+-		VALUE &quot;CompanyName&quot;, &quot;Microsoft Corporation&quot;
+-		VALUE &quot;FileDescription&quot;, &quot;Microsoft Tablet PC Real Time Stylus Platform Component&quot;
+-		VALUE &quot;FileVersion&quot;, &quot;6.1.7600.16385 (win7_rtm.090713-1255)&quot;
+-		VALUE &quot;InternalName&quot;, &quot;RTSCom.dll&quot;
+-		VALUE &quot;LegalCopyright&quot;, &quot;Copyright (c) Microsoft Corp.  All rights reserved.&quot;
+-		VALUE &quot;OriginalFilename&quot;, &quot;RTSCom.dll.mui&quot;
+-		VALUE &quot;ProductName&quot;, &quot;Microsoft&#174; Windows&#174; Operating System&quot;
+-		VALUE &quot;ProductVersion&quot;, &quot;6.1.7600.16385&quot;
+-	}
+-}
+-
+-BLOCK &quot;VarFileInfo&quot;
+-{
+-	VALUE &quot;Translation&quot;, 0x0409 0x04B0
+-}
+-}
+-
+
+Deleted: Windows7/source/Program Files/Common Files/microsoft shared/ink/tabskb.dll.mui.rc
+===================================================================
+--- Windows7/source/Program Files/Common Files/microsoft shared/ink/tabskb.dll.mui.rc	2011-02-13 18:05:18 UTC (rev 163)
++++ Windows7/source/Program Files/Common Files/microsoft shared/ink/tabskb.dll.mui.rc	2011-02-15 06:27:04 UTC (rev 164)
+@@ -1,69 +0,0 @@
+-1 MUI &quot;Data_12.bin&quot;
+-
+-
+-STRINGTABLE
+-LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+-{
+-15030, 	&quot;Keyboard&quot;
+-}
+-
+-
+-STRINGTABLE
+-LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+-{
+-15051, 	&quot;Keyboard&quot;
+-15053, 	&quot;Keypad&quot;
+-15054, 	&quot;Numbers&quot;
+-15055, 	&quot;Symbols&quot;
+-}
+-
+-
+-STRINGTABLE
+-LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+-{
+-15056, 	&quot;Web&quot;
+-15057, 	&quot;AuxPad&quot;
+-15058, 	&quot;OSKMenu&quot;
+-15059, 	&quot;OSKPred&quot;
+-15060, 	&quot;OSKNumPad&quot;
+-}
+-
+-1 MESSAGETABLE
+-{
+-268435505,  	&quot;Response Time&quot;
+-805306368,  	&quot;Info&quot;
+-805306369,  	&quot;Start&quot;
+-805306370,  	&quot;Stop&quot;
+-1342177284,  	&quot;Information&quot;
+--1879048191,  	&quot;Microsoft-Windows-TabletPC-TabletInputPanel&quot;
+-}
+-
+-
+-1 VERSIONINFO
+-FILEVERSION 6,1,7600,16385
+-PRODUCTVERSION 6,1,7600,16385
+-FILEOS 0x40004
+-FILETYPE 0x2
+-{
+-BLOCK &quot;StringFileInfo&quot;
+-{
+-	BLOCK &quot;040904B0&quot;
+-	{
+-		VALUE &quot;CompanyName&quot;, &quot;Microsoft Corporation&quot;
+-		VALUE &quot;FileDescription&quot;, &quot;Tablet PC Input Panel On-Screen Keyboard&quot;
+-		VALUE &quot;FileVersion&quot;, &quot;6.1.7600.16385 (win7_rtm.090713-1255)&quot;
+-		VALUE &quot;InternalName&quot;, &quot;tabskb.dll&quot;
+-		VALUE &quot;LegalCopyright&quot;, &quot;&#169; Microsoft Corporation. All rights reserved.&quot;
+-		VALUE &quot;OriginalFilename&quot;, &quot;tabskb.dll.mui&quot;
+-		VALUE &quot;ProductName&quot;, &quot;Microsoft&#174; Windows&#174; Operating System&quot;
+-		VALUE &quot;ProductVersion&quot;, &quot;6.1.7600.16385&quot;
+-		VALUE &quot;OleSelfRegister&quot;, &quot;&quot;
+-	}
+-}
+-
+-BLOCK &quot;VarFileInfo&quot;
+-{
+-	VALUE &quot;Translation&quot;, 0x0409 0x04B0
+-}
+-}
+-
+
+Added: Windows7/source/Program Files/Common Files/microsoft shared/ink/tabskb.dll.rc
+===================================================================
+--- Windows7/source/Program Files/Common Files/microsoft shared/ink/tabskb.dll.rc	                        (rev 0)
++++ Windows7/source/Program Files/Common Files/microsoft shared/ink/tabskb.dll.rc	2011-02-15 06:27:04 UTC (rev 164)
+@@ -0,0 +1,37 @@
++#pragma code_page(65001)
++#include &lt;resources.h&gt;
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++  15030,  &quot;Keyboard&quot;
++}
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++  15051,  &quot;Keyboard&quot;
++  15053,  &quot;Keypad&quot;
++  15054,  &quot;Numbers&quot;
++  15055,  &quot;Symbols&quot;
++}
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++  15056,  &quot;Web&quot;
++  15057,  &quot;AuxPad&quot;
++  15058,  &quot;OSKMenu&quot;
++  15059,  &quot;OSKPred&quot;
++  15060,  &quot;OSKNumPad&quot;
++}
++
++1 MESSAGETABLE
++{
++  268435505,  &quot;Response Time\r\n&quot;
++  805306368,  &quot;Info\r\n&quot;
++  805306369,  &quot;Start\r\n&quot;
++  805306370,  &quot;Stop\r\n&quot;
++  1342177284,  &quot;Information\r\n&quot;
++  2415919105,  &quot;Microsoft-Windows-TabletPC-TabletInputPanel\r\n&quot;
++}
+
+Modified: Windows7/source/Windows/System32/netshell.dll.rc
+===================================================================
+--- Windows7/source/Windows/System32/netshell.dll.rc	2011-02-13 18:05:18 UTC (rev 163)
++++ Windows7/source/Windows/System32/netshell.dll.rc	2011-02-15 06:27:04 UTC (rev 164)
+@@ -1,1696 +1,1609 @@
+-1 MUI &quot;Data_1482.bin&quot;
++#pragma code_page(65001)
++#include &lt;resources.h&gt;
+ 
+ 11010 MENUEX
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-POPUP &quot;&quot;, 0, MFT_STRING, MFS_ENABLED, 0
+-{
+-	MENUITEM &quot;En&amp;able&quot;, 16, MFT_STRING, MFS_ENABLED
+-	MENUITEM &quot;Stat&amp;us&quot;, 4, MFT_STRING, MFS_ENABLED
+-	MENUITEM &quot;&quot;, 65535, MFT_SEPARATOR, MFS_ENABLED
+-	MENUITEM &quot;Create &amp;Shortcut&quot;, 5, MFT_STRING, MFS_ENABLED
+-	MENUITEM &quot;&amp;Delete&quot;, 6, MFT_STRING, MFS_ENABLED
+-	MENUITEM &quot;Rena&amp;me&quot;, 7, MFT_STRING, MFS_ENABLED
+-	MENUITEM &quot;&quot;, 65535, MFT_SEPARATOR, MFS_ENABLED
+-	MENUITEM &quot;P&amp;roperties&quot;, 8, MFT_STRING, MFS_ENABLED
++  POPUP &quot;&quot;, 0, MFT_STRING, MFS_ENABLED, 0
++  {
++    MENUITEM &quot;En&amp;able&quot;, 16, MFT_STRING, MFS_ENABLED
++    MENUITEM &quot;Stat&amp;us&quot;, 4, MFT_STRING, MFS_ENABLED
++    MENUITEM &quot;&quot;, -1, MFT_SEPARATOR, MFS_ENABLED
++    MENUITEM &quot;Create &amp;Shortcut&quot;, 5, MFT_STRING, MFS_ENABLED
++    MENUITEM &quot;&amp;Delete&quot;, 6, MFT_STRING, MFS_ENABLED
++    MENUITEM &quot;Rena&amp;me&quot;, 7, MFT_STRING, MFS_ENABLED
++    MENUITEM &quot;&quot;, -1, MFT_SEPARATOR, MFS_ENABLED
++    MENUITEM &quot;P&amp;roperties&quot;, 8, MFT_STRING, MFS_ENABLED
++  }
+ }
+-}
+ 
+ 11011 MENUEX
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-POPUP &quot;&quot;, 0, MFT_STRING, MFS_ENABLED, 0
+-{
+-	MENUITEM &quot;En&amp;able&quot;, 16, MFT_STRING, MFS_ENABLED
+-	MENUITEM &quot;Stat&amp;us&quot;, 4, MFT_STRING, MFS_ENABLED
++  POPUP &quot;&quot;, 0, MFT_STRING, MFS_ENABLED, 0
++  {
++    MENUITEM &quot;En&amp;able&quot;, 16, MFT_STRING, MFS_ENABLED
++    MENUITEM &quot;Stat&amp;us&quot;, 4, MFT_STRING, MFS_ENABLED
++  }
+ }
+-}
+ 
+ 11012 MENUEX
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-POPUP &quot;&quot;, 0, MFT_STRING, MFS_ENABLED, 0
+-{
+-	MENUITEM &quot;Disa&amp;ble&quot;, 17, MFT_STRING, MFS_ENABLED
+-	MENUITEM &quot;Stat&amp;us&quot;, 4, MFT_STRING, MFS_ENABLED
+-	MENUITEM &quot;D&amp;iagnose&quot;, 23, MFT_STRING, MFS_ENABLED
+-	MENUITEM &quot;&quot;, 65535, MFT_SEPARATOR, MFS_ENABLED
+-	MENUITEM &quot;Brid&amp;ge Connections&quot;, 18, MFT_STRING, MFS_ENABLED
+-	MENUITEM &quot;Add to Brid&amp;ge&quot;, 19, MFT_STRING, MFS_ENABLED
+-	MENUITEM &quot;Remove from Brid&amp;ge&quot;, 20, MFT_STRING, MFS_ENABLED
+-	MENUITEM &quot;&quot;, 65535, MFT_SEPARATOR, MFS_ENABLED
+-	MENUITEM &quot;Create &amp;Shortcut&quot;, 5, MFT_STRING, MFS_ENABLED
+-	MENUITEM &quot;&amp;Delete&quot;, 6, MFT_STRING, MFS_ENABLED
+-	MENUITEM &quot;Rena&amp;me&quot;, 7, MFT_STRING, MFS_ENABLED
+-	MENUITEM &quot;&quot;, 65535, MFT_SEPARATOR, MFS_ENABLED
+-	MENUITEM &quot;P&amp;roperties&quot;, 8, MFT_STRING, MFS_ENABLED
++  POPUP &quot;&quot;, 0, MFT_STRING, MFS_ENABLED, 0
++  {
++    MENUITEM &quot;Disa&amp;ble&quot;, 17, MFT_STRING, MFS_ENABLED
++    MENUITEM &quot;Stat&amp;us&quot;, 4, MFT_STRING, MFS_ENABLED
++    MENUITEM &quot;D&amp;iagnose&quot;, 23, MFT_STRING, MFS_ENABLED
++    MENUITEM &quot;&quot;, -1, MFT_SEPARATOR, MFS_ENABLED
++    MENUITEM &quot;Brid&amp;ge Connections&quot;, 18, MFT_STRING, MFS_ENABLED
++    MENUITEM &quot;Add to Brid&amp;ge&quot;, 19, MFT_STRING, MFS_ENABLED
++    MENUITEM &quot;Remove from Brid&amp;ge&quot;, 20, MFT_STRING, MFS_ENABLED
++    MENUITEM &quot;&quot;, -1, MFT_SEPARATOR, MFS_ENABLED
++    MENUITEM &quot;Create &amp;Shortcut&quot;, 5, MFT_STRING, MFS_ENABLED
++    MENUITEM &quot;&amp;Delete&quot;, 6, MFT_STRING, MFS_ENABLED
++    MENUITEM &quot;Rena&amp;me&quot;, 7, MFT_STRING, MFS_ENABLED
++    MENUITEM &quot;&quot;, -1, MFT_SEPARATOR, MFS_ENABLED
++    MENUITEM &quot;P&amp;roperties&quot;, 8, MFT_STRING, MFS_ENABLED
++  }
+ }
+-}
+ 
+ 11013 MENUEX
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-POPUP &quot;&quot;, 0, MFT_STRING, MFS_ENABLED, 0
+-{
+-	MENUITEM &quot;Disa&amp;ble&quot;, 17, MFT_STRING, MFS_ENABLED
+-	MENUITEM &quot;Stat&amp;us&quot;, 4, MFT_STRING, MFS_ENABLED
++  POPUP &quot;&quot;, 0, MFT_STRING, MFS_ENABLED, 0
++  {
++    MENUITEM &quot;Disa&amp;ble&quot;, 17, MFT_STRING, MFS_ENABLED
++    MENUITEM &quot;Stat&amp;us&quot;, 4, MFT_STRING, MFS_ENABLED
++  }
+ }
+-}
+ 
+ 11014 MENUEX
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-POPUP &quot;&quot;, 0, MFT_STRING, MFS_ENABLED, 0
+-{
+-	MENUITEM &quot;En&amp;able&quot;, 16, MFT_STRING, MFS_ENABLED
+-	MENUITEM &quot;Stat&amp;us&quot;, 4, MFT_STRING, MFS_ENABLED
+-	MENUITEM &quot;&quot;, 65535, MFT_SEPARATOR, MFS_ENABLED
+-	MENUITEM &quot;Create &amp;Shortcut&quot;, 5, MFT_STRING, MFS_ENABLED
+-	MENUITEM &quot;&amp;Delete&quot;, 6, MFT_STRING, MFS_ENABLED
+-	MENUITEM &quot;Rena&amp;me&quot;, 7, MFT_STRING, MFS_ENABLED
+-	MENUITEM &quot;&quot;, 65535, MFT_SEPARATOR, MFS_ENABLED
+-	MENUITEM &quot;P&amp;roperties&quot;, 8, MFT_STRING, MFS_ENABLED
++  POPUP &quot;&quot;, 0, MFT_STRING, MFS_ENABLED, 0
++  {
++    MENUITEM &quot;En&amp;able&quot;, 16, MFT_STRING, MFS_ENABLED
++    MENUITEM &quot;Stat&amp;us&quot;, 4, MFT_STRING, MFS_ENABLED
++    MENUITEM &quot;&quot;, -1, MFT_SEPARATOR, MFS_ENABLED
++    MENUITEM &quot;Create &amp;Shortcut&quot;, 5, MFT_STRING, MFS_ENABLED
++    MENUITEM &quot;&amp;Delete&quot;, 6, MFT_STRING, MFS_ENABLED
++    MENUITEM &quot;Rena&amp;me&quot;, 7, MFT_STRING, MFS_ENABLED
++    MENUITEM &quot;&quot;, -1, MFT_SEPARATOR, MFS_ENABLED
++    MENUITEM &quot;P&amp;roperties&quot;, 8, MFT_STRING, MFS_ENABLED
++  }
+ }
+-}
+ 
+ 11015 MENUEX
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-POPUP &quot;&quot;, 0, MFT_STRING, MFS_ENABLED, 0
+-{
+-	MENUITEM &quot;En&amp;able&quot;, 16, MFT_STRING, MFS_ENABLED
+-	MENUITEM &quot;Stat&amp;us&quot;, 4, MFT_STRING, MFS_ENABLED
++  POPUP &quot;&quot;, 0, MFT_STRING, MFS_ENABLED, 0
++  {
++    MENUITEM &quot;En&amp;able&quot;, 16, MFT_STRING, MFS_ENABLED
++    MENUITEM &quot;Stat&amp;us&quot;, 4, MFT_STRING, MFS_ENABLED
++  }
+ }
+-}
+ 
+ 11020 MENUEX
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-POPUP &quot;&quot;, 0, MFT_STRING, MFS_ENABLED, 0
+-{
+-	MENUITEM &quot;C&amp;onnect&quot;, 2, MFT_STRING, MFS_ENABLED
+-	MENUITEM &quot;Stat&amp;us&quot;, 4, MFT_STRING, MFS_ENABLED
+-	MENUITEM &quot;&quot;, 65535, MFT_SEPARATOR, MFS_ENABLED
+-	MENUITEM &quot;Set as De&amp;fault Connection&quot;, 21, MFT_STRING, MFS_ENABLED
+-	MENUITEM &quot;&quot;, 65535, MFT_SEPARATOR, MFS_ENABLED
+-	MENUITEM &quot;Create &amp;Copy&quot;, 9, MFT_STRING, MFS_ENABLED
+-	MENUITEM &quot;&quot;, 65535, MFT_SEPARATOR, MFS_ENABLED
+-	MENUITEM &quot;Create &amp;Shortcut&quot;, 5, MFT_STRING, MFS_ENABLED
+-	MENUITEM &quot;&amp;Delete&quot;, 6, MFT_STRING, MFS_ENABLED
+-	MENUITEM &quot;Rena&amp;me&quot;, 7, MFT_STRING, MFS_ENABLED
+-	MENUITEM &quot;&quot;, 65535, MFT_SEPARATOR, MFS_ENABLED
+-	MENUITEM &quot;P&amp;roperties&quot;, 8, MFT_STRING, MFS_ENABLED
++  POPUP &quot;&quot;, 0, MFT_STRING, MFS_ENABLED, 0
++  {
++    MENUITEM &quot;C&amp;onnect&quot;, 2, MFT_STRING, MFS_ENABLED
++    MENUITEM &quot;Stat&amp;us&quot;, 4, MFT_STRING, MFS_ENABLED
++    MENUITEM &quot;&quot;, -1, MFT_SEPARATOR, MFS_ENABLED
++    MENUITEM &quot;Set as De&amp;fault Connection&quot;, 21, MFT_STRING, MFS_ENABLED
++    MENUITEM &quot;&quot;, -1, MFT_SEPARATOR, MFS_ENABLED
++    MENUITEM &quot;Create &amp;Copy&quot;, 9, MFT_STRING, MFS_ENABLED
++    MENUITEM &quot;&quot;, -1, MFT_SEPARATOR, MFS_ENABLED
++    MENUITEM &quot;Create &amp;Shortcut&quot;, 5, MFT_STRING, MFS_ENABLED
++    MENUITEM &quot;&amp;Delete&quot;, 6, MFT_STRING, MFS_ENABLED
++    MENUITEM &quot;Rena&amp;me&quot;, 7, MFT_STRING, MFS_ENABLED
++    MENUITEM &quot;&quot;, -1, MFT_SEPARATOR, MFS_ENABLED
++    MENUITEM &quot;P&amp;roperties&quot;, 8, MFT_STRING, MFS_ENABLED
++  }
+ }
+-}
+ 
+ 11021 MENUEX
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-POPUP &quot;&quot;, 0, MFT_STRING, MFS_ENABLED, 0
+-{
+-	MENUITEM &quot;C&amp;onnect&quot;, 2, MFT_STRING, MFS_ENABLED
+-	MENUITEM &quot;Stat&amp;us&quot;, 4, MFT_STRING, MFS_ENABLED
++  POPUP &quot;&quot;, 0, MFT_STRING, MFS_ENABLED, 0
++  {
++    MENUITEM &quot;C&amp;onnect&quot;, 2, MFT_STRING, MFS_ENABLED
++    MENUITEM &quot;Stat&amp;us&quot;, 4, MFT_STRING, MFS_ENABLED
++  }
+ }
+-}
+ 
+ 11022 MENUEX
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-POPUP &quot;&quot;, 0, MFT_STRING, MFS_ENABLED, 0
+-{
+-	MENUITEM &quot;Disc&amp;onnect&quot;, 3, MFT_STRING, MFS_ENABLED
+-	MENUITEM &quot;Stat&amp;us&quot;, 4, MFT_STRING, MFS_ENABLED
+-	MENUITEM &quot;&quot;, 65535, MFT_SEPARATOR, MFS_ENABLED
+-	MENUITEM &quot;Set as De&amp;fault Connection&quot;, 21, MFT_STRING, MFS_ENABLED
+-	MENUITEM &quot;&quot;, 65535, MFT_SEPARATOR, MFS_ENABLED
+-	MENUITEM &quot;Create &amp;Copy&quot;, 9, MFT_STRING, MFS_ENABLED
+-	MENUITEM &quot;&quot;, 65535, MFT_SEPARATOR, MFS_ENABLED
+-	MENUITEM &quot;Create &amp;Shortcut&quot;, 5, MFT_STRING, MFS_ENABLED
+-	MENUITEM &quot;&amp;Delete&quot;, 6, MFT_STRING, MFS_ENABLED
+-	MENUITEM &quot;Rena&amp;me&quot;, 7, MFT_STRING, MFS_ENABLED
+-	MENUITEM &quot;&quot;, 65535, MFT_SEPARATOR, MFS_ENABLED
+-	MENUITEM &quot;P&amp;roperties&quot;, 8, MFT_STRING, MFS_ENABLED
++  POPUP &quot;&quot;, 0, MFT_STRING, MFS_ENABLED, 0
++  {
++    MENUITEM &quot;Disc&amp;onnect&quot;, 3, MFT_STRING, MFS_ENABLED
++    MENUITEM &quot;Stat&amp;us&quot;, 4, MFT_STRING, MFS_ENABLED
++    MENUITEM &quot;&quot;, -1, MFT_SEPARATOR, MFS_ENABLED
++    MENUITEM &quot;Set as De&amp;fault Connection&quot;, 21, MFT_STRING, MFS_ENABLED
++    MENUITEM &quot;&quot;, -1, MFT_SEPARATOR, MFS_ENABLED
++    MENUITEM &quot;Create &amp;Copy&quot;, 9, MFT_STRING, MFS_ENABLED
++    MENUITEM &quot;&quot;, -1, MFT_SEPARATOR, MFS_ENABLED
++    MENUITEM &quot;Create &amp;Shortcut&quot;, 5, MFT_STRING, MFS_ENABLED
++    MENUITEM &quot;&amp;Delete&quot;, 6, MFT_STRING, MFS_ENABLED
++    MENUITEM &quot;Rena&amp;me&quot;, 7, MFT_STRING, MFS_ENABLED
++    MENUITEM &quot;&quot;, -1, MFT_SEPARATOR, MFS_ENABLED
++    MENUITEM &quot;P&amp;roperties&quot;, 8, MFT_STRING, MFS_ENABLED
++  }
+ }
+-}
+ 
+ 11023 MENUEX
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-POPUP &quot;&quot;, 0, MFT_STRING, MFS_ENABLED, 0
+-{
+-	MENUITEM &quot;Disc&amp;onnect&quot;, 3, MFT_STRING, MFS_ENABLED
+-	MENUITEM &quot;Stat&amp;us&quot;, 4, MFT_STRING, MFS_ENABLED
++  POPUP &quot;&quot;, 0, MFT_STRING, MFS_ENABLED, 0
++  {
++    MENUITEM &quot;Disc&amp;onnect&quot;, 3, MFT_STRING, MFS_ENABLED
++    MENUITEM &quot;Stat&amp;us&quot;, 4, MFT_STRING, MFS_ENABLED
++  }
+ }
+-}
+ 
+ 11024 MENUEX
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-POPUP &quot;&quot;, 0, MFT_STRING, MFS_ENABLED, 0
+-{
+-	MENUITEM &quot;C&amp;onnect&quot;, 2, MFT_STRING, MFS_ENABLED
+-	MENUITEM &quot;Stat&amp;us&quot;, 4, MFT_STRING, MFS_ENABLED
+-	MENUITEM &quot;&quot;, 65535, MFT_SEPARATOR, MFS_ENABLED
+-	MENUITEM &quot;Set as De&amp;fault Connection&quot;, 21, MFT_STRING, MFS_ENABLED
+-	MENUITEM &quot;&quot;, 65535, MFT_SEPARATOR, MFS_ENABLED
+-	MENUITEM &quot;Create &amp;Copy&quot;, 9, MFT_STRING, MFS_ENABLED
+-	MENUITEM &quot;&quot;, 65535, MFT_SEPARATOR, MFS_ENABLED
+-	MENUITEM &quot;Create &amp;Shortcut&quot;, 5, MFT_STRING, MFS_ENABLED
+-	MENUITEM &quot;&amp;Delete&quot;, 6, MFT_STRING, MFS_ENABLED
+-	MENUITEM &quot;Rena&amp;me&quot;, 7, MFT_STRING, MFS_ENABLED
+-	MENUITEM &quot;&quot;, 65535, MFT_SEPARATOR, MFS_ENABLED
+-	MENUITEM &quot;P&amp;roperties&quot;, 8, MFT_STRING, MFS_ENABLED
++  POPUP &quot;&quot;, 0, MFT_STRING, MFS_ENABLED, 0
++  {
++    MENUITEM &quot;C&amp;onnect&quot;, 2, MFT_STRING, MFS_ENABLED
++    MENUITEM &quot;Stat&amp;us&quot;, 4, MFT_STRING, MFS_ENABLED
++    MENUITEM &quot;&quot;, -1, MFT_SEPARATOR, MFS_ENABLED
++    MENUITEM &quot;Set as De&amp;fault Connection&quot;, 21, MFT_STRING, MFS_ENABLED
++    MENUITEM &quot;&quot;, -1, MFT_SEPARATOR, MFS_ENABLED
++    MENUITEM &quot;Create &amp;Copy&quot;, 9, MFT_STRING, MFS_ENABLED
++    MENUITEM &quot;&quot;, -1, MFT_SEPARATOR, MFS_ENABLED
++    MENUITEM &quot;Create &amp;Shortcut&quot;, 5, MFT_STRING, MFS_ENABLED
++    MENUITEM &quot;&amp;Delete&quot;, 6, MFT_STRING, MFS_ENABLED
++    MENUITEM &quot;Rena&amp;me&quot;, 7, MFT_STRING, MFS_ENABLED
++    MENUITEM &quot;&quot;, -1, MFT_SEPARATOR, MFS_ENABLED
++    MENUITEM &quot;P&amp;roperties&quot;, 8, MFT_STRING, MFS_ENABLED
++  }
+ }
+-}
+ 
+ 11025 MENUEX
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-POPUP &quot;&quot;, 0, MFT_STRING, MFS_ENABLED, 0
+-{
+-	MENUITEM &quot;C&amp;onnect&quot;, 2, MFT_STRING, MFS_ENABLED
+-	MENUITEM &quot;Stat&amp;us&quot;, 4, MFT_STRING, MFS_ENABLED
++  POPUP &quot;&quot;, 0, MFT_STRING, MFS_ENABLED, 0
++  {
++    MENUITEM &quot;C&amp;onnect&quot;, 2, MFT_STRING, MFS_ENABLED
++    MENUITEM &quot;Stat&amp;us&quot;, 4, MFT_STRING, MFS_ENABLED
++  }
+ }
+-}
+ 
+ 11026 MENUEX
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-POPUP &quot;&quot;, 0, MFT_STRING, MFS_ENABLED, 0
+-{
+-	MENUITEM &quot;Disc&amp;onnect&quot;, 3, MFT_STRING, MFS_ENABLED
+-	MENUITEM &quot;Stat&amp;us&quot;, 4, MFT_STRING, MFS_ENABLED
+-	MENUITEM &quot;&quot;, 65535, MFT_SEPARATOR, MFS_ENABLED
+-	MENUITEM &quot;Unset as De&amp;fault Connection&quot;, 22, MFT_STRING, MFS_ENABLED
+-	MENUITEM &quot;&quot;, 65535, MFT_SEPARATOR, MFS_ENABLED
+-	MENUITEM &quot;Create &amp;Copy&quot;, 9, MFT_STRING, MFS_ENABLED
+-	MENUITEM &quot;&quot;, 65535, MFT_SEPARATOR, MFS_ENABLED
+-	MENUITEM &quot;Create &amp;Shortcut&quot;, 5, MFT_STRING, MFS_ENABLED
+-	MENUITEM &quot;&amp;Delete&quot;, 6, MFT_STRING, MFS_ENABLED
+-	MENUITEM &quot;Rena&amp;me&quot;, 7, MFT_STRING, MFS_ENABLED
+-	MENUITEM &quot;&quot;, 65535, MFT_SEPARATOR, MFS_ENABLED
+-	MENUITEM &quot;P&amp;roperties&quot;, 8, MFT_STRING, MFS_ENABLED
++  POPUP &quot;&quot;, 0, MFT_STRING, MFS_ENABLED, 0
++  {
++    MENUITEM &quot;Disc&amp;onnect&quot;, 3, MFT_STRING, MFS_ENABLED
++    MENUITEM &quot;Stat&amp;us&quot;, 4, MFT_STRING, MFS_ENABLED
++    MENUITEM &quot;&quot;, -1, MFT_SEPARATOR, MFS_ENABLED
++    MENUITEM &quot;Unset as De&amp;fault Connection&quot;, 22, MFT_STRING, MFS_ENABLED
++    MENUITEM &quot;&quot;, -1, MFT_SEPARATOR, MFS_ENABLED
++    MENUITEM &quot;Create &amp;Copy&quot;, 9, MFT_STRING, MFS_ENABLED
++    MENUITEM &quot;&quot;, -1, MFT_SEPARATOR, MFS_ENABLED
++    MENUITEM &quot;Create &amp;Shortcut&quot;, 5, MFT_STRING, MFS_ENABLED
++    MENUITEM &quot;&amp;Delete&quot;, 6, MFT_STRING, MFS_ENABLED
++    MENUITEM &quot;Rena&amp;me&quot;, 7, MFT_STRING, MFS_ENABLED
++    MENUITEM &quot;&quot;, -1, MFT_SEPARATOR, MFS_ENABLED
++    MENUITEM &quot;P&amp;roperties&quot;, 8, MFT_STRING, MFS_ENABLED
++  }
+ }
+-}
+ 
+ 11027 MENUEX
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-POPUP &quot;&quot;, 0, MFT_STRING, MFS_ENABLED, 0
+-{
+-	MENUITEM &quot;C&amp;onnect&quot;, 2, MFT_STRING, MFS_ENABLED
+-	MENUITEM &quot;Stat&amp;us&quot;, 4, MFT_STRING, MFS_ENABLED
+-	MENUITEM &quot;&quot;, 65535, MFT_SEPARATOR, MFS_ENABLED
+-	MENUITEM &quot;Unset as De&amp;fault Connection&quot;, 22, MFT_STRING, MFS_ENABLED
+-	MENUITEM &quot;&quot;, 65535, MFT_SEPARATOR, MFS_ENABLED
+-	MENUITEM &quot;Create &amp;Copy&quot;, 9, MFT_STRING, MFS_ENABLED
+-	MENUITEM &quot;&quot;, 65535, MFT_SEPARATOR, MFS_ENABLED
+-	MENUITEM &quot;Create &amp;Shortcut&quot;, 5, MFT_STRING, MFS_ENABLED
+-	MENUITEM &quot;&amp;Delete&quot;, 6, MFT_STRING, MFS_ENABLED
+-	MENUITEM &quot;Rena&amp;me&quot;, 7, MFT_STRING, MFS_ENABLED
+-	MENUITEM &quot;&quot;, 65535, MFT_SEPARATOR, MFS_ENABLED
+-	MENUITEM &quot;P&amp;roperties&quot;, 8, MFT_STRING, MFS_ENABLED
++  POPUP &quot;&quot;, 0, MFT_STRING, MFS_ENABLED, 0
++  {
++    MENUITEM &quot;C&amp;onnect&quot;, 2, MFT_STRING, MFS_ENABLED
++    MENUITEM &quot;Stat&amp;us&quot;, 4, MFT_STRING, MFS_ENABLED
++    MENUITEM &quot;&quot;, -1, MFT_SEPARATOR, MFS_ENABLED
++    MENUITEM &quot;Unset as De&amp;fault Connection&quot;, 22, MFT_STRING, MFS_ENABLED
++    MENUITEM &quot;&quot;, -1, MFT_SEPARATOR, MFS_ENABLED
++    MENUITEM &quot;Create &amp;Copy&quot;, 9, MFT_STRING, MFS_ENABLED
++    MENUITEM &quot;&quot;, -1, MFT_SEPARATOR, MFS_ENABLED
++    MENUITEM &quot;Create &amp;Shortcut&quot;, 5, MFT_STRING, MFS_ENABLED
++    MENUITEM &quot;&amp;Delete&quot;, 6, MFT_STRING, MFS_ENABLED
++    MENUITEM &quot;Rena&amp;me&quot;, 7, MFT_STRING, MFS_ENABLED
++    MENUITEM &quot;&quot;, -1, MFT_SEPARATOR, MFS_ENABLED
++    MENUITEM &quot;P&amp;roperties&quot;, 8, MFT_STRING, MFS_ENABLED
++  }
+ }
+-}
+ 
+ 11028 MENUEX
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-POPUP &quot;&quot;, 0, MFT_STRING, MFS_ENABLED, 0
+-{
+-	MENUITEM &quot;C&amp;onnect&quot;, 2, MFT_STRING, MFS_ENABLED
+-	MENUITEM &quot;Stat&amp;us&quot;, 4, MFT_STRING, MFS_ENABLED
+-	MENUITEM &quot;&quot;, 65535, MFT_SEPARATOR, MFS_ENABLED
+-	MENUITEM &quot;Unset as De&amp;fault Connection&quot;, 22, MFT_STRING, MFS_ENABLED
+-	MENUITEM &quot;&quot;, 65535, MFT_SEPARATOR, MFS_ENABLED
+-	MENUITEM &quot;Create &amp;Copy&quot;, 9, MFT_STRING, MFS_ENABLED
+-	MENUITEM &quot;&quot;, 65535, MFT_SEPARATOR, MFS_ENABLED
+-	MENUITEM &quot;Create &amp;Shortcut&quot;, 5, MFT_STRING, MFS_ENABLED
+-	MENUITEM &quot;&amp;Delete&quot;, 6, MFT_STRING, MFS_ENABLED
+-	MENUITEM &quot;Rena&amp;me&quot;, 7, MFT_STRING, MFS_ENABLED
+-	MENUITEM &quot;&quot;, 65535, MFT_SEPARATOR, MFS_ENABLED
+-	MENUITEM &quot;P&amp;roperties&quot;, 8, MFT_STRING, MFS_ENABLED
++  POPUP &quot;&quot;, 0, MFT_STRING, MFS_ENABLED, 0
++  {
++    MENUITEM &quot;C&amp;onnect&quot;, 2, MFT_STRING, MFS_ENABLED
++    MENUITEM &quot;Stat&amp;us&quot;, 4, MFT_STRING, MFS_ENABLED
++    MENUITEM &quot;&quot;, -1, MFT_SEPARATOR, MFS_ENABLED
++    MENUITEM &quot;Unset as De&amp;fault Connection&quot;, 22, MFT_STRING, MFS_ENABLED
++    MENUITEM &quot;&quot;, -1, MFT_SEPARATOR, MFS_ENABLED
++    MENUITEM &quot;Create &amp;Copy&quot;, 9, MFT_STRING, MFS_ENABLED
++    MENUITEM &quot;&quot;, -1, MFT_SEPARATOR, MFS_ENABLED
++    MENUITEM &quot;Create &amp;Shortcut&quot;, 5, MFT_STRING, MFS_ENABLED
++    MENUITEM &quot;&amp;Delete&quot;, 6, MFT_STRING, MFS_ENABLED
++    MENUITEM &quot;Rena&amp;me&quot;, 7, MFT_STRING, MFS_ENABLED
++    MENUITEM &quot;&quot;, -1, MFT_SEPARATOR, MFS_ENABLED
++    MENUITEM &quot;P&amp;roperties&quot;, 8, MFT_STRING, MFS_ENABLED
++  }
+ }
+-}
+ 
+ 11030 MENUEX
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-POPUP &quot;&quot;, 0, MFT_STRING, MFS_ENABLED, 0
+-{
+-	MENUITEM &quot;Stat&amp;us&quot;, 4, MFT_STRING, MFS_ENABLED
+-	MENUITEM &quot;&quot;, 65535, MFT_SEPARATOR, MFS_ENABLED
+-	MENUITEM &quot;&amp;Delete&quot;, 6, MFT_STRING, MFS_ENABLED
+-	MENUITEM &quot;Rena&amp;me&quot;, 7, MFT_STRING, MFS_ENABLED
+-	MENUITEM &quot;&quot;, 65535, MFT_SEPARATOR, MFS_ENABLED
+-	MENUITEM &quot;P&amp;roperties&quot;, 8, MFT_STRING, MFS_ENABLED
++  POPUP &quot;&quot;, 0, MFT_STRING, MFS_ENABLED, 0
++  {
++    MENUITEM &quot;Stat&amp;us&quot;, 4, MFT_STRING, MFS_ENABLED
++    MENUITEM &quot;&quot;, -1, MFT_SEPARATOR, MFS_ENABLED
++    MENUITEM &quot;&amp;Delete&quot;, 6, MFT_STRING, MFS_ENABLED
++    MENUITEM &quot;Rena&amp;me&quot;, 7, MFT_STRING, MFS_ENABLED
++    MENUITEM &quot;&quot;, -1, MFT_SEPARATOR, MFS_ENABLED
++    MENUITEM &quot;P&amp;roperties&quot;, 8, MFT_STRING, MFS_ENABLED
++  }
+ }
+-}
+ 
+ 11031 MENUEX
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-POPUP &quot;&quot;, 0, MFT_STRING, MFS_ENABLED, 0
+-{
+-	MENUITEM &quot;Stat&amp;us&quot;, 4, MFT_STRING, MFS_ENABLED
++  POPUP &quot;&quot;, 0, MFT_STRING, MFS_ENABLED, 0
++  {
++    MENUITEM &quot;Stat&amp;us&quot;, 4, MFT_STRING, MFS_ENABLED
++  }
+ }
+-}
+ 
+ 11032 MENUEX
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-POPUP &quot;&quot;, 0, MFT_STRING, MFS_ENABLED, 0
+-{
+-	MENUITEM &quot;Disc&amp;onnect&quot;, 3, MFT_STRING, MFS_ENABLED
+-	MENUITEM &quot;Stat&amp;us&quot;, 4, MFT_STRING, MFS_ENABLED
+-	MENUITEM &quot;&quot;, 65535, MFT_SEPARATOR, MFS_ENABLED
+-	MENUITEM &quot;&amp;Delete&quot;, 6, MFT_STRING, MFS_ENABLED
+-	MENUITEM &quot;&quot;, 65535, MFT_SEPARATOR, MFS_ENABLED
+-	MENUITEM &quot;P&amp;roperties&quot;, 8, MFT_STRING, MFS_ENABLED
++  POPUP &quot;&quot;, 0, MFT_STRING, MFS_ENABLED, 0
++  {
++    MENUITEM &quot;Disc&amp;onnect&quot;, 3, MFT_STRING, MFS_ENABLED
++    MENUITEM &quot;Stat&amp;us&quot;, 4, MFT_STRING, MFS_ENABLED
++    MENUITEM &quot;&quot;, -1, MFT_SEPARATOR, MFS_ENABLED
++    MENUITEM &quot;&amp;Delete&quot;, 6, MFT_STRING, MFS_ENABLED
++    MENUITEM &quot;&quot;, -1, MFT_SEPARATOR, MFS_ENABLED
++    MENUITEM &quot;P&amp;roperties&quot;, 8, MFT_STRING, MFS_ENABLED
++  }
+ }
+-}
+ 
+ 11033 MENUEX
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-POPUP &quot;&quot;, 0, MFT_STRING, MFS_ENABLED, 0
+-{
+-	MENUITEM &quot;Disc&amp;onnect&quot;, 3, MFT_STRING, MFS_ENABLED
+-	MENUITEM &quot;Stat&amp;us&quot;, 4, MFT_STRING, MFS_ENABLED
++  POPUP &quot;&quot;, 0, MFT_STRING, MFS_ENABLED, 0
++  {
++    MENUITEM &quot;Disc&amp;onnect&quot;, 3, MFT_STRING, MFS_ENABLED
++    MENUITEM &quot;Stat&amp;us&quot;, 4, MFT_STRING, MFS_ENABLED
++  }
+ }
+-}
+ 
+ 11034 MENUEX
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-POPUP &quot;&quot;, 0, MFT_STRING, MFS_ENABLED, 0
+-{
+-	MENUITEM &quot;Stat&amp;us&quot;, 4, MFT_STRING, MFS_ENABLED
+-	MENUITEM &quot;&quot;, 65535, MFT_SEPARATOR, MFS_ENABLED
+-	MENUITEM &quot;&amp;Delete&quot;, 6, MFT_STRING, MFS_ENABLED
+-	MENUITEM &quot;&quot;, 65535, MFT_SEPARATOR, MFS_ENABLED
+-	MENUITEM &quot;P&amp;roperties&quot;, 8, MFT_STRING, MFS_ENABLED
++  POPUP &quot;&quot;, 0, MFT_STRING, MFS_ENABLED, 0
++  {
++    MENUITEM &quot;Stat&amp;us&quot;, 4, MFT_STRING, MFS_ENABLED
++    MENUITEM &quot;&quot;, -1, MFT_SEPARATOR, MFS_ENABLED
++    MENUITEM &quot;&amp;Delete&quot;, 6, MFT_STRING, MFS_ENABLED
++    MENUITEM &quot;&quot;, -1, MFT_SEPARATOR, MFS_ENABLED
++    MENUITEM &quot;P&amp;roperties&quot;, 8, MFT_STRING, MFS_ENABLED
++  }
+ }
+-}
+ 
+ 11035 MENUEX
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-POPUP &quot;&quot;, 0, MFT_STRING, MFS_ENABLED, 0
+-{
+-	MENUITEM &quot;Stat&amp;us&quot;, 4, MFT_STRING, MFS_ENABLED
++  POPUP &quot;&quot;, 0, MFT_STRING, MFS_ENABLED, 0
++  {
++    MENUITEM &quot;Stat&amp;us&quot;, 4, MFT_STRING, MFS_ENABLED
++  }
+ }
+-}
+ 
+ 11040 MENUEX
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-POPUP &quot;&quot;, 0, MFT_STRING, MFS_ENABLED, 0
+-{
+-	MENUITEM &quot;C&amp;onnect&quot;, 2, MFT_STRING, MFS_ENABLED
+-	MENUITEM &quot;Stat&amp;us&quot;, 4, MFT_STRING, MFS_ENABLED
+-	MENUITEM &quot;&quot;, 65535, MFT_SEPARATOR, MFS_ENABLED
+-	MENUITEM &quot;Create &amp;Shortcut&quot;, 5, MFT_STRING, MFS_ENABLED
+-	MENUITEM &quot;&amp;Delete&quot;, 6, MFT_STRING, MFS_ENABLED
+-	MENUITEM &quot;Rena&amp;me&quot;, 7, MFT_STRING, MFS_ENABLED
+-	MENUITEM &quot;&quot;, 65535, MFT_SEPARATOR, MFS_ENABLED
+-	MENUITEM &quot;P&amp;roperties&quot;, 8, MFT_STRING, MFS_ENABLED
++  POPUP &quot;&quot;, 0, MFT_STRING, MFS_ENABLED, 0
++  {
++    MENUITEM &quot;C&amp;onnect&quot;, 2, MFT_STRING, MFS_ENABLED
++    MENUITEM &quot;Stat&amp;us&quot;, 4, MFT_STRING, MFS_ENABLED
++    MENUITEM &quot;&quot;, -1, MFT_SEPARATOR, MFS_ENABLED
++    MENUITEM &quot;Create &amp;Shortcut&quot;, 5, MFT_STRING, MFS_ENABLED
++    MENUITEM &quot;&amp;Delete&quot;, 6, MFT_STRING, MFS_ENABLED
++    MENUITEM &quot;Rena&amp;me&quot;, 7, MFT_STRING, MFS_ENABLED
++    MENUITEM &quot;&quot;, -1, MFT_SEPARATOR, MFS_ENABLED
++    MENUITEM &quot;P&amp;roperties&quot;, 8, MFT_STRING, MFS_ENABLED
++  }
+ }
+-}
+ 
+ 11041 MENUEX
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-POPUP &quot;&quot;, 0, MFT_STRING, MFS_ENABLED, 0
+-{
+-	MENUITEM &quot;C&amp;onnect&quot;, 2, MFT_STRING, MFS_ENABLED
+-	MENUITEM &quot;Stat&amp;us&quot;, 4, MFT_STRING, MFS_ENABLED
++  POPUP &quot;&quot;, 0, MFT_STRING, MFS_ENABLED, 0
++  {
++    MENUITEM &quot;C&amp;onnect&quot;, 2, MFT_STRING, MFS_ENABLED
++    MENUITEM &quot;Stat&amp;us&quot;, 4, MFT_STRING, MFS_ENABLED
++  }
+ }
+-}
+ 
+ 11042 MENUEX
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-POPUP &quot;&quot;, 0, MFT_STRING, MFS_ENABLED, 0
+-{
+-	MENUITEM &quot;Disc&amp;onnect&quot;, 3, MFT_STRING, MFS_ENABLED
+-	MENUITEM &quot;Stat&amp;us&quot;, 4, MFT_STRING, MFS_ENABLED
+-	MENUITEM &quot;&quot;, 65535, MFT_SEPARATOR, MFS_ENABLED
+-	MENUITEM &quot;Create &amp;Shortcut&quot;, 5, MFT_STRING, MFS_ENABLED
+-	MENUITEM &quot;&amp;Delete&quot;, 6, MFT_STRING, MFS_ENABLED
+-	MENUITEM &quot;Rena&amp;me&quot;, 7, MFT_STRING, MFS_ENABLED
+-	MENUITEM &quot;&quot;, 65535, MFT_SEPARATOR, MFS_ENABLED
+-	MENUITEM &quot;P&amp;roperties&quot;, 8, MFT_STRING, MFS_ENABLED
++  POPUP &quot;&quot;, 0, MFT_STRING, MFS_ENABLED, 0
++  {
++    MENUITEM &quot;Disc&amp;onnect&quot;, 3, MFT_STRING, MFS_ENABLED
++    MENUITEM &quot;Stat&amp;us&quot;, 4, MFT_STRING, MFS_ENABLED
++    MENUITEM &quot;&quot;, -1, MFT_SEPARATOR, MFS_ENABLED
++    MENUITEM &quot;Create &amp;Shortcut&quot;, 5, MFT_STRING, MFS_ENABLED
++    MENUITEM &quot;&amp;Delete&quot;, 6, MFT_STRING, MFS_ENABLED
++    MENUITEM &quot;Rena&amp;me&quot;, 7, MFT_STRING, MFS_ENABLED
++    MENUITEM &quot;&quot;, -1, MFT_SEPARATOR, MFS_ENABLED
++    MENUITEM &quot;P&amp;roperties&quot;, 8, MFT_STRING, MFS_ENABLED
++  }
+ }
+-}
+ 
+ 11043 MENUEX
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-POPUP &quot;&quot;, 0, MFT_STRING, MFS_ENABLED, 0
+-{
+-	MENUITEM &quot;Disc&amp;onnect&quot;, 3, MFT_STRING, MFS_ENABLED
+-	MENUITEM &quot;Stat&amp;us&quot;, 4, MFT_STRING, MFS_ENABLED
++  POPUP &quot;&quot;, 0, MFT_STRING, MFS_ENABLED, 0
++  {
++    MENUITEM &quot;Disc&amp;onnect&quot;, 3, MFT_STRING, MFS_ENABLED
++    MENUITEM &quot;Stat&amp;us&quot;, 4, MFT_STRING, MFS_ENABLED
++  }
+ }
+-}
+ 
+ 11044 MENUEX
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-POPUP &quot;&quot;, 0, MFT_STRING, MFS_ENABLED, 0
+-{
+-	MENUITEM &quot;C&amp;onnect&quot;, 2, MFT_STRING, MFS_ENABLED
+-	MENUITEM &quot;Stat&amp;us&quot;, 4, MFT_STRING, MFS_ENABLED
+-	MENUITEM &quot;&quot;, 65535, MFT_SEPARATOR, MFS_ENABLED
+-	MENUITEM &quot;Create &amp;Shortcut&quot;, 5, MFT_STRING, MFS_ENABLED
+-	MENUITEM &quot;&amp;Delete&quot;, 6, MFT_STRING, MFS_ENABLED
+-	MENUITEM &quot;Rena&amp;me&quot;, 7, MFT_STRING, MFS_ENABLED
+-	MENUITEM &quot;&quot;, 65535, MFT_SEPARATOR, MFS_ENABLED
+-	MENUITEM &quot;P&amp;roperties&quot;, 8, MFT_STRING, MFS_ENABLED
++  POPUP &quot;&quot;, 0, MFT_STRING, MFS_ENABLED, 0
++  {
++    MENUITEM &quot;C&amp;onnect&quot;, 2, MFT_STRING, MFS_ENABLED
++    MENUITEM &quot;Stat&amp;us&quot;, 4, MFT_STRING, MFS_ENABLED
++    MENUITEM &quot;&quot;, -1, MFT_SEPARATOR, MFS_ENABLED
++    MENUITEM &quot;Create &amp;Shortcut&quot;, 5, MFT_STRING, MFS_ENABLED
++    MENUITEM &quot;&amp;Delete&quot;, 6, MFT_STRING, MFS_ENABLED
++    MENUITEM &quot;Rena&amp;me&quot;, 7, MFT_STRING, MFS_ENABLED
++    MENUITEM &quot;&quot;, -1, MFT_SEPARATOR, MFS_ENABLED
++    MENUITEM &quot;P&amp;roperties&quot;, 8, MFT_STRING, MFS_ENABLED
++  }
+ }
+-}
+ 
+ 11045 MENUEX
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-POPUP &quot;&quot;, 0, MFT_STRING, MFS_ENABLED, 0
+-{
+-	MENUITEM &quot;C&amp;onnect&quot;, 2, MFT_STRING, MFS_ENABLED
+-	MENUITEM &quot;Stat&amp;us&quot;, 4, MFT_STRING, MFS_ENABLED
++  POPUP &quot;&quot;, 0, MFT_STRING, MFS_ENABLED, 0
++  {
++    MENUITEM &quot;C&amp;onnect&quot;, 2, MFT_STRING, MFS_ENABLED
++    MENUITEM &quot;Stat&amp;us&quot;, 4, MFT_STRING, MFS_ENABLED
++  }
+ }
+-}
+ 
+ 11050 MENUEX
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-POPUP &quot;&quot;, 0, MFT_STRING, MFS_ENABLED, 0
+-{
+-	MENUITEM &quot;Disa&amp;ble&quot;, 17, MFT_STRING, MFS_ENABLED
+-	MENUITEM &quot;Stat&amp;us&quot;, 4, MFT_STRING, MFS_ENABLED
+-	MENUITEM &quot;&quot;, 65535, MFT_SEPARATOR, MFS_ENABLED
+-	MENUITEM &quot;Create &amp;Shortcut&quot;, 5, MFT_STRING, MFS_ENABLED
+-	MENUITEM &quot;&amp;Delete&quot;, 6, MFT_STRING, MFS_ENABLED
+-	MENUITEM &quot;Rena&amp;me&quot;, 7, MFT_STRING, MFS_ENABLED
+-	MENUITEM &quot;&quot;, 65535, MFT_SEPARATOR, MFS_ENABLED
+-	MENUITEM &quot;P&amp;roperties&quot;, 8, MFT_STRING, MFS_ENABLED
++  POPUP &quot;&quot;, 0, MFT_STRING, MFS_ENABLED, 0
++  {
++    MENUITEM &quot;Disa&amp;ble&quot;, 17, MFT_STRING, MFS_ENABLED
++    MENUITEM &quot;Stat&amp;us&quot;, 4, MFT_STRING, MFS_ENABLED
++    MENUITEM &quot;&quot;, -1, MFT_SEPARATOR, MFS_ENABLED
++    MENUITEM &quot;Create &amp;Shortcut&quot;, 5, MFT_STRING, MFS_ENABLED
++    MENUITEM &quot;&amp;Delete&quot;, 6, MFT_STRING, MFS_ENABLED
++    MENUITEM &quot;Rena&amp;me&quot;, 7, MFT_STRING, MFS_ENABLED
++    MENUITEM &quot;&quot;, -1, MFT_SEPARATOR, MFS_ENABLED
++    MENUITEM &quot;P&amp;roperties&quot;, 8, MFT_STRING, MFS_ENABLED
++  }
+ }
+-}
+ 
+ 11051 MENUEX
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-POPUP &quot;&quot;, 0, MFT_STRING, MFS_ENABLED, 0
+-{
+-	MENUITEM &quot;En&amp;able&quot;, 16, MFT_STRING, MFS_ENABLED
+-	MENUITEM &quot;Stat&amp;us&quot;, 4, MFT_STRING, MFS_ENABLED
+-	MENUITEM &quot;&quot;, 65535, MFT_SEPARATOR, MFS_ENABLED
+-	MENUITEM &quot;Create &amp;Shortcut&quot;, 5, MFT_STRING, MFS_ENABLED
+-	MENUITEM &quot;&amp;Delete&quot;, 6, MFT_STRING, MFS_ENABLED
+-	MENUITEM &quot;Rena&amp;me&quot;, 7, MFT_STRING, MFS_ENABLED
+-	MENUITEM &quot;&quot;, 65535, MFT_SEPARATOR, MFS_ENABLED
+-	MENUITEM &quot;P&amp;roperties&quot;, 8, MFT_STRING, MFS_ENABLED
++  POPUP &quot;&quot;, 0, MFT_STRING, MFS_ENABLED, 0
++  {
++    MENUITEM &quot;En&amp;able&quot;, 16, MFT_STRING, MFS_ENABLED
++    MENUITEM &quot;Stat&amp;us&quot;, 4, MFT_STRING, MFS_ENABLED
++    MENUITEM &quot;&quot;, -1, MFT_SEPARATOR, MFS_ENABLED
++    MENUITEM &quot;Create &amp;Shortcut&quot;, 5, MFT_STRING, MFS_ENABLED
++    MENUITEM &quot;&amp;Delete&quot;, 6, MFT_STRING, MFS_ENABLED
++    MENUITEM &quot;Rena&amp;me&quot;, 7, MFT_STRING, MFS_ENABLED
++    MENUITEM &quot;&quot;, -1, MFT_SEPARATOR, MFS_ENABLED
++    MENUITEM &quot;P&amp;roperties&quot;, 8, MFT_STRING, MFS_ENABLED
++  }
+ }
+-}
+ 
+ 11052 MENUEX
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-POPUP &quot;&quot;, 0, MFT_STRING, MFS_ENABLED, 0
+-{
+-	MENUITEM &quot;Disc&amp;onnect&quot;, 3, MFT_STRING, MFS_ENABLED
+-	MENUITEM &quot;Stat&amp;us&quot;, 4, MFT_STRING, MFS_ENABLED
+-	MENUITEM &quot;&quot;, 65535, MFT_SEPARATOR, MFS_ENABLED
+-	MENUITEM &quot;Create &amp;Copy&quot;, 9, MFT_STRING, MFS_ENABLED
+-	MENUITEM &quot;&quot;, 65535, MFT_SEPARATOR, MFS_ENABLED
+-	MENUITEM &quot;Create &amp;Shortcut&quot;, 5, MFT_STRING, MFS_ENABLED
+-	MENUITEM &quot;&amp;Delete&quot;, 6, MFT_STRING, MFS_ENABLED
+-	MENUITEM &quot;Rena&amp;me&quot;, 7, MFT_STRING, MFS_ENABLED
+-	MENUITEM &quot;&quot;, 65535, MFT_SEPARATOR, MFS_ENABLED
+-	MENUITEM &quot;P&amp;roperties&quot;, 8, MFT_STRING, MFS_ENABLED
++  POPUP &quot;&quot;, 0, MFT_STRING, MFS_ENABLED, 0
++  {
++    MENUITEM &quot;Disc&amp;onnect&quot;, 3, MFT_STRING, MFS_ENABLED
++    MENUITEM &quot;Stat&amp;us&quot;, 4, MFT_STRING, MFS_ENABLED
++    MENUITEM &quot;&quot;, -1, MFT_SEPARATOR, MFS_ENABLED
++    MENUITEM &quot;Create &amp;Copy&quot;, 9, MFT_STRING, MFS_ENABLED
++    MENUITEM &quot;&quot;, -1, MFT_SEPARATOR, MFS_ENABLED
++    MENUITEM &quot;Create &amp;Shortcut&quot;, 5, MFT_STRING, MFS_ENABLED
++    MENUITEM &quot;&amp;Delete&quot;, 6, MFT_STRING, MFS_ENABLED
++    MENUITEM &quot;Rena&amp;me&quot;, 7, MFT_STRING, MFS_ENABLED
++    MENUITEM &quot;&quot;, -1, MFT_SEPARATOR, MFS_ENABLED
++    MENUITEM &quot;P&amp;roperties&quot;, 8, MFT_STRING, MFS_ENABLED
++  }
+ }
+-}
+ 
+ 11053 MENUEX
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-POPUP &quot;&quot;, 0, MFT_STRING, MFS_ENABLED, 0
+-{
+-	MENUITEM &quot;C&amp;onnect&quot;, 2, MFT_STRING, MFS_ENABLED
+-	MENUITEM &quot;Stat&amp;us&quot;, 4, MFT_STRING, MFS_ENABLED
+-	MENUITEM &quot;&quot;, 65535, MFT_SEPARATOR, MFS_ENABLED
+-	MENUITEM &quot;Create &amp;Copy&quot;, 9, MFT_STRING, MFS_ENABLED
+-	MENUITEM &quot;&quot;, 65535, MFT_SEPARATOR, MFS_ENABLED
+-	MENUITEM &quot;Create &amp;Shortcut&quot;, 5, MFT_STRING, MFS_ENABLED
+-	MENUITEM &quot;&amp;Delete&quot;, 6, MFT_STRING, MFS_ENABLED
+-	MENUITEM &quot;Rena&amp;me&quot;, 7, MFT_STRING, MFS_ENABLED
+-	MENUITEM &quot;&quot;, 65535, MFT_SEPARATOR, MFS_ENABLED
+-	MENUITEM &quot;P&amp;roperties&quot;, 8, MFT_STRING, MFS_ENABLED
++  POPUP &quot;&quot;, 0, MFT_STRING, MFS_ENABLED, 0
++  {
++    MENUITEM &quot;C&amp;onnect&quot;, 2, MFT_STRING, MFS_ENABLED
++    MENUITEM &quot;Stat&amp;us&quot;, 4, MFT_STRING, MFS_ENABLED
++    MENUITEM &quot;&quot;, -1, MFT_SEPARATOR, MFS_ENABLED
++    MENUITEM &quot;Create &amp;Copy&quot;, 9, MFT_STRING, MFS_ENABLED
++    MENUITEM &quot;&quot;, -1, MFT_SEPARATOR, MFS_ENABLED
++    MENUITEM &quot;Create &amp;Shortcut&quot;, 5, MFT_STRING, MFS_ENABLED
++    MENUITEM &quot;&amp;Delete&quot;, 6, MFT_STRING, MFS_ENABLED
++    MENUITEM &quot;Rena&amp;me&quot;, 7, MFT_STRING, MFS_ENABLED
++    MENUITEM &quot;&quot;, -1, MFT_SEPARATOR, MFS_ENABLED
++    MENUITEM &quot;P&amp;roperties&quot;, 8, MFT_STRING, MFS_ENABLED
++  }
+ }
+-}
+ 
+ 11100 MENUEX
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-POPUP &quot;&quot;, 32768, MFT_STRING, MFS_ENABLED, 0
+-{
+-	MENUITEM &quot;C&amp;onnect&quot;, 2, MFT_STRING, MFS_ENABLED
+-	MENUITEM &quot;Stat&amp;us&quot;, 4, MFT_STRING, MFS_ENABLED
+-	MENUITEM &quot;D&amp;iagnose&quot;, 23, MFT_STRING, MFS_ENABLED
+-	MENUITEM &quot;&quot;, 65535, MFT_SEPARATOR, MFS_ENABLED
+-	MENUITEM &quot;&amp;New Incoming Connection...&quot;, 1, MFT_STRING, MFS_ENABLED
+-	MENUITEM &quot;&quot;, 65535, MFT_SEPARATOR, MFS_ENABLED
+-	MENUITEM &quot;Cr&amp;eate Copy&quot;, 9, MFT_STRING, MFS_ENABLED
++  POPUP &quot;&quot;, 32768, MFT_STRING, MFS_ENABLED, 0
++  {
++    MENUITEM &quot;C&amp;onnect&quot;, 2, MFT_STRING, MFS_ENABLED
++    MENUITEM &quot;Stat&amp;us&quot;, 4, MFT_STRING, MFS_ENABLED
++    MENUITEM &quot;D&amp;iagnose&quot;, 23, MFT_STRING, MFS_ENABLED
++    MENUITEM &quot;&quot;, -1, MFT_SEPARATOR, MFS_ENABLED
++    MENUITEM &quot;&amp;New Incoming Connection...&quot;, 1, MFT_STRING, MFS_ENABLED
++    MENUITEM &quot;&quot;, -1, MFT_SEPARATOR, MFS_ENABLED
++    MENUITEM &quot;Cr&amp;eate Copy&quot;, 9, MFT_STRING, MFS_ENABLED
++  }
++  POPUP &quot;Arrange &amp;Icons&quot;, 28673, MFT_STRING, MFS_ENABLED, 0
++  {
++    MENUITEM &quot;By &amp;Name&quot;, 39, MFT_STRING, MFS_ENABLED
++    MENUITEM &quot;By &amp;Type&quot;, 40, MFT_STRING, MFS_ENABLED
++    MENUITEM &quot;By &amp;Status&quot;, 41, MFT_STRING, MFS_ENABLED
++    MENUITEM &quot;By &amp;Connectivity&quot;, 51, MFT_STRING, MFS_ENABLED
++    MENUITEM &quot;By Net&amp;work Category&quot;, 52, MFT_STRING, MFS_ENABLED
++    MENUITEM &quot;By De&amp;vice Name&quot;, 50, MFT_STRING, MFS_ENABLED
++    MENUITEM &quot;By &amp;Phone # or Host Adddress&quot;, 49, MFT_STRING, MFS_ENABLED
++    MENUITEM &quot;By &amp;Owner&quot;, 48, MFT_STRING, MFS_ENABLED
++  }
+ }
+-POPUP &quot;Arrange &amp;Icons&quot;, 28673, MFT_STRING, MFS_ENABLED, 0
+-{
+-	MENUITEM &quot;By &amp;Name&quot;, 39, MFT_STRING, MFS_ENABLED
+-	MENUITEM &quot;By &amp;Type&quot;, 40, MFT_STRING, MFS_ENABLED
+-	MENUITEM &quot;By &amp;Status&quot;, 41, MFT_STRING, MFS_ENABLED
+-	MENUITEM &quot;By &amp;Connectivity&quot;, 51, MFT_STRING, MFS_ENABLED
+-	MENUITEM &quot;By Net&amp;work Category&quot;, 52, MFT_STRING, MFS_ENABLED
+-	MENUITEM &quot;By De&amp;vice Name&quot;, 50, MFT_STRING, MFS_ENABLED
+-	MENUITEM &quot;By &amp;Phone # or Host Adddress&quot;, 49, MFT_STRING, MFS_ENABLED
+-	MENUITEM &quot;By &amp;Owner&quot;, 48, MFT_STRING, MFS_ENABLED
+-}
+-}
+ 
+ 11112 MENUEX
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-POPUP &quot;&quot;, 0, MFT_STRING, MFS_ENABLED, 0
+-{
+-	POPUP &quot;Adva&amp;nced&quot;, 32, MFT_STRING, MFS_ENABLED, 0
+-	{
+-		MENUITEM &quot;O&amp;perator-Assisted Dialing&quot;, 36, MFT_STRING, MFS_ENABLED
+-		MENUITEM &quot;&amp;Remote Access Preferences...&quot;, 33, MFT_STRING, MFS_ENABLED
+-		MENUITEM &quot;&quot;, 65535, MFT_SEPARATOR, MFS_ENABLED
+-		MENUITEM &quot;Bridge &amp;Connections&quot;, 53, MFT_STRING, MFS_ENABLED
+-		MENUITEM &quot;Advanced &amp;Settings...&quot;, 34, MFT_STRING, MFS_ENABLED
+-	}
++  POPUP &quot;&quot;, 0, MFT_STRING, MFS_ENABLED, 0
++  {
++    POPUP &quot;Adva&amp;nced&quot;, 32, MFT_STRING, MFS_ENABLED, 0
++    {
++      MENUITEM &quot;O&amp;perator-Assisted Dialing&quot;, 36, MFT_STRING, MFS_ENABLED
++      MENUITEM &quot;&amp;Remote Access Preferences...&quot;, 33, MFT_STRING, MFS_ENABLED
++      MENUITEM &quot;&quot;, -1, MFT_SEPARATOR, MFS_ENABLED
++      MENUITEM &quot;Bridge &amp;Connections&quot;, 53, MFT_STRING, MFS_ENABLED
++      MENUITEM &quot;Advanced &amp;Settings...&quot;, 34, MFT_STRING, MFS_ENABLED
++    }
++  }
+ }
+-}
+ 
+ 11113 MENUEX
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-POPUP &quot;&quot;, 0, MFT_STRING, MFS_ENABLED, 0
+-{
+-	MENUITEM &quot;C&amp;onnect&quot;, 2, MFT_STRING, MFS_ENABLED
++  POPUP &quot;&quot;, 0, MFT_STRING, MFS_ENABLED, 0
++  {
++    MENUITEM &quot;C&amp;onnect&quot;, 2, MFT_STRING, MFS_ENABLED
++  }
+ }
+-}
+ 
+ 10500 DIALOGEX 0, 0, 240, 34
+-STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_VISIBLE | WS_CAPTION
+ CAPTION &quot;&quot;
+-LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+-FONT 8, &quot;MS Shell Dlg&quot;
++STYLE 0x90c008c0
++EXSTYLE 0x0
++FONT 8, &quot;MS Shell Dlg&quot;, 0, 0, 0
+ {
+-   CONTROL 1911, -1, STATIC, SS_ICON | WS_CHILD | WS_VISIBLE, 7, 7, 20, 20 
+-   CONTROL &quot;&quot;, 10501, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 40, 12, 190, 8 
++  CONTROL 1911, 65535, Static, 0x50000003, 7, 7, 20, 20, 0x0
++  CONTROL &quot;&quot;, 10501, Static, 0x50020000, 40, 12, 190, 8, 0x0
+ }
+ 
+ 10751 DIALOGEX 0, 0, 227, 189
+-STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+ CAPTION &quot;Sharing&quot;
+-LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+-FONT 8, &quot;MS Shell Dlg&quot;
++STYLE 0x80c800c0
++EXSTYLE 0x0
++FONT 8, &quot;MS Shell Dlg&quot;, 0, 0, 0
+ {
+-   CONTROL &quot;Internet Connection Sharing&quot;, 103, BUTTON, BS_GROUPBOX | WS_CHILD | WS_VISIBLE, 7, 8, 213, 97 
+-   CONTROL &quot;Internet Connection Sharing&quot;, 104, BUTTON, BS_GROUPBOX | WS_CHILD, 7, 8, 213, 117 
+-   CONTROL &quot;Internet Connection Sharing&quot;, 115, BUTTON, BS_GROUPBOX | WS_CHILD, 7, 8, 213, 52 
+-   CONTROL &quot;Allow other &amp;network users to connect through this computer's Internet connection&quot;, 105, BUTTON, BS_AUTOCHECKBOX | BS_TOP | BS_MULTILINE | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 14, 24, 194, 16 
+-   CONTROL &quot;&amp;Home networking connection:&quot;, 106, STATIC, SS_LEFT | WS_CHILD | WS_DISABLED | WS_GROUP, 26, 47, 189, 8 
+-   CONTROL &quot;&quot;, 107, COMBOBOX, CBS_DROPDOWNLIST | WS_CHILD | WS_VSCROLL | WS_TABSTOP, 26, 58, 189, 50 
+-   CONTROL &quot;&quot;, 108, EDIT, ES_LEFT | ES_AUTOHSCROLL | ES_READONLY | WS_CHILD | WS_TABSTOP, 26, 58, 189, 12 , 0x00000200
+-   CONTROL &quot;All&amp;ow other network users to control or disable the shared Internet connection&quot;, 109, BUTTON, BS_AUTOCHECKBOX | BS_TOP | BS_MULTILINE | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 14, 58, 188, 16 
+-   CONTROL &quot;&quot;, 110, STATIC, SS_ETCHEDHORZ | WS_CHILD | WS_DISABLED, 15, 78, 194, 1 
+-   CONTROL &quot;&lt;A&gt;Using ICS (Internet Connection Sharing)&lt;/A&gt;&quot;, 111, &quot;Link Window&quot;, 0x50010000, 15, 82, 138, 20 
+-   CONTROL &quot;Settin&amp;gs...&quot;, 112, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 164, 82, 50, 14 
++  CONTROL &quot;Internet Connection Sharing&quot;, 103, Button, 0x50000007, 7, 8, 213, 97, 0x0
++  CONTROL &quot;Internet Connection Sharing&quot;, 104, Button, 0x40000007 | NOT WS_VISIBLE, 7, 8, 213, 117, 0x0
++  CONTROL &quot;Internet Connection Sharing&quot;, 115, Button, 0x40000007 | NOT WS_VISIBLE, 7, 8, 213, 52, 0x0
++  CONTROL &quot;Allow other &amp;network users to connect through this computer's Internet connection&quot;, 105, Button, 0x50012403, 14, 24, 194, 16, 0x0
++  CONTROL &quot;&amp;Home networking connection:&quot;, 106, Static, 0x48020000 | NOT WS_VISIBLE, 26, 47, 189, 8, 0x0
++  CONTROL &quot;&quot;, 107, ComboBox, 0x40210003 | NOT WS_VISIBLE, 26, 58, 189, 50, 0x0
++  CONTROL &quot;&quot;, 108, Edit, 0x40010880 | NOT WS_VISIBLE, 26, 58, 189, 12, 0x200
++  CONTROL &quot;All&amp;ow other network users to control or disable the shared Internet connection&quot;, 109, Button, 0x50012403, 14, 58, 188, 16, 0x0
++  CONTROL &quot;&quot;, 110, Static, 0x48000010 | NOT WS_VISIBLE, 15, 78, 194, 1, 0x0
++  CONTROL &quot;&lt;A&gt;Using ICS (Internet Connection Sharing)&lt;/A&gt;&quot;, 111, &quot;Link Window&quot;, 0x50010000, 15, 82, 138, 20, 0x0
++  CONTROL &quot;Settin&amp;gs...&quot;, 112, Button, 0x50010000, 164, 82, 50, 14, 0x0
+ }
+ 
+ 16001 DIALOGEX 0, 0, 200, 153
+-STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+ CAPTION &quot;Select Network Feature Type&quot;
+-LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+-FONT 8, &quot;MS Shell Dlg&quot;
++STYLE 0x80c800c0
++EXSTYLE 0x0
++FONT 8, &quot;MS Shell Dlg&quot;, 0, 0, 0
+ {
+-   CONTROL &quot;&quot;, 15006, &quot;SysListView32&quot;, LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_NOCOLUMNHEADER | LVS_NOSORTHEADER | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 7, 26, 186, 40 
+-   CONTROL &quot;&amp;Add...&quot;, 15009, BUTTON, BS_DEFPUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 86, 132, 50, 14 
+-   CONTROL &quot;Cancel&quot;, 2, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 143, 132, 50, 14 
+-   CONTROL &quot;&amp;Click the type of network feature you want to install:&quot;, -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 7, 15, 186, 8 
+-   CONTROL &quot;Description&quot;, -1, BUTTON, BS_GROUPBOX | WS_CHILD | WS_VISIBLE, 7, 70, 186, 52 
+-   CONTROL &quot;&quot;, 15019, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 16, 83, 168, 32 
++  CONTROL &quot;&quot;, 15006, &quot;SysListView32&quot;, 0x5081c00d, 7, 26, 186, 40, 0x0
++  CONTROL &quot;&amp;Add...&quot;, 15009, Button, 0x50010001, 86, 132, 50, 14, 0x0
++  CONTROL &quot;Cancel&quot;, 2, Button, 0x50010000, 143, 132, 50, 14, 0x0
++  CONTROL &quot;&amp;Click the type of network feature you want to install:&quot;, 65535, Static, 0x50020000, 7, 15, 186, 8, 0x0
++  CONTROL &quot;Description&quot;, 65535, Button, 0x50000007, 7, 70, 186, 52, 0x0
++  CONTROL &quot;&quot;, 15019, Static, 0x50020000, 16, 83, 168, 32, 0x0
+ }
+ 
+ 16002 DIALOGEX 0, 0, 175, 34
+-STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_VISIBLE | WS_CAPTION
+ CAPTION &quot;&quot;
+-LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+-FONT 8, &quot;MS Shell Dlg&quot;
++STYLE 0x90c008c0
++EXSTYLE 0x0
++FONT 8, &quot;MS Shell Dlg&quot;, 0, 0, 0
+ {
+-   CONTROL &quot;&quot;, 16006, STATIC, SS_ICON | WS_CHILD | WS_VISIBLE, 7, 7, 20, 20 
+-   CONTROL &quot;Enabling...&quot;, 15018, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 40, 12, 128, 8 
++  CONTROL &quot;&quot;, 16006, Static, 0x50000003, 7, 7, 20, 20, 0x0
++  CONTROL &quot;Enabling...&quot;, 15018, Static, 0x50020000, 40, 12, 128, 8, 0x0
+ }
+ 
+ 16004 DIALOGEX 0, 0, 227, 226
+-STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+ CAPTION &quot;Networking&quot;
+-LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+-FONT 8, &quot;MS Shell Dlg&quot;
++STYLE 0x48c00040
++EXSTYLE 0x0
++FONT 8, &quot;MS Shell Dlg&quot;, 0, 0, 0
+ {
+-   CONTROL &quot;Connect using:&quot;, -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 7, 7, 48, 8 
+-   CONTROL &quot;&quot;, 15021, EDIT, ES_LEFT | ES_AUTOHSCROLL | ES_READONLY | WS_CHILD | WS_VISIBLE | WS_DISABLED | WS_BORDER, 7, 18, 213, 18 
+-   CONTROL &quot;&quot;, 15003, EDIT, ES_LEFT | ES_AUTOHSCROLL | ES_READONLY | WS_CHILD | WS_VISIBLE, 28, 21, 182, 12 
+-   CONTROL &quot;&quot;, 16006, STATIC, SS_ICON | WS_CHILD, 12, 20, 16, 16 
+-   CONTROL &quot;&amp;Configure...&quot;, 15031, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 160, 39, 60, 14 
+-   CONTROL &quot;This c&amp;onnection uses the following items:&quot;, 16055, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 7, 54, 213, 8 
+-   CONTROL &quot;&quot;, 15007, &quot;SysListView32&quot;, LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_NOCOLUMNHEADER | LVS_NOSORTHEADER | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 7, 66, 213, 86 
+-   CONTROL &quot;I&amp;nstall...&quot;, 15008, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 7, 156, 67, 14 
+-   CONTROL &quot;&amp;Uninstall&quot;, 15012, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 80, 156, 67, 14 
+-   CONTROL &quot;P&amp;roperties&quot;, 15011, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 153, 156, 67, 14 
+-   CONTROL &quot;Description&quot;, 16056, BUTTON, BS_GROUPBOX | WS_CHILD | WS_VISIBLE, 7, 173, 213, 42 
+-   CONTROL &quot;&quot;, 15020, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 16, 184, 196, 28 
++  CONTROL &quot;Connect using:&quot;, 65535, Static, 0x50020000, 7, 7, 48, 8, 0x0
++  CONTROL &quot;&quot;, 15021, Edit, 0x58800880, 7, 18, 213, 18, 0x0
++  CONTROL &quot;&quot;, 15003, Edit, 0x50000880, 28, 21, 182, 12, 0x0
++  CONTROL &quot;&quot;, 16006, Static, 0x40000003 | NOT WS_VISIBLE, 12, 20, 16, 16, 0x0
++  CONTROL &quot;&amp;Configure...&quot;, 15031, Button, 0x50010000, 160, 39, 60, 14, 0x0
++  CONTROL &quot;This c&amp;onnection uses the following items:&quot;, 16055, Static, 0x50020000, 7, 54, 213, 8, 0x0
++  CONTROL &quot;&quot;, 15007, &quot;SysListView32&quot;, 0x5081c00d, 7, 66, 213, 86, 0x0
++  CONTROL &quot;I&amp;nstall...&quot;, 15008, Button, 0x50010000, 7, 156, 67, 14, 0x0
++  CONTROL &quot;&amp;Uninstall&quot;, 15012, Button, 0x50010000, 80, 156, 67, 14, 0x0
++  CONTROL &quot;P&amp;roperties&quot;, 15011, Button, 0x50010000, 153, 156, 67, 14, 0x0
++  CONTROL &quot;Description&quot;, 16056, Button, 0x50000007, 7, 173, 213, 42, 0x0
++  CONTROL &quot;&quot;, 15020, Static, 0x50020000, 16, 184, 196, 28, 0x0
+ }
+ 
+ 16058 DIALOGEX 0, 0, 227, 189
+-STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+ CAPTION &quot;Networking&quot;
+-LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+-FONT 8, &quot;MS Shell Dlg&quot;
++STYLE 0x48c00040
++EXSTYLE 0x0
++FONT 8, &quot;MS Shell Dlg&quot;, 0, 0, 0
+ {
+-   CONTROL &quot;Connect using:&quot;, -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 7, 7, 48, 8 
+-   CONTROL &quot;&quot;, 15021, EDIT, ES_LEFT | ES_AUTOHSCROLL | ES_READONLY | WS_CHILD | WS_VISIBLE | WS_DISABLED | WS_BORDER, 7, 18, 213, 18 
+-   CONTROL &quot;&quot;, 15003, EDIT, ES_LEFT | ES_AUTOHSCROLL | ES_READONLY | WS_CHILD | WS_VISIBLE, 28, 21, 182, 12 
+-   CONTROL &quot;&quot;, 16006, STATIC, SS_ICON | WS_CHILD, 12, 20, 16, 16 
+-   CONTROL &quot;&amp;Configure...&quot;, 15031, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 160, 39, 60, 14 
+-   CONTROL &quot;This adapter is part of the Network Bridge.  To remove this adapter from the Network Bridge, or to modify bridge settings, right-click the Network Bridge, and then click Properties.&quot;, 16057, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 7, 64, 213, 24 
++  CONTROL &quot;Connect using:&quot;, 65535, Static, 0x50020000, 7, 7, 48, 8, 0x0
++  CONTROL &quot;&quot;, 15021, Edit, 0x58800880, 7, 18, 213, 18, 0x0
++  CONTROL &quot;&quot;, 15003, Edit, 0x50000880, 28, 21, 182, 12, 0x0
++  CONTROL &quot;&quot;, 16006, Static, 0x40000003 | NOT WS_VISIBLE, 12, 20, 16, 16, 0x0
++  CONTROL &quot;&amp;Configure...&quot;, 15031, Button, 0x50010000, 160, 39, 60, 14, 0x0
++  CONTROL &quot;This adapter is part of the Network Bridge.  To remove this adapter from the Network Bridge, or to modify bridge settings, right-click the Network Bridge, and then click Properties.&quot;, 16057, Static, 0x50020000, 7, 64, 213, 24, 0x0
+ }
+ 
+ 16059 DIALOGEX 0, 0, 227, 239
+-STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+ CAPTION &quot;Networking&quot;
+-LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+-FONT 8, &quot;MS Shell Dlg&quot;
++STYLE 0x48c00040
++EXSTYLE 0x0
++FONT 8, &quot;MS Shell Dlg&quot;, 0, 0, 0
+ {
+-   CONTROL &quot;Adapters:&quot;, -1, BUTTON, BS_GROUPBOX | WS_CHILD | WS_VISIBLE, 7, 7, 213, 103 
+-   CONTROL &quot;Select the &amp;adapters you want to use to connect to computers on your local network.&quot;, -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 16, 23, 195, 16 
+-   CONTROL &quot;&quot;, 16060, &quot;SysListView32&quot;, LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_NOCOLUMNHEADER | LVS_NOSORTHEADER | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 16, 42, 195, 43 
+-   CONTROL &quot;&amp;Configure...&quot;, 15031, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 150, 90, 60, 14 
+-   CONTROL &quot;This c&amp;onnection uses the following items:&quot;, -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 7, 114, 213, 8 
+-   CONTROL &quot;&quot;, 15007, &quot;SysListView32&quot;, LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_NOCOLUMNHEADER | LVS_NOSORTHEADER | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 7, 124, 213, 86 
+-   CONTROL &quot;I&amp;nstall...&quot;, 15008, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 7, 214, 67, 14 
+-   CONTROL &quot;&amp;Uninstall&quot;, 15012, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 80, 214, 67, 14 
+-   CONTROL &quot;P&amp;roperties&quot;, 15011, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 153, 214, 67, 14 
++  CONTROL &quot;Adapters:&quot;, 65535, Button, 0x50000007, 7, 7, 213, 103, 0x0
++  CONTROL &quot;Select the &amp;adapters you want to use to connect to computers on your local network.&quot;, 65535, Static, 0x50020000, 16, 23, 195, 16, 0x0
++  CONTROL &quot;&quot;, 16060, &quot;SysListView32&quot;, 0x5081c00d, 16, 42, 195, 43, 0x0
++  CONTROL &quot;&amp;Configure...&quot;, 15031, Button, 0x50010000, 150, 90, 60, 14, 0x0
++  CONTROL &quot;This c&amp;onnection uses the following items:&quot;, 65535, Static, 0x50020000, 7, 114, 213, 8, 0x0
++  CONTROL &quot;&quot;, 15007, &quot;SysListView32&quot;, 0x5081c00d, 7, 124, 213, 86, 0x0
++  CONTROL &quot;I&amp;nstall...&quot;, 15008, Button, 0x50010000, 7, 214, 67, 14, 0x0
++  CONTROL &quot;&amp;Uninstall&quot;, 15012, Button, 0x50010000, 80, 214, 67, 14, 0x0
++  CONTROL &quot;P&amp;roperties&quot;, 15011, Button, 0x50010000, 153, 214, 67, 14, 0x0
+ }
+ 
+ 16064 DIALOGEX 0, 0, 227, 189
+-STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+ CAPTION &quot;Networking&quot;
+-LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+-FONT 8, &quot;MS Shell Dlg&quot;
++STYLE 0x48c00040
++EXSTYLE 0x0
++FONT 8, &quot;MS Shell Dlg&quot;, 0, 0, 0
+ {
+-   CONTROL &quot;Connect to the Internet using:&quot;, 15070, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 7, 7, 213, 8 
+-   CONTROL &quot;&quot;, 15021, EDIT, ES_LEFT | ES_AUTOHSCROLL | ES_READONLY | WS_CHILD | WS_VISIBLE | WS_DISABLED | WS_BORDER, 7, 18, 213, 18 
+-   CONTROL &quot;&quot;, 15003, EDIT, ES_LEFT | ES_AUTOHSCROLL | ES_READONLY | WS_CHILD | WS_VISIBLE, 28, 21, 182, 12 
+-   CONTROL &quot;&quot;, 16006, STATIC, SS_ICON | WS_CHILD, 12, 20, 16, 16 
+-   CONTROL &quot;This connection allows you to connect to the Internet through a shared connection on another computer.&quot;, 15069, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 7, 64, 213, 24 
+-   CONTROL &quot;Settin&amp;gs...&quot;, 15030, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 170, 170, 50, 14 
++  CONTROL &quot;Connect to the Internet using:&quot;, 15070, Static, 0x50020000, 7, 7, 213, 8, 0x0
++  CONTROL &quot;&quot;, 15021, Edit, 0x58800880, 7, 18, 213, 18, 0x0
++  CONTROL &quot;&quot;, 15003, Edit, 0x50000880, 28, 21, 182, 12, 0x0
++  CONTROL &quot;&quot;, 16006, Static, 0x40000003 | NOT WS_VISIBLE, 12, 20, 16, 16, 0x0
++  CONTROL &quot;This connection allows you to connect to the Internet through a shared connection on another computer.&quot;, 15069, Static, 0x50020000, 7, 64, 213, 24, 0x0
++  CONTROL &quot;Settin&amp;gs...&quot;, 15030, Button, 0x50010000, 170, 170, 50, 14, 0x0
+ }
+ 
+ 16076 DIALOGEX 0, 0, 227, 189
+-STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+ CAPTION &quot;Sharing&quot;
+-LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+-FONT 8, &quot;MS Shell Dlg&quot;
++STYLE 0x80c800c0
++EXSTYLE 0x0
++FONT 8, &quot;MS Shell Dlg&quot;, 0, 0, 0
+ {
+-   CONTROL &quot;&quot;, 16077, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 7, 60, 213, 100 
++  CONTROL &quot;&quot;, 16077, Static, 0x50020000, 7, 60, 213, 100, 0x0
+ }
+ 
+ 22000 DIALOGEX 0, 0, 182, 82
+-STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+ CAPTION &quot;Choose Connection&quot;
+-LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+-FONT 8, &quot;MS Shell Dlg&quot;
++STYLE 0x80c800c0
++EXSTYLE 0x0
++FONT 8, &quot;MS Shell Dlg&quot;, 0, 0, 0
+ {
+-   CONTROL &quot;Choose a network &amp;connection:&quot;, 22044, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 7, 7, 112, 8 
+-   CONTROL &quot;&quot;, 22043, &quot;ComboBoxEx32&quot;, 0x50210003, 7, 17, 172, 57 
+-   CONTROL &quot;OK&quot;, 22040, BUTTON, BS_DEFPUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 7, 60, 52, 14 
+-   CONTROL &quot;Cancel&quot;, 2, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 65, 60, 52, 14 
+-   CONTROL &quot;&amp;Properties&quot;, 22042, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 123, 60, 52, 14 
++  CONTROL &quot;Choose a network &amp;connection:&quot;, 22044, Static, 0x50020000, 7, 7, 112, 8, 0x0
++  CONTROL &quot;&quot;, 22043, &quot;ComboBoxEx32&quot;, 0x50210003, 7, 17, 172, 57, 0x0
++  CONTROL &quot;OK&quot;, 22040, Button, 0x50010001, 7, 60, 52, 14, 0x0
++  CONTROL &quot;Cancel&quot;, 2, Button, 0x50010000, 65, 60, 52, 14, 0x0
++  CONTROL &quot;&amp;Properties&quot;, 22042, Button, 0x50010000, 123, 60, 52, 14, 0x0
+ }
+ 
+ 23500 DIALOGEX 0, 0, 227, 215
+-STYLE DS_FIXEDSYS | WS_CHILD | WS_CAPTION | WS_SYSMENU
+ CAPTION &quot;General&quot;
+-LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+-FONT 8, &quot;MS Shell Dlg&quot;
++STYLE 0x40c80048
++EXSTYLE 0x0
++FONT 8, &quot;MS Shell Dlg&quot;, 0, 0, 0
+ {
+-   CONTROL &quot;IPv4 Connectivity:&quot;, 23501, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 17, 21, 100, 8 
+-   CONTROL &quot;None&quot;, 23502, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 110, 21, 100, 8 , 0x00001000
+-   CONTROL &quot;IPv6 Connectivity:&quot;, 23503, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 17, 33, 100, 8 
+-   CONTROL &quot;None&quot;, 23504, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 110, 33, 100, 8 , 0x00001000
+-   CONTROL &quot;Media State:&quot;, 1032, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 17, 45, 100, 8 
+-   CONTROL &quot;Disconnected&quot;, 1007, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 73, 45, 137, 8 , 0x00001000
+-   CONTROL &quot;Duration:&quot;, 1033, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 17, 57, 100, 8 
+-   CONTROL &quot;00:00:00&quot;, 1008, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 73, 57, 137, 8 , 0x00001000
+-   CONTROL &quot;Speed:&quot;, 1034, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 17, 69, 100, 8 
+-   CONTROL &quot;0 bps&quot;, 1009, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 73, 69, 137, 8 , 0x00001000
+-   CONTROL &quot;D&amp;etails...&quot;, 23506, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 17, 83, 50, 14 
+-   CONTROL &quot;Sent&quot;, 1035, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 54, 143, 41, 8 , 0x00001000
+-   CONTROL &quot;&quot;, 1030, STATIC, SS_GRAYFRAME | WS_CHILD | WS_VISIBLE, 99, 147, 13, 1 
+-   CONTROL 210, 1010, STATIC, SS_ICON | WS_CHILD | WS_VISIBLE, 121, 136, 21, 20 
+-   CONTROL &quot;&quot;, 1031, STATIC, SS_GRAYFRAME | WS_CHILD | WS_VISIBLE, 156, 147, 13, 1 
+-   CONTROL &quot;Received&quot;, 1036, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 174, 143, 35, 8 , 0x00001000
+-   CONTROL &quot;Bytes:&quot;, 1023, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 17, 166, 34, 8 
+-   CONTROL &quot;0&quot;, 1003, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 52, 166, 63, 8 , 0x00001000
+-   CONTROL &quot;&quot;, 1028, STATIC, SS_GRAYFRAME | WS_CHILD | WS_VISIBLE, 134, 166, 1, 21 
+-   CONTROL &quot;&quot;, 1029, STATIC, SS_GRAYFRAME | WS_CHILD | WS_VISIBLE, 134, 166, 1, 10 
+-   CONTROL &quot;0&quot;, 1005, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 149, 166, 61, 8 , 0x00001000
+-   CONTROL &quot;Errors:&quot;, 1027, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 17, 178, 32, 8 
+-   CONTROL &quot;0&quot;, 1012, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 69, 178, 46, 8 , 0x00001000
+-   CONTROL &quot;0&quot;, 1013, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 164, 178, 46, 8 , 0x00001000
+-   CONTROL &quot;Activity&quot;, -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 7, 122, 25, 8 
+-   CONTROL &quot;&quot;, -1, STATIC, SS_ETCHEDHORZ | WS_CHILD | WS_VISIBLE, 35, 126, 184, 1 
+-   CONTROL &quot;Connection&quot;, -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 7, 9, 37, 8 
+-   CONTROL &quot;&quot;, -1, STATIC, SS_ETCHEDHORZ | WS_CHILD | WS_VISIBLE, 49, 13, 170, 1 
+-   CONTROL &quot;&amp;Properties&quot;, 1026, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 7, 192, 55, 14 
+-   CONTROL &quot;&amp;Disable&quot;, 1025, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 65, 192, 55, 14 
+-   CONTROL &quot;Dia&amp;gnose&quot;, 23505, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 123, 192, 55, 14 
++  CONTROL &quot;IPv4 Connectivity:&quot;, 23501, Static, 0x50020000, 17, 21, 100, 8, 0x0
++  CONTROL &quot;None&quot;, 23502, Static, 0x50020000, 110, 21, 100, 8, 0x1000
++  CONTROL &quot;IPv6 Connectivity:&quot;, 23503, Static, 0x50020000, 17, 33, 100, 8, 0x0
++  CONTROL &quot;None&quot;, 23504, Static, 0x50020000, 110, 33, 100, 8, 0x1000
++  CONTROL &quot;Media State:&quot;, 1032, Static, 0x50020000, 17, 45, 100, 8, 0x0
++  CONTROL &quot;Disconnected&quot;, 1007, Static, 0x50020000, 73, 45, 137, 8, 0x1000
++  CONTROL &quot;Duration:&quot;, 1033, Static, 0x50020000, 17, 57, 100, 8, 0x0
++  CONTROL &quot;00:00:00&quot;, 1008, Static, 0x50020000, 73, 57, 137, 8, 0x1000
++  CONTROL &quot;Speed:&quot;, 1034, Static, 0x50020000, 17, 69, 100, 8, 0x0
++  CONTROL &quot;0 bps&quot;, 1009, Static, 0x50020000, 73, 69, 137, 8, 0x1000
++  CONTROL &quot;D&amp;etails...&quot;, 23506, Button, 0x50010000, 17, 83, 50, 14, 0x0
++  CONTROL &quot;Sent&quot;, 1035, Static, 0x50020000, 54, 143, 41, 8, 0x1000
++  CONTROL &quot;&quot;, 1030, Static, 0x50000008, 99, 147, 13, 1, 0x0
++  CONTROL 210, 1010, Static, 0x50000003, 121, 136, 21, 20, 0x0
++  CONTROL &quot;&quot;, 1031, Static, 0x50000008, 156, 147, 13, 1, 0x0
++  CONTROL &quot;Received&quot;, 1036, Static, 0x50020000, 174, 143, 35, 8, 0x1000
++  CONTROL &quot;Bytes:&quot;, 1023, Static, 0x50020000, 17, 166, 34, 8, 0x0
++  CONTROL &quot;0&quot;, 1003, Static, 0x50020000, 52, 166, 63, 8, 0x1000
++  CONTROL &quot;&quot;, 1028, Static, 0x50000008, 134, 166, 1, 21, 0x0
++  CONTROL &quot;&quot;, 1029, Static, 0x50000008, 134, 166, 1, 10, 0x0
++  CONTROL &quot;0&quot;, 1005, Static, 0x50020000, 149, 166, 61, 8, 0x1000
++  CONTROL &quot;Errors:&quot;, 1027, Static, 0x50020000, 17, 178, 32, 8, 0x0
++  CONTROL &quot;0&quot;, 1012, Static, 0x50020000, 69, 178, 46, 8, 0x1000
++  CONTROL &quot;0&quot;, 1013, Static, 0x50020000, 164, 178, 46, 8, 0x1000
++  CONTROL &quot;Activity&quot;, 4294967295, Static, 0x50020000, 7, 122, 25, 8, 0x0
++  CONTROL &quot;&quot;, 4294967295, Static, 0x50000010, 35, 126, 184, 1, 0x0
++  CONTROL &quot;Connection&quot;, 4294967295, Static, 0x50020000, 7, 9, 37, 8, 0x0
++  CONTROL &quot;&quot;, 4294967295, Static, 0x50000010, 49, 13, 170, 1, 0x0
++  CONTROL &quot;&amp;Properties&quot;, 1026, Button, 0x50010000, 7, 192, 55, 14, 0x0
++  CONTROL &quot;&amp;Disable&quot;, 1025, Button, 0x50010000, 65, 192, 55, 14, 0x0
++  CONTROL &quot;Dia&amp;gnose&quot;, 23505, Button, 0x50010000, 123, 192, 55, 14, 0x0
+ }
+ 
+ 23540 DIALOGEX 0, 0, 227, 215
+-STYLE DS_FIXEDSYS | WS_CHILD | WS_CAPTION | WS_SYSMENU
+ CAPTION &quot;Status&quot;
+-LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+-FONT 8, &quot;MS Shell Dlg&quot;
++STYLE 0x40c80048
++EXSTYLE 0x0
++FONT 8, &quot;MS Shell Dlg&quot;, 0, 0, 0
+ {
+-   CONTROL &quot;Media State:&quot;, 1032, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 17, 19, 100, 8 
+-   CONTROL &quot;Disconnected&quot;, 1007, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 87, 19, 120, 8 , 0x00001000
+-   CONTROL &quot;Duration:&quot;, 1033, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 17, 31, 100, 8 
+-   CONTROL &quot;00:00:00&quot;, 1008, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 87, 31, 120, 8 , 0x00001000
+-   CONTROL &quot;Speed:&quot;, 1034, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 17, 43, 100, 8 
+-   CONTROL &quot;0 bps&quot;, 1009, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 87, 43, 120, 8 , 0x00001000
+-   CONTROL &quot;Internet&quot;, 23545, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 24, 108, 46, 9 
+-   CONTROL &quot;My Computer&quot;, 23547, STATIC, SS_RIGHT | WS_CHILD | WS_VISIBLE | WS_GROUP, 159, 108, 46, 9 
+-   CONTROL &quot;Internet Gateway&quot;, 23546, STATIC, SS_RIGHT | WS_CHILD | WS_VISIBLE | WS_GROUP, 74, 108, 65, 9 
+-   CONTROL 1115, 23548, STATIC, SS_ICON | WS_CHILD | WS_VISIBLE, 24, 118, 21, 20 
+-   CONTROL &quot;&quot;, 1030, STATIC, SS_GRAYFRAME | WS_CHILD | WS_VISIBLE, 49, 127, 50, 2 
+-   CONTROL 1116, 23549, STATIC, SS_ICON | WS_CHILD | WS_VISIBLE, 104, 118, 21, 20 
+-   CONTROL &quot;&quot;, 1031, STATIC, SS_GRAYFRAME | WS_CHILD | WS_VISIBLE, 129, 127, 50, 2 
+-   CONTROL 1117, 1010, STATIC, SS_ICON | WS_CHILD | WS_VISIBLE, 184, 118, 21, 20 
+-   CONTROL &quot;Bytes:&quot;, 1023, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 26, 144, 34, 8 
+-   CONTROL &quot;Sent:&quot;, 1035, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 34, 152, 37, 8 
+-   CONTROL &quot;Received:&quot;, 1036, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 34, 160, 65, 8 
+-   CONTROL &quot;0&quot;, 1003, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 69, 152, 55, 8 , 0x00001000
+-   CONTROL &quot;0&quot;, 1005, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 69, 160, 55, 8 , 0x00001000
+-   CONTROL &quot;0&quot;, 23541, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 144, 152, 60, 8 , 0x00001000
+-   CONTROL &quot;0&quot;, 23542, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 144, 160, 60, 8 , 0x00001000
+-   CONTROL &quot;&amp;Disable&quot;, 1025, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 7, 192, 55, 14 
+-   CONTROL &quot;Internet Gateway&quot;, -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 7, 8, 58, 8 
+-   CONTROL &quot;&quot;, -1, STATIC, SS_ETCHEDHORZ | WS_CHILD | WS_VISIBLE, 72, 12, 148, 1 
+-   CONTROL &quot;Activity&quot;, -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 7, 94, 25, 8 
+-   CONTROL &quot;&quot;, -1, STATIC, SS_ETCHEDHORZ | WS_CHILD | WS_VISIBLE, 40, 97, 180, 1 
++  CONTROL &quot;Media State:&quot;, 1032, Static, 0x50020000, 17, 19, 100, 8, 0x0
++  CONTROL &quot;Disconnected&quot;, 1007, Static, 0x50020000, 87, 19, 120, 8, 0x1000
++  CONTROL &quot;Duration:&quot;, 1033, Static, 0x50020000, 17, 31, 100, 8, 0x0
++  CONTROL &quot;00:00:00&quot;, 1008, Static, 0x50020000, 87, 31, 120, 8, 0x1000
++  CONTROL &quot;Speed:&quot;, 1034, Static, 0x50020000, 17, 43, 100, 8, 0x0
++  CONTROL &quot;0 bps&quot;, 1009, Static, 0x50020000, 87, 43, 120, 8, 0x1000
++  CONTROL &quot;Internet&quot;, 23545, Static, 0x50020000, 24, 108, 46, 9, 0x0
++  CONTROL &quot;My Computer&quot;, 23547, Static, 0x50020002, 159, 108, 46, 9, 0x0
++  CONTROL &quot;Internet Gateway&quot;, 23546, Static, 0x50020002, 74, 108, 65, 9, 0x0
++  CONTROL 1115, 23548, Static, 0x50000003, 24, 118, 21, 20, 0x0
++  CONTROL &quot;&quot;, 1030, Static, 0x50000008, 49, 127, 50, 2, 0x0
++  CONTROL 1116, 23549, Static, 0x50000003, 104, 118, 21, 20, 0x0
++  CONTROL &quot;&quot;, 1031, Static, 0x50000008, 129, 127, 50, 2, 0x0
++  CONTROL 1117, 1010, Static, 0x50000003, 184, 118, 21, 20, 0x0
++  CONTROL &quot;Bytes:&quot;, 1023, Static, 0x50020000, 26, 144, 34, 8, 0x0
++  CONTROL &quot;Sent:&quot;, 1035, Static, 0x50020000, 34, 152, 37, 8, 0x0
++  CONTROL &quot;Received:&quot;, 1036, Static, 0x50020000, 34, 160, 65, 8, 0x0
++  CONTROL &quot;0&quot;, 1003, Static, 0x50020000, 69, 152, 55, 8, 0x1000
++  CONTROL &quot;0&quot;, 1005, Static, 0x50020000, 69, 160, 55, 8, 0x1000
++  CONTROL &quot;0&quot;, 23541, Static, 0x50020000, 144, 152, 60, 8, 0x1000
++  CONTROL &quot;0&quot;, 23542, Static, 0x50020000, 144, 160, 60, 8, 0x1000
++  CONTROL &quot;&amp;Disable&quot;, 1025, Button, 0x50010000, 7, 192, 55, 14, 0x0
++  CONTROL &quot;Internet Gateway&quot;, 4294967295, Static, 0x50020000, 7, 8, 58, 8, 0x0
++  CONTROL &quot;&quot;, 4294967295, Static, 0x50000010, 72, 12, 148, 1, 0x0
++  CONTROL &quot;Activity&quot;, 4294967295, Static, 0x50020000, 7, 94, 25, 8, 0x0
++  CONTROL &quot;&quot;, 4294967295, Static, 0x50000010, 40, 97, 180, 1, 0x0
+ }
+ 
+ 24050 DIALOGEX 0, 0, 227, 215
+-STYLE DS_FIXEDSYS | WS_CHILD | WS_CAPTION | WS_SYSMENU
+ CAPTION &quot;General&quot;
+-LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+-FONT 8, &quot;MS Shell Dlg&quot;
++STYLE 0x40c80048
++EXSTYLE 0x0
++FONT 8, &quot;MS Shell Dlg&quot;, 0, 0, 0
+ {
+-   CONTROL &quot;Connection&quot;, -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 7, 9, 37, 8 
+-   CONTROL &quot;IPv4 Connectivity:&quot;, 23501, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 17, 21, 100, 8 
+-   CONTROL &quot;None&quot;, 23502, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 110, 21, 100, 8 , 0x00001000
+-   CONTROL &quot;IPv6 Connectivity:&quot;, 23503, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 17, 32, 100, 8 
+-   CONTROL &quot;None&quot;, 23504, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 110, 32, 100, 8 , 0x00001000
+-   CONTROL &quot;Media State:&quot;, 1032, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 17, 43, 100, 8 
+-   CONTROL &quot;Disconnected&quot;, 1007, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 73, 43, 137, 8 , 0x00001000
+-   CONTROL &quot;SSID:&quot;, 24016, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 17, 54, 100, 8 
+-   CONTROL &quot;&quot;, 24018, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 73, 54, 137, 8 , 0x00001000
+-   CONTROL &quot;Duration:&quot;, 1033, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 17, 65, 100, 8 
+-   CONTROL &quot;00:00:00&quot;, 1008, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 73, 65, 137, 8 , 0x00001000
+-   CONTROL &quot;Speed:&quot;, 1034, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 17, 76, 100, 8 
+-   CONTROL &quot;0 bps&quot;, 1009, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 73, 76, 137, 8 , 0x00001000
+-   CONTROL &quot;Signal Quality:&quot;, 1043, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 17, 91, 100, 8 
+-   CONTROL &quot;&quot;, 1044, STATIC, SS_BITMAP | WS_CHILD | WS_VISIBLE, 190, 84, 20, 1 
+-   CONTROL &quot;D&amp;etails...&quot;, 23506, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 17, 106, 50, 14 
+-   CONTROL &quot;&amp;Wireless Properties&quot;, 24020, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 70, 106, 90, 14 
+-   CONTROL &quot;Sent&quot;, 1035, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 54, 145, 41, 8 , 0x00001000
+-   CONTROL &quot;&quot;, 1030, STATIC, SS_GRAYFRAME | WS_CHILD | WS_VISIBLE, 99, 149, 13, 1 
+-   CONTROL 210, 1010, STATIC, SS_ICON | WS_CHILD | WS_VISIBLE, 121, 138, 20, 20 
+-   CONTROL &quot;&quot;, 1031, STATIC, SS_GRAYFRAME | WS_CHILD | WS_VISIBLE, 156, 149, 13, 1 
+-   CONTROL &quot;Received&quot;, 1036, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 174, 145, 35, 8 , 0x00001000
+-   CONTROL &quot;Bytes:&quot;, 1023, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 17, 165, 34, 8 
+-   CONTROL &quot;0&quot;, 1003, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 52, 165, 63, 8 , 0x00001000
+-   CONTROL &quot;&quot;, 1028, STATIC, SS_GRAYFRAME | WS_CHILD | WS_VISIBLE, 134, 165, 1, 21 
+-   CONTROL &quot;&quot;, 1029, STATIC, SS_GRAYFRAME | WS_CHILD | WS_VISIBLE, 134, 165, 1, 10 
+-   CONTROL &quot;0&quot;, 1005, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 149, 165, 61, 8 , 0x00001000
+-   CONTROL &quot;Errors:&quot;, 1027, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 17, 177, 32, 8 
+-   CONTROL &quot;0&quot;, 1012, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 69, 177, 46, 8 , 0x00001000
+-   CONTROL &quot;0&quot;, 1013, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 164, 177, 46, 8 , 0x00001000
+-   CONTROL &quot;Activity&quot;, -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 7, 127, 25, 8 
+-   CONTROL &quot;&quot;, -1, STATIC, SS_ETCHEDHORZ | WS_CHILD | WS_VISIBLE, 35, 130, 184, 1 
+-   CONTROL &quot;&quot;, -1, STATIC, SS_ETCHEDHORZ | WS_CHILD | WS_VISIBLE, 48, 13, 172, 1 
+-   CONTROL &quot;&amp;Properties&quot;, 1026, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 7, 192, 55, 14 
+-   CONTROL &quot;&amp;Disable&quot;, 1025, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 65, 192, 55, 14 
+-   CONTROL &quot;Dia&amp;gnose&quot;, 23505, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 123, 192, 55, 14 
++  CONTROL &quot;Connection&quot;, 4294967295, Static, 0x50020000, 7, 9, 37, 8, 0x0
++  CONTROL &quot;IPv4 Connectivity:&quot;, 23501, Static, 0x50020000, 17, 21, 100, 8, 0x0
++  CONTROL &quot;None&quot;, 23502, Static, 0x50020000, 110, 21, 100, 8, 0x1000
++  CONTROL &quot;IPv6 Connectivity:&quot;, 23503, Static, 0x50020000, 17, 32, 100, 8, 0x0
++  CONTROL &quot;None&quot;, 23504, Static, 0x50020000, 110, 32, 100, 8, 0x1000
++  CONTROL &quot;Media State:&quot;, 1032, Static, 0x50020000, 17, 43, 100, 8, 0x0
++  CONTROL &quot;Disconnected&quot;, 1007, Static, 0x50020000, 73, 43, 137, 8, 0x1000
++  CONTROL &quot;SSID:&quot;, 24016, Static, 0x50020000, 17, 54, 100, 8, 0x0
++  CONTROL &quot;&quot;, 24018, Static, 0x50020000, 73, 54, 137, 8, 0x1000
++  CONTROL &quot;Duration:&quot;, 1033, Static, 0x50020000, 17, 65, 100, 8, 0x0
++  CONTROL &quot;00:00:00&quot;, 1008, Static, 0x50020000, 73, 65, 137, 8, 0x1000
++  CONTROL &quot;Speed:&quot;, 1034, Static, 0x50020000, 17, 76, 100, 8, 0x0
++  CONTROL &quot;0 bps&quot;, 1009, Static, 0x50020000, 73, 76, 137, 8, 0x1000
++  CONTROL &quot;Signal Quality:&quot;, 1043, Static, 0x50020000, 17, 91, 100, 8, 0x0
++  CONTROL &quot;&quot;, 1044, Static, 0x5000000e, 190, 84, 20, 1, 0x0
++  CONTROL &quot;D&amp;etails...&quot;, 23506, Button, 0x50010000, 17, 106, 50, 14, 0x0
++  CONTROL &quot;&amp;Wireless Properties&quot;, 24020, Button, 0x50010000, 70, 106, 90, 14, 0x0
++  CONTROL &quot;Sent&quot;, 1035, Static, 0x50020000, 54, 145, 41, 8, 0x1000
++  CONTROL &quot;&quot;, 1030, Static, 0x50000008, 99, 149, 13, 1, 0x0
++  CONTROL 210, 1010, Static, 0x50000003, 121, 138, 20, 20, 0x0
++  CONTROL &quot;&quot;, 1031, Static, 0x50000008, 156, 149, 13, 1, 0x0
++  CONTROL &quot;Received&quot;, 1036, Static, 0x50020000, 174, 145, 35, 8, 0x1000
++  CONTROL &quot;Bytes:&quot;, 1023, Static, 0x50020000, 17, 165, 34, 8, 0x0
++  CONTROL &quot;0&quot;, 1003, Static, 0x50020000, 52, 165, 63, 8, 0x1000
++  CONTROL &quot;&quot;, 1028, Static, 0x50000008, 134, 165, 1, 21, 0x0
++  CONTROL &quot;&quot;, 1029, Static, 0x50000008, 134, 165, 1, 10, 0x0
++  CONTROL &quot;0&quot;, 1005, Static, 0x50020000, 149, 165, 61, 8, 0x1000
++  CONTROL &quot;Errors:&quot;, 1027, Static, 0x50020000, 17, 177, 32, 8, 0x0
++  CONTROL &quot;0&quot;, 1012, Static, 0x50020000, 69, 177, 46, 8, 0x1000
++  CONTROL &quot;0&quot;, 1013, Static, 0x50020000, 164, 177, 46, 8, 0x1000
++  CONTROL &quot;Activity&quot;, 4294967295, Static, 0x50020000, 7, 127, 25, 8, 0x0
++  CONTROL &quot;&quot;, 4294967295, Static, 0x50000010, 35, 130, 184, 1, 0x0
++  CONTROL &quot;&quot;, 4294967295, Static, 0x50000010, 48, 13, 172, 1, 0x0
++  CONTROL &quot;&amp;Properties&quot;, 1026, Button, 0x50010000, 7, 192, 55, 14, 0x0
++  CONTROL &quot;&amp;Disable&quot;, 1025, Button, 0x50010000, 65, 192, 55, 14, 0x0
++  CONTROL &quot;Dia&amp;gnose&quot;, 23505, Button, 0x50010000, 123, 192, 55, 14, 0x0
+ }
+ 
+ 24100 DIALOGEX 0, 0, 227, 215
+-STYLE DS_FIXEDSYS | WS_CHILD | WS_CAPTION | WS_SYSMENU
+ CAPTION &quot;General&quot;
+-LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+-FONT 8, &quot;MS Shell Dlg&quot;
++STYLE 0x40c80048
++EXSTYLE 0x0
++FONT 8, &quot;MS Shell Dlg&quot;, 0, 0, 0
+ {
+-   CONTROL &quot;IPv4 Connectivity:&quot;, 23501, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 17, 21, 100, 8 
+-   CONTROL &quot;None&quot;, 23502, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 110, 21, 100, 8 , 0x00001000
+-   CONTROL &quot;IPv6 Connectivity:&quot;, 23503, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 17, 33, 100, 8 
+-   CONTROL &quot;None&quot;, 23504, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 110, 33, 100, 8 , 0x00001000
+-   CONTROL &quot;Media State:&quot;, 1032, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 17, 45, 100, 8 
+-   CONTROL &quot;Disconnected&quot;, 1007, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 73, 45, 137, 8 , 0x00001000
+-   CONTROL &quot;Duration:&quot;, 1033, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 17, 57, 100, 8 
+-   CONTROL &quot;00:00:00&quot;, 1008, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 73, 57, 137, 8 , 0x00001000
+-   CONTROL &quot;Speed:&quot;, 1034, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 17, 69, 100, 8 
+-   CONTROL &quot;0 bps&quot;, 1009, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 73, 69, 137, 8 , 0x00001000
+-   CONTROL &quot;D&amp;etails...&quot;, 23506, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 17, 83, 50, 14 
+-   CONTROL &quot;Sent&quot;, 1035, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 54, 127, 41, 8 , 0x00001000
+-   CONTROL &quot;&quot;, 1030, STATIC, SS_GRAYFRAME | WS_CHILD | WS_VISIBLE, 99, 131, 13, 1 
+-   CONTROL 210, 1010, STATIC, SS_ICON | WS_CHILD | WS_VISIBLE, 121, 120, 21, 20 
+-   CONTROL &quot;&quot;, 1031, STATIC, SS_GRAYFRAME | WS_CHILD | WS_VISIBLE, 156, 131, 13, 1 
+-   CONTROL &quot;Received&quot;, 1036, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 174, 127, 35, 8 , 0x00001000
+-   CONTROL &quot;Bytes:&quot;, 1023, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 17, 149, 34, 8 
+-   CONTROL &quot;0&quot;, 1003, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 52, 149, 63, 8 , 0x00001000
+-   CONTROL &quot;&quot;, 1028, STATIC, SS_GRAYFRAME | WS_CHILD | WS_VISIBLE, 134, 149, 1, 30 
+-   CONTROL &quot;&quot;, 1029, STATIC, SS_GRAYFRAME | WS_CHILD | WS_VISIBLE, 134, 149, 1, 10 
+-   CONTROL &quot;0&quot;, 1005, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 149, 149, 61, 8 , 0x00001000
+-   CONTROL &quot;Compression:&quot;, 1037, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 17, 161, 43, 8 
+-   CONTROL &quot;0 %&quot;, 1004, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 73, 161, 42, 8 , 0x00001000
+-   CONTROL &quot;0 %&quot;, 1006, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 168, 161, 42, 8 , 0x00001000
+-   CONTROL &quot;Errors:&quot;, 1027, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 17, 172, 32, 8 
+-   CONTROL &quot;0&quot;, 1012, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 69, 172, 46, 8 , 0x00001000
+-   CONTROL &quot;0&quot;, 1013, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 164, 172, 46, 8 , 0x00001000
+-   CONTROL &quot;Activity&quot;, -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 7, 106, 25, 8 
+-   CONTROL &quot;&quot;, -1, STATIC, SS_ETCHEDHORZ | WS_CHILD | WS_VISIBLE, 35, 110, 184, 1 
+-   CONTROL &quot;Connection&quot;, -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 7, 9, 37, 8 
+-   CONTROL &quot;&quot;, -1, STATIC, SS_ETCHEDHORZ | WS_CHILD | WS_VISIBLE, 50, 13, 170, 1 
+-   CONTROL &quot;&amp;Properties&quot;, 1026, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 7, 192, 55, 14 
+-   CONTROL &quot;&amp;Disable&quot;, 1025, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 65, 192, 55, 14 
+-   CONTROL &quot;Dia&amp;gnose&quot;, 23505, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 123, 192, 55, 14 
++  CONTROL &quot;IPv4 Connectivity:&quot;, 23501, Static, 0x50020000, 17, 21, 100, 8, 0x0
++  CONTROL &quot;None&quot;, 23502, Static, 0x50020000, 110, 21, 100, 8, 0x1000
++  CONTROL &quot;IPv6 Connectivity:&quot;, 23503, Static, 0x50020000, 17, 33, 100, 8, 0x0
++  CONTROL &quot;None&quot;, 23504, Static, 0x50020000, 110, 33, 100, 8, 0x1000
++  CONTROL &quot;Media State:&quot;, 1032, Static, 0x50020000, 17, 45, 100, 8, 0x0
++  CONTROL &quot;Disconnected&quot;, 1007, Static, 0x50020000, 73, 45, 137, 8, 0x1000
++  CONTROL &quot;Duration:&quot;, 1033, Static, 0x50020000, 17, 57, 100, 8, 0x0
++  CONTROL &quot;00:00:00&quot;, 1008, Static, 0x50020000, 73, 57, 137, 8, 0x1000
++  CONTROL &quot;Speed:&quot;, 1034, Static, 0x50020000, 17, 69, 100, 8, 0x0
++  CONTROL &quot;0 bps&quot;, 1009, Static, 0x50020000, 73, 69, 137, 8, 0x1000
++  CONTROL &quot;D&amp;etails...&quot;, 23506, Button, 0x50010000, 17, 83, 50, 14, 0x0
++  CONTROL &quot;Sent&quot;, 1035, Static, 0x50020000, 54, 127, 41, 8, 0x1000
++  CONTROL &quot;&quot;, 1030, Static, 0x50000008, 99, 131, 13, 1, 0x0
++  CONTROL 210, 1010, Static, 0x50000003, 121, 120, 21, 20, 0x0
++  CONTROL &quot;&quot;, 1031, Static, 0x50000008, 156, 131, 13, 1, 0x0
++  CONTROL &quot;Received&quot;, 1036, Static, 0x50020000, 174, 127, 35, 8, 0x1000
++  CONTROL &quot;Bytes:&quot;, 1023, Static, 0x50020000, 17, 149, 34, 8, 0x0
++  CONTROL &quot;0&quot;, 1003, Static, 0x50020000, 52, 149, 63, 8, 0x1000
++  CONTROL &quot;&quot;, 1028, Static, 0x50000008, 134, 149, 1, 30, 0x0
++  CONTROL &quot;&quot;, 1029, Static, 0x50000008, 134, 149, 1, 10, 0x0
++  CONTROL &quot;0&quot;, 1005, Static, 0x50020000, 149, 149, 61, 8, 0x1000
++  CONTROL &quot;Compression:&quot;, 1037, Static, 0x50020000, 17, 161, 43, 8, 0x0
++  CONTROL &quot;0 %&quot;, 1004, Static, 0x50020000, 73, 161, 42, 8, 0x1000
++  CONTROL &quot;0 %&quot;, 1006, Static, 0x50020000, 168, 161, 42, 8, 0x1000
++  CONTROL &quot;Errors:&quot;, 1027, Static, 0x50020000, 17, 172, 32, 8, 0x0
++  CONTROL &quot;0&quot;, 1012, Static, 0x50020000, 69, 172, 46, 8, 0x1000
++  CONTROL &quot;0&quot;, 1013, Static, 0x50020000, 164, 172, 46, 8, 0x1000
++  CONTROL &quot;Activity&quot;, 4294967295, Static, 0x50020000, 7, 106, 25, 8, 0x0
++  CONTROL &quot;&quot;, 4294967295, Static, 0x50000010, 35, 110, 184, 1, 0x0
++  CONTROL &quot;Connection&quot;, 4294967295, Static, 0x50020000, 7, 9, 37, 8, 0x0
++  CONTROL &quot;&quot;, 4294967295, Static, 0x50000010, 50, 13, 170, 1, 0x0
++  CONTROL &quot;&amp;Properties&quot;, 1026, Button, 0x50010000, 7, 192, 55, 14, 0x0
++  CONTROL &quot;&amp;Disable&quot;, 1025, Button, 0x50010000, 65, 192, 55, 14, 0x0
++  CONTROL &quot;Dia&amp;gnose&quot;, 23505, Button, 0x50010000, 123, 192, 55, 14, 0x0
+ }
+ 
+ 24200 DIALOGEX 0, 0, 227, 215
+-STYLE DS_FIXEDSYS | WS_CHILD | WS_CAPTION | WS_SYSMENU
+ CAPTION &quot;Details&quot;
+-LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+-FONT 8, &quot;MS Shell Dlg&quot;
++STYLE 0x40c80048
++EXSTYLE 0x0
++FONT 8, &quot;MS Shell Dlg&quot;, 0, 0, 0
+ {
+-   CONTROL &quot;&amp;Suspend&quot;, 24202, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 162, 131, 50, 14 
+-   CONTROL &quot;&quot;, 24206, COMBOBOX, CBS_DROPDOWNLIST | CBS_SORT | WS_CHILD | WS_VISIBLE | WS_VSCROLL | WS_TABSTOP, 16, 111, 196, 45 
+-   CONTROL &quot;Number of active devices:&quot;, 24203, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 17, 134, 85, 8 
+-   CONTROL &quot;0&quot;, 24204, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 110, 134, 20, 8 
+-   CONTROL &quot;List1&quot;, 24205, &quot;SysListView32&quot;, LVS_REPORT | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 7, 7, 213, 77 
+-   CONTROL &quot;Devices&quot;, 24201, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 9, 99, 26, 8 
+-   CONTROL &quot;&quot;, 24207, STATIC, SS_ETCHEDHORZ | WS_CHILD | WS_VISIBLE, 47, 102, 172, 1 
++  CONTROL &quot;&amp;Suspend&quot;, 24202, Button, 0x50010000, 162, 131, 50, 14, 0x0
++  CONTROL &quot;&quot;, 24206, ComboBox, 0x50210103, 16, 111, 196, 45, 0x0
++  CONTROL &quot;Number of active devices:&quot;, 24203, Static, 0x50020000, 17, 134, 85, 8, 0x0
++  CONTROL &quot;0&quot;, 24204, Static, 0x50020000, 110, 134, 20, 8, 0x0
++  CONTROL &quot;List1&quot;, 24205, &quot;SysListView32&quot;, 0x50810001, 7, 7, 213, 77, 0x0
++  CONTROL &quot;Devices&quot;, 24201, Static, 0x50020000, 9, 99, 26, 8, 0x0
++  CONTROL &quot;&quot;, 24207, Static, 0x50000010, 47, 102, 172, 1, 0x0
+ }
+ 
+ 24300 DIALOGEX 0, 0, 240, 250
+-STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+ CAPTION &quot;Network Connection Details&quot;
+-LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+-FONT 8, &quot;MS Shell Dlg&quot;
++STYLE 0x80c800c0
++EXSTYLE 0x0
++FONT 8, &quot;MS Shell Dlg&quot;, 0, 0, 0
+ {
+-   CONTROL &quot;Network Connection &amp;Details:&quot;, -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 7, 7, 95, 8 
+-   CONTROL &quot;List1&quot;, 24301, &quot;SysListView32&quot;, LVS_REPORT | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_VSCROLL | WS_TABSTOP, 7, 17, 226, 198 , 0x00000200
+-   CONTROL &quot;&quot;, -1, STATIC, SS_ETCHEDHORZ | SS_SUNKEN | WS_CHILD | WS_VISIBLE, 7, 221, 226, 1 
+-   CONTROL &quot;&amp;Close&quot;, 1, BUTTON, BS_DEFPUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 184, 227, 50, 14 
++  CONTROL &quot;Network Connection &amp;Details:&quot;, 65535, Static, 0x50020000, 7, 7, 95, 8, 0x0
++  CONTROL &quot;List1&quot;, 24301, &quot;SysListView32&quot;, 0x50a10001, 7, 17, 226, 198, 0x200
++  CONTROL &quot;&quot;, 65535, Static, 0x50001010, 7, 221, 226, 1, 0x0
++  CONTROL &quot;&amp;Close&quot;, 1, Button, 0x50010001, 184, 227, 50, 14, 0x0
+ }
+ 
+-
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-200, 	&quot;Internet Connection Sharing has been disabled by the Network Administrator&quot;
++  200,  &quot;Internet Connection Sharing has been disabled by the Network Administrator&quot;
+ }
+ 
+-
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-900, 	&quot;%1 %2&quot;
+-901, 	&quot;%1\n\n%2&quot;
++  900,  &quot;%1 %2&quot;
++  901,  &quot;%1\n\n%2&quot;
+ }
+ 
+-
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-1000, 	&quot;Name&quot;
+-1001, 	&quot;Type&quot;
+-1002, 	&quot;Status&quot;
+-1003, 	&quot;Device Name&quot;
+-1004, 	&quot;Phone # or Host Address&quot;
+-1005, 	&quot;Owner&quot;
+-1006, 	&quot;IP address&quot;
+-1007, 	&quot;Wireless Mode&quot;
++  1000,  &quot;Name&quot;
++  1001,  &quot;Type&quot;
++  1002,  &quot;Status&quot;
++  1003,  &quot;Device Name&quot;
++  1004,  &quot;Phone # or Host Address&quot;
++  1005,  &quot;Owner&quot;
++  1006,  &quot;IP address&quot;
++  1007,  &quot;Wireless Mode&quot;
+ }
+ 
+-
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-1008, 	&quot;Mode&quot;
+-1009, 	&quot;Sent&quot;
+-1015, 	&quot;Received&quot;
+-1016, 	&quot;Phone #&quot;
+-1017, 	&quot;Host Address&quot;
+-1018, 	&quot;Connectivity&quot;
+-1019, 	&quot;Network Category&quot;
+-1021, 	&quot;Incoming&quot;
+-1022, 	&quot;LAN or High-Speed Internet&quot;
+-1023, 	&quot;Dial-up&quot;
++  1008,  &quot;Mode&quot;
++  1009,  &quot;Sent&quot;
++  1015,  &quot;Received&quot;
++  1016,  &quot;Phone #&quot;
++  1017,  &quot;Host Address&quot;
++  1018,  &quot;Connectivity&quot;
++  1019,  &quot;Network Category&quot;
++  1021,  &quot;Incoming&quot;
++  1022,  &quot;LAN or High-Speed Internet&quot;
++  1023,  &quot;Dial-up&quot;
+ }
+ 
+-
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-1024, 	&quot;Virtual Private Network&quot;
+-1025, 	&quot;Connection Manager&quot;
+-1026, 	&quot;Unknown&quot;
+-1028, 	&quot;Network Bridge&quot;
+-1029, 	&quot;Internet Gateway&quot;
+-1030, 	&quot;Incoming Connections&quot;
+-1031, 	&quot;Broadband&quot;
+-1035, 	&quot;Attempting to authenticate&quot;
+-1036, 	&quot;Authentication failed&quot;
+-1037, 	&quot;Authentication succeeded&quot;
+-1038, 	&quot;Validating identity&quot;
+-1039, 	&quot;Limited or no connectivity&quot;
++  1024,  &quot;Virtual Private Network&quot;
++  1025,  &quot;Connection Manager&quot;
++  1026,  &quot;Unknown&quot;
++  1028,  &quot;Network Bridge&quot;
++  1029,  &quot;Internet Gateway&quot;
++  1030,  &quot;Incoming Connections&quot;
++  1031,  &quot;Broadband&quot;
++  1035,  &quot;Attempting to authenticate&quot;
++  1036,  &quot;Authentication failed&quot;
++  1037,  &quot;Authentication succeeded&quot;
++  1038,  &quot;Validating identity&quot;
++  1039,  &quot;Limited or no connectivity&quot;
+ }
+ 
+-
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-1040, 	&quot;Disconnected&quot;
+-1041, 	&quot;Connecting&quot;
+-1042, 	&quot;Connected&quot;
+-1043, 	&quot;Disconnecting&quot;
+-1044, 	&quot;Unavailable - device missing&quot;
+-1045, 	&quot;Unavailable - device disabled&quot;
+-1046, 	&quot;Unavailable - device malfunctioning&quot;
+-1047, 	&quot;Network cable unplugged&quot;
+-1048, 	&quot;Disabled&quot;
+-1049, 	&quot;Disabling&quot;
+-1050, 	&quot;Enabled&quot;
+-1051, 	&quot;Enabling&quot;
+-1052, 	&quot;, Shared&quot;
+-1053, 	&quot;, Bridged&quot;
+-1054, 	&quot;, Firewalled&quot;
++  1040,  &quot;Disconnected&quot;
++  1041,  &quot;Connecting&quot;
++  1042,  &quot;Connected&quot;
++  1043,  &quot;Disconnecting&quot;
++  1044,  &quot;Unavailable - device missing&quot;
++  1045,  &quot;Unavailable - device disabled&quot;
++  1046,  &quot;Unavailable - device malfunctioning&quot;
++  1047,  &quot;Network cable unplugged&quot;
++  1048,  &quot;Disabled&quot;
++  1049,  &quot;Disabling&quot;
++  1050,  &quot;Enabled&quot;
++  1051,  &quot;Enabling&quot;
++  1052,  &quot;, Shared&quot;
++  1053,  &quot;, Bridged&quot;
++  1054,  &quot;, Firewalled&quot;
+ }
+ 
+-
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-1056, 	&quot;Not connected&quot;
+-1057, 	&quot;%1 Properties&quot;
+-1058, 	&quot;Connection Properties cannot be displayed at this time because %1 is accessing the same information. Please close the %1 window(s) and try again.&quot;
+-1059, 	&quot;&lt;Unknown Application&gt;&quot;
+-1060, 	&quot;Network Connections&quot;
+-1061, 	&quot;Error Renaming Connection&quot;
+-1062, 	&quot;Cannot rename this connection. A connection with the name you specified already exists. Specify a different name.&quot;
+-1063, 	&quot;Cannot rename this connection.&quot;
+-1064, 	&quot;Cannot rename this connection. A connection name cannot contain tabs, only spaces, or any of the following characters: \\/:*?&lt;&gt;|\&quot;&quot;
+-1065, 	&quot;Cannot name a connection as Incoming Connections&quot;
+-1070, 	&quot;Error Disconnecting&quot;
+-1071, 	&quot;It is not possible to disconnect at this time. The connection is currently busy with a connect or disconnect operation.&quot;
++  1056,  &quot;Not connected&quot;
++  1057,  &quot;%1 Properties&quot;
++  1058,  &quot;Connection Properties cannot be displayed at this time because %1 is accessing the same information. Please close the %1 window(s) and try again.&quot;
++  1059,  &quot;&lt;Unknown Application&gt;&quot;
++  1060,  &quot;Network Connections&quot;
++  1061,  &quot;Error Renaming Connection&quot;
++  1062,  &quot;Cannot rename this connection. A connection with the name you specified already exists. Specify a different name.&quot;
++  1063,  &quot;Cannot rename this connection.&quot;
++  1064,  &quot;Cannot rename this connection. A connection name cannot contain tabs, only spaces, or any of the following characters: \\/:*?&lt;&gt;|&quot;&quot;&quot;
++  1065,  &quot;Cannot name a connection as Incoming Connections&quot;
++  1070,  &quot;Error Disconnecting&quot;
++  1071,  &quot;It is not possible to disconnect at this time. The connection is currently busy with a connect or disconnect operation.&quot;
+ }
+ 
+-
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-1072, 	&quot;Error Connecting&quot;
+-1073, 	&quot;It is not possible to connect at this time. No network was detected. You may need to plug in your network cable to complete the connection.&quot;
+-1074, 	&quot;Error Disabling Connection&quot;
+-1075, 	&quot;It is not possible to disable the connection at this time. This connection may be using one or more protocols that do not support Plug-and-Play, or it may have been initiated by another user or the system account.&quot;
+-1077, 	&quot;Internet Connection Sharing is enabled on this connection.\nAre you sure you want to delete '%1'?&quot;
+-1078, 	&quot;The connection you selected cannot be deleted.&quot;
+-1079, 	&quot;One or more of the connections you selected cannot be deleted.&quot;
+-1080, 	&quot;Confirm Connection Delete&quot;
+-1081, 	&quot;Confirm Multiple Connection Delete&quot;
+-1082, 	&quot;Are you sure you want to delete '%1'?&quot;
+-1083, 	&quot;Are you sure you want to delete these %1 connections?&quot;
+-1084, 	&quot;There is currently a client connected to this machine using an Incoming Connection.\nDeleting Incoming Connections while this connection is active will disconnect this client.\n\nAre you sure you want to delete Incoming Connections?&quot;
+-1085, 	&quot;There are currently %1!d! clients connected to this machine using Incoming Connections.\nDeleting Incoming Connections while these connections are active will disconnect all the clients.\n\nAre you sure you want to delete Incoming Connections?&quot;
++  1072,  &quot;Error Connecting&quot;
++  1073,  &quot;It is not possible to connect at this time. No network was detected. You may need to plug in your network cable to complete the connection.&quot;
++  1074,  &quot;Error Disabling Connection&quot;
++  1075,  &quot;It is not possible to disable the connection at this time. This connection may be using one or more protocols that do not support Plug-and-Play, or it may have been initiated by another user or the system account.&quot;
++  1077,  &quot;Internet Connection Sharing is enabled on this connection.\nAre you sure you want to delete '%1'?&quot;
++  1078,  &quot;The connection you selected cannot be deleted.&quot;
++  1079,  &quot;One or more of the connections you selected cannot be deleted.&quot;
++  1080,  &quot;Confirm Connection Delete&quot;
++  1081,  &quot;Confirm Multiple Connection Delete&quot;
++  1082,  &quot;Are you sure you want to delete '%1'?&quot;
++  1083,  &quot;Are you sure you want to delete these %1 connections?&quot;
++  1084,  &quot;There is currently a client connected to this machine using an Incoming Connection.\nDeleting Incoming Connections while this connection is active will disconnect this client.\n\nAre you sure you want to delete Incoming Connections?&quot;
++  1085,  &quot;There are currently %1!d! clients connected to this machine using Incoming Connections.\nDeleting Incoming Connections while these connections are active will disconnect all the clients.\n\nAre you sure you want to delete Incoming Connections?&quot;
+ }
+ 
+-
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-1089, 	&quot;Error Deleting Connection&quot;
+-1090, 	&quot;You cannot delete a connection while it is connected or busy connecting. Please disconnect or close the login property page and try again.&quot;
+-1091, 	&quot;One or more of the connections you selected for deletion are active. Please disconnect and try again.&quot;
+-1093, 	&quot;Error Renaming Connection&quot;
+-1094, 	&quot;You cannot rename a connection while it is being activated. Please wait until the connection is complete and try again.&quot;
+-1096, 	&quot;You do not have sufficient privileges for configuring connection properties. Contact your administrator.&quot;
+-1097, 	&quot;You do not have sufficient privileges to activate this connection. Contact your administrator.&quot;
+-1098, 	&quot;You do not have sufficient privileges to disconnect this connection. Contact your administrator.&quot;
+-1099, 	&quot;A connection attempt is already in progress.&quot;
+-1100, 	&quot;An unexpected error occurred.&quot;
+-1101, 	&quot;Insufficient memory to complete the requested action.&quot;
+-1102, 	&quot;Dial-up connection cannot be found.&quot;
+-1103, 	&quot;You do not have permission to open the Network Connections folder.&quot;
++  1089,  &quot;Error Deleting Connection&quot;
++  1090,  &quot;You cannot delete a connection while it is connected or busy connecting. Please disconnect or close the login property page and try again.&quot;
++  1091,  &quot;One or more of the connections you selected for deletion are active. Please disconnect and try again.&quot;
++  1093,  &quot;Error Renaming Connection&quot;
++  1094,  &quot;You cannot rename a connection while it is being activated. Please wait until the connection is complete and try again.&quot;
++  1096,  &quot;You do not have sufficient privileges for configuring connection properties. Contact your administrator.&quot;
++  1097,  &quot;You do not have sufficient privileges to activate this connection. Contact your administrator.&quot;
++  1098,  &quot;You do not have sufficient privileges to disconnect this connection. Contact your administrator.&quot;
++  1099,  &quot;A connection attempt is already in progress.&quot;
++  1100,  &quot;An unexpected error occurred.&quot;
++  1101,  &quot;Insufficient memory to complete the requested action.&quot;
++  1102,  &quot;Dial-up connection cannot be found.&quot;
++  1103,  &quot;You do not have permission to open the Network Connections folder.&quot;
+ }
+ 
+-
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-1104, 	&quot;Connect %1&quot;
+-1105, 	&quot;Windows cannot remove the Network Bridge because one or more network property sheets are open. First close all network property sheets, and then remove the Network Bridge.&quot;
+-1106, 	&quot;You cannot configure the properties of an individual incoming connection.\nPlease configure the properties of the 'Incoming Connections' icon in the Network Connections Folder instead.&quot;
+-1107, 	&quot;You cannot delete this connection because a property page is currently open. Please close this page and try again.&quot;
++  1104,  &quot;Connect %1&quot;
++  1105,  &quot;Windows cannot remove the Network Bridge because one or more network property sheets are open. First close all network property sheets, and then remove the Network Bridge.&quot;
++  1106,  &quot;You cannot configure the properties of an individual incoming connection.\nPlease configure the properties of the 'Incoming Connections' icon in the Network Connections Folder instead.&quot;
++  1107,  &quot;You cannot delete this connection because a property page is currently open. Please close this page and try again.&quot;
+ }
+ 
+-
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-1150, 	&quot;Copy of %1&quot;
+-1151, 	&quot;Copy (%1) of %2&quot;
++  1150,  &quot;Copy of %1&quot;
++  1151,  &quot;Copy (%1) of %2&quot;
+ }
+ 
+-
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-1152, 	&quot;An error has occurred while trying to update the Network Provider order.&quot;
+-1153, 	&quot;An error has occurred while trying to update the Print Provider order. The Print Spooler service on this machine may be disabled or could not be contacted.&quot;
+-1154, 	&quot;Error updating Network Providers&quot;
+-1155, 	&quot;No clients connected&quot;
+-1156, 	&quot;1 client connected&quot;
+-1157, 	&quot;%1!d! clients connected&quot;
+-1158, 	&quot;%1, %2&quot;
+-1160, 	&quot;Internet access&quot;
+-1161, 	&quot;No Internet access&quot;
+-1162, 	&quot;No network access&quot;
+-1163, 	&quot;Internet and domain access&quot;
+-1164, 	&quot;Domain access only&quot;
++  1152,  &quot;An error has occurred while trying to update the Network Provider order.&quot;
++  1153,  &quot;An error has occurred while trying to update the Print Provider order. The Print Spooler service on this machine may be disabled or could not be contacted.&quot;
++  1154,  &quot;Error updating Network Providers&quot;
++  1155,  &quot;No clients connected&quot;
++  1156,  &quot;1 client connected&quot;
++  1157,  &quot;%1!d! clients connected&quot;
++  1158,  &quot;%1, %2&quot;
++  1160,  &quot;Internet access&quot;
++  1161,  &quot;No Internet access&quot;
++  1162,  &quot;No network access&quot;
++  1163,  &quot;Internet and domain access&quot;
++  1164,  &quot;Domain access only&quot;
+ }
+ 
+-
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-1170, 	&quot;Private network&quot;
+-1171, 	&quot;Public network&quot;
+-1172, 	&quot;Domain network&quot;
++  1170,  &quot;Private network&quot;
++  1171,  &quot;Public network&quot;
++  1172,  &quot;Domain network&quot;
+ }
+ 
+-
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-1200, 	&quot;Network Connections&quot;
+-1201, 	&quot;Connects to other computers, networks, and the Internet.&quot;
++  1200,  &quot;Network Connections&quot;
++  1201,  &quot;Connects to other computers, networks, and the Internet.&quot;
+ }
+ 
+-
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-1507, 	&quot;The Network Connections Folder was unable to retrieve the list of Network adapters on your machine.\nPlease make sure that the Network Connections service is enabled and running.&quot;
++  1507,  &quot;The Network Connections Folder was unable to retrieve the list of Network adapters on your machine.\r\nPlease make sure that the Network Connections service is enabled and running.&quot;
+ }
+ 
+-
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-1525, 	&quot;Connect / disconnect wireless networks&quot;
+-1530, 	&quot;Start this connection&quot;
+-1531, 	&quot;Start the selected connections&quot;
+-1535, 	&quot;Disconnect this connection&quot;
++  1525,  &quot;Connect / disconnect wireless networks&quot;
++  1530,  &quot;Start this connection&quot;
++  1531,  &quot;Start the selected connections&quot;
++  1535,  &quot;Disconnect this connection&quot;
+ }
+ 
+-
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-1536, 	&quot;Disconnect the selected connections&quot;
+-1540, 	&quot;Diagnose this connection&quot;
+-1545, 	&quot;Diagnose the selected connections&quot;
+-1550, 	&quot;Rename this connection&quot;
+-1551, 	&quot;Rename the selected connections&quot;
++  1536,  &quot;Disconnect the selected connections&quot;
++  1540,  &quot;Diagnose this connection&quot;
++  1545,  &quot;Diagnose the selected connections&quot;
++  1550,  &quot;Rename this connection&quot;
++  1551,  &quot;Rename the selected connections&quot;
+ }
+ 
+-
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-1555, 	&quot;View status of this connection&quot;
+-1556, 	&quot;View status of the selected connections&quot;
+-1560, 	&quot;Delete this connection&quot;
+-1561, 	&quot;Delete the selected connections&quot;
+-1565, 	&quot;Enable this network device&quot;
+-1566, 	&quot;Enable the selected network devices&quot;
++  1555,  &quot;View status of this connection&quot;
++  1556,  &quot;View status of the selected connections&quot;
++  1560,  &quot;Delete this connection&quot;
++  1561,  &quot;Delete the selected connections&quot;
++  1565,  &quot;Enable this network device&quot;
++  1566,  &quot;Enable the selected network devices&quot;
+ }
+ 
+-
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-1570, 	&quot;Disable this network device&quot;
+-1571, 	&quot;Disable the selected network devices&quot;
+-1575, 	&quot;Change settings of this connection&quot;
+-1576, 	&quot;Change settings of the selected connections&quot;
++  1570,  &quot;Disable this network device&quot;
++  1571,  &quot;Disable the selected network devices&quot;
++  1575,  &quot;Change settings of this connection&quot;
++  1576,  &quot;Change settings of the selected connections&quot;
+ }
+ 
+-
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-1602, 	&quot;C&amp;onnect&quot;
+-1603, 	&quot;Disc&amp;onnect&quot;
+-1604, 	&quot;Stat&amp;us&quot;
+-1605, 	&quot;Create &amp;Shortcut&quot;
+-1606, 	&quot;&amp;Delete&quot;
+-1607, 	&quot;Rena&amp;me&quot;
+-1608, 	&quot;P&amp;roperties&quot;
+-1609, 	&quot;Create &amp;Copy&quot;
++  1602,  &quot;C&amp;onnect&quot;
++  1603,  &quot;Disc&amp;onnect&quot;
++  1604,  &quot;Stat&amp;us&quot;
++  1605,  &quot;Create &amp;Shortcut&quot;
++  1606,  &quot;&amp;Delete&quot;
++  1607,  &quot;Rena&amp;me&quot;
++  1608,  &quot;P&amp;roperties&quot;
++  1609,  &quot;Create &amp;Copy&quot;
+ }
+ 
+-
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-1616, 	&quot;En&amp;able&quot;
+-1617, 	&quot;Disa&amp;ble&quot;
+-1618, 	&quot;Brid&amp;ge Connections&quot;
+-1619, 	&quot;Add to Brid&amp;ge&quot;
+-1620, 	&quot;Remove from Brid&amp;ge&quot;
+-1621, 	&quot;Set as De&amp;fault Connection&quot;
+-1622, 	&quot;Cancel as De&amp;fault Connection&quot;
+-1623, 	&quot;D&amp;iagnose&quot;
+-1624, 	&quot;C&amp;onnect / Disconnect&quot;
+-1626, 	&quot;&amp;View Bluetooth Network Devices&quot;
+-1627, 	&quot;Disc&amp;onnect&quot;
++  1616,  &quot;En&amp;able&quot;
++  1617,  &quot;Disa&amp;ble&quot;
++  1618,  &quot;Brid&amp;ge Connections&quot;
++  1619,  &quot;Add to Brid&amp;ge&quot;
++  1620,  &quot;Remove from Brid&amp;ge&quot;
++  1621,  &quot;Set as De&amp;fault Connection&quot;
++  1622,  &quot;Cancel as De&amp;fault Connection&quot;
++  1623,  &quot;D&amp;iagnose&quot;
++  1624,  &quot;C&amp;onnect / Disconnect&quot;
++  1626,  &quot;&amp;View Bluetooth Network Devices&quot;
++  1627,  &quot;Disc&amp;onnect&quot;
+ }
+ 
+-
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-1700, 	&quot;View Bluetooth network devices&quot;
+-1701, 	&quot;%1!s!&quot;
+-1702, 	&quot;IPv6 Enabled&quot;
+-1703, 	&quot;\nPhysical Address: %1!s!&quot;
+-1704, 	&quot;Bluetooth connection unavailable&quot;
+-1705, 	&quot;Role: Personal Area Network Client&quot;
+-1706, 	&quot;Role: Network Access Point&quot;
+-1707, 	&quot;Role: Ad-hoc Network Gateway&quot;
+-1708, 	&quot;Role: None&quot;
+-1709, 	&quot;Role: Unknown&quot;
+-1710, 	&quot;Personal Area Network&quot;
+-1711, 	&quot;Connected to %1!s!&quot;
++  1700,  &quot;View Bluetooth network devices&quot;
++  1701,  &quot;%1!s!&quot;
++  1702,  &quot;IPv6 Enabled&quot;
++  1703,  &quot;\nPhysical Address: %1!s!&quot;
++  1704,  &quot;Bluetooth connection unavailable&quot;
++  1705,  &quot;Role: Personal Area Network Client&quot;
++  1706,  &quot;Role: Network Access Point&quot;
++  1707,  &quot;Role: Ad-hoc Network Gateway&quot;
++  1708,  &quot;Role: None&quot;
++  1709,  &quot;Role: Unknown&quot;
++  1710,  &quot;Personal Area Network&quot;
++  1711,  &quot;Connected to %1!s!&quot;
+ }
+ 
+-
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-1712, 	&quot;Disconnect this connection&quot;
++  1712,  &quot;Disconnect this connection&quot;
+ }
+ 
+-
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-1801, 	&quot;Virtual Private Network Connection&quot;
+-1802, 	&quot;VPN&quot;
+-1803, 	&quot;Dial-up Connection&quot;
+-1804, 	&quot;Dial-up&quot;
+-1805, 	&quot;ISDN Connection&quot;
+-1806, 	&quot;ISDN&quot;
+-1807, 	&quot;Broadband Connection&quot;
++  1801,  &quot;Virtual Private Network Connection&quot;
++  1802,  &quot;VPN&quot;
++  1803,  &quot;Dial-up Connection&quot;
++  1804,  &quot;Dial-up&quot;
++  1805,  &quot;ISDN Connection&quot;
++  1806,  &quot;ISDN&quot;
++  1807,  &quot;Broadband Connection&quot;
+ }
+ 
+-
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-1808, 	&quot;PPPOE&quot;
+-1809, 	&quot;Incoming Connections&quot;
+-1810, 	&quot;Incoming&quot;
+-1811, 	&quot;Local Area Connection&quot;
+-1812, 	&quot;LAN&quot;
+-1813, 	&quot;Wireless Network Connection&quot;
+-1814, 	&quot;Wireless&quot;
+-1815, 	&quot;Network Bridge&quot;
+-1816, 	&quot;Network Bridge&quot;
+-1817, 	&quot;Shared Access Host&quot;
+-1818, 	&quot;Shared Access Host&quot;
+-1819, 	&quot;Shared Access Host&quot;
+-1820, 	&quot;Shared Access Host&quot;
++  1808,  &quot;PPPOE&quot;
++  1809,  &quot;Incoming Connections&quot;
++  1810,  &quot;Incoming&quot;
++  1811,  &quot;Local Area Connection&quot;
++  1812,  &quot;LAN&quot;
++  1813,  &quot;Wireless Network Connection&quot;
++  1814,  &quot;Wireless&quot;
++  1815,  &quot;Network Bridge&quot;
++  1816,  &quot;Network Bridge&quot;
++  1817,  &quot;Shared Access Host&quot;
++  1818,  &quot;Shared Access Host&quot;
++  1819,  &quot;Shared Access Host&quot;
++  1820,  &quot;Shared Access Host&quot;
+ }
+ 
+-
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-1825, 	&quot;1394 Connection&quot;
+-1826, 	&quot;1394&quot;
+-1827, 	&quot; to the Internet&quot;
+-1828, 	&quot; on my Home Network&quot;
++  1825,  &quot;1394 Connection&quot;
++  1826,  &quot;1394&quot;
++  1827,  &quot; to the Internet&quot;
++  1828,  &quot; on my Home Network&quot;
+ }
+ 
+-
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-2001, 	&quot;Connect&quot;
++  2001,  &quot;Connect&quot;
+ }
+ 
+-
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-2100, 	&quot;System&quot;
++  2100,  &quot;System&quot;
+ }
+ 
+-
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-2210, 	&quot;C&amp;onnect&quot;
+-2211, 	&quot;Disc&amp;onnect&quot;
+-2212, 	&quot;En&amp;able&quot;
+-2213, 	&quot;Disa&amp;ble&quot;
++  2210,  &quot;C&amp;onnect&quot;
++  2211,  &quot;Disc&amp;onnect&quot;
++  2212,  &quot;En&amp;able&quot;
++  2213,  &quot;Disa&amp;ble&quot;
+ }
+ 
+-
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-2227, 	&quot;IP Address: %1!s!\nSubnet Mask: %2!s!&quot;
+-2228, 	&quot;%1!s!&quot;
+-2229, 	&quot;%1!s!&quot;
+-2230, 	&quot;Network: %1!s!&quot;
+-2231, 	&quot;Encryption: %1!s!&quot;
+-2232, 	&quot;Signal Strength: %1!s!&quot;
++  2227,  &quot;IP Address: %1!s!\r\nSubnet Mask: %2!s!&quot;
++  2228,  &quot;%1!s!&quot;
++  2229,  &quot;%1!s!&quot;
++  2230,  &quot;Network: %1!s!&quot;
++  2231,  &quot;Encryption: %1!s!&quot;
++  2232,  &quot;Signal Strength: %1!s!&quot;
+ }
+ 
+-
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-2400, 	&quot;You must shut down and restart your computer before the new settings will take effect.\n\nDo you want to restart your computer now?&quot;
+-2401, 	&quot;&amp;What's This?&quot;
+-2402, 	&quot;,&quot;
++  2400,  &quot;You must shut down and restart your computer before the new settings will take effect.\n\nDo you want to restart your computer now?&quot;
++  2401,  &quot;&amp;What's This?&quot;
++  2402,  &quot;,&quot;
+ }
+ 
+-
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-2570, 	&quot;Automatic Private Address&quot;
+-2571, 	&quot;Assigned by DHCP&quot;
+-2572, 	&quot;Alternate Manually Configured&quot;
+-2573, 	&quot;Manually Configured&quot;
+-2574, 	&quot;Assigned by Service Provider&quot;
++  2570,  &quot;Automatic Private Address&quot;
++  2571,  &quot;Assigned by DHCP&quot;
++  2572,  &quot;Alternate Manually Configured&quot;
++  2573,  &quot;Manually Configured&quot;
++  2574,  &quot;Assigned by Service Provider&quot;
+ }
+ 
+-
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-2600, 	&quot;No Signal&quot;
+-2601, 	&quot;Very Low&quot;
+-2602, 	&quot;Low&quot;
+-2603, 	&quot;Good&quot;
+-2604, 	&quot;Very Good&quot;
+-2605, 	&quot;Excellent&quot;
++  2600,  &quot;No Signal&quot;
++  2601,  &quot;Very Low&quot;
++  2602,  &quot;Low&quot;
++  2603,  &quot;Good&quot;
++  2604,  &quot;Very Good&quot;
++  2605,  &quot;Excellent&quot;
+ }
+ 
+-
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-10600, 	&quot;Please wait while Windows bridges the connections...&quot;
+-10601, 	&quot;Please wait while the Network Bridge is removed...&quot;
+-10602, 	&quot;Removing connection(s) from the Network Bridge...&quot;
+-10603, 	&quot;The Network Bridge cannot be configured while other network connection property sheets are open.&quot;
+-10604, 	&quot;To create a Network Bridge, you must select at least two LAN or High-Speed Internet connections that are not being used by Internet Connection Sharing.&quot;
+-10605, 	&quot;An unexpected error occurred while configuring the Network Bridge.&quot;
+-10606, 	&quot;One or more of the selected connections is already being used by the Routing and Remote Access service (RRAS) and cannot be added to the bridge at this time. Before you can add one of the selected connections, you must disable RRAS.\n\nTo open RRAS, click Start, point to Administrative Tools, and then click Routing and Remote Access.&quot;
+-10607, 	&quot;Clustering Services have been detected on this node.\nCertain clustering functionality may be impaired by the Network Bridge.&quot;
++  10600,  &quot;Please wait while Windows bridges the connections...&quot;
++  10601,  &quot;Please wait while the Network Bridge is removed...&quot;
++  10602,  &quot;Removing connection(s) from the Network Bridge...&quot;
++  10603,  &quot;The Network Bridge cannot be configured while other network connection property sheets are open.&quot;
++  10604,  &quot;To create a Network Bridge, you must select at least two LAN or High-Speed Internet connections that are not being used by Internet Connection Sharing.&quot;
++  10605,  &quot;An unexpected error occurred while configuring the Network Bridge.&quot;
++  10606,  &quot;One or more of the selected connections is already being used by the Routing and Remote Access service (RRAS) and cannot be added to the bridge at this time. Before you can add one of the selected connections, you must disable RRAS.\n\nTo open RRAS, click Start, point to Administrative Tools, and then click Routing and Remote Access.&quot;
++  10607,  &quot;Clustering Services have been detected on this node.\nCertain clustering functionality may be impaired by the Network Bridge.&quot;
+ }
+ 
+-
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-12001, 	&quot;Start the Incoming Connections wizard, which helps you create incoming connections to your computer.&quot;
+-12002, 	&quot;Activate the selected connection.&quot;
+-12003, 	&quot;Temporarily inactivate the selected connection so that it cannot be used.&quot;
+-12004, 	&quot;View the connection, duration, speed, activity, and other status settings for this connection.&quot;
+-12005, 	&quot;Create a shortcut to the selected connection.&quot;
+-12006, 	&quot;Remove the selected connection(s) so that it can no longer be used. &quot;
+-12007, 	&quot;Give the connection a different name.&quot;
+-12008, 	&quot;Change settings for this connection, such as adapter or protocol configuration settings.&quot;
+-12009, 	&quot;Create a copy of the selected connection.&quot;
++  12001,  &quot;Start the Incoming Connections wizard, which helps you create incoming connections to your computer.&quot;
++  12002,  &quot;Activate the selected connection.&quot;
++  12003,  &quot;Temporarily inactivate the selected connection so that it cannot be used.&quot;
++  12004,  &quot;View the connection, duration, speed, activity, and other status settings for this connection.&quot;
++  12005,  &quot;Create a shortcut to the selected connection.&quot;
++  12006,  &quot;Remove the selected connection(s) so that it can no longer be used. &quot;
++  12007,  &quot;Give the connection a different name.&quot;
++  12008,  &quot;Change settings for this connection, such as adapter or protocol configuration settings.&quot;
++  12009,  &quot;Create a copy of the selected connection.&quot;
+ }
+ 
+-
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-12016, 	&quot;Prepare the selected network device for use.&quot;
+-12017, 	&quot;Inactivate the selected network device so that it cannot be used.&quot;
+-12018, 	&quot;Connect multiple network connections to form a network bridge.&quot;
+-12019, 	&quot;Add the currently selected connection(s) to the network bridge.&quot;
+-12020, 	&quot;Remove the selected connection(s) from the network bridge.&quot;
+-12021, 	&quot;Set this connection as the default connection.&quot;
+-12022, 	&quot;Cancel this connection as the default.&quot;
+-12023, 	&quot;Correct problems that prevent you from connecting to the network.&quot;
+-12024, 	&quot;View the wireless networks that are available from your location.&quot;
+-12025, 	&quot;View the properties of a wireless network.&quot;
+-12026, 	&quot;View and connect to Bluetooth Personal Area Network devices and computers.&quot;
+-12027, 	&quot;Temporarily inactivate the selected connection so that it cannot be used.&quot;
+-12028, 	&quot;View support information.&quot;
++  12016,  &quot;Prepare the selected network device for use.&quot;
++  12017,  &quot;Inactivate the selected network device so that it cannot be used.&quot;
++  12018,  &quot;Connect multiple network connections to form a network bridge.&quot;
++  12019,  &quot;Add the currently selected connection(s) to the network bridge.&quot;
++  12020,  &quot;Remove the selected connection(s) from the network bridge.&quot;
++  12021,  &quot;Set this connection as the default connection.&quot;
++  12022,  &quot;Cancel this connection as the default.&quot;
++  12023,  &quot;Correct problems that prevent you from connecting to the network.&quot;
++  12024,  &quot;View the wireless networks that are available from your location.&quot;
++  12025,  &quot;View the properties of a wireless network.&quot;
++  12026,  &quot;View and connect to Bluetooth Personal Area Network devices and computers.&quot;
++  12027,  &quot;Temporarily inactivate the selected connection so that it cannot be used.&quot;
++  12028,  &quot;View support information.&quot;
+ }
+ 
+-
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-12032, 	&quot;Open the Network Connections folder.&quot;
+-12033, 	&quot;Open a dialog box where you can specify settings for dial-up connections.&quot;
+-12034, 	&quot;Open a dialog box where you can specify advanced network settings.&quot;
+-12036, 	&quot;Enable or disable operator-assisted dialing.&quot;
+-12038, 	&quot;Open a list of commands for arranging items in a window.&quot;
+-12039, 	&quot;Sort connections alphabetically by name.&quot;
+-12040, 	&quot;Sort connections by type.&quot;
+-12041, 	&quot;Sort connections by size, from smallest to largest.&quot;
++  12032,  &quot;Open the Network Connections folder.&quot;
++  12033,  &quot;Open a dialog box where you can specify settings for dial-up connections.&quot;
++  12034,  &quot;Open a dialog box where you can specify advanced network settings.&quot;
++  12036,  &quot;Enable or disable operator-assisted dialing.&quot;
++  12038,  &quot;Open a list of commands for arranging items in a window.&quot;
++  12039,  &quot;Sort connections alphabetically by name.&quot;
++  12040,  &quot;Sort connections by type.&quot;
++  12041,  &quot;Sort connections by size, from smallest to largest.&quot;
+ }
+ 
+-
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-12048, 	&quot;Sort connections by owner.&quot;
+-12049, 	&quot;Sort connections by phone number or host address.&quot;
+-12050, 	&quot;Sort connections by device name.&quot;
+-12051, 	&quot;Sort connections by connectivity.&quot;
+-12052, 	&quot;Sort connections by category.&quot;
+-12053, 	&quot;Connect multiple network connections to form a network bridge.&quot;
++  12048,  &quot;Sort connections by owner.&quot;
++  12049,  &quot;Sort connections by phone number or host address.&quot;
++  12050,  &quot;Sort connections by device name.&quot;
++  12051,  &quot;Sort connections by connectivity.&quot;
++  12052,  &quot;Sort connections by category.&quot;
++  12053,  &quot;Connect multiple network connections to form a network bridge.&quot;
+ }
+ 
+-
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-16008, 	&quot;Network Connections&quot;
+-16009, 	&quot;Could not add the requested feature. The error is: %1&quot;
+-16011, 	&quot;Could not uninstall the %1 feature. The error is %2.&quot;
+-16012, 	&quot;Local Network Connection Properties&quot;
+-16013, 	&quot;Could not uninstall the %1 feature. %1 is still required by the following feature(s) and cannot be uninstalled until those features are uninstalled: %2&quot;
++  16008,  &quot;Network Connections&quot;
++  16009,  &quot;Could not add the requested feature. The error is: %1&quot;
++  16011,  &quot;Could not uninstall the %1 feature. The error is %2.&quot;
++  16012,  &quot;Local Network Connection Properties&quot;
++  16013,  &quot;Could not uninstall the %1 feature. %1 is still required by the following feature(s) and cannot be uninstalled until those features are uninstalled: %2&quot;
+ }
+ 
+-
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-16016, 	&quot;Local Network&quot;
+-16017, 	&quot;Client&quot;
+-16018, 	&quot;A client provides access to computers and files on the network you are connecting to.&quot;
+-16019, 	&quot;Enabled&quot;
+-16020, 	&quot;Enabling...&quot;
+-16021, 	&quot;Connection failed!&quot;
+-16022, 	&quot;Local Area Connection&quot;
+-16023, 	&quot;Protocol&quot;
+-16024, 	&quot;A protocol is a language your computer uses to communicate with other computers.&quot;
+-16025, 	&quot;Uninstall %1&quot;
+-16026, 	&quot;Uninstalling a feature removes it from all network connections. Are you sure you want to uninstall %1?&quot;
+-16027, 	&quot;Service&quot;
+-16028, 	&quot;Services provide additional features such as file and printer sharing.&quot;
+-16029, 	&quot;Unknown network card.&quot;
+-16030, 	&quot;An error occurred while Internet Connection Sharing was being enabled.&quot;
+-16031, 	&quot;An error occurred while Internet Connection Sharing was being disabled.&quot;
++  16016,  &quot;Local Network&quot;
++  16017,  &quot;Client&quot;
++  16018,  &quot;A client provides access to computers and files on the network you are connecting to.&quot;
++  16019,  &quot;Enabled&quot;
++  16020,  &quot;Enabling...&quot;
++  16021,  &quot;Connection failed!&quot;
++  16022,  &quot;Local Area Connection&quot;
++  16023,  &quot;Protocol&quot;
++  16024,  &quot;A protocol is a language your computer uses to communicate with other computers.&quot;
++  16025,  &quot;Uninstall %1&quot;
++  16026,  &quot;Uninstalling a feature removes it from all network connections. Are you sure you want to uninstall %1?&quot;
++  16027,  &quot;Service&quot;
++  16028,  &quot;Services provide additional features such as file and printer sharing.&quot;
++  16029,  &quot;Unknown network card.&quot;
++  16030,  &quot;An error occurred while Internet Connection Sharing was being enabled.&quot;
++  16031,  &quot;An error occurred while Internet Connection Sharing was being disabled.&quot;
+ }
+ 
+-
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-16032, 	&quot;Internet Connection Sharing is currently enabled for connection '%1'.\n\nIt will now be enabled for connection '%2' instead.&quot;
+-16033, 	&quot;When Internet Connection Sharing is enabled, your LAN adapter will be set to use IP address %1. Your computer may lose connectivity with other computers on your network. If these other computers have static IP addresses, you should set them to obtain their IP addresses automatically.  Are you sure you want to enable Internet Connection Sharing?&quot;
+-16036, 	&quot;An unexpected condition occurred.  Not all of your requested changes in settings could be made.&quot;
+-16037, 	&quot;There are no protocols installed or enabled&quot;
+-16038, 	&quot;You must install and enable at least one protocol for this connection to work. Do you want to select a protocol now ?&quot;
+-16039, 	&quot;Your current selection will also disable the following features:\n%1\n\nAre you sure you want to disable these feature(s) ?&quot;
+-16040, 	&quot;Some of the controls on this property sheet are disabled because one or more other Network property sheets are already open.  To use these controls, close all these property sheets and then reopen this one.&quot;
+-16041, 	&quot;The controls on this property sheet are disabled because the system must first be rebooted before any configuration changes can be made.&quot;
+-16042, 	&quot;Some of the controls on this property sheet are disabled because you do not have sufficient privileges to access or change them.&quot;
+-16043, 	&quot;\n&quot;
+-16044, 	&quot;You must disconnect all Dial-up, VPN, and Incoming connections before this feature can be removed.&quot;
+-16045, 	&quot;You must disconnect all Dial-up, VPN, and Incoming connections before this feature can be added.&quot;
+-16046, 	&quot;You must reboot the machine before this feature can be added.&quot;
+-16047, 	&quot;You must reboot the machine before this feature can be removed.&quot;
++  16032,  &quot;Internet Connection Sharing is currently enabled for connection '%1'.\n\nIt will now be enabled for connection '%2' instead.&quot;
++  16033,  &quot;When Internet Connection Sharing is enabled, your LAN adapter will be set to use IP address %1. Your computer may lose connectivity with other computers on your network. If these other computers have static IP addresses, you should set them to obtain their IP addresses automatically.  Are you sure you want to enable Internet Connection Sharing?&quot;
++  16036,  &quot;An unexpected condition occurred.  Not all of your requested changes in settings could be made.&quot;
++  16037,  &quot;There are no protocols installed or enabled&quot;
++  16038,  &quot;You must install and enable at least one protocol for this connection to work. Do you want to select a protocol now ?&quot;
++  16039,  &quot;Your current selection will also disable the following features:\n%1\n\nAre you sure you want to disable these feature(s) ?&quot;
++  16040,  &quot;Some of the controls on this property sheet are disabled because one or more other Network property sheets are already open.  To use these controls, close all these property sheets and then reopen this one.&quot;
++  16041,  &quot;The controls on this property sheet are disabled because the system must first be rebooted before any configuration changes can be made.&quot;
++  16042,  &quot;Some of the controls on this property sheet are disabled because you do not have sufficient privileges to access or change them.&quot;
++  16043,  &quot;\n&quot;
++  16044,  &quot;You must disconnect all Dial-up, VPN, and Incoming connections before this feature can be removed.&quot;
++  16045,  &quot;You must disconnect all Dial-up, VPN, and Incoming connections before this feature can be added.&quot;
++  16046,  &quot;You must reboot the machine before this feature can be added.&quot;
++  16047,  &quot;You must reboot the machine before this feature can be removed.&quot;
+ }
+ 
+-
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-16049, 	&quot;Internet Connection Sharing (ICS) cannot be enabled because Routing and Remote Access has been enabled on this computer. To enable ICS, first disable Routing and Remote Access.\n\nFor more information about Routing and Remote Access or ICS, see Help and Support.&quot;
+-16050, 	&quot;Location: Slot %d, Port %d&quot;
+-16051, 	&quot;Location: Slot %d&quot;
+-16052, 	&quot;Location: Port %d&quot;
+-16053, 	&quot;MAC Address: %1!s!&quot;
+-16062, 	&quot;Network Bridge&quot;
+-16063, 	&quot;Remote ICS Connection Properties&quot;
++  16049,  &quot;Internet Connection Sharing (ICS) cannot be enabled because Routing and Remote Access has been enabled on this computer. To enable ICS, first disable Routing and Remote Access.\n\nFor more information about Routing and Remote Access or ICS, see Help and Support.&quot;
++  16050,  &quot;Location: Slot %d, Port %d&quot;
++  16051,  &quot;Location: Slot %d&quot;
++  16052,  &quot;Location: Port %d&quot;
++  16053,  &quot;MAC Address: %1!s!&quot;
++  16062,  &quot;Network Bridge&quot;
++  16063,  &quot;Remote ICS Connection Properties&quot;
+ }
+ 
+-
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-16070, 	&quot;Connecting...&quot;
+-16071, 	&quot;Connected&quot;
+-16072, 	&quot;Select a private network connection&quot;
+-16073, 	&quot;To enable Internet Connection Sharing a connection must be selected for the private network. Please select a connection from the list of available connections.&quot;
+-16074, 	&quot;Because the Windows Management Instrumentation (WMI) service has been disabled, Windows cannot display the properties of this connection or the home network.\n\nTo configure the properties of this connection or your home network, you must first enable the WMI service. To do this, Click the Start button, then click Run. In the 'Open' text box, type 'services.msc' and click OK. Right-click Windows Management Instrumentation, and click Properties. Change the Startup type from Disabled to Automatic, and then click OK.&quot;
+-16075, 	&quot;Windows cannot display the properties of this connection. The Windows Management Instrumentation (WMI) information might be corrupted. To correct this, use System Restore to restore Windows to an earlier time (called a restore point). System Restore is located in the System Tools folder in Accessories.&quot;
++  16070,  &quot;Connecting...&quot;
++  16071,  &quot;Connected&quot;
++  16072,  &quot;Select a private network connection&quot;
++  16073,  &quot;To enable Internet Connection Sharing a connection must be selected for the private network. Please select a connection from the list of available connections.&quot;
++  16074,  &quot;Because the Windows Management Instrumentation (WMI) service has been disabled, Windows cannot display the properties of this connection or the home network.\n\nTo configure the properties of this connection or your home network, you must first enable the WMI service. To do this, Click the Start button, then click Run. In the 'Open' text box, type 'services.msc' and click OK. Right-click Windows Management Instrumentation, and click Properties. Change the Startup type from Disabled to Automatic, and then click OK.&quot;
++  16075,  &quot;Windows cannot display the properties of this connection. The Windows Management Instrumentation (WMI) information might be corrupted. To correct this, use System Restore to restore Windows to an earlier time (called a restore point). System Restore is located in the System Tools folder in Accessories.&quot;
+ }
+ 
+-
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-16122, 	&quot;The Internet Connection Sharing computer is not configured to let network users control or disable the shared Internet connection.\n\nThis setting can be changed in the Advanced Properties of the shared connection on the Internet Connection Sharing computer.&quot;
+-16123, 	&quot;Advanced Settings&quot;
++  16122,  &quot;The Internet Connection Sharing computer is not configured to let network users control or disable the shared Internet connection.\n\nThis setting can be changed in the Advanced Properties of the shared connection on the Internet Connection Sharing computer.&quot;
++  16123,  &quot;Advanced Settings&quot;
+ }
+ 
+-
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-16128, 	&quot;You have made changes to the properties of this connection.\nIf you proceed your changes will be lost.\n\nDo you wish to proceed?&quot;
+-16132, 	&quot;Clustering Services have been detected on this node.\nCertain clustering functionality may be impaired by Internet Connection Firewall.&quot;
+-16133, 	&quot;Filters currently installed on the system have reached the limit&quot;
++  16128,  &quot;You have made changes to the properties of this connection.\nIf you proceed your changes will be lost.\n\nDo you wish to proceed?&quot;
++  16132,  &quot;Clustering Services have been detected on this node.\nCertain clustering functionality may be impaired by Internet Connection Firewall.&quot;
++  16133,  &quot;Filters currently installed on the system have reached the limit&quot;
+ }
+ 
+-
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-22010, 	&quot;Network Connections&quot;
+-22011, 	&quot;&amp;Connect&quot;
+-22012, 	&quot;&lt;No Connections Found&gt;&quot;
++  22010,  &quot;Network Connections&quot;
++  22011,  &quot;&amp;Connect&quot;
++  22012,  &quot;&lt;No Connections Found&gt;&quot;
+ }
+ 
+-
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-23010, 	&quot;Disconnected&quot;
+-23011, 	&quot;Connecting&quot;
+-23012, 	&quot;Connected&quot;
+-23013, 	&quot;Disconnecting&quot;
+-23014, 	&quot;Hardware Not Present&quot;
+-23015, 	&quot;Hardware Disabled&quot;
+-23016, 	&quot;Hardware Malfunction&quot;
+-23020, 	&quot;&amp;Close&quot;
+-23021, 	&quot;&amp;Disconnect&quot;
++  23010,  &quot;Disconnected&quot;
++  23011,  &quot;Connecting&quot;
++  23012,  &quot;Connected&quot;
++  23013,  &quot;Disconnecting&quot;
++  23014,  &quot;Hardware Not Present&quot;
++  23015,  &quot;Hardware Disabled&quot;
++  23016,  &quot;Hardware Malfunction&quot;
++  23020,  &quot;&amp;Close&quot;
++  23021,  &quot;&amp;Disconnect&quot;
+ }
+ 
+-
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-23030, 	&quot;%d.%1d bps&quot;
+-23031, 	&quot;%d.%1d Kbps&quot;
+-23032, 	&quot;%d.%1d Mbps&quot;
+-23033, 	&quot;%d.%1d Gbps&quot;
+-23034, 	&quot;%d.%1d Tbps&quot;
++  23030,  &quot;%d.%1d bps&quot;
++  23031,  &quot;%d.%1d Kbps&quot;
++  23032,  &quot;%d.%1d Mbps&quot;
++  23033,  &quot;%d.%1d Gbps&quot;
++  23034,  &quot;%d.%1d Tbps&quot;
+ }
+ 
+-
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-23040, 	&quot;Connection Status&quot;
+-23041, 	&quot;%1 Status&quot;
+-23042, 	&quot;The connection could not be disconnected.&quot;
+-23050, 	&quot;Bytes:&quot;
+-23051, 	&quot;Packets:&quot;
+-23052, 	&quot;&amp;Suspend&quot;
+-23053, 	&quot;Re&amp;sume&quot;
+-23054, 	&quot;Suspending the selected device will result in disconnecting %1 entirely. Do you want to disconnect?&quot;
+-23055, 	&quot;Property&quot;
++  23040,  &quot;Connection Status&quot;
++  23041,  &quot;%1 Status&quot;
++  23042,  &quot;The connection could not be disconnected.&quot;
++  23050,  &quot;Bytes:&quot;
++  23051,  &quot;Packets:&quot;
++  23052,  &quot;&amp;Suspend&quot;
++  23053,  &quot;Re&amp;sume&quot;
++  23054,  &quot;Suspending the selected device will result in disconnecting %1 entirely. Do you want to disconnect?&quot;
++  23055,  &quot;Property&quot;
+ }
+ 
+-
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-23056, 	&quot;Value&quot;
+-23063, 	&quot;Destination address&quot;
+-23064, 	&quot;Origin address&quot;
+-23065, 	&quot;Server IPv4 address&quot;
+-23066, 	&quot;Client IPv4 address&quot;
+-23067, 	&quot;Server IPv6 address&quot;
+-23068, 	&quot;Client IPv6 address&quot;
+-23069, 	&quot; day&quot;
+-23070, 	&quot; days&quot;
++  23056,  &quot;Value&quot;
++  23063,  &quot;Destination address&quot;
++  23064,  &quot;Origin address&quot;
++  23065,  &quot;Server IPv4 address&quot;
++  23066,  &quot;Client IPv4 address&quot;
++  23067,  &quot;Server IPv6 address&quot;
++  23068,  &quot;Client IPv6 address&quot;
++  23069,  &quot; day&quot;
++  23070,  &quot; days&quot;
+ }
+ 
+-
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-23072, 	&quot;Authentication&quot;
+-23073, 	&quot;Encryption&quot;
+-23074, 	&quot;Compression&quot;
+-23075, 	&quot;Network Adapter Used&quot;
+-23076, 	&quot;Machine certificate&quot;
+-23077, 	&quot;PAP&quot;
+-23078, 	&quot;CHAP&quot;
+-23079, 	&quot;MS CHAP V2&quot;
+-23080, 	&quot;EAP&quot;
+-23081, 	&quot;Mobike Supported&quot;
+-23082, 	&quot;Device Name&quot;
+-23083, 	&quot;Device Type&quot;
+-23084, 	&quot;NAP State&quot;
+-23085, 	&quot;Not NAP-capable&quot;
+-23086, 	&quot;Unrestricted&quot;
+-23087, 	&quot;Probation&quot;
++  23072,  &quot;Authentication&quot;
++  23073,  &quot;Encryption&quot;
++  23074,  &quot;Compression&quot;
++  23075,  &quot;Network Adapter Used&quot;
++  23076,  &quot;Machine certificate&quot;
++  23077,  &quot;PAP&quot;
++  23078,  &quot;CHAP&quot;
++  23079,  &quot;MS CHAP V2&quot;
++  23080,  &quot;EAP&quot;
++  23081,  &quot;Mobike Supported&quot;
++  23082,  &quot;Device Name&quot;
++  23083,  &quot;Device Type&quot;
++  23084,  &quot;NAP State&quot;
++  23085,  &quot;Not NAP-capable&quot;
++  23086,  &quot;Unrestricted&quot;
++  23087,  &quot;Probation&quot;
+ }
+ 
+-
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-23088, 	&quot;Restricted&quot;
+-23093, 	&quot;MPPE 56&quot;
+-23094, 	&quot;MPPE 40&quot;
+-23095, 	&quot;MPPE 128&quot;
+-23096, 	&quot;IPsec: ESP DES-56&quot;
+-23097, 	&quot;IPsec: ESP 3DES&quot;
+-23098, 	&quot;IPsec: AES 128&quot;
+-23099, 	&quot;IPsec: AES 256&quot;
+-23100, 	&quot;IPsec: AES 192&quot;
+-23101, 	&quot;None&quot;
+-23103, 	&quot;MPPC&quot;
++  23088,  &quot;Restricted&quot;
++  23093,  &quot;MPPE 56&quot;
++  23094,  &quot;MPPE 40&quot;
++  23095,  &quot;MPPE 128&quot;
++  23096,  &quot;IPsec: ESP DES-56&quot;
++  23097,  &quot;IPsec: ESP 3DES&quot;
++  23098,  &quot;IPsec: AES 128&quot;
++  23099,  &quot;IPsec: AES 256&quot;
++  23100,  &quot;IPsec: AES 192&quot;
++  23101,  &quot;None&quot;
++  23103,  &quot;MPPC&quot;
+ }
+ 
+-
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-23104, 	&quot;STAC&quot;
+-23105, 	&quot;(none)&quot;
+-23106, 	&quot;(unknown)&quot;
+-23113, 	&quot;PPP multilink framing&quot;
+-23114, 	&quot;On&quot;
+-23115, 	&quot;Off&quot;
+-23116, 	&quot;Yes&quot;
+-23117, 	&quot;No&quot;
++  23104,  &quot;STAC&quot;
++  23105,  &quot;(none)&quot;
++  23106,  &quot;(unknown)&quot;
++  23113,  &quot;PPP multilink framing&quot;
++  23114,  &quot;On&quot;
++  23115,  &quot;Off&quot;
++  23116,  &quot;Yes&quot;
++  23117,  &quot;No&quot;
+ }
+ 
+-
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-23126, 	&quot;&lt;Unavailable&gt;&quot;
+-23127, 	&quot;&lt;None&gt;&quot;
+-23128, 	&quot;Invalid IP Address&quot;
+-23129, 	&quot;Connection Status&quot;
+-23131, 	&quot;The IP Address has been successfully renewed.&quot;
+-23132, 	&quot;Cannot renew the IP Address. The following error has occurred:\n\n&quot;
+-23133, 	&quot;The DNS Resolver Cache has been successfully flushed.&quot;
+-23134, 	&quot;Cannot flush the DNS Resolver Cache. Function failed during execution.&quot;
+-23135, 	&quot;Registration of the DNS resource records for all adapters of this computer has been initiated. Any errors will be reported in the Event Viewer in 15 minutes.&quot;
++  23126,  &quot;&lt;Unavailable&gt;&quot;
++  23127,  &quot;&lt;None&gt;&quot;
++  23128,  &quot;Invalid IP Address&quot;
++  23129,  &quot;Connection Status&quot;
++  23131,  &quot;The IP Address has been successfully renewed.&quot;
++  23132,  &quot;Cannot renew the IP Address. The following error has occurred:\n\n&quot;
++  23133,  &quot;The DNS Resolver Cache has been successfully flushed.&quot;
++  23134,  &quot;Cannot flush the DNS Resolver Cache. Function failed during execution.&quot;
++  23135,  &quot;Registration of the DNS resource records for all adapters of this computer has been initiated. Any errors will be reported in the Event Viewer in 15 minutes.&quot;
+ }
+ 
+-
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-23136, 	&quot;Cannot register the DNS resource records. The following error has occurred:\n\n&quot;
+-23137, 	&quot;Not Available&quot;
+-23138, 	&quot;%1%2&quot;
+-23143, 	&quot;Physical Address&quot;
+-23145, 	&quot;IP Address&quot;
+-23146, 	&quot;IP Addresses&quot;
+-23147, 	&quot;Subnet Mask&quot;
+-23148, 	&quot;Subnet Masks&quot;
+-23149, 	&quot;Default Gateway&quot;
+-23151, 	&quot;Default Gateways&quot;
++  23136,  &quot;Cannot register the DNS resource records. The following error has occurred:\n\n&quot;
++  23137,  &quot;Not Available&quot;
++  23138,  &quot;%1%2&quot;
++  23143,  &quot;Physical Address&quot;
++  23145,  &quot;IP Address&quot;
++  23146,  &quot;IP Addresses&quot;
++  23147,  &quot;Subnet Mask&quot;
++  23148,  &quot;Subnet Masks&quot;
++  23149,  &quot;Default Gateway&quot;
++  23151,  &quot;Default Gateways&quot;
+ }
+ 
+-
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-23152, 	&quot;DHCP Server&quot;
+-23153, 	&quot;DNS Server&quot;
+-23154, 	&quot;DNS Servers&quot;
+-23155, 	&quot;WINS Server&quot;
+-23156, 	&quot;WINS Servers&quot;
+-23157, 	&quot;Lease Obtained&quot;
+-23158, 	&quot;Lease Expires&quot;
+-23159, 	&quot;Property&quot;
+-23160, 	&quot;Value&quot;
+-23163, 	&quot;Link-local IPv6 Address&quot;
+-23164, 	&quot;Site-local IPv6 Address&quot;
+-23165, 	&quot;Temporary IPv6 Address&quot;
+-23166, 	&quot;Autoconfiguration IPv4 Address&quot;
+-23167, 	&quot;Connection-specific DNS Suffix&quot;
++  23152,  &quot;DHCP Server&quot;
++  23153,  &quot;DNS Server&quot;
++  23154,  &quot;DNS Servers&quot;
++  23155,  &quot;WINS Server&quot;
++  23156,  &quot;WINS Servers&quot;
++  23157,  &quot;Lease Obtained&quot;
++  23158,  &quot;Lease Expires&quot;
++  23159,  &quot;Property&quot;
++  23160,  &quot;Value&quot;
++  23163,  &quot;Link-local IPv6 Address&quot;
++  23164,  &quot;Site-local IPv6 Address&quot;
++  23165,  &quot;Temporary IPv6 Address&quot;
++  23166,  &quot;Autoconfiguration IPv4 Address&quot;
++  23167,  &quot;Connection-specific DNS Suffix&quot;
+ }
+ 
+-
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-23168, 	&quot;Description&quot;
+-23169, 	&quot;DHCP Enabled&quot;
+-23170, 	&quot;NetBIOS over Tcpip Enabled&quot;
+-23171, 	&quot;Yes&quot;
+-23172, 	&quot;No&quot;
+-23173, 	&quot;No network access&quot;
+-23174, 	&quot;No Internet access&quot;
+-23175, 	&quot;Internet&quot;
+-23176, 	&quot;Not Connected&quot;
+-23177, 	&quot;IPv4 Address&quot;
+-23178, 	&quot;IPv4 Addresses&quot;
+-23179, 	&quot;IPv4 Subnet Mask&quot;
+-23180, 	&quot;IPv4 Subnet Masks&quot;
+-23181, 	&quot;IPv4 Default Gateway&quot;
+-23182, 	&quot;IPv4 Default Gateways&quot;
+-23183, 	&quot;IPv4 DHCP Server&quot;
++  23168,  &quot;Description&quot;
++  23169,  &quot;DHCP Enabled&quot;
++  23170,  &quot;NetBIOS over Tcpip Enabled&quot;
++  23171,  &quot;Yes&quot;
++  23172,  &quot;No&quot;
++  23173,  &quot;No network access&quot;
++  23174,  &quot;No Internet access&quot;
++  23175,  &quot;Internet&quot;
++  23176,  &quot;Not Connected&quot;
++  23177,  &quot;IPv4 Address&quot;
++  23178,  &quot;IPv4 Addresses&quot;
++  23179,  &quot;IPv4 Subnet Mask&quot;
++  23180,  &quot;IPv4 Subnet Masks&quot;
++  23181,  &quot;IPv4 Default Gateway&quot;
++  23182,  &quot;IPv4 Default Gateways&quot;
++  23183,  &quot;IPv4 DHCP Server&quot;
+ }
+ 
+-
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-23184, 	&quot;IPv4 DNS Server&quot;
+-23185, 	&quot;IPv4 DNS Servers&quot;
+-23186, 	&quot;IPv4 WINS Server&quot;
+-23187, 	&quot;IPv4 WINS Servers&quot;
+-23188, 	&quot;IPv6 Address&quot;
+-23189, 	&quot;IPv6 Addresses&quot;
+-23190, 	&quot;IPv6 Subnet Mask&quot;
+-23191, 	&quot;IPv6 Subnet Masks&quot;
+-23192, 	&quot;IPv6 Default Gateway&quot;
+-23193, 	&quot;IPv6 Default Gateways&quot;
+-23194, 	&quot;IPv6 DHCP Server&quot;
+-23195, 	&quot;IPv6 DNS Server&quot;
+-23196, 	&quot;IPv6 DNS Servers&quot;
+-23197, 	&quot;IPv6 WINS Server&quot;
+-23198, 	&quot;IPv6 WINS Servers&quot;
++  23184,  &quot;IPv4 DNS Server&quot;
++  23185,  &quot;IPv4 DNS Servers&quot;
++  23186,  &quot;IPv4 WINS Server&quot;
++  23187,  &quot;IPv4 WINS Servers&quot;
++  23188,  &quot;IPv6 Address&quot;
++  23189,  &quot;IPv6 Addresses&quot;
++  23190,  &quot;IPv6 Subnet Mask&quot;
++  23191,  &quot;IPv6 Subnet Masks&quot;
++  23192,  &quot;IPv6 Default Gateway&quot;
++  23193,  &quot;IPv6 Default Gateways&quot;
++  23194,  &quot;IPv6 DHCP Server&quot;
++  23195,  &quot;IPv6 DNS Server&quot;
++  23196,  &quot;IPv6 DNS Servers&quot;
++  23197,  &quot;IPv6 WINS Server&quot;
++  23198,  &quot;IPv6 WINS Servers&quot;
+ }
+ 
+-
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-30288, 	&quot;Create &amp;Shortcut&quot;
+-30289, 	&quot;&amp;Delete&quot;
+-30290, 	&quot;Rena&amp;me&quot;
+-30291, 	&quot;P&amp;roperties&quot;
++  30288,  &quot;Create &amp;Shortcut&quot;
++  30289,  &quot;&amp;Delete&quot;
++  30290,  &quot;Rena&amp;me&quot;
++  30291,  &quot;P&amp;roperties&quot;
+ }
+ 
+ 1 MESSAGETABLE
+ {
+-268435505,  	&quot;Response Time&quot;
+-805306368,  	&quot;Info&quot;
+-805306369,  	&quot;Start&quot;
+-805306370,  	&quot;Stop&quot;
+-1342177282,  	&quot;Error&quot;
+-1342177284,  	&quot;Information&quot;
+--1879048191,  	&quot;Microsoft-Windows-PrimaryNetworkIcon&quot;
+--1879048190,  	&quot;Microsoft-Windows-NetworkLocationWizard/Operational&quot;
+--1862270975,  	&quot;Microsoft-Windows-NetShell&quot;
+--1342177280,  	&quot;NetworkLocationDialog - Location Selected: Category %1 ElevationRequired: %2&quot;
+--1342177279,  	&quot;NetworkLocationDialog - Launched&quot;
+--1342177179,  	&quot;PrimaryNetworkIcon Initialized&quot;
+--1342177178,  	&quot;PrimaryNetworkIcon Resumed&quot;
+--1342177159,  	&quot;PrimaryNetworkIcon: State changed to Disconnected&quot;
+--1342177158,  	&quot;PrimaryNetworkIcon: State changed to Connecting&quot;
+--1342177157,  	&quot;PrimaryNetworkIcon: State changed to Limited&quot;
+--1342177156,  	&quot;PrimaryNetworkIcon: State changed to LocalConnected&quot;
+--1342177155,  	&quot;PrimaryNetworkIcon: State changed to InternetConnected&quot;
+--1342177154,  	&quot;PrimaryNetworkIcon: State changed to WirelessAvailable&quot;
+--1342177119,  	&quot;PrimaryNetworkIcon: Network and sharing center selected&quot;
+--1342177118,  	&quot;PrimaryNetworkIcon: VAN UI selected&quot;
+--1342177117,  	&quot;PrimaryNetworkIcon: Troubleshoot selected&quot;
+--1342177116,  	&quot;PrimaryNetworkIcon: Tooltip selected&quot;
+--1342177079,  	&quot;PrimaryNetworkIcon: RightClick Start&quot;
+--1342177078,  	&quot;PrimaryNetworkIcon: RightClick Stop&quot;
+--1342176279,  	&quot;Network location wizard has been suppressed by a system or user registry key.&quot;
+--1342176278,  	&quot;Network location wizard has been suppressed by a user through the UI.&quot;
+--1342176277,  	&quot;Network location wizard has been suppressed because the network is ad-hoc.&quot;
+--1342176276,  	&quot;RunNwCategoryWizard failed.  Details: %1&quot;
+--1342176275,  	&quot;XWizard failed to run the wizard.  Details: %1&quot;
+--1342176274,  	&quot;CanRunTask failed.  Details: %1&quot;
+--1342176273,  	&quot;Network location has been selected.  Network: %1 Location: %2&quot;
+--1342176272,  	&quot;Navigated directly to finish page.  Details: %1&quot;
+--1342176271,  	&quot;Network location selection has been canceled at elevation.  Network: %1 Location: %2&quot;
+--1342176270,  	&quot;Could not register for UI status events.  Details: %1&quot;
+--1342175279,  	&quot;PrimaryNetworkIcon: User notified for interface hotspot&quot;
+--1325392063,  	&quot;NetShell: folder displayed&quot;
++  268435505,  &quot;Response Time\r\n&quot;
++  805306368,  &quot;Info\r\n&quot;
++  805306369,  &quot;Start\r\n&quot;
++  805306370,  &quot;Stop\r\n&quot;
++  1342177282,  &quot;Error\r\n&quot;
++  1342177284,  &quot;Information\r\n&quot;
++  2415919105,  &quot;Microsoft-Windows-PrimaryNetworkIcon\r\n&quot;
++  2415919106,  &quot;Microsoft-Windows-NetworkLocationWizard/Operational\r\n&quot;
++  2432696321,  &quot;Microsoft-Windows-NetShell\r\n&quot;
++  2952790016,  &quot;NetworkLocationDialog - Location Selected: Category %1 ElevationRequired: %2\r\n&quot;
++  2952790017,  &quot;NetworkLocationDialog - Launched\r\n&quot;
++  2952790117,  &quot;PrimaryNetworkIcon Initialized\r\n&quot;
++  2952790118,  &quot;PrimaryNetworkIcon Resumed\r\n&quot;
++  2952790137,  &quot;PrimaryNetworkIcon: State changed to Disconnected\r\n&quot;
++  2952790138,  &quot;PrimaryNetworkIcon: State changed to Connecting\r\n&quot;
++  2952790139,  &quot;PrimaryNetworkIcon: State changed to Limited\r\n&quot;
++  2952790140,  &quot;PrimaryNetworkIcon: State changed to LocalConnected\r\n&quot;
++  2952790141,  &quot;PrimaryNetworkIcon: State changed to InternetConnected\r\n&quot;
++  2952790142,  &quot;PrimaryNetworkIcon: State changed to WirelessAvailable\r\n&quot;
++  2952790177,  &quot;PrimaryNetworkIcon: Network and sharing center selected\r\n&quot;
++  2952790178,  &quot;PrimaryNetworkIcon: VAN UI selected\r\n&quot;
++  2952790179,  &quot;PrimaryNetworkIcon: Troubleshoot selected\r\n&quot;
++  2952790180,  &quot;PrimaryNetworkIcon: Tooltip selected\r\n&quot;
++  2952790217,  &quot;PrimaryNetworkIcon: RightClick Start\r\n&quot;
++  2952790218,  &quot;PrimaryNetworkIcon: RightClick Stop\r\n&quot;
++  2952791017,  &quot;Network location wizard has been suppressed by a system or user registry key.\r\n&quot;
++  2952791018,  &quot;Network location wizard has been suppressed by a user through the UI.\r\n&quot;
++  2952791019,  &quot;Network location wizard has been suppressed because the network is ad-hoc.\r\n&quot;
++  2952791020,  &quot;RunNwCategoryWizard failed.  Details: %1\r\n&quot;
++  2952791021,  &quot;XWizard failed to run the wizard.  Details: %1\r\n&quot;
++  2952791022,  &quot;CanRunTask failed.  Details: %1\r\n&quot;
++  2952791023,  &quot;Network location has been selected.  Network: %1 Location: %2\r\n&quot;
++  2952791024,  &quot;Navigated directly to finish page.  Details: %1\r\n&quot;
++  2952791025,  &quot;Network location selection has been canceled at elevation.  Network: %1 Location: %2\r\n&quot;
++  2952791026,  &quot;Could not register for UI status events.  Details: %1\r\n&quot;
++  2952792017,  &quot;PrimaryNetworkIcon: User notified for interface hotspot\r\n&quot;
++  2969575233,  &quot;NetShell: folder displayed\r\n&quot;
+ }
+-
+-
+-1 VERSIONINFO
+-FILEVERSION 6,1,7600,16385
+-PRODUCTVERSION 6,1,7600,16385
+-FILEOS 0x40004
+-FILETYPE 0x2
+-{
+-BLOCK &quot;StringFileInfo&quot;
+-{
+-	BLOCK &quot;040904B0&quot;
+-	{
+-		VALUE &quot;CompanyName&quot;, &quot;Microsoft Corporation&quot;
+-		VALUE &quot;FileDescription&quot;, &quot;Network Connections Shell&quot;
+-		VALUE &quot;FileVersion&quot;, &quot;6.1.7600.16385 (win7_rtm.090713-1255)&quot;
+-		VALUE &quot;InternalName&quot;, &quot;netshell.dll&quot;
+-		VALUE &quot;LegalCopyright&quot;, &quot;&#169; Microsoft Corporation. All rights reserved.&quot;
+-		VALUE &quot;OriginalFilename&quot;, &quot;netshell.dll.mui&quot;
+-		VALUE &quot;ProductName&quot;, &quot;Microsoft&#174; Windows&#174; Operating System&quot;
+-		VALUE &quot;ProductVersion&quot;, &quot;6.1.7600.16385&quot;
+-	}
+-}
+-
+-BLOCK &quot;VarFileInfo&quot;
+-{
+-	VALUE &quot;Translation&quot;, 0x0409 0x04B0
+-}
+-}
+-
+
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000081.html">[I18n-bel-svn] r163 - in Windows7: omegat source/Program Files	source/Program Files/Common Files source/Program Files/Common	Files/microsoft shared source/Program Files/Common	Files/microsoft shared/ink
+</A></li>
+	<LI>Next message: <A HREF="000083.html">[I18n-bel-svn] r165 - / Windows7 Windows7/omegat
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#82">[ date ]</a>
+              <a href="thread.html#82">[ thread ]</a>
+              <a href="subject.html#82">[ subject ]</a>
+              <a href="author.html#82">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/i18n-bel-svn">More information about the I18n-bel-svn
+mailing list</a><br>
+</body></html>

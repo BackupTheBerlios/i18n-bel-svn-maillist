@@ -1,0 +1,451 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [I18n-bel-svn] r233 - Android/omegat
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/i18n-bel-svn/2011-March/index.html" >
+   <LINK REL="made" HREF="mailto:i18n-bel-svn%40lists.berlios.de?Subject=Re%3A%20%5BI18n-bel-svn%5D%20r233%20-%20Android/omegat&In-Reply-To=%3C20110327152636.E627948097D%40sheep.berlios.de%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000150.html">
+   <LINK REL="Next"  HREF="000152.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[I18n-bel-svn] r233 - Android/omegat</H1>
+    <B>klyok at mail.berlios.de</B> 
+    <A HREF="mailto:i18n-bel-svn%40lists.berlios.de?Subject=Re%3A%20%5BI18n-bel-svn%5D%20r233%20-%20Android/omegat&In-Reply-To=%3C20110327152636.E627948097D%40sheep.berlios.de%3E"
+       TITLE="[I18n-bel-svn] r233 - Android/omegat">klyok at mail.berlios.de
+       </A><BR>
+    <I>Sun Mar 27 17:26:36 CEST 2011</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000150.html">[I18n-bel-svn] r232 - in Android: glossary omegat
+</A></li>
+        <LI>Next message: <A HREF="000152.html">[I18n-bel-svn] r234 - Android/omegat
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#151">[ date ]</a>
+              <a href="thread.html#151">[ thread ]</a>
+              <a href="subject.html#151">[ subject ]</a>
+              <a href="author.html#151">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>Author: klyok
+Date: 2011-03-27 17:26:36 +0200 (Sun, 27 Mar 2011)
+New Revision: 233
+
+Modified:
+   Android/omegat/ignored_words.txt
+   Android/omegat/learned_words.txt
+   Android/omegat/project_save.tmx
+Log:
+?\208?\159?\208?\181?\209?\128?\208?\176?\208?\186?\208?\187?\208?\176?\209?\158 ?\208?\186?\208?\190?\208?\187?\209?\140?\208?\186?\209?\150 ?\209?\128?\208?\176?\208?\180?\208?\186?\208?\190?\209?\158.
+
+Modified: Android/omegat/ignored_words.txt
+===================================================================
+--- Android/omegat/ignored_words.txt	2011-03-27 10:23:26 UTC (rev 232)
++++ Android/omegat/ignored_words.txt	2011-03-27 15:26:36 UTC (rev 233)
+@@ -11,6 +11,7 @@
+ 3days
+ 3G
+ 5min
++802.1x
+ a
+ ABC
+ ABSENT
+@@ -31,6 +32,7 @@
+ ALT
+ always
+ Always
++an
+ android
+ Android
+ AndroidAP
+@@ -39,19 +41,24 @@
+ app
+ AppleWebKit
+ archive
++auto
+ Automatic
+ auto_refresh
+ AutoRegistration
+ b
+ B
+ backspace
++Beispiel
+ bin-signed.zip
+ bluetooth
+ Bluetooth
+ br
++C
+ Call
+ CDMA
+ ChainsDD
++CHAP
++CID
+ color
+ com.android.calendar
+ com.android.contacts
+@@ -65,6 +72,7 @@
+ com.google.android.location.GeocodeProvider
+ com.google.android.location.NetworkLocationProvider
+ com.google.android.talk
++com.svox.pico
+ container
+ cos
+ custom_topics
+@@ -73,13 +81,19 @@
+ data
+ dd
+ dd-MM-yyyy
++de
+ default
+ DEFAULT
+ delete
+ detail
++deu-DEU
++Deutsch
+ dev
++device
+ device-width
++di
+ diag
++Dies
+ display_images_key
+ DisplayName
+ dot
+@@ -87,13 +101,27 @@
+ DRM
+ dt
+ e
++&#232;
++EAP
++&#233;chantillon
+ EcmExitDialog
+ EEE
+ EEEE
++ein
++ejemplo
+ emote
++en
++eng-GBR
++English
++eng-USA
+ ERI
+ eri.xml
++es
++esempio
++espa&#241;ol
++Este
+ EvDo
++example
+ exchange
+ Exchange
+ FACTORY_TEST
+@@ -102,13 +130,18 @@
+ file
+ FlylinkDC
+ forget
++fra-FRA
++fran&#231;ais
+ Froyo
++f&#252;r
+ Gecko
+ geesun
+ Gmail
+ Google
++GPRS
+ GPS
+ GSM
++GTC
+ h
+ H
+ HCO
+@@ -126,10 +159,16 @@
+ ICQ
+ IMAP
+ IMEI
++in
+ Incoming
+ initial-scale
+ intl
++IP
++is
+ ISDN
++ist
++ita-ITA
++italiano
+ Jabber
+ JavaScript
+ KHTML
+@@ -164,6 +203,8 @@
+ MMS
+ Mobile
+ Mozilla
++MSCHAP
++MSCHAPV2
+ MSISDN1
+ n
+ NetMeeting
+@@ -174,15 +215,21 @@
+ niuchl
+ no
+ notification
++notsilent
+ null
+ number
+ NUMBER
+ NV
++of
+ older
+ p
+ P
+ P2P
++PAP
++PDP
++PEAP
+ phone
++Pico
+ PIN
+ PIN2
+ POP3
+@@ -191,10 +238,12 @@
+ PRO
+ Protocol
+ ProxyAddress
++PSK
+ PUK
+ PUK2
+ PUSH
+ QQ
++Questo
+ rac2030
+ red
+ refresh_interval
+@@ -215,6 +264,8 @@
+ silent
+ SIM
+ sin
++sintesi
++s&#237;ntesis
+ SIP
+ SIP_ADDRESS_ONLY
+ SIP_ALWAYS
+@@ -222,25 +273,33 @@
+ SipDomain
+ Skype
+ SMS
++SMSC
+ SMTP
++spa-ESP
+ span
+ SPC
++speech
++Sprachsynthese
+ SSL
+ string
+ style
+ su
+ Superuser
++synth&#232;se
++synthesis
+ system
+ Talk
+ tan
+ TDD
+ temperature_unit_celsius
+ terms_mobile_news.html
++This
+ TLS
+ toast
+ toggle
+ T-Online
+ TransDroid
++TTLS
+ TTY
+ U
+ u0020
+@@ -250,6 +309,7 @@
+ UID
+ UIM
+ UMTS
++un
+ URL
+ USB
+ use_my_location
+@@ -262,14 +322,20 @@
+ vcf
+ VCO
+ Version
++vocale
++Voici
++voz
+ WAP
+ WAP-PUSH
+ WCDMA
+ webkit
++WEP
+ widget_config
+ width
+ Wi-Fi
+ Windows
++WPA
++WPA2
+ www.google.com
+ WyContacts
+ Wysie
+@@ -279,5 +345,10 @@
+ yahoo.com
+ yyyy
+ yyyy-MM-dd
++zh_CN
++zh_TW
+ zip
+ &#960;
++&#20013;&#25991;
++&#31616;&#20307;
++&#32321;&#39636;
+
+Modified: Android/omegat/learned_words.txt
+===================================================================
+--- Android/omegat/learned_words.txt	2011-03-27 10:23:26 UTC (rev 232)
++++ Android/omegat/learned_words.txt	2011-03-27 15:26:36 UTC (rev 233)
+@@ -11,15 +11,18 @@
+ &#1072;&#1076;&#1085;&#1086;&#1118;&#1082;&#1091;
+ &#1072;&#1078;&#1099;&#1118;&#1083;&#1077;&#1085;&#1100;&#1085;&#1103;&#1118;
+ &#1072;&#1079;&#1085;&#1072;&#1095;&#1072;&#1083;&#1100;&#1085;&#1110;&#1082;
++&#1072;&#1079;&#1085;&#1072;&#1095;&#1072;&#1083;&#1100;&#1085;&#1110;&#1082;&#1091;
+ &#1072;&#1087;&#1072;&#1079;&#1085;&#1072;&#1074;&#1072;&#1083;&#1100;&#1085;&#1110;&#1082;
+ &#1040;&#1087;&#1072;&#1079;&#1085;&#1072;&#1074;&#1072;&#1083;&#1100;&#1085;&#1110;&#1082;&#1110;&#1056;&#1072;&#1093;&#1091;&#1085;&#1082;&#1091;
+ &#1072;&#1087;&#1072;&#1079;&#1085;&#1072;&#1074;&#1072;&#1083;&#1100;&#1085;&#1110;&#1082;&#1091;
++&#1040;&#1087;&#1072;&#1079;&#1085;&#1072;&#1077;&#1084;&#1089;&#1103;
+ &#1040;&#1087;&#1088;&#1072;&#1094;&#1086;&#1118;&#1085;&#1110;&#1082;
+ &#1072;&#1087;&#1088;&#1072;&#1094;&#1086;&#1118;&#1085;&#1110;&#1082;&#1091;
+ &#1072;&#1088;&#1093;&#1110;&#1074;&#1072;&#1074;&#1072;&#1094;&#1100;
+ &#1040;&#1088;&#1093;&#1110;&#1074;&#1072;&#1074;&#1072;&#1094;&#1100;
+ &#1072;&#1089;&#1100;&#1074;&#1077;&#1090;&#1072;&#1088;&#1091;
+ &#1072;&#1090;&#1088;&#1099;&#1084;&#1074;&#1072;&#1077;
++&#1040;&#1090;&#1088;&#1099;&#1084;&#1074;&#1072;&#1077;&#1084;
+ &#1040;&#1090;&#1088;&#1099;&#1084;&#1074;&#1072;&#1077;&#1094;&#1094;&#1072;
+ &#1072;&#1090;&#1088;&#1099;&#1084;&#1074;&#1072;&#1094;&#1100;
+ &#1040;&#1090;&#1088;&#1099;&#1084;&#1074;&#1072;&#1102;&#1094;&#1094;&#1072;
+@@ -113,6 +116,7 @@
+ &#1051;&#1050;&#1044;
+ &#1051;&#1102;&#1090;
+ &#1052;&#1073;
++&#1084;&#1042;
+ &#1084;&#1110;&#1083;&#1110;&#1089;&#1101;&#1082;&#1091;&#1085;&#1076;&#1072;&#1093;
+ &#1084;&#1086;&#1078;&#1085;&#1072;&#1089;&#1100;&#1094;&#1103;&#1118;
+ &#1084;&#1101;&#1076;&#1099;&#1103;
+@@ -157,6 +161,8 @@
+ &#1087;&#1077;&#1088;&#1072;&#1085;&#1072;&#1082;&#1110;&#1088;&#1086;&#1118;&#1074;&#1072;&#1094;&#1100;
+ &#1055;&#1077;&#1088;&#1072;&#1085;&#1072;&#1082;&#1110;&#1088;&#1086;&#1118;&#1074;&#1072;&#1094;&#1100;
+ &#1087;&#1077;&#1088;&#1096;&#1072;&#1075;&#1088;&#1091;&#1079;&#1110;&#1094;&#1094;&#1072;
++&#1055;&#1110;&#1085;&#1075;
++&#1087;&#1110;&#1085;&#1075;&#1072;&#1084;
+ &#1055;&#1083;&#1072;&#1096;&#1095;&#1099;&#1085;&#1103;
+ &#1055;&#1085;
+ &#1087;&#1088;&#1072;&#1074;&#1072;&#1088;&#1091;&#1095;
+@@ -187,6 +193,7 @@
+ &#1089;&#1077;&#1094;&#1110;&#1074;&#1072;&#1084;
+ &#1089;&#1077;&#1094;&#1110;&#1074;&#1077;
+ &#1057;&#1110;&#1076;&#1085;&#1101;&#1081;
++&#1089;&#1082;&#1083;&#1072;&#1076;&#1085;&#1110;&#1082;&#1072;&#1084;&#1110;
+ &#1089;&#1082;&#1083;&#1072;&#1076;&#1085;&#1110;&#1082;&#1110;
+ &#1089;&#1082;&#1083;&#1072;&#1076;&#1085;&#1110;&#1082;&#1091;
+ &#1057;&#1083;&#1091;&#1078;&#1073;&#1072;&#1050;&#1110;&#1088;&#1072;&#1074;&#1072;&#1094;&#1100;&#1056;&#1072;&#1093;&#1091;&#1085;&#1082;&#1072;&#1084;
+
+Modified: Android/omegat/project_save.tmx
+===================================================================
+--- Android/omegat/project_save.tmx	2011-03-27 10:23:26 UTC (rev 232)
++++ Android/omegat/project_save.tmx	2011-03-27 15:26:36 UTC (rev 233)
+@@ -7386,6 +7386,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;An application on your phone is requesting permission to make your phone discoverable by other Bluetooth devices for %1$d seconds.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110327T135247Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1055;&#1088;&#1072;&#1075;&#1088;&#1072;&#1084;&#1072; &#1079; &#1074;&#1072;&#1096;&#1072;&#1075;&#1072; &#1090;&#1101;&#1083;&#1077;&#1092;&#1086;&#1085;&#1091; &#1079;&#1072;&#1087;&#1099;&#1090;&#1074;&#1072;&#1077;&#1094;&#1094;&#1072; &#1085;&#1072; &#1076;&#1072;&#1079;&#1074;&#1086;&#1083; &#1079;&#1088;&#1072;&#1073;&#1110;&#1094;&#1100; &#1074;&#1072;&#1096; &#1090;&#1101;&#1083;&#1077;&#1092;&#1086;&#1085; &#1073;&#1072;&#1095;&#1085;&#1099;&#1084; &#1094;&#1103;&#1075;&#1072;&#1084; %1$d &#1089;&#1101;&#1082;&#1091;&#1085;&#1076;&#1072;&#1118; &#1110;&#1085;&#1096;&#1099;&#1084; &#1087;&#1088;&#1099;&#1083;&#1072;&#1076;&#1072;&#1084; Bluetooth.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;An application on your phone is requesting permission to make your phone discoverable by other Bluetooth devices for %1$d seconds. Do you want to do this?&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110326T123852Z&quot; changeid=&quot;klyok&quot;&gt;
+@@ -7394,6 +7402,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;An application on your phone is requesting permission to turn on Bluetooth and to make your phone discoverable by other devices for %1$d seconds.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110327T135259Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1055;&#1088;&#1072;&#1075;&#1088;&#1072;&#1084;&#1072; &#1079; &#1074;&#1072;&#1096;&#1072;&#1075;&#1072; &#1090;&#1101;&#1083;&#1077;&#1092;&#1086;&#1085;&#1091; &#1079;&#1072;&#1087;&#1099;&#1090;&#1074;&#1072;&#1077;&#1094;&#1094;&#1072; &#1085;&#1072; &#1076;&#1072;&#1079;&#1074;&#1086;&#1083; &#1091;&#1082;&#1083;&#1102;&#1095;&#1099;&#1094;&#1100; Bluetooth &#1110; &#1079;&#1088;&#1072;&#1073;&#1110;&#1094;&#1100; &#1074;&#1072;&#1096; &#1090;&#1101;&#1083;&#1077;&#1092;&#1086;&#1085; &#1073;&#1072;&#1095;&#1085;&#1099;&#1084; &#1094;&#1103;&#1075;&#1072;&#1084; %1$d &#1089;&#1101;&#1082;&#1091;&#1085;&#1076;&#1072;&#1118; &#1110;&#1085;&#1096;&#1099;&#1084; &#1087;&#1088;&#1099;&#1083;&#1072;&#1076;&#1072;&#1084; Bluetooth.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;An application on your phone is requesting permission to turn on Bluetooth and to make your phone discoverable by other devices for %1$d seconds. Do you want to do this?&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110326T123845Z&quot; changeid=&quot;klyok&quot;&gt;
+@@ -7402,6 +7418,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;An application on your phone is requesting permission to turn on Bluetooth.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110327T135238Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1055;&#1088;&#1072;&#1075;&#1088;&#1072;&#1084;&#1072; &#1079; &#1074;&#1072;&#1096;&#1072;&#1075;&#1072; &#1090;&#1101;&#1083;&#1077;&#1092;&#1086;&#1085;&#1091; &#1079;&#1072;&#1087;&#1099;&#1090;&#1074;&#1072;&#1077;&#1094;&#1094;&#1072; &#1085;&#1072; &#1076;&#1072;&#1079;&#1074;&#1086;&#1083; &#1091;&#1082;&#1083;&#1102;&#1095;&#1099;&#1094;&#1100; Bluetooth.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;An application on your phone is requesting permission to turn on Bluetooth. Do you want to do this?&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110326T123748Z&quot; changeid=&quot;klyok&quot;&gt;
+@@ -12386,6 +12410,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Do you want to do this?&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110327T135240Z&quot; changeid=&quot;klyok&quot;&gt;
++        &lt;seg&gt;&#1062;&#1110; &#1093;&#1086;&#1095;&#1072;&#1094;&#1077; &#1074;&#1099; &#1079;&#1088;&#1072;&#1073;&#1110;&#1094;&#1100; &#1075;&#1101;&#1090;&#1072;?&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Do you want to install this application?&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110324T182444Z&quot; changeid=&quot;klyok&quot;&gt;
+
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000150.html">[I18n-bel-svn] r232 - in Android: glossary omegat
+</A></li>
+	<LI>Next message: <A HREF="000152.html">[I18n-bel-svn] r234 - Android/omegat
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#151">[ date ]</a>
+              <a href="thread.html#151">[ thread ]</a>
+              <a href="subject.html#151">[ subject ]</a>
+              <a href="author.html#151">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/i18n-bel-svn">More information about the I18n-bel-svn
+mailing list</a><br>
+</body></html>

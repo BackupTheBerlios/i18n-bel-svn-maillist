@@ -1,0 +1,973 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [I18n-bel-svn] r131 - in Windows7/source/x32/Program Files: .	Windows Photo Viewer Windows Photo Viewer/en-US
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/i18n-bel-svn/2010-December/index.html" >
+   <LINK REL="made" HREF="mailto:i18n-bel-svn%40lists.berlios.de?Subject=Re%3A%20%5BI18n-bel-svn%5D%20r131%20-%20in%20Windows7/source/x32/Program%20Files%3A%20.%0A%09Windows%20Photo%20Viewer%20Windows%20Photo%20Viewer/en-US&In-Reply-To=%3C20101211202908.69419480EFA%40sheep.berlios.de%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000048.html">
+   <LINK REL="Next"  HREF="000050.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[I18n-bel-svn] r131 - in Windows7/source/x32/Program Files: .	Windows Photo Viewer Windows Photo Viewer/en-US</H1>
+    <B>eratyk at mail.berlios.de</B> 
+    <A HREF="mailto:i18n-bel-svn%40lists.berlios.de?Subject=Re%3A%20%5BI18n-bel-svn%5D%20r131%20-%20in%20Windows7/source/x32/Program%20Files%3A%20.%0A%09Windows%20Photo%20Viewer%20Windows%20Photo%20Viewer/en-US&In-Reply-To=%3C20101211202908.69419480EFA%40sheep.berlios.de%3E"
+       TITLE="[I18n-bel-svn] r131 - in Windows7/source/x32/Program Files: .	Windows Photo Viewer Windows Photo Viewer/en-US">eratyk at mail.berlios.de
+       </A><BR>
+    <I>Sat Dec 11 21:29:08 CET 2010</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000048.html">[I18n-bel-svn] r130 - / Windows7 Windows7/omegat	Windows7/source/x32/Windows/System32/en-US
+</A></li>
+        <LI>Next message: <A HREF="000050.html">[I18n-bel-svn] r132 - in Windows7: . omegat
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#49">[ date ]</a>
+              <a href="thread.html#49">[ thread ]</a>
+              <a href="subject.html#49">[ subject ]</a>
+              <a href="author.html#49">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>Author: eratyk
+Date: 2010-12-11 21:29:07 +0100 (Sat, 11 Dec 2010)
+New Revision: 131
+
+Added:
+   Windows7/source/x32/Program Files/Windows Photo Viewer/
+   Windows7/source/x32/Program Files/Windows Photo Viewer/en-US/
+   Windows7/source/x32/Program Files/Windows Photo Viewer/en-US/ImagingDevices.exe.rc
+   Windows7/source/x32/Program Files/Windows Photo Viewer/en-US/PhotoAcq.dll.rc
+   Windows7/source/x32/Program Files/Windows Photo Viewer/en-US/PhotoViewer.dll.rc
+Log:
+PhotoViewer addition
+
+Added: Windows7/source/x32/Program Files/Windows Photo Viewer/en-US/ImagingDevices.exe.rc
+===================================================================
+--- Windows7/source/x32/Program Files/Windows Photo Viewer/en-US/ImagingDevices.exe.rc	                        (rev 0)
++++ Windows7/source/x32/Program Files/Windows Photo Viewer/en-US/ImagingDevices.exe.rc	2010-12-11 20:29:07 UTC (rev 131)
+@@ -0,0 +1,39 @@
++1 MUI &quot;Data_126.bin&quot;
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++101, 	&quot;Scanners and Cameras&quot;
++102, 	&quot;Add, remove, and configure scanners and cameras.&quot;
++103, 	&quot;Scanners and Cameras&quot;
++}
++
++
++1 VERSIONINFO
++FILEVERSION 6,1,7600,16385
++PRODUCTVERSION 6,1,7600,16385
++FILEOS 0x40004
++FILETYPE 0x1
++{
++BLOCK &quot;StringFileInfo&quot;
++{
++	BLOCK &quot;040904B0&quot;
++	{
++		VALUE &quot;CompanyName&quot;, &quot;Microsoft Corporation&quot;
++		VALUE &quot;FileDescription&quot;, &quot;Imaging Devices Control Panel&quot;
++		VALUE &quot;FileVersion&quot;, &quot;6.1.7600.16385 (win7_rtm.090713-1255)&quot;
++		VALUE &quot;InternalName&quot;, &quot;ImagingDevices.cpl&quot;
++		VALUE &quot;LegalCopyright&quot;, &quot;&#169; Microsoft Corporation. All rights reserved.&quot;
++		VALUE &quot;OriginalFilename&quot;, &quot;ImagingDevices.cpl.mui&quot;
++		VALUE &quot;ProductName&quot;, &quot;Microsoft&#174; Windows&#174; Operating System&quot;
++		VALUE &quot;ProductVersion&quot;, &quot;6.1.7600.16385&quot;
++	}
++}
++
++BLOCK &quot;VarFileInfo&quot;
++{
++	VALUE &quot;Translation&quot;, 0x0409 0x04B0
++}
++}
++
+
+Added: Windows7/source/x32/Program Files/Windows Photo Viewer/en-US/PhotoAcq.dll.rc
+===================================================================
+--- Windows7/source/x32/Program Files/Windows Photo Viewer/en-US/PhotoAcq.dll.rc	                        (rev 0)
++++ Windows7/source/x32/Program Files/Windows Photo Viewer/en-US/PhotoAcq.dll.rc	2010-12-11 20:29:07 UTC (rev 131)
+@@ -0,0 +1,413 @@
++1 MUI &quot;Data_127.bin&quot;
++
++999 DIALOGEX 0, 0, 307, 237
++STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
++CAPTION &quot;Scanners and Cameras&quot;
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++FONT 9, &quot;Segoe UI&quot;, FW_NORMAL, FALSE, 0
++{
++   CONTROL &quot;If you do not see your device in the list, make sure it is connected to the computer and turned on, then choose Refresh.&quot;, -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 7, 7, 292, 16 
++   CONTROL &quot;&quot;, 1078, &quot;SysListView32&quot;, LVS_ICON | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_AUTOARRANGE | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 7, 28, 292, 137 
++   CONTROL &quot;&amp;Refresh&quot;, 1114, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 7, 172, 50, 14 
++   CONTROL &quot;&amp;Add Device...&quot;, 999, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 61, 172, 68, 14 
++   CONTROL &quot;&amp;Scan Profiles&quot;, 1001, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 133, 172, 63, 14 
++   CONTROL &quot;&amp;Properties&quot;, 998, BUTTON, BS_DEFPUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 200, 172, 57, 14 
++   CONTROL &quot;&lt;a&gt;Do I need to use this to install my scanner or camera?&lt;/a&gt;&quot;, 1118, &quot;SysLink&quot;, 0x50010002, 7, 193, 293, 9 
++   CONTROL &quot;&amp;Close&quot;, 2, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 250, 216, 50, 14 
++}
++
++1045 DIALOGEX 0, 0, 259, 265
++STYLE DS_MODALFRAME | WS_POPUP | WS_CLIPSIBLINGS | WS_CAPTION | WS_SYSMENU
++CAPTION &quot;Import Settings&quot;
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++FONT 9, &quot;Segoe UI&quot;, FW_NORMAL, FALSE, 0
++{
++   CONTROL &quot;&amp;Settings for: &quot;, 1102, BUTTON, BS_GROUPBOX | WS_CHILD | WS_VISIBLE | WS_CLIPSIBLINGS, 7, 9, 245, 169 
++   CONTROL &quot;&quot;, 1095, COMBOBOX, CBS_DROPDOWNLIST | WS_CHILD | WS_VISIBLE | WS_VSCROLL | WS_TABSTOP, 69, 7, 147, 90 
++   CONTROL &quot;Use &amp;custom location and naming settings&quot;, 1096, BUTTON, BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 16, 26, 196, 10 
++   CONTROL &quot;&amp;Import to:&quot;, 1097, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 17, 44, 52, 8 
++   CONTROL &quot;&quot;, 1047, &quot;ComboBoxEx32&quot;, 0x50210003, 69, 42, 121, 96 
++   CONTROL &quot;&amp;Browse...&quot;, 1048, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 193, 41, 50, 14 
++   CONTROL &quot;&amp;Folder name:&quot;, 1098, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 16, 63, 52, 8 
++   CONTROL &quot;folder name&quot;, 1105, &quot;ComboBoxEx32&quot;, 0x50210003, 69, 61, 174, 96 
++   CONTROL &quot;File &amp;name:&quot;, 1099, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 16, 82, 52, 8 
++   CONTROL &quot;file name&quot;, 1107, &quot;ComboBoxEx32&quot;, 0x50210003, 69, 80, 174, 96 
++   CONTROL &quot;Example:&quot;, 1116, STATIC, SS_LEFT | SS_PATHELLIPSIS | WS_CHILD | WS_VISIBLE | WS_GROUP, 16, 99, 52, 8 
++   CONTROL &quot;Static&quot;, 1115, STATIC, SS_LEFT | SS_PATHELLIPSIS | WS_CHILD | WS_VISIBLE | WS_GROUP, 69, 99, 174, 8 
++   CONTROL &quot;Other options:&quot;, 1101, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 16, 114, 218, 8 
++   CONTROL &quot;&amp;Prompt for a tag on import&quot;, 1104, BUTTON, BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 24, 125, 218, 10 
++   CONTROL &quot;Always &amp;erase from device after importing&quot;, 1052, BUTTON, BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 24, 137, 218, 10 
++   CONTROL &quot;&amp;Rotate pictures on import&quot;, 1055, BUTTON, BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 24, 149, 218, 10 
++   CONTROL &quot;&amp;Open Windows Explorer after import&quot;, 1051, BUTTON, BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 24, 161, 218, 10 
++   CONTROL &quot;&lt;a&gt;Change default AutoPlay options&lt;/a&gt;&quot;, 1094, &quot;SysLink&quot;, 0x5003000A, 7, 184, 245, 9 
++   CONTROL &quot;Res&amp;tore defaults&quot;, 1110, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 7, 200, 62, 14 
++   CONTROL &quot;Pl&amp;ugins&quot;, 1089, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_GROUP | WS_TABSTOP, 73, 200, 50, 14 
++   CONTROL &quot;&lt;a&gt;How do I change my import settings?&lt;/a&gt;&quot;, 1103, &quot;SysLink&quot;, 0x5001000A, 7, 221, 245, 9 
++   CONTROL &quot;OK&quot;, 1, BUTTON, BS_DEFPUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 148, 244, 50, 14 
++   CONTROL &quot;Cancel&quot;, 2, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 202, 244, 50, 14 
++}
++
++1046 DIALOGEX 0, 0, 264, 284
++STYLE DS_MODALFRAME | WS_POPUP | WS_CLIPSIBLINGS | WS_CAPTION | WS_SYSMENU
++CAPTION &quot;Import Settings&quot;
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++FONT 9, &quot;Segoe UI&quot;, FW_NORMAL, FALSE, 0
++{
++   CONTROL &quot;&amp;Settings for: &quot;, 1102, BUTTON, BS_GROUPBOX | WS_CHILD | WS_VISIBLE | WS_CLIPSIBLINGS, 7, 9, 249, 188 
++   CONTROL &quot;&quot;, 1095, COMBOBOX, CBS_DROPDOWNLIST | WS_CHILD | WS_VISIBLE | WS_VSCROLL | WS_TABSTOP, 69, 7, 147, 90 
++   CONTROL &quot;Use &amp;custom location and naming settings&quot;, 1096, BUTTON, BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 16, 26, 196, 10 
++   CONTROL &quot;&amp;Import images to:&quot;, 1097, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 17, 44, 60, 8 
++   CONTROL &quot;&quot;, 1047, &quot;ComboBoxEx32&quot;, 0x50210003, 73, 42, 121, 96 
++   CONTROL &quot;&amp;Browse...&quot;, 1048, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 196, 41, 50, 14 
++   CONTROL &quot;Import &amp;videos to:&quot;, 1119, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 17, 63, 60, 8 
++   CONTROL &quot;&quot;, 1049, &quot;ComboBoxEx32&quot;, 0x50210003, 73, 61, 121, 96 
++   CONTROL &quot;Bro&amp;wse...&quot;, 1050, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 196, 60, 50, 14 
++   CONTROL &quot;&amp;Folder name:&quot;, 1098, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 16, 82, 52, 8 
++   CONTROL &quot;folder name&quot;, 1105, &quot;ComboBoxEx32&quot;, 0x50210003, 73, 80, 174, 96 
++   CONTROL &quot;File &amp;name:&quot;, 1099, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 16, 101, 52, 8 
++   CONTROL &quot;file name&quot;, 1107, &quot;ComboBoxEx32&quot;, 0x50210003, 73, 99, 174, 96 
++   CONTROL &quot;Example:&quot;, 1116, STATIC, SS_LEFT | SS_PATHELLIPSIS | WS_CHILD | WS_VISIBLE | WS_GROUP, 16, 118, 52, 8 
++   CONTROL &quot;Static&quot;, 1115, STATIC, SS_LEFT | SS_PATHELLIPSIS | WS_CHILD | WS_VISIBLE | WS_GROUP, 73, 118, 174, 8 
++   CONTROL &quot;Other options:&quot;, 1101, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 16, 133, 218, 8 
++   CONTROL &quot;&amp;Prompt for a tag on import&quot;, 1104, BUTTON, BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 24, 144, 218, 10 
++   CONTROL &quot;Always &amp;erase from device after importing&quot;, 1052, BUTTON, BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 24, 156, 218, 10 
++   CONTROL &quot;&amp;Rotate pictures on import&quot;, 1055, BUTTON, BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 24, 168, 218, 10 
++   CONTROL &quot;&amp;Open Windows Explorer after import&quot;, 1051, BUTTON, BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 24, 180, 218, 10 
++   CONTROL &quot;&lt;a&gt;Change default AutoPlay options&lt;/a&gt;&quot;, 1094, &quot;SysLink&quot;, 0x5003000A, 7, 203, 245, 9 
++   CONTROL &quot;Res&amp;tore defaults&quot;, 1110, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 7, 219, 62, 14 
++   CONTROL &quot;Pl&amp;ugins&quot;, 1089, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_GROUP | WS_TABSTOP, 73, 219, 50, 14 
++   CONTROL &quot;&lt;a&gt;How do I change my import settings?&lt;/a&gt;&quot;, 1103, &quot;SysLink&quot;, 0x5001000A, 7, 240, 245, 9 
++   CONTROL &quot;OK&quot;, 1, BUTTON, BS_DEFPUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 148, 263, 50, 14 
++   CONTROL &quot;Cancel&quot;, 2, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 202, 263, 50, 14 
++}
++
++1062 DIALOGEX 0, 0, 231, 94
++STYLE DS_MODALFRAME | DS_CENTER | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
++EXSTYLE WS_EX_CONTROLPARENT
++CAPTION &quot;&lt;Title&gt;&quot;
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++FONT 9, &quot;Segoe UI&quot;, FW_NORMAL, FALSE, 0
++{
++   CONTROL &quot;&quot;, 1117, &quot;SysLink&quot;, 0x48010000, 7, 76, 146, 9 
++   CONTROL &quot;Cancel&quot;, 1072, BUTTON, BS_DEFPUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 174, 73, 50, 14 
++}
++
++1063 DIALOGEX 0, 0, 230, 66
++STYLE DS_CONTROL | DS_CENTER | WS_CHILD | WS_SYSMENU
++CAPTION &quot;&quot;
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++FONT 9, &quot;Segoe UI&quot;, FW_NORMAL, FALSE, 0
++{
++   CONTROL &quot;&quot;, 1001, STATIC, SS_BITMAP | SS_CENTERIMAGE | SS_REALSIZEIMAGE | WS_CHILD | WS_VISIBLE, 7, 7, 60, 52 
++   CONTROL &quot;&lt;Caption&gt;&quot;, 1074, STATIC, SS_SIMPLE | SS_NOPREFIX | SS_ENDELLIPSIS | WS_CHILD | WS_VISIBLE | WS_GROUP, 76, 13, 147, 8 
++   CONTROL &quot;&quot;, 1000, &quot;msctls_progress32&quot;, WS_CHILD | WS_VISIBLE | WS_BORDER, 76, 25, 147, 9 
++   CONTROL &quot;&lt;Caption&gt;&quot;, 1002, STATIC, SS_SIMPLE | SS_NOPREFIX | SS_ENDELLIPSIS | WS_CHILD | WS_VISIBLE | WS_GROUP, 76, 37, 147, 8 
++   CONTROL &quot;Looking in&quot;, 1127, STATIC, SS_SIMPLE | SS_NOPREFIX | SS_ENDELLIPSIS | WS_CHILD | WS_VISIBLE | WS_GROUP, 76, 49, 147, 8 
++   CONTROL &quot;&quot;, 1126, STATIC, SS_LEFT | SS_NOPREFIX | SS_PATHELLIPSIS | WS_CHILD | WS_VISIBLE | WS_GROUP, 111, 49, 112, 8 
++   CONTROL &quot;&lt;Caption&gt;&quot;, 1070, BUTTON, BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 76, 49, 147, 10 
++}
++
++1064 DIALOGEX 0, 0, 230, 66
++STYLE DS_CONTROL | DS_CENTER | WS_CHILD | WS_SYSMENU
++CAPTION &quot;&quot;
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++FONT 9, &quot;Segoe UI&quot;, FW_NORMAL, FALSE, 0
++{
++   CONTROL &quot;&quot;, 1001, STATIC, SS_BITMAP | SS_CENTERIMAGE | SS_REALSIZEIMAGE | WS_CHILD | WS_VISIBLE, 7, 7, 60, 52 
++   CONTROL &quot;&lt;Caption&gt;&quot;, 1074, STATIC, SS_LEFTNOWORDWRAP | SS_ENDELLIPSIS | WS_CHILD | WS_VISIBLE | WS_GROUP, 76, 13, 147, 8 
++   CONTROL &quot;&quot;, 1075, COMBOBOX, CBS_DROPDOWN | CBS_AUTOHSCROLL | WS_CHILD | WS_VISIBLE | WS_VSCROLL | WS_TABSTOP, 76, 25, 147, 72 
++}
++
++1071 DIALOGEX 0, 0, 335, 214
++STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
++CAPTION &quot;Import Pictures and Videos&quot;
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++FONT 9, &quot;Segoe UI&quot;, FW_NORMAL, FALSE, 0
++{
++   CONTROL &quot;If you do not see your device in the list, make sure it is connected to the computer and turned on, then choose Refresh.&quot;, -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 7, 7, 292, 16 
++   CONTROL &quot;&quot;, 1078, &quot;SysListView32&quot;, LVS_ICON | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_AUTOARRANGE | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 7, 28, 320, 130 
++   CONTROL &quot;&amp;Refresh&quot;, 1114, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 7, 165, 50, 14 
++   CONTROL &quot;I&amp;mport&quot;, 1, BUTTON, BS_DEFPUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 224, 193, 50, 14 
++   CONTROL &quot;Cancel&quot;, 2, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 278, 193, 50, 14 
++}
++
++1106 DIALOGEX 0, 0, 291, 99
++STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
++CAPTION &quot;Import Pictures and Videos&quot;
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++FONT 9, &quot;Segoe UI&quot;, FW_NORMAL, FALSE, 0
++{
++   CONTROL &quot;&quot;, 1083, STATIC, SS_BLACKFRAME | SS_CENTERIMAGE | SS_REALSIZEIMAGE | WS_CHILD | WS_VISIBLE, 7, 7, 38, 31 
++   CONTROL &quot;{Error Message -- Don't Localize}&quot;, 1084, STATIC, SS_LEFT | SS_NOPREFIX | WS_CHILD | WS_VISIBLE | WS_GROUP, 49, 7, 236, 8 
++   CONTROL &quot;What do you want to do?&quot;, 1085, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 49, 15, 236, 8 
++   CONTROL &quot;&amp;Try again&quot;, 1080, BUTTON, BS_AUTORADIOBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 57, 30, 220, 10 
++   CONTROL &quot;&amp;Skip this file&quot;, 1081, BUTTON, BS_AUTORADIOBUTTON | WS_CHILD | WS_VISIBLE, 57, 42, 220, 10 
++   CONTROL &quot;Skip &amp;all files with errors&quot;, 1082, BUTTON, BS_AUTORADIOBUTTON | WS_CHILD | WS_VISIBLE, 57, 54, 220, 10 
++   CONTROL &quot;&amp;Continue&quot;, 1, BUTTON, BS_DEFPUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_GROUP | WS_TABSTOP, 180, 78, 50, 14 
++   CONTROL &quot;Cancel&quot;, 2, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 234, 78, 50, 14 
++   CONTROL &quot;&quot;, 1086, STATIC, SS_ETCHEDHORZ | WS_CHILD, 7, 72, 277, 1 
++}
++
++1109 DIALOGEX 0, 0, 256, 166
++STYLE DS_FIXEDSYS | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
++CAPTION &quot;Import Plugins&quot;
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++FONT 9, &quot;Segoe UI&quot;, FW_NORMAL, FALSE, 0
++{
++   CONTROL &quot;&amp;Available plugins:&quot;, -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 7, 7, 185, 8 
++   CONTROL &quot;&quot;, 1087, &quot;SysListView32&quot;, LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_AUTOARRANGE | LVS_ALIGNLEFT | LVS_NOCOLUMNHEADER | LVS_NOSORTHEADER | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 7, 17, 242, 93 
++   CONTROL &quot;Move &amp;up&quot;, 1090, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 7, 117, 50, 14 
++   CONTROL &quot;Move &amp;down&quot;, 1091, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 61, 117, 50, 14 
++   CONTROL &quot;&amp;Settings...&quot;, 1088, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 115, 117, 50, 14 
++   CONTROL &quot;OK&quot;, 1, BUTTON, BS_DEFPUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_GROUP | WS_TABSTOP, 145, 145, 50, 14 
++   CONTROL &quot;Cancel&quot;, 2, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 199, 145, 50, 14 
++}
++
++1112 DIALOGEX 0, 0, 257, 237
++STYLE WS_CHILD | WS_CLIPSIBLINGS
++EXSTYLE WS_EX_CONTROLPARENT
++CAPTION &quot;&quot;
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++FONT 9, &quot;Segoe UI&quot;, FW_NORMAL, FALSE, 0
++{
++   CONTROL &quot;&quot;, 1095, COMBOBOX, CBS_DROPDOWNLIST | WS_CHILD | WS_VISIBLE | WS_VSCROLL | WS_TABSTOP, 69, 7, 147, 90 
++   CONTROL &quot;&amp;Settings for: &quot;, 1102, BUTTON, BS_GROUPBOX | WS_CHILD | WS_VISIBLE | WS_CLIPSIBLINGS, 7, 9, 245, 169 
++   CONTROL &quot;Use &amp;custom location and naming settings&quot;, 1096, BUTTON, BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 16, 26, 196, 10 
++   CONTROL &quot;&amp;Import to:&quot;, 1097, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 17, 44, 52, 8 
++   CONTROL &quot;&quot;, 1047, &quot;ComboBoxEx32&quot;, 0x50210003, 69, 42, 121, 96 
++   CONTROL &quot;&amp;Browse...&quot;, 1048, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 193, 41, 50, 14 
++   CONTROL &quot;&amp;Folder name:&quot;, 1098, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 16, 63, 52, 8 
++   CONTROL &quot;&quot;, 1105, &quot;ComboBoxEx32&quot;, 0x50210003, 69, 61, 174, 96 
++   CONTROL &quot;File &amp;name:&quot;, 1099, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 16, 82, 52, 8 
++   CONTROL &quot;&quot;, 1107, &quot;ComboBoxEx32&quot;, 0x50210003, 69, 80, 174, 96 
++   CONTROL &quot;Example:&quot;, 1116, STATIC, SS_LEFT | SS_PATHELLIPSIS | WS_CHILD | WS_VISIBLE | WS_GROUP, 16, 99, 52, 8 
++   CONTROL &quot;Static&quot;, 1115, STATIC, SS_LEFT | SS_PATHELLIPSIS | WS_CHILD | WS_VISIBLE | WS_GROUP, 69, 99, 174, 8 
++   CONTROL &quot;Other options:&quot;, 1101, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 16, 114, 218, 8 
++   CONTROL &quot;&amp;Prompt for a tag on import&quot;, 1104, BUTTON, BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 24, 125, 218, 10 
++   CONTROL &quot;Always &amp;erase from device after importing&quot;, 1052, BUTTON, BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 24, 137, 218, 10 
++   CONTROL &quot;&amp;Rotate pictures on import&quot;, 1055, BUTTON, BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 24, 149, 218, 10 
++   CONTROL &quot;&amp;Open Windows Explorer after import&quot;, 1051, BUTTON, BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 24, 161, 218, 10 
++   CONTROL &quot;&lt;a&gt;Change default AutoPlay options&lt;/a&gt;&quot;, 1094, &quot;SysLink&quot;, 0x5003000A, 7, 184, 245, 9 
++   CONTROL &quot;Res&amp;tore defaults&quot;, 1110, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 7, 200, 62, 14 
++   CONTROL &quot;Pl&amp;ugins&quot;, 1089, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_GROUP | WS_TABSTOP, 73, 200, 50, 14 
++   CONTROL &quot;&lt;a&gt;How do I change my import settings?&lt;/a&gt;&quot;, 1103, &quot;SysLink&quot;, 0x5001000A, 7, 221, 245, 9 
++}
++
++1113 DIALOGEX 0, 0, 261, 256
++STYLE WS_CHILD | WS_CLIPSIBLINGS
++EXSTYLE WS_EX_CONTROLPARENT
++CAPTION &quot;&quot;
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++FONT 9, &quot;Segoe UI&quot;, FW_NORMAL, FALSE, 0
++{
++   CONTROL &quot;&quot;, 1095, COMBOBOX, CBS_DROPDOWNLIST | WS_CHILD | WS_VISIBLE | WS_VSCROLL | WS_TABSTOP, 69, 7, 147, 90 
++   CONTROL &quot;&amp;Settings for: &quot;, 1102, BUTTON, BS_GROUPBOX | WS_CHILD | WS_VISIBLE | WS_CLIPSIBLINGS, 7, 9, 249, 188 
++   CONTROL &quot;Use &amp;custom location and naming settings&quot;, 1096, BUTTON, BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 16, 26, 196, 10 
++   CONTROL &quot;&amp;Import images to:&quot;, 1097, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 17, 44, 60, 8 
++   CONTROL &quot;&quot;, 1047, &quot;ComboBoxEx32&quot;, 0x50210003, 73, 42, 121, 96 
++   CONTROL &quot;&amp;Browse...&quot;, 1048, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 196, 41, 50, 14 
++   CONTROL &quot;Import &amp;videos to:&quot;, 1119, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 17, 63, 60, 8 
++   CONTROL &quot;&quot;, 1049, &quot;ComboBoxEx32&quot;, 0x50210003, 73, 61, 121, 96 
++   CONTROL &quot;Bro&amp;wse...&quot;, 1050, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 196, 60, 50, 14 
++   CONTROL &quot;&amp;Folder name:&quot;, 1098, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 16, 81, 52, 8 
++   CONTROL &quot;&quot;, 1105, &quot;ComboBoxEx32&quot;, 0x50210003, 73, 80, 174, 96 
++   CONTROL &quot;File &amp;name:&quot;, 1099, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 16, 101, 52, 8 
++   CONTROL &quot;&quot;, 1107, &quot;ComboBoxEx32&quot;, 0x50210003, 73, 99, 174, 96 
++   CONTROL &quot;Example:&quot;, 1116, STATIC, SS_LEFT | SS_PATHELLIPSIS | WS_CHILD | WS_VISIBLE | WS_GROUP, 16, 118, 52, 8 
++   CONTROL &quot;Static&quot;, 1115, STATIC, SS_LEFT | SS_PATHELLIPSIS | WS_CHILD | WS_VISIBLE | WS_GROUP, 73, 118, 174, 8 
++   CONTROL &quot;Other options:&quot;, 1101, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 16, 133, 218, 8 
++   CONTROL &quot;&amp;Prompt for a tag on import&quot;, 1104, BUTTON, BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 24, 144, 218, 10 
++   CONTROL &quot;Always &amp;erase from device after importing&quot;, 1052, BUTTON, BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 24, 156, 218, 10 
++   CONTROL &quot;&amp;Rotate pictures on import&quot;, 1055, BUTTON, BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 24, 168, 218, 10 
++   CONTROL &quot;&amp;Open Windows Explorer after import&quot;, 1051, BUTTON, BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 24, 180, 218, 10 
++   CONTROL &quot;&lt;a&gt;Change default AutoPlay options&lt;/a&gt;&quot;, 1094, &quot;SysLink&quot;, 0x5003000A, 7, 203, 245, 9 
++   CONTROL &quot;Res&amp;tore defaults&quot;, 1110, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 7, 219, 62, 14 
++   CONTROL &quot;Pl&amp;ugins&quot;, 1089, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_GROUP | WS_TABSTOP, 73, 219, 50, 14 
++   CONTROL &quot;&lt;a&gt;How do I change my import settings?&lt;/a&gt;&quot;, 1103, &quot;SysLink&quot;, 0x5001000A, 7, 240, 245, 9 
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++102, 	&quot;Importing item %u of %u&quot;
++103, 	&quot;The following plugin caused a failure and will be disabled:\n\n%s&quot;
++104, 	&quot;I&amp;mport&quot;
++105, 	&quot;&amp;Tag these pictures (optional):&quot;
++106, 	&quot;Import Pictures and Videos&quot;
++107, 	&quot;Do you want Windows to try to correct picture rotation every time you import?&quot;
++108, 	&quot;&lt;a&gt;Import settings&lt;/a&gt;&quot;
++109, 	&quot;Properties are not available for this item&quot;
++110, 	&quot;Locating pictures and videos&quot;
++111, 	&quot;Erasing item %u of %u&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++112, 	&quot;For these changes to take effect, Import Pictures and Videos will now be restarted.&quot;
++113, 	&quot;Erasing Pictures and Videos&quot;
++114, 	&quot;No new pictures or videos were found on this device.&quot;
++115, 	&quot;The following error occurred while erasing pictures and videos:\n%s&quot;
++116, 	&quot;One or more files were copied to your computer.  Do you want to remove them?&quot;
++117, 	&quot;Are you sure you want to cancel importing?&quot;
++118, 	&quot;Tags help you find and organize your pictures. You can add tags in Windows Explorer after importing.&quot;
++119, 	&quot;One or more imported items could not be deleted.  The most recent error was:\n%s&quot;
++120, 	&quot;This device:\n\n%s\n\nis already being used by \&quot;%s\&quot;.\n\nIf another Import Pictures and Videos window is already open, please close it and then try again.&quot;
++121, 	&quot;This device:\n\n%s\n\nis already in use.&quot;
++122, 	&quot;Erase pictures and videos from device after they have been copied to your computer.&quot;
++123, 	&quot;Unable to start importing pictures due to the following error:\n%s&quot;
++124, 	&quot;Properties for %ws&quot;
++125, 	&quot;Digital Video Cameras&quot;
++126, 	&quot;This plugin doesn't have any configuration options&quot;
++127, 	&quot;An error occurred displaying configuration settings&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++128, 	&quot;Import Plugins&quot;
++129, 	&quot;Choose a location to store your pictures and videos:&quot;
++130, 	&quot;The following error occurred while erasing %s:\n%s&quot;
++131, 	&quot;For these changes to take effect, close Import Pictures and Videos and then start importing again.&quot;
++132, 	&quot;Unable to connect to the device due to the following error:\n\n%s&quot;
++133, 	&quot;You have entered an invalid command&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++300, 	&quot;The following error occurred while importing:\n%s&quot;
++301, 	&quot;The exact error is unknown.  Make a note of this error code, which might be useful if you seek additional help to resolve this problem: %X\n&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++304, 	&quot;The following error occurred while finding pictures and videos to import:\n%s&quot;
++305, 	&quot;The following error occurred while importing %s:\n%s&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++400, 	&quot;Import pictures and videos&quot;
++401, 	&quot;Windows&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++700, 	&quot;Date Imported + Tag&quot;
++701, 	&quot;Date Taken + Tag&quot;
++702, 	&quot;Date Taken Range + Tag&quot;
++703, 	&quot;Tag + Date Imported&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++704, 	&quot;Tag + Date Taken&quot;
++705, 	&quot;Tag + Date Taken Range&quot;
++706, 	&quot;Tag&quot;
++707, 	&quot;Tag&quot;
++708, 	&quot;Original File Name&quot;
++709, 	&quot;Original File Name (Preserve Folders)&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++800, 	&quot;{DATE_ACQUIRED} Himalayas&quot;
++801, 	&quot;{DATE_TAKEN_2} Himalayas&quot;
++802, 	&quot;{DATE_TAKEN_1} - {DATE_TAKEN_2} Himalayas&quot;
++803, 	&quot;Himalayas {DATE_ACQUIRED}&quot;
++804, 	&quot;Himalayas {DATE_TAKEN_2}&quot;
++805, 	&quot;Himalayas {DATE_TAKEN_1} - {DATE_TAKEN_2}&quot;
++806, 	&quot;Himalayas&quot;
++807, 	&quot;Himalayas 001.JPG&quot;
++808, 	&quot;DSC_1234.JPG&quot;
++809, 	&quot;Folder\\DSC_1234.JPG&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++1036, 	&quot;Cameras and Portable Devices&quot;
++1037, 	&quot;Scanners&quot;
++1038, 	&quot;CDs and DVDs&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++1040, 	&quot;Picture Import Settings&quot;
++1041, 	&quot;Help is not available on this topic&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++1070, 	&quot;&amp;Erase after importing&quot;
++1071, 	&quot;Found %d pictures and videos&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++1100, 	&quot;Other Devices&quot;
++1103, 	&quot;Scanners and Cameras&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++1120, 	&quot;Picture&quot;
++1121, 	&quot;Imported Pictures and Videos&quot;
++1122, 	&quot;Choose a location to store your pictures:&quot;
++1123, 	&quot;Choose a location to store your videos:&quot;
++1124, 	&quot;Import Pictures and Videos&quot;
++1125, 	&quot;Pictures and videos that were previously synced to this device weren&#146;t imported. You can manually copy them to your computer using Windows Explorer.&quot;
++}
++
++
++1 VERSIONINFO
++FILEVERSION 6,1,7600,16385
++PRODUCTVERSION 6,1,7600,16385
++FILEOS 0x40004
++FILETYPE 0x1
++{
++BLOCK &quot;StringFileInfo&quot;
++{
++	BLOCK &quot;040904B0&quot;
++	{
++		VALUE &quot;CompanyName&quot;, &quot;Microsoft Corporation&quot;
++		VALUE &quot;FileDescription&quot;, &quot;Photo Acquisition&quot;
++		VALUE &quot;FileVersion&quot;, &quot;6.1.7600.16385 (win7_rtm.090713-1255)&quot;
++		VALUE &quot;InternalName&quot;, &quot;PhotoAcq&quot;
++		VALUE &quot;LegalCopyright&quot;, &quot;&#169; Microsoft Corporation. All rights reserved.&quot;
++		VALUE &quot;OriginalFilename&quot;, &quot;PhotoAcq.dll.mui&quot;
++		VALUE &quot;ProductName&quot;, &quot;Microsoft&#174; Windows&#174; Operating System&quot;
++		VALUE &quot;ProductVersion&quot;, &quot;6.1.7600.16385&quot;
++	}
++}
++
++BLOCK &quot;VarFileInfo&quot;
++{
++	VALUE &quot;Translation&quot;, 0x0409 0x04B0
++}
++}
++
+
+Added: Windows7/source/x32/Program Files/Windows Photo Viewer/en-US/PhotoViewer.dll.rc
+===================================================================
+--- Windows7/source/x32/Program Files/Windows Photo Viewer/en-US/PhotoViewer.dll.rc	                        (rev 0)
++++ Windows7/source/x32/Program Files/Windows Photo Viewer/en-US/PhotoViewer.dll.rc	2010-12-11 20:29:07 UTC (rev 131)
+@@ -0,0 +1,429 @@
++1 MUI &quot;Data_128.bin&quot;
++
++3023 MENU
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++POPUP &quot;&quot;
++{
++	MENUITEM SEPARATOR
++	MENUITEM SEPARATOR
++	MENUITEM &quot;Set as desktop bac&amp;kground&quot;,  41515
++	MENUITEM SEPARATOR
++	MENUITEM &quot;Open f&amp;ile location&quot;,  41516
++	MENUITEM SEPARATOR
++	MENUITEM &quot;Rotate c&amp;lockwise&quot;,  41517
++	MENUITEM &quot;Rotate c&amp;ounterclockwise&quot;,  41518
++	MENUITEM SEPARATOR
++	MENUITEM &quot;&amp;Copy&quot;,  41519
++	MENUITEM &quot;&amp;Delete&quot;,  41520
++	MENUITEM SEPARATOR
++	MENUITEM &quot;P&amp;roperties&quot;,  41521
++}
++}
++
++14018 MENU
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++POPUP &quot;&amp;File&quot;
++{
++	MENUITEM &quot;&amp;Delete\tDel&quot;,  60019
++	MENUITEM &quot;Ma&amp;ke a Copy...&quot;,  60030
++	MENUITEM SEPARATOR
++	MENUITEM &quot;&amp;Copy\tCtrl+C&quot;,  60022
++	MENUITEM SEPARATOR
++	MENUITEM &quot;Prope&amp;rties\tAlt+Enter&quot;,  60027
++	MENUITEM SEPARATOR
++	MENUITEM &quot;E&amp;xit\t&quot;,  60029
++}
++POPUP &quot;&amp;Burn&quot;
++{
++	MENUITEM &quot;D&amp;ata Disc...&quot;,  60033
++	MENUITEM &quot;Video &amp;DVD...&quot;,  60031
++}
++POPUP &quot;&amp;Print&quot;
++{
++	MENUITEM &quot;&amp;Print...\tCtrl+P&quot;,  60005
++	MENUITEM &quot;&amp;Order prints...&quot;,  60035
++	MENUITEM &quot;O&amp;rder prints from...&quot;,  60036
++}
++}
++
++51200 DIALOGEX 0, 0, 324, 140
++STYLE WS_CHILD | WS_CAPTION
++CAPTION &quot;Software Licensing&quot;
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++FONT 9, &quot;Segoe UI&quot;
++{
++   CONTROL &quot;To use this feature without interruption, this computer needs to be running genuine Windows.&quot;, -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 0, 10, 250, 20 
++   CONTROL &quot;With genuine Windows you have access to all Windows updates and can be confident that your Windows software has the latest security and reliability enhancements from Microsoft.&quot;, -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 0, 35, 250, 30 
++   CONTROL 51209, -1, STATIC, SS_BITMAP | WS_CHILD | WS_VISIBLE, 260, 10, 100, 55 
++   CONTROL &quot;&amp;Resolve online now&quot;, -14335, BUTTON,  | BS_LEFT | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 0, 75, 250, 24 
++   CONTROL &quot;&lt;a&gt;Read the privacy statement online&lt;/a&gt;&quot;, -14334, &quot;SysLink&quot;, 0x50010000, 0, 128, 120, 10 
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++3000, 	&quot;&amp;Play&quot;
++3001, 	&quot;P&amp;ause&quot;
++3002, 	&quot;&amp;Next&quot;
++3003, 	&quot;&amp;Back&quot;
++3004, 	&quot;&amp;Exit&quot;
++3005, 	&quot;Photo Viewer Slide Show&quot;
++3006, 	&quot;Your computer can't display this theme.&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++3008, 	&quot;Loading...&quot;
++3009, 	&quot;Windows Photo Viewer&quot;
++3010, 	&quot;%1!s! - %2!s!&quot;
++3015, 	&quot;S&amp;huffle&quot;
++3016, 	&quot;Slide Show Speed - &amp;Slow&quot;
++3017, 	&quot;Slide Show Speed - &amp;Medium&quot;
++3018, 	&quot;Slide Show Speed - &amp;Fast&quot;
++3019, 	&quot;Failed to save to the specified location. Make sure the file is not write-protected and there is enough space on the drive to save the image. Save aborted.&quot;
++3020, 	&quot;&amp;Loop&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++3024, 	&quot;Rotate clockwise&quot;
++3025, 	&quot;Rotate counterclockwise&quot;
++3026, 	&quot;Rotating...&quot;
++3027, 	&quot;Waiting for user...&quot;
++3028, 	&quot;Rotation&quot;
++3029, 	&quot;You cannot rotate this image. Not enough space to perform the rotate. Please free up space by deleting unnecessary files on this image and try again.&quot;
++3030, 	&quot;You cannot rotate this image. It does not exist.&quot;
++3031, 	&quot;You cannot rotate this image. The file might be in use or open in another program, or the file or folder might be read-only.&quot;
++3033, 	&quot;You cannot rotate this image. Image format not recognized.&quot;
++3034, 	&quot;You cannot rotate this image. The image may not be in a standard format or may contain extra image information that prevents rotation by this program.&quot;
++3035, 	&quot;You cannot rotate this image. Rotating this image type is not supported.&quot;
++3037, 	&quot;Save File&quot;
++3038, 	&quot;Do you want to save the current page of this picture?&quot;
++3039, 	&quot;You are saving a multi-page picture in a single page format. If you continue, only the current page will be saved in the new file.&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++3040, 	&quot;&amp;Save&quot;
++3041, 	&quot;Renaming file...&quot;
++3042, 	&quot;Changes to the tags, caption, rating or date taken could not be saved to this file.&quot;
++3043, 	&quot;Pre&amp;view&quot;
++3050, 	&quot;Rotate cloc&amp;kwise&quot;
++3051, 	&quot;Rotate cou&amp;nterclockwise&quot;
++3052, 	&quot;&amp;Print&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++3060, 	&quot;Opens the selected items in Windows Photo Viewer.&quot;
++3061, 	&quot;Sends the selected items to the printer.&quot;
++3062, 	&quot;Turns the selected items 90 degrees to the right.&quot;
++3063, 	&quot;Turns the selected items 90 degrees to the left. &quot;
++3064, 	&quot;Displays the pictures and videos in this folder as a slide show.&quot;
++3066, 	&quot;View pictures&quot;
++3067, 	&quot;Windows&quot;
++3068, 	&quot;Windows Photo Viewer does not work in safe mode.  If you want to view pictures or videos, restart your computer normally.&quot;
++3069, 	&quot;Windows Photo Viewer is the built-in picture viewer that allows users to easily view pictures as well as e-mail and burn them to CDs.&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++4001, 	&quot;Play slide show (F11)&quot;
++4005, 	&quot;Next (Right arrow)&quot;
++4008, 	&quot;Previous (Left arrow)&quot;
++4010, 	&quot;Rotate counterclockwise (Ctrl+,)&quot;
++4013, 	&quot;Rotate clockwise (Ctrl+.)&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++4016, 	&quot;Delete (Del)&quot;
++4020, 	&quot;Changes the display size&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++4125, 	&quot;Fit to window (Ctrl+0)&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++4180, 	&quot;Actual size (Ctrl+Alt+0)&quot;
++4181, 	&quot;Navigation Pane&quot;
++4182, 	&quot;Navigation Bar&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++7000, 	&quot;Windows Photo Viewer Wallpaper&quot;
++7001, 	&quot;The file %s could not be written.\n\nPlease check permissions on this file and try again.&quot;
++7002, 	&quot;The Desktop Wallpaper could not be changed because there is not enough disk space.\n\nPlease delete some files and try again.&quot;
++7003, 	&quot;File names may not contain the following characters:\n\t\\ / : * ? \&quot; &lt; &gt; |&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++7013, 	&quot;Burn a disc&quot;
++7014, 	&quot;You don't have a disc drive capable of burning files to CD or DVD.&quot;
++7017, 	&quot;Make a Copy&quot;
++7018, 	&quot;This image can't be set as wallpaper. The file may be corrupt.&quot;
++7019, 	&quot;This image can't be set as wallpaper. It may be an unsupported file type.&quot;
++7020, 	&quot;This image can't be set as wallpaper. An internal error occurred.&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++8008, 	&quot;Windows Photo Viewer can't save this picture because an unknown error occurred.&quot;
++8010, 	&quot;Windows Photo Viewer&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++8035, 	&quot;Windows Photo Viewer can't save changes to this picture. Verify that the picture is not set to read-only and make sure you have permission to save to the file location, and then try again.&quot;
++8039, 	&quot;Windows Photo Viewer can't save the changes to this picture because there's a problem with the picture's file properties.&quot;
++8042, 	&quot;Why can't I save this picture?&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++8050, 	&quot;No pictures are selected. Select one or more pictures, and then try again.&quot;
++8051, 	&quot;Windows Photo Viewer can't open this picture because the file appears to be damaged, corrupted, or is too large.&quot;
++8063, 	&quot;Windows Photo Viewer can't save the changes to this picture because the file isn't available. The picture might have been deleted or you might have lost your network connection.&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++8088, 	&quot;Windows Photo Viewer can't open this picture because either the picture is deleted, or it's in a location that isn't available.&quot;
++8094, 	&quot;Windows Photo Viewer can't save the changes to this picture because the picture is already open in another program.&quot;
++8095, 	&quot;Windows Photo Viewer can't open this picture because the picture is being edited in another program.&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++8096, 	&quot;Windows Photo Viewer can't open this picture because you don't have the correct permissions to access the file location.&quot;
++8099, 	&quot;Windows Photo Viewer can't display this picture because the file is empty.&quot;
++8100, 	&quot;Windows Photo Viewer can't display this picture because there might not be enough memory available on your computer.  Close some programs that you aren't using or free some hard disk space (if it's almost full), and then try again.&quot;
++8101, 	&quot;Loading...&quot;
++8103, 	&quot;How do I use Photo Gallery?&quot;
++8104, 	&quot;How do I change a picture's file format?&quot;
++8105, 	&quot;How do I change a read-only file?&quot;
++8106, 	&quot;Saving...&quot;
++8108, 	&quot;Windows Photo Viewer can't open this picture because either Photo Viewer doesn't support this file format, or you don't have the latest updates to Photo Viewer.&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++9001, 	&quot;Next Page (Page Down)&quot;
++9003, 	&quot;Previous Page (Page Up)&quot;
++9005, 	&quot;Page %1!d! of %2!d!&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++11002, 	&quot;An error is preventing this Slide Show from playing.&quot;
++11003, 	&quot;Slide Show can't start because your selection contains only videos.&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++11011, 	&quot;Your video card doesn't have enough memory to play this slide show. You can disable transparent glass or close other programs that are using video memory and then try again.&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++11024, 	&quot;Exit&quot;
++11025, 	&quot;Shuffle&quot;
++11026, 	&quot;Loop&quot;
++11027, 	&quot;Slow&quot;
++11028, 	&quot;Medium&quot;
++11029, 	&quot;Fast&quot;
++11030, 	&quot;Themes&quot;
++11031, 	&quot;Settings&quot;
++11032, 	&quot;Slideshow Navigation Bar&quot;
++11033, 	&quot;Play&quot;
++11034, 	&quot;Pause&quot;
++11035, 	&quot;Next&quot;
++11036, 	&quot;Previous&quot;
++11037, 	&quot;Slide Show is already running. Please close your first Slide Show and try again.&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++11042, 	&quot;Slide Show&quot;
++11043, 	&quot;How can I improve my Slide Show's visuals?&quot;
++11046, 	&quot;Segoe UI&quot;
++11047, 	&quot;12&quot;
++11048, 	&quot;Mute&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++14004, 	&quot;&amp;Choose Program...&quot;
++14005, 	&quot;No application is available.&quot;
++14008, 	&quot;&amp;File&quot;
++14011, 	&quot;&amp;Print&quot;
++14013, 	&quot;&amp;E-mail&quot;
++14014, 	&quot;&amp;Open&quot;
++14015, 	&quot;Display additional commands&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++14016, 	&quot;Help&quot;
++14031, 	&quot;Open Wit&amp;h...&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++14032, 	&quot;Open Wit&amp;h&quot;
++14033, 	&quot;O&amp;rder prints from %s...&quot;
++14045, 	&quot;B&amp;urn&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++51203, 	&quot;This computer is not running genuine Windows&quot;
++51204, 	&quot;Software Licensing&quot;
++51205, 	&quot;<A HREF="mshelp://windows/?id=6f58b1c8-e296-4498-8454-99558fde70bf">mshelp://windows/?id=6f58b1c8-e296-4498-8454-99558fde70bf</A>&quot;
++51206, 	&quot;<A HREF="http://go.microsoft.com/fwlink/?LinkId=125824">http://go.microsoft.com/fwlink/?LinkId=125824</A>&quot;
++51207, 	&quot;<A HREF="http://go.microsoft.com/fwlink/?LinkId=125723">http://go.microsoft.com/fwlink/?LinkId=125723</A>&quot;
++51208, 	&quot;<A HREF="http://go.microsoft.com/fwlink/?LinkId=122082">http://go.microsoft.com/fwlink/?LinkId=122082</A>&quot;
++}
++
++
++3021 ACCELERATORS
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++	VK_SPACE, 41000, NOINVERT, VIRTKEY
++	VK_ESCAPE, 41004, NOINVERT, VIRTKEY
++	VK_DELETE, 41004, NOINVERT, VIRTKEY
++	VK_BACK, 41004, NOINVERT, VIRTKEY
++	VK_T, 41513, NOINVERT, CONTROL, VIRTKEY
++	VK_S, 41514, NOINVERT, CONTROL, VIRTKEY
++}
++
++
++4150 ACCELERATORS
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++	VK_F11, 42000, NOINVERT, VIRTKEY
++	188, 42003, NOINVERT, CONTROL, VIRTKEY
++	190, 42004, NOINVERT, CONTROL, VIRTKEY
++	VK_RETURN, 42017, NOINVERT, ALT, VIRTKEY
++	VK_D, 42005, NOINVERT, CONTROL, VIRTKEY
++	187, 42007, NOINVERT, CONTROL, VIRTKEY
++	189, 42008, NOINVERT, CONTROL, VIRTKEY
++	187, 42007, NOINVERT, VIRTKEY
++	189, 42008, NOINVERT, VIRTKEY
++	VK_ADD, 42007, NOINVERT, CONTROL, VIRTKEY
++	VK_SUBTRACT, 42008, NOINVERT, CONTROL, VIRTKEY
++	VK_ADD, 42007, NOINVERT, VIRTKEY
++	VK_SUBTRACT, 42008, NOINVERT, VIRTKEY
++	VK_0, 42010, NOINVERT, CONTROL, VIRTKEY
++	VK_NUMPAD0, 42010, NOINVERT, CONTROL, VIRTKEY
++	VK_0, 42032, NOINVERT, ALT, CONTROL, VIRTKEY
++	VK_NUMPAD0, 42032, NOINVERT, ALT, CONTROL, VIRTKEY
++	VK_C, 42031, NOINVERT, CONTROL, VIRTKEY
++	VK_DELETE, 42005, NOINVERT, VIRTKEY
++	VK_DELETE, 42005, NOINVERT, SHIFT, VIRTKEY
++	VK_LEFT, 42034, NOINVERT, VIRTKEY
++	VK_RIGHT, 42035, NOINVERT, VIRTKEY
++}
++
++
++9006 ACCELERATORS
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++	VK_NEXT, 49000, NOINVERT, VIRTKEY
++	VK_PRIOR, 49001, NOINVERT, VIRTKEY
++}
++
++
++14035 ACCELERATORS
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++	VK_P, 60005, NOINVERT, CONTROL, VIRTKEY
++	VK_S, 60007, NOINVERT, CONTROL, VIRTKEY
++	VK_P, 60037, NOINVERT, ALT, VIRTKEY
++	VK_O, 60040, NOINVERT, ALT, VIRTKEY
++}
++
++
++1 VERSIONINFO
++FILEVERSION 6,1,7600,16385
++PRODUCTVERSION 6,1,7600,16385
++FILEOS 0x40004
++FILETYPE 0x2
++{
++BLOCK &quot;StringFileInfo&quot;
++{
++	BLOCK &quot;040904B0&quot;
++	{
++		VALUE &quot;CompanyName&quot;, &quot;Microsoft Corporation&quot;
++		VALUE &quot;FileDescription&quot;, &quot;Windows Photo Viewer&quot;
++		VALUE &quot;FileVersion&quot;, &quot;6.1.7600.16385 (win7_rtm.090713-1255)&quot;
++		VALUE &quot;InternalName&quot;, &quot;PhotoViewer&quot;
++		VALUE &quot;LegalCopyright&quot;, &quot;&#169; Microsoft Corporation. All rights reserved.&quot;
++		VALUE &quot;OriginalFilename&quot;, &quot;PhotoViewer.dll.mui&quot;
++		VALUE &quot;ProductName&quot;, &quot;Microsoft&#174; Windows&#174; Operating System&quot;
++		VALUE &quot;ProductVersion&quot;, &quot;6.1.7600.16385&quot;
++	}
++}
++
++BLOCK &quot;VarFileInfo&quot;
++{
++	VALUE &quot;Translation&quot;, 0x0409 0x04B0
++}
++}
++
+
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000048.html">[I18n-bel-svn] r130 - / Windows7 Windows7/omegat	Windows7/source/x32/Windows/System32/en-US
+</A></li>
+	<LI>Next message: <A HREF="000050.html">[I18n-bel-svn] r132 - in Windows7: . omegat
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#49">[ date ]</a>
+              <a href="thread.html#49">[ thread ]</a>
+              <a href="subject.html#49">[ subject ]</a>
+              <a href="author.html#49">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/i18n-bel-svn">More information about the I18n-bel-svn
+mailing list</a><br>
+</body></html>

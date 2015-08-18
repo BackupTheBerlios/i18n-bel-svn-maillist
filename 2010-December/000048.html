@@ -1,0 +1,2129 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [I18n-bel-svn] r130 - / Windows7 Windows7/omegat	Windows7/source/x32/Windows/System32/en-US
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/i18n-bel-svn/2010-December/index.html" >
+   <LINK REL="made" HREF="mailto:i18n-bel-svn%40lists.berlios.de?Subject=Re%3A%20%5BI18n-bel-svn%5D%20r130%20-%20/%20Windows7%20Windows7/omegat%0A%09Windows7/source/x32/Windows/System32/en-US&In-Reply-To=%3C20101209220126.062CF480EBB%40sheep.berlios.de%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000047.html">
+   <LINK REL="Next"  HREF="000049.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[I18n-bel-svn] r130 - / Windows7 Windows7/omegat	Windows7/source/x32/Windows/System32/en-US</H1>
+    <B>eratyk at mail.berlios.de</B> 
+    <A HREF="mailto:i18n-bel-svn%40lists.berlios.de?Subject=Re%3A%20%5BI18n-bel-svn%5D%20r130%20-%20/%20Windows7%20Windows7/omegat%0A%09Windows7/source/x32/Windows/System32/en-US&In-Reply-To=%3C20101209220126.062CF480EBB%40sheep.berlios.de%3E"
+       TITLE="[I18n-bel-svn] r130 - / Windows7 Windows7/omegat	Windows7/source/x32/Windows/System32/en-US">eratyk at mail.berlios.de
+       </A><BR>
+    <I>Thu Dec  9 23:01:25 CET 2010</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000047.html">[I18n-bel-svn] r129 - Converter/src/installer
+</A></li>
+        <LI>Next message: <A HREF="000049.html">[I18n-bel-svn] r131 - in Windows7/source/x32/Program Files: .	Windows Photo Viewer Windows Photo Viewer/en-US
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#48">[ date ]</a>
+              <a href="thread.html#48">[ thread ]</a>
+              <a href="subject.html#48">[ subject ]</a>
+              <a href="author.html#48">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>Author: eratyk
+Date: 2010-12-09 23:01:25 +0100 (Thu, 09 Dec 2010)
+New Revision: 130
+
+Added:
+   Windows7/source/x32/Windows/System32/en-US/batmeter.dll.rc
+   Windows7/source/x32/Windows/System32/en-US/powrprof.dll.rc
+Removed:
+   translated.txt
+Modified:
+   Windows7/omegat/project_save.tmx
+   Windows7/translated.txt
+Log:
+
+
+Modified: Windows7/omegat/project_save.tmx
+===================================================================
+--- Windows7/omegat/project_save.tmx	2010-12-08 21:52:47 UTC (rev 129)
++++ Windows7/omegat/project_save.tmx	2010-12-09 22:01:25 UTC (rev 130)
+@@ -646,6 +646,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;%1!02u! min to full charge&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20101209T152547Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;%1!02u! &#209;&#133;&#208;&#178;&#209;&#150;&#208;&#187;&#209;&#150;&#208;&#189; &#208;&#180;&#208;&#176; &#208;&#191;&#208;&#190;&#209;&#158;&#208;&#189;&#208;&#176;&#208;&#185; &#208;&#183;&#208;&#176;&#209;&#128;&#208;&#176;&#208;&#180;&#208;&#186;&#209;&#150;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;%1!I64u!&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100318T111127Z&quot; changeid=&quot;Ales Koshal [icq#:706101]&quot;&gt;
+@@ -1278,6 +1286,54 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;%1!u!%% available (plugged in, charging)&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20101209T152612Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;%1!u!%% &#208;&#180;&#208;&#176;&#209;&#129;&#209;&#130;&#209;&#131;&#208;&#191;&#208;&#189;&#208;&#176; (&#208;&#191;&#208;&#176;&#208;&#180;&#208;&#186;&#208;&#187;&#209;&#142;&#209;&#135;&#208;&#176;&#208;&#189;&#208;&#176;&#209;&#143;, &#208;&#183;&#208;&#176;&#209;&#128;&#208;&#176;&#208;&#180;&#208;&#182;&#208;&#176;&#208;&#181;&#209;&#134;&#209;&#134;&#208;&#176;)&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;%1!u!%% available (plugged in, charging)\nConsider replacing your battery.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20101209T153216Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;%1!u!%% &#208;&#180;&#208;&#176;&#209;&#129;&#209;&#130;&#209;&#131;&#208;&#191;&#208;&#189;&#208;&#176; (&#208;&#191;&#208;&#176;&#208;&#180;&#208;&#186;&#208;&#187;&#209;&#142;&#209;&#135;&#208;&#176;&#208;&#189;&#208;&#176;&#209;&#143;, &#208;&#183;&#208;&#176;&#209;&#128;&#208;&#176;&#208;&#180;&#208;&#182;&#208;&#176;&#208;&#181;&#209;&#134;&#209;&#134;&#208;&#176;)\n&#208;&#159;&#208;&#176;&#208;&#180;&#209;&#131;&#208;&#188;&#208;&#176;&#208;&#185;&#209;&#134;&#208;&#181; &#208;&#176;&#208;&#177; &#208;&#183;&#208;&#176;&#208;&#188;&#208;&#181;&#208;&#189;&#208;&#181; &#208;&#178;&#208;&#176;&#209;&#136;&#208;&#176;&#208;&#181; &#208;&#177;&#208;&#176;&#209;&#130;&#208;&#176;&#209;&#128;&#209;&#141;&#209;&#150;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;%1!u!%% available (plugged in, not charging)&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20101209T152621Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;%1!u!%% &#208;&#180;&#208;&#176;&#209;&#129;&#209;&#130;&#209;&#131;&#208;&#191;&#208;&#189;&#208;&#176; (&#208;&#191;&#208;&#176;&#208;&#180;&#208;&#186;&#208;&#187;&#209;&#142;&#209;&#135;&#208;&#176;&#208;&#189;&#208;&#176;&#209;&#143;, &#208;&#189;&#208;&#181; &#208;&#183;&#208;&#176;&#209;&#128;&#208;&#176;&#208;&#180;&#208;&#182;&#208;&#176;&#208;&#181;&#209;&#134;&#209;&#134;&#208;&#176;)&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;%1!u!%% available (plugged in, not charging)\nConsider replacing your battery.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20101209T153225Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;%1!u!%% &#208;&#180;&#208;&#176;&#209;&#129;&#209;&#130;&#209;&#131;&#208;&#191;&#208;&#189;&#208;&#176; (&#208;&#191;&#208;&#176;&#208;&#180;&#208;&#186;&#208;&#187;&#209;&#142;&#209;&#135;&#208;&#176;&#208;&#189;&#208;&#176;&#209;&#143;, &#208;&#189;&#208;&#181; &#208;&#183;&#208;&#176;&#209;&#128;&#208;&#176;&#208;&#180;&#208;&#182;&#208;&#176;&#208;&#181;&#209;&#134;&#209;&#134;&#208;&#176;)\n&#208;&#159;&#208;&#176;&#208;&#180;&#209;&#131;&#208;&#188;&#208;&#176;&#208;&#185;&#209;&#134;&#208;&#181; &#208;&#176;&#208;&#177; &#208;&#183;&#208;&#176;&#208;&#188;&#208;&#181;&#208;&#189;&#208;&#181; &#208;&#178;&#208;&#176;&#209;&#136;&#208;&#176;&#208;&#181; &#208;&#177;&#208;&#176;&#209;&#130;&#208;&#176;&#209;&#128;&#209;&#141;&#209;&#150;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;%1!u!%% remaining&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20101209T152815Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;%1!u!%% &#208;&#183;&#208;&#176;&#209;&#129;&#209;&#130;&#208;&#176;&#208;&#187;&#208;&#190;&#209;&#129;&#209;&#143;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;%1!u!%% remaining\nConsider replacing your battery.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20101209T152946Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;%1!u!%% &#208;&#183;&#208;&#176;&#209;&#129;&#209;&#130;&#208;&#176;&#208;&#187;&#208;&#190;&#209;&#129;&#209;&#143;\n&#208;&#159;&#208;&#176;&#208;&#180;&#209;&#131;&#208;&#188;&#208;&#176;&#208;&#185;&#209;&#134;&#208;&#181; &#208;&#176;&#208;&#177; &#208;&#183;&#208;&#176;&#208;&#188;&#208;&#181;&#208;&#189;&#208;&#181; &#208;&#178;&#208;&#176;&#209;&#136;&#208;&#176;&#208;&#181; &#208;&#177;&#208;&#176;&#209;&#130;&#208;&#176;&#209;&#128;&#209;&#141;&#209;&#150;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;%1!ws!&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100717T112000Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -1878,6 +1934,22 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;%2!u! hr %1!02u! min to full charge&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20101209T152536Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;%2!u! &#208;&#179;&#208;&#176;&#208;&#180;&#208;&#183;&#209;&#150;&#208;&#189; %1!02u! &#209;&#133;&#208;&#178;&#209;&#150;&#208;&#187;&#209;&#150;&#208;&#189; &#208;&#180;&#208;&#176; &#208;&#191;&#208;&#190;&#209;&#158;&#208;&#189;&#208;&#176;&#208;&#185; &#208;&#183;&#208;&#176;&#209;&#128;&#208;&#176;&#208;&#180;&#208;&#186;&#209;&#150;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;%2!u! min (%1!u!%%) remaining&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20101209T152806Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;%2!u! &#209;&#133;&#208;&#178;&#209;&#150;&#208;&#187;&#209;&#150;&#208;&#189; (%1!u!%%) &#208;&#183;&#208;&#176;&#209;&#129;&#209;&#130;&#208;&#176;&#208;&#187;&#208;&#190;&#209;&#129;&#209;&#143;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;%2!x!.%3!02x!&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100920T070105Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -1894,6 +1966,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;%3!u! hr %2!02u! min (%1!u!%%) remaining&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20101209T152746Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;%2!u! &#208;&#179;&#208;&#176;&#208;&#180;&#208;&#183;&#209;&#150;&#208;&#189; %1!02u! &#209;&#133;&#208;&#178;&#209;&#150;&#208;&#187;&#209;&#150;&#208;&#189; &#208;&#183;&#208;&#176;&#209;&#129;&#209;&#130;&#208;&#176;&#208;&#187;&#208;&#190;&#209;&#129;&#209;&#143;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;%I64d / %I64d&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101125T173158Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -7640,8 +7720,8 @@
+       &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;&amp;When using battery power, pause the slide show to save power&lt;/seg&gt;
+       &lt;/tuv&gt;
+-      &lt;tuv lang=&quot;be&quot; changedate=&quot;20101006T201245Z&quot; changeid=&quot;eratyk&quot;&gt;
+-        &lt;seg&gt;&#208;&#159;&#209;&#128;&#209;&#139;&#208;&#191;&#209;&#139;&#208;&#189;&#209;&#143;&#209;&#134;&#209;&#140; &#208;&#191;&#208;&#176;&#208;&#186;&#208;&#176;&#208;&#183; &#209;&#129;&#208;&#187;&#208;&#176;&#208;&#185;&#208;&#180;&#208;&#176;&#209;&#158; &#208;&#191;&#208;&#176;&#208;&#180;&#209;&#135;&#208;&#176;&#209;&#129; &#208;&#186;&#208;&#176;&#209;&#128;&#209;&#139;&#209;&#129;&#209;&#130;&#208;&#176;&#208;&#189;&#208;&#189;&#209;&#143; &#209;&#141;&#208;&#189;&#208;&#181;&#209;&#128;&#208;&#179;&#209;&#150;&#209;&#150; &#208;&#177;&#208;&#176;&#209;&#130;&#208;&#176;&#209;&#128;&#209;&#141;&#209;&#150;&lt;/seg&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20101209T161225Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#159;&#209;&#128;&#209;&#139;&#208;&#191;&#209;&#139;&#208;&#189;&#209;&#143;&#209;&#134;&#209;&#140; &#208;&#191;&#208;&#176;&#208;&#186;&#208;&#176;&#208;&#183; &#209;&#129;&#208;&#187;&#208;&#176;&#208;&#185;&#208;&#180;&#208;&#176;&#209;&#158; &#208;&#191;&#208;&#176;&#208;&#180;&#209;&#135;&#208;&#176;&#209;&#129; &#208;&#186;&#208;&#176;&#209;&#128;&#209;&#139;&#209;&#129;&#209;&#130;&#208;&#176;&#208;&#189;&#208;&#189;&#209;&#143; &#209;&#141;&#208;&#189;&#208;&#181;&#209;&#128;&#208;&#179;&#209;&#150;&#209;&#150; &#208;&#177;&#208;&#176;&#209;&#130;&#208;&#176;&#209;&#128;&#209;&#141;&#209;&#150; &#208;&#180;&#208;&#183;&#208;&#181;&#208;&#187;&#209;&#143; &#209;&#143;&#208;&#181; &#208;&#183;&#208;&#176;&#209;&#133;&#208;&#176;&#208;&#178;&#208;&#176;&#208;&#189;&#208;&#189;&#209;&#143;&lt;/seg&gt;
+       &lt;/tuv&gt;
+     &lt;/tu&gt;
+     &lt;tu&gt;
+@@ -12622,6 +12702,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Adaptive lowspeed timeout&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20101209T210852Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#159;&#209;&#128;&#209;&#139;&#209;&#129;&#209;&#130;&#208;&#176;&#209;&#129;&#208;&#176;&#208;&#178;&#208;&#176;&#208;&#187;&#209;&#140;&#208;&#189;&#209;&#139; &#209;&#135;&#208;&#176;&#209;&#129; &#208;&#183;&#208;&#189;&#209;&#150;&#208;&#182;&#209;&#141;&#208;&#189;&#208;&#189;&#209;&#143; &#209;&#133;&#209;&#131;&#209;&#130;&#208;&#186;&#208;&#176;&#209;&#129;&#209;&#134;&#209;&#150;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Add Desktop Gadgets that display personalized slideshows, news feeds, and other customized information.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101021T164530Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -13982,6 +14070,30 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Allow Standby States&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20101209T173422Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#148;&#208;&#176;&#208;&#183;&#208;&#178;&#208;&#190;&#208;&#187;&#209;&#150;&#209;&#134;&#209;&#140; &#208;&#183;&#208;&#176;&#208;&#191;&#208;&#176;&#209;&#129;&#208;&#189;&#209;&#139;&#209;&#143; &#209;&#129;&#209;&#130;&#208;&#176;&#208;&#189;&#209;&#139;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Allow Windows to save your work and enter a low-power state so that you can resume working almost immediately.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20101209T171637Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#148;&#208;&#176;&#208;&#183;&#208;&#178;&#208;&#190;&#208;&#187;&#209;&#150;&#209;&#134;&#209;&#140; Windows &#208;&#183;&#208;&#176;&#209;&#133;&#208;&#190;&#209;&#158;&#208;&#178;&#208;&#176;&#209;&#134;&#209;&#140; &#208;&#178;&#208;&#176;&#209;&#136;&#209;&#131;&#209;&#142; &#208;&#191;&#209;&#128;&#208;&#176;&#209;&#134;&#209;&#131; &#209;&#150; &#208;&#191;&#208;&#181;&#209;&#128;&#208;&#176;&#209;&#133;&#208;&#190;&#208;&#180;&#208;&#183;&#209;&#150;&#209;&#134;&#209;&#140; &#209;&#131; &#209;&#128;&#209;&#141;&#208;&#182;&#209;&#139;&#208;&#188; &#208;&#176;&#209;&#136;&#209;&#135;&#208;&#176;&#208;&#180;&#208;&#182;&#208;&#176;&#208;&#189;&#208;&#189;&#209;&#143; &#209;&#141;&#208;&#189;&#208;&#181;&#209;&#128;&#208;&#179;&#209;&#150;&#209;&#150; &#208;&#180;&#208;&#187;&#209;&#143; &#208;&#188;&#208;&#176;&#208;&#179;&#209;&#135;&#209;&#139;&#208;&#188;&#208;&#176;&#209;&#129;&#209;&#134;&#209;&#150; &#208;&#176;&#208;&#188;&#208;&#176;&#208;&#187;&#209;&#140; &#209;&#150;&#208;&#188;&#208;&#179;&#208;&#189;&#208;&#181;&#208;&#189;&#208;&#189;&#208;&#176;&#208;&#179;&#208;&#176; &#209;&#131;&#208;&#183;&#208;&#189;&#208;&#176;&#209;&#158;&#208;&#187;&#208;&#181;&#208;&#189;&#208;&#189;&#209;&#143; &#208;&#191;&#209;&#128;&#208;&#176;&#209;&#134;&#209;&#139;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Allow Windows to use the standby states when sleeping your computer.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20101209T173410Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#148;&#208;&#176;&#208;&#183;&#208;&#178;&#208;&#190;&#208;&#187;&#209;&#150;&#209;&#134;&#209;&#140; Windows &#208;&#186;&#208;&#176;&#209;&#128;&#209;&#139;&#209;&#129;&#209;&#130;&#208;&#176;&#209;&#134;&#209;&#140; &#208;&#183;&#208;&#176;&#208;&#191;&#208;&#176;&#209;&#129;&#208;&#189;&#209;&#139;&#209;&#143; &#209;&#129;&#209;&#130;&#208;&#176;&#208;&#189;&#209;&#139; &#208;&#191;&#208;&#176;&#208;&#180;&#209;&#135;&#208;&#176;&#209;&#129; &#208;&#183;&#208;&#176;&#209;&#129;&#209;&#139;&#208;&#189;&#208;&#176;&#208;&#189;&#208;&#189;&#209;&#143; &#208;&#186;&#208;&#176;&#208;&#188;&#208;&#191;'&#209;&#142;&#209;&#130;&#208;&#176;&#209;&#128;&#208;&#176;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Allow a program through Windows Firewall&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100720T170444Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -14006,6 +14118,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Allow hybrid sleep&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20101209T171701Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#148;&#208;&#176;&#208;&#183;&#208;&#178;&#208;&#190;&#208;&#187;&#209;&#150;&#209;&#134;&#209;&#140; &#208;&#179;&#209;&#150;&#208;&#177;&#209;&#128;&#209;&#139;&#208;&#180;&#208;&#189;&#209;&#139; &#209;&#129;&#208;&#190;&#208;&#189;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Allow remote access&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101030T170515Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -14030,6 +14150,22 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Allow the system to adapt the harddisk lowspeed timeout based on system usage and recent history.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20101209T210809Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#148;&#208;&#176;&#208;&#183;&#208;&#178;&#208;&#190;&#208;&#187;&#209;&#150;&#209;&#134;&#209;&#140; &#208;&#191;&#209;&#128;&#209;&#139;&#209;&#129;&#209;&#130;&#208;&#176;&#209;&#129;&#208;&#176;&#208;&#178;&#208;&#176;&#209;&#134;&#209;&#140; &#209;&#135;&#208;&#176;&#209;&#129; &#208;&#183;&#208;&#189;&#209;&#150;&#208;&#182;&#209;&#141;&#208;&#189;&#208;&#189;&#209;&#143; &#209;&#133;&#209;&#131;&#209;&#130;&#208;&#186;&#208;&#176;&#209;&#129;&#209;&#134;&#209;&#150; &#209;&#133;&#208;&#176;&#209;&#128;&#208;&#180;-&#208;&#180;&#209;&#139;&#209;&#129;&#208;&#186;&#208;&#176;, &#208;&#176;&#208;&#177;&#208;&#176;&#208;&#191;&#209;&#150;&#209;&#128;&#208;&#176;&#209;&#142;&#209;&#135;&#209;&#139;&#209;&#129;&#209;&#143; &#208;&#189;&#208;&#176; &#208;&#178;&#209;&#139;&#208;&#186;&#208;&#176;&#209;&#128;&#209;&#139;&#209;&#129;&#209;&#130;&#208;&#176;&#208;&#189;&#208;&#189;&#208;&#181; &#209;&#129;&#209;&#150;&#209;&#129;&#209;&#130;&#209;&#141;&#208;&#188;&#209;&#139; &#209;&#150; &#208;&#176;&#208;&#191;&#208;&#190;&#209;&#136;&#208;&#189;&#209;&#142;&#209;&#142; &#208;&#179;&#209;&#150;&#209;&#129;&#209;&#130;&#208;&#190;&#209;&#128;&#209;&#139;&#209;&#142;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Allow the system to adapt the harddisk power down timeout based on system usage and recent history.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20101209T210400Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#148;&#208;&#176;&#208;&#183;&#208;&#178;&#208;&#190;&#208;&#187;&#209;&#150;&#209;&#134;&#209;&#140; &#208;&#191;&#209;&#128;&#209;&#139;&#209;&#129;&#209;&#130;&#208;&#176;&#209;&#129;&#208;&#176;&#208;&#178;&#208;&#176;&#209;&#134;&#209;&#140; &#209;&#135;&#208;&#176;&#209;&#129; &#208;&#178;&#209;&#139;&#208;&#186;&#208;&#187;&#209;&#142;&#209;&#135;&#209;&#141;&#208;&#189;&#208;&#189;&#209;&#143; &#209;&#133;&#208;&#176;&#209;&#128;&#208;&#180;-&#208;&#180;&#209;&#139;&#209;&#129;&#208;&#186;&#208;&#176;, &#208;&#176;&#208;&#177;&#208;&#176;&#208;&#191;&#209;&#150;&#209;&#128;&#208;&#176;&#209;&#142;&#209;&#135;&#209;&#139;&#209;&#129;&#209;&#143; &#208;&#189;&#208;&#176; &#208;&#178;&#209;&#139;&#208;&#186;&#208;&#176;&#209;&#128;&#209;&#139;&#209;&#129;&#209;&#130;&#208;&#176;&#208;&#189;&#208;&#189;&#208;&#181; &#209;&#129;&#209;&#150;&#209;&#129;&#209;&#130;&#209;&#141;&#208;&#188;&#209;&#139; &#209;&#150; &#208;&#176;&#208;&#191;&#208;&#190;&#209;&#136;&#208;&#189;&#209;&#142;&#209;&#142; &#208;&#179;&#209;&#150;&#209;&#129;&#209;&#130;&#208;&#190;&#209;&#128;&#209;&#139;&#209;&#142;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Allow this file to have contents &amp;indexed in addition to file properties&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100705T050915Z&quot; changeid=&quot;alex&quot;&gt;
+@@ -14038,6 +14174,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Allow wake timers&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20101209T174036Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#148;&#208;&#176;&#208;&#183;&#208;&#178;&#208;&#190;&#208;&#187;&#209;&#150;&#209;&#134;&#209;&#140; &#209;&#130;&#208;&#176;&#208;&#185;&#208;&#188;&#208;&#181;&#209;&#128;&#209;&#139; &#208;&#176;&#208;&#177;&#209;&#131;&#208;&#180;&#208;&#182;&#209;&#141;&#208;&#189;&#208;&#189;&#209;&#143;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Allow%0&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100313T065041Z&quot; changeid=&quot;Ales Koshal [icq#:706101]&quot;&gt;
+@@ -16718,6 +16862,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Automatically balances performance with energy consumption on capable hardware.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20101209T162207Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#144;&#209;&#158;&#209;&#130;&#208;&#176;&#208;&#188;&#208;&#176;&#209;&#130;&#209;&#139;&#209;&#135;&#208;&#189;&#208;&#176; &#208;&#177;&#208;&#176;&#208;&#187;&#208;&#176;&#208;&#189;&#209;&#129;&#209;&#131;&#208;&#181; &#208;&#191;&#209;&#128;&#208;&#176;&#208;&#180;&#209;&#131;&#208;&#186;&#209;&#134;&#209;&#139;&#208;&#185;&#208;&#189;&#208;&#176;&#209;&#129;&#209;&#134;&#209;&#140; &#209;&#150; &#209;&#129;&#208;&#191;&#208;&#176;&#208;&#182;&#209;&#139;&#208;&#178;&#208;&#176;&#208;&#189;&#208;&#189;&#208;&#181; &#209;&#141;&#208;&#189;&#208;&#181;&#209;&#128;&#208;&#179;&#209;&#150;&#209;&#150; &#208;&#189;&#208;&#176; &#208;&#183;&#208;&#180;&#208;&#190;&#208;&#187;&#209;&#140;&#208;&#189;&#209;&#139;&#208;&#188; &#208;&#176;&#208;&#177;&#209;&#129;&#209;&#130;&#208;&#176;&#208;&#187;&#209;&#143;&#208;&#178;&#208;&#176;&#208;&#189;&#208;&#189;&#209;&#150;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Automatically close the current UDF session when:&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101107T171952Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -17030,6 +17182,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Balanced&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20101209T162249Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#151;&#208;&#177;&#208;&#176;&#208;&#187;&#208;&#176;&#208;&#189;&#209;&#129;&#208;&#176;&#208;&#178;&#208;&#176;&#208;&#189;&#209;&#139;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Baltic&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100918T202648Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -17110,6 +17270,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Battery&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20101209T192240Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#145;&#208;&#176;&#209;&#130;&#208;&#176;&#209;&#128;&#209;&#141;&#209;&#143;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Battery %s: %s&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100927T165928Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -19336,8 +19504,8 @@
+       &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Capacity:&lt;/seg&gt;
+       &lt;/tuv&gt;
+-      &lt;tuv lang=&quot;be&quot; changedate=&quot;20100705T091850Z&quot; changeid=&quot;eratyk&quot;&gt;
+-        &lt;seg&gt;&#208;&#144;&#208;&#177;'&#209;&#145;&#208;&#188;&lt;/seg&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20101209T153621Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#129;&#208;&#188;&#209;&#150;&#209;&#129;&#209;&#130;&#208;&#176;&#209;&#129;&#209;&#134;&#209;&#140;:&lt;/seg&gt;
+       &lt;/tuv&gt;
+     &lt;/tu&gt;
+     &lt;tu&gt;
+@@ -23672,8 +23840,8 @@
+       &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Configure administrative settings for your computer.&lt;/seg&gt;
+       &lt;/tuv&gt;
+-      &lt;tuv lang=&quot;be&quot; changedate=&quot;20100722T101939Z&quot; changeid=&quot;eratyk&quot;&gt;
+-        &lt;seg&gt;&#208;&#157;&#208;&#176;&#208;&#187;&#208;&#176;&#208;&#180;&#208;&#176; &#208;&#176;&#208;&#180;&#208;&#188;&#209;&#150;&#208;&#189;&#209;&#150;&#209;&#129;&#209;&#130;&#209;&#128;&#208;&#176;&#209;&#134;&#209;&#139;&#208;&#185;&#208;&#189;&#209;&#139;&#209;&#133; &#208;&#191;&#208;&#176;&#209;&#128;&#208;&#176;&#208;&#188;&#208;&#181;&#209;&#130;&#209;&#128;&#208;&#176;&#209;&#158; &#208;&#178;&#208;&#176;&#209;&#136;&#208;&#176;&#208;&#179;&#208;&#176; &#208;&#186;&#208;&#176;&#208;&#188;&#208;&#191;'&#209;&#142;&#209;&#130;&#208;&#176;&#209;&#128;&#208;&#176;.&lt;/seg&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20101209T192054Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#157;&#208;&#176;&#208;&#187;&#208;&#176;&#208;&#180;&#208;&#183;&#209;&#150;&#209;&#134;&#209;&#140; &#208;&#176;&#208;&#180;&#208;&#188;&#209;&#150;&#208;&#189;&#209;&#150;&#209;&#129;&#209;&#130;&#209;&#128;&#208;&#176;&#209;&#134;&#209;&#139;&#208;&#185;&#208;&#189;&#209;&#139;&#209;&#143; &#208;&#191;&#208;&#176;&#209;&#128;&#208;&#176;&#208;&#188;&#208;&#181;&#209;&#130;&#209;&#128;&#209;&#139; &#208;&#178;&#208;&#176;&#209;&#136;&#208;&#176;&#208;&#179;&#208;&#176; &#208;&#186;&#208;&#176;&#208;&#188;&#208;&#191;'&#209;&#142;&#209;&#130;&#208;&#176;&#209;&#128;&#208;&#176;.&lt;/seg&gt;
+       &lt;/tuv&gt;
+     &lt;/tu&gt;
+     &lt;tu&gt;
+@@ -23686,6 +23854,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Configure notification and alarm settings for your battery.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20101209T192235Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#157;&#208;&#176;&#208;&#187;&#208;&#176;&#208;&#180;&#208;&#183;&#209;&#150;&#209;&#134;&#209;&#140; &#208;&#176;&#208;&#191;&#208;&#176;&#208;&#178;&#209;&#143;&#209;&#136;&#209;&#135;&#209;&#141;&#208;&#189;&#208;&#189;&#209;&#150; &#209;&#150; &#209;&#129;&#209;&#150;&#208;&#179;&#208;&#189;&#208;&#176;&#208;&#187;&#209;&#139; &#208;&#180;&#208;&#187;&#209;&#143; &#208;&#178;&#208;&#176;&#209;&#136;&#208;&#176;&#208;&#185; &#208;&#177;&#208;&#176;&#209;&#130;&#208;&#176;&#209;&#128;&#209;&#141;&#209;&#150;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Configure proxy server&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101030T160104Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -24384,8 +24560,8 @@
+       &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Consider replacing your battery&lt;/seg&gt;
+       &lt;/tuv&gt;
+-      &lt;tuv lang=&quot;be&quot; changedate=&quot;20100927T171033Z&quot; changeid=&quot;eratyk&quot;&gt;
+-        &lt;seg&gt;&#208;&#159;&#208;&#176;&#208;&#180;&#209;&#131;&#208;&#188;&#208;&#176;&#208;&#185;&#209;&#134;&#208;&#181; &#208;&#176;&#208;&#177; &#208;&#183;&#208;&#188;&#209;&#143;&#208;&#189;&#208;&#181;&#208;&#189;&#208;&#189;&#209;&#150; &#208;&#178;&#208;&#176;&#209;&#136;&#208;&#176;&#208;&#181; &#208;&#177;&#208;&#176;&#209;&#130;&#208;&#176;&#209;&#128;&#209;&#141;&#209;&#150;&lt;/seg&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20101209T153120Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#159;&#208;&#176;&#208;&#180;&#209;&#131;&#208;&#188;&#208;&#176;&#208;&#185;&#209;&#134;&#208;&#181; &#208;&#176;&#208;&#177; &#208;&#183;&#208;&#176;&#208;&#188;&#208;&#181;&#208;&#189;&#208;&#181; &#208;&#178;&#208;&#176;&#209;&#136;&#208;&#176;&#208;&#181; &#208;&#177;&#208;&#176;&#209;&#130;&#208;&#176;&#209;&#128;&#209;&#141;&#209;&#150;&lt;/seg&gt;
+       &lt;/tuv&gt;
+     &lt;/tu&gt;
+     &lt;tu&gt;
+@@ -25774,6 +25950,22 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Critical battery action&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20101209T192553Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#148;&#208;&#183;&#208;&#181;&#209;&#143;&#208;&#189;&#208;&#189;&#208;&#181; &#208;&#186;&#209;&#128;&#209;&#139;&#209;&#130;&#209;&#139;&#209;&#135;&#208;&#189;&#208;&#176;&#208;&#179;&#208;&#176; &#209;&#158;&#208;&#183;&#209;&#128;&#208;&#190;&#209;&#158;&#208;&#189;&#209;&#142; &#208;&#177;&#208;&#176;&#209;&#130;&#208;&#176;&#209;&#128;&#209;&#141;&#209;&#150;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Critical battery level&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20101209T203439Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#154;&#209;&#128;&#209;&#139;&#209;&#130;&#209;&#139;&#209;&#135;&#208;&#189;&#209;&#139; &#209;&#158;&#208;&#183;&#209;&#128;&#208;&#190;&#208;&#178;&#208;&#181;&#208;&#189;&#209;&#140; &#208;&#177;&#208;&#176;&#209;&#130;&#208;&#176;&#209;&#128;&#209;&#141;&#209;&#150;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Critical information about the desktop could not be retrieved from the registry.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100723T110439Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -27790,6 +27982,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Device idle policy&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20101209T190022Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#159;&#208;&#176;&#208;&#187;&#209;&#150;&#209;&#130;&#209;&#139;&#208;&#186;&#208;&#176; &#208;&#177;&#209;&#143;&#208;&#183;&#208;&#180;&#208;&#183;&#208;&#181;&#208;&#185;&#208;&#189;&#208;&#176;&#209;&#129;&#209;&#134;&#209;&#150; &#208;&#191;&#209;&#128;&#209;&#139;&#208;&#187;&#208;&#176;&#208;&#180;&#209;&#139;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Device name:&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100728T125916Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -28030,6 +28230,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Disable&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20101209T215718Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#146;&#209;&#139;&#208;&#186;&#208;&#187;&#209;&#142;&#209;&#135;&#209;&#139;&#209;&#134;&#209;&#140;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Disable Quick Removal&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100707T091400Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -28046,6 +28254,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Disable any processor power savings.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20101209T215713Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#146;&#209;&#139;&#208;&#186;&#208;&#187;&#209;&#142;&#209;&#135;&#209;&#139;&#209;&#134;&#209;&#140; &#208;&#183;&#208;&#176;&#209;&#133;&#208;&#176;&#208;&#178;&#208;&#176;&#208;&#189;&#208;&#189;&#208;&#181; &#209;&#141;&#208;&#189;&#208;&#181;&#209;&#128;&#208;&#179;&#209;&#150;&#209;&#150; &#208;&#191;&#209;&#128;&#208;&#176;&#209;&#134;&#209;&#141;&#209;&#129;&#208;&#176;&#209;&#128;&#208;&#176;&#208;&#188;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Disable resizing (IEAK)&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100910T113743Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -29078,6 +29294,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Do nothing&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20101209T162453Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#157;&#209;&#150;&#209;&#135;&#208;&#190;&#208;&#179;&#208;&#176; &#208;&#189;&#208;&#181; &#209;&#128;&#208;&#176;&#208;&#177;&#209;&#150;&#209;&#134;&#209;&#140;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Do this for &amp;all current items&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101107T171818Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -30871,6 +31095,22 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Enable Sleep Progress Bar&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20101209T171911Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#163;&#208;&#186;&#208;&#187;&#209;&#142;&#209;&#135;&#209;&#139;&#209;&#134;&#209;&#140; &#208;&#191;&#208;&#176;&#208;&#187;&#209;&#150;&#209;&#134;&#209;&#131; &#208;&#178;&#209;&#139;&#208;&#186;&#208;&#176;&#208;&#189;&#208;&#176;&#208;&#189;&#208;&#189;&#209;&#143; &#208;&#183;&#208;&#176;&#209;&#129;&#209;&#139;&#208;&#189;&#208;&#176;&#208;&#189;&#208;&#189;&#209;&#143;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Enable adaptive powerdown timeout.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20101209T210656Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#163;&#208;&#186;&#208;&#187;&#209;&#142;&#209;&#135;&#209;&#139;&#209;&#134;&#209;&#140; &#208;&#191;&#209;&#128;&#209;&#139;&#209;&#129;&#209;&#130;&#208;&#176;&#209;&#129;&#208;&#176;&#208;&#178;&#208;&#176;&#208;&#187;&#209;&#140;&#208;&#189;&#209;&#139; &#209;&#135;&#208;&#176;&#209;&#129; &#208;&#178;&#209;&#139;&#208;&#186;&#208;&#187;&#209;&#142;&#209;&#135;&#209;&#141;&#208;&#189;&#208;&#189;&#209;&#143;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Enable context menus and dragging and dropping&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100723T115420Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -30943,6 +31183,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Enables system to show a progress bar during transitions to sleep.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20101209T171830Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#148;&#208;&#176;&#208;&#183;&#208;&#178;&#208;&#190;&#208;&#187;&#209;&#150;&#209;&#134;&#209;&#140; &#209;&#129;&#209;&#150;&#209;&#129;&#209;&#130;&#209;&#141;&#208;&#188;&#208;&#181; &#208;&#191;&#208;&#176;&#208;&#186;&#208;&#176;&#208;&#183;&#208;&#178;&#208;&#176;&#209;&#134;&#209;&#140; &#208;&#191;&#208;&#176;&#208;&#187;&#209;&#150;&#209;&#134;&#209;&#131; &#208;&#178;&#209;&#139;&#208;&#186;&#208;&#176;&#208;&#189;&#208;&#176;&#208;&#189;&#208;&#189;&#209;&#143; &#208;&#191;&#208;&#176;&#208;&#180;&#209;&#135;&#208;&#176;&#209;&#129; &#208;&#191;&#208;&#181;&#209;&#128;&#208;&#176;&#209;&#133;&#208;&#190;&#208;&#180;&#209;&#131; &#209;&#158; &#209;&#129;&#208;&#190;&#208;&#189;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Enables you to change settings.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100910T145644Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -32799,6 +33047,22 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Favor performance over power savings.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20101209T191158Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#161;&#208;&#191;&#209;&#128;&#209;&#139;&#209;&#143;&#209;&#134;&#209;&#140; &#208;&#191;&#209;&#128;&#208;&#176;&#208;&#180;&#209;&#131;&#208;&#186;&#209;&#134;&#209;&#139;&#208;&#185;&#208;&#189;&#208;&#176;&#209;&#129;&#209;&#134;&#209;&#150;, &#208;&#176; &#208;&#189;&#208;&#181; &#208;&#183;&#208;&#176;&#209;&#133;&#208;&#176;&#208;&#178;&#208;&#176;&#208;&#189;&#208;&#189;&#209;&#142; &#209;&#141;&#208;&#189;&#208;&#181;&#209;&#128;&#208;&#179;&#209;&#150;&#209;&#150;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Favor power savings over performance.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20101209T191217Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#161;&#208;&#191;&#209;&#128;&#209;&#139;&#209;&#143;&#209;&#134;&#209;&#140; &#208;&#183;&#208;&#176;&#209;&#133;&#208;&#176;&#208;&#178;&#208;&#176;&#208;&#189;&#208;&#189;&#209;&#142; &#209;&#141;&#208;&#189;&#208;&#181;&#209;&#128;&#208;&#179;&#209;&#150;&#209;&#150;, &#208;&#176; &#208;&#189;&#208;&#181; &#208;&#191;&#209;&#128;&#208;&#176;&#208;&#180;&#209;&#131;&#208;&#186;&#209;&#134;&#209;&#139;&#208;&#185;&#208;&#189;&#208;&#176;&#209;&#129;&#209;&#134;&#209;&#150;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Favorite Links&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100725T110637Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -32831,6 +33095,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Favors performance, but may use more energy.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20101209T161330Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#161;&#208;&#191;&#209;&#128;&#209;&#139;&#209;&#143;&#208;&#181; &#208;&#191;&#209;&#128;&#208;&#176;&#208;&#180;&#209;&#131;&#208;&#186;&#209;&#134;&#209;&#139;&#208;&#185;&#208;&#189;&#208;&#176;&#209;&#129;&#209;&#134;&#209;&#150;, &#208;&#176;&#208;&#187;&#208;&#181; &#208;&#188;&#208;&#190;&#208;&#182;&#208;&#176; &#208;&#186;&#208;&#176;&#209;&#128;&#209;&#139;&#209;&#129;&#209;&#130;&#208;&#176;&#209;&#134;&#209;&#140; &#208;&#177;&#208;&#190;&#208;&#187;&#209;&#140;&#209;&#136; &#209;&#141;&#208;&#189;&#208;&#181;&#209;&#128;&#208;&#179;&#209;&#150;&#209;&#150;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;February|Feb&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101106T165410Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -33767,6 +34039,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;First low-battery alarm flags&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20101209T203249Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#161;&#209;&#134;&#209;&#143;&#208;&#179;&#209;&#150; &#208;&#191;&#208;&#181;&#209;&#128;&#209;&#136;&#208;&#176;&#208;&#179;&#208;&#176; &#209;&#129;&#209;&#150;&#208;&#179;&#208;&#189;&#208;&#176;&#208;&#187;&#209;&#131; &#208;&#189;&#209;&#150;&#208;&#183;&#208;&#186;&#208;&#176;&#208;&#179;&#208;&#176; &#209;&#158;&#208;&#183;&#209;&#128;&#208;&#190;&#209;&#158;&#208;&#189;&#209;&#142; &#208;&#177;&#208;&#176;&#209;&#130;&#208;&#176;&#209;&#128;&#209;&#141;&#209;&#150;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;First name&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101029T054155Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -33831,6 +34111,30 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Flags and settings for first low battery alarm&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20101209T194127Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#161;&#209;&#134;&#209;&#143;&#208;&#179;&#209;&#150; &#209;&#150; &#208;&#189;&#208;&#176;&#208;&#187;&#208;&#176;&#208;&#180;&#209;&#139; &#208;&#180;&#208;&#187;&#209;&#143; &#208;&#191;&#208;&#181;&#209;&#128;&#209;&#136;&#208;&#176;&#208;&#179;&#208;&#176; &#209;&#129;&#209;&#150;&#208;&#179;&#208;&#189;&#208;&#176;&#208;&#187;&#209;&#131; &#208;&#189;&#209;&#150;&#208;&#183;&#208;&#186;&#208;&#176;&#208;&#179;&#208;&#176; &#209;&#158;&#208;&#183;&#209;&#128;&#208;&#190;&#209;&#158;&#208;&#189;&#209;&#142; &#208;&#177;&#208;&#176;&#209;&#130;&#208;&#176;&#209;&#128;&#209;&#141;&#209;&#150;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Flags and settings for fourth low battery alarm&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20101209T203316Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#161;&#209;&#134;&#209;&#143;&#208;&#179;&#209;&#150; &#209;&#150; &#208;&#189;&#208;&#176;&#208;&#187;&#208;&#176;&#208;&#180;&#209;&#139; &#208;&#180;&#208;&#187;&#209;&#143; &#209;&#135;&#208;&#176;&#209;&#134;&#208;&#178;&#208;&#181;&#209;&#128;&#209;&#130;&#208;&#176;&#208;&#179;&#208;&#176; &#209;&#129;&#209;&#150;&#208;&#179;&#208;&#189;&#208;&#176;&#208;&#187;&#209;&#131; &#208;&#189;&#209;&#150;&#208;&#183;&#208;&#186;&#208;&#176;&#208;&#179;&#208;&#176; &#209;&#158;&#208;&#183;&#209;&#128;&#208;&#190;&#209;&#158;&#208;&#189;&#209;&#142; &#208;&#177;&#208;&#176;&#209;&#130;&#208;&#176;&#209;&#128;&#209;&#141;&#209;&#150;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Flags and settings for third low battery alarm&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20101209T203200Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#161;&#209;&#134;&#209;&#143;&#208;&#179;&#209;&#150; &#209;&#150; &#208;&#189;&#208;&#176;&#208;&#187;&#208;&#176;&#208;&#180;&#209;&#139; &#208;&#180;&#208;&#187;&#209;&#143; &#209;&#130;&#209;&#128;&#209;&#141;&#209;&#134;&#209;&#143;&#208;&#179;&#208;&#176; &#209;&#129;&#209;&#150;&#208;&#179;&#208;&#189;&#208;&#176;&#208;&#187;&#209;&#131; &#208;&#189;&#209;&#150;&#208;&#183;&#208;&#186;&#208;&#176;&#208;&#179;&#208;&#176; &#209;&#158;&#208;&#183;&#209;&#128;&#208;&#190;&#209;&#158;&#208;&#189;&#209;&#142; &#208;&#177;&#208;&#176;&#209;&#130;&#208;&#176;&#209;&#128;&#209;&#141;&#209;&#150;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Flash&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101027T200809Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -34871,6 +35175,30 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Fourth Low Battery Alarm Action&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20101209T192739Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#148;&#208;&#183;&#208;&#181;&#209;&#143;&#208;&#189;&#208;&#189;&#208;&#181; &#209;&#135;&#208;&#176;&#209;&#134;&#208;&#178;&#208;&#181;&#209;&#128;&#209;&#130;&#208;&#176;&#208;&#179;&#208;&#176; &#209;&#129;&#209;&#150;&#208;&#179;&#208;&#189;&#208;&#176;&#208;&#187;&#209;&#131; &#208;&#189;&#209;&#150;&#208;&#183;&#208;&#186;&#208;&#176;&#208;&#179;&#208;&#176; &#209;&#158;&#208;&#183;&#209;&#128;&#208;&#190;&#209;&#158;&#208;&#189;&#209;&#142; &#208;&#177;&#208;&#176;&#209;&#130;&#208;&#176;&#209;&#128;&#209;&#141;&#209;&#150;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Fourth low-battery alarm flags&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20101209T203328Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#161;&#209;&#134;&#209;&#143;&#208;&#179;&#209;&#150; &#209;&#135;&#208;&#176;&#209;&#134;&#208;&#178;&#208;&#181;&#209;&#128;&#209;&#130;&#208;&#176;&#208;&#179;&#208;&#176; &#209;&#129;&#209;&#150;&#208;&#179;&#208;&#189;&#208;&#176;&#208;&#187;&#209;&#131; &#208;&#189;&#209;&#150;&#208;&#183;&#208;&#186;&#208;&#176;&#208;&#179;&#208;&#176; &#209;&#158;&#208;&#183;&#209;&#128;&#208;&#190;&#209;&#158;&#208;&#189;&#209;&#142; &#208;&#177;&#208;&#176;&#209;&#130;&#208;&#176;&#209;&#128;&#209;&#141;&#209;&#150;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Fourth power trip point&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20101209T204000Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#167;&#208;&#176;&#209;&#134;&#208;&#178;&#208;&#181;&#209;&#128;&#209;&#130;&#208;&#176;&#209;&#143; &#208;&#186;&#209;&#128;&#208;&#190;&#208;&#191;&#208;&#186;&#208;&#176; &#209;&#129;&#208;&#191;&#208;&#176;&#209;&#130;&#209;&#139;&#208;&#186;&#208;&#189;&#208;&#181;&#208;&#189;&#208;&#189;&#209;&#143; &#209;&#141;&#208;&#189;&#208;&#181;&#209;&#128;&#208;&#179;&#209;&#150;&#209;&#150;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Frame count&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101030T210459Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -35159,6 +35487,22 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Fully charged (100%)&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20101209T152637Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#159;&#208;&#190;&#209;&#158;&#208;&#189;&#208;&#176;&#209;&#129;&#209;&#134;&#209;&#142; &#208;&#183;&#208;&#176;&#209;&#128;&#208;&#176;&#208;&#180;&#208;&#182;&#208;&#176;&#208;&#189;&#208;&#176;&#209;&#143; (100%)&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Fully charged (100%)\nConsider replacing your battery.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20101209T153252Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#159;&#208;&#190;&#209;&#158;&#208;&#189;&#208;&#176;&#209;&#129;&#209;&#134;&#209;&#142; &#208;&#183;&#208;&#176;&#209;&#128;&#208;&#176;&#208;&#180;&#208;&#182;&#208;&#176;&#208;&#189;&#208;&#176;&#209;&#143; (100%)\n&#208;&#159;&#208;&#176;&#208;&#180;&#209;&#131;&#208;&#188;&#208;&#176;&#208;&#185;&#209;&#134;&#208;&#181; &#208;&#176;&#208;&#177; &#208;&#183;&#208;&#176;&#208;&#188;&#208;&#181;&#208;&#189;&#208;&#181; &#208;&#178;&#208;&#176;&#209;&#136;&#208;&#176;&#208;&#181; &#208;&#177;&#208;&#176;&#209;&#130;&#208;&#176;&#209;&#128;&#209;&#141;&#209;&#150;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Funktional&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100810T111140Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -36143,6 +36487,22 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Hard disk&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20101209T204947Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#165;&#208;&#176;&#209;&#128;&#208;&#180;-&#208;&#180;&#209;&#139;&#209;&#129;&#208;&#186;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Hard disk burst ignore time&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20101209T215059Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#167;&#208;&#176;&#209;&#129; &#209;&#150;&#208;&#179;&#208;&#189;&#208;&#176;&#209;&#128;&#208;&#176;&#208;&#178;&#208;&#176;&#208;&#189;&#208;&#189;&#209;&#143; &#208;&#178;&#209;&#139;&#208;&#177;&#209;&#131;&#209;&#133;&#209;&#131; &#208;&#176;&#208;&#186;&#209;&#130;&#209;&#139;&#209;&#158;&#208;&#189;&#208;&#176;&#209;&#129;&#209;&#134;&#209;&#150; &#209;&#133;&#208;&#176;&#209;&#128;&#208;&#180;-&#208;&#180;&#209;&#139;&#209;&#129;&#208;&#186;&#208;&#176;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Hard drive on this computer&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100721T100612Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -36151,6 +36511,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Harddisk lowspeed timeout.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20101209T210639Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#167;&#208;&#176;&#209;&#129; &#208;&#183;&#208;&#189;&#209;&#150;&#208;&#182;&#209;&#141;&#208;&#189;&#208;&#189;&#209;&#143; &#209;&#133;&#209;&#131;&#209;&#130;&#208;&#186;&#208;&#176;&#209;&#129;&#209;&#134;&#209;&#150; &#209;&#133;&#208;&#176;&#209;&#128;&#208;&#180;-&#208;&#180;&#209;&#139;&#209;&#129;&#208;&#186;&#208;&#176;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Hardware&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100705T095120Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -36423,6 +36791,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Hibernate after&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20101209T171200Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#151;&#208;&#176;&#208;&#179;&#209;&#150;&#208;&#177;&#208;&#181;&#209;&#128;&#208;&#189;&#208;&#176;&#208;&#178;&#208;&#176;&#209;&#134;&#209;&#140; &#208;&#191;&#208;&#176;&#209;&#129;&#208;&#187;&#209;&#143;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Hibernating...&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100728T123459Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -36687,6 +37063,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;High performance&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20101209T161344Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#146;&#209;&#139;&#209;&#129;&#208;&#190;&#208;&#186;&#208;&#176;&#209;&#143; &#208;&#191;&#209;&#128;&#208;&#176;&#208;&#180;&#209;&#131;&#208;&#186;&#209;&#134;&#209;&#139;&#208;&#185;&#208;&#189;&#208;&#176;&#209;&#129;&#209;&#134;&#209;&#140;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;High saturation&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101106T181429Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -37575,6 +37959,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Idle timeout before the system returns to a low power sleep state after waking unattended.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20101209T174617Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#167;&#208;&#176;&#209;&#129; &#208;&#177;&#209;&#143;&#208;&#183;&#208;&#180;&#208;&#183;&#208;&#181;&#208;&#185;&#208;&#189;&#208;&#176;&#209;&#129;&#209;&#134;&#209;&#150;, &#208;&#191;&#208;&#181;&#209;&#128;&#209;&#136; &#209;&#135;&#209;&#139;&#208;&#188; &#209;&#129;&#209;&#150;&#209;&#129;&#209;&#130;&#209;&#141;&#208;&#188;&#208;&#176; &#208;&#178;&#208;&#181;&#209;&#128;&#208;&#189;&#208;&#181;&#209;&#134;&#209;&#134;&#208;&#176; &#209;&#158; &#209;&#129;&#208;&#190;&#208;&#189;&#208;&#189;&#209;&#139; &#209;&#129;&#209;&#130;&#208;&#176;&#208;&#189; &#208;&#176;&#209;&#136;&#209;&#135;&#208;&#176;&#208;&#180;&#208;&#182;&#208;&#176;&#208;&#189;&#208;&#189;&#209;&#143; &#209;&#141;&#208;&#189;&#208;&#181;&#209;&#128;&#208;&#179;&#209;&#150;&#209;&#150; &#208;&#191;&#208;&#176;&#209;&#129;&#208;&#187;&#209;&#143; &#209;&#129;&#208;&#176;&#208;&#188;&#208;&#190;&#209;&#130;&#208;&#189;&#208;&#176;&#208;&#179;&#208;&#176; &#208;&#176;&#208;&#177;&#209;&#131;&#208;&#180;&#208;&#182;&#209;&#141;&#208;&#189;&#208;&#189;&#209;&#143;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;If an open program is associated with this process, it will close and you will lose any unsaved data.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101119T222357Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -38255,6 +38647,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Ignore a burst of disk activity up to the specified time when determining if the disk is idle.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20101209T214807Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#134;&#208;&#179;&#208;&#189;&#208;&#176;&#209;&#128;&#208;&#176;&#208;&#178;&#208;&#176;&#209;&#134;&#209;&#140; &#208;&#178;&#209;&#139;&#208;&#177;&#209;&#131;&#209;&#133;&#209;&#150; &#208;&#176;&#208;&#186;&#209;&#130;&#209;&#139;&#209;&#158;&#208;&#189;&#208;&#176;&#209;&#129;&#209;&#134;&#209;&#150; &#208;&#180;&#209;&#139;&#209;&#129;&#208;&#186;&#208;&#176;, &#208;&#186;&#208;&#176;&#208;&#187;&#209;&#150; &#209;&#135;&#208;&#176;&#209;&#129; &#208;&#178;&#209;&#139;&#208;&#177;&#209;&#131;&#209;&#133;&#209;&#131; &#208;&#188;&#208;&#181;&#208;&#189;&#208;&#181;&#208;&#185; &#208;&#183;&#208;&#176; &#208;&#176;&#208;&#183;&#208;&#189;&#208;&#176;&#209;&#135;&#208;&#176;&#208;&#189;&#209;&#139;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Ignore repeated keystrokes using FilterKeys&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100719T192840Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -41159,6 +41559,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Lid close action&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20101209T204557Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#148;&#208;&#183;&#208;&#181;&#209;&#143;&#208;&#189;&#208;&#189;&#208;&#181; &#208;&#183;&#208;&#176;&#209;&#135;&#209;&#139;&#208;&#189;&#208;&#181;&#208;&#189;&#208;&#189;&#209;&#143; &#208;&#178;&#208;&#181;&#209;&#135;&#208;&#186;&#209;&#150;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Light Auras&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101006T054449Z&quot; changeid=&quot;alex&quot;&gt;
+@@ -42047,6 +42455,30 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Low battery action&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20101209T192602Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#148;&#208;&#183;&#208;&#181;&#209;&#143;&#208;&#189;&#208;&#189;&#208;&#181; &#208;&#189;&#209;&#150;&#208;&#183;&#208;&#186;&#208;&#176;&#208;&#179;&#208;&#176; &#209;&#158;&#208;&#183;&#209;&#128;&#208;&#190;&#209;&#158;&#208;&#189;&#209;&#142; &#208;&#177;&#208;&#176;&#209;&#130;&#208;&#176;&#209;&#128;&#209;&#141;&#209;&#150;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Low battery level&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20101209T203458Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#157;&#209;&#150;&#208;&#183;&#208;&#186;&#209;&#150; &#209;&#158;&#208;&#183;&#209;&#128;&#208;&#190;&#208;&#178;&#208;&#181;&#208;&#189;&#209;&#140; &#208;&#177;&#208;&#176;&#209;&#130;&#208;&#176;&#209;&#128;&#209;&#141;&#209;&#150;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Low battery notification&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20101209T203143Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#144;&#208;&#191;&#208;&#176;&#208;&#178;&#209;&#143;&#209;&#136;&#209;&#135;&#209;&#141;&#208;&#189;&#208;&#189;&#208;&#181; &#208;&#189;&#209;&#150;&#208;&#183;&#208;&#186;&#208;&#176;&#208;&#179;&#208;&#176; &#209;&#158;&#208;&#183;&#209;&#128;&#208;&#190;&#209;&#158;&#208;&#189;&#209;&#142; &#208;&#177;&#208;&#176;&#209;&#130;&#208;&#176;&#209;&#128;&#209;&#141;&#209;&#150;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Low gain down&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101106T181447Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -43351,6 +43783,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Microseconds&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20101209T162527Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#188;&#209;&#150;&#208;&#186;&#209;&#128;&#208;&#176;&#209;&#129;&#208;&#181;&#208;&#186;&#209;&#131;&#208;&#189;&#208;&#180;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Microsoft&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100728T102317Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -44087,6 +44527,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Milliseconds&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20101209T162510Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#188;&#209;&#150;&#208;&#187;&#209;&#150;&#209;&#129;&#208;&#181;&#208;&#186;&#209;&#131;&#208;&#189;&#208;&#180;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Minesweeper&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100719T120618Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -45999,6 +46447,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;No battery is detected&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20101209T152703Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#145;&#208;&#176;&#209;&#130;&#208;&#176;&#209;&#128;&#209;&#141;&#209;&#143; &#208;&#189;&#208;&#181; &#208;&#178;&#209;&#139;&#209;&#143;&#209;&#158;&#208;&#187;&#208;&#181;&#208;&#189;&#208;&#176;&#209;&#143;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;No changes were made to the Library.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100724T174256Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -46033,8 +46489,8 @@
+       &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;No display detected&lt;/seg&gt;
+       &lt;/tuv&gt;
+-      &lt;tuv lang=&quot;be&quot; changedate=&quot;20100921T195027Z&quot; changeid=&quot;eratyk&quot;&gt;
+-        &lt;seg&gt;&#208;&#173;&#208;&#186;&#209;&#128;&#208;&#176;&#208;&#189; &#208;&#189;&#208;&#181; &#208;&#183;&#208;&#189;&#208;&#190;&#208;&#185;&#208;&#180;&#208;&#183;&#208;&#181;&#208;&#189;&#209;&#139;&lt;/seg&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20101209T152714Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#173;&#208;&#186;&#209;&#128;&#208;&#176;&#208;&#189; &#208;&#189;&#208;&#181; &#208;&#178;&#209;&#139;&#209;&#143;&#209;&#158;&#208;&#187;&#208;&#181;&#208;&#189;&#209;&#139;&lt;/seg&gt;
+       &lt;/tuv&gt;
+     &lt;/tu&gt;
+     &lt;tu&gt;
+@@ -48369,8 +48825,8 @@
+       &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Opens the Windows File Sharing wizard to choose specific people or permission levels.&lt;/seg&gt;
+       &lt;/tuv&gt;
+-      &lt;tuv lang=&quot;be&quot; changedate=&quot;20101130T165256Z&quot; changeid=&quot;eratyk&quot;&gt;
+-        &lt;seg&gt;&#208;&#144;&#208;&#180;&#209;&#135;&#209;&#139;&#208;&#189;&#209;&#143;&#208;&#181; &#208;&#188;&#208;&#176;&#208;&#185;&#209;&#129;&#209;&#130;&#208;&#176;&#209;&#128; &#208;&#176;&#208;&#179;&#209;&#131;&#208;&#187;&#209;&#140;&#208;&#189;&#208;&#176;&#208;&#179;&#208;&#176; &#208;&#180;&#208;&#190;&#209;&#129;&#209;&#130;&#209;&#131;&#208;&#191;&#209;&#131; &#208;&#180;&#208;&#176; &#209;&#132;&#208;&#176;&#208;&#185;&#208;&#187;&#208;&#176;&#209;&#158; Windows &#208;&#180;&#208;&#187;&#209;&#143; &#208;&#176;&#208;&#177;&#209;&#128;&#208;&#176;&#208;&#189;&#208;&#189;&#209;&#143; &#208;&#186;&#208;&#176;&#208;&#189;&#208;&#186;&#209;&#128;&#209;&#141;&#209;&#130;&#208;&#189;&#209;&#139;&#209;&#133; &#208;&#187;&#209;&#142;&#208;&#180;&#208;&#183;&#208;&#181;&#208;&#185; &#209;&#134;&#209;&#150; &#209;&#158;&#208;&#183;&#209;&#128;&#208;&#190;&#209;&#158;&#208;&#189;&#209;&#143;&#209;&#158; &#208;&#180;&#208;&#176;&#208;&#183;&#208;&#178;&#208;&#190;&#208;&#187;&#209;&#131;.&lt;/seg&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20101209T185942Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#144;&#208;&#180;&#209;&#135;&#209;&#139;&#208;&#189;&#209;&#143;&#208;&#181; &#208;&#188;&#208;&#176;&#208;&#185;&#209;&#129;&#209;&#130;&#208;&#176;&#209;&#128; &#208;&#176;&#208;&#179;&#209;&#131;&#208;&#187;&#209;&#140;&#208;&#189;&#208;&#176;&#208;&#179;&#208;&#176; &#208;&#180;&#208;&#190;&#209;&#129;&#209;&#130;&#209;&#131;&#208;&#191;&#209;&#131; &#208;&#180;&#208;&#176; &#209;&#132;&#208;&#176;&#208;&#185;&#208;&#187;&#208;&#176;&#209;&#158; Windows &#208;&#180;&#208;&#187;&#209;&#143; &#208;&#176;&#208;&#183;&#208;&#189;&#208;&#176;&#209;&#135;&#209;&#141;&#208;&#189;&#208;&#189;&#209;&#143; &#208;&#187;&#209;&#142;&#208;&#180;&#208;&#183;&#208;&#181;&#208;&#185; &#209;&#134;&#209;&#150; &#209;&#158;&#208;&#183;&#209;&#128;&#208;&#190;&#209;&#158;&#208;&#189;&#209;&#143;&#209;&#158; &#208;&#180;&#208;&#176;&#208;&#183;&#208;&#178;&#208;&#190;&#208;&#187;&#209;&#131;.&lt;/seg&gt;
+       &lt;/tuv&gt;
+     &lt;/tu&gt;
+     &lt;tu&gt;
+@@ -50071,6 +50527,22 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Percent battery power remaining when fourth low-power action should be taken.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20101209T203949Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#144;&#208;&#180;&#209;&#129;&#208;&#190;&#209;&#130;&#208;&#176;&#208;&#186; &#208;&#176;&#209;&#129;&#209;&#130;&#208;&#176;&#209;&#130;&#208;&#189;&#209;&#143;&#208;&#185; &#209;&#141;&#208;&#189;&#208;&#181;&#209;&#128;&#208;&#179;&#209;&#150;&#209;&#150; &#208;&#177;&#208;&#176;&#209;&#130;&#208;&#176;&#209;&#128;&#209;&#141;&#209;&#150;, &#208;&#186;&#208;&#176;&#208;&#187;&#209;&#150; &#208;&#191;&#208;&#176;&#208;&#178;&#209;&#150;&#208;&#189;&#208;&#189;&#208;&#176; &#208;&#178;&#209;&#139;&#208;&#186;&#208;&#190;&#208;&#189;&#208;&#178;&#208;&#176;&#209;&#134;&#209;&#134;&#208;&#176; &#209;&#135;&#208;&#176;&#209;&#134;&#208;&#178;&#208;&#181;&#209;&#128;&#209;&#130;&#208;&#176;&#208;&#181; &#208;&#180;&#208;&#183;&#208;&#181;&#209;&#143;&#208;&#189;&#208;&#189;&#208;&#181; &#208;&#189;&#209;&#150;&#208;&#183;&#208;&#186;&#208;&#176;&#208;&#179;&#208;&#176; &#209;&#158;&#208;&#183;&#209;&#128;&#208;&#190;&#209;&#158;&#208;&#189;&#209;&#142; &#208;&#177;&#208;&#176;&#209;&#130;&#208;&#176;&#209;&#128;&#209;&#141;&#209;&#150;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Percent battery power remaining when third low-power action should be taken.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20101209T203743Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#144;&#208;&#180;&#209;&#129;&#208;&#190;&#209;&#130;&#208;&#176;&#208;&#186; &#208;&#176;&#209;&#129;&#209;&#130;&#208;&#176;&#209;&#130;&#208;&#189;&#209;&#143;&#208;&#185; &#209;&#141;&#208;&#189;&#208;&#181;&#209;&#128;&#208;&#179;&#209;&#150;&#209;&#150; &#208;&#177;&#208;&#176;&#209;&#130;&#208;&#176;&#209;&#128;&#209;&#141;&#209;&#150;, &#208;&#186;&#208;&#176;&#208;&#187;&#209;&#150; &#208;&#191;&#208;&#176;&#208;&#178;&#209;&#150;&#208;&#189;&#208;&#189;&#208;&#176; &#208;&#178;&#209;&#139;&#208;&#186;&#208;&#190;&#208;&#189;&#208;&#178;&#208;&#176;&#209;&#134;&#209;&#134;&#208;&#176; &#209;&#130;&#209;&#128;&#209;&#141;&#209;&#134;&#209;&#143;&#208;&#181; &#208;&#180;&#208;&#183;&#208;&#181;&#209;&#143;&#208;&#189;&#208;&#189;&#208;&#181; &#208;&#189;&#209;&#150;&#208;&#183;&#208;&#186;&#208;&#176;&#208;&#179;&#208;&#176; &#209;&#158;&#208;&#183;&#209;&#128;&#208;&#190;&#209;&#158;&#208;&#189;&#209;&#142; &#208;&#177;&#208;&#176;&#209;&#130;&#208;&#176;&#209;&#128;&#209;&#141;&#209;&#150;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Percent complete:&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101111T082529Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -50079,6 +50551,30 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Percentage of battery capacity remaining that initiates reserve power mode.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20101209T154215Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#144;&#209;&#129;&#209;&#130;&#208;&#176;&#209;&#130;&#208;&#189;&#209;&#150; &#208;&#176;&#208;&#180;&#209;&#129;&#208;&#190;&#209;&#130;&#208;&#176;&#208;&#186; &#209;&#145;&#208;&#188;&#209;&#150;&#209;&#129;&#209;&#130;&#208;&#176;&#209;&#129;&#209;&#134;&#209;&#150; &#208;&#177;&#208;&#176;&#209;&#130;&#208;&#176;&#209;&#128;&#209;&#141;&#209;&#150;, &#209;&#143;&#208;&#186;&#209;&#150; &#208;&#178;&#209;&#139;&#208;&#186;&#208;&#187;&#209;&#150;&#208;&#186;&#208;&#176;&#208;&#181; &#209;&#128;&#209;&#141;&#208;&#182;&#209;&#139;&#208;&#188; &#209;&#128;&#209;&#141;&#208;&#183;&#208;&#181;&#209;&#128;&#208;&#178;&#208;&#176;&#208;&#178;&#208;&#176;&#208;&#189;&#208;&#189;&#209;&#143; &#209;&#141;&#208;&#189;&#208;&#181;&#209;&#128;&#208;&#179;&#209;&#150;&#209;&#150;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Percentage of battery capacity remaining that initiates the critical battery action.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20101209T203427Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#144;&#209;&#129;&#209;&#130;&#208;&#176;&#209;&#130;&#208;&#189;&#209;&#150; &#208;&#176;&#208;&#180;&#209;&#129;&#208;&#190;&#209;&#130;&#208;&#176;&#208;&#186; &#209;&#145;&#208;&#188;&#209;&#150;&#209;&#129;&#209;&#130;&#208;&#176;&#209;&#129;&#209;&#134;&#209;&#150; &#208;&#177;&#208;&#176;&#209;&#130;&#208;&#176;&#209;&#128;&#209;&#141;&#209;&#150;, &#209;&#143;&#208;&#186;&#209;&#150; &#208;&#178;&#209;&#139;&#208;&#186;&#208;&#187;&#209;&#150;&#208;&#186;&#208;&#176;&#208;&#181; &#208;&#180;&#208;&#183;&#208;&#181;&#209;&#143;&#208;&#189;&#208;&#189;&#208;&#181; &#208;&#186;&#209;&#128;&#209;&#139;&#209;&#130;&#209;&#139;&#209;&#135;&#208;&#189;&#208;&#176;&#208;&#179;&#208;&#176; &#209;&#158;&#208;&#183;&#209;&#128;&#208;&#190;&#209;&#158;&#208;&#189;&#209;&#142; &#208;&#177;&#208;&#176;&#209;&#130;&#208;&#176;&#209;&#128;&#209;&#141;&#209;&#150;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Percentage of battery capacity remaining that initiates the low battery action.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20101209T203451Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#144;&#209;&#129;&#209;&#130;&#208;&#176;&#209;&#130;&#208;&#189;&#209;&#150; &#208;&#176;&#208;&#180;&#209;&#129;&#208;&#190;&#209;&#130;&#208;&#176;&#208;&#186; &#209;&#145;&#208;&#188;&#209;&#150;&#209;&#129;&#209;&#130;&#208;&#176;&#209;&#129;&#209;&#134;&#209;&#150; &#208;&#177;&#208;&#176;&#209;&#130;&#208;&#176;&#209;&#128;&#209;&#141;&#209;&#150;, &#209;&#143;&#208;&#186;&#209;&#150; &#208;&#178;&#209;&#139;&#208;&#186;&#208;&#187;&#209;&#150;&#208;&#186;&#208;&#176;&#208;&#181; &#208;&#180;&#208;&#183;&#208;&#181;&#209;&#143;&#208;&#189;&#208;&#189;&#208;&#181; &#208;&#189;&#209;&#150;&#208;&#183;&#208;&#186;&#208;&#176;&#208;&#179;&#208;&#176; &#209;&#158;&#208;&#183;&#209;&#128;&#208;&#190;&#209;&#158;&#208;&#189;&#209;&#142; &#208;&#177;&#208;&#176;&#209;&#130;&#208;&#176;&#209;&#128;&#209;&#141;&#209;&#150;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Percentage of time the processor is idle&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101119T224528Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -51223,6 +51719,30 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Plugged in and charging&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20101209T152503Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#159;&#208;&#176;&#208;&#180;&#208;&#186;&#208;&#187;&#209;&#142;&#209;&#135;&#208;&#176;&#208;&#189;&#208;&#176;&#209;&#143; &#209;&#150; &#208;&#183;&#208;&#176;&#209;&#128;&#208;&#176;&#208;&#180;&#208;&#182;&#208;&#176;&#208;&#181;&#209;&#134;&#209;&#134;&#208;&#176;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Plugged in and charging\nConsider replacing your battery.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20101209T153139Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#159;&#208;&#176;&#208;&#180;&#208;&#186;&#208;&#187;&#209;&#142;&#209;&#135;&#208;&#176;&#208;&#189;&#208;&#176;&#209;&#143; &#209;&#150; &#208;&#183;&#208;&#176;&#209;&#128;&#208;&#176;&#208;&#180;&#208;&#182;&#208;&#176;&#208;&#181;&#209;&#134;&#209;&#134;&#208;&#176;\n&#208;&#159;&#208;&#176;&#208;&#180;&#209;&#131;&#208;&#188;&#208;&#176;&#208;&#185;&#209;&#134;&#208;&#181; &#208;&#176;&#208;&#177; &#208;&#183;&#208;&#176;&#208;&#188;&#208;&#181;&#208;&#189;&#208;&#181; &#208;&#178;&#208;&#176;&#209;&#136;&#208;&#176;&#208;&#181; &#208;&#177;&#208;&#176;&#209;&#130;&#208;&#176;&#209;&#128;&#209;&#141;&#209;&#150;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Plugged in and not charging&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20101209T152726Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#159;&#208;&#176;&#208;&#180;&#208;&#186;&#208;&#187;&#209;&#142;&#209;&#135;&#208;&#176;&#208;&#189;&#208;&#176;&#209;&#143; &#209;&#150; &#208;&#189;&#208;&#181; &#208;&#183;&#208;&#176;&#209;&#128;&#208;&#176;&#208;&#180;&#208;&#182;&#208;&#176;&#208;&#181;&#209;&#134;&#209;&#134;&#208;&#176;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Point size should be between %1!d!&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100724T150635Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -51455,6 +51975,54 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Power button action&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20101209T204337Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#148;&#208;&#183;&#208;&#181;&#209;&#143;&#208;&#189;&#208;&#189;&#208;&#181; &#208;&#186;&#208;&#189;&#208;&#190;&#208;&#191;&#208;&#186;&#209;&#150; &#209;&#129;&#209;&#150;&#208;&#187;&#208;&#186;&#208;&#176;&#208;&#178;&#208;&#176;&#208;&#189;&#208;&#189;&#209;&#143;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Power buttons and lid&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20101209T204155Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#154;&#208;&#189;&#208;&#190;&#208;&#191;&#208;&#186;&#209;&#150; &#209;&#129;&#209;&#150;&#208;&#187;&#208;&#186;&#208;&#176;&#208;&#178;&#208;&#176;&#208;&#189;&#208;&#189;&#209;&#143; &#209;&#150; &#208;&#178;&#208;&#181;&#209;&#135;&#208;&#186;&#208;&#176;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Power plan type&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20101209T170823Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#162;&#209;&#139;&#208;&#191; &#208;&#191;&#208;&#187;&#208;&#176;&#208;&#189;&#208;&#176; &#209;&#129;&#209;&#150;&#208;&#187;&#208;&#186;&#208;&#176;&#208;&#178;&#208;&#176;&#208;&#189;&#208;&#189;&#209;&#143;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Power plan used when there are no users logged into the system.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20101209T162419Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#159;&#208;&#187;&#208;&#176;&#208;&#189; &#209;&#129;&#209;&#150;&#208;&#187;&#208;&#186;&#208;&#176;&#208;&#178;&#208;&#176;&#208;&#189;&#208;&#189;&#209;&#143;, &#209;&#143;&#208;&#186;&#209;&#150; &#208;&#178;&#209;&#139;&#208;&#186;&#208;&#176;&#209;&#128;&#209;&#139;&#209;&#129;&#209;&#130;&#208;&#190;&#209;&#158;&#208;&#178;&#208;&#176;&#208;&#181;&#209;&#134;&#209;&#134;&#208;&#176;, &#208;&#186;&#208;&#176;&#208;&#187;&#209;&#150; &#208;&#189;&#209;&#143;&#208;&#188;&#208;&#176; &#208;&#186;&#208;&#176;&#209;&#128;&#209;&#139;&#209;&#129;&#209;&#130;&#208;&#176;&#208;&#187;&#209;&#140;&#208;&#189;&#209;&#150;&#208;&#186;&#208;&#176;&#209;&#158; &#209;&#131; &#209;&#129;&#209;&#150;&#209;&#129;&#209;&#130;&#209;&#141;&#208;&#188;&#208;&#181;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Power saver&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20101209T160953Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#151;&#208;&#176;&#209;&#133;&#208;&#176;&#208;&#178;&#208;&#176;&#208;&#189;&#208;&#189;&#208;&#181; &#209;&#141;&#208;&#189;&#208;&#181;&#209;&#128;&#208;&#179;&#209;&#150;&#209;&#150;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Power savings&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20101209T192030Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#151;&#208;&#176;&#209;&#133;&#208;&#176;&#208;&#178;&#208;&#176;&#208;&#189;&#208;&#189;&#208;&#181; &#209;&#141;&#208;&#189;&#208;&#181;&#209;&#128;&#208;&#179;&#209;&#150;&#209;&#150;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Power schemes&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100927T165339Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -52415,6 +52983,30 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Processor performance settings which allow the system to lower processor performance (and power consumption) if the system is not doing any work.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20101209T215422Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#157;&#208;&#176;&#208;&#187;&#208;&#176;&#208;&#180;&#209;&#139; &#208;&#191;&#209;&#128;&#208;&#176;&#209;&#134;&#209;&#139; &#208;&#191;&#209;&#128;&#208;&#176;&#209;&#134;&#209;&#141;&#209;&#129;&#208;&#176;&#209;&#128;&#208;&#176;, &#209;&#143;&#208;&#186;&#209;&#150;&#209;&#143; &#208;&#180;&#208;&#176;&#208;&#183;&#208;&#178;&#208;&#176;&#208;&#187;&#209;&#143;&#209;&#142;&#209;&#134;&#209;&#140; &#208;&#183;&#208;&#189;&#209;&#150;&#208;&#183;&#209;&#150;&#209;&#134;&#209;&#140; &#208;&#191;&#209;&#128;&#208;&#176;&#208;&#180;&#209;&#131;&#208;&#186;&#209;&#134;&#209;&#139;&#208;&#185;&#208;&#189;&#208;&#176;&#209;&#129;&#209;&#134;&#209;&#140; &#209;&#150; &#209;&#129;&#208;&#191;&#208;&#176;&#208;&#182;&#209;&#139;&#208;&#178;&#208;&#176;&#208;&#189;&#208;&#189;&#208;&#181; &#209;&#141;&#208;&#189;&#208;&#181;&#209;&#128;&#208;&#179;&#209;&#150;&#209;&#150;, &#208;&#186;&#208;&#176;&#208;&#187;&#209;&#150; &#209;&#129;&#209;&#150;&#209;&#129;&#209;&#130;&#209;&#141;&#208;&#188;&#208;&#176; &#208;&#189;&#208;&#181; &#208;&#178;&#209;&#139;&#208;&#186;&#208;&#190;&#208;&#189;&#208;&#178;&#208;&#176;&#208;&#181; &#208;&#176;&#208;&#189;&#209;&#150;&#209;&#143;&#208;&#186;&#208;&#176;&#208;&#185; &#208;&#191;&#209;&#128;&#208;&#176;&#209;&#134;&#209;&#139;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Processor power management&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20101209T214956Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#154;&#209;&#150;&#209;&#128;&#208;&#176;&#208;&#178;&#208;&#176;&#208;&#189;&#208;&#189;&#208;&#181; &#209;&#129;&#209;&#150;&#208;&#187;&#208;&#186;&#208;&#176;&#208;&#178;&#208;&#176;&#208;&#189;&#208;&#189;&#208;&#181;&#208;&#188; &#208;&#191;&#209;&#128;&#208;&#176;&#209;&#134;&#209;&#141;&#209;&#129;&#208;&#176;&#209;&#128;&#208;&#176;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Processor throttle setting.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20101209T215632Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#157;&#208;&#176;&#208;&#187;&#208;&#176;&#208;&#180;&#208;&#176; &#208;&#183;&#208;&#189;&#209;&#150;&#208;&#182;&#209;&#141;&#208;&#189;&#208;&#189;&#209;&#143; &#208;&#191;&#209;&#128;&#208;&#176;&#209;&#134;&#209;&#139; &#208;&#191;&#209;&#128;&#208;&#176;&#209;&#134;&#209;&#141;&#209;&#129;&#208;&#176;&#209;&#128;&#208;&#176;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Processor:&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100728T111827Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -54735,6 +55327,22 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Require a password on wakeup&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20101209T170935Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#151;&#208;&#176;&#208;&#191;&#209;&#139;&#209;&#130;&#208;&#178;&#208;&#176;&#209;&#134;&#209;&#140; &#208;&#191;&#208;&#176;&#209;&#128;&#208;&#190;&#208;&#187;&#209;&#140; &#208;&#191;&#208;&#176;&#208;&#180;&#209;&#135;&#208;&#176;&#209;&#129; &#208;&#176;&#208;&#177;&#209;&#131;&#208;&#180;&#208;&#182;&#209;&#141;&#208;&#189;&#208;&#189;&#209;&#143;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Require a password to unlock the computer when it wakes from sleep.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20101209T170904Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#151;&#208;&#176;&#208;&#191;&#209;&#139;&#209;&#130;&#208;&#178;&#208;&#176;&#209;&#134;&#209;&#140; &#208;&#191;&#208;&#176;&#209;&#128;&#208;&#190;&#208;&#187;&#209;&#140; &#208;&#180;&#208;&#187;&#209;&#143; &#209;&#128;&#208;&#176;&#208;&#183;&#208;&#177;&#208;&#187;&#208;&#176;&#208;&#186;&#208;&#176;&#208;&#178;&#208;&#176;&#208;&#189;&#208;&#189;&#209;&#143; &#208;&#186;&#208;&#176;&#208;&#188;&#208;&#191;'&#209;&#142;&#209;&#130;&#208;&#176;&#209;&#128;&#208;&#176; &#208;&#191;&#208;&#176;&#208;&#180;&#209;&#135;&#208;&#176;&#209;&#129; &#209;&#143;&#208;&#179;&#208;&#190; &#208;&#176;&#208;&#177;&#209;&#131;&#208;&#180;&#208;&#182;&#209;&#141;&#208;&#189;&#208;&#189;&#209;&#143;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Require a password when the computer wakes&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100720T105504Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -54783,6 +55391,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Reserve battery level&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20101209T153502Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#160;&#209;&#141;&#208;&#183;&#208;&#181;&#209;&#128;&#208;&#178;&#208;&#190;&#208;&#178;&#209;&#139; &#209;&#158;&#208;&#183;&#209;&#128;&#208;&#190;&#208;&#178;&#208;&#181;&#208;&#189;&#209;&#140; &#208;&#177;&#208;&#176;&#209;&#130;&#208;&#176;&#209;&#128;&#209;&#141;&#209;&#150;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Reserved Battery Level&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100927T171937Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -56759,6 +57375,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Saves energy by reducing your computer&#239;&#191;&#189;s performance where possible.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20101209T160718Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#151;&#208;&#176;&#209;&#133;&#208;&#190;&#209;&#158;&#208;&#178;&#208;&#176;&#208;&#181; &#209;&#141;&#208;&#189;&#208;&#181;&#209;&#128;&#208;&#179;&#209;&#150;&#209;&#142; &#208;&#191;&#209;&#128;&#208;&#176;&#208;&#183; &#208;&#183;&#208;&#189;&#209;&#150;&#208;&#182;&#209;&#141;&#208;&#189;&#208;&#189;&#208;&#181; &#208;&#191;&#209;&#128;&#208;&#176;&#208;&#180;&#209;&#131;&#208;&#186;&#209;&#134;&#209;&#139;&#208;&#185;&#208;&#189;&#208;&#176;&#209;&#129;&#209;&#134;&#209;&#150; &#208;&#186;&#208;&#176;&#208;&#188;&#208;&#191;'&#209;&#142;&#209;&#130;&#208;&#176;&#209;&#128;&#208;&#176; &#208;&#191;&#208;&#176;&#208;&#180;&#209;&#135;&#208;&#176;&#209;&#129; &#208;&#188;&#208;&#176;&#208;&#179;&#209;&#135;&#209;&#139;&#208;&#188;&#208;&#176;&#209;&#129;&#209;&#134;&#209;&#150;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Saves this search query.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100710T171411Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -57057,8 +57681,8 @@
+       &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Schedule computer tasks to run automatically.&lt;/seg&gt;
+       &lt;/tuv&gt;
+-      &lt;tuv lang=&quot;be&quot; changedate=&quot;20100722T102029Z&quot; changeid=&quot;eratyk&quot;&gt;
+-        &lt;seg&gt;&#208;&#159;&#208;&#187;&#208;&#176;&#208;&#189;&#208;&#176;&#208;&#178;&#208;&#176;&#208;&#189;&#208;&#189;&#208;&#181; &#208;&#176;&#209;&#158;&#209;&#130;&#208;&#176;&#208;&#188;&#208;&#176;&#209;&#130;&#209;&#139;&#209;&#135;&#208;&#189;&#208;&#176;&#208;&#179;&#208;&#176; &#208;&#183;&#208;&#176;&#208;&#191;&#209;&#131;&#209;&#129;&#208;&#186;&#209;&#131; &#208;&#186;&#208;&#176;&#208;&#188;&#208;&#191;'&#209;&#142;&#209;&#130;&#208;&#176;&#209;&#128;&#208;&#189;&#209;&#139;&#209;&#133; &#208;&#183;&#208;&#176;&#208;&#180;&#208;&#176;&#209;&#135;.&lt;/seg&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20101209T192136Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#159;&#208;&#187;&#208;&#176;&#208;&#189;&#208;&#176;&#208;&#178;&#208;&#176;&#209;&#134;&#209;&#140; &#208;&#176;&#209;&#158;&#209;&#130;&#208;&#176;&#208;&#188;&#208;&#176;&#209;&#130;&#209;&#139;&#209;&#135;&#208;&#189;&#209;&#139; &#208;&#183;&#208;&#176;&#208;&#191;&#209;&#131;&#209;&#129;&#208;&#186; &#208;&#186;&#208;&#176;&#208;&#188;&#208;&#191;'&#209;&#142;&#209;&#130;&#208;&#176;&#209;&#128;&#208;&#189;&#209;&#139;&#209;&#133; &#208;&#183;&#208;&#176;&#208;&#180;&#208;&#176;&#209;&#135;.&lt;/seg&gt;
+       &lt;/tuv&gt;
+     &lt;/tu&gt;
+     &lt;tu&gt;
+@@ -61143,6 +61767,22 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Sleep after&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20101209T171050Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#151;&#208;&#176;&#209;&#129;&#209;&#139;&#208;&#189;&#208;&#176;&#209;&#134;&#209;&#140; &#208;&#191;&#208;&#176;&#209;&#129;&#208;&#187;&#209;&#143;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Sleep button action&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20101209T204426Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#148;&#208;&#183;&#208;&#181;&#209;&#143;&#208;&#189;&#208;&#189;&#208;&#181; &#208;&#186;&#208;&#189;&#208;&#190;&#208;&#191;&#208;&#186;&#209;&#150; &#208;&#183;&#208;&#176;&#209;&#129;&#209;&#139;&#208;&#189;&#208;&#176;&#208;&#189;&#208;&#189;&#209;&#143;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Slide Show&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101005T153633Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -61985,12 +62625,20 @@
+       &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Specific people...&lt;/seg&gt;
+       &lt;/tuv&gt;
+-      &lt;tuv lang=&quot;be&quot; changedate=&quot;20101130T164718Z&quot; changeid=&quot;eratyk&quot;&gt;
+-        &lt;seg&gt;&#208;&#154;&#208;&#176;&#208;&#189;&#208;&#186;&#209;&#128;&#209;&#141;&#209;&#130;&#208;&#189;&#209;&#139;&#209;&#143; &#208;&#187;&#209;&#142;&#208;&#180;&#208;&#183;&#209;&#150;...&lt;/seg&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20101209T175023Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#144;&#208;&#183;&#208;&#189;&#208;&#176;&#209;&#135;&#208;&#176;&#208;&#189;&#209;&#139;&#209;&#143; &#208;&#187;&#209;&#142;&#208;&#180;&#208;&#183;&#209;&#150;...&lt;/seg&gt;
+       &lt;/tuv&gt;
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Specifies the policy for devices powering down while the system is running.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20101209T174944Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#144;&#208;&#183;&#208;&#189;&#208;&#176;&#209;&#135;&#208;&#176;&#208;&#181; &#208;&#191;&#208;&#176;&#208;&#187;&#209;&#150;&#209;&#130;&#209;&#139;&#208;&#186;&#209;&#131; &#208;&#180;&#208;&#187;&#209;&#143; &#208;&#178;&#209;&#139;&#208;&#186;&#208;&#187;&#209;&#142;&#209;&#135;&#209;&#141;&#208;&#189;&#208;&#189;&#209;&#143; &#208;&#191;&#209;&#128;&#209;&#139;&#208;&#187;&#208;&#176;&#208;&#180; &#208;&#191;&#208;&#176;&#208;&#180;&#209;&#135;&#208;&#176;&#209;&#129; &#208;&#191;&#209;&#128;&#208;&#176;&#209;&#134;&#209;&#139; &#209;&#129;&#209;&#150;&#209;&#129;&#209;&#130;&#209;&#141;&#208;&#188;&#209;&#139;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Specify a country/region&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101106T170900Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -62215,6 +62863,38 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Specify how long your computer is inactive before going to sleep.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20101209T171044Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#144;&#208;&#183;&#208;&#189;&#208;&#176;&#209;&#135;&#209;&#134;&#208;&#181;, &#208;&#186;&#208;&#190;&#208;&#187;&#209;&#140;&#208;&#186;&#209;&#150; &#208;&#186;&#208;&#176;&#208;&#188;&#208;&#191;'&#209;&#142;&#209;&#130;&#208;&#176;&#209;&#128; &#208;&#191;&#208;&#176;&#208;&#178;&#209;&#150;&#208;&#189;&#208;&#181;&#208;&#189; &#208;&#177;&#209;&#139;&#209;&#134;&#209;&#140; &#208;&#189;&#208;&#181;&#208;&#176;&#208;&#186;&#209;&#130;&#209;&#139;&#209;&#158;&#208;&#189;&#209;&#139;&#208;&#188;, &#208;&#186;&#208;&#176;&#208;&#177; &#208;&#183;&#208;&#176;&#209;&#129;&#208;&#189;&#209;&#131;&#209;&#134;&#209;&#140;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Specify how long your computer is inactive before hibernating.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20101209T171134Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#144;&#208;&#183;&#208;&#189;&#208;&#176;&#209;&#135;&#209;&#134;&#208;&#181;, &#208;&#186;&#208;&#190;&#208;&#187;&#209;&#140;&#208;&#186;&#209;&#150; &#208;&#186;&#208;&#176;&#208;&#188;&#208;&#191;'&#209;&#142;&#209;&#130;&#208;&#176;&#209;&#128; &#208;&#191;&#208;&#176;&#208;&#178;&#209;&#150;&#208;&#189;&#208;&#181;&#208;&#189; &#208;&#177;&#209;&#139;&#209;&#134;&#209;&#140; &#208;&#189;&#208;&#181;&#208;&#176;&#208;&#186;&#209;&#130;&#209;&#139;&#209;&#158;&#208;&#189;&#209;&#139;&#208;&#188;, &#208;&#186;&#208;&#176;&#208;&#177; &#208;&#183;&#208;&#176;&#208;&#179;&#209;&#150;&#208;&#177;&#208;&#181;&#209;&#128;&#208;&#189;&#208;&#176;&#208;&#178;&#208;&#176;&#209;&#134;&#209;&#140;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Specify how long your hard drive is inactive before the disk turns off.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20101209T205056Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#144;&#208;&#183;&#208;&#189;&#208;&#176;&#209;&#135;&#209;&#134;&#208;&#181;, &#208;&#186;&#208;&#190;&#208;&#187;&#209;&#140;&#208;&#186;&#209;&#150; &#209;&#133;&#208;&#176;&#209;&#128;&#208;&#180;-&#208;&#180;&#209;&#139;&#209;&#129;&#208;&#186; &#208;&#191;&#208;&#176;&#208;&#178;&#209;&#150;&#208;&#189;&#208;&#181;&#208;&#189; &#208;&#177;&#209;&#139;&#209;&#134;&#209;&#140; &#208;&#189;&#208;&#181;&#208;&#176;&#208;&#186;&#209;&#130;&#209;&#139;&#209;&#158;&#208;&#189;&#209;&#139;&#208;&#188;, &#208;&#186;&#208;&#176;&#208;&#177; &#208;&#178;&#209;&#139;&#208;&#186;&#208;&#187;&#209;&#142;&#209;&#135;&#209;&#139;&#209;&#134;&#209;&#134;&#208;&#176;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Specify if timed events should be allowed to wake the computer from sleep.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20101209T173828Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#144;&#208;&#183;&#208;&#189;&#208;&#176;&#209;&#135;&#209;&#134;&#208;&#181;, &#208;&#186;&#208;&#176;&#208;&#187;&#209;&#150; &#209;&#128;&#208;&#176;&#208;&#183;&#208;&#188;&#208;&#181;&#209;&#128;&#208;&#186;&#208;&#176;&#208;&#178;&#208;&#176;&#208;&#189;&#209;&#139;&#208;&#188; &#208;&#191;&#208;&#176; &#209;&#135;&#208;&#176;&#209;&#129;&#208;&#181; &#208;&#191;&#208;&#176;&#208;&#180;&#208;&#183;&#208;&#181;&#209;&#143;&#208;&#188; &#208;&#191;&#208;&#176;&#208;&#178;&#209;&#150;&#208;&#189;&#208;&#189;&#208;&#176; &#208;&#177;&#209;&#139;&#209;&#134;&#209;&#140; &#208;&#180;&#208;&#176;&#208;&#183;&#208;&#178;&#208;&#190;&#208;&#187;&#208;&#181;&#208;&#189;&#208;&#176; &#208;&#176;&#208;&#177;&#209;&#131;&#208;&#180;&#208;&#182;&#208;&#176;&#209;&#134;&#209;&#140; &#208;&#186;&#208;&#176;&#208;&#188;&#208;&#191;'&#209;&#142;&#209;&#130;&#208;&#176;&#209;&#128; &#208;&#176;&#208;&#180; &#209;&#129;&#208;&#189;&#209;&#131;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Specify last saved date and time&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101027T192636Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -62247,6 +62927,22 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Specify power management settings for your computer&#239;&#191;&#189;s processor.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20101209T214913Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#144;&#208;&#183;&#208;&#189;&#208;&#176;&#209;&#135;&#209;&#134;&#208;&#181; &#208;&#189;&#208;&#176;&#208;&#187;&#208;&#176;&#208;&#180;&#209;&#139; &#208;&#186;&#209;&#150;&#209;&#128;&#208;&#176;&#208;&#178;&#208;&#176;&#208;&#189;&#208;&#189;&#209;&#143; &#209;&#129;&#209;&#150;&#208;&#187;&#208;&#186;&#208;&#176;&#208;&#178;&#208;&#176;&#208;&#189;&#208;&#189;&#208;&#181;&#208;&#188; &#208;&#180;&#208;&#187;&#209;&#143; &#208;&#191;&#209;&#128;&#208;&#176;&#209;&#134;&#209;&#141;&#209;&#129;&#208;&#176;&#209;&#128;&#208;&#176; &#208;&#178;&#208;&#176;&#209;&#136;&#208;&#176;&#208;&#179;&#208;&#176; &#208;&#186;&#208;&#176;&#208;&#188;&#208;&#191;'&#209;&#142;&#209;&#130;&#208;&#176;&#209;&#128;&#208;&#176;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Specify power management settings for your hard disk.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20101209T204800Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#144;&#208;&#183;&#208;&#189;&#208;&#176;&#209;&#135;&#209;&#134;&#208;&#181; &#208;&#189;&#208;&#176;&#208;&#187;&#208;&#176;&#208;&#180;&#209;&#139; &#208;&#186;&#209;&#150;&#209;&#128;&#208;&#176;&#208;&#178;&#208;&#176;&#208;&#189;&#208;&#189;&#209;&#143; &#209;&#129;&#209;&#150;&#208;&#187;&#208;&#186;&#208;&#176;&#208;&#178;&#208;&#176;&#208;&#189;&#208;&#189;&#208;&#181;&#208;&#188; &#208;&#180;&#208;&#187;&#209;&#143; &#208;&#178;&#208;&#176;&#209;&#136;&#208;&#176;&#208;&#179;&#208;&#176; &#209;&#133;&#208;&#176;&#209;&#128;&#208;&#180;-&#208;&#180;&#209;&#139;&#209;&#129;&#208;&#186;&#208;&#176;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Specify priority&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101106T175434Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -62271,6 +62967,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Specify sleep settings.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20101209T171928Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#144;&#208;&#183;&#208;&#189;&#208;&#176;&#209;&#135;&#209;&#134;&#208;&#181; &#208;&#189;&#208;&#176;&#208;&#187;&#208;&#176;&#208;&#180;&#209;&#139; &#208;&#183;&#208;&#176;&#209;&#129;&#209;&#139;&#208;&#189;&#208;&#176;&#208;&#189;&#208;&#189;&#209;&#143;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Specify state or province&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101106T170341Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -62279,6 +62983,54 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Specify the action that your computer takes when battery capacity reaches the low level.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20101209T192506Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#144;&#208;&#183;&#208;&#189;&#208;&#176;&#209;&#135;&#209;&#134;&#208;&#181; &#208;&#180;&#208;&#183;&#208;&#181;&#209;&#143;&#208;&#189;&#208;&#189;&#208;&#181;, &#208;&#186;&#208;&#176;&#208;&#187;&#209;&#150; &#209;&#145;&#208;&#188;&#209;&#150;&#209;&#129;&#209;&#130;&#208;&#176;&#209;&#129;&#209;&#134;&#209;&#140; &#208;&#177;&#208;&#176;&#209;&#130;&#208;&#176;&#209;&#128;&#209;&#141;&#209;&#150; &#209;&#129;&#209;&#143;&#208;&#179;&#208;&#176;&#208;&#181; &#208;&#189;&#209;&#150;&#208;&#183;&#208;&#186;&#208;&#176;&#208;&#179;&#208;&#176; &#209;&#158;&#208;&#183;&#209;&#128;&#208;&#190;&#209;&#158;&#208;&#189;&#209;&#142;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Specify the action that your computer takes when you close the lid on your mobile PC.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20101209T204544Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#144;&#208;&#183;&#208;&#189;&#208;&#176;&#209;&#135;&#209;&#134;&#208;&#181; &#208;&#180;&#208;&#183;&#208;&#181;&#209;&#143;&#208;&#189;&#208;&#189;&#208;&#181;, &#209;&#143;&#208;&#186;&#208;&#190;&#208;&#181; &#208;&#183;&#209;&#128;&#208;&#190;&#208;&#177;&#209;&#150;&#209;&#134;&#209;&#140; &#208;&#186;&#208;&#176;&#208;&#188;&#208;&#191;'&#209;&#142;&#209;&#130;&#208;&#176;&#209;&#128;, &#208;&#186;&#208;&#176;&#208;&#187;&#209;&#150; &#208;&#178;&#209;&#139; &#208;&#183;&#208;&#176;&#209;&#135;&#209;&#139;&#208;&#189;&#209;&#150;&#209;&#134;&#208;&#181; &#208;&#178;&#208;&#181;&#209;&#135;&#208;&#186;&#209;&#131; &#208;&#178;&#208;&#176;&#209;&#136;&#208;&#176;&#208;&#179;&#208;&#176; &#208;&#188;&#208;&#176;&#208;&#177;&#209;&#150;&#208;&#187;&#209;&#140;&#208;&#189;&#208;&#176;&#208;&#179;&#208;&#176; &#208;&#144;&#208;&#154;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Specify the action to take when the battery capacity reaches the critical level.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20101209T204325Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#144;&#208;&#183;&#208;&#189;&#208;&#176;&#209;&#135;&#209;&#134;&#208;&#181; &#208;&#180;&#208;&#183;&#208;&#181;&#209;&#143;&#208;&#189;&#208;&#189;&#208;&#181;, &#209;&#143;&#208;&#186;&#208;&#190;&#208;&#181; &#208;&#176;&#208;&#180;&#208;&#177;&#209;&#139;&#208;&#178;&#208;&#176;&#208;&#181;&#209;&#134;&#209;&#134;&#208;&#176;, &#208;&#186;&#208;&#176;&#208;&#187;&#209;&#150; &#209;&#145;&#208;&#188;&#209;&#150;&#209;&#129;&#209;&#130;&#208;&#176;&#209;&#129;&#209;&#134;&#209;&#140; &#208;&#177;&#208;&#176;&#209;&#130;&#208;&#176;&#209;&#128;&#209;&#141;&#209;&#150; &#209;&#129;&#209;&#143;&#208;&#179;&#208;&#176;&#208;&#181; &#208;&#186;&#209;&#128;&#209;&#139;&#209;&#130;&#209;&#139;&#209;&#135;&#208;&#189;&#208;&#176;&#208;&#179;&#208;&#176; &#209;&#158;&#208;&#183;&#209;&#128;&#208;&#190;&#209;&#158;&#208;&#189;&#209;&#142;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Specify the action to take when you press the Start menu power button.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20101209T204634Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#144;&#208;&#183;&#208;&#189;&#208;&#176;&#209;&#135;&#209;&#134;&#208;&#181; &#208;&#180;&#208;&#183;&#208;&#181;&#209;&#143;&#208;&#189;&#208;&#189;&#208;&#181;, &#209;&#143;&#208;&#186;&#208;&#190;&#208;&#181; &#208;&#176;&#208;&#180;&#208;&#177;&#209;&#139;&#208;&#178;&#208;&#176;&#208;&#181;&#209;&#134;&#209;&#134;&#208;&#176;, &#208;&#186;&#208;&#176;&#208;&#187;&#209;&#150; &#208;&#178;&#209;&#139; &#208;&#189;&#208;&#176;&#209;&#134;&#209;&#150;&#209;&#129;&#208;&#186;&#208;&#176;&#208;&#181;&#209;&#134;&#208;&#181; &#208;&#186;&#208;&#189;&#208;&#190;&#208;&#191;&#208;&#186;&#209;&#131; &#209;&#129;&#209;&#150;&#208;&#187;&#208;&#186;&#208;&#176;&#208;&#178;&#208;&#176;&#208;&#189;&#208;&#189;&#209;&#143; &#208;&#159;&#208;&#176;&#209;&#135;&#208;&#176;&#209;&#130;&#208;&#186;&#208;&#190;&#208;&#178;&#208;&#176;&#208;&#179;&#208;&#176; &#208;&#188;&#208;&#181;&#208;&#189;&#209;&#142;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Specify the action to take when you press the power button.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20101209T204312Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#144;&#208;&#183;&#208;&#189;&#208;&#176;&#209;&#135;&#209;&#134;&#208;&#181; &#208;&#180;&#208;&#183;&#208;&#181;&#209;&#143;&#208;&#189;&#208;&#189;&#208;&#181;, &#209;&#143;&#208;&#186;&#208;&#190;&#208;&#181; &#208;&#176;&#208;&#180;&#208;&#177;&#209;&#139;&#208;&#178;&#208;&#176;&#208;&#181;&#209;&#134;&#209;&#134;&#208;&#176;, &#208;&#186;&#208;&#176;&#208;&#187;&#209;&#150; &#208;&#178;&#209;&#139; &#208;&#189;&#208;&#176;&#209;&#134;&#209;&#150;&#209;&#129;&#208;&#186;&#208;&#176;&#208;&#181;&#209;&#134;&#208;&#181; &#208;&#186;&#208;&#189;&#208;&#190;&#208;&#191;&#208;&#186;&#209;&#131; &#209;&#129;&#209;&#150;&#208;&#187;&#208;&#186;&#208;&#176;&#208;&#178;&#208;&#176;&#208;&#189;&#208;&#189;&#209;&#143;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Specify the action to take when you press the sleep button.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20101209T204413Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#144;&#208;&#183;&#208;&#189;&#208;&#176;&#209;&#135;&#209;&#134;&#208;&#181; &#208;&#180;&#208;&#183;&#208;&#181;&#209;&#143;&#208;&#189;&#208;&#189;&#208;&#181;, &#209;&#143;&#208;&#186;&#208;&#190;&#208;&#181; &#208;&#176;&#208;&#180;&#208;&#177;&#209;&#139;&#208;&#178;&#208;&#176;&#208;&#181;&#209;&#134;&#209;&#134;&#208;&#176;, &#208;&#186;&#208;&#176;&#208;&#187;&#209;&#150; &#208;&#178;&#209;&#139; &#208;&#189;&#208;&#176;&#209;&#134;&#209;&#150;&#209;&#129;&#208;&#186;&#208;&#176;&#208;&#181;&#209;&#134;&#208;&#181; &#208;&#186;&#208;&#189;&#208;&#190;&#208;&#191;&#208;&#186;&#209;&#131; &#208;&#183;&#208;&#176;&#209;&#129;&#209;&#139;&#208;&#189;&#208;&#176;&#208;&#189;&#208;&#189;&#209;&#143;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Specify the company name&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101027T195725Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -62375,6 +63127,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Specify what your computer does when you close the lid and press the power buttons.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20101209T204139Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#144;&#208;&#183;&#208;&#189;&#208;&#176;&#209;&#135;&#209;&#134;&#208;&#181;, &#209;&#136;&#209;&#130;&#208;&#190; &#208;&#186;&#208;&#176;&#208;&#188;&#208;&#191;'&#209;&#142;&#209;&#130;&#208;&#176;&#209;&#128; &#208;&#191;&#208;&#176;&#208;&#178;&#209;&#150;&#208;&#189;&#208;&#181;&#208;&#189; &#209;&#128;&#208;&#176;&#208;&#177;&#209;&#150;&#209;&#134;&#209;&#140;, &#208;&#186;&#208;&#176;&#208;&#187;&#209;&#150; &#208;&#178;&#209;&#139; &#208;&#183;&#208;&#176;&#209;&#135;&#209;&#139;&#208;&#189;&#209;&#143;&#208;&#181;&#209;&#134;&#208;&#181; &#209;&#143;&#208;&#179;&#208;&#190; &#208;&#178;&#208;&#181;&#209;&#135;&#208;&#186;&#209;&#131; &#209;&#150; &#208;&#189;&#208;&#176;&#209;&#134;&#209;&#150;&#209;&#129;&#208;&#186;&#208;&#176;&#208;&#181;&#209;&#134;&#208;&#181; &#208;&#186;&#208;&#189;&#208;&#190;&#208;&#191;&#208;&#186;&#209;&#150; &#209;&#129;&#209;&#150;&#208;&#187;&#208;&#186;&#208;&#176;&#208;&#178;&#208;&#176;&#208;&#189;&#208;&#189;&#209;&#143;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Specify when you want the desktop background slide show to be available.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100927T171809Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -62383,6 +63143,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Specify whether a notification is shown when the battery capacity reaches the low level.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20101209T194453Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#144;&#208;&#183;&#208;&#189;&#208;&#176;&#209;&#135;&#209;&#134;&#208;&#181;, &#209;&#134;&#209;&#150; &#209;&#130;&#209;&#128;&#209;&#141;&#208;&#177;&#208;&#176; &#208;&#191;&#208;&#176;&#208;&#186;&#208;&#176;&#208;&#183;&#208;&#178;&#208;&#176;&#209;&#134;&#209;&#140; &#208;&#176;&#208;&#191;&#208;&#176;&#208;&#178;&#209;&#143;&#209;&#136;&#209;&#135;&#209;&#141;&#208;&#189;&#208;&#189;&#208;&#181;, &#208;&#186;&#208;&#176;&#208;&#187;&#209;&#150; &#209;&#145;&#208;&#188;&#209;&#150;&#209;&#129;&#209;&#130;&#208;&#176;&#209;&#129;&#209;&#134;&#209;&#140; &#208;&#177;&#208;&#176;&#209;&#130;&#208;&#176;&#209;&#128;&#209;&#141;&#209;&#150; &#209;&#129;&#209;&#143;&#208;&#179;&#208;&#176;&#208;&#181; &#208;&#189;&#209;&#150;&#208;&#183;&#208;&#186;&#208;&#176;&#208;&#179;&#208;&#176; &#209;&#158;&#208;&#183;&#209;&#128;&#208;&#190;&#209;&#158;&#208;&#189;&#209;&#142;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Specify which hand you write with&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100720T192709Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -62631,6 +63399,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Start menu power button&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20101209T204650Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#154;&#208;&#189;&#208;&#190;&#208;&#191;&#208;&#186;&#208;&#176; &#209;&#129;&#209;&#150;&#208;&#187;&#208;&#186;&#208;&#176;&#208;&#178;&#208;&#176;&#208;&#189;&#208;&#189;&#209;&#143; &#208;&#159;&#208;&#176;&#209;&#135;&#208;&#176;&#209;&#130;&#208;&#186;&#208;&#190;&#208;&#178;&#208;&#176;&#208;&#179;&#208;&#176; &#208;&#188;&#208;&#181;&#208;&#189;&#209;&#142;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Start menu query&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101106T171145Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -63927,6 +64703,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;System power plan&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20101209T162443Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#161;&#209;&#150;&#209;&#129;&#209;&#130;&#209;&#141;&#208;&#188;&#208;&#189;&#209;&#139; &#208;&#191;&#208;&#187;&#208;&#176;&#208;&#189; &#209;&#129;&#209;&#150;&#208;&#187;&#208;&#186;&#208;&#176;&#208;&#178;&#208;&#176;&#208;&#189;&#208;&#189;&#209;&#143;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;System properties&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100723T183348Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -63935,6 +64719,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;System unattended sleep timeout&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20101209T174644Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#167;&#208;&#176;&#209;&#129; &#209;&#129;&#208;&#176;&#208;&#188;&#208;&#190;&#209;&#130;&#208;&#189;&#208;&#176;&#208;&#179;&#208;&#176; &#208;&#183;&#208;&#176;&#209;&#129;&#209;&#139;&#208;&#189;&#208;&#176;&#208;&#189;&#208;&#189;&#209;&#143; &#209;&#129;&#209;&#150;&#209;&#129;&#209;&#130;&#209;&#141;&#208;&#188;&#209;&#139;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;System%0&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100313T065431Z&quot; changeid=&quot;Ales Koshal [icq#:706101]&quot;&gt;
+@@ -65367,6 +66159,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;The default Windows power plan types include Balanced, Power saver, and High performance. The three types are designed to balance power savings while providing performance on demand, maximize power savings, or maximize performance. Many system components use the power plan type to deciding whether to optimize power savings or performance.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20101209T170659Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#159;&#208;&#181;&#209;&#128;&#208;&#176;&#208;&#180;&#208;&#178;&#209;&#139;&#208;&#183;&#208;&#189;&#208;&#176;&#209;&#135;&#208;&#176;&#208;&#189;&#209;&#139;&#209;&#143; &#209;&#130;&#209;&#139;&#208;&#191;&#209;&#139; &#208;&#191;&#208;&#187;&#208;&#176;&#208;&#189;&#208;&#176;&#209;&#158; &#209;&#129;&#209;&#150;&#208;&#187;&#208;&#186;&#208;&#176;&#208;&#178;&#208;&#176;&#208;&#189;&#208;&#189;&#209;&#143; Windows &#209;&#131;&#208;&#186;&#208;&#187;&#209;&#142;&#209;&#135;&#208;&#176;&#209;&#142;&#209;&#134;&#209;&#140; &quot;&#208;&#151;&#208;&#177;&#208;&#176;&#208;&#187;&#208;&#176;&#208;&#189;&#209;&#129;&#208;&#176;&#208;&#178;&#208;&#176;&#208;&#189;&#209;&#139;&quot;, &quot;&#208;&#151;&#208;&#176;&#209;&#133;&#208;&#176;&#208;&#178;&#208;&#176;&#208;&#189;&#208;&#189;&#208;&#181; &#209;&#141;&#208;&#189;&#208;&#181;&#209;&#128;&#208;&#179;&#209;&#150;&#209;&#150;&quot; &#209;&#150; &quot;&#208;&#146;&#209;&#139;&#209;&#129;&#208;&#190;&#208;&#186;&#208;&#176;&#209;&#143; &#208;&#191;&#209;&#128;&#208;&#176;&#208;&#180;&#209;&#131;&#208;&#186;&#209;&#134;&#209;&#139;&#208;&#185;&#208;&#189;&#208;&#176;&#209;&#129;&#209;&#134;&#209;&#140;&quot;. &#208;&#147;&#209;&#141;&#209;&#130;&#209;&#139;&#209;&#143; &#209;&#130;&#209;&#128;&#209;&#139; &#209;&#130;&#209;&#139;&#208;&#191;&#209;&#139; &#208;&#191;&#209;&#128;&#209;&#139;&#208;&#183;&#208;&#189;&#208;&#176;&#209;&#135;&#208;&#176;&#208;&#189;&#209;&#139;&#209;&#143; &#208;&#176;&#208;&#180;&#208;&#191;&#208;&#176;&#208;&#178;&#208;&#181;&#208;&#180;&#208;&#189;&#208;&#176; &#208;&#180;&#208;&#187;&#209;&#143; &#208;&#183;&#208;&#177;&#208;&#176;&#208;&#187;&#208;&#176;&#208;&#189;&#209;&#129;&#208;&#176;&#208;&#178;&#208;&#176;&#208;&#189;&#208;&#189;&#209;&#143; &#208;&#191;&#209;&#128;&#208;&#176;&#208;&#180;&#209;&#131;&#208;&#186;&#209;&#134;&#209;&#139;&#208;&#185;&#208;&#189;&#208;&#176;&#209;&#129;&#209;&#134;&#209;&#150; &#209;&#150; &#209;&#129;&#208;&#191;&#208;&#176;&#208;&#182;&#209;&#139;&#208;&#178;&#208;&#176;&#208;&#189;&#208;&#189;&#209;&#143; &#209;&#141;&#208;&#189;&#208;&#181;&#209;&#128;&#208;&#179;&#209;&#150;&#209;&#150;, &#208;&#188;&#208;&#176;&#208;&#186;&#209;&#129;&#209;&#150;&#208;&#188;&#209;&#150;&#208;&#183;&#208;&#176;&#208;&#178;&#208;&#176;&#208;&#189;&#208;&#189;&#209;&#143; &#208;&#183;&#208;&#176;&#209;&#133;&#208;&#176;&#208;&#178;&#208;&#176;&#208;&#189;&#208;&#189;&#209;&#143; &#209;&#141;&#208;&#189;&#208;&#181;&#209;&#128;&#208;&#179;&#209;&#150;&#209;&#150; &#209;&#150; &#208;&#188;&#208;&#176;&#208;&#186;&#209;&#129;&#209;&#150;&#208;&#188;&#209;&#150;&#208;&#183;&#208;&#176;&#208;&#178;&#208;&#176;&#208;&#189;&#208;&#189;&#209;&#143; &#208;&#191;&#209;&#128;&#208;&#176;&#208;&#180;&#209;&#131;&#208;&#186;&#209;&#134;&#209;&#139;&#208;&#185;&#208;&#189;&#208;&#176;&#209;&#129;&#209;&#134;&#209;&#150;. &#208;&#168;&#208;&#188;&#208;&#176;&#209;&#130; &#209;&#143;&#208;&#186;&#209;&#150;&#209;&#143; &#209;&#129;&#209;&#150;&#209;&#129;&#209;&#130;&#209;&#141;&#208;&#188;&#208;&#189;&#209;&#139;&#209;&#143; &#208;&#186;&#208;&#176;&#208;&#188;&#208;&#191;&#208;&#176;&#208;&#189;&#208;&#181;&#208;&#189;&#209;&#130;&#209;&#139; &#208;&#186;&#208;&#176;&#209;&#128;&#209;&#139;&#209;&#129;&#209;&#130;&#208;&#176;&#209;&#142;&#209;&#134;&#209;&#140; &#209;&#130;&#209;&#139;&#208;&#191; &#208;&#191;&#208;&#187;&#208;&#176;&#208;&#189;&#208;&#176; &#209;&#129;&#209;&#150;&#208;&#187;&#208;&#186;&#208;&#176;&#208;&#178;&#208;&#176;&#208;&#189;&#208;&#189;&#209;&#143; &#208;&#180;&#208;&#187;&#209;&#143; &#208;&#178;&#209;&#139;&#208;&#183;&#208;&#189;&#208;&#176;&#209;&#135;&#209;&#141;&#208;&#189;&#208;&#189;&#209;&#143; &#208;&#188;&#209;&#141;&#209;&#130;&#209;&#139; &#208;&#176;&#208;&#191;&#209;&#130;&#209;&#139;&#208;&#188;&#209;&#150;&#208;&#183;&#208;&#176;&#208;&#178;&#208;&#176;&#208;&#189;&#208;&#189;&#209;&#143; - &#208;&#176;&#209;&#136;&#209;&#135;&#208;&#176;&#208;&#180;&#208;&#182;&#208;&#176;&#208;&#189;&#208;&#189;&#209;&#143; &#209;&#141;&#208;&#189;&#208;&#181;&#209;&#128;&#208;&#179;&#209;&#150;&#209;&#150; &#209;&#134;&#209;&#150; &#208;&#191;&#209;&#128;&#208;&#176;&#208;&#180;&#209;&#131;&#208;&#186;&#209;&#134;&#209;&#139;&#208;&#185;&#208;&#189;&#208;&#176;&#209;&#129;&#209;&#134;&#209;&#150;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;The default sound device will always show its own volume control.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101118T074414Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -66503,6 +67303,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;The harddisk may reduce its speed after the specified time of inactivity is detected.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20101209T210553Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#165;&#208;&#176;&#209;&#128;&#208;&#180;-&#208;&#180;&#209;&#139;&#209;&#129;&#208;&#186; &#208;&#188;&#208;&#190;&#208;&#182;&#208;&#176; &#208;&#183;&#208;&#189;&#209;&#150;&#208;&#183;&#209;&#150;&#209;&#134;&#209;&#140; &#209;&#129;&#208;&#178;&#208;&#176;&#209;&#142; &#209;&#133;&#209;&#131;&#209;&#130;&#208;&#186;&#208;&#176;&#209;&#129;&#209;&#134;&#209;&#140; &#208;&#191;&#208;&#176;&#209;&#129;&#208;&#187;&#209;&#143; &#208;&#188;&#209;&#150;&#208;&#189;&#208;&#176;&#208;&#189;&#208;&#189;&#209;&#143; &#208;&#176;&#208;&#183;&#208;&#189;&#208;&#176;&#209;&#135;&#208;&#176;&#208;&#189;&#208;&#176;&#208;&#179;&#208;&#176; &#209;&#135;&#208;&#176;&#209;&#129;&#209;&#131; &#208;&#177;&#209;&#143;&#208;&#183;&#208;&#180;&#208;&#183;&#208;&#181;&#208;&#185;&#208;&#189;&#208;&#176;&#209;&#129;&#209;&#134;&#209;&#150;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;The homegroup is protected with a password, and you'll always be able to choose what you share with the group.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100725T075406Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -67521,8 +68329,8 @@
+       &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;The slide show is paused to save power.&lt;/seg&gt;
+       &lt;/tuv&gt;
+-      &lt;tuv lang=&quot;be&quot; changedate=&quot;20100927T171849Z&quot; changeid=&quot;eratyk&quot;&gt;
+-        &lt;seg&gt;&#208;&#159;&#208;&#176;&#208;&#186;&#208;&#176;&#208;&#183; &#209;&#129;&#208;&#187;&#208;&#176;&#208;&#185;&#208;&#180;&#208;&#176;&#209;&#158; &#208;&#191;&#209;&#128;&#209;&#139;&#208;&#191;&#209;&#139;&#208;&#189;&#208;&#181;&#208;&#189;&#209;&#139; &#208;&#180;&#208;&#183;&#208;&#181;&#208;&#187;&#209;&#143; &#208;&#176;&#209;&#136;&#209;&#135;&#208;&#176;&#208;&#180;&#208;&#182;&#208;&#176;&#208;&#189;&#208;&#189;&#209;&#143; &#209;&#141;&#208;&#189;&#208;&#181;&#209;&#128;&#208;&#179;&#209;&#150;&#209;&#150;.&lt;/seg&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20101209T161133Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#159;&#208;&#176;&#208;&#186;&#208;&#176;&#208;&#183; &#209;&#129;&#208;&#187;&#208;&#176;&#208;&#185;&#208;&#180;&#208;&#176;&#209;&#158; &#208;&#191;&#209;&#128;&#209;&#139;&#208;&#191;&#209;&#139;&#208;&#189;&#208;&#181;&#208;&#189;&#209;&#139; &#208;&#180;&#208;&#183;&#208;&#181;&#208;&#187;&#209;&#143; &#208;&#183;&#208;&#176;&#209;&#133;&#208;&#176;&#208;&#178;&#208;&#176;&#208;&#189;&#208;&#189;&#209;&#143; &#209;&#141;&#208;&#189;&#208;&#181;&#209;&#128;&#208;&#179;&#209;&#150;&#209;&#150;.&lt;/seg&gt;
+       &lt;/tuv&gt;
+     &lt;/tu&gt;
+     &lt;tu&gt;
+@@ -68951,6 +69759,30 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Third Low Battery Alarm Action&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20101209T192703Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#148;&#208;&#183;&#208;&#181;&#209;&#143;&#208;&#189;&#208;&#189;&#208;&#181; &#209;&#130;&#209;&#128;&#209;&#141;&#209;&#134;&#209;&#143;&#208;&#179;&#208;&#176; &#209;&#129;&#209;&#150;&#208;&#179;&#208;&#189;&#208;&#176;&#208;&#187;&#209;&#131; &#208;&#189;&#209;&#150;&#208;&#183;&#208;&#186;&#208;&#176;&#208;&#179;&#208;&#176; &#209;&#158;&#208;&#183;&#209;&#128;&#208;&#190;&#209;&#158;&#208;&#189;&#209;&#142; &#208;&#177;&#208;&#176;&#209;&#130;&#208;&#176;&#209;&#128;&#209;&#141;&#209;&#150;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Third low-battery alarm flags&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20101209T203235Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#161;&#209;&#134;&#209;&#143;&#208;&#179;&#209;&#150; &#209;&#130;&#209;&#128;&#209;&#141;&#209;&#134;&#209;&#143;&#208;&#179;&#208;&#176; &#209;&#129;&#209;&#150;&#208;&#179;&#208;&#189;&#208;&#176;&#208;&#187;&#209;&#131; &#208;&#189;&#209;&#150;&#208;&#183;&#208;&#186;&#208;&#176;&#208;&#179;&#208;&#176; &#209;&#158;&#208;&#183;&#209;&#128;&#208;&#190;&#209;&#158;&#208;&#189;&#209;&#142; &#208;&#177;&#208;&#176;&#209;&#130;&#208;&#176;&#209;&#128;&#209;&#141;&#209;&#150;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Third power trip point&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20101209T203932Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#162;&#209;&#128;&#209;&#141;&#209;&#134;&#209;&#143;&#209;&#143; &#208;&#186;&#209;&#128;&#208;&#190;&#208;&#191;&#208;&#186;&#208;&#176; &#209;&#129;&#208;&#191;&#208;&#176;&#209;&#130;&#209;&#139;&#208;&#186;&#208;&#189;&#208;&#181;&#208;&#189;&#208;&#189;&#209;&#143; &#209;&#141;&#208;&#189;&#208;&#181;&#209;&#128;&#208;&#179;&#209;&#150;&#209;&#150;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;This CD-ROM drive is read-only.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100711T195140Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -72839,6 +73671,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Turn off hard disk after&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20101209T205112Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#146;&#209;&#139;&#208;&#186;&#208;&#187;&#209;&#142;&#209;&#135;&#208;&#176;&#209;&#134;&#209;&#140; &#209;&#133;&#208;&#176;&#209;&#128;&#208;&#180;-&#208;&#180;&#209;&#139;&#209;&#129;&#208;&#186; &#208;&#191;&#208;&#176;&#209;&#129;&#208;&#187;&#209;&#143;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Turn off unnecessary animations&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100719T193329Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -74175,6 +75015,22 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Unknown remaining&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20101209T152840Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#157;&#208;&#181;&#208;&#178;&#209;&#143;&#208;&#180;&#208;&#190;&#208;&#188;&#208;&#176;, &#208;&#186;&#208;&#190;&#208;&#187;&#209;&#140;&#208;&#186;&#209;&#150; &#208;&#183;&#208;&#176;&#209;&#129;&#209;&#130;&#208;&#176;&#208;&#187;&#208;&#190;&#209;&#129;&#209;&#143;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Unknown remaining\nConsider replacing your battery.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20101209T152955Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#157;&#208;&#181;&#208;&#178;&#209;&#143;&#208;&#180;&#208;&#190;&#208;&#188;&#208;&#176;, &#208;&#186;&#208;&#190;&#208;&#187;&#209;&#140;&#208;&#186;&#209;&#150; &#208;&#183;&#208;&#176;&#209;&#129;&#209;&#130;&#208;&#176;&#208;&#187;&#208;&#190;&#209;&#129;&#209;&#143;\n&#208;&#159;&#208;&#176;&#208;&#180;&#209;&#131;&#208;&#188;&#208;&#176;&#208;&#185;&#209;&#134;&#208;&#181; &#208;&#176;&#208;&#177; &#208;&#183;&#208;&#176;&#208;&#188;&#208;&#181;&#208;&#189;&#208;&#181; &#208;&#178;&#208;&#176;&#209;&#136;&#208;&#176;&#208;&#181; &#208;&#177;&#208;&#176;&#209;&#130;&#208;&#176;&#209;&#128;&#209;&#141;&#209;&#150;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Unknown roaming status&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101108T144459Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -74329,8 +75185,8 @@
+       &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Unspecified&lt;/seg&gt;
+       &lt;/tuv&gt;
+-      &lt;tuv lang=&quot;be&quot; changedate=&quot;20100715T060952Z&quot; changeid=&quot;eratyk&quot;&gt;
+-        &lt;seg&gt;&#208;&#157;&#208;&#181;&#209;&#158;&#208;&#180;&#208;&#176;&#208;&#186;&#208;&#187;&#208;&#176;&#208;&#180;&#208;&#189;&#208;&#181;&#208;&#189;&#208;&#176;&lt;/seg&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20101209T175003Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#157;&#208;&#181;&#208;&#176;&#208;&#183;&#208;&#189;&#208;&#176;&#209;&#135;&#208;&#176;&#208;&#189;&#208;&#176;&lt;/seg&gt;
+       &lt;/tuv&gt;
+     &lt;/tu&gt;
+     &lt;tu&gt;
+
+Added: Windows7/source/x32/Windows/System32/en-US/batmeter.dll.rc
+===================================================================
+--- Windows7/source/x32/Windows/System32/en-US/batmeter.dll.rc	                        (rev 0)
++++ Windows7/source/x32/Windows/System32/en-US/batmeter.dll.rc	2010-12-09 22:01:25 UTC (rev 130)
+@@ -0,0 +1,80 @@
++1 MUI &quot;Data_320.bin&quot;
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++121, 	&quot;Plugged in and charging&quot;
++122, 	&quot;%2!u! hr %1!02u! min to full charge&quot;
++123, 	&quot;%1!02u! min to full charge&quot;
++124, 	&quot;%1!u!%% available (plugged in, charging)&quot;
++125, 	&quot;%1!u!%% available (plugged in, not charging)&quot;
++126, 	&quot;Fully charged (100%)&quot;
++127, 	&quot;No battery is detected&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++128, 	&quot;Plugged in and not charging&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++150, 	&quot;%3!u! hr %2!02u! min (%1!u!%%) remaining&quot;
++151, 	&quot;%2!u! min (%1!u!%%) remaining&quot;
++154, 	&quot;%1!u!%% remaining&quot;
++155, 	&quot;Unknown remaining&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++170, 	&quot;%1!u!%% remaining\nConsider replacing your battery.&quot;
++171, 	&quot;Unknown remaining\nConsider replacing your battery.&quot;
++172, 	&quot;Plugged in and charging\nConsider replacing your battery.&quot;
++173, 	&quot;%1!u!%% available (plugged in, charging)\nConsider replacing your battery.&quot;
++174, 	&quot;%1!u!%% available (plugged in, not charging)\nConsider replacing your battery.&quot;
++175, 	&quot;Fully charged (100%)\nConsider replacing your battery.&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++400, 	&quot;Reserve battery level&quot;
++401, 	&quot;Percentage of battery capacity remaining that initiates reserve power mode.&quot;
++}
++
++
++1 VERSIONINFO
++FILEVERSION 6,1,7600,16385
++PRODUCTVERSION 6,1,7600,16385
++FILEOS 0x40004
++FILETYPE 0x2
++{
++BLOCK &quot;StringFileInfo&quot;
++{
++	BLOCK &quot;040904B0&quot;
++	{
++		VALUE &quot;CompanyName&quot;, &quot;Microsoft Corporation&quot;
++		VALUE &quot;FileDescription&quot;, &quot;Battery Meter Helper DLL&quot;
++		VALUE &quot;FileVersion&quot;, &quot;6.1.7600.16385 (win7_rtm.090713-1255)&quot;
++		VALUE &quot;InternalName&quot;, &quot;BATMETER&quot;
++		VALUE &quot;LegalCopyright&quot;, &quot;&#169; Microsoft Corporation. All rights reserved.&quot;
++		VALUE &quot;OriginalFilename&quot;, &quot;BATMETER.DLL.MUI&quot;
++		VALUE &quot;ProductName&quot;, &quot;Microsoft&#174; Windows&#174; Operating System&quot;
++		VALUE &quot;ProductVersion&quot;, &quot;6.1.7600.16385&quot;
++	}
++}
++
++BLOCK &quot;VarFileInfo&quot;
++{
++	VALUE &quot;Translation&quot;, 0x0409 0x04B0
++}
++}
++
+
+Added: Windows7/source/x32/Windows/System32/en-US/powrprof.dll.rc
+===================================================================
+--- Windows7/source/x32/Windows/System32/en-US/powrprof.dll.rc	                        (rev 0)
++++ Windows7/source/x32/Windows/System32/en-US/powrprof.dll.rc	2010-12-09 22:01:25 UTC (rev 130)
+@@ -0,0 +1,506 @@
++1 MUI &quot;Data_1334.bin&quot;
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++10, 	&quot;Saves energy by reducing your computer&#146;s performance where possible.&quot;
++11, 	&quot;Power saver&quot;
++12, 	&quot;Favors performance, but may use more energy.&quot;
++13, 	&quot;High performance&quot;
++14, 	&quot;Automatically balances performance with energy consumption on capable hardware.&quot;
++15, 	&quot;Balanced&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++16, 	&quot;Power plan used when there are no users logged into the system.&quot;
++17, 	&quot;System power plan&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++50, 	&quot;Do nothing&quot;
++51, 	&quot;Do nothing&quot;
++52, 	&quot;Sleep&quot;
++53, 	&quot;Sleep&quot;
++54, 	&quot;Hibernate&quot;
++55, 	&quot;Hibernate&quot;
++56, 	&quot;Shut down&quot;
++57, 	&quot;Shut down&quot;
++58, 	&quot;Do nothing&quot;
++59, 	&quot;Do nothing&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++80, 	&quot;Seconds&quot;
++81, 	&quot;%&quot;
++82, 	&quot;Milliseconds&quot;
++83, 	&quot;Microseconds&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++100, 	&quot;The default Windows power plan types include Balanced, Power saver, and High performance. The three types are designed to balance power savings while providing performance on demand, maximize power savings, or maximize performance. Many system components use the power plan type to deciding whether to optimize power savings or performance.&quot;
++101, 	&quot;Power plan type&quot;
++102, 	&quot;Require a password to unlock the computer when it wakes from sleep.&quot;
++103, 	&quot;Require a password on wakeup&quot;
++104, 	&quot;Specify how long your computer is inactive before going to sleep.&quot;
++105, 	&quot;Sleep after&quot;
++106, 	&quot;Specify how long your computer is inactive before hibernating.&quot;
++107, 	&quot;Hibernate after&quot;
++108, 	&quot;Allow Windows to save your work and enter a low-power state so that you can resume working almost immediately.&quot;
++109, 	&quot;Allow hybrid sleep&quot;
++110, 	&quot;Enables system to show a progress bar during transitions to sleep.&quot;
++111, 	&quot;Enable Sleep Progress Bar&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++114, 	&quot;On&quot;
++115, 	&quot;On&quot;
++116, 	&quot;Off&quot;
++117, 	&quot;Off&quot;
++118, 	&quot;No&quot;
++119, 	&quot;Specify sleep settings.&quot;
++120, 	&quot;Sleep&quot;
++121, 	&quot;Allow Windows to use the standby states when sleeping your computer.&quot;
++122, 	&quot;Allow Standby States&quot;
++123, 	&quot;Yes&quot;
++124, 	&quot;Specify if timed events should be allowed to wake the computer from sleep.&quot;
++125, 	&quot;Allow wake timers&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++128, 	&quot;Idle timeout before the system returns to a low power sleep state after waking unattended.&quot;
++129, 	&quot;System unattended sleep timeout&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++150, 	&quot;Specifies the policy for devices powering down while the system is running.&quot;
++151, 	&quot;Device idle policy&quot;
++152, 	&quot;Favor performance over power savings.&quot;
++153, 	&quot;Performance&quot;
++154, 	&quot;Favor power savings over performance.&quot;
++155, 	&quot;Power savings&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++200, 	&quot;Configure notification and alarm settings for your battery.&quot;
++201, 	&quot;Battery&quot;
++202, 	&quot;Specify the action to take when the battery capacity reaches the critical level.&quot;
++203, 	&quot;Critical battery action&quot;
++204, 	&quot;Specify the action that your computer takes when battery capacity reaches the low level.&quot;
++205, 	&quot;Low battery action&quot;
++206, 	&quot;Third Low Battery Alarm Action&quot;
++207, 	&quot;Third Low Battery Alarm Action&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++208, 	&quot;Fourth Low Battery Alarm Action&quot;
++209, 	&quot;Fourth Low Battery Alarm Action&quot;
++210, 	&quot;Flags and settings for first low battery alarm&quot;
++211, 	&quot;First low-battery alarm flags&quot;
++212, 	&quot;Specify whether a notification is shown when the battery capacity reaches the low level.&quot;
++213, 	&quot;Low battery notification&quot;
++214, 	&quot;Flags and settings for third low battery alarm&quot;
++215, 	&quot;Third low-battery alarm flags&quot;
++216, 	&quot;Flags and settings for fourth low battery alarm&quot;
++217, 	&quot;Fourth low-battery alarm flags&quot;
++218, 	&quot;Percentage of battery capacity remaining that initiates the critical battery action. &quot;
++219, 	&quot;Critical battery level&quot;
++220, 	&quot;Percentage of battery capacity remaining that initiates the low battery action.&quot;
++221, 	&quot;Low battery level&quot;
++222, 	&quot;Percent battery power remaining when third low-power action should be taken.&quot;
++223, 	&quot;Third power trip point&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++224, 	&quot;Percent battery power remaining when fourth low-power action should be taken.&quot;
++225, 	&quot;Fourth power trip point&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++250, 	&quot;Specify what your computer does when you close the lid and press the power buttons.&quot;
++251, 	&quot;Power buttons and lid&quot;
++252, 	&quot;Specify the action to take when you press the power button.&quot;
++253, 	&quot;Power button action&quot;
++254, 	&quot;Specify the action to take when you press the sleep button.&quot;
++255, 	&quot;Sleep button action&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++256, 	&quot;Specify the action that your computer takes when you close the lid on your mobile PC.&quot;
++257, 	&quot;Lid close action&quot;
++258, 	&quot;Specify the action to take when you press the Start menu power button.&quot;
++259, 	&quot;Start menu power button&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++300, 	&quot;Specify power management settings for your hard disk.&quot;
++301, 	&quot;Hard disk&quot;
++302, 	&quot;Specify how long your hard drive is inactive before the disk turns off.&quot;
++303, 	&quot;Turn off hard disk after&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++304, 	&quot;Allow the system to adapt the harddisk power down timeout based on system usage and recent history.&quot;
++305, 	&quot;Enable adaptive powerdown timeout.&quot;
++306, 	&quot;The harddisk may reduce its speed after the specified time of inactivity is detected.&quot;
++307, 	&quot;Harddisk lowspeed timeout.&quot;
++308, 	&quot;Allow the system to adapt the harddisk lowspeed timeout based on system usage and recent history.&quot;
++309, 	&quot;Adaptive lowspeed timeout&quot;
++310, 	&quot;Ignore a burst of disk activity up to the specified time when determining if the disk is idle.&quot;
++311, 	&quot;Hard disk burst ignore time&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++350, 	&quot;Specify power management settings for your computer&#146;s processor.&quot;
++351, 	&quot;Processor power management&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++352, 	&quot;Processor performance settings which allow the system to lower processor performance (and power consumption) if the system is not doing any work.&quot;
++353, 	&quot;Processor throttle setting.&quot;
++354, 	&quot;Disable any processor power savings.&quot;
++355, 	&quot;Disable&quot;
++356, 	&quot;Lower the maximum frequency of the processor.  Irregardless of the workload demands, the processor will run at a reduced frequency, thus drawing less power.&quot;
++357, 	&quot;Lower maximum processor frequency&quot;
++358, 	&quot;Adaptively lower the maximum processor frequency, based on remaining battery life.  Irregardless of the workload demands, the processor will run at a reduced frequency, thus drawing less power.&quot;
++359, 	&quot;Adaptively lower the maximum processor frequency.&quot;
++360, 	&quot;Adaptively adjust the processor frequency based on workload demands.  This setting will significantly reduce power consumption of the processor, while have very little effect on performance.&quot;
++361, 	&quot;Adaptively adjust processor frequency.&quot;
++362, 	&quot;Specify the maximum performance state of your processor (in percentage). &quot;
++363, 	&quot;Maximum processor state&quot;
++364, 	&quot;Specify the minimum performance state of your processor (in percentage). &quot;
++365, 	&quot;Minimum processor state&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++370, 	&quot;Specify the cooling mode for your system&quot;
++371, 	&quot;System cooling policy&quot;
++372, 	&quot;Slow the processor before increasing fan speed&quot;
++373, 	&quot;Passive&quot;
++374, 	&quot;Increase fan speed before slowing the processor&quot;
++375, 	&quot;Active&quot;
++376, 	&quot;Specify the upper busy threshold that must be met before increasing the processor's performance state (in percentage).&quot;
++377, 	&quot;Processor performance increase threshold&quot;
++378, 	&quot;Specify the lower busy threshold that must be met before decreasing the processor's performance state (in percentage).&quot;
++379, 	&quot;Processor performance decrease threshold&quot;
++380, 	&quot;Allow processors to use throttle states in addition to performance states.&quot;
++381, 	&quot;Allow Throttle States&quot;
++382, 	&quot;Select the ideal processor performance state.&quot;
++383, 	&quot;Ideal&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++384, 	&quot;Select the processor performance state one closer to ideal than the current processor performance state.&quot;
++385, 	&quot;Single&quot;
++386, 	&quot;Select the highest speed/power processor performance state.&quot;
++387, 	&quot;Rocket&quot;
++388, 	&quot;Select the lowest speed/power processor performance state.&quot;
++389, 	&quot;Rocket&quot;
++390, 	&quot;Specify the algorithm used to select a new performance state when the ideal performance state is higher than the current performance state.&quot;
++391, 	&quot;Processor performance increase policy&quot;
++392, 	&quot;Specify the algorithm used to select a new performance state when the ideal performance state is lower than the current performance state.&quot;
++393, 	&quot;Processor performance decrease policy&quot;
++394, 	&quot;Specify the minimum number of perf check intervals since the last performance state change before the performance state may be increased.&quot;
++395, 	&quot;Processor performance increase time&quot;
++396, 	&quot;Specify the minimum number of perf check intervals since the last performance state change before the performance state may be decreased.&quot;
++397, 	&quot;Processor performance decrease time&quot;
++398, 	&quot;Specify the amount that must expire before processor performance states and parked cores may be reevaluated (in milliseconds).&quot;
++399, 	&quot;Processor performance time check interval&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++400, 	&quot;Specify power management settings for your display.&quot;
++401, 	&quot;Display&quot;
++402, 	&quot;Specify how long your computer is inactive before your display turns off.&quot;
++403, 	&quot;Turn off display after&quot;
++404, 	&quot;Extends the time that Windows waits to turn off the display if you repeatedly turn on the display with the keyboard or mouse.&quot;
++405, 	&quot;Adaptive display&quot;
++406, 	&quot;Specify how long your computer is inactive before your display dims.&quot;
++407, 	&quot;Dim display after&quot;
++408, 	&quot;Specify timeout threshhold within which the user would be considered annoyed.&quot;
++409, 	&quot;User annoyance timeout&quot;
++410, 	&quot;Specify the percentage to increase the adaptive timeout by.&quot;
++411, 	&quot;Increase adaptive timeout by&quot;
++412, 	&quot;Monitors ambient light sensors to detect changes in ambient light and adjust the display brightness.&quot;
++413, 	&quot;Enable adaptive brightness&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++510, 	&quot;Enable or disable passive cooling policy on the system.&quot;
++511, 	&quot;Passive Cooling Mode&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++515, 	&quot;Specify the normal brightness level of your display.&quot;
++516, 	&quot;Display brightness&quot;
++517, 	&quot;Do not allow Windows to wake from sleep on timed events.&quot;
++518, 	&quot;Disable&quot;
++519, 	&quot;Allow Windows to wake from sleep on timed events.&quot;
++520, 	&quot;Enable&quot;
++521, 	&quot;Specify the brightness level for when your display is dimmed.&quot;
++522, 	&quot;Dimmed display brightness&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++550, 	&quot;Allow away mode to be enabled for your computer&quot;
++551, 	&quot;Allow Away Mode Policy&quot;
++552, 	&quot;Don't Allow away mode to be enabled&quot;
++553, 	&quot;No&quot;
++554, 	&quot;Allow away mode to be enabled&quot;
++555, 	&quot;Yes&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++560, 	&quot;Allow programs to prevent machine from going to sleep automatically&quot;
++561, 	&quot;Allow system required policy&quot;
++562, 	&quot;Don't allow programs to prevent machine from going to sleep automatically&quot;
++563, 	&quot;Allow programs to prevent machine from going to sleep automatically&quot;
++566, 	&quot;Allow programs to prevent display from turning off automatically&quot;
++567, 	&quot;Allow display required policy&quot;
++568, 	&quot;Don't allow programs to prevent display from turning off automatically&quot;
++569, 	&quot;Allow programs to prevent display from turning off automatically&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++600, 	&quot;PCI Express Power Management Settings&quot;
++601, 	&quot;PCI Express&quot;
++602, 	&quot;Specifies the Active State Power Management (ASPM) policy to use for capable links when the link is idle.&quot;
++603, 	&quot;Link State Power Management&quot;
++604, 	&quot;Turn off ASPM for all links.&quot;
++605, 	&quot;Off&quot;
++606, 	&quot;Attempt to use the L0S state when link is idle.&quot;
++607, 	&quot;Moderate power savings&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++608, 	&quot;Attempt to use the L1 state when the link is idle.&quot;
++609, 	&quot;Maximum power savings&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++700, 	&quot;Specify if idle state promotion and demotion values should be scaled based on the current performance state.&quot;
++701, 	&quot;Processor idle threshold scaling&quot;
++702, 	&quot;Specify if idle states should be disabled.&quot;
++703, 	&quot;Processor idle disable&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++704, 	&quot;Specify the time that elapsed since the last idle state promotion or demotion before idle states may be promoted or demoted again (in microseconds).&quot;
++705, 	&quot;Processor idle time check&quot;
++706, 	&quot;Specify the upper busy threshold that must be met before demoting the processor to a lighter idle state (in percentage).&quot;
++707, 	&quot;Processor idle demote threshold&quot;
++708, 	&quot;Specify the lower busy threshold that must be met before promoting the processor to a deeper idle state (in percentage).&quot;
++709, 	&quot;Processor idle promote threshold&quot;
++710, 	&quot;Enable scaling of idle state promotion and demotion values based on the current performance state.&quot;
++711, 	&quot;Enable scaling&quot;
++712, 	&quot;Disable scaling of idle state promotion and demotion values based on the current performance state.&quot;
++713, 	&quot;Disable scaling&quot;
++714, 	&quot;Enable idle states.&quot;
++715, 	&quot;Enable idle&quot;
++716, 	&quot;Disable idle states.&quot;
++717, 	&quot;Disable idle&quot;
++718, 	&quot;Time check intervals&quot;
++719, 	&quot;Specify how much processors may opportunistically increase frequency above maximum when allowed by current operating contitions.&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++720, 	&quot;Processor performance boost policy&quot;
++721, 	&quot;Specify the number of processor performance time check intervals to use when calculating the average utility.&quot;
++722, 	&quot;Processor performance history count&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++750, 	&quot;Ideal number of cores&quot;
++751, 	&quot;Ideal number of cores&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++752, 	&quot;Single core&quot;
++753, 	&quot;Single core&quot;
++754, 	&quot;All possible cores&quot;
++755, 	&quot;All possible cores&quot;
++756, 	&quot;Specify the upper busy threshold that must be met before increasing the number of cores/packages that are unparked (in percentage).&quot;
++757, 	&quot;Processor performance core parking increase threshold&quot;
++758, 	&quot;Specify the lower busy threshold that must be met before decreasing the number of cores/packages that are unparked (in percentage).&quot;
++759, 	&quot;Processor performance core parking decrease threshold&quot;
++760, 	&quot;Specify the number of cores/packages to unpark when more cores are required.&quot;
++761, 	&quot;Processor performance core parking increase policy&quot;
++762, 	&quot;Specify the number of cores/packages to park when fewer cores are required.&quot;
++763, 	&quot;Processor performance core parking decrease policy&quot;
++764, 	&quot;Specify the maximum number of unparked cores/packages allowed (in percentage).&quot;
++765, 	&quot;Processor performance core parking max cores&quot;
++766, 	&quot;Specify the minimum number of unparked cores/packages allowed (in percentage).&quot;
++767, 	&quot;Processor performance core parking min cores&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++768, 	&quot;Specify the minimum number of perf check intervals that must elapse before more cores/packages can be unparked.&quot;
++769, 	&quot;Processor performance core parking increase time&quot;
++770, 	&quot;Specify the minimum number of perf check intervals that must elapse before more cores/packages can be parked.&quot;
++771, 	&quot;Processor performance core parking decrease time&quot;
++772, 	&quot;Specify the factor by which to decrease affinity history on each core after the current performance check.&quot;
++773, 	&quot;Processor performance core parking affinity history decrease factor&quot;
++774, 	&quot;Specify the threshold above which a core is considered to have had significant affinitized work scheduled to it while parked.&quot;
++775, 	&quot;Processor performance core parking affinity history threshold&quot;
++776, 	&quot;Specify the weighting given to each occurrence where affinitized work was scheduled to a parked core.&quot;
++777, 	&quot;Processor performance core parking affinity weighting&quot;
++778, 	&quot;Specify the factor by which to decrease the over utilization history on each core after the current performance check.&quot;
++779, 	&quot;Processor performance core parking over utilization history decrease factor&quot;
++780, 	&quot;Specify the threshold above which a core is considered to have been recently over utilized while parked.&quot;
++781, 	&quot;Processor performance core parking over utilization history threshold&quot;
++782, 	&quot;Specify the weighting given to each occurrence where a parked core is found to be over utilized.&quot;
++783, 	&quot;Processor performance core parking over utilization weighting&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++792, 	&quot;Specify the busy threshold that must be met before a parked core is considered overutilized (in percentage).&quot;
++793, 	&quot;Processor performance core parking overutilization threshold&quot;
++794, 	&quot;Enabled&quot;
++795, 	&quot;Disabled&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++800, 	&quot;Ensure at least one processor remain unparked per core.&quot;
++801, 	&quot;Processor performance core parking core override&quot;
++802, 	&quot;No Preference&quot;
++803, 	&quot;Deepest Performance State&quot;
++804, 	&quot;Lightest Performance State&quot;
++805, 	&quot;Specify what performance state a processor enters when parked.&quot;
++806, 	&quot;Processor performance core parking parked performance state&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++900, 	&quot;Enable forced shutdown for button and lid actions&quot;
++901, 	&quot;Enable forced button/lid shutdown&quot;
++}
++
++
++1 VERSIONINFO
++FILEVERSION 6,1,7600,16385
++PRODUCTVERSION 6,1,7600,16385
++FILEOS 0x40004
++FILETYPE 0x2
++{
++BLOCK &quot;StringFileInfo&quot;
++{
++	BLOCK &quot;040904B0&quot;
++	{
++		VALUE &quot;CompanyName&quot;, &quot;Microsoft Corporation&quot;
++		VALUE &quot;FileDescription&quot;, &quot;Power Profile Helper DLL&quot;
++		VALUE &quot;FileVersion&quot;, &quot;6.1.7600.16385 (win7_rtm.090713-1255)&quot;
++		VALUE &quot;InternalName&quot;, &quot;POWRPROF&quot;
++		VALUE &quot;LegalCopyright&quot;, &quot;&#169; Microsoft Corporation. All rights reserved.&quot;
++		VALUE &quot;OriginalFilename&quot;, &quot;POWRPROF.DLL.MUI&quot;
++		VALUE &quot;ProductName&quot;, &quot;Microsoft&#174; Windows&#174; Operating System&quot;
++		VALUE &quot;ProductVersion&quot;, &quot;6.1.7600.16385&quot;
++	}
++}
++
++BLOCK &quot;VarFileInfo&quot;
++{
++	VALUE &quot;Translation&quot;, 0x0409 0x04B0
++}
++}
++
+
+Modified: Windows7/translated.txt
+===================================================================
+--- Windows7/translated.txt	2010-12-08 21:52:47 UTC (rev 129)
++++ Windows7/translated.txt	2010-12-09 22:01:25 UTC (rev 130)
+@@ -42,3 +42,4 @@
+ windows\system32\en-US\searchfolder.dll.mui // eratyk 21:55 30.11.2010
+ windows\system32\en-US\pnidui.dll.mui // eratyk 22:05 05.12.2010
+ windows\system32\en-US\user32.dll.mui // eratyk 23:12 06.12.2010
++windows\system32\en-US\batmeter.dll.mui // eratyk 17:42 09.12.2010
+
+Deleted: translated.txt
+===================================================================
+--- translated.txt	2010-12-08 21:52:47 UTC (rev 129)
++++ translated.txt	2010-12-09 22:01:25 UTC (rev 130)
+@@ -1,44 +0,0 @@
+-program files\windows defender\en-US\MpAsDesc.dll.mui // Ales Koshal
+-program files\windows defender\en-US\MpAsDesc.dll // Ales Koshal
+-program files\windows defender\en-US\MpEvMsg.dll.mui // Ales Koshal
+-program files\windows defender\en-US\MsMpRes.dll.mui // Ales Koshal
+-program files\windows defender\en-US\MsMpRes.dll // Ales Koshal
+-windows\system32\en-US\shell32.dll.mui // eratyk
+-windows\en-US\explorer.exe.mui // eratyk
+-windows\system32\en-US\notepad.exe.mui // eratyk
+-windows\en-US\notepad.exe.mui // eratyk
+-windows\system32\en-US\bootstr.dll.mui // eratyk
+-windows\system32\en-US\bootres.dll.mui // eratyk
+-windows\system32\en-US\authui.dll.mui // eratyk 11:33 28.07.2010
+-windows\system32\en-US\winload.exe.mui // eratyk 13:15 28.07.2010
+-windows\brandong\basebrd\en-US\basebrd.dll.mui // eratyk 13:33 28.07.2010
+-program files\windows media player\en-US\mpvis.dll.mui // eratyk 14:13 10.08.2010
+-program files\windows media player\en-US\mpvis.dll // eratyk 14:13 10.08.2010
+-program files\windows sidebar\en-US\sidebar.exe.mui // eratyk 22:59 27.08.2010
+-program files\windows sidebar\en-US\sidebar.exe // eratyk 22:59 27.08.2010
+-program files\windows sidebar\en-US\sbdrop.dll.mui // eratyk 23:01 27.08.2010
+-program files\windows sidebar\en-US\sbdrop.dll // eratyk 23:01 27.08.2010
+-windows\system32\en-US\cabview.dll.mui // eratyk 22:35 04.09.2010
+-program files\windows nt\accessories\en-US\wordpad.exe.mui // eratyk 15:51 09.09.2010
+-windows\system32\en-US\comdlg32.dll.mui // eratyk 23:43 18.09.2010
+-windows\system32\en-US\cmmon32.exe.mui // eratyk 22:35 19.09.2010
+-windows\system32\en-US\Display.dll.mui // eratyk 14:42 22.09.2010
+-windows\system32\en-US\desk.cpl.mui // eratyk 9:25 23.09.2010
+-windows\system32\en-US\intl.cpl.mui // eratyk 23:03 24.09.2010
+-windows\system32\en-US\stobject.dll.mui // eratyk 20:27 27.09.2010
+-windows\system32\en-US\StorageContextHandler.dll.mui // eratyk 20:43 27.09.2010
+-windows\system32\en-US\winlogon.exe.mui // eratyk 22:01 27.09.2010
+-windows\system32\en-US\DocumentPerfomanceEvents.dll.mui // eratyk 23:01 27.09.2010
+-windows\system32\en-US\msutb.dll.mui // eratyk 23:50 27.09.2010
+-windows\system32\en-US\VAN.dll.mui // eratyk 8:53 05.10.2010
+-windows\system32\en-US\themecpl.dll.mui // eratyk 23:22 06.10.2010
+-windows\system32\en-US\sndvolsso.dll.mui // eratyk 19:31 09.10.2010
+-windows\system32\en-US\sndvol.dll.mui // eratyk 19:31 09.10.2010
+-windows\system32\en-US\winsrv.dll.mui // eratyk 19:33 09.10.2010
+-windows\system32\en-US\input.dll.mui // eratyk 11:18 21.10.2010
+-windows\system32\en-US\sdshext.dll.mui // eratyk 12:41 21.10.2010
+-windows\system32\en-US\WEB.rs.mui // eratyk 16:05 21.10.2010
+-windows\system32\en-US\wininit.exe.mui // eratyk 17:37 21.10.2010
+-windows\system32\en-US\winresume.exe.mui // eratyk 17:43 21.10.2010
+-windows\servicing\en-US\CbsMsg.dll.mui // eratyk 9:35 03.11.2010
+-windows\system32\en-US\propsys.dll.mui // eratyk 11:37 11.11.2010
+
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000047.html">[I18n-bel-svn] r129 - Converter/src/installer
+</A></li>
+	<LI>Next message: <A HREF="000049.html">[I18n-bel-svn] r131 - in Windows7/source/x32/Program Files: .	Windows Photo Viewer Windows Photo Viewer/en-US
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#48">[ date ]</a>
+              <a href="thread.html#48">[ thread ]</a>
+              <a href="subject.html#48">[ subject ]</a>
+              <a href="author.html#48">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/i18n-bel-svn">More information about the I18n-bel-svn
+mailing list</a><br>
+</body></html>

@@ -1,0 +1,227 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [I18n-bel-svn] r91 - in Windows7/source/x32/Windows: . servicing	servicing/en-US
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/i18n-bel-svn/2010-November/index.html" >
+   <LINK REL="made" HREF="mailto:i18n-bel-svn%40lists.berlios.de?Subject=Re%3A%20%5BI18n-bel-svn%5D%20r91%20-%20in%20Windows7/source/x32/Windows%3A%20.%20servicing%0A%09servicing/en-US&In-Reply-To=%3C20101112142220.A14FD480C72%40sheep.berlios.de%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000008.html">
+   <LINK REL="Next"  HREF="000010.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[I18n-bel-svn] r91 - in Windows7/source/x32/Windows: . servicing	servicing/en-US</H1>
+    <B>alex73 at mail.berlios.de</B> 
+    <A HREF="mailto:i18n-bel-svn%40lists.berlios.de?Subject=Re%3A%20%5BI18n-bel-svn%5D%20r91%20-%20in%20Windows7/source/x32/Windows%3A%20.%20servicing%0A%09servicing/en-US&In-Reply-To=%3C20101112142220.A14FD480C72%40sheep.berlios.de%3E"
+       TITLE="[I18n-bel-svn] r91 - in Windows7/source/x32/Windows: . servicing	servicing/en-US">alex73 at mail.berlios.de
+       </A><BR>
+    <I>Fri Nov 12 15:22:20 CET 2010</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000008.html">[I18n-bel-svn] r90 - Windows7/omegat
+</A></li>
+        <LI>Next message: <A HREF="000010.html">[I18n-bel-svn] r92 - Windows7/source/x32/Windows/System32/en-US
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#9">[ date ]</a>
+              <a href="thread.html#9">[ thread ]</a>
+              <a href="subject.html#9">[ subject ]</a>
+              <a href="author.html#9">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>Author: alex73
+Date: 2010-11-12 15:22:20 +0100 (Fri, 12 Nov 2010)
+New Revision: 91
+
+Added:
+   Windows7/source/x32/Windows/servicing/
+   Windows7/source/x32/Windows/servicing/en-US/
+   Windows7/source/x32/Windows/servicing/en-US/CbsMsg.dll.rc
+Log:
+Restore for translation
+
+Added: Windows7/source/x32/Windows/servicing/en-US/CbsMsg.dll.rc
+===================================================================
+--- Windows7/source/x32/Windows/servicing/en-US/CbsMsg.dll.rc	                        (rev 0)
++++ Windows7/source/x32/Windows/servicing/en-US/CbsMsg.dll.rc	2010-11-12 14:22:20 UTC (rev 91)
+@@ -0,0 +1,149 @@
++#pragma code_page(65001)
++#include &lt;resources.h&gt;
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++  50,  &quot;Unknown&quot;
++}
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++  82,  &quot;Cancel&quot;
++  83,  &quot;Superseded&quot;
++  84,  &quot;Default&quot;
++  92,  &quot;Permanent Invalid&quot;
++  93,  &quot;Installed Invalid&quot;
++}
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++  96,  &quot;Staged Invalid&quot;
++  99,  &quot;Resolved Invalid&quot;
++  100,  &quot;Absent&quot;
++  101,  &quot;Resolving&quot;
++  102,  &quot;Resolved&quot;
++  103,  &quot;Staging&quot;
++  104,  &quot;Staged&quot;
++  105,  &quot;Uninstall Requested&quot;
++  106,  &quot;Install Requested&quot;
++  107,  &quot;Installed&quot;
++  108,  &quot;Permanent&quot;
++}
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++  300,  &quot;Windows Modules Installer&quot;
++}
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++  400,  &quot;Install or uninstall of one or more Windows Features or Updates was not successful.&quot;
++  401,  &quot;Programs and Features&quot;
++  402,  &quot;Programs and Features Reminder&quot;
++  403,  &quot;Uninstall of the Service Pack was not successful.&quot;
++}
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++  500,  &quot;Stage %d of %d\n&quot;
++  501,  &quot;Do not turn off your computer.&quot;
++  502,  &quot;%d%% complete\n&quot;
++  503,  &quot;.  \n&quot;
++  504,  &quot; . \n&quot;
++  505,  &quot;  .\n&quot;
++  506,  &quot;Preparing to configure Windows&quot;
++  507,  &quot;Assembling Windows&quot;
++  508,  &quot;Assembling Service Pack&quot;
++  509,  &quot;Assembling Windows features&quot;
++  510,  &quot;Assembling Windows updates&quot;
++  511,  &quot;Upgrading Windows\n&quot;
++}
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++  512,  &quot;Configuring Service Pack\n&quot;
++  513,  &quot;Configuring Windows features\n&quot;
++  514,  &quot;Configuring Windows updates\n&quot;
++  515,  &quot;Reverting changes&quot;
++  516,  &quot;Preparing to retry&quot;
++  517,  &quot;Failure upgrading Windows\n&quot;
++  518,  &quot;Failure configuring Service Pack\n&quot;
++  519,  &quot;Failure configuring Windows features\n&quot;
++  520,  &quot;Failure configuring Windows updates\n&quot;
++}
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++  530,  &quot;Cleaning up&quot;
++}
++
++1 MESSAGETABLE
++{
++  268435512,  &quot;Classic\r\n&quot;
++  1073746195,  &quot;Windows Servicing started a process of changing package %1(%2) state from %3(%4) to %5(%6)\r\n&quot;
++  1073746196,  &quot;Windows Servicing is setting package %1(%2) state to %3(%4)\r\n&quot;
++  1073746197,  &quot;Windows Servicing successfully set package %1(%2) state to %3(%4)\r\n&quot;
++  1073746207,  &quot;Windows Servicing completed the process of changing update %1 from package %2 (%3) into %4(%5) state\r\n&quot;
++  1073746224,  &quot;Windows Servicing is processing hotpatch package %1(%2).\r\n&quot;
++  1073746225,  &quot;Windows Servicing disabled hotpatching for package %2(%3) because update %1 is not enabled for hotpatching.\r\n&quot;
++  1073746226,  &quot;Windows Servicing disabled hotpatching for package %1(%2) because servicing is being performed offline.\r\n&quot;
++  1073746227,  &quot;Windows Servicing disabled hotpatching for package %1(%2) because a reboot is required to complete a prior operation.\r\n&quot;
++  1073746228,  &quot;Windows Servicing successfully installed hotpatching package %1(%2).\r\n&quot;
++  1073746229,  &quot;Windows Servicing has required a reboot to complete the installation of hotpatching package %1(%2).\r\n&quot;
++  1073746240,  &quot;Windows Servicing disabled hotpatching for package %2(%3) because update %1 is being set to state %4(%5).\r\n&quot;
++  2147488022,  &quot;Windows Servicing identified that package %1(%2) is not applicable for this system\r\n&quot;
++  2147488024,  &quot;Servicing has required reboot to complete the operation of setting package %1(%2) into %3(%4) state\r\n&quot;
++  2147488034,  &quot;Windows Servicing required reboot to complete the process of changing update %1 from package %2(%3) into %4(%5) state\r\n&quot;
++  2147488054,  &quot;Windows Servicing disabled hotpatching for package %1(%2) because a file could not be replaced immediately.\r\n&quot;
++  2147488055,  &quot;Windows Servicing disabled hotpatching for package %1(%2) because required files or custom actions are incompatible with hotpatching.\r\n&quot;
++  2147488056,  &quot;Windows Servicing failed to perform hotpatching for package %1(%2) because the hotpatch installer required a reboot.\r\n&quot;
++  2147488057,  &quot;Windows Servicing failed to perform hotpatching for package %1(%2) because of an error (%8).\r\n&quot;
++  2147488065,  &quot;Windows Servicing disabled hotpatching for package %2(%3) because hotpatch update %1 will not be installed.\r\n&quot;
++  2147488066,  &quot;Windows Servicing disabled hotpatching for package %2(%3) to process regular update %1.\r\n&quot;
++  2415919105,  &quot;Microsoft-Windows-Servicing\r\n&quot;
++  2952790017,  &quot;Initiating changes for package %1. Current state is %2. Target state is %4. Client id: %6.\r\n&quot;
++  2952790018,  &quot;Package %1 was successfully changed to the %2 state.\r\n&quot;
++  2952790019,  &quot;Package %1 failed to be changed to the %2 state. Status: %4.\r\n&quot;
++  2952790020,  &quot;A reboot is necessary before package %1 can be changed to the %2 state.\r\n&quot;
++  2952790021,  &quot;The servicing request received for package %1 cannot be satisfied since the package is not applicable.\r\n&quot;
++  2952790022,  &quot;Package %1 failed to be changed to the %2 state and is now partially installed. Status: %4.\r\n&quot;
++  2952790023,  &quot;Initiating changes to turn on update %1 of package %2. Client id: %4.\r\n&quot;
++  2952790024,  &quot;Initiating changes to turn off update %1 of package %2. Client id: %4.\r\n&quot;
++  2952790025,  &quot;Selectable update %1 of package %2 was successfully turned on.\r\n&quot;
++  2952790026,  &quot;Selectable update %1 of package %2 was successfully turned off.\r\n&quot;
++  2952790027,  &quot;Update %1 of package %2 failed to be turned on. Status: %3.\r\n&quot;
++  2952790028,  &quot;Update %1 of package %2 failed to be turned off. Status: %3.\r\n&quot;
++  2952790029,  &quot;A reboot is necessary before the selectable update %1 of package %2 can be turned on.\r\n&quot;
++  2952790030,  &quot;A reboot is necessary before the selectable update %1 of package %2 can be turned off.\r\n&quot;
++  3221229847,  &quot;Windows Servicing failed to complete the process of setting package %1 (%2) into %3(%4) state\r\n&quot;
++  3221229857,  &quot;Windows Servicing failed to complete the process of changing update %1 from package %2(%3) into %4(%5) state\r\n&quot;
++  3489660929,  &quot;Absent\r\n&quot;
++  3489660930,  &quot;Uninstall Pending\r\n&quot;
++  3489660931,  &quot;Resolving\r\n&quot;
++  3489660932,  &quot;Resolved\r\n&quot;
++  3489660933,  &quot;Staging\r\n&quot;
++  3489660934,  &quot;Staged\r\n&quot;
++  3489660935,  &quot;Superseded\r\n&quot;
++  3489660936,  &quot;Install Pending\r\n&quot;
++  3489660937,  &quot;Partially Installed\r\n&quot;
++  3489660938,  &quot;Installed\r\n&quot;
++  3489660939,  &quot;Permanent\r\n&quot;
++  3489660940,  &quot;Invalid Resolved\r\n&quot;
++  3489660941,  &quot;Invalid Staged\r\n&quot;
++  3489660942,  &quot;Invalid Installed\r\n&quot;
++  3489660943,  &quot;Invalid Permanent\r\n&quot;
++  3489660944,  &quot;Default\r\n&quot;
++  3489660945,  &quot;Package\r\n&quot;
++  3489660946,  &quot;File Deltas\r\n&quot;
++  3489660947,  &quot;Download\r\n&quot;
++  3489660948,  &quot;Detect\r\n&quot;
++  3489660949,  &quot;Cancel\r\n&quot;
++}
+
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000008.html">[I18n-bel-svn] r90 - Windows7/omegat
+</A></li>
+	<LI>Next message: <A HREF="000010.html">[I18n-bel-svn] r92 - Windows7/source/x32/Windows/System32/en-US
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#9">[ date ]</a>
+              <a href="thread.html#9">[ thread ]</a>
+              <a href="subject.html#9">[ subject ]</a>
+              <a href="author.html#9">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/i18n-bel-svn">More information about the I18n-bel-svn
+mailing list</a><br>
+</body></html>

@@ -1,0 +1,609 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [I18n-bel-svn] r224 - Windows7 Windows7.settings
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/i18n-bel-svn/2011-March/index.html" >
+   <LINK REL="made" HREF="mailto:i18n-bel-svn%40lists.berlios.de?Subject=Re%3A%20%5BI18n-bel-svn%5D%20r224%20-%20Windows7%20Windows7.settings&In-Reply-To=%3C20110323212950.92D5048065D%40sheep.berlios.de%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000141.html">
+   <LINK REL="Next"  HREF="000143.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[I18n-bel-svn] r224 - Windows7 Windows7.settings</H1>
+    <B>eratyk at mail.berlios.de</B> 
+    <A HREF="mailto:i18n-bel-svn%40lists.berlios.de?Subject=Re%3A%20%5BI18n-bel-svn%5D%20r224%20-%20Windows7%20Windows7.settings&In-Reply-To=%3C20110323212950.92D5048065D%40sheep.berlios.de%3E"
+       TITLE="[I18n-bel-svn] r224 - Windows7 Windows7.settings">eratyk at mail.berlios.de
+       </A><BR>
+    <I>Wed Mar 23 22:29:50 CET 2011</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000141.html">[I18n-bel-svn] r223 - in Android: glossary omegat
+</A></li>
+        <LI>Next message: <A HREF="000143.html">[I18n-bel-svn] r225 - Windows7/source/Windows/System32/en-US
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#142">[ date ]</a>
+              <a href="thread.html#142">[ thread ]</a>
+              <a href="subject.html#142">[ subject ]</a>
+              <a href="author.html#142">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>Author: eratyk
+Date: 2011-03-23 22:29:50 +0100 (Wed, 23 Mar 2011)
+New Revision: 224
+
+Modified:
+   Windows7.settings/filters.xml
+   Windows7/dialog-sizes.txt
+   Windows7/js-trans.txt
+Log:
+
+
+Modified: Windows7/dialog-sizes.txt
+===================================================================
+--- Windows7/dialog-sizes.txt	2011-03-23 19:00:32 UTC (rev 223)
++++ Windows7/dialog-sizes.txt	2011-03-23 21:29:50 UTC (rev 224)
+@@ -1,4 +1,4 @@
+-&#65279;Windows/System32/taskmgr.exe.rc:
++&#65279;Windows/System32/taskmgr.exe_x32sp0.mui.rc:
+     DIALOG/110
+         &quot;&#1055;&#1072;&#1082;&#1072;&#1079;&#1074;&#1072;&#1094;&#1100; &#1087;&#1088;&#1072;&#1094;&#1101;&#1089;&#1099; &#1118;&#1089;&#1110;&#1093; &#1082;&#1072;&#1088;&#1099;&#1089;&#1090;&#1072;&#1083;&#1100;&#1085;&#1110;&#1082;&#1072;&#1118;&quot;, 2040
+         10, 144, 120, 14 -&gt; 10, 144, 160, 14 
+@@ -24,7 +24,7 @@
+         &quot;&#1040;&#1076;&#1083;&#1091;&#1095;&#1099;&#1094;&#1100;&quot;, 3212
+         203, 144, 55, 14 -&gt; 163, 144, 55, 14
+                         
+-Windows/System32/shell32.dll.rc:
++Windows/System32/shell32.dll_x32sp0.mui.rc:
+     DIALOG/1003
+         &quot;&#1040;&#1076;&#1095;&#1099;&#1085;&#1110;&#1094;&#1100;&quot;, 12305
+         7, 39, 24, 10 -&gt; 2, 39, 31, 10
+
+Modified: Windows7/js-trans.txt
+===================================================================
+--- Windows7/js-trans.txt	2011-03-23 19:00:32 UTC (rev 223)
++++ Windows7/js-trans.txt	2011-03-23 21:29:50 UTC (rev 224)
+@@ -1,4 +1,4 @@
+-Program Files/Windows Sidebar/Gadgets/Calendar.Gadget/js/calendar.js
++Program Files/Windows Sidebar/Gadgets/Calendar.Gadget/js/calendar_x32sp0.js
+ 
+ I: var L_PREVIOUS_text = &quot;Previous&quot;;
+ O: var L_PREVIOUS_text = &quot;&#1055;&#1072;&#1087;&#1103;&#1088;&#1101;&#1076;&#1085;&#1110;&quot;;
+@@ -6,7 +6,7 @@
+ I: var L_NEXT_text = &quot;Next&quot;;
+ O: var L_NEXT_text = &quot;&#1053;&#1072;&#1089;&#1090;&#1091;&#1087;&#1085;&#1099;&quot;;
+ 
+-Program Files/Windows Sidebar/Gadgets/Clock.Gadget/js/settings.js
++Program Files/Windows Sidebar/Gadgets/Clock.Gadget/js/settings_x32sp0.js
+ 
+ I:var L_SELECT_TZ_TEXT = &quot;Current computer time&quot;;
+ O:var L_SELECT_TZ_TEXT = &quot;&#1044;&#1079;&#1077;&#1081;&#1085;&#1099; &#1095;&#1072;&#1089; &#1082;&#1072;&#1084;&#1087;'&#1102;&#1090;&#1072;&#1088;&#1072;&quot;;
+@@ -17,7 +17,7 @@
+ I:var L_NEXT_TEXT = &quot;Next&quot;;
+ O:var L_NEXT_TEXT = &quot;&#1053;&#1072;&#1089;&#1090;&#1091;&#1087;&#1085;&#1099;&quot;;
+ 
+-Program Files/Windows Sidebar/Gadgets/CPU.Gadget/js/cpu.js
++Program Files/Windows Sidebar/Gadgets/CPU.Gadget/js/cpu_x32sp0.js
+ 
+ I:var L_PROCESSOR_TEXT = &quot;CPU usage&quot;;
+ O:var L_PROCESSOR_TEXT = &quot;&#1047;&#1072;&#1085;&#1103;&#1090;&#1072;&#1089;&#1094;&#1100; &#1087;&#1088;&#1072;&#1094;&#1101;&#1089;&#1072;&#1088;&#1072;&quot;;
+@@ -25,7 +25,7 @@
+ I:var L_MEMORY_TEXT	= &quot;Random access memory (RAM)&quot;;
+ O:var L_MEMORY_TEXT	= &quot;&#1055;&#1072;&#1084;&#1103;&#1094;&#1100; &#1072;&#1076;&#1074;&#1086;&#1083;&#1100;&#1085;&#1072;&#1075;&#1072; &#1076;&#1086;&#1089;&#1090;&#1091;&#1087;&#1091;&quot;;
+ 
+-Program Files/Windows Sidebar/Gadgets/Currency.Gadget/js/localizedStrings.js
++Program Files/Windows Sidebar/Gadgets/Currency.Gadget/js/localizedStrings_x32sp0.js
+ 
+ I:L_localizedStrings_Text['WaitText'] = 'Getting data...';
+ O:L_localizedStrings_Text['WaitText'] = '&#1040;&#1090;&#1088;&#1099;&#1084;&#1072;&#1085;&#1085;&#1077; &#1079;&#1074;&#1077;&#1089;&#1090;&#1072;&#1082;...';
+@@ -67,172 +67,166 @@
+ O:L_localizedStrings_Text['ago'] = '&#1090;&#1072;&#1084;&#1091;';
+ 
+ I:L_localizedStrings_Text['DZD'] = 'ALGERIAN DINAR';
+-O:L_localizedStrings_Text['DZD'] = 'ALGERIAN DINAR';
++O:L_localizedStrings_Text['DZD'] = '&#1040;&#1083;&#1078;&#1099;&#1088;&#1089;&#1082;&#1110; &#1076;&#1099;&#1085;&#1072;&#1088;';
+ 
+ I:L_localizedStrings_Text['ARS'] = 'ARGENTINE PESO';
+-O:L_localizedStrings_Text['ARS'] = 'ARGENTINE PESO';
++O:L_localizedStrings_Text['ARS'] = '&#1040;&#1088;&#1075;&#1077;&#1085;&#1090;&#1099;&#1085;&#1089;&#1082;&#1072;&#1077; &#1087;&#1077;&#1089;&#1072;';
+ 
+ I:L_localizedStrings_Text['AUD'] = 'AUSTRALIAN DOLLAR';
+-O:L_localizedStrings_Text['AUD'] = 'AUSTRALIAN DOLLAR';
++O:L_localizedStrings_Text['AUD'] = '&#1040;&#1118;&#1089;&#1090;&#1088;&#1072;&#1083;&#1110;&#1081;&#1089;&#1082;&#1110; &#1076;&#1072;&#1083;&#1103;&#1088;';
+ 
+ I:L_localizedStrings_Text['BHD'] = 'BAHRAINI DINAR';
+-O:L_localizedStrings_Text['BHD'] = 'BAHRAINI DINAR';
++O:L_localizedStrings_Text['BHD'] = '&#1041;&#1072;&#1093;&#1088;&#1101;&#1081;&#1085;&#1089;&#1082;&#1110; &#1076;&#1099;&#1085;&#1072;&#1088;';
+ 
+ I:L_localizedStrings_Text['BOB'] = 'BOLIVIAN BOLIVIANO';
+-O:L_localizedStrings_Text['BOB'] = 'BOLIVIAN BOLIVIANO';
++O:L_localizedStrings_Text['BOB'] = '&#1041;&#1072;&#1083;&#1110;&#1074;&#1110;&#1081;&#1089;&#1082;&#1072;&#1077; &#1073;&#1072;&#1083;&#1110;&#1074;&#1110;&#1103;&#1085;&#1072;';
+ 
+ I:L_localizedStrings_Text['BWP'] = 'BOTSWANA PULA';
+-O:L_localizedStrings_Text['BWP'] = 'BOTSWANA PULA';
++O:L_localizedStrings_Text['BWP'] = '&#1041;&#1072;&#1090;&#1089;&#1074;&#1072;&#1085;&#1089;&#1082;&#1072;&#1103; &#1087;&#1091;&#1083;&#1072;';
+ 
+ I:L_localizedStrings_Text['BRL'] = 'BRAZILIAN REAL';
+-O:L_localizedStrings_Text['BRL'] = 'BRAZILIAN REAL';
++O:L_localizedStrings_Text['BRL'] = '&#1041;&#1088;&#1072;&#1079;&#1110;&#1083;&#1100;&#1089;&#1082;&#1110; &#1088;&#1101;&#1072;&#1083;';
+ 
+ I:L_localizedStrings_Text['GBP'] = 'BRITISH POUND';
+-O:L_localizedStrings_Text['GBP'] = 'BRITISH POUND';
++O:L_localizedStrings_Text['GBP'] = '&#1041;&#1088;&#1099;&#1090;&#1072;&#1085;&#1089;&#1082;&#1110; &#1092;&#1091;&#1085;&#1090;';
+ 
+ I:L_localizedStrings_Text['CAD'] = 'CANADIAN DOLLAR';
+-O:L_localizedStrings_Text['CAD'] = 'CANADIAN DOLLAR';
++O:L_localizedStrings_Text['CAD'] = '&#1050;&#1072;&#1085;&#1072;&#1076;&#1089;&#1082;&#1110; &#1076;&#1072;&#1083;&#1103;&#1088;';
+ 
+ I:L_localizedStrings_Text['CLP'] = 'CHILE PESO';
+-O:L_localizedStrings_Text['CLP'] = 'CHILE PESO';
++O:L_localizedStrings_Text['CLP'] = '&#1063;&#1099;&#1083;&#1110;&#1081;&#1089;&#1082;&#1072;&#1077; &#1087;&#1077;&#1089;&#1072;';
+ 
+ I:L_localizedStrings_Text['CNY'] = 'CHINESE YUAN';
+-O:L_localizedStrings_Text['CNY'] = 'CHINESE YUAN';
++O:L_localizedStrings_Text['CNY'] = '&#1050;&#1110;&#1090;&#1072;&#1081;&#1089;&#1082;&#1110; &#1102;&#1072;&#1085;&#1100;';
+ 
+ I:L_localizedStrings_Text['COP'] = 'COLOMBIAN PESO';
+-O:L_localizedStrings_Text['COP'] = 'COLOMBIAN PESO';
++O:L_localizedStrings_Text['COP'] = '&#1050;&#1072;&#1083;&#1091;&#1084;&#1073;&#1110;&#1081;&#1089;&#1082;&#1072;&#1077; &#1087;&#1077;&#1089;&#1072;';
+ 
+ I:L_localizedStrings_Text['CYP'] = 'CYPRIOT POUND';
+-O:L_localizedStrings_Text['CYP'] = 'CYPRIOT POUND';
++O:L_localizedStrings_Text['CYP'] = '&#1050;&#1110;&#1087;&#1088;&#1089;&#1082;&#1110; &#1092;&#1091;&#1085;&#1090;';
+ 
+ I:L_localizedStrings_Text['CZK'] = 'CZECH KORUNA';
+-O:L_localizedStrings_Text['CZK'] = 'CZECH KORUNA';
++O:L_localizedStrings_Text['CZK'] = '&#1063;&#1101;&#1096;&#1089;&#1082;&#1072;&#1103; &#1082;&#1088;&#1086;&#1085;&#1072;';
+ 
+ I:L_localizedStrings_Text['DKK'] = 'DANISH KRONE';
+-O:L_localizedStrings_Text['DKK'] = 'DANISH KRONE';
++O:L_localizedStrings_Text['DKK'] = '&#1044;&#1072;&#1094;&#1082;&#1072;&#1103; &#1082;&#1088;&#1086;&#1085;&#1072;';
+ 
+ I:L_localizedStrings_Text['ECS'] = 'ECUADOR SUCRE';
+-O:L_localizedStrings_Text['ECS'] = 'ECUADOR SUCRE';
++O:L_localizedStrings_Text['ECS'] = '&#1069;&#1082;&#1074;&#1072;&#1076;&#1086;&#1088;&#1089;&#1082;&#1072;&#1077; &#1089;&#1091;&#1082;&#1088;&#1101;';
+ 
+ I:L_localizedStrings_Text['AED'] = 'EMIRATI DIRHAM';
+-O:L_localizedStrings_Text['AED'] = 'EMIRATI DIRHAM';
++O:L_localizedStrings_Text['AED'] = '&#1069;&#1084;&#1110;&#1088;&#1072;&#1094;&#1082;&#1110; &#1076;&#1099;&#1088;&#1093;&#1072;&#1084;';
+ 
+ I:L_localizedStrings_Text['EUR'] = 'EURO';
+-O:L_localizedStrings_Text['EUR'] = 'EURO';
++O:L_localizedStrings_Text['EUR'] = '&#1045;&#1118;&#1088;&#1072;';
+ 
+ I:L_localizedStrings_Text['GHC'] = 'GHANAIAN CEDI';
+-O:L_localizedStrings_Text['GHC'] = 'GHANAIAN CEDI';
++O:L_localizedStrings_Text['GHC'] = '&#1043;&#1072;&#1085;&#1089;&#1082;&#1072;&#1077; &#1089;&#1101;&#1076;&#1079;&#1110;';
+ 
+ I:L_localizedStrings_Text['GTQ'] = 'GUATEMALAN QUETZAL';
+-O:L_localizedStrings_Text['GTQ'] = 'GUATEMALAN QUETZAL';
++O:L_localizedStrings_Text['GTQ'] = '&#1043;&#1074;&#1072;&#1090;&#1101;&#1084;&#1072;&#1083;&#1100;&#1089;&#1082;&#1110; &#1082;&#1101;&#1090;&#1094;&#1072;&#1083;&#1100;';
+ 
+ I:L_localizedStrings_Text['HKD'] = 'HONG KONG DOLLAR';
+-O:L_localizedStrings_Text['HKD'] = 'HONG KONG DOLLAR';
++O:L_localizedStrings_Text['HKD'] = '&#1043;&#1072;&#1085;&#1082;&#1086;&#1085;&#1089;&#1082;&#1110; &#1076;&#1072;&#1083;&#1103;&#1088;';
+ 
+ I:L_localizedStrings_Text['HUF'] = 'HUNGARIAN FORINT';
+-O:L_localizedStrings_Text['HUF'] = 'HUNGARIAN FORINT';
++O:L_localizedStrings_Text['HUF'] = '&#1042;&#1077;&#1085;&#1075;&#1077;&#1088;&#1089;&#1082;&#1110; &#1092;&#1086;&#1088;&#1099;&#1085;&#1090;';
+ 
+ I:L_localizedStrings_Text['INR'] = 'INDIAN RUPEE';
+-O:L_localizedStrings_Text['INR'] = 'INDIAN RUPEE';
++O:L_localizedStrings_Text['INR'] = '&#1030;&#1085;&#1076;&#1099;&#1081;&#1089;&#1082;&#1072;&#1103; &#1088;&#1091;&#1087;&#1110;&#1103;';
+ 
+ I:L_localizedStrings_Text['IDR'] = 'INDONESIA RUPIAH';
+-O:L_localizedStrings_Text['IDR'] = 'INDONESIA RUPIAH';
++O:L_localizedStrings_Text['IDR'] = '&#1030;&#1085;&#1076;&#1072;&#1085;&#1101;&#1079;&#1110;&#1081;&#1089;&#1082;&#1072;&#1103; &#1088;&#1091;&#1087;&#1110;&#1103;';
+ 
+ I:L_localizedStrings_Text['JPY'] = 'JAPANESE YEN';
+-O:L_localizedStrings_Text['JPY'] = 'JAPANESE YEN';
++O:L_localizedStrings_Text['JPY'] = '&#1071;&#1087;&#1086;&#1085;&#1089;&#1082;&#1072;&#1103; &#1077;&#1085;&#1072;';
+ 
+ I:L_localizedStrings_Text['JOD'] = 'JORDANIAN DINAR';
+-O:L_localizedStrings_Text['JOD'] = 'JORDANIAN DINAR';
++O:L_localizedStrings_Text['JOD'] = '&#1030;&#1103;&#1088;&#1076;&#1072;&#1085;&#1089;&#1082;&#1110; &#1076;&#1099;&#1085;&#1072;&#1088;';
+ 
+ I:L_localizedStrings_Text['KES'] = 'KENYAN SHILLING';
+-O:L_localizedStrings_Text['KES'] = 'KENYAN SHILLING';
++O:L_localizedStrings_Text['KES'] = '&#1050;&#1077;&#1085;&#1110;&#1081;&#1089;&#1082;&#1110; &#1096;&#1099;&#1083;&#1110;&#1085;&#1075;';
+ 
+ I:L_localizedStrings_Text['KWD'] = 'KUWAITI DINAR';
+-O:L_localizedStrings_Text['KWD'] = 'KUWAITI DINAR';
++O:L_localizedStrings_Text['KWD'] = '&#1050;&#1091;&#1074;&#1077;&#1081;&#1094;&#1082;&#1110; &#1076;&#1099;&#1085;&#1072;&#1088;';
+ 
+ I:L_localizedStrings_Text['MYR'] = 'MALAYSIAN RINGGIT';
+-O:L_localizedStrings_Text['MYR'] = 'MALAYSIAN RINGGIT';
++O:L_localizedStrings_Text['MYR'] = '&#1052;&#1072;&#1083;&#1072;&#1079;&#1110;&#1081;&#1089;&#1082;&#1110; &#1088;&#1099;&#1085;&#1075;&#1110;&#1090;';
+ 
+ I:L_localizedStrings_Text['MXN'] = 'MEXICAN PESO';
+-O:L_localizedStrings_Text['MXN'] = 'MEXICAN PESO';
++O:L_localizedStrings_Text['MXN'] = '&#1052;&#1077;&#1082;&#1089;&#1110;&#1082;&#1072;&#1085;&#1082;&#1072;&#1077; &#1087;&#1077;&#1089;&#1072;';
+ 
+ I:L_localizedStrings_Text['MAD'] = 'MOROCCO DIRHAM';
+-O:L_localizedStrings_Text['MAD'] = 'MOROCCO DIRHAM';
++O:L_localizedStrings_Text['MAD'] = '&#1052;&#1072;&#1088;&#1086;&#1082;&#1089;&#1082;&#1110; &#1076;&#1099;&#1088;&#1093;&#1072;&#1084;';
+ 
+ I:L_localizedStrings_Text['NAD'] = 'NAMIBIA DOLLAR';
+-O:L_localizedStrings_Text['NAD'] = 'NAMIBIA DOLLAR';
++O:L_localizedStrings_Text['NAD'] = '&#1053;&#1072;&#1084;&#1073;&#1110;&#1081;&#1089;&#1082;&#1110; &#1076;&#1072;&#1083;&#1103;&#1088;';
+ 
+ I:L_localizedStrings_Text['ILS'] = 'NEW ISRAEL SHEKEL';
+-O:L_localizedStrings_Text['ILS'] = 'NEW ISRAEL SHEKEL';
++O:L_localizedStrings_Text['ILS'] = '&#1053;&#1086;&#1074;&#1072;&#1110;&#1079;&#1088;&#1072;&#1110;&#1083;&#1100;&#1089;&#1082;&#1110; &#1096;&#1101;&#1082;&#1077;&#1083;&#1100;';
+ 
+ I:L_localizedStrings_Text['TRY'] = 'NEW TURKISH LIRA';
+-O:L_localizedStrings_Text['TRY'] = 'NEW TURKISH LIRA';
++O:L_localizedStrings_Text['TRY'] = '&#1053;&#1086;&#1074;&#1072;&#1090;&#1091;&#1088;&#1101;&#1094;&#1082;&#1072;&#1103; &#1083;&#1110;&#1088;&#1072;';
+ 
+ I:L_localizedStrings_Text['NZD'] = 'NEW ZEALAND DOLLAR';
+-O:L_localizedStrings_Text['NZD'] = 'NEW ZEALAND DOLLAR';
++O:L_localizedStrings_Text['NZD'] = '&#1053;&#1086;&#1074;&#1072;&#1079;&#1077;&#1083;&#1072;&#1085;&#1076;&#1089;&#1082;&#1110; &#1076;&#1072;&#1083;&#1103;&#1088;';
+ 
+ I:L_localizedStrings_Text['NOK'] = 'NORWEGIAN KRONE';
+-O:L_localizedStrings_Text['NOK'] = 'NORWEGIAN KRONE';
++O:L_localizedStrings_Text['NOK'] = '&#1053;&#1072;&#1088;&#1074;&#1077;&#1078;&#1089;&#1082;&#1072;&#1103; &#1082;&#1088;&#1086;&#1085;&#1072;';
+ 
+ I:L_localizedStrings_Text['OMR'] = 'OMANI RIAL';
+-O:L_localizedStrings_Text['OMR'] = 'OMANI RIAL';
++O:L_localizedStrings_Text['OMR'] = '&#1040;&#1084;&#1072;&#1085;&#1089;&#1082;&#1110; &#1088;&#1099;&#1103;&#1083;';
+ 
+ I:L_localizedStrings_Text['PKR'] = 'PAKISTANI RUPEE';
+-O:L_localizedStrings_Text['PKR'] = 'PAKISTANI RUPEE';
++O:L_localizedStrings_Text['PKR'] = '&#1055;&#1072;&#1082;&#1110;&#1089;&#1090;&#1072;&#1085;&#1089;&#1082;&#1072;&#1103; &#1088;&#1091;&#1087;&#1110;&#1103;';
+ 
+ I:L_localizedStrings_Text['PEN'] = 'PERUVIAN NEW SOL';
+-O:L_localizedStrings_Text['PEN'] = 'PERUVIAN NEW SOL';
++O:L_localizedStrings_Text['PEN'] = '&#1055;&#1077;&#1088;&#1091;&#1072;&#1085;&#1089;&#1082;&#1110; &#1085;&#1086;&#1074;&#1099; &#1089;&#1086;&#1083;&#1100;';
+ 
+ I:L_localizedStrings_Text['QAR'] = 'QATARI RIYAL';
+-O:L_localizedStrings_Text['QAR'] = 'QATARI RIYAL';
++O:L_localizedStrings_Text['QAR'] = '&#1050;&#1072;&#1090;&#1072;&#1088;&#1089;&#1082;&#1110; &#1088;&#1099;&#1103;&#1083;';
+ 
+ I:L_localizedStrings_Text['RUB'] = 'RUSSIAN RUBLE';
+-O:L_localizedStrings_Text['RUB'] = 'RUSSIAN RUBLE';
++O:L_localizedStrings_Text['RUB'] = '&#1056;&#1072;&#1089;&#1110;&#1081;&#1089;&#1082;&#1110; &#1088;&#1091;&#1073;&#1077;&#1083;&#1100;';
+ 
+ I:L_localizedStrings_Text['SAR'] = 'SAUDI RIYAL';
+-O:L_localizedStrings_Text['SAR'] = 'SAUDI RIYAL';
++O:L_localizedStrings_Text['SAR'] = '&#1057;&#1072;&#1091;&#1076;&#1072;&#1118;&#1089;&#1082;&#1110; &#1088;&#1099;&#1103;&#1083;';
+ 
+-I:L_localizedStrings_Text['SAR'] = 'SAUDI RIYAL';
+-O:L_localizedStrings_Text['SAR'] = 'SAUDI RIYAL';
+-
+ I:L_localizedStrings_Text['ZAR'] = 'SOUTH AFRICAN RAND';
+-O:L_localizedStrings_Text['ZAR'] = 'SOUTH AFRICAN RAND';
++O:L_localizedStrings_Text['ZAR'] = '&#1055;&#1072;&#1118;&#1076;&#1085;&#1105;&#1074;&#1072;&#1072;&#1092;&#1088;&#1099;&#1082;&#1072;&#1085;&#1089;&#1082;&#1110; &#1088;&#1072;&#1085;&#1076;';
+ 
+ I:L_localizedStrings_Text['KRW'] = 'KOREAN WON';
+-O:L_localizedStrings_Text['KRW'] = 'KOREAN WON';
++O:L_localizedStrings_Text['KRW'] = '&#1050;&#1072;&#1088;&#1101;&#1081;&#1089;&#1082;&#1072;&#1103; &#1074;&#1086;&#1085;&#1072;';
+ 
+ I:L_localizedStrings_Text['SEK'] = 'SWEDISH KRONA';
+-O:L_localizedStrings_Text['SEK'] = 'SWEDISH KRONA';
++O:L_localizedStrings_Text['SEK'] = '&#1064;&#1074;&#1077;&#1076;&#1089;&#1082;&#1072;&#1103; &#1082;&#1088;&#1086;&#1085;&#1072;';
+ 
+ I:L_localizedStrings_Text['CHF'] = 'SWISS FRANC';
+-O:L_localizedStrings_Text['CHF'] = 'SWISS FRANC';
++O:L_localizedStrings_Text['CHF'] = '&#1064;&#1074;&#1077;&#1081;&#1094;&#1072;&#1088;&#1089;&#1082;&#1110; &#1092;&#1088;&#1072;&#1085;&#1082;';
+ 
+ I:L_localizedStrings_Text['TWD'] = 'TAIWAN DOLLAR';
+-O:L_localizedStrings_Text['TWD'] = 'TAIWAN DOLLAR';
++O:L_localizedStrings_Text['TWD'] = '&#1058;&#1072;&#1081;&#1074;&#1072;&#1085;&#1100;&#1089;&#1082;&#1110; &#1076;&#1072;&#1083;&#1103;&#1088;';
+ 
+ I:L_localizedStrings_Text['TZS'] = 'TANZANIAN SHILLING';
+-O:L_localizedStrings_Text['TZS'] = 'TANZANIAN SHILLING';
++O:L_localizedStrings_Text['TZS'] = '&#1058;&#1072;&#1085;&#1079;&#1072;&#1085;&#1110;&#1081;&#1089;&#1082;&#1110; &#1096;&#1099;&#1083;&#1110;&#1085;&#1075;';
+ 
+ I:L_localizedStrings_Text['THB'] = 'THAI BAHT';
+-O:L_localizedStrings_Text['THB'] = 'THAI BAHT';
++O:L_localizedStrings_Text['THB'] = '&#1058;&#1072;&#1081;&#1089;&#1082;&#1110; &#1073;&#1072;&#1090;';
+ 
+ I:L_localizedStrings_Text['TND'] = 'TUNISIAN DINAR';
+-O:L_localizedStrings_Text['TND'] = 'TUNISIAN DINAR';
++O:L_localizedStrings_Text['TND'] = '&#1058;&#1091;&#1085;&#1110;&#1089;&#1082;&#1110; &#1076;&#1099;&#1085;&#1072;&#1088;';
+ 
+ I:L_localizedStrings_Text['USD'] = 'US DOLLAR';
+-O:L_localizedStrings_Text['USD'] = 'US DOLLAR';
++O:L_localizedStrings_Text['USD'] = '&#1047;&#1064;&#1040; &#1076;&#1072;&#1083;&#1103;&#1088;';
+ 
+ I:L_localizedStrings_Text['VND'] = 'VIETNAMESE DONG';
+-O:L_localizedStrings_Text['VND'] = 'VIETNAMESE DONG';
++O:L_localizedStrings_Text['VND'] = '&#1042;'&#1077;&#1090;&#1085;&#1072;&#1084;&#1089;&#1082;&#1110; &#1076;&#1086;&#1085;&#1075;';
+ 
+ I:L_localizedStrings_Text['ZWD'] = 'ZIMBABWEAN DOLLAR';
+-O:L_localizedStrings_Text['ZWD'] = 'ZIMBABWEAN DOLLAR';
++O:L_localizedStrings_Text['ZWD'] = '&#1047;&#1110;&#1084;&#1073;&#1072;&#1073;&#1074;&#1110;&#1081;&#1089;&#1082;&#1110; &#1076;&#1072;&#1083;&#1103;&#1088;';
+ 
+-I:L_localizedStrings_Text['MYR'] = 'MALAYSIAN RINGGIT';
+-O:L_localizedStrings_Text['MYR'] = 'MALAYSIAN RINGGIT';
++Program Files/Windows Sidebar/Gadgets/PicturePuzzle.Gadget/js/picturePuzzle_x32sp0.js
+ 
+-Program Files/Windows Sidebar/Gadgets/PicturePuzzle.Gadget/js/picturePuzzle.js
+-
+ I:var L_PAUSE_TEXT = &quot;Pause timer&quot;;
+ O:var L_PAUSE_TEXT = &quot;&#1055;&#1088;&#1099;&#1087;&#1099;&#1085;&#1110;&#1094;&#1100; &#1090;&#1072;&#1081;&#1084;&#1077;&#1088;&quot;;
+ 
+@@ -248,7 +242,7 @@
+ I:var L_YOU_WIN_TEXT = &quot;You win !!&quot;;
+ O:var L_YOU_WIN_TEXT = &quot;&#1042;&#1099; &#1074;&#1099;&#1081;&#1075;&#1088;&#1072;&#1083;&#1110;!&quot;;
+ 
+-Program Files/Windows Sidebar/Gadgets/PicturePuzzle.Gadget/js/settings.js
++Program Files/Windows Sidebar/Gadgets/PicturePuzzle.Gadget/js/settings_x32sp0.js
+ 
+ I:var L_PREVIOUS_Text = &quot;Previous&quot;;
+ O:var L_PREVIOUS_Text = &quot;&#1055;&#1072;&#1087;&#1103;&#1088;&#1101;&#1076;&#1085;&#1110;&quot;;
+@@ -256,7 +250,7 @@
+ I:var L_NEXT_Text = &quot;Next&quot;;
+ O:var L_NEXT_Text = &quot;&#1053;&#1072;&#1089;&#1090;&#1091;&#1087;&#1085;&#1099;&quot;;
+ 
+-Program Files/Windows Sidebar/Gadgets/RSSFeeds.Gadget/js/RSSFeeds.js
++Program Files/Windows Sidebar/Gadgets/RSSFeeds.Gadget/js/RSSFeeds_x32sp0.js
+ 
+ I:var L_SI_ERRORMESSAGE	= &quot;Selected settings no longer valid.&quot;;
+ O:var L_SI_ERRORMESSAGE	= &quot;&#1040;&#1073;&#1088;&#1072;&#1085;&#1099;&#1103; &#1085;&#1072;&#1083;&#1072;&#1076;&#1099; &#1073;&#1086;&#1083;&#1100;&#1096; &#1085;&#1077; &#1076;&#1072;&#1087;&#1091;&#1096;&#1095;&#1072;&#1083;&#1100;&#1085;&#1099;&#1103;.&quot;;
+@@ -309,7 +303,7 @@
+ I:L_ARTICLES_TEXT[3]	= &quot;100 headlines&quot;;
+ O:L_ARTICLES_TEXT[3]	= &quot;100 &#1079;&#1072;&#1075;&#1072;&#1083;&#1086;&#1118;&#1082;&#1072;&#1118;&quot;;
+ 
+-Program Files/Windows Sidebar/Gadgets/SlideShow.Gadget/js/slideShow.js
++Program Files/Windows Sidebar/Gadgets/SlideShow.Gadget/js/slideShow_x32sp0.js
+ 
+ I:var L_NONE_TEXT	= &quot;None&quot;;
+ O:var L_NONE_TEXT	= &quot;&#1085;&#1103;&#1084;&#1072;&quot;;
+@@ -389,145 +383,145 @@
+ I:var L_CHOOSEFOLDER_TEXT	= &quot;Show items from this folder in Slide Show:&quot;;
+ O:var L_CHOOSEFOLDER_TEXT	= &quot;&#1055;&#1072;&#1082;&#1072;&#1079;&#1074;&#1072;&#1094;&#1100; &#1101;&#1083;&#1077;&#1084;&#1077;&#1085;&#1090;&#1099; &#1079; &#1075;&#1101;&#1090;&#1072;&#1075;&#1072; &#1082;&#1072;&#1090;&#1072;&#1083;&#1086;&#1075;&#1091; &#1089;&#1083;&#1072;&#1081;&#1076;&#1072;&#1084;&#1110;:&quot;;
+ 
+-Program Files/Windows Sidebar/Gadgets/Weather.Gadget/js/localizedStrings.js
++Program Files/Windows Sidebar/Gadgets/Weather.Gadget/js/localizedStrings_x32sp0.js
+ 
+ I:L_localizedStrings_Text['DefaultCity'] = 'Redmond, WA';
+-O:L_localizedStrings_Text['DefaultCity'] = 'Redmond, WA';
++O:L_localizedStrings_Text['DefaultCity'] = '&#1052;&#1110;&#1085;&#1089;&#1082;, &#1041;&#1077;&#1083;&#1072;&#1088;&#1091;&#1089;&#1100;';
+ 
+ I:L_localizedStrings_Text['DefaultUnit'] = 'Fahrenheit';
+-O:L_localizedStrings_Text['DefaultUnit'] = 'Fahrenheit';
++O:L_localizedStrings_Text['DefaultUnit'] = 'Celsius';
+ 
+ I:L_localizedStrings_Text['GettingData'] = 'Getting data...';
+-O:L_localizedStrings_Text['GettingData'] = 'Getting data...';
++O:L_localizedStrings_Text['GettingData'] = '&#1040;&#1090;&#1088;&#1099;&#1084;&#1072;&#1085;&#1085;&#1077; &#1079;&#1074;&#1077;&#1089;&#1090;&#1072;&#1082;...';
+ 
+ I:L_localizedStrings_Text['LocationDontExist'] = 'Location not found';
+-O:L_localizedStrings_Text['LocationDontExist'] = 'Location not found';
++O:L_localizedStrings_Text['LocationDontExist'] = '&#1056;&#1072;&#1079;&#1084;&#1103;&#1096;&#1095;&#1101;&#1085;&#1085;&#1077; &#1085;&#1077; &#1079;&#1085;&#1086;&#1081;&#1076;&#1079;&#1077;&#1085;&#1072;';
+ 
+ I:L_localizedStrings_Text['Searching'] = 'Searching...';
+-O:L_localizedStrings_Text['Searching'] = 'Searching...';
++O:L_localizedStrings_Text['Searching'] = '&#1064;&#1091;&#1082;&#1072;&#1085;&#1085;&#1077;...';
+ 
+ I:L_localizedStrings_Text['NoSearchQuery'] = 'No search query specified.';
+-O:L_localizedStrings_Text['NoSearchQuery'] = 'No search query specified.';
++O:L_localizedStrings_Text['NoSearchQuery'] = '&#1053;&#1103;&#1084;&#1072; &#1072;&#1079;&#1085;&#1072;&#1095;&#1072;&#1085;&#1099;&#1093; &#1079;&#1072;&#1087;&#1099;&#1090;&#1072;&#1118; &#1087;&#1086;&#1096;&#1091;&#1082;&#1091;.';
+ 
+ I:L_localizedStrings_Text['NoResults'] = 'No results returned.';
+-O:L_localizedStrings_Text['NoResults'] = 'No results returned.';
++O:L_localizedStrings_Text['NoResults'] = '&#1053;&#1103;&#1084;&#1072; &#1074;&#1077;&#1088;&#1085;&#1091;&#1090;&#1099;&#1093; &#1074;&#1099;&#1085;&#1110;&#1082;&#1072;&#1118;.';
+ 
+ I:L_localizedStrings_Text['Night-New'] = 'New Moon';
+-O:L_localizedStrings_Text['Night-New'] = 'New Moon';
++O:L_localizedStrings_Text['Night-New'] = '&#1042;&#1077;&#1090;&#1072;&#1093;';
+ 
+ I:L_localizedStrings_Text['Night-Waxing-Crescent'] = 'Waxing Crescent Moon';
+-O:L_localizedStrings_Text['Night-Waxing-Crescent'] = 'Waxing Crescent Moon';
++O:L_localizedStrings_Text['Night-Waxing-Crescent'] = '&#1047; &#1074;&#1077;&#1090;&#1072;&#1093;&#1072; &#1085;&#1072; &#1084;&#1072;&#1083;&#1072;&#1076;&#1079;&#1110;&#1082;';
+ 
+ I:L_localizedStrings_Text['Night-First-Quarter'] = 'First Quarter Moon';
+-O:L_localizedStrings_Text['Night-First-Quarter'] = 'First Quarter Moon';
++O:L_localizedStrings_Text['Night-First-Quarter'] = '&#1052;&#1072;&#1083;&#1072;&#1076;&#1079;&#1110;&#1082;';
+ 
+ I:L_localizedStrings_Text['Night-Waxing-Gibbous'] = 'Waxing Gibbous Moon';
+-O:L_localizedStrings_Text['Night-Waxing-Gibbous'] = 'Waxing Gibbous Moon';
++O:L_localizedStrings_Text['Night-Waxing-Gibbous'] = '&#1047; &#1084;&#1072;&#1083;&#1072;&#1076;&#1079;&#1110;&#1082;&#1072; &#1085;&#1072; &#1087;&#1086;&#1118;&#1085;&#1102;';
+ 
+ I:L_localizedStrings_Text['Night-Full'] = 'Full Moon';
+-O:L_localizedStrings_Text['Night-Full'] = 'Full Moon';
++O:L_localizedStrings_Text['Night-Full'] = '&#1055;&#1086;&#1118;&#1085;&#1103;';
+ 
+ I:L_localizedStrings_Text['Night-Waning-Gibbous'] = 'Waning Gibbous Moon';
+-O:L_localizedStrings_Text['Night-Waning-Gibbous'] = 'Waning Gibbous Moon';
++O:L_localizedStrings_Text['Night-Waning-Gibbous'] = '&#1047; &#1087;&#1086;&#1118;&#1085;&#1110; &#1085;&#1072; &#1089;&#1093;&#1086;&#1076;';
+ 
+ I:L_localizedStrings_Text['Night-Last-Quarter'] = 'Last Quarter Moon';
+-O:L_localizedStrings_Text['Night-Last-Quarter'] = 'Last Quarter Moon';
++O:L_localizedStrings_Text['Night-Last-Quarter'] = '&#1057;&#1093;&#1086;&#1076;';
+ 
+ I:L_localizedStrings_Text['Night-Waning-Crescent'] = 'Waning Crescent Moon';
+-O:L_localizedStrings_Text['Night-Waning-Crescent'] = 'Waning Crescent Moon';
++O:L_localizedStrings_Text['Night-Waning-Crescent'] = '&#1057;&#1072; &#1089;&#1093;&#1086;&#1076;&#1091; &#1085;&#1072; &#1074;&#1077;&#1090;&#1072;&#1093;';
+ 
+ I:L_localizedStrings_Text['SensorIconRed'] = 'Cannot get present location';
+-O:L_localizedStrings_Text['SensorIconRed'] = 'Cannot get present location';
++O:L_localizedStrings_Text['SensorIconRed'] = '&#1053;&#1077;&#1084;&#1072;&#1075;&#1095;&#1099;&#1084;&#1072; &#1072;&#1090;&#1088;&#1099;&#1084;&#1072;&#1094;&#1100; &#1091;&#1103;&#1087;&#1077;&#1088;&#1072;&#1096;&#1085;&#1103;&#1077; &#1088;&#1072;&#1079;&#1084;&#1103;&#1096;&#1095;&#1101;&#1085;&#1085;&#1077;';
+ 
+ I:L_localizedStrings_Text['SensorIconGreen'] = 'Your location is detected';
+-O:L_localizedStrings_Text['SensorIconGreen'] = 'Your location is detected';
++O:L_localizedStrings_Text['SensorIconGreen'] = '&#1042;&#1072;&#1096;&#1072;&#1077; &#1088;&#1072;&#1079;&#1084;&#1103;&#1096;&#1095;&#1101;&#1085;&#1085;&#1077; &#1074;&#1099;&#1103;&#1118;&#1083;&#1077;&#1085;&#1072;&#1077;';
+ 
+ I:L_localizedStrings_Text['SensorIconGray'] = 'A location sensor is available';
+-O:L_localizedStrings_Text['SensorIconGray'] = 'A location sensor is available';
++O:L_localizedStrings_Text['SensorIconGray'] = '&#1044;&#1072;&#1089;&#1090;&#1091;&#1087;&#1085;&#1099; &#1076;&#1072;&#1090;&#1095;&#1099;&#1082; &#1088;&#1072;&#1079;&#1084;&#1103;&#1096;&#1095;&#1101;&#1085;&#1085;&#1103;';
+ 
+ I:L_localizedStrings_Text['SensorIconNotConnected'] = 'No location sensors connected';
+-O:L_localizedStrings_Text['SensorIconNotConnected'] = 'No location sensors connected';
++O:L_localizedStrings_Text['SensorIconNotConnected'] = '&#1053;&#1103;&#1084;&#1072; &#1079;&#1083;&#1091;&#1095;&#1072;&#1085;&#1099;&#1093; &#1076;&#1072;&#1090;&#1095;&#1099;&#1082;&#1072;&#1118; &#1088;&#1072;&#1079;&#1084;&#1103;&#1096;&#1095;&#1101;&#1085;&#1085;&#1103;';
+ 
+ I:L_localizedStrings_Text['GettingLocation'] = 'Getting current location...';
+-O:L_localizedStrings_Text['GettingLocation'] = 'Getting current location...';
++O:L_localizedStrings_Text['GettingLocation'] = '&#1040;&#1090;&#1088;&#1099;&#1084;&#1072;&#1085;&#1085;&#1077; &#1076;&#1079;&#1077;&#1081;&#1085;&#1072;&#1075;&#1072; &#1088;&#1072;&#1079;&#1084;&#1103;&#1096;&#1095;&#1101;&#1085;&#1085;&#1103;...';
+ 
+ I:L_localizedStrings_Text['DisplayTemperatureIn'] = 'Show temperature in:';
+-O:L_localizedStrings_Text['DisplayTemperatureIn'] = 'Show temperature in:';
++O:L_localizedStrings_Text['DisplayTemperatureIn'] = '&#1055;&#1072;&#1082;&#1072;&#1079;&#1074;&#1072;&#1094;&#1100; &#1090;&#1101;&#1084;&#1087;&#1077;&#1088;&#1072;&#1090;&#1091;&#1088;&#1091; &#1118;:';
+ 
+ I:L_localizedStrings_Text['Fahrenheit'] = 'Fahrenheit';
+-O:L_localizedStrings_Text['Fahrenheit'] = 'Fahrenheit';
++O:L_localizedStrings_Text['Fahrenheit'] = '&#1092;&#1072;&#1088;&#1101;&#1085;&#1075;&#1077;&#1081;&#1090;&#1072;&#1093;';
+ 
+ I:L_localizedStrings_Text['Celsius'] = 'Celsius';
+-O:L_localizedStrings_Text['Celsius'] = 'Celsius';
++O:L_localizedStrings_Text['Celsius'] = '&#1094;&#1101;&#1083;&#1100;&#1089;&#1110;&#1103;&#1093;';
+ 
+ I:L_localizedStrings_Text['Search'] = 'Search';
+-O:L_localizedStrings_Text['Search'] = 'Search';
++O:L_localizedStrings_Text['Search'] = '&#1064;&#1091;&#1082;&#1072;&#1094;&#1100;';
+ 
+ I:L_localizedStrings_Text['CurrentCity'] = 'Current location:';
+-O:L_localizedStrings_Text['CurrentCity'] = 'Current location:';
++O:L_localizedStrings_Text['CurrentCity'] = '&#1044;&#1079;&#1077;&#1081;&#1085;&#1072;&#1077; &#1088;&#1072;&#1079;&#1084;&#1103;&#1096;&#1095;&#1101;&#1085;&#1085;&#1077;:';
+ 
+ I:L_localizedStrings_Text['EnterACityName'] = 'Search for location';
+-O:L_localizedStrings_Text['EnterACityName'] = 'Search for location';
++O:L_localizedStrings_Text['EnterACityName'] = '&#1055;&#1086;&#1096;&#1091;&#1082; &#1088;&#1072;&#1079;&#1084;&#1103;&#1096;&#1095;&#1101;&#1085;&#1085;&#1103;';
+ 
+ I:L_localizedStrings_Text['SearchNearbyDisambiguation'] = 'closest location for ';
+-O:L_localizedStrings_Text['SearchNearbyDisambiguation'] = 'closest location for ';
++O:L_localizedStrings_Text['SearchNearbyDisambiguation'] = '&#1085;&#1072;&#1081;&#1073;&#1083;&#1110;&#1078;&#1101;&#1081;&#1096;&#1072;&#1077; &#1088;&#1072;&#1079;&#1084;&#1103;&#1096;&#1095;&#1101;&#1085;&#1085;&#1077; &#1076;&#1083;&#1103; ';
+ 
+ I:L_localizedStrings_Text['SearchFuzzyDisambiguation'] = 'closest location:';
+-O:L_localizedStrings_Text['SearchFuzzyDisambiguation'] = 'closest location:';
++O:L_localizedStrings_Text['SearchFuzzyDisambiguation'] = '&#1085;&#1072;&#1081;&#1073;&#1083;&#1110;&#1078;&#1101;&#1081;&#1096;&#1072;&#1077; &#1088;&#1072;&#1079;&#1084;&#1103;&#1096;&#1095;&#1101;&#1085;&#1085;&#1077;:';
+ 
+ I:L_localizedStrings_Text['SearchedLocationFoundClickOK'] = '&quot;%1&quot; found.\nPress OK to Apply.';
+-O:L_localizedStrings_Text['SearchedLocationFoundClickOK'] = '&quot;%1&quot; found.\nPress OK to Apply.';
++O:L_localizedStrings_Text['SearchedLocationFoundClickOK'] = '&quot;%1&quot; &#1079;&#1085;&#1086;&#1081;&#1076;&#1079;&#1077;&#1085;&#1072;.\n&#1053;&#1072;&#1094;&#1110;&#1089;&#1085;&#1110;&#1094;&#1077; &quot;&#1044;&#1086;&#1073;&#1088;&#1072;&quot;, &#1082;&#1072;&#1073; &#1091;&#1078;&#1099;&#1094;&#1100;.';
+ 
+ I:L_localizedStrings_Text['SelectLocation'] = 'Select current location';
+-O:L_localizedStrings_Text['SelectLocation'] = 'Select current location';
++O:L_localizedStrings_Text['SelectLocation'] = '&#1040;&#1073;&#1103;&#1088;&#1099;&#1094;&#1077; &#1076;&#1079;&#1077;&#1081;&#1085;&#1072;&#1077; &#1088;&#1072;&#1079;&#1084;&#1103;&#1096;&#1095;&#1101;&#1085;&#1085;&#1077;';
+ 
+ I:L_localizedStrings_Text['Automatically'] = 'Find location automatically';
+-O:L_localizedStrings_Text['Automatically'] = 'Find location automatically';
++O:L_localizedStrings_Text['Automatically'] = '&#1047;&#1085;&#1072;&#1093;&#1086;&#1076;&#1079;&#1110;&#1094;&#1100; &#1088;&#1072;&#1079;&#1084;&#1103;&#1096;&#1095;&#1101;&#1085;&#1085;&#1077; &#1072;&#1118;&#1090;&#1072;&#1084;&#1072;&#1090;&#1099;&#1095;&#1085;&#1072;';
+ 
+ I:L_localizedStrings_Text['Refresh'] = 'Refresh';
+-O:L_localizedStrings_Text['Refresh'] = 'Refresh';
++O:L_localizedStrings_Text['Refresh'] = '&#1040;&#1073;&#1085;&#1072;&#1074;&#1110;&#1094;&#1100;';
+ 
+ I:L_localizedStrings_Text['HelperArticleLinkText'] = 'How does Windows find my location automatically?';
+-O:L_localizedStrings_Text['HelperArticleLinkText'] = 'How does Windows find my location automatically?';
++O:L_localizedStrings_Text['HelperArticleLinkText'] = '&#1071;&#1082; Windows &#1072;&#1118;&#1090;&#1072;&#1084;&#1072;&#1090;&#1099;&#1095;&#1085;&#1072; &#1079;&#1085;&#1072;&#1093;&#1086;&#1076;&#1079;&#1110;&#1094;&#1100; &#1084;&#1072;&#1105; &#1088;&#1072;&#1079;&#1084;&#1103;&#1096;&#1095;&#1101;&#1085;&#1085;&#1077;?';
+ 
+ I:L_localizedStrings_Text['EC1'] = 'No location sensor is available';
+-O:L_localizedStrings_Text['EC1'] = 'No location sensor is available';
++O:L_localizedStrings_Text['EC1'] = '&#1053;&#1103;&#1084;&#1072; &#1076;&#1072;&#1089;&#1090;&#1091;&#1087;&#1085;&#1099;&#1093; &#1076;&#1072;&#1090;&#1095;&#1099;&#1082;&#1072;&#1118; &#1088;&#1072;&#1079;&#1084;&#1103;&#1096;&#1095;&#1101;&#1085;&#1085;&#1103;';
+ 
+ I:L_localizedStrings_Text['EC4'] = 'No weather information for current location';
+-O:L_localizedStrings_Text['EC4'] = 'No weather information for current location';
++O:L_localizedStrings_Text['EC4'] = '&#1053;&#1103;&#1084;&#1072; &#1110;&#1085;&#1092;&#1072;&#1088;&#1084;&#1072;&#1094;&#1099;&#1110; &#1072;&#1073; &#1085;&#1072;&#1076;&#1074;&#1086;&#1088;'&#1110; &#1076;&#1083;&#1103; &#1076;&#1079;&#1077;&#1081;&#1085;&#1072;&#1075;&#1072; &#1088;&#1072;&#1079;&#1084;&#1103;&#1096;&#1095;&#1101;&#1085;&#1085;&#1103;';
+ 
+ I:L_localizedStrings_Text['min'] = 'min';
+-O:L_localizedStrings_Text['min'] = 'min';
++O:L_localizedStrings_Text['min'] = '&#1093;&#1074;&#1110;&#1083;&#1110;&#1085;';
+ 
+ I:L_localizedStrings_Text['hr'] = 'hr';
+-O:L_localizedStrings_Text['hr'] = 'hr';
++O:L_localizedStrings_Text['hr'] = '&#1075;&#1072;&#1076;&#1079;&#1110;&#1085;&#1091;';
+ 
+ I:L_localizedStrings_Text['hrs'] = 'hrs';
+-O:L_localizedStrings_Text['hrs'] = 'hrs';
++O:L_localizedStrings_Text['hrs'] = '&#1075;&#1072;&#1076;&#1079;&#1110;&#1085;';
+ 
+ I:L_localizedStrings_Text['day'] = 'day';
+-O:L_localizedStrings_Text['day'] = 'day';
++O:L_localizedStrings_Text['day'] = '&#1076;&#1079;&#1077;&#1085;&#1100;';
+ 
+ I:L_localizedStrings_Text['days'] = 'days';
+-O:L_localizedStrings_Text['days'] = 'days';
++O:L_localizedStrings_Text['days'] = '&#1076;&#1079;&#1105;&#1085;';
+ 
+ I:L_localizedStrings_Text['ageStampMessage'] = '%1 %2 ago';
+-O:L_localizedStrings_Text['ageStampMessage'] = '%1 %2 ago';
++O:L_localizedStrings_Text['ageStampMessage'] = '%1 %2 &#1090;&#1072;&#1084;&#1091;';
+ 
+ I:L_localizedStrings_Text['ageStampMessageForecastedData'] = 'Forecasted %1 %2 ago';
+-O:L_localizedStrings_Text['ageStampMessageForecastedData'] = 'Forecasted %1 %2 ago';
++O:L_localizedStrings_Text['ageStampMessageForecastedData'] = '&#1057;&#1087;&#1088;&#1072;&#1075;&#1085;&#1072;&#1079;&#1072;&#1074;&#1072;&#1085;&#1072; %1 %2 &#1090;&#1072;&#1084;&#1091;';
+ 
+ I:L_localizedStrings_Text['DataExpired'] = 'Data expired';
+-O:L_localizedStrings_Text['DataExpired'] = 'Data expired';
++O:L_localizedStrings_Text['DataExpired'] = '&#1058;&#1101;&#1088;&#1084;&#1110;&#1085; &#1076;&#1079;&#1077;&#1103;&#1085;&#1085;&#1103; &#1079;&#1074;&#1077;&#1089;&#1090;&#1072;&#1082; &#1084;&#1110;&#1085;&#1091;&#1118;';
+ 
+ I:L_localizedStrings_Text['Forecasted'] = 'Forecasted';
+-O:L_localizedStrings_Text['Forecasted'] = 'Forecasted';
++O:L_localizedStrings_Text['Forecasted'] = '&#1057;&#1087;&#1088;&#1072;&#1075;&#1085;&#1072;&#1079;&#1072;&#1074;&#1072;&#1085;&#1072;';
+ 
+ I:L_localizedStrings_Text['ConnectToInternetToGetData'] = 'Connect to the internet for fresh data';
+-O:L_localizedStrings_Text['ConnectToInternetToGetData'] = 'Connect to the internet for fresh data';
++O:L_localizedStrings_Text['ConnectToInternetToGetData'] = '&#1047;&#1083;&#1091;&#1095;&#1099;&#1094;&#1094;&#1072; &#1079; &#1089;&#1077;&#1094;&#1110;&#1074;&#1072;&#1084;, &#1082;&#1072;&#1073; &#1072;&#1089;&#1074;&#1103;&#1078;&#1099;&#1094;&#1100; &#1110;&#1085;&#1092;&#1072;&#1088;&#1084;&#1072;&#1094;&#1099;&#1102;';
+ 
+ I:L_localizedStrings_Text['ServiceNotAvailable'] = 'Cannot connect to service';
+-O:L_localizedStrings_Text['ServiceNotAvailable'] = 'Cannot connect to service';
++O:L_localizedStrings_Text['ServiceNotAvailable'] = '&#1053;&#1077;&#1084;&#1072;&#1075;&#1095;&#1099;&#1084;&#1072; &#1079;&#1083;&#1091;&#1095;&#1099;&#1094;&#1100; &#1089;&#1072; &#1089;&#1083;&#1091;&#1078;&#1073;&#1072;&#1081;';
+ 
+ I:L_localizedStrings_Text['ServiceNotAvailableInYourArea'] = 'Service not available in your region.';
+-O:L_localizedStrings_Text['ServiceNotAvailableInYourArea'] = 'Service not available in your region.';
++O:L_localizedStrings_Text['ServiceNotAvailableInYourArea'] = '&#1057;&#1083;&#1091;&#1078;&#1073;&#1072; &#1085;&#1077;&#1076;&#1072;&#1089;&#1090;&#1091;&#1087;&#1085;&#1072;&#1103; &#1118; &#1074;&#1072;&#1096;&#1099;&#1084; &#1088;&#1101;&#1075;&#1110;&#1105;&#1085;&#1077;.';
+
+Modified: Windows7.settings/filters.xml
+===================================================================
+--- Windows7.settings/filters.xml	2011-03-23 19:00:32 UTC (rev 223)
++++ Windows7.settings/filters.xml	2011-03-23 21:29:50 UTC (rev 224)
+@@ -1,6 +1,6 @@
+ &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;yes&quot;?&gt;
+ &lt;filters&gt;
+-    &lt;filter enabled=&quot;false&quot; className=&quot;org.omegat.filters2.hhc.HHCFilter2&quot;&gt;
++    &lt;filter enabled=&quot;true&quot; className=&quot;org.omegat.filters2.hhc.HHCFilter2&quot;&gt;
+         &lt;files targetFilenamePattern=&quot;${filename}&quot; sourceFilenameMask=&quot;*.hhc&quot;/&gt;
+         &lt;files targetFilenamePattern=&quot;${filename}&quot; sourceFilenameMask=&quot;*.hhk&quot;/&gt;
+     &lt;/filter&gt;
+@@ -29,7 +29,7 @@
+         &lt;files targetFilenamePattern=&quot;${filename}&quot; sourceFilenameMask=&quot;*.xlf&quot;/&gt;
+         &lt;files targetFilenamePattern=&quot;${filename}&quot; sourceFilenameMask=&quot;*.sdlxliff&quot;/&gt;
+     &lt;/filter&gt;
+-    &lt;filter enabled=&quot;false&quot; className=&quot;org.omegat.filters2.text.ini.INIFilter&quot;&gt;
++    &lt;filter enabled=&quot;true&quot; className=&quot;org.omegat.filters2.text.ini.INIFilter&quot;&gt;
+         &lt;files targetFilenamePattern=&quot;${filename}&quot; sourceFilenameMask=&quot;*.ini&quot;/&gt;
+         &lt;files targetFilenamePattern=&quot;${filename}&quot; sourceFilenameMask=&quot;*.lng&quot;/&gt;
+     &lt;/filter&gt;
+@@ -62,7 +62,7 @@
+     &lt;filter enabled=&quot;false&quot; className=&quot;org.omegat.filters2.mozdtd.MozillaDTDFilter&quot;&gt;
+         &lt;files targetFilenamePattern=&quot;${filename}&quot; sourceFilenameMask=&quot;*.dtd&quot;/&gt;
+     &lt;/filter&gt;
+-    &lt;filter enabled=&quot;false&quot; className=&quot;org.omegat.filters2.text.bundles.ResourceBundleFilter&quot;&gt;
++    &lt;filter enabled=&quot;true&quot; className=&quot;org.omegat.filters2.text.bundles.ResourceBundleFilter&quot;&gt;
+         &lt;files targetFilenamePattern=&quot;${nameOnly}_${targetLocale}.${extension}&quot; sourceFilenameMask=&quot;*.properties&quot;/&gt;
+     &lt;/filter&gt;
+     &lt;filter enabled=&quot;false&quot; className=&quot;org.omegat.filters2.latex.LatexFilter&quot;&gt;
+
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000141.html">[I18n-bel-svn] r223 - in Android: glossary omegat
+</A></li>
+	<LI>Next message: <A HREF="000143.html">[I18n-bel-svn] r225 - Windows7/source/Windows/System32/en-US
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#142">[ date ]</a>
+              <a href="thread.html#142">[ thread ]</a>
+              <a href="subject.html#142">[ subject ]</a>
+              <a href="author.html#142">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/i18n-bel-svn">More information about the I18n-bel-svn
+mailing list</a><br>
+</body></html>

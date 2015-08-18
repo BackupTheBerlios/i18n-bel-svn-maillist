@@ -1,0 +1,273 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [I18n-bel-svn] r109 - in Windows7/source/x32/Program Files/Windows	Sidebar/Gadgets: . Clock.Gadget/en-US/js	Currency.Gadget/en-US Currency.Gadget/en-US/js	MediaCenter.Gadget MediaCenter.Gadget/en-US	RSSFeeds.Gadget/en-US/js Weather.Gadget/en-US	Weather.Gadget/en-US/js
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/i18n-bel-svn/2010-November/index.html" >
+   <LINK REL="made" HREF="mailto:i18n-bel-svn%40lists.berlios.de?Subject=Re%3A%20%5BI18n-bel-svn%5D%20r109%20-%20in%20Windows7/source/x32/Program%20Files/Windows%0A%09Sidebar/Gadgets%3A%20.%20Clock.Gadget/en-US/js%0A%09Currency.Gadget/en-US%20Currency.Gadget/en-US/js%0A%09MediaCenter.Gadget%20MediaCenter.Gadget/en-US%0A%09RSSFeeds.Gadget/en-US/js%20Weather.Gadget/en-US%0A%09Weather.Gadget/en-US/js&In-Reply-To=%3C20101129070128.F2C3748109A%40sheep.berlios.de%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000026.html">
+   
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[I18n-bel-svn] r109 - in Windows7/source/x32/Program Files/Windows	Sidebar/Gadgets: . Clock.Gadget/en-US/js	Currency.Gadget/en-US Currency.Gadget/en-US/js	MediaCenter.Gadget MediaCenter.Gadget/en-US	RSSFeeds.Gadget/en-US/js Weather.Gadget/en-US	Weather.Gadget/en-US/js</H1>
+    <B>alex73 at mail.berlios.de</B> 
+    <A HREF="mailto:i18n-bel-svn%40lists.berlios.de?Subject=Re%3A%20%5BI18n-bel-svn%5D%20r109%20-%20in%20Windows7/source/x32/Program%20Files/Windows%0A%09Sidebar/Gadgets%3A%20.%20Clock.Gadget/en-US/js%0A%09Currency.Gadget/en-US%20Currency.Gadget/en-US/js%0A%09MediaCenter.Gadget%20MediaCenter.Gadget/en-US%0A%09RSSFeeds.Gadget/en-US/js%20Weather.Gadget/en-US%0A%09Weather.Gadget/en-US/js&In-Reply-To=%3C20101129070128.F2C3748109A%40sheep.berlios.de%3E"
+       TITLE="[I18n-bel-svn] r109 - in Windows7/source/x32/Program Files/Windows	Sidebar/Gadgets: . Clock.Gadget/en-US/js	Currency.Gadget/en-US Currency.Gadget/en-US/js	MediaCenter.Gadget MediaCenter.Gadget/en-US	RSSFeeds.Gadget/en-US/js Weather.Gadget/en-US	Weather.Gadget/en-US/js">alex73 at mail.berlios.de
+       </A><BR>
+    <I>Mon Nov 29 08:01:28 CET 2010</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000026.html">[I18n-bel-svn] r108 - Windows7
+</A></li>
+        
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#27">[ date ]</a>
+              <a href="thread.html#27">[ thread ]</a>
+              <a href="subject.html#27">[ subject ]</a>
+              <a href="author.html#27">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>Author: alex73
+Date: 2010-11-29 08:01:28 +0100 (Mon, 29 Nov 2010)
+New Revision: 109
+
+Added:
+   Windows7/source/x32/Program Files/Windows Sidebar/Gadgets/Clock.Gadget/en-US/js/clock.js
+   Windows7/source/x32/Program Files/Windows Sidebar/Gadgets/Clock.Gadget/en-US/js/timeZones.js
+   Windows7/source/x32/Program Files/Windows Sidebar/Gadgets/Currency.Gadget/en-US/currency.html
+   Windows7/source/x32/Program Files/Windows Sidebar/Gadgets/Currency.Gadget/en-US/js/currency.js
+   Windows7/source/x32/Program Files/Windows Sidebar/Gadgets/Currency.Gadget/en-US/js/init.js
+   Windows7/source/x32/Program Files/Windows Sidebar/Gadgets/Currency.Gadget/en-US/js/library.js
+   Windows7/source/x32/Program Files/Windows Sidebar/Gadgets/Currency.Gadget/en-US/js/service.js
+   Windows7/source/x32/Program Files/Windows Sidebar/Gadgets/MediaCenter.Gadget/
+   Windows7/source/x32/Program Files/Windows Sidebar/Gadgets/MediaCenter.Gadget/en-US/
+   Windows7/source/x32/Program Files/Windows Sidebar/Gadgets/MediaCenter.Gadget/en-US/gadget.xml
+   Windows7/source/x32/Program Files/Windows Sidebar/Gadgets/RSSFeeds.Gadget/en-US/js/settings.js
+   Windows7/source/x32/Program Files/Windows Sidebar/Gadgets/Weather.Gadget/en-US/js/highDpiImageSwap.js
+   Windows7/source/x32/Program Files/Windows Sidebar/Gadgets/Weather.Gadget/en-US/js/library.js
+   Windows7/source/x32/Program Files/Windows Sidebar/Gadgets/Weather.Gadget/en-US/js/settings.js
+   Windows7/source/x32/Program Files/Windows Sidebar/Gadgets/Weather.Gadget/en-US/js/weather.js
+   Windows7/source/x32/Program Files/Windows Sidebar/Gadgets/Weather.Gadget/en-US/settings.html
+   Windows7/source/x32/Program Files/Windows Sidebar/Gadgets/Weather.Gadget/en-US/weather.html
+Log:
+Add files for gadgets localization
+
+Added: Windows7/source/x32/Program Files/Windows Sidebar/Gadgets/Clock.Gadget/en-US/js/clock.js
+===================================================================
+(Binary files differ)
+
+
+Property changes on: Windows7/source/x32/Program Files/Windows Sidebar/Gadgets/Clock.Gadget/en-US/js/clock.js
+___________________________________________________________________
+Added: svn:mime-type
+   + application/octet-stream
+
+Added: Windows7/source/x32/Program Files/Windows Sidebar/Gadgets/Clock.Gadget/en-US/js/timeZones.js
+===================================================================
+(Binary files differ)
+
+
+Property changes on: Windows7/source/x32/Program Files/Windows Sidebar/Gadgets/Clock.Gadget/en-US/js/timeZones.js
+___________________________________________________________________
+Added: svn:mime-type
+   + application/octet-stream
+
+Added: Windows7/source/x32/Program Files/Windows Sidebar/Gadgets/Currency.Gadget/en-US/currency.html
+===================================================================
+(Binary files differ)
+
+
+Property changes on: Windows7/source/x32/Program Files/Windows Sidebar/Gadgets/Currency.Gadget/en-US/currency.html
+___________________________________________________________________
+Added: svn:mime-type
+   + application/octet-stream
+
+Added: Windows7/source/x32/Program Files/Windows Sidebar/Gadgets/Currency.Gadget/en-US/js/currency.js
+===================================================================
+(Binary files differ)
+
+
+Property changes on: Windows7/source/x32/Program Files/Windows Sidebar/Gadgets/Currency.Gadget/en-US/js/currency.js
+___________________________________________________________________
+Added: svn:mime-type
+   + application/octet-stream
+
+Added: Windows7/source/x32/Program Files/Windows Sidebar/Gadgets/Currency.Gadget/en-US/js/init.js
+===================================================================
+(Binary files differ)
+
+
+Property changes on: Windows7/source/x32/Program Files/Windows Sidebar/Gadgets/Currency.Gadget/en-US/js/init.js
+___________________________________________________________________
+Added: svn:mime-type
+   + application/octet-stream
+
+Added: Windows7/source/x32/Program Files/Windows Sidebar/Gadgets/Currency.Gadget/en-US/js/library.js
+===================================================================
+(Binary files differ)
+
+
+Property changes on: Windows7/source/x32/Program Files/Windows Sidebar/Gadgets/Currency.Gadget/en-US/js/library.js
+___________________________________________________________________
+Added: svn:mime-type
+   + application/octet-stream
+
+Added: Windows7/source/x32/Program Files/Windows Sidebar/Gadgets/Currency.Gadget/en-US/js/service.js
+===================================================================
+(Binary files differ)
+
+
+Property changes on: Windows7/source/x32/Program Files/Windows Sidebar/Gadgets/Currency.Gadget/en-US/js/service.js
+___________________________________________________________________
+Added: svn:mime-type
+   + application/octet-stream
+
+Added: Windows7/source/x32/Program Files/Windows Sidebar/Gadgets/MediaCenter.Gadget/en-US/gadget.xml
+===================================================================
+--- Windows7/source/x32/Program Files/Windows Sidebar/Gadgets/MediaCenter.Gadget/en-US/gadget.xml	                        (rev 0)
++++ Windows7/source/x32/Program Files/Windows Sidebar/Gadgets/MediaCenter.Gadget/en-US/gadget.xml	2010-11-29 07:01:28 UTC (rev 109)
+@@ -0,0 +1,37 @@
++&#65279;&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; ?&gt;
++&lt;gadget&gt;
++    &lt;!-- Language: enu(en-US) --&gt;
++    &lt;name&gt;
++      &lt;!--_locComment_text=&quot;{Locked}&quot;--&gt;Windows Media Center
++    &lt;/name&gt;
++    &lt;namespace&gt;
++      &lt;!--_locComment_text=&quot;{Locked}&quot;--&gt;Microsoft.Windows
++    &lt;/namespace&gt;
++    &lt;version&gt;
++      &lt;!--_locComment_text=&quot;{Locked}&quot;--&gt;1.0.0.0
++    &lt;/version&gt;
++    &lt;author name=&quot;Microsoft Corporation&quot;&gt;
++      &lt;info url=&quot;<A HREF="http://go.microsoft.com/fwlink/?LinkId=124093">http://go.microsoft.com/fwlink/?LinkId=124093</A>&quot; text=&quot;www.gallery.microsoft.com&quot;/&gt;
++      &lt;logo src=&quot;images/logo.png&quot;/&gt;
++    &lt;/author&gt;
++    &lt;copyright&gt;
++      &lt;!--_locComment_text=&quot;{Locked}&quot;--&gt;&#169; 2009
++    &lt;/copyright&gt;
++    &lt;description&gt;
++      Play your latest TV recordings, new Internet TV clips, and favorite music and pictures.
++    &lt;/description&gt;
++    &lt;icons&gt;
++      &lt;icon height=&quot;48&quot; width=&quot;48&quot; src=&quot;images/ehshellLogo.png&quot;/&gt;
++  	&lt;/icons&gt;
++    &lt;hosts&gt;
++      &lt;host name=&quot;sidebar&quot;&gt;
++        &lt;autoscaleDPI&gt;true&lt;/autoscaleDPI&gt;
++        &lt;base type=&quot;HTML&quot; apiVersion=&quot;1.0.0&quot; src=&quot;Main.html&quot; /&gt;
++        &lt;permissions&gt;
++          &lt;!--_locComment_text=&quot;{Locked}&quot;--&gt;full
++        &lt;/permissions&gt;
++        &lt;platform minPlatformVersion=&quot;0.3&quot; /&gt;
++        &lt;defaultImage src=&quot;images/ehshellLogo.png&quot;/&gt;
++      &lt;/host&gt;
++    &lt;/hosts&gt;
++&lt;/gadget&gt;
+
+
+Property changes on: Windows7/source/x32/Program Files/Windows Sidebar/Gadgets/MediaCenter.Gadget/en-US/gadget.xml
+___________________________________________________________________
+Added: svn:mime-type
+   + text/plain
+
+Added: Windows7/source/x32/Program Files/Windows Sidebar/Gadgets/RSSFeeds.Gadget/en-US/js/settings.js
+===================================================================
+(Binary files differ)
+
+
+Property changes on: Windows7/source/x32/Program Files/Windows Sidebar/Gadgets/RSSFeeds.Gadget/en-US/js/settings.js
+___________________________________________________________________
+Added: svn:mime-type
+   + application/octet-stream
+
+Added: Windows7/source/x32/Program Files/Windows Sidebar/Gadgets/Weather.Gadget/en-US/js/highDpiImageSwap.js
+===================================================================
+(Binary files differ)
+
+
+Property changes on: Windows7/source/x32/Program Files/Windows Sidebar/Gadgets/Weather.Gadget/en-US/js/highDpiImageSwap.js
+___________________________________________________________________
+Added: svn:mime-type
+   + application/octet-stream
+
+Added: Windows7/source/x32/Program Files/Windows Sidebar/Gadgets/Weather.Gadget/en-US/js/library.js
+===================================================================
+(Binary files differ)
+
+
+Property changes on: Windows7/source/x32/Program Files/Windows Sidebar/Gadgets/Weather.Gadget/en-US/js/library.js
+___________________________________________________________________
+Added: svn:mime-type
+   + application/octet-stream
+
+Added: Windows7/source/x32/Program Files/Windows Sidebar/Gadgets/Weather.Gadget/en-US/js/settings.js
+===================================================================
+(Binary files differ)
+
+
+Property changes on: Windows7/source/x32/Program Files/Windows Sidebar/Gadgets/Weather.Gadget/en-US/js/settings.js
+___________________________________________________________________
+Added: svn:mime-type
+   + application/octet-stream
+
+Added: Windows7/source/x32/Program Files/Windows Sidebar/Gadgets/Weather.Gadget/en-US/js/weather.js
+===================================================================
+(Binary files differ)
+
+
+Property changes on: Windows7/source/x32/Program Files/Windows Sidebar/Gadgets/Weather.Gadget/en-US/js/weather.js
+___________________________________________________________________
+Added: svn:mime-type
+   + application/octet-stream
+
+Added: Windows7/source/x32/Program Files/Windows Sidebar/Gadgets/Weather.Gadget/en-US/settings.html
+===================================================================
+(Binary files differ)
+
+
+Property changes on: Windows7/source/x32/Program Files/Windows Sidebar/Gadgets/Weather.Gadget/en-US/settings.html
+___________________________________________________________________
+Added: svn:mime-type
+   + application/octet-stream
+
+Added: Windows7/source/x32/Program Files/Windows Sidebar/Gadgets/Weather.Gadget/en-US/weather.html
+===================================================================
+(Binary files differ)
+
+
+Property changes on: Windows7/source/x32/Program Files/Windows Sidebar/Gadgets/Weather.Gadget/en-US/weather.html
+___________________________________________________________________
+Added: svn:mime-type
+   + application/octet-stream
+
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000026.html">[I18n-bel-svn] r108 - Windows7
+</A></li>
+	
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#27">[ date ]</a>
+              <a href="thread.html#27">[ thread ]</a>
+              <a href="subject.html#27">[ subject ]</a>
+              <a href="author.html#27">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/i18n-bel-svn">More information about the I18n-bel-svn
+mailing list</a><br>
+</body></html>

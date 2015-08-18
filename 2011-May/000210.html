@@ -1,0 +1,1007 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [I18n-bel-svn] r292 - in Windows7/source/Program Files: . Microsoft	Games Microsoft Games/Chess Microsoft Games/Chess/en-US
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/i18n-bel-svn/2011-May/index.html" >
+   <LINK REL="made" HREF="mailto:i18n-bel-svn%40lists.berlios.de?Subject=Re%3A%20%5BI18n-bel-svn%5D%20r292%20-%20in%20Windows7/source/Program%20Files%3A%20.%20Microsoft%0A%09Games%20Microsoft%20Games/Chess%20Microsoft%20Games/Chess/en-US&In-Reply-To=%3C20110531050312.2A70A48146B%40sheep.berlios.de%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000209.html">
+   <LINK REL="Next"  HREF="000211.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[I18n-bel-svn] r292 - in Windows7/source/Program Files: . Microsoft	Games Microsoft Games/Chess Microsoft Games/Chess/en-US</H1>
+    <B>eratyk at mail.berlios.de</B> 
+    <A HREF="mailto:i18n-bel-svn%40lists.berlios.de?Subject=Re%3A%20%5BI18n-bel-svn%5D%20r292%20-%20in%20Windows7/source/Program%20Files%3A%20.%20Microsoft%0A%09Games%20Microsoft%20Games/Chess%20Microsoft%20Games/Chess/en-US&In-Reply-To=%3C20110531050312.2A70A48146B%40sheep.berlios.de%3E"
+       TITLE="[I18n-bel-svn] r292 - in Windows7/source/Program Files: . Microsoft	Games Microsoft Games/Chess Microsoft Games/Chess/en-US">eratyk at mail.berlios.de
+       </A><BR>
+    <I>Tue May 31 07:03:11 CEST 2011</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000209.html">[I18n-bel-svn] r291 - Windows7/omegat
+</A></li>
+        <LI>Next message: <A HREF="000211.html">[I18n-bel-svn] r294 - / Windows7/omegat Windows7/source	Windows7/source/mui/Windows/System32/be-BY	WindowsPrograms/QIP/omegat
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#210">[ date ]</a>
+              <a href="thread.html#210">[ thread ]</a>
+              <a href="subject.html#210">[ subject ]</a>
+              <a href="author.html#210">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>Author: eratyk
+Date: 2011-05-31 07:03:11 +0200 (Tue, 31 May 2011)
+New Revision: 292
+
+Added:
+   Windows7/source/Program Files/Microsoft Games/
+   Windows7/source/Program Files/Microsoft Games/Chess/
+   Windows7/source/Program Files/Microsoft Games/Chess/en-US/
+   Windows7/source/Program Files/Microsoft Games/Chess/en-US/Chess.exe.mui.rc
+Log:
+Chess commit
+
+Added: Windows7/source/Program Files/Microsoft Games/Chess/en-US/Chess.exe.mui.rc
+===================================================================
+--- Windows7/source/Program Files/Microsoft Games/Chess/en-US/Chess.exe.mui.rc	                        (rev 0)
++++ Windows7/source/Program Files/Microsoft Games/Chess/en-US/Chess.exe.mui.rc	2011-05-31 05:03:11 UTC (rev 292)
+@@ -0,0 +1,928 @@
++__GDF_XML DATA &quot;Data_44.bin&quot;
++
++1 MUI &quot;Data_45.bin&quot;
++
++129 MENU
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++POPUP &quot;&amp;Game&quot;
++{
++	MENUITEM &quot;&amp;New game against computer\tF2&quot;,  32771
++	MENUITEM &quot;New game against hu&amp;man\tF3&quot;,  32772
++	MENUITEM SEPARATOR
++	MENUITEM &quot;&amp;Undo\tCtrl+Z&quot;,  32775
++	MENUITEM SEPARATOR
++	MENUITEM &quot;&amp;Statistics\tF4&quot;,  32776
++	MENUITEM &quot;&amp;Options\tF5&quot;,  32777
++	MENUITEM &quot;Change &amp;Appearance\tF7&quot;,  32778
++	MENUITEM SEPARATOR
++	MENUITEM &quot;&amp;Resign&quot;,  32779
++	MENUITEM &quot;E&amp;xit&quot;,  32780
++}
++POPUP &quot;&amp;Help&quot;
++{
++	MENUITEM &quot;&amp;View Help\tF1&quot;,  32784
++	MENUITEM &quot;&amp;About Chess Titans&quot;,  32785
++	MENUITEM SEPARATOR
++	MENUITEM &quot;Get &amp;More Games Online&quot;,  32786
++}
++POPUP &quot;De&amp;bug&quot;
++{
++	MENUITEM &quot;&amp;Rotate Board\tCtrl+R&quot;,  32781
++	MENUITEM &quot;&amp;Self Play\tCtrl+P&quot;,  32782
++	MENUITEM &quot;Toggle &amp;Top Down View\tCtrl+T&quot;,  32783
++	MENUITEM &quot;&amp;Full Speed Render\tCtrl+F&quot;,  32789
++}
++}
++
++189 MENU
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++POPUP &quot;Media Center&quot;
++{
++	MENUITEM &quot;New game against computer&quot;,  32771
++	MENUITEM &quot;New game against human&quot;,  32772
++	MENUITEM SEPARATOR
++	MENUITEM &quot;Undo&quot;,  32775
++	MENUITEM &quot;Resign&quot;,  32779
++	MENUITEM SEPARATOR
++	MENUITEM &quot;Options&quot;,  32777
++	MENUITEM SEPARATOR
++	POPUP &quot;Change chess pieces&quot;
++	{
++		MENUITEM &quot;Porcelain&quot;,  32799
++		MENUITEM &quot;Frosted Glass&quot;,  32800
++		MENUITEM &quot;Wood&quot;,  32801
++	}
++	POPUP &quot;Change board&quot;
++	{
++		MENUITEM &quot;Porcelain&quot;,  32796
++		MENUITEM &quot;Marble&quot;,  32797
++		MENUITEM &quot;Wood&quot;,  32798
++	}
++	MENUITEM SEPARATOR
++	MENUITEM &quot;Exit&quot;,  32780
++}
++}
++
++9 DIALOGEX 0, 0, 246, 147
++STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
++CAPTION &quot;Game Over&quot;
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++FONT 8, &quot;Segoe UI&quot;, FW_NORMAL, FALSE, 0
++{
++   CONTROL &quot;&amp;Play again&quot;, 2, BUTTON, BS_DEFPUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_GROUP | WS_TABSTOP, 149, 126, 72, 14 
++   CONTROL &quot;E&amp;xit&quot;, 3, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 23, 126, 72, 14 
++   CONTROL &quot;&lt;A&gt;Get More Games Online&lt;/A&gt;&quot;, 1058, &quot;SysLink&quot;, 0x50030000, 79, 105, 86, 13 
++   CONTROL &quot;Win, Lose Draw String.&quot;, 1041, STATIC, SS_CENTER | WS_CHILD | WS_VISIBLE | WS_GROUP, 7, 18, 232, 24 
++   CONTROL &quot;Statistics for Level 999&quot;, 1057, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 17, 42, 222, 8 
++   CONTROL &quot;Games played:&quot;, 1052, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 17, 56, 109, 8 
++   CONTROL &quot;Games won:&quot;, 1053, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 17, 75, 109, 8 
++   CONTROL &quot;Games drawn:&quot;, 1055, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 17, 87, 109, 8 
++   CONTROL &quot;Percentage:&quot;, 1054, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 133, 75, 106, 8 
++   CONTROL &quot;Percentage:&quot;, 1056, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 133, 87, 106, 8 
++}
++
++160 DIALOGEX 0, 0, 214, 218
++STYLE DS_FIXEDSYS | DS_MODALFRAME | DS_SETFOREGROUND | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
++CAPTION &quot;Pawn Promotion&quot;
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++FONT 8, &quot;Segoe UI&quot;, FW_NORMAL, FALSE, 0
++{
++   CONTROL &quot;You can promote your pawn! What piece do you want to promote your pawn to?&quot;, 1077, STATIC, SS_CENTER | WS_CHILD | WS_VISIBLE | WS_GROUP, 7, 9, 200, 25 
++   CONTROL &quot;&amp;Queen&quot;, 1080, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_GROUP | WS_TABSTOP, 23, 43, 167, 32 
++   CONTROL &quot;&amp;Rook&quot;, 1079, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 23, 85, 167, 32 
++   CONTROL &quot;&amp;Bishop&quot;, 1081, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 23, 127, 167, 32 
++   CONTROL &quot;&amp;Knight&quot;, 1082, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 23, 169, 167, 32 
++}
++
++164 DIALOGEX 0, 0, 363, 230
++STYLE DS_FIXEDSYS | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
++CAPTION &quot;Options&quot;
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++FONT 8, &quot;Segoe UI&quot;, FW_NORMAL, FALSE, 0
++{
++   CONTROL &quot;OK&quot;, 1, BUTTON, BS_DEFPUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_GROUP | WS_TABSTOP, 205, 209, 72, 14 
++   CONTROL &quot;Cancel&quot;, 2, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 284, 209, 72, 14 
++   CONTROL &quot;Play against computer as &amp;white&quot;, 1007, BUTTON, BS_AUTORADIOBUTTON | WS_CHILD | WS_VISIBLE | WS_GROUP | WS_TABSTOP, 13, 28, 207, 14 
++   CONTROL &quot;Play against computer as &amp;black&quot;, 1008, BUTTON, BS_AUTORADIOBUTTON | WS_CHILD | WS_VISIBLE, 13, 42, 207, 14 
++   CONTROL &quot;&amp;Display animations&quot;, 1003, BUTTON, BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_GROUP | WS_TABSTOP, 13, 70, 207, 14 
++   CONTROL &quot;&amp;Play sounds&quot;, 1002, BUTTON, BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 13, 84, 207, 14 
++   CONTROL &quot;&amp;Show tips&quot;, 1015, BUTTON, BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 13, 98, 207, 14 
++   CONTROL &quot;Always &amp;continue saved game&quot;, 1016, BUTTON, BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 13, 112, 207, 14 
++   CONTROL &quot;&amp;Always save game on exit&quot;, 1018, BUTTON, BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 13, 126, 207, 14 
++   CONTROL &quot;Show &amp;last move&quot;, 1012, BUTTON, BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 13, 140, 207, 14 
++   CONTROL &quot;Show &amp;valid moves&quot;, 1013, BUTTON, BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 13, 154, 207, 14 
++   CONTROL &quot;&amp;Rotate board when playing head to head&quot;, 1014, BUTTON, BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 13, 168, 207, 14 
++   CONTROL &quot;&amp;Top down view&quot;, 1017, BUTTON, BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 13, 182, 207, 14 
++   CONTROL &quot;Rotate board back after &amp;free view&quot;, 1019, BUTTON, BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 13, 196, 190, 14 
++   CONTROL &quot;Difficulty&quot;, -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 226, 28, 130, 14 
++   CONTROL &quot;&quot;, 1030, &quot;msctls_trackbar32&quot;, TBS_HORZ | TBS_AUTOTICKS | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 221, 42, 100, 18 
++   CONTROL &quot;Level 1&quot;, -1, STATIC, SS_CENTER | WS_CHILD | WS_VISIBLE | WS_GROUP, 186, 62, 85, 8 
++   CONTROL &quot;Level 10&quot;, -1, STATIC, SS_CENTER | WS_CHILD | WS_VISIBLE | WS_GROUP, 271, 62, 85, 8 
++   CONTROL &quot;Graphics quality&quot;, -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 226, 84, 130, 14 
++   CONTROL &quot;&quot;, 1031, &quot;msctls_trackbar32&quot;, TBS_HORZ | TBS_AUTOTICKS | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 221, 98, 100, 18 
++   CONTROL &quot;Show 3D view&quot;, 1064, BUTTON, BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_DISABLED | WS_TABSTOP, 226, 126, 130, 14 
++   CONTROL &quot;High detail pieces&quot;, 1063, BUTTON, BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_DISABLED | WS_TABSTOP, 226, 140, 130, 14 
++   CONTROL &quot;Show reflections&quot;, 1062, BUTTON, BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_DISABLED | WS_TABSTOP, 226, 154, 130, 14 
++   CONTROL &quot;High gloss shine&quot;, 1061, BUTTON, BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_DISABLED | WS_TABSTOP, 226, 168, 130, 14 
++   CONTROL &quot;Smooth edges&quot;, 1060, BUTTON, BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_DISABLED | WS_TABSTOP, 226, 182, 130, 14 
++}
++
++167 DIALOGEX 0, 0, 240, 142
++STYLE DS_FIXEDSYS | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
++CAPTION &quot;Chess Titans Statistics&quot;
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++FONT 8, &quot;Segoe UI&quot;, FW_NORMAL, FALSE, 0
++{
++   CONTROL &quot;&amp;Close&quot;, 2, BUTTON, BS_DEFPUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_GROUP | WS_TABSTOP, 73, 121, 75, 14 
++   CONTROL &quot;&amp;Reset&quot;, 1057, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 153, 121, 75, 14 
++   CONTROL &quot;Games played: 99999&quot;, 1042, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 73, 7, 155, 8 
++   CONTROL &quot;Games won: 99999&quot;, 1043, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 73, 19, 155, 8 
++   CONTROL &quot;Win percentage: 100%&quot;, 1045, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 73, 31, 155, 8 
++   CONTROL &quot;Games drawn: 99999&quot;, 1044, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 73, 43, 155, 8 
++   CONTROL &quot;Draw percentage: 100%&quot;, 1046, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 73, 55, 155, 8 
++   CONTROL &quot;Longest winning streak: 99999&quot;, 1047, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 73, 67, 155, 8 
++   CONTROL &quot;Longest drawing streak: 99999&quot;, 1048, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 73, 79, 155, 10 
++   CONTROL &quot;Longest losing streak: 99999&quot;, 1049, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 73, 91, 155, 10 
++   CONTROL &quot;Current streak: 99999&quot;, 1050, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 73, 103, 155, 8 
++   CONTROL &quot;&quot;, 1076, LISTBOX, LBS_STANDARD | LBS_NOINTEGRALHEIGHT | WS_CHILD | WS_VISIBLE | WS_GROUP | WS_TABSTOP, 7, 7, 59, 128 
++}
++
++187 DIALOGEX 0, 0, 188, 146
++STYLE DS_FIXEDSYS | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
++CAPTION &quot;Changed Game Settings&quot;
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++FONT 8, &quot;Segoe UI&quot;, FW_NORMAL, FALSE, 0
++{
++   CONTROL &quot;You've changed game settings. What do you want to do with your current game?&quot;, -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 7, 7, 174, 21 
++   CONTROL &quot;Play New Game&quot;, 1, BUTTON, BS_DEFPUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 7, 37, 74, 14 
++   CONTROL &quot;Start a new game with the new settings. This will count as a loss in your statistics.&quot;, -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 7, 57, 174, 21 
++   CONTROL &quot;Finish This Game&quot;, 2, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 7, 91, 74, 14 
++   CONTROL &quot;Your next game will use the new settings.&quot;, -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 7, 110, 174, 21 
++}
++
++188 DIALOGEX 0, 0, 214, 161
++STYLE DS_FIXEDSYS | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
++CAPTION &quot;Select Difficulty&quot;
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++FONT 8, &quot;Segoe UI&quot;, FW_NORMAL, FALSE, 0
++{
++   CONTROL &quot;What difficulty level do you want to play?&quot;, -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 7, 7, 200, 18 
++   CONTROL &quot;&amp;Beginner&quot;, 1068, BUTTON, BS_DEFPUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 7, 31, 200, 17 
++   CONTROL &quot;Level 2 on a scale of 1 to 10&quot;, -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 7, 49, 200, 10 
++   CONTROL &quot;&amp;Intermediate&quot;, 1069, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 7, 64, 200, 17 
++   CONTROL &quot;Level 5 on a scale of 1 to 10&quot;, -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 7, 83, 200, 10 
++   CONTROL &quot;&amp;Advanced&quot;, 1070, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 7, 97, 200, 17 
++   CONTROL &quot;Level 8 on a scale of 1 to 10&quot;, -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 7, 117, 200, 10 
++   CONTROL &quot;Note: You can change the difficulty later by clicking Options on the Game menu.&quot;, -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 7, 135, 200, 19 
++}
++
++190 DIALOGEX 0, 0, 214, 121
++STYLE DS_FIXEDSYS | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
++CAPTION &quot;New Game&quot;
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++FONT 8, &quot;Segoe UI&quot;, FW_NORMAL, FALSE, 0
++{
++   CONTROL &quot;Play New Game&quot;, 1, BUTTON, BS_DEFPUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 7, 31, 200, 17 
++   CONTROL &quot;Start a new game. This will count as a loss in your statistics.&quot;, -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 7, 49, 200, 20 
++   CONTROL &quot;Do Nothing&quot;, 2, BUTTON, BS_DEFPUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 7, 76, 200, 17 
++   CONTROL &quot;Return to the current game in progress.&quot;, -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 7, 96, 200, 10 
++   CONTROL &quot;What do you want to do?&quot;, -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 7, 7, 200, 18 
++}
++
++191 DIALOGEX 0, 0, 268, 90
++STYLE DS_FIXEDSYS | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
++CAPTION &quot;Checkmate / Draw&quot;
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++FONT 8, &quot;Segoe UI&quot;, FW_NORMAL, FALSE, 0
++{
++   CONTROL &quot;What do you want to do?&quot;, -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 7, 7, 254, 8 
++   CONTROL &quot;Return to Game&quot;, 1081, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 7, 56, 73, 14 
++   CONTROL &quot;Return to your game and use UNDO to back up and try another path.&quot;, -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 7, 74, 254, 8 
++   CONTROL &quot;End Game&quot;, 2, BUTTON, BS_DEFPUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 7, 25, 73, 14 
++   CONTROL &quot;Give up the game now and go to the lose screen.&quot;, -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 7, 44, 254, 8 
++}
++
++233 DIALOGEX 0, 0, 186, 79
++STYLE DS_FIXEDSYS | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
++CAPTION &quot;Resign&quot;
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++FONT 8, &quot;Segoe UI&quot;, FW_NORMAL, FALSE, 0
++{
++   CONTROL &quot;&amp;Yes&quot;, 1, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 15, 45, 65, 16 
++   CONTROL &quot;&amp;No&quot;, 2, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 106, 45, 65, 16 
++   CONTROL &quot;Are you sure you wish to resign this game?&quot;, -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 7, 18, 172, 17 
++}
++
++234 DIALOGEX 0, 0, 182, 139
++STYLE WS_POPUP
++CAPTION &quot;&quot;
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++FONT 16, &quot;Segoe UI&quot;, FW_NORMAL, FALSE, 0
++{
++   CONTROL &quot;You've changed game settings. What do you want to do with your current game?&quot;, -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 8, 22, 166, 18 
++   CONTROL &quot;Quit and Start a &amp;New Game&quot;, 1, BUTTON, BS_DEFPUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 8, 52, 166, 14 
++   CONTROL &quot;Start a new game with the new settings. This counts as a loss in your statistics.&quot;, -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 8, 68, 166, 25 
++   CONTROL &quot;&amp;Finish the Game&quot;, 2, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 8, 96, 166, 14 
++   CONTROL &quot;The new settings apply to your next game.&quot;, -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 8, 112, 166, 19 
++   CONTROL &quot;Changed Game Settings&quot;, 1094, STATIC, SS_CENTER | WS_CHILD | WS_VISIBLE | WS_GROUP, 8, 8, 166, 8 
++}
++
++237 DIALOGEX 0, 0, 148, 170
++STYLE WS_POPUP
++CAPTION &quot;&quot;
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++FONT 16, &quot;Segoe UI&quot;, FW_NORMAL, FALSE, 0
++{
++   CONTROL &quot;End Game&quot;, 2, BUTTON, BS_DEFPUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 8, 43, 132, 14 
++   CONTROL &quot;Return to Game&quot;, 1081, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 8, 81, 132, 14 
++   CONTROL &quot;What do you want to do?&quot;, -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 8, 22, 132, 10 
++   CONTROL &quot;You can end your game now.&quot;, -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 8, 59, 132, 22 
++   CONTROL &quot;Return to the game and click UNDO on the game menu to reverse your last moves and try again.&quot;, -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 8, 99, 132, 32 
++   CONTROL &quot;Note: This game has been counted as a loss in your statistics. If you return to the game, the loss will not be counted again.&quot;, -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 12, 133, 128, 32 
++   CONTROL &quot;Checkmate / Draw&quot;, 1094, STATIC, SS_CENTER | WS_CHILD | WS_VISIBLE | WS_GROUP, 8, 8, 132, 8 
++}
++
++239 DIALOGEX 0, 0, 324, 207
++STYLE WS_POPUP
++CAPTION &quot;&quot;
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++FONT 16, &quot;Segoe UI&quot;, FW_NORMAL, FALSE, 0
++{
++   CONTROL &quot;OK&quot;, 1, BUTTON, BS_DEFPUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_GROUP | WS_TABSTOP, 155, 185, 72, 14 
++   CONTROL &quot;Cancel&quot;, 2, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 233, 185, 72, 14 
++   CONTROL &quot;Play against computer as &amp;white&quot;, 1007, BUTTON, BS_AUTORADIOBUTTON | WS_CHILD | WS_VISIBLE | WS_GROUP | WS_TABSTOP, 8, 22, 194, 10 
++   CONTROL &quot;Play against computer as &amp;black&quot;, 1008, BUTTON, BS_AUTORADIOBUTTON | WS_CHILD | WS_VISIBLE, 8, 34, 194, 10 
++   CONTROL &quot;&amp;Display animations&quot;, 1003, BUTTON, BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_GROUP | WS_TABSTOP, 8, 56, 174, 10 
++   CONTROL &quot;&amp;Play sounds&quot;, 1002, BUTTON, BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 8, 68, 174, 10 
++   CONTROL &quot;&amp;Show tips&quot;, 1015, BUTTON, BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 8, 80, 174, 10 
++   CONTROL &quot;Show &amp;last move&quot;, 1012, BUTTON, BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 8, 92, 174, 10 
++   CONTROL &quot;Show &amp;valid moves&quot;, 1013, BUTTON, BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 8, 104, 174, 10 
++   CONTROL &quot;&amp;Top down view&quot;, 1017, BUTTON, BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 8, 116, 174, 10 
++   CONTROL &quot;&amp;Always save game on exit&quot;, 1018, BUTTON, BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 8, 128, 174, 17 
++   CONTROL &quot;Always &amp;continue saved game&quot;, 1016, BUTTON, BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 8, 147, 174, 17 
++   CONTROL &quot;&amp;Rotate board when playing head to head&quot;, 1014, BUTTON, BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 8, 166, 174, 17 
++   CONTROL &quot;Difficulty&quot;, -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 208, 22, 93, 8 
++   CONTROL &quot;&quot;, 1030, &quot;msctls_trackbar32&quot;, TBS_HORZ | TBS_AUTOTICKS | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 203, 34, 100, 18 
++   CONTROL &quot;Level 1&quot;, -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 199, 53, 55, 8 
++   CONTROL &quot;Level 10&quot;, -1, STATIC, SS_RIGHT | WS_CHILD | WS_VISIBLE | WS_GROUP, 257, 53, 52, 8 
++   CONTROL &quot;Graphics quality&quot;, -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 208, 67, 93, 8 
++   CONTROL &quot;&quot;, 1031, &quot;msctls_trackbar32&quot;, TBS_HORZ | TBS_AUTOTICKS | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 203, 79, 100, 18 
++   CONTROL &quot;Show 3D view&quot;, 1064, BUTTON, BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_DISABLED | WS_TABSTOP, 204, 98, 112, 10 
++   CONTROL &quot;High detail pieces&quot;, 1063, BUTTON, BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_DISABLED | WS_TABSTOP, 204, 110, 114, 10 
++   CONTROL &quot;Show reflections&quot;, 1062, BUTTON, BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_DISABLED | WS_TABSTOP, 204, 122, 112, 10 
++   CONTROL &quot;High gloss shine&quot;, 1061, BUTTON, BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_DISABLED | WS_TABSTOP, 204, 134, 112, 10 
++   CONTROL &quot;Smooth edges&quot;, 1060, BUTTON, BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_DISABLED | WS_TABSTOP, 204, 146, 112, 10 
++   CONTROL &quot;Select your options&quot;, 1094, STATIC, SS_CENTER | WS_CHILD | WS_VISIBLE | WS_GROUP, 8, 8, 308, 8 
++}
++
++241 DIALOGEX 0, 0, 161, 69
++STYLE WS_POPUP
++CAPTION &quot;&quot;
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++FONT 16, &quot;Segoe UI&quot;, FW_NORMAL, FALSE, 0
++{
++   CONTROL &quot;Yes&quot;, 1, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 10, 48, 65, 13 
++   CONTROL &quot;No&quot;, 2, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 85, 48, 65, 13 
++   CONTROL &quot;Are you sure you want to resign this game?&quot;, -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 8, 22, 145, 26 
++   CONTROL &quot;Resign Game&quot;, 1094, STATIC, SS_CENTER | WS_CHILD | WS_VISIBLE | WS_GROUP, 8, 8, 145, 8 
++}
++
++243 DIALOGEX 0, 0, 128, 98
++STYLE WS_POPUP
++CAPTION &quot;&quot;
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++FONT 16, &quot;Segoe UI&quot;, FW_NORMAL, FALSE, 0
++{
++   CONTROL &quot;Game Over&quot;, 1094, STATIC, SS_CENTER | WS_CHILD | WS_VISIBLE | WS_GROUP, 8, 8, 112, 10 
++   CONTROL &quot;Start a &amp;New Game&quot;, 2, BUTTON, BS_DEFPUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 8, 53, 112, 14 
++   CONTROL &quot;E&amp;xit Game&quot;, 3, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 8, 76, 112, 14 
++   CONTROL &quot;Game over text.&quot;, 1041, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 8, 22, 112, 26 
++}
++
++245 DIALOGEX 0, 0, 135, 142
++STYLE WS_POPUP
++CAPTION &quot;&quot;
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++FONT 16, &quot;Segoe UI&quot;, FW_NORMAL, FALSE, 0
++{
++   CONTROL &quot;You can promote your pawn!&quot;, 1077, STATIC, SS_CENTER | SS_CENTERIMAGE | WS_CHILD | WS_VISIBLE | WS_GROUP, 8, 8, 119, 9 
++   CONTROL &quot;What piece do you want to promote your pawn to?&quot;, 1078, STATIC, SS_CENTER | WS_CHILD | WS_VISIBLE | WS_GROUP, 8, 22, 119, 19 
++   CONTROL &quot;&amp;Queen&quot;, 1080, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_GROUP | WS_TABSTOP, 8, 48, 119, 16 
++   CONTROL &quot;&amp;Rook&quot;, 1079, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 8, 71, 119, 16 
++   CONTROL &quot;&amp;Bishop&quot;, 1081, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 8, 94, 119, 16 
++   CONTROL &quot;&amp;Knight&quot;, 1082, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 8, 117, 119, 16 
++}
++
++246 DIALOGEX 0, 0, 176, 190
++STYLE WS_POPUP
++CAPTION &quot;&quot;
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++FONT 16, &quot;Segoe UI&quot;, FW_NORMAL, FALSE, 0
++{
++   CONTROL &quot;What difficulty level do you want to play?&quot;, -1, STATIC, SS_CENTER | WS_CHILD | WS_VISIBLE | WS_GROUP, 8, 22, 160, 22 
++   CONTROL &quot;&amp;Beginner&quot;, 1068, BUTTON, BS_DEFPUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 8, 48, 160, 17 
++   CONTROL &quot;Level 2 on a scale of 1 to 10&quot;, -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 8, 67, 160, 10 
++   CONTROL &quot;&amp;Intermediate&quot;, 1069, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 8, 82, 160, 17 
++   CONTROL &quot;Level 5 on a scale of 1 to 10&quot;, -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 8, 101, 160, 10 
++   CONTROL &quot;&amp;Advanced&quot;, 1070, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 8, 115, 160, 17 
++   CONTROL &quot;Level 8 on a scale of 1 to 10&quot;, -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 8, 134, 160, 10 
++   CONTROL &quot;Note: You can change the difficulty later by clicking Options on the Game menu.&quot;, -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 8, 149, 160, 33 
++   CONTROL &quot;Select Difficulty&quot;, 1094, STATIC, SS_CENTER | WS_CHILD | WS_VISIBLE | WS_GROUP, 8, 8, 160, 8 
++}
++
++247 DIALOGEX 0, 0, 204, 124
++STYLE WS_POPUP
++CAPTION &quot;&quot;
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++FONT 16, &quot;Segoe UI&quot;, FW_NORMAL, FALSE, 0
++{
++   CONTROL &quot;&amp;Play again&quot;, 2, BUTTON, BS_DEFPUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_GROUP | WS_TABSTOP, 24, 102, 72, 14 
++   CONTROL &quot;E&amp;xit&quot;, 3, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 108, 102, 72, 14 
++   CONTROL &quot;Win, Lose Draw String.&quot;, 1041, STATIC, SS_CENTER | WS_CHILD | WS_VISIBLE | WS_GROUP, 8, 19, 188, 23 
++   CONTROL &quot;Statistics for Level 999&quot;, 1057, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 14, 42, 182, 8 
++   CONTROL &quot;Games played:&quot;, 1052, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 14, 56, 105, 8 
++   CONTROL &quot;Games won:&quot;, 1053, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 14, 75, 105, 8 
++   CONTROL &quot;Games drawn:&quot;, 1055, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 14, 87, 105, 8 
++   CONTROL &quot;Percentage:&quot;, 1054, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 119, 75, 77, 8 
++   CONTROL &quot;Percentage:&quot;, 1056, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 119, 87, 77, 8 
++   CONTROL &quot;Game Over&quot;, 1094, STATIC, SS_CENTER | WS_CHILD | WS_VISIBLE | WS_GROUP, 8, 8, 188, 8 
++}
++
++248 DIALOGEX 0, 0, 148, 108
++STYLE WS_POPUP
++CAPTION &quot;&quot;
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++FONT 16, &quot;Segoe UI&quot;, FW_NORMAL, FALSE, 0
++{
++   CONTROL &quot;New Game&quot;, 1094, STATIC, SS_CENTER | WS_CHILD | WS_VISIBLE | WS_GROUP, 8, 8, 132, 8 
++   CONTROL &quot;What do you want to do with the game in progress?&quot;, -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 8, 22, 132, 26 
++   CONTROL &quot;Quit and Start a &amp;New Game&quot;, 1, BUTTON, BS_DEFPUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 8, 48, 132, 14 
++   CONTROL &quot;This counts as a loss in your statistics.&quot;, -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 8, 64, 132, 19 
++   CONTROL &quot;&amp;Keep playing&quot;, 2, BUTTON, BS_DEFPUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 8, 86, 132, 14 
++}
++
++303 DIALOGEX 0, 0, 224, 110
++STYLE DS_FIXEDSYS | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
++CAPTION &quot;Dialog&quot;
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++FONT 8, &quot;Segoe UI&quot;, FW_NORMAL, FALSE, 0
++{
++   CONTROL &quot;&amp;Yes&quot;, 1, BUTTON, BS_DEFPUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 34, 67, 70, 14 
++   CONTROL &quot;&amp;No&quot;, 2, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 120, 67, 70, 14 
++   CONTROL &quot;Switching to the Direct3D reference rasterizer, a software device that implements the entire Direct3D feature set, but runs very slowly.&quot;, -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 7, 7, 210, 32 
++   CONTROL &quot;Do you wish to continue?&quot;, -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 7, 43, 210, 8 
++   CONTROL &quot;&amp;Don't show again&quot;, 1098, BUTTON, BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 7, 93, 210, 10 
++}
++
++304 DIALOGEX 0, 0, 224, 104
++STYLE WS_POPUP
++CAPTION &quot;&quot;
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++FONT 16, &quot;Segoe UI&quot;, FW_NORMAL, FALSE, 0
++{
++   CONTROL &quot;&amp;Yes&quot;, 1, BUTTON, BS_DEFPUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 34, 67, 70, 14 
++   CONTROL &quot;&amp;No&quot;, 2, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 120, 67, 70, 14 
++   CONTROL &quot;Switching to the Direct3D reference rasterizer, a software device that implements the entire Direct3D feature set, but runs very slowly.&quot;, -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 8, 22, 208, 25 
++   CONTROL &quot;Do you wish to continue?&quot;, -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 8, 53, 208, 8 
++   CONTROL &quot;&amp;Don't show again&quot;, 1098, BUTTON, BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 8, 86, 208, 10 
++   CONTROL &quot;Warning&quot;, 1094, STATIC, SS_CENTER | WS_CHILD | WS_VISIBLE | WS_GROUP, 8, 8, 208, 8 
++}
++
++305 DIALOGEX 0, 0, 148, 94
++STYLE WS_POPUP
++CAPTION &quot;&quot;
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++FONT 16, &quot;Segoe UI&quot;, FW_NORMAL, FALSE, 0
++{
++   CONTROL &quot;New Game&quot;, 1094, STATIC, SS_CENTER | WS_CHILD | WS_VISIBLE | WS_GROUP, 8, 8, 132, 8 
++   CONTROL &quot;What do you want to do with the game in progress?&quot;, -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 8, 22, 132, 26 
++   CONTROL &quot;Quit and Start a &amp;New Game&quot;, 1, BUTTON, BS_DEFPUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 8, 48, 132, 14 
++   CONTROL &quot;&amp;Keep playing&quot;, 2, BUTTON, BS_DEFPUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 8, 72, 132, 14 
++}
++
++309 DIALOGEX 0, 0, 246, 62
++STYLE DS_FIXEDSYS | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
++CAPTION &quot;Game Over&quot;
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++FONT 8, &quot;Segoe UI&quot;, FW_NORMAL, FALSE, 0
++{
++   CONTROL &quot;&amp;Play again&quot;, 2, BUTTON, BS_DEFPUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_GROUP | WS_TABSTOP, 86, 41, 72, 14 
++   CONTROL &quot;E&amp;xit&quot;, 3, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 162, 41, 72, 14 
++   CONTROL &quot;Win, Lose Draw String.&quot;, 1041, STATIC, SS_CENTER | WS_CHILD | WS_VISIBLE | WS_GROUP, 7, 12, 232, 23 
++}
++
++500 DIALOGEX 0, 0, 394, 299
++STYLE DS_FIXEDSYS | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
++CAPTION &quot;Change Appearance&quot;
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++FONT 8, &quot;Segoe UI&quot;, FW_NORMAL, FALSE, 0
++{
++   CONTROL &quot;OK&quot;, 1, BUTTON, BS_DEFPUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_GROUP | WS_TABSTOP, 236, 278, 72, 14 
++   CONTROL &quot;Cancel&quot;, 2, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 310, 278, 72, 14 
++   CONTROL &quot;Select Card Deck&quot;, 5002, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 7, 7, 234, 8 
++   CONTROL &quot;&quot;, 5000, &quot;SysListView32&quot;, LVS_ICON | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_SHAREIMAGELISTS | LVS_ALIGNLEFT | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_GROUP | WS_TABSTOP, 7, 17, 380, 108 
++   CONTROL &quot;Select Background&quot;, 5003, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 7, 135, 234, 8 
++   CONTROL &quot;&quot;, 5001, &quot;SysListView32&quot;, LVS_ICON | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_SHAREIMAGELISTS | LVS_ALIGNLEFT | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_GROUP | WS_TABSTOP, 7, 145, 380, 101 
++   CONTROL &quot;&amp;Randomly choose deck and background&quot;, 5004, BUTTON, BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_GROUP | WS_TABSTOP, 7, 253, 233, 10 
++}
++
++501 DIALOGEX 0, 0, 388, 137
++STYLE DS_FIXEDSYS | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
++CAPTION &quot;Exit Game&quot;
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++FONT 8, &quot;Segoe UI&quot;, FW_NORMAL, FALSE, 0
++{
++   CONTROL &quot;What do you want to do with your game in progress?&quot;, -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 7, 12, 374, 8 
++   CONTROL &quot;E&amp;xit and Save My Game&quot;, 5005, BUTTON, BS_DEFPUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 22, 30, 94, 14 
++   CONTROL &quot;This will overwrite any previous saved game you might have.&quot;, -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 23, 45, 358, 8 
++   CONTROL &quot;&amp;Exit and Don't Save&quot;, 5006, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 22, 60, 94, 14 
++   CONTROL &quot;This will count as a loss in your statistics.&quot;, -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 23, 75, 358, 8 
++   CONTROL &quot;&amp;Don't Exit&quot;, 2, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 22, 90, 50, 14 
++   CONTROL &quot;Return to your game in progress.&quot;, -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 23, 106, 358, 8 
++   CONTROL &quot;Note: You can turn off this prompt in \&quot;Options.\&quot;&quot;, -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 7, 122, 153, 8 
++}
++
++502 DIALOGEX 0, 0, 293, 107
++STYLE DS_FIXEDSYS | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
++CAPTION &quot;Saved Game Found&quot;
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++FONT 8, &quot;Segoe UI&quot;, FW_NORMAL, FALSE, 0
++{
++   CONTROL &quot;You have a saved game. What do you want to do?&quot;, -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 10, 8, 267, 10 
++   CONTROL &quot;&amp;Continue Saved Game&quot;, 1, BUTTON, BS_DEFPUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 17, 21, 96, 14 
++   CONTROL &quot;Continue playing your saved game where you left off.&quot;, -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 18, 36, 174, 8 
++   CONTROL &quot;Play &amp;New Game&quot;, 2, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 17, 53, 80, 14 
++   CONTROL &quot;Ignore the saved game and play a new game.&quot;, -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 17, 68, 148, 8 
++   CONTROL &quot;Note: You can turn off this prompt in \&quot;Options.\&quot;&quot;, -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 12, 92, 153, 8 
++}
++
++503 DIALOGEX 0, 0, 208, 63
++STYLE DS_FIXEDSYS | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
++CAPTION &quot;Reset Statistics&quot;
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++FONT 8, &quot;Segoe UI&quot;, FW_NORMAL, FALSE, 0
++{
++   CONTROL &quot;Do you want to reset all your statistics to zero?&quot;, -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 8, 7, 170, 8 
++   CONTROL &quot;&amp;No&quot;, 2, BUTTON, BS_DEFPUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 110, 42, 91, 14 
++   CONTROL &quot;&amp;Yes&quot;, 1, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 7, 42, 91, 14 
++}
++
++504 DIALOGEX 0, 0, 208, 63
++STYLE DS_FIXEDSYS | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
++CAPTION &quot;Changed Game Settings&quot;
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++FONT 8, &quot;Segoe UI&quot;, FW_NORMAL, FALSE, 0
++{
++   CONTROL &quot;You've changed game settings. What do you want to do with your current game?&quot;, -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 8, 7, 150, 24 
++   CONTROL &quot;Play &amp;New Game&quot;, 1, BUTTON, BS_DEFPUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 7, 42, 91, 14 
++   CONTROL &quot;&amp;Finish This Game&quot;, 2, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 110, 42, 91, 14 
++}
++
++505 DIALOGEX 0, 0, 139, 145
++STYLE WS_POPUP
++CAPTION &quot;&quot;
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++FONT 16, &quot;Segoe UI&quot;, FW_NORMAL, FALSE, 0
++{
++   CONTROL &quot;What do you want to do with your game in progress?&quot;, -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 8, 22, 123, 26 
++   CONTROL &quot;&amp;Save&quot;, 5005, BUTTON, BS_DEFPUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 8, 48, 123, 14 
++   CONTROL &quot;&amp;Don't Save&quot;, 5006, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 8, 70, 123, 14 
++   CONTROL &quot;&amp;Cancel&quot;, 2, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 8, 92, 123, 14 
++   CONTROL &quot;Exit Game&quot;, 6027, STATIC, SS_CENTER | WS_CHILD | WS_VISIBLE | WS_GROUP, 8, 8, 123, 8 
++}
++
++506 DIALOGEX 0, 0, 168, 95
++STYLE WS_POPUP
++CAPTION &quot;&quot;
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++FONT 16, &quot;Segoe UI&quot;, FW_NORMAL, FALSE, 0
++{
++   CONTROL &quot;Do you want to continue your saved game?&quot;, -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 8, 22, 152, 26 
++   CONTROL &quot;&amp;Yes&quot;, 1, BUTTON, BS_DEFPUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 8, 48, 73, 14 
++   CONTROL &quot;&amp;No&quot;, 2, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 87, 48, 73, 14 
++   CONTROL &quot;Saved Game Found&quot;, 6027, STATIC, SS_CENTER | WS_CHILD | WS_VISIBLE | WS_GROUP, 8, 8, 152, 8 
++   CONTROL &quot;Always continue saved game&quot;, 5008, BUTTON, BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 8, 69, 152, 18 
++}
++
++507 DIALOGEX 0, 0, 168, 130
++STYLE WS_POPUP
++CAPTION &quot;&quot;
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++FONT 16, &quot;Segoe UI&quot;, FW_NORMAL, FALSE, 0
++{
++   CONTROL &quot;These settings won't apply to the game in progress. What do you want to do?&quot;, -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 8, 22, 152, 26 
++   CONTROL &quot;Quit and Start a &amp;New Game&quot;, 1, BUTTON, BS_DEFPUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 8, 48, 152, 14 
++   CONTROL &quot;&amp;Finish This Game&quot;, 2, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 8, 86, 152, 14 
++   CONTROL &quot;Changed Game Settings&quot;, 6027, STATIC, SS_CENTER | WS_CHILD | WS_VISIBLE | WS_GROUP, 8, 9, 152, 8 
++   CONTROL &quot;This counts as a loss in your statistics.&quot;, -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 8, 64, 152, 22 
++   CONTROL &quot;The new settings apply to your next game.&quot;, -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 8, 102, 152, 20 
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++102, 	&quot;White wins by checkmate!&quot;
++103, 	&quot;Black wins by checkmate!&quot;
++104, 	&quot;Black resigns. White wins!&quot;
++105, 	&quot;White resigns. Black wins!&quot;
++106, 	&quot;Black runs out of time. White wins!&quot;
++107, 	&quot;White runs out of time. Black wins!&quot;
++108, 	&quot;Stalemate, the game is a draw.&quot;
++109, 	&quot;There has been no progress for fifty moves; the game is a draw.&quot;
++110, 	&quot;This position has been repeated three times; the game is a draw.&quot;
++111, 	&quot;There are too few pieces left for a checkmate; the game is a draw.&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++112, 	&quot;You can turn off tips in \&quot;Options\&quot;.&quot;
++113, 	&quot;Invalid Move&quot;
++114, 	&quot;How To Play&quot;
++115, 	&quot;Changed Game Settings&quot;
++116, 	&quot;\\Microsoft Games&quot;
++117, 	&quot;\\Chess Titans&quot;
++118, 	&quot;Rotation&quot;
++119, 	&quot;Invalid move. Please try another.&quot;
++120, 	&quot;This piece can't move to that space.&quot;
++121, 	&quot;This piece can't move there. The path is blocked.&quot;
++122, 	&quot;Your king is in check. You may only move to: 1. Capture the attacking piece, 2. Place one of your own pieces between the attacker and your King (unless the attacker is a Knight), 3. Move the King away from the attack&quot;
++123, 	&quot;In order to castle, neither the King nor the Rook involved may have moved yet. Also, the King may not castle out of check, into check, or through check. Further, there may not be pieces of either color between the King and the Rook involved in castling.&quot;
++124, 	&quot;You cannot perform an en passant because this will put your King in check.&quot;
++125, 	&quot;Segoe UI&quot;
++126, 	&quot;Resign Game&quot;
++127, 	&quot;Are you sure you want to resign this game?&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++128, 	&quot;New Game Against Computer&quot;
++129, 	&quot;Hardware acceleration is either disabled or not supported by your video card driver, which could slow game performance. Make sure you have the latest video card driver installed and that hardware acceleration is turned on.&quot;
++130, 	&quot;New Game Against Human&quot;
++131, 	&quot;Exit Game&quot;
++132, 	&quot;Software\\Microsoft\\Windows\\CurrentVersion\\InBoxGames&quot;
++133, 	&quot;debug&quot;
++134, 	&quot;Pawns may only move forward one space, or two spaces if they haven't moved yet. Pawns may capture by moving forward and to the side one space.&quot;
++135, 	&quot;Knights must move one square up or down, and two squares over, or vice versa. Knights are the only piece that can jump over other pieces.&quot;
++136, 	&quot;Bishops may move diagonally any number of spaces in a straight line.&quot;
++137, 	&quot;Rooks may move up, down, left or right any number of spaces in a straight line.&quot;
++138, 	&quot;Queens may move in any of the eight directions in a straight line.&quot;
++139, 	&quot;The King may only move one space in any direction.&quot;
++140, 	&quot;You can't move your King onto a square that is under attack by another piece. Your opponent has a piece on the board that can move onto that square from its current position.&quot;
++141, 	&quot;Failed to initialize COM.&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++145, 	&quot;Could not create render target.&quot;
++146, 	&quot;Could not initialize Direct3D. You may want to check that the latest version of DirectX is correctly installed on your system. Also make sure that this program was compiled with header files that match the installed DirectX DLLs.&quot;
++147, 	&quot;Could not load shader [%s]&quot;
++148, 	&quot;Could not find texture [%s]&quot;
++149, 	&quot;Incorrect version of Direct3D and/or D3DX.&quot;
++150, 	&quot;It's black's turn, click a black piece to move it.&quot;
++151, 	&quot;The D3D device has a non-zero reference count, meaning some objects were not released.&quot;
++152, 	&quot;Failed creating the Direct3D device.&quot;
++153, 	&quot;Failed resetting the Direct3D device.&quot;
++154, 	&quot;Failed creating Direct3D device objects.&quot;
++155, 	&quot;Failed resetting Direct3D device objects.&quot;
++156, 	&quot;Switching to the reference rasterizer,\na software device that implements the entire\nDirect3D feature set, but runs very slowly.&quot;
++157, 	&quot;Chess Titans cannot be run over a remote session.&quot;
++158, 	&quot;Could not find any compatible Direct3D devices.&quot;
++159, 	&quot;It's white's turn, click a white piece to move it.&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++160, 	&quot;<A HREF="mshelp://windows/?id=96cff9fa-e9aa-4ca9-a0fe-75bfa684ef10">mshelp://windows/?id=96cff9fa-e9aa-4ca9-a0fe-75bfa684ef10</A>&quot;
++161, 	&quot;Chess Titans Statistics - %s&quot;
++162, 	&quot;Chess Titans Statistics&quot;
++163, 	&quot;Could not find required media. Ensure that the DirectX SDK is correctly installed.&quot;
++166, 	&quot;The game has ended. If you wish to play again, start a new game.&quot;
++167, 	&quot;New Game Against Human&quot;
++168, 	&quot;Not enough available video memory. Please close any other graphically intensive applications that are running to free up memory, and then try running this game again.&quot;
++169, 	&quot;Unable to find the file [%s]. The game cannot continue.&quot;
++170, 	&quot;Chess Titans&quot;
++171, 	&quot;ChessWindowClass&quot;
++172, 	&quot;Chess Titans developed for Microsoft Corporation by Oberon Games.&quot;
++173, 	&quot;This game has been counted as a loss in your statistics. If you return to the game, the loss will not be counted again.&quot;
++174, 	&quot;This game has been counted as a draw in your statistics. If you return to the game, the draw will not be counted again.&quot;
++175, 	&quot;Play Against Computer as &amp;White&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++176, 	&quot;Play Against Computer as &amp;Black&quot;
++177, 	&quot;Play Against Another &amp;Player&quot;
++178, 	&quot;Statistics for Level %d&quot;
++179, 	&quot;These settings won't apply to the game in progress. What do you want to do?&quot;
++180, 	&quot;Quit and start a &amp;new game with the new settings\nThis counts as a loss in your statistics.&quot;
++181, 	&quot;&amp;Finish the game\nThe new settings apply to your next game.&quot;
++182, 	&quot;Select Difficulty&quot;
++183, 	&quot;What difficulty level do you want to play?&quot;
++184, 	&quot;Note: You can change the difficulty later by clicking Options on the Game menu.&quot;
++185, 	&quot;&amp;Beginner\nLevel 2 on a scale of 1 to 10&quot;
++186, 	&quot;&amp;Intermediate\nLevel 5 on a scale of 1 to 10&quot;
++187, 	&quot;&amp;Advanced\nLevel 8 on a scale of 1 to 10&quot;
++188, 	&quot;Games played: %d&quot;
++189, 	&quot;Games won: %d&quot;
++190, 	&quot;Games drawn: %d&quot;
++191, 	&quot;Percentage: %d%%&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++192, 	&quot;Percentage: %d%%&quot;
++193, 	&quot;ChessTitans.xml&quot;
++194, 	&quot;ChessTitans.tmp&quot;
++195, 	&quot;What do you want to do with the game in progress?&quot;
++196, 	&quot;Quit and start a &amp;new game\nThis counts as a loss in your statistics.&quot;
++197, 	&quot;&amp;Keep playing&quot;
++198, 	&quot;Segoe UI&quot;
++200, 	&quot;ChessTitans.ChessTitansSave-ms&quot;
++201, 	&quot;Segoe UI&quot;
++202, 	&quot;Loading Chess Titans...&quot;
++203, 	&quot;New Game Against Computer&quot;
++204, 	&quot;Click on a chess piece and the squares you can move it to will highlight in blue. Click on a blue square to move there.&quot;
++205, 	&quot;Get a different view of the board by holding down the right mouse button and dragging your mouse.&quot;
++206, 	&quot;\\Saved Games&quot;
++207, 	&quot;Saved Game Found&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++208, 	&quot;Do you want to continue your saved game?&quot;
++209, 	&quot;Note: You can turn off this prompt in \&quot;Options\&quot;.&quot;
++210, 	&quot;&amp;Yes&quot;
++211, 	&quot;&amp;No&quot;
++212, 	&quot;If you make that move your King would be in check. That move is not allowed.&quot;
++213, 	&quot;Games played: %d&quot;
++214, 	&quot;Games won: %d&quot;
++215, 	&quot;Games drawn: %d&quot;
++216, 	&quot;Win percentage: %d%%&quot;
++217, 	&quot;Draw percentage: %d%%&quot;
++218, 	&quot;Chess.dll&quot;
++219, 	&quot;Porcelain&quot;
++220, 	&quot;Frosted Glass&quot;
++221, 	&quot;Wood&quot;
++222, 	&quot;Black &amp; Gold&quot;
++223, 	&quot;Marble&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++225, 	&quot;Pawn Promotion&quot;
++226, 	&quot;You can promote your pawn! What piece do you want to promote your pawn to?&quot;
++227, 	&quot;&amp;Queen&quot;
++228, 	&quot;&amp;Rook&quot;
++229, 	&quot;&amp;Bishop&quot;
++230, 	&quot;&amp;Knight&quot;
++231, 	&quot;A:0:0:Easiest:1:Easier:2:Easy:3:Moderately Easy:4:Moderate:5:Moderately Hard:6:Hard:7:Harder:8:Very Hard:9:Hardest:&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++250, 	&quot;ChessTitansMCE.xml&quot;
++251, 	&quot;You have run out of video memory. Falling back to lower quality rendering.&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++300, 	&quot;&amp;Yes&quot;
++301, 	&quot;&amp;No&quot;
++302, 	&quot;The game is running in software rendering mode&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++306, 	&quot;16&quot;
++307, 	&quot;Chess Titans Save Game&quot;
++308, 	&quot;Play a game of Chess Titans&quot;
++310, 	&quot;Media Center Chess Titans&quot;
++311, 	&quot;Segoe UI&quot;
++312, 	&quot;14&quot;
++313, 	&quot;28&quot;
++314, 	&quot;15&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++1047, 	&quot;Longest winning streak: %d&quot;
++1048, 	&quot;Longest drawing streak: %d&quot;
++1049, 	&quot;Longest losing streak: %d&quot;
++1050, 	&quot;Current streak: %d&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++1100, 	&quot;Switching to the Direct3D reference rasterizer, a software device that implements the entire Direct3D feature set, but runs very slowly.\n\nDo you wish to continue?&quot;
++1101, 	&quot;&amp;Don't show again&quot;
++1102, 	&quot;&amp;Yes&quot;
++1103, 	&quot;&amp;No&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++1104, 	&quot;This game cannot be started because Windows is currently running in Safe Mode.&quot;
++1105, 	&quot;<A HREF="http://go.microsoft.com/fwlink/?LinkID=130267">http://go.microsoft.com/fwlink/?LinkID=130267</A>&quot;
++1106, 	&quot;White Pawn&quot;
++1107, 	&quot;White Knight&quot;
++1108, 	&quot;White Bishop&quot;
++1109, 	&quot;White Rook&quot;
++1110, 	&quot;White Queen&quot;
++1111, 	&quot;White King&quot;
++1112, 	&quot;Black Pawn&quot;
++1113, 	&quot;Black Knight&quot;
++1114, 	&quot;Black Bishop&quot;
++1115, 	&quot;Black Rook&quot;
++1116, 	&quot;Black Queen&quot;
++1117, 	&quot;Black King&quot;
++1118, 	&quot;Empty&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++6000, 	&quot;Note: You can turn off this prompt in \&quot;Options.\&quot;&quot;
++6001, 	&quot;Exit Game&quot;
++6002, 	&quot;What do you want to do with the game in progress?&quot;
++6003, 	&quot;&amp;Save&quot;
++6004, 	&quot;&amp;Don't save&quot;
++6005, 	&quot;Cancel&quot;
++6006, 	&quot;Saved Game Found&quot;
++6007, 	&quot;Do you want to continue your saved game?&quot;
++6008, 	&quot;&amp;Yes&quot;
++6009, 	&quot;&amp;No&quot;
++6010, 	&quot;Reset Statistics&quot;
++6011, 	&quot;Do you want to reset all your statistics to zero?&quot;
++6012, 	&quot;&amp;Yes&quot;
++6013, 	&quot;&amp;No&quot;
++6014, 	&quot;Changed Game Settings&quot;
++6015, 	&quot;These settings won't apply to the game in progress. What do you want to do?&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++6016, 	&quot;Quit and start a &amp;new game with the new settings\nThis counts as a loss in your statistics.&quot;
++6017, 	&quot;&amp;Finish the game\nThe new settings apply to your next game.&quot;
++6018, 	&quot;Overwrite Saved Game&quot;
++6019, 	&quot;A saved game already exists. Are you sure you want to replace your previously saved game with your current game?&quot;
++6020, 	&quot;Save Game File Error&quot;
++6021, 	&quot;The save game file was either missing or invalid. If the file exists it will be deleted.  A new game will start.&quot;
++6023, 	&quot;Always continue saved game&quot;
++6024, 	&quot;Fatal Error&quot;
++6025, 	&quot;An unknown fatal error occurred&quot;
++6026, 	&quot;An unexpected NULL pointer was encountered&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++7600, 	&quot;Level %1!d!&quot;
++7601, 	&quot;Games Played&quot;
++7602, 	&quot;Games Won&quot;
++7603, 	&quot;Games Drawn&quot;
++7604, 	&quot;Win Percentage&quot;
++7605, 	&quot;Draw Percentage&quot;
++7606, 	&quot;Longest Winning Streak&quot;
++7607, 	&quot;Longest Drawing Streak&quot;
++7608, 	&quot;Longest Losing Streak&quot;
++7609, 	&quot;Current Streak&quot;
++7610, 	&quot;%1!d!&quot;
++7611, 	&quot;%1!d!%%&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++62139, 	&quot;Select Piece Style&quot;
++62140, 	&quot;Select Board&quot;
++62141, 	&quot;&amp;Randomly choose piece style and board&quot;
++62142, 	&quot;Games played: %1!d!&quot;
++62143, 	&quot;Games won: %1!d!&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++62144, 	&quot;Games drawn: %1!d!&quot;
++62145, 	&quot;Percentage: %1!d!%%&quot;
++62146, 	&quot;Game Won&quot;
++62147, 	&quot;Game Lost&quot;
++62148, 	&quot;Game Draw&quot;
++62149, 	&quot;Congratulations, you won by checkmate!&quot;
++62150, 	&quot;Sorry, you lost this game. Better luck next time!&quot;
++62151, 	&quot;Checkmate&quot;
++62152, 	&quot;Game Draw&quot;
++62153, 	&quot;What do you want to do?&quot;
++62154, 	&quot;What do you want to do?&quot;
++62155, 	&quot;&amp;Return and try again\nUse Undo to reverse your last moves and try again.&quot;
++62156, 	&quot;&amp;End Game&quot;
++62157, 	&quot;Game Over&quot;
++62158, 	&quot;Quit and start a &amp;new game&quot;
++62159, 	&quot;E&amp;xit Game&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++62160, 	&quot;The system has run out of memory. Try closing some applications and trying again.&quot;
++62161, 	&quot;Level %d&quot;
++62162, 	&quot;Always continue saved game&quot;
++}
++
++
++173 ACCELERATORS
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++	VK_F7, 32778, NOINVERT, VIRTKEY
++	VK_F5, 32777, NOINVERT, VIRTKEY
++	VK_F2, 32771, NOINVERT, VIRTKEY
++	VK_F3, 32772, NOINVERT, VIRTKEY
++	VK_F4, 32776, NOINVERT, VIRTKEY
++	VK_Z, 32775, NOINVERT, CONTROL, VIRTKEY
++	VK_F1, 32784, NOINVERT, VIRTKEY
++}
++
++
++174 ACCELERATORS
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++	VK_F, 32789, NOINVERT, CONTROL, VIRTKEY
++	VK_R, 32781, NOINVERT, CONTROL, VIRTKEY
++	VK_P, 32782, NOINVERT, CONTROL, VIRTKEY
++	VK_T, 32783, NOINVERT, CONTROL, VIRTKEY
++	VK_F7, 32778, NOINVERT, VIRTKEY
++	VK_F5, 32777, NOINVERT, VIRTKEY
++	VK_F2, 32771, NOINVERT, VIRTKEY
++	VK_F3, 32772, NOINVERT, VIRTKEY
++	VK_F4, 32776, NOINVERT, VIRTKEY
++	VK_Z, 32775, NOINVERT, CONTROL, VIRTKEY
++	VK_F1, 32784, NOINVERT, VIRTKEY
++}
++
++
++1 VERSIONINFO
++FILEVERSION 6,1,7600,16385
++PRODUCTVERSION 6,1,7600,16385
++FILEOS 0x40004
++FILETYPE 0x1
++{
++BLOCK &quot;StringFileInfo&quot;
++{
++	BLOCK &quot;040904B0&quot;
++	{
++		VALUE &quot;CompanyName&quot;, &quot;Microsoft Corporation&quot;
++		VALUE &quot;FileDescription&quot;, &quot;Executable for Chess Game&quot;
++		VALUE &quot;FileVersion&quot;, &quot;6.1.7600.16385 (win7_rtm.090713-1255)&quot;
++		VALUE &quot;InternalName&quot;, &quot;Chess.exe&quot;
++		VALUE &quot;LegalCopyright&quot;, &quot;&#169; Microsoft Corporation. All rights reserved.&quot;
++		VALUE &quot;OriginalFilename&quot;, &quot;Chess.exe.mui&quot;
++		VALUE &quot;ProductName&quot;, &quot;Microsoft&#174; Windows&#174; Operating System&quot;
++		VALUE &quot;ProductVersion&quot;, &quot;6.1.7600.16385&quot;
++		VALUE &quot;OleSelfRegister&quot;, &quot;&quot;
++	}
++}
++
++BLOCK &quot;VarFileInfo&quot;
++{
++	VALUE &quot;Translation&quot;, 0x0409 0x04B0
++}
++}
++
+
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000209.html">[I18n-bel-svn] r291 - Windows7/omegat
+</A></li>
+	<LI>Next message: <A HREF="000211.html">[I18n-bel-svn] r294 - / Windows7/omegat Windows7/source	Windows7/source/mui/Windows/System32/be-BY	WindowsPrograms/QIP/omegat
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#210">[ date ]</a>
+              <a href="thread.html#210">[ thread ]</a>
+              <a href="subject.html#210">[ subject ]</a>
+              <a href="author.html#210">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/i18n-bel-svn">More information about the I18n-bel-svn
+mailing list</a><br>
+</body></html>

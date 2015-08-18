@@ -1,0 +1,1174 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [I18n-bel-svn] r88 - Windows7/source/x32/Windows/System32/en-US
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/i18n-bel-svn/2010-November/index.html" >
+   <LINK REL="made" HREF="mailto:i18n-bel-svn%40lists.berlios.de?Subject=Re%3A%20%5BI18n-bel-svn%5D%20r88%20-%20Windows7/source/x32/Windows/System32/en-US&In-Reply-To=%3C20101111132852.5AF12480588%40sheep.berlios.de%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000005.html">
+   <LINK REL="Next"  HREF="000007.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[I18n-bel-svn] r88 - Windows7/source/x32/Windows/System32/en-US</H1>
+    <B>eratyk at mail.berlios.de</B> 
+    <A HREF="mailto:i18n-bel-svn%40lists.berlios.de?Subject=Re%3A%20%5BI18n-bel-svn%5D%20r88%20-%20Windows7/source/x32/Windows/System32/en-US&In-Reply-To=%3C20101111132852.5AF12480588%40sheep.berlios.de%3E"
+       TITLE="[I18n-bel-svn] r88 - Windows7/source/x32/Windows/System32/en-US">eratyk at mail.berlios.de
+       </A><BR>
+    <I>Thu Nov 11 14:28:52 CET 2010</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000005.html">[I18n-bel-svn] r87 - Windows7
+</A></li>
+        <LI>Next message: <A HREF="000007.html">[I18n-bel-svn] r89 - Windows7/omegat
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#6">[ date ]</a>
+              <a href="thread.html#6">[ thread ]</a>
+              <a href="subject.html#6">[ subject ]</a>
+              <a href="author.html#6">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>Author: eratyk
+Date: 2010-11-11 14:28:51 +0100 (Thu, 11 Nov 2010)
+New Revision: 88
+
+Added:
+   Windows7/source/x32/Windows/System32/en-US/taskmgr.exe.rc
+Log:
+
+
+Added: Windows7/source/x32/Windows/System32/en-US/taskmgr.exe.rc
+===================================================================
+--- Windows7/source/x32/Windows/System32/en-US/taskmgr.exe.rc	                        (rev 0)
++++ Windows7/source/x32/Windows/System32/en-US/taskmgr.exe.rc	2010-11-11 13:28:51 UTC (rev 88)
+@@ -0,0 +1,1098 @@
++1 MUI &quot;Data_1639.bin&quot;
++
++106 MENU
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++POPUP &quot;&amp;File&quot;
++{
++	MENUITEM &quot;&amp;New Task (Run...)&quot;,  40001
++	MENUITEM SEPARATOR
++	MENUITEM &quot;E&amp;xit Task Manager&quot;,  40002
++}
++POPUP &quot;&amp;Options&quot;
++{
++	MENUITEM &quot;&amp;Always On Top&quot;,  40006
++	MENUITEM &quot;&amp;Minimize On Use&quot;,  40007,  CHECKED
++	MENUITEM &quot;&amp;Hide When Minimized&quot;,  40065,  CHECKED
++}
++POPUP &quot;&amp;View&quot;
++{
++	MENUITEM &quot;&amp;Refresh Now\tF5&quot;,  40053
++	POPUP &quot;&amp;Update Speed&quot;
++	{
++		MENUITEM &quot;&amp;High&quot;,  40022
++		MENUITEM &quot;&amp;Normal&quot;,  40023
++		MENUITEM &quot;&amp;Low&quot;,  40024
++		MENUITEM &quot;&amp;Paused&quot;,  40025
++	}
++}
++POPUP &quot;&amp;Windows&quot;
++{
++	MENUITEM &quot;Tile &amp;Horizontally&quot;,  40042
++	MENUITEM &quot;Tile &amp;Vertically&quot;,  30043
++	MENUITEM &quot;&amp;Minimize&quot;,  40039
++	MENUITEM &quot;Ma&amp;ximize&quot;,  40040
++	MENUITEM &quot;&amp;Cascade&quot;,  40041
++	MENUITEM &quot;&amp;Bring To Front&quot;,  40045
++}
++POPUP &quot;&amp;Help&quot;
++{
++	MENUITEM &quot;Task Manager &amp;Help Topics\tF1&quot;,  40049
++	MENUITEM SEPARATOR
++	MENUITEM &quot;&amp;About Task Manager&quot;,  40021
++}
++}
++
++111 MENU
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++POPUP &quot;Banana&quot;
++{
++	MENUITEM &quot;&amp;Open File Location&quot;,  50127
++	MENUITEM SEPARATOR
++	MENUITEM &quot;&amp;End Process&quot;,  40028
++	MENUITEM &quot;End Process &amp;Tree&quot;,  40102
++	MENUITEM &quot;&amp;Debug&quot;,  40027
++	MENUITEM &quot;UAC &amp;Virtualization&quot;,  40070
++	MENUITEM &quot;&amp;Create Dump File&quot;,  40131
++	MENUITEM SEPARATOR
++	POPUP &quot;Set &amp;Priority&quot;
++	{
++		MENUITEM &quot;&amp;Realtime&quot;,  40029
++		MENUITEM &quot;&amp;High&quot;,  40031
++		MENUITEM &quot;&amp;Above Normal&quot;,  40030
++		MENUITEM &quot;&amp;Normal&quot;,  40032
++		MENUITEM &quot;&amp;Below Normal&quot;,  40033
++		MENUITEM &quot;&amp;Low&quot;,  40034
++	}
++	MENUITEM &quot;Set &amp;Affinity...&quot;,  40055
++	MENUITEM SEPARATOR
++	MENUITEM &quot;P&amp;roperties&quot;,  40066
++	MENUITEM &quot;Go to &amp;Service(s)&quot;,  3507
++}
++}
++
++117 MENU
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++POPUP &quot;Apple&quot;
++{
++	MENUITEM &quot;&amp;Switch To&quot;,  40044
++	MENUITEM &quot;&amp;Bring To Front&quot;,  40045
++	MENUITEM SEPARATOR
++	MENUITEM &quot;&amp;Minimize&quot;,  40039
++	MENUITEM &quot;Ma&amp;ximize&quot;,  40040
++	MENUITEM &quot;&amp;Cascade&quot;,  40041
++	MENUITEM &quot;Tile &amp;Horizontally&quot;,  40042
++	MENUITEM &quot;Tile &amp;Vertically&quot;,  30043
++	MENUITEM SEPARATOR
++	MENUITEM &quot;&amp;End Task&quot;,  40046
++	MENUITEM &quot;Create &amp;Dump File&quot;,  40131
++	MENUITEM &quot;&amp;Go To Process&quot;,  40047
++}
++}
++
++119 MENU
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++POPUP &quot;Peach&quot;
++{
++	MENUITEM &quot;New Task (&amp;Run...)&quot;,  40001
++}
++}
++
++120 MENU
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++POPUP &quot;&amp;File&quot;
++{
++	MENUITEM &quot;&amp;New Task (Run...)&quot;,  40001
++	MENUITEM SEPARATOR
++	MENUITEM &quot;E&amp;xit Task Manager&quot;,  40002
++}
++POPUP &quot;&amp;Options&quot;
++{
++	MENUITEM &quot;&amp;Always On Top&quot;,  40006
++	MENUITEM &quot;&amp;Minimize On Use&quot;,  40007,  CHECKED
++	MENUITEM &quot;&amp;Hide When Minimized&quot;,  40065,  CHECKED
++}
++POPUP &quot;&amp;View&quot;
++{
++	MENUITEM &quot;&amp;Refresh Now\tF5&quot;,  40053
++	POPUP &quot;&amp;Update Speed&quot;
++	{
++		MENUITEM &quot;&amp;High&quot;,  40022
++		MENUITEM &quot;&amp;Normal&quot;,  40023
++		MENUITEM &quot;&amp;Low&quot;,  40024
++		MENUITEM &quot;&amp;Paused&quot;,  40025
++	}
++	MENUITEM SEPARATOR
++	POPUP &quot;&amp;CPU History&quot;
++	{
++		MENUITEM &quot;&amp;One Graph, All CPUs&quot;,  60000
++		MENUITEM &quot;One Graph &amp;Per CPU&quot;,  60001
++		MENUITEM &quot;One Graph Per &amp;NUMA Node&quot;,  60002
++	}
++	MENUITEM &quot;&amp;Show Kernel Times&quot;,  40056
++}
++POPUP &quot;&amp;Help&quot;
++{
++	MENUITEM &quot;Task Manager &amp;Help Topics\tF1&quot;,  40049
++	MENUITEM SEPARATOR
++	MENUITEM &quot;&amp;About Task Manager&quot;,  40021
++}
++}
++
++121 MENU
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++POPUP &quot;&amp;File&quot;
++{
++	MENUITEM &quot;&amp;New Task (Run...)&quot;,  40001
++	MENUITEM SEPARATOR
++	MENUITEM &quot;E&amp;xit Task Manager&quot;,  40002
++}
++POPUP &quot;&amp;Options&quot;
++{
++	MENUITEM &quot;&amp;Always On Top&quot;,  40006
++	MENUITEM &quot;&amp;Minimize On Use&quot;,  40007,  CHECKED
++	MENUITEM &quot;&amp;Hide When Minimized&quot;,  40065,  CHECKED
++	MENUITEM &quot;&amp;Show 16-bit tasks&quot;,  40098,  CHECKED
++}
++POPUP &quot;&amp;View&quot;
++{
++	MENUITEM &quot;&amp;Refresh Now\tF5&quot;,  40053
++	POPUP &quot;&amp;Update Speed&quot;
++	{
++		MENUITEM &quot;&amp;High&quot;,  40022
++		MENUITEM &quot;&amp;Normal&quot;,  40023
++		MENUITEM &quot;&amp;Low&quot;,  40024
++		MENUITEM &quot;&amp;Paused&quot;,  40025
++	}
++	MENUITEM SEPARATOR
++	MENUITEM &quot;&amp;Select Columns...&quot;,  40052
++}
++POPUP &quot;&amp;Help&quot;
++{
++	MENUITEM &quot;Task Manager &amp;Help Topics\tF1&quot;,  40049
++	MENUITEM SEPARATOR
++	MENUITEM &quot;&amp;About Task Manager&quot;,  40021
++}
++}
++
++128 MENU
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++POPUP &quot;Pear&quot;
++{
++	MENUITEM &quot;&amp;Restore&quot;,  40064
++	MENUITEM &quot;&amp;Close&quot;,  40002
++	MENUITEM SEPARATOR
++	MENUITEM &quot;&amp;Always on Top&quot;,  40006
++}
++}
++
++2400 MENU
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++POPUP &quot;&amp;File&quot;
++{
++	MENUITEM &quot;&amp;New Task (Run...)&quot;,  40001
++	MENUITEM SEPARATOR
++	MENUITEM &quot;E&amp;xit Task Manager&quot;,  40002
++}
++POPUP &quot;&amp;Options&quot;
++{
++	MENUITEM &quot;&amp;Always On Top&quot;,  40006
++	MENUITEM &quot;&amp;Minimize On Use&quot;,  40007,  CHECKED
++	MENUITEM &quot;&amp;Hide When Minimized&quot;,  40065,  CHECKED
++	MENUITEM SEPARATOR
++	MENUITEM &quot;&amp;Tab Always Active&quot;,  2410,  CHECKED
++	MENUITEM &quot;Show &amp;Cumulative Data&quot;,  2405,  CHECKED
++	MENUITEM &quot;A&amp;uto Scale&quot;,  2407,  CHECKED
++	MENUITEM &quot;&amp;Reset&quot;,  2406
++	MENUITEM &quot;&amp;Show Scale&quot;,  2408,  CHECKED
++}
++POPUP &quot;&amp;View&quot;
++{
++	MENUITEM &quot;&amp;Refresh Now\tF5&quot;,  40053
++	POPUP &quot;&amp;Update Speed&quot;
++	{
++		MENUITEM &quot;&amp;High&quot;,  40022
++		MENUITEM &quot;&amp;Normal&quot;,  40023
++		MENUITEM &quot;&amp;Low&quot;,  40024
++		MENUITEM &quot;&amp;Paused&quot;,  40025
++	}
++	MENUITEM SEPARATOR
++	POPUP &quot;&amp;Network Adapter History&quot;
++	{
++		MENUITEM &quot;Bytes &amp;Sent\t(Red)&quot;,  2401
++		MENUITEM &quot;Bytes &amp;Received\t(Yellow)&quot;,  2402
++		MENUITEM &quot;Bytes &amp;Total\t(Green)&quot;,  2403
++	}
++	MENUITEM SEPARATOR
++	MENUITEM &quot;&amp;Select Columns...&quot;,  2404
++}
++POPUP &quot;&amp;Help&quot;
++{
++	MENUITEM &quot;Task Manager &amp;Help Topics\tF1&quot;,  40049
++	MENUITEM SEPARATOR
++	MENUITEM &quot;&amp;About Task Manager&quot;,  40021
++}
++}
++
++3200 MENU
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++POPUP &quot;&amp;File&quot;
++{
++	MENUITEM &quot;&amp;New Task (Run...)&quot;,  40001
++	MENUITEM SEPARATOR
++	MENUITEM &quot;E&amp;xit Task Manager&quot;,  40002
++}
++POPUP &quot;&amp;Options&quot;
++{
++	MENUITEM &quot;&amp;Always On Top&quot;,  40006
++	MENUITEM &quot;&amp;Minimize On Use&quot;,  40007,  CHECKED
++	MENUITEM &quot;&amp;Hide When Minimized&quot;,  40065,  CHECKED
++	MENUITEM SEPARATOR
++	MENUITEM &quot;&amp;Show Full Account Name&quot;,  3220
++}
++POPUP &quot;&amp;View&quot;
++{
++	MENUITEM &quot;&amp;Refresh Now\tF5&quot;,  40053
++	POPUP &quot;&amp;Update Speed&quot;
++	{
++		MENUITEM &quot;&amp;High&quot;,  40022
++		MENUITEM &quot;&amp;Normal&quot;,  40023
++		MENUITEM &quot;&amp;Low&quot;,  40024
++		MENUITEM &quot;&amp;Paused&quot;,  40025
++	}
++	MENUITEM SEPARATOR
++	MENUITEM &quot;&amp;Select Columns...&quot;,  40109
++}
++POPUP &quot;&amp;Help&quot;
++{
++	MENUITEM &quot;Task Manager &amp;Help Topics\tF1&quot;,  40049
++	MENUITEM SEPARATOR
++	MENUITEM &quot;&amp;About Task Manager&quot;,  40021
++}
++}
++
++3201 MENU
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++POPUP &quot;Hydra&quot;
++{
++	MENUITEM &quot;&amp;Send Message...&quot;,  3210
++	MENUITEM SEPARATOR
++	MENUITEM &quot;&amp;Connect&quot;,  3211
++	MENUITEM &quot;&amp;Disconnect&quot;,  3212
++	MENUITEM &quot;&amp;Log Off&quot;,  3215
++	MENUITEM &quot;&amp;Remote Control&quot;,  3213
++}
++}
++
++3501 MENU
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++POPUP &quot;Banana&quot;
++{
++	MENUITEM &quot;&amp;Start Service&quot;,  3509
++	MENUITEM &quot;S&amp;top Service&quot;,  3510
++	MENUITEM SEPARATOR
++	MENUITEM &quot;Go to &amp;Process&quot;,  3511
++}
++}
++
++3502 MENU
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++POPUP &quot;&amp;File&quot;
++{
++	MENUITEM &quot;&amp;New Task (Run...)&quot;,  40001
++	MENUITEM SEPARATOR
++	MENUITEM &quot;E&amp;xit Task Manager&quot;,  40002
++}
++POPUP &quot;&amp;Options&quot;
++{
++	MENUITEM &quot;&amp;Always On Top&quot;,  40006
++	MENUITEM &quot;&amp;Minimize On Use&quot;,  40007,  CHECKED
++	MENUITEM &quot;&amp;Hide When Minimized&quot;,  40065,  CHECKED
++}
++POPUP &quot;&amp;View&quot;
++{
++	MENUITEM &quot;&amp;Refresh Now\tF5&quot;,  3508
++}
++POPUP &quot;&amp;Help&quot;
++{
++	MENUITEM &quot;Task Manager &amp;Help Topics\tF1&quot;,  40049
++	MENUITEM SEPARATOR
++	MENUITEM &quot;&amp;About Task Manager&quot;,  40021
++}
++}
++
++105 DIALOGEX 0, 0, 264, 247
++STYLE DS_FIXEDSYS | WS_POPUP | WS_CLIPCHILDREN | WS_CAPTION | WS_THICKFRAME
++CAPTION &quot;&quot;
++MENU 106
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++FONT 8, &quot;MS Shell Dlg&quot;
++{
++   CONTROL &quot;Tab1&quot;, 1000, &quot;SysTabControl32&quot;, TCS_TABS | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 3, 3, 91, 116 
++}
++
++108 DIALOGEX 0, 0, 438, 303
++STYLE DS_FIXEDSYS | DS_CONTROL | WS_CHILD | WS_CAPTION
++CAPTION &quot;Performance&quot;
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++FONT 8, &quot;MS Shell Dlg&quot;
++{
++   CONTROL &quot;CPU Usage Display&quot;, 1004, BUTTON, BS_OWNERDRAW | WS_CHILD | WS_VISIBLE | WS_DISABLED, 14, 17, 48, 44 , 0x00000200
++   CONTROL &quot;Memory Usage Display&quot;, 1005, BUTTON, BS_OWNERDRAW | WS_CHILD | WS_VISIBLE | WS_DISABLED, 14, 77, 48, 44 , 0x00000200
++   CONTROL &quot;Memory Usage History&quot;, 1006, BUTTON, BS_OWNERDRAW | WS_CHILD | WS_VISIBLE | WS_DISABLED, 82, 77, 48, 44 , 0x00000200
++   CONTROL &quot;Handles&quot;, 1033, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 136, 139, 32, 8 
++   CONTROL &quot;&quot;, 1034, EDIT, ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY | WS_CHILD | WS_VISIBLE, 182, 139, 57, 8 
++   CONTROL &quot;Threads&quot;, 1035, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 136, 148, 32, 8 
++   CONTROL &quot;&quot;, 1036, EDIT, ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY | WS_CHILD | WS_VISIBLE, 182, 148, 57, 8 
++   CONTROL &quot;Processes&quot;, 1037, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 136, 157, 68, 8 
++   CONTROL &quot;&quot;, 1038, EDIT, ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY | WS_CHILD | WS_VISIBLE, 182, 157, 57, 8 
++   CONTROL &quot;Up Time&quot;, 2044, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 136, 166, 68, 8 
++   CONTROL &quot;&quot;, 2046, EDIT, ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY | WS_CHILD | WS_VISIBLE, 182, 166, 57, 8 
++   CONTROL &quot;Commit (MB)&quot;, 2043, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 136, 175, 56, 8 
++   CONTROL &quot;&quot;, 2045, EDIT, ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY | WS_CHILD | WS_VISIBLE, 192, 175, 47, 8 
++   CONTROL &quot;Total&quot;, 1021, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 14, 139, 32, 8 
++   CONTROL &quot;&quot;, 1012, EDIT, ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY | WS_CHILD | WS_VISIBLE, 59, 139, 57, 8 
++   CONTROL &quot;Cached&quot;, 1022, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 14, 148, 32, 8 
++   CONTROL &quot;&quot;, 1013, EDIT, ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY | WS_CHILD | WS_VISIBLE, 59, 148, 57, 8 
++   CONTROL &quot;Available&quot;, 1086, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 14, 157, 54, 8 
++   CONTROL &quot;&quot;, 1085, EDIT, ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY | WS_CHILD | WS_VISIBLE, 59, 157, 57, 8 
++   CONTROL &quot;Free&quot;, 1023, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 14, 166, 54, 8 
++   CONTROL &quot;&quot;, 1015, EDIT, ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY | WS_CHILD | WS_VISIBLE, 59, 166, 57, 8 
++   CONTROL &quot;Paged&quot;, 1031, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 14, 192, 60, 8 
++   CONTROL &quot;&quot;, 1026, EDIT, ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY | WS_CHILD | WS_VISIBLE, 74, 192, 42, 8 
++   CONTROL &quot;Nonpaged&quot;, 1039, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 14, 201, 60, 8 
++   CONTROL &quot;&quot;, 1040, EDIT, ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY | WS_CHILD | WS_VISIBLE, 74, 201, 42, 8 
++   CONTROL &quot;CPU Usage&quot;, 1087, &quot;DavesFrameClass&quot;, 0x50000007, 8, 5, 60, 60 , 0x00000004
++   CONTROL &quot;Memory&quot;, 1064, &quot;DavesFrameClass&quot;, 0x50000007, 8, 67, 60, 60 , 0x00000004
++   CONTROL &quot;Physical Memory Usage History&quot;, 1002, &quot;DavesFrameClass&quot;, 0x50000007, 78, 67, 60, 60 , 0x00000004
++   CONTROL &quot;System&quot;, 1032, &quot;DavesFrameClass&quot;, 0x50000007, 130, 129, 114, 59 , 0x00000004
++   CONTROL &quot;CPU Usage History&quot;, 5000, BUTTON, BS_OWNERDRAW | WS_CHILD | WS_VISIBLE | WS_DISABLED, 82, 15, 6, 44 , 0x00000200
++   CONTROL &quot;CPU Usage History&quot;, 1001, &quot;DavesFrameClass&quot;, 0x50000007, 78, 5, 8, 60 , 0x00000004
++   CONTROL &quot;Physical Memory (MB)&quot;, 1020, &quot;DavesFrameClass&quot;, 0x50000007, 8, 129, 113, 48 , 0x00000004
++   CONTROL &quot;Kernel Memory (MB)&quot;, 1029, &quot;DavesFrameClass&quot;, 0x50000007, 8, 182, 113, 30 , 0x00000004
++   CONTROL &quot;&amp;Resource Monitor...&quot;, 3506, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 130, 197, 114, 14 
++}
++
++109 DIALOGEX 0, 0, 438, 303
++STYLE DS_FIXEDSYS | DS_CONTROL | WS_CHILD | WS_CAPTION
++CAPTION &quot;Networking&quot;
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++FONT 8, &quot;MS Shell Dlg&quot;
++{
++   CONTROL &quot;Totals&quot;, 2600, &quot;SysListView32&quot;, LVS_REPORT | LVS_SINGLESEL | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 9, 9, 376, 131 
++   CONTROL &quot;No Active Network Adapters Found.&quot;, 2603, STATIC, SS_CENTER | WS_CHILD | WS_VISIBLE | WS_GROUP, 14, 139, 32, 8 
++   CONTROL &quot;&quot;, 2606, SCROLLBAR, SBS_VERT | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 290, 5, 10, 136 
++}
++
++110 DIALOGEX 0, 0, 393, 197
++STYLE DS_FIXEDSYS | DS_CONTROL | WS_CHILD | WS_CLIPCHILDREN | WS_CAPTION
++CAPTION &quot;Processes&quot;
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++FONT 8, &quot;MS Shell Dlg&quot;
++{
++   CONTROL &quot;Processes&quot;, 1009, &quot;SysListView32&quot;, LVS_REPORT | LVS_SINGLESEL | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 9, 9, 376, 131 
++   CONTROL &quot;&amp;Show processes from all users&quot;, 2040, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 10, 144, 120, 14 
++   CONTROL &quot;&amp;Show processes from all users&quot;, 1008, BUTTON, BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 10, 144, 120, 10 
++   CONTROL &quot;&amp;End Process&quot;, 1010, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 320, 144, 66, 14 
++}
++
++112 DIALOGEX 0, 0, 393, 177
++STYLE DS_FIXEDSYS | DS_CONTROL | WS_CHILD | WS_CLIPCHILDREN | WS_CAPTION
++CAPTION &quot;Applications&quot;
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++FONT 8, &quot;MS Shell Dlg&quot;
++{
++   CONTROL &quot;Tasks&quot;, 1053, &quot;SysListView32&quot;, LVS_REPORT | LVS_SHOWSELALWAYS | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 9, 9, 378, 139 
++   CONTROL &quot;&amp;End Task&quot;, 1050, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 224, 152, 53, 14 
++   CONTROL &quot;&amp;Switch To&quot;, 1048, BUTTON, BS_DEFPUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 280, 152, 53, 14 
++   CONTROL &quot;&amp;New Task...&quot;, -25535, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 336, 152, 53, 14 
++}
++
++121 DIALOGEX 0, 0, 252, 218
++STYLE DS_FIXEDSYS | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
++CAPTION &quot;Select Process Page Columns&quot;
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++FONT 8, &quot;MS Shell Dlg&quot;
++{
++   CONTROL &quot;OK&quot;, 1, BUTTON, BS_DEFPUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 140, 197, 50, 14 
++   CONTROL &quot;Cancel&quot;, 2, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 195, 197, 50, 14 
++   CONTROL &quot;Select the columns that will appear on the Process page of Task Manager.&quot;, -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 7, 7, 238, 19 
++   CONTROL &quot;Columns&quot;, 245, &quot;SysListView32&quot;, LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_NOLABELWRAP | LVS_NOCOLUMNHEADER | LVS_NOSORTHEADER | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 7, 28, 238, 160 
++}
++
++124 DIALOGEX 0, 0, 202, 178
++STYLE DS_FIXEDSYS | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
++CAPTION &quot;Processor Affinity&quot;
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++FONT 8, &quot;MS Shell Dlg&quot;
++{
++   CONTROL &quot;Which processors are allowed to run \&quot;%s\&quot;?&quot;, 1084, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 7, 4, 188, 19 
++   CONTROL &quot;Processors&quot;, 1083, &quot;SysListView32&quot;, LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_NOLABELWRAP | LVS_NOCOLUMNHEADER | LVS_NOSORTHEADER | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 7, 28, 188, 120 
++   CONTROL &quot;OK&quot;, 1, BUTTON, BS_DEFPUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 90, 157, 50, 14 
++   CONTROL &quot;Cancel&quot;, 2, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 145, 157, 50, 14 
++}
++
++129 DIALOGEX 0, 0, 252, 218
++STYLE DS_FIXEDSYS | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
++CAPTION &quot;Select User Page Columns&quot;
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++FONT 8, &quot;MS Shell Dlg&quot;
++{
++   CONTROL &quot;OK&quot;, 1, BUTTON, BS_DEFPUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 140, 197, 50, 14 
++   CONTROL &quot;Cancel&quot;, 2, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 195, 197, 50, 14 
++   CONTROL &quot;Select the columns that will appear on the Users page of Task Manager.&quot;, -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 7, 4, 238, 19 
++   CONTROL &quot;User Name&quot;, 1076, BUTTON, BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_DISABLED | WS_TABSTOP, 7, 26, 87, 10 
++   CONTROL &quot;&amp;ID&quot;, 1077, BUTTON, BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 7, 38, 87, 10 
++   CONTROL &quot;&amp;Status&quot;, 1078, BUTTON, BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 7, 50, 87, 10 
++   CONTROL &quot;&amp;Client Name&quot;, 1081, BUTTON, BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 7, 62, 87, 10 
++   CONTROL &quot;S&amp;ession&quot;, 1079, BUTTON, BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 7, 74, 87, 10 
++}
++
++139 DIALOGEX 0, 0, 202, 178
++STYLE DS_FIXEDSYS | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
++CAPTION &quot;Processor Affinity&quot;
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++FONT 8, &quot;MS Shell Dlg&quot;
++{
++   CONTROL &quot;Which processors are allowed to run \&quot;%s\&quot;?&quot;, 1084, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 7, 4, 188, 19 
++   CONTROL &quot;Processor Group:&quot;, -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 7, 19, 188, 19 
++   CONTROL &quot;&quot;, 445, COMBOBOX, CBS_DROPDOWNLIST | WS_CHILD | WS_VISIBLE | WS_VSCROLL | WS_TABSTOP, 7, 30, 80, 46 
++   CONTROL &quot;Processors&quot;, 1083, &quot;SysListView32&quot;, LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_NOLABELWRAP | LVS_NOCOLUMNHEADER | LVS_NOSORTHEADER | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 7, 49, 188, 99 
++   CONTROL &quot;OK&quot;, 1, BUTTON, BS_DEFPUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 90, 157, 50, 14 
++   CONTROL &quot;Cancel&quot;, 2, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 145, 157, 50, 14 
++}
++
++240 DIALOGEX 50, 50, 221, 108
++STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
++CAPTION &quot;Remote Control&quot;
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++FONT 8, &quot;MS Shell Dlg&quot;
++{
++   CONTROL &quot;Hot key&quot;, -1, BUTTON, BS_GROUPBOX | WS_CHILD | WS_VISIBLE | WS_GROUP, 7, 7, 207, 69 
++   CONTROL &quot;&amp;To end a remote control session, press this key, plus the keys selected below:&quot;, 397, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 16, 20, 135, 24 
++   CONTROL &quot;&amp;To end a remote control session, press this key on the numeric keypad, plus the keys selected below:&quot;, 396, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 16, 20, 135, 32 
++   CONTROL &quot;&quot;, 241, COMBOBOX, CBS_DROPDOWNLIST | WS_CHILD | WS_VISIBLE | WS_VSCROLL | WS_TABSTOP, 157, 19, 48, 46 
++   CONTROL &quot;&amp;Shift&quot;, 242, BUTTON, BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_GROUP | WS_TABSTOP, 17, 58, 26, 10 
++   CONTROL &quot;&amp;Ctrl&quot;, 243, BUTTON, BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 65, 58, 30, 10 
++   CONTROL &quot;&amp;Alt&quot;, 244, BUTTON, BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 114, 58, 26, 10 
++   CONTROL &quot;OK&quot;, 1, BUTTON, BS_DEFPUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_GROUP | WS_TABSTOP, 110, 86, 50, 14 
++   CONTROL &quot;Cancel&quot;, 2, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 164, 86, 50, 14 
++}
++
++250 DIALOGEX 50, 50, 214, 116
++STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
++CAPTION &quot;Send Message&quot;
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++FONT 8, &quot;MS Shell Dlg&quot;
++{
++   CONTROL &quot;&amp;Message title:&quot;, -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 7, 7, 200, 8 
++   CONTROL &quot;&quot;, 251, EDIT, ES_LEFT | ES_MULTILINE | ES_AUTOVSCROLL | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 7, 17, 200, 25 
++   CONTROL &quot;Me&amp;ssage:&quot;, -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 7, 50, 200, 8 
++   CONTROL &quot;&quot;, 252, EDIT, ES_LEFT | ES_MULTILINE | ES_AUTOVSCROLL | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 7, 60, 200, 25 
++   CONTROL &quot;OK&quot;, 1, BUTTON, BS_DEFPUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_GROUP | WS_TABSTOP, 103, 95, 50, 14 
++   CONTROL &quot;Cancel&quot;, 2, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 157, 95, 50, 14 
++}
++
++440 DIALOGEX 50, 50, 185, 68
++STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
++CAPTION &quot;Connect Password Required&quot;
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++FONT 8, &quot;MS Shell Dlg&quot;
++{
++   CONTROL &quot;Enter the selected User's password:&quot;, 441, STATIC, SS_CENTER | WS_CHILD | WS_VISIBLE | WS_GROUP, 5, 10, 175, 8 
++   CONTROL &quot;&quot;, 442, EDIT, ES_LEFT | ES_PASSWORD | ES_AUTOHSCROLL | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 58, 25, 68, 12 
++   CONTROL &quot;OK&quot;, 1, BUTTON, BS_DEFPUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_GROUP | WS_TABSTOP, 30, 50, 50, 14 
++   CONTROL &quot;Cancel&quot;, 2, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 101, 50, 50, 14 
++}
++
++443 DIALOGEX 50, 50, 214, 50
++STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
++CAPTION &quot;Dumping Process&quot;
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++FONT 8, &quot;MS Shell Dlg&quot;
++{
++   CONTROL &quot;Please wait while the process is written to the file...&quot;, -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 7, 7, 200, 8 
++   CONTROL &quot;Cancel&quot;, 2, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 157, 25, 50, 14 
++}
++
++444 DIALOGEX 50, 50, 214, 80
++STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
++CAPTION &quot;Dumping Process&quot;
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++FONT 8, &quot;MS Shell Dlg&quot;
++{
++   CONTROL &quot;The file has been successfully created.\n\nThe file is located at:&quot;, -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 7, 7, 200, 25 
++   CONTROL &quot;OK&quot;, 1, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 157, 60, 50, 15 
++   CONTROL &quot;&quot;, -15410, EDIT, ES_LEFT | ES_MULTILINE | ES_AUTOVSCROLL | ES_READONLY | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 7, 34, 200, 25 
++}
++
++2409 DIALOGEX 0, 0, 252, 218
++STYLE DS_FIXEDSYS | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
++CAPTION &quot;Select Networking Page Columns&quot;
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++FONT 8, &quot;MS Shell Dlg&quot;
++{
++   CONTROL &quot;OK&quot;, 1, BUTTON, BS_DEFPUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 140, 197, 50, 14 
++   CONTROL &quot;Cancel&quot;, 2, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 195, 197, 50, 14 
++   CONTROL &quot;Select the columns that will appear on the Networking page of Task Manager.&quot;, -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 7, 4, 238, 19 
++   CONTROL &quot;Columns&quot;, 245, &quot;SysListView32&quot;, LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_NOLABELWRAP | LVS_NOCOLUMNHEADER | LVS_NOSORTHEADER | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 7, 28, 238, 160 
++}
++
++3000 DIALOGEX 0, 0, 393, 197
++STYLE DS_FIXEDSYS | DS_CONTROL | WS_CHILD | WS_CLIPCHILDREN | WS_CAPTION
++CAPTION &quot;Users&quot;
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++FONT 8, &quot;MS Shell Dlg&quot;
++{
++   CONTROL &quot;Users&quot;, 3002, &quot;SysListView32&quot;, LVS_REPORT | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 9, 9, 376, 131 
++   CONTROL &quot;&amp;Disconnect&quot;, 3212, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 203, 144, 55, 14 
++   CONTROL &quot;&amp;Logoff&quot;, 3215, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 263, 144, 52, 14 
++   CONTROL &quot;&amp;Send Message...&quot;, 3210, BUTTON, BS_DEFPUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 320, 144, 66, 14 
++}
++
++3500 DIALOGEX 0, 0, 393, 197
++STYLE DS_FIXEDSYS | DS_CONTROL | WS_CHILD | WS_CLIPCHILDREN | WS_CAPTION
++CAPTION &quot;Services&quot;
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++FONT 8, &quot;MS Shell Dlg&quot;
++{
++   CONTROL &quot;&quot;, 3504, &quot;SysListView32&quot;, LVS_REPORT | LVS_SHOWSELALWAYS | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 9, 9, 376, 131 
++   CONTROL &quot;Loading...&quot;, 1082, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 9, 9, 376, 8 
++   CONTROL &quot;&amp;Services...&quot;, 3503, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 320, 144, 66, 14 
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++2401, 	&quot;Graph bytes sent.&quot;
++2402, 	&quot;Graph bytes received.&quot;
++2403, 	&quot;Graph the sum of the bytes sent and received.&quot;
++2404, 	&quot;Select which columns will be visible on the Networking page.&quot;
++2405, 	&quot;Shows all of the data that passed through the network adapter.&quot;
++2406, 	&quot;Reset all adapter history.&quot;
++2407, 	&quot;Adjusts the scale of the graphs.&quot;
++2408, 	&quot;Show the scale.&quot;
++2410, 	&quot;The Networking tab collects data even if it is not selected.&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++3001, 	&quot;Users&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++3020, 	&quot;Active&quot;
++3021, 	&quot;Disconnected&quot;
++3022, 	&quot;Shadowing&quot;
++3023, 	&quot;Unknown&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++3100, 	&quot;User&quot;
++3101, 	&quot;ID&quot;
++3102, 	&quot;Status&quot;
++3103, 	&quot;Client Name&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++3104, 	&quot;Session&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++3220, 	&quot;Shows the domain to which each user account belongs&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++3300, 	&quot;Your message to user %s (SessionId=%d) could not be sent.  &quot;
++3301, 	&quot;User %s (SessionId=%d) could not be logged off.\n&quot;
++3302, 	&quot;User %s (SessionId=%d) could not be disconnected.\n&quot;
++3306, 	&quot;If you log off a user, their unsaved data might be lost.&quot;
++3307, 	&quot;Do you want to continue?&quot;
++3308, 	&quot;Log off user&quot;
++3309, 	&quot;Are you sure you want to disconnect the selected user(s)?&quot;
++3311, 	&quot;Disconnect user&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++3512, 	&quot;Services&quot;
++3513, 	&quot;Continuing&quot;
++3514, 	&quot;Pausing&quot;
++3515, 	&quot;Paused&quot;
++3516, 	&quot;Running&quot;
++3517, 	&quot;Starting&quot;
++3518, 	&quot;Stopping&quot;
++3519, 	&quot;Stopped&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++3520, 	&quot;Unknown&quot;
++3521, 	&quot;Name&quot;
++3522, 	&quot;Description&quot;
++3523, 	&quot;Status&quot;
++3524, 	&quot;Group&quot;
++3525, 	&quot;Unable to Start Service&quot;
++3526, 	&quot;Unable to Stop Service&quot;
++3527, 	&quot;PID&quot;
++3528, 	&quot;N/A&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++10000, 	&quot;Performance&quot;
++10001, 	&quot;Create New Task&quot;
++10002, 	&quot;Type the name of a program, folder, document, or Internet resource, and Windows will open it for you.&quot;
++10003, 	&quot;Windows Task Manager&quot;
++10004, 	&quot;Processes&quot;
++10005, 	&quot;System Idle Process&quot;
++10006, 	&quot;K&quot;
++10007, 	&quot;Task Manager Warning&quot;
++10011, 	&quot;Low&quot;
++10012, 	&quot;High&quot;
++10013, 	&quot;Realtime&quot;
++10014, 	&quot;Normal&quot;
++10015, 	&quot;N/A&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++10016, 	&quot;The operation could not be completed.\n\n&quot;
++10017, 	&quot;Unable to Terminate Process&quot;
++10018, 	&quot;Unable to Attach Debugger&quot;
++10019, 	&quot;Unable to Change Priority&quot;
++10020, 	&quot;The operation is not valid for this process.&quot;
++10021, 	&quot;Applications&quot;
++10022, 	&quot;Not Responding&quot;
++10023, 	&quot;Running&quot;
++10025, 	&quot;Task Manager&quot;
++10026, 	&quot;Task Manager has been disabled by your administrator.&quot;
++10027, 	&quot;Above Normal&quot;
++10028, 	&quot;Below Normal&quot;
++10030, 	&quot;Networking&quot;
++10031, 	&quot;Do you want to end '%s'?&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++10032, 	&quot;If an open program is associated with this process, it will close and you will lose any unsaved data. If you end a system process, it might result in an unstable system. Are you sure you want to continue?&quot;
++10033, 	&quot;End process&quot;
++10034, 	&quot;Do you want to change the priority of '%s'?&quot;
++10035, 	&quot;Changing the priority of certain processes could cause system instability.&quot;
++10036, 	&quot;Change priority&quot;
++10037, 	&quot;Percentage of time the processor is idle&quot;
++10038, 	&quot;Unable to set priority to Realtime.  The priority was set to High instead.&quot;
++10039, 	&quot;Do you want to attach the debugger to '%s'?&quot;
++10040, 	&quot;Debugging a process may result in loss of data.&quot;
++10041, 	&quot;Attach debugger&quot;
++10042, 	&quot;Ending this process will shut down the operating system immediately.  You will lose all unsaved data.  Are you sure you want to continue?&quot;
++10043, 	&quot;Abandon unsaved data and shut down.&quot;
++10044, 	&quot;Do you want to end the system process '%s'?&quot;
++10045, 	&quot;Shut down&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++20001, 	&quot;Image Name&quot;
++20002, 	&quot;PID&quot;
++20003, 	&quot;User Name&quot;
++20004, 	&quot;Session ID&quot;
++20005, 	&quot;CPU&quot;
++20006, 	&quot;CPU Time&quot;
++20007, 	&quot;Working Set (Memory)&quot;
++20008, 	&quot;Working Set Delta (Memory)&quot;
++20010, 	&quot;Page Faults&quot;
++20011, 	&quot;PF Delta&quot;
++20012, 	&quot;Commit Size&quot;
++20013, 	&quot;Paged Pool&quot;
++20014, 	&quot;NP Pool&quot;
++20015, 	&quot;Base Pri&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++20016, 	&quot;Handles&quot;
++20017, 	&quot;Threads&quot;
++20018, 	&quot;USER Objects&quot;
++20019, 	&quot;GDI Objects&quot;
++20020, 	&quot;I/O Reads&quot;
++20021, 	&quot;I/O Writes&quot;
++20022, 	&quot;I/O Other&quot;
++20023, 	&quot;I/O Read Bytes&quot;
++20024, 	&quot;I/O Write Bytes&quot;
++20025, 	&quot;I/O Other Bytes&quot;
++20026, 	&quot;Image Path Name&quot;
++20027, 	&quot;Command Line&quot;
++20028, 	&quot;UAC Virtualization&quot;
++20029, 	&quot;Description&quot;
++20030, 	&quot;Memory (Private Working Set)&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++20500, 	&quot;PID (Process Identifier)&quot;
++20501, 	&quot;CPU Usage&quot;
++20502, 	&quot;Page Fault Delta&quot;
++20503, 	&quot;Base Priority&quot;
++20504, 	&quot;Memory - Working Set&quot;
++20505, 	&quot;Memory - Working Set Delta&quot;
++20506, 	&quot;Memory - Private Working Set&quot;
++20507, 	&quot;Memory - Peak Working Set&quot;
++20508, 	&quot;Memory - Commit Size&quot;
++20509, 	&quot;Memory - Paged Pool&quot;
++20510, 	&quot;Memory - Non-paged Pool&quot;
++20511, 	&quot;User Account Control (UAC) Virtualization&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++21000, 	&quot;Task&quot;
++21001, 	&quot;Status&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++21008, 	&quot;Peak Working Set (Memory)&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++21100, 	&quot;Adapter Name&quot;
++21101, 	&quot;Adapter Description&quot;
++21102, 	&quot;Network Utilization&quot;
++21103, 	&quot;Link Speed&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++21104, 	&quot;State&quot;
++21105, 	&quot;Bytes Sent Throughput&quot;
++21106, 	&quot;Bytes Received Throughput&quot;
++21107, 	&quot;Bytes Throughput&quot;
++21108, 	&quot;Bytes Sent&quot;
++21109, 	&quot;Bytes Received&quot;
++21110, 	&quot;Bytes&quot;
++21111, 	&quot;Bytes Sent Per Interval&quot;
++21112, 	&quot;Bytes Received Per Interval&quot;
++21113, 	&quot;Bytes Per Interval&quot;
++21114, 	&quot;Unicasts Sent&quot;
++21115, 	&quot;Unicasts Received&quot;
++21116, 	&quot;Unicasts&quot;
++21117, 	&quot;Unicasts Sent Per Interval&quot;
++21118, 	&quot;Unicasts Received Per Interval&quot;
++21119, 	&quot;Unicasts Per Interval&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++21120, 	&quot;Nonunicasts Sent&quot;
++21121, 	&quot;Nonunicasts Received&quot;
++21122, 	&quot;Nonunicasts&quot;
++21123, 	&quot;Nonunicasts Sent Per Interval&quot;
++21124, 	&quot;Nonunicasts Received Per Interval&quot;
++21125, 	&quot;Nonunicasts Per Interval&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++21200, 	&quot;G&quot;
++21201, 	&quot;M&quot;
++21202, 	&quot;0&quot;
++21203, 	&quot;bps&quot;
++21204, 	&quot;Arial&quot;
++21205, 	&quot;%&quot;
++21206, 	&quot;Non Operational&quot;
++21207, 	&quot;Unreachable&quot;
++21208, 	&quot;Disconnected&quot;
++21209, 	&quot;Connecting&quot;
++21210, 	&quot;Connected&quot;
++21211, 	&quot;Operational&quot;
++21212, 	&quot;Unknown&quot;
++21213, 	&quot;-&quot;
++21214, 	&quot;Commit (MB)&quot;
++21215, 	&quot;Commit (GB)&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++30038, 	&quot;Tasks: %d&quot;
++30039, 	&quot;Processes: %d&quot;
++30041, 	&quot;CPU Usage: %d%%&quot;
++30042, 	&quot;CPU Usage: %d%% Kernel Time: %d%%&quot;
++30043, 	&quot;Tiles the windows vertically on the desktop&quot;
++30044, 	&quot;%I64d / %I64d&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++30056, 	&quot;Unable to Access or Set Process Affinity&quot;
++30057, 	&quot;Physical Memory: %d%%&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++40001, 	&quot;Runs a new program&quot;
++40002, 	&quot;Exits Task Manager&quot;
++40006, 	&quot;Task Manager remains in front of all other windows unless minimized&quot;
++40007, 	&quot;Task Manager is minimized when a SwitchTo operation is performed&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++40021, 	&quot;Displays program information, version number, and copyright&quot;
++40022, 	&quot;Updates the display twice per second&quot;
++40023, 	&quot;Updates the display every one second&quot;
++40024, 	&quot;Updates the display every four seconds&quot;
++40025, 	&quot;Display does not automatically update&quot;
++40027, 	&quot;Attaches the debugger to this process&quot;
++40028, 	&quot;Removes the process from the system&quot;
++40029, 	&quot;Sets process to the REALTIME priority class&quot;
++40030, 	&quot;Sets process to the ABOVE NORMAL priority class&quot;
++40031, 	&quot;Sets process to the HIGH priority class&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++40032, 	&quot;Sets process to the NORMAL priority class&quot;
++40033, 	&quot;Sets process to the BELOW NORMAL priority class&quot;
++40034, 	&quot;Sets process to the LOW priority class&quot;
++40039, 	&quot;Minimizes the windows&quot;
++40040, 	&quot;Maximizes the windows&quot;
++40041, 	&quot;Cascades the windows diagonally on the desktop&quot;
++40042, 	&quot;Tiles the windows horizontally on the desktop&quot;
++40045, 	&quot;Brings the window to the front, but does not switch to it&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++40049, 	&quot;Displays Task Manager help topics&quot;
++40052, 	&quot;Select which columns will be visible on the Process page&quot;
++40053, 	&quot;Force Task Manager to update now, regardless of Update Speed setting&quot;
++40055, 	&quot;Controls which processors the process will be allowed to run on&quot;
++40056, 	&quot;Displays kernel time in the performance graphs&quot;
++40059, 	&quot;CPU %d&quot;
++40060, 	&quot;Total CPU&quot;
++40061, 	&quot;Kernel CPU&quot;
++40062, 	&quot;Working Set (Memory)&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++40064, 	&quot;Restores Task Manager from its hidden state&quot;
++40065, 	&quot;Hide Task Manager when it is minimized&quot;
++40072, 	&quot;Not Allowed&quot;
++40073, 	&quot;Disabled&quot;
++40074, 	&quot;Enabled&quot;
++40075, 	&quot;Unable to Set Virtualization&quot;
++40076, 	&quot;Data Execution Prevention&quot;
++40077, 	&quot;Do you want to change virtualization for '%s'?&quot;
++40078, 	&quot;Changing virtualization on a process may lead to undesired results including loss of data. You should do this only for debugging.&quot;
++40079, 	&quot;Change virtualization&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++40098, 	&quot;Shows 16-bit Windows tasks under the associated ntvdm.exe&quot;
++40099, 	&quot;Hides the title and menu bars&quot;
++40102, 	&quot;Removes this process and all descendants from the system.&quot;
++40104, 	&quot;Do you want to end the process tree of '%s'?&quot;
++40105, 	&quot;If open programs or processes are associated with this process tree, they will close and you will lose any unsaved data. If you end a system process, it might result in an unstable system. Are you sure you want to continue?&quot;
++40106, 	&quot;End process tree&quot;
++40107, 	&quot;Unable to Completely End the Process Tree &quot;
++40108, 	&quot;One or more of the processes in this process tree could not\nbe ended.  The operation was not fully successful.&quot;
++40109, 	&quot;Select which columns will be visible on the Users page&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++40122, 	&quot;Message from %s - %s&quot;
++40123, 	&quot;Unhandled error occurred while connecting.\n\n#%u %s&quot;
++40124, 	&quot;Enter the selected User's password.&quot;
++40125, 	&quot;Session (ID %lu) remote control failed.&quot;
++40126, 	&quot;Can't remote control Session (ID %lu) because Remote control is disabled on that Session.&quot;
++40127, 	&quot;Can't remote control Session (ID %lu) because it is disconnected with user's required permission enabled.&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++40128, 	&quot;The password was incorrect. Try again.&quot;
++40129, 	&quot;Dump Process&quot;
++40132, 	&quot;CPU %u&quot;
++40133, 	&quot;&lt;All Processors&gt;&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++40200, 	&quot;One Graph Per CPU in NUMA Node %d&quot;
++40201, 	&quot;CPU Usage History&quot;
++40202, 	&quot;CPU Usage History&quot;
++40203, 	&quot;Numa Node CPU Usage History&quot;
++40204, 	&quot;Numa Node %d CPU Usage History&quot;
++40205, 	&quot;Group %d&quot;
++40206, 	&quot;CPU %2!u! (Node %1!d!)&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++50127, 	&quot;Opens the folder containing the process executable&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++50400, 	&quot;The number of installed processors has changed.\n\nThe data displayed is invalid.&quot;
++50401, 	&quot;Restart Task Manager&quot;
++50402, 	&quot;Restart Task Manager&quot;
++50403, 	&quot;Close Task Manager&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++60000, 	&quot;A single history graph shows total CPU usage&quot;
++60001, 	&quot;Each CPU has its own history graph&quot;
++60002, 	&quot;Each NUMA node has its own history graph&quot;
++60003, 	&quot;Each CPU in the NUMA node has its own history graph&quot;
++}
++
++
++120 ACCELERATORS
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++	VK_DELETE, 1050, NOINVERT, VIRTKEY
++	VK_ESCAPE, 40063, NOINVERT, SHIFT, VIRTKEY
++	VK_F1, 40049, NOINVERT, VIRTKEY
++	VK_F5, 40053, NOINVERT, VIRTKEY
++	VK_RETURN, 1048, NOINVERT, VIRTKEY
++	VK_RETURN, 1049, NOINVERT, SHIFT, VIRTKEY
++	VK_TAB, 40100, NOINVERT, CONTROL, VIRTKEY
++	VK_TAB, 40101, NOINVERT, CONTROL, SHIFT, VIRTKEY
++	VK_PRIOR, 40101, NOINVERT, CONTROL, VIRTKEY
++	VK_NEXT, 40100, NOINVERT, CONTROL, VIRTKEY
++}
++
++1 MESSAGETABLE
++{
++268435505,  	&quot;Response Time&quot;
++805306369,  	&quot;Start&quot;
++805306370,  	&quot;Stop&quot;
++1342177284,  	&quot;Information&quot;
++-1879048191,  	&quot;Microsoft-Windows-Diagnosis-TaskManager&quot;
++-1879048190,  	&quot;Microsoft-Windows-Diagnosis-TaskManager/Debug&quot;
++-1342176280,  	&quot;Begin application initialization.&quot;
++-1342176279,  	&quot;End application initialization.&quot;
++-1342176278,  	&quot;Begin tab initialization.&quot;
++-1342176277,  	&quot;End tab initialization.&quot;
++}
++
++
++1 VERSIONINFO
++FILEVERSION 6,1,7600,16385
++PRODUCTVERSION 6,1,7600,16385
++FILEOS 0x40004
++FILETYPE 0x1
++{
++BLOCK &quot;StringFileInfo&quot;
++{
++	BLOCK &quot;040904B0&quot;
++	{
++		VALUE &quot;CompanyName&quot;, &quot;Microsoft Corporation&quot;
++		VALUE &quot;FileDescription&quot;, &quot;Windows Task Manager&quot;
++		VALUE &quot;FileVersion&quot;, &quot;6.1.7600.16385 (win7_rtm.090713-1255)&quot;
++		VALUE &quot;InternalName&quot;, &quot;taskmgr&quot;
++		VALUE &quot;LegalCopyright&quot;, &quot;&#169; Microsoft Corporation. All rights reserved.&quot;
++		VALUE &quot;OriginalFilename&quot;, &quot;taskmgr.exe.mui&quot;
++		VALUE &quot;ProductName&quot;, &quot;Microsoft&#174; Windows&#174; Operating System&quot;
++		VALUE &quot;ProductVersion&quot;, &quot;6.1.7600.16385&quot;
++	}
++}
++
++BLOCK &quot;VarFileInfo&quot;
++{
++	VALUE &quot;Translation&quot;, 0x0409 0x04B0
++}
++}
++
+
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000005.html">[I18n-bel-svn] r87 - Windows7
+</A></li>
+	<LI>Next message: <A HREF="000007.html">[I18n-bel-svn] r89 - Windows7/omegat
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#6">[ date ]</a>
+              <a href="thread.html#6">[ thread ]</a>
+              <a href="subject.html#6">[ subject ]</a>
+              <a href="author.html#6">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/i18n-bel-svn">More information about the I18n-bel-svn
+mailing list</a><br>
+</body></html>

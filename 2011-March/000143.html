@@ -1,0 +1,346 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [I18n-bel-svn] r225 - Windows7/source/Windows/System32/en-US
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/i18n-bel-svn/2011-March/index.html" >
+   <LINK REL="made" HREF="mailto:i18n-bel-svn%40lists.berlios.de?Subject=Re%3A%20%5BI18n-bel-svn%5D%20r225%20-%20Windows7/source/Windows/System32/en-US&In-Reply-To=%3C20110324053825.947C248067E%40sheep.berlios.de%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000142.html">
+   <LINK REL="Next"  HREF="000144.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[I18n-bel-svn] r225 - Windows7/source/Windows/System32/en-US</H1>
+    <B>alex73 at mail.berlios.de</B> 
+    <A HREF="mailto:i18n-bel-svn%40lists.berlios.de?Subject=Re%3A%20%5BI18n-bel-svn%5D%20r225%20-%20Windows7/source/Windows/System32/en-US&In-Reply-To=%3C20110324053825.947C248067E%40sheep.berlios.de%3E"
+       TITLE="[I18n-bel-svn] r225 - Windows7/source/Windows/System32/en-US">alex73 at mail.berlios.de
+       </A><BR>
+    <I>Thu Mar 24 06:38:25 CET 2011</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000142.html">[I18n-bel-svn] r224 - Windows7 Windows7.settings
+</A></li>
+        <LI>Next message: <A HREF="000144.html">[I18n-bel-svn] r226 - Windows7
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#143">[ date ]</a>
+              <a href="thread.html#143">[ thread ]</a>
+              <a href="subject.html#143">[ subject ]</a>
+              <a href="author.html#143">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>Author: alex73
+Date: 2011-03-24 06:38:25 +0100 (Thu, 24 Mar 2011)
+New Revision: 225
+
+Modified:
+   Windows7/source/Windows/System32/en-US/werui.dll_x32sp0.mui.rc
+Log:
+win7: source files
+
+Modified: Windows7/source/Windows/System32/en-US/werui.dll_x32sp0.mui.rc
+===================================================================
+--- Windows7/source/Windows/System32/en-US/werui.dll_x32sp0.mui.rc	2011-03-23 21:29:50 UTC (rev 224)
++++ Windows7/source/Windows/System32/en-US/werui.dll_x32sp0.mui.rc	2011-03-24 05:38:25 UTC (rev 225)
+@@ -1,181 +1,145 @@
+-1 MUI &quot;Data_1774.bin&quot;
++#pragma code_page(65001)
++#include &lt;resources.h&gt;
+ 
+ 2000 MENU
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-POPUP &quot;CONTEXT&quot;
+-{
+-	MENUITEM &quot;Copy\tCtrl+C&quot;,  2001
+-	MENUITEM SEPARATOR
+-	MENUITEM &quot;Select All\tCtrl+A&quot;,  2002
++  POPUP &quot;CONTEXT&quot;
++  {
++    MENUITEM &quot;Copy\tCtrl+C&quot;, 2001
++    MENUITEM SEPARATOR
++    MENUITEM &quot;Select All\tCtrl+A&quot;, 2002
++  }
+ }
+-}
+ 
+ 2050 MENU
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-POPUP &quot;CONTEXT&quot;
+-{
+-	MENUITEM &quot;Show Progress&quot;,  2051
+-	MENUITEM &quot;Cancel&quot;,  2052
++  POPUP &quot;CONTEXT&quot;
++  {
++    MENUITEM &quot;Show Progress&quot;, 2051
++    MENUITEM &quot;Cancel&quot;, 2052
++  }
+ }
+-}
+ 
+-
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-206, 	&quot;View problem details&quot;
+-207, 	&quot;Hide problem details&quot;
++  206,  &quot;View problem details&quot;
++  207,  &quot;Hide problem details&quot;
+ }
+ 
+-
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-209, 	&quot;Windows is checking for a solution to the problem...&quot;
+-210, 	&quot;Saving problem information...&quot;
+-211, 	&quot;This will allow you to check for a solution later.&quot;
+-212, 	&quot;%s is trying to recover your information...&quot;
+-213, 	&quot;This might take several minutes.&quot;
+-214, 	&quot;%s is restarting...&quot;
+-215, 	&quot;Check for a solution&quot;
+-216, 	&quot;Problem signature:\n&quot;
+-217, 	&quot;Additional information about the problem:\n&quot;
+-218, 	&quot;Read our privacy statement online:\n&quot;
+-219, 	&quot;If the online privacy statement is not available, please read our privacy statement offline:\n&quot;
+-220, 	&quot;Files that help describe the problem:\n&quot;
+-221, 	&quot;Windows is trying to determine why %s is not working...&quot;
+-223, 	&quot;Do you want to send information to check for a solution?&quot;
++  209,  &quot;Windows is checking for a solution to the problem...&quot;
++  210,  &quot;Saving problem information...&quot;
++  211,  &quot;This will allow you to check for a solution later.&quot;
++  212,  &quot;%s is trying to recover your information...&quot;
++  213,  &quot;This might take several minutes.&quot;
++  214,  &quot;%s is restarting...&quot;
++  215,  &quot;Check for a solution&quot;
++  216,  &quot;Problem signature:\r\n&quot;
++  217,  &quot;Additional information about the problem:\r\n&quot;
++  218,  &quot;Read our privacy statement online:\r\n&quot;
++  219,  &quot;If the online privacy statement is not available, please read our privacy statement offline:\r\n&quot;
++  220,  &quot;Files that help describe the problem:\r\n&quot;
++  221,  &quot;Windows is trying to determine why %s is not working...&quot;
++  223,  &quot;Do you want to send information to check for a solution?&quot;
+ }
+ 
+-
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-224, 	&quot;Windows will notify you if there are steps you can take to solve the problem.&quot;
+-225, 	&quot;&amp;Check for a solution&quot;
+-226, 	&quot;Do you want to send more information about the problem?&quot;
+-227, 	&quot;Additional details about what went wrong can help Microsoft create a solution.&quot;
+-228, 	&quot;&amp;Send information&quot;
+-230, 	&quot;%s has stopped working&quot;
+-233, 	&quot;Windows is collecting more information about the problem.  This might take several minutes...&quot;
+-234, 	&quot;Sending problem information&quot;
+-236, 	&quot;Restart the program&quot;
+-237, 	&quot;Debug the program&quot;
+-238, 	&quot;Check online for a solution and close the program&quot;
+-239, 	&quot;Check online for a solution later and close the program&quot;
++  224,  &quot;Windows will notify you if there are steps you can take to solve the problem.&quot;
++  225,  &quot;&amp;Check for a solution&quot;
++  226,  &quot;Do you want to send more information about the problem?&quot;
++  227,  &quot;Additional details about what went wrong can help Microsoft create a solution.&quot;
++  228,  &quot;&amp;Send information&quot;
++  230,  &quot;%s has stopped working&quot;
++  233,  &quot;Windows is collecting more information about the problem.  This might take several minutes...&quot;
++  234,  &quot;Sending problem information&quot;
++  236,  &quot;Restart the program&quot;
++  237,  &quot;Debug the program&quot;
++  238,  &quot;Check online for a solution and close the program&quot;
++  239,  &quot;Check online for a solution later and close the program&quot;
+ }
+ 
+-
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-240, 	&quot;Close the program&quot;
+-242, 	&quot;&amp;Check for solution&quot;
+-244, 	&quot;Windows Error Reporting&quot;
+-246, 	&quot;A problem caused the program to stop working correctly. Windows will close the program and notify you if a solution is available.&quot;
+-247, 	&quot;Try to recover my information only&quot;
+-248, 	&quot;Restart the program&quot;
+-249, 	&quot;Windows can check online for a solution to the problem.&quot;
+-250, 	&quot;Windows can check online for a solution to the problem and try to recover your information.&quot;
+-251, 	&quot;Windows can check online for a solution to the problem and try to restart the program.&quot;
+-252, 	&quot;Windows can check online for a solution to the problem and try to recover your information and restart the program.&quot;
+-253, 	&quot;Windows can check online for a solution to the problem the next time you go online.&quot;
+-254, 	&quot;Windows can check online for a solution to the problem the next time you go online and try to recover your information.&quot;
+-255, 	&quot;Windows can check online for a solution to the problem the next time you go online and try to restart the program.&quot;
++  240,  &quot;Close the program&quot;
++  242,  &quot;&amp;Check for solution&quot;
++  244,  &quot;Windows Error Reporting&quot;
++  246,  &quot;A problem caused the program to stop working correctly. Windows will close the program and notify you if a solution is available.&quot;
++  247,  &quot;Try to recover my information only&quot;
++  248,  &quot;Restart the program&quot;
++  249,  &quot;Windows can check online for a solution to the problem.&quot;
++  250,  &quot;Windows can check online for a solution to the problem and try to recover your information.&quot;
++  251,  &quot;Windows can check online for a solution to the problem and try to restart the program.&quot;
++  252,  &quot;Windows can check online for a solution to the problem and try to recover your information and restart the program.&quot;
++  253,  &quot;Windows can check online for a solution to the problem the next time you go online.&quot;
++  254,  &quot;Windows can check online for a solution to the problem the next time you go online and try to recover your information.&quot;
++  255,  &quot;Windows can check online for a solution to the problem the next time you go online and try to restart the program.&quot;
+ }
+ 
+-
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-256, 	&quot;Windows can check online for a solution to the problem the next time you go online and try to recover your information and restart the program.&quot;
+-257, 	&quot;Check online for a solution and close the program&quot;
+-258, 	&quot;Check online for a solution and restart the program&quot;
+-259, 	&quot;Check online for a solution and restart the program&quot;
+-260, 	&quot;Check online for a solution later&quot;
+-261, 	&quot;Check online for a solution later and restart the program&quot;
+-262, 	&quot;Check online for a solution later and restart the program&quot;
+-264, 	&quot;Do you want to automatically send more information about unsolved problems?&quot;
+-265, 	&quot;Sending information can help Microsoft create solutions.  To see what types of information Windows can send, &lt;a href=\&quot;privacy link is in the code\&quot;&gt;read our privacy policy&lt;/a&gt;.&quot;
+-266, 	&quot;Yes, send more information automatically (recommended)&quot;
+-267, 	&quot;No, ask me each time&quot;
+-268, 	&quot;Problem Event Name&quot;
+-269, 	&quot;&amp;Check later&quot;
+-270, 	&quot;Generating report signatures. Please wait...&quot;
+-271, 	&quot;Description:\n&quot;
++  256,  &quot;Windows can check online for a solution to the problem the next time you go online and try to recover your information and restart the program.&quot;
++  257,  &quot;Check online for a solution and close the program&quot;
++  258,  &quot;Check online for a solution and restart the program&quot;
++  259,  &quot;Check online for a solution and restart the program&quot;
++  260,  &quot;Check online for a solution later&quot;
++  261,  &quot;Check online for a solution later and restart the program&quot;
++  262,  &quot;Check online for a solution later and restart the program&quot;
++  264,  &quot;Do you want to automatically send more information about unsolved problems?&quot;
++  265,  &quot;Sending information can help Microsoft create solutions.  To see what types of information Windows can send, &lt;a href=&quot;&quot;privacy link is in the code&quot;&quot;&gt;read our privacy policy&lt;/a&gt;.&quot;
++  266,  &quot;Yes, send more information automatically (recommended)&quot;
++  267,  &quot;No, ask me each time&quot;
++  268,  &quot;Problem Event Name&quot;
++  269,  &quot;&amp;Check later&quot;
++  270,  &quot;Generating report signatures. Please wait...&quot;
++  271,  &quot;Description:\r\n&quot;
+ }
+ 
+-
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-274, 	&quot;%s was closed&quot;
+-275, 	&quot;To help protect your computer, Data Execution Prevention has closed %s.  Click to learn more.&quot;
+-278, 	&quot;No files were found&quot;
+-280, 	&quot;Windows is trying to identify the problem...&quot;
+-281, 	&quot;Windows is checking online for a solution to the problem&quot;
+-282, 	&quot;&amp;Debug&quot;
+-283, 	&quot;Cancel&quot;
+-284, 	&quot;&amp;Close program&quot;
+-286, 	&quot;Windows will try to restart the program.&quot;
+-287, 	&quot;A problem caused the program to stop working correctly. Please close the program.&quot;
++  274,  &quot;%s was closed&quot;
++  275,  &quot;To help protect your computer, Data Execution Prevention has closed %s.  Click to learn more.&quot;
++  278,  &quot;No files were found&quot;
++  280,  &quot;Windows is trying to identify the problem...&quot;
++  281,  &quot;Windows is checking online for a solution to the problem&quot;
++  282,  &quot;&amp;Debug&quot;
++  283,  &quot;Cancel&quot;
++  284,  &quot;&amp;Close program&quot;
++  286,  &quot;Windows will try to restart the program.&quot;
++  287,  &quot;A problem caused the program to stop working correctly. Please close the program.&quot;
+ }
+ 
+-
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-288, 	&quot;Windows can try to recover your information and restart the program.&quot;
+-289, 	&quot;Windows can try to restart the program.&quot;
+-290, 	&quot;Windows can try to recover your information.&quot;
+-291, 	&quot;Windows is sending information to Microsoft that can help solve the problem.\n\nPreparing information to send: %u%%\nSending information:  %u%%&quot;
++  288,  &quot;Windows can try to recover your information and restart the program.&quot;
++  289,  &quot;Windows can try to restart the program.&quot;
++  290,  &quot;Windows can try to recover your information.&quot;
++  291,  &quot;Windows is sending information to Microsoft that can help solve the problem.\r\n\r\nPreparing information to send: %u%%\r\nSending information:  %u%%&quot;
+ }
+ 
+-
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-1012, 	&quot;%s has stopped working&quot;
++  1012,  &quot;%s has stopped working&quot;
+ }
+ 
+-
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-3014, 	&quot;&amp;Send information&quot;
+-3016, 	&quot;Sending problem information...&quot;
+-3017, 	&quot;Wait for the program to respond&quot;
+-3018, 	&quot;View Details&quot;
+-3019, 	&quot;Hide Details&quot;
++  3014,  &quot;&amp;Send information&quot;
++  3016,  &quot;Sending problem information...&quot;
++  3017,  &quot;Wait for the program to respond&quot;
++  3018,  &quot;View Details&quot;
++  3019,  &quot;Hide Details&quot;
+ }
+ 
+-
+-1 VERSIONINFO
+-FILEVERSION 6,1,7600,16385
+-PRODUCTVERSION 6,1,7600,16385
+-FILEOS 0x40004
+-FILETYPE 0x2
+-{
+-BLOCK &quot;StringFileInfo&quot;
+-{
+-	BLOCK &quot;040904B0&quot;
+-	{
+-		VALUE &quot;CompanyName&quot;, &quot;Microsoft Corporation&quot;
+-		VALUE &quot;FileDescription&quot;, &quot;Windows Error Reporting UI DLL&quot;
+-		VALUE &quot;FileVersion&quot;, &quot;6.1.7600.16385 (win7_rtm.090713-1255)&quot;
+-		VALUE &quot;InternalName&quot;, &quot;werui.dll&quot;
+-		VALUE &quot;LegalCopyright&quot;, &quot;&#169; Microsoft Corporation. All rights reserved.&quot;
+-		VALUE &quot;OriginalFilename&quot;, &quot;werui.dll.mui&quot;
+-		VALUE &quot;ProductName&quot;, &quot;Microsoft&#174; Windows&#174; Operating System&quot;
+-		VALUE &quot;ProductVersion&quot;, &quot;6.1.7600.16385&quot;
+-	}
+-}
+-
+-BLOCK &quot;VarFileInfo&quot;
+-{
+-	VALUE &quot;Translation&quot;, 0x0409 0x04B0
+-}
+-}
+-
+
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000142.html">[I18n-bel-svn] r224 - Windows7 Windows7.settings
+</A></li>
+	<LI>Next message: <A HREF="000144.html">[I18n-bel-svn] r226 - Windows7
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#143">[ date ]</a>
+              <a href="thread.html#143">[ thread ]</a>
+              <a href="subject.html#143">[ subject ]</a>
+              <a href="author.html#143">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/i18n-bel-svn">More information about the I18n-bel-svn
+mailing list</a><br>
+</body></html>

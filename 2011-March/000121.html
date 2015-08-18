@@ -1,0 +1,2099 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [I18n-bel-svn] r203 - in Windows7/source/Windows/System32: . oobe
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/i18n-bel-svn/2011-March/index.html" >
+   <LINK REL="made" HREF="mailto:i18n-bel-svn%40lists.berlios.de?Subject=Re%3A%20%5BI18n-bel-svn%5D%20r203%20-%20in%20Windows7/source/Windows/System32%3A%20.%20oobe&In-Reply-To=%3C20110316073547.0FED048140F%40sheep.berlios.de%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000120.html">
+   <LINK REL="Next"  HREF="000122.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[I18n-bel-svn] r203 - in Windows7/source/Windows/System32: . oobe</H1>
+    <B>alex73 at mail.berlios.de</B> 
+    <A HREF="mailto:i18n-bel-svn%40lists.berlios.de?Subject=Re%3A%20%5BI18n-bel-svn%5D%20r203%20-%20in%20Windows7/source/Windows/System32%3A%20.%20oobe&In-Reply-To=%3C20110316073547.0FED048140F%40sheep.berlios.de%3E"
+       TITLE="[I18n-bel-svn] r203 - in Windows7/source/Windows/System32: . oobe">alex73 at mail.berlios.de
+       </A><BR>
+    <I>Wed Mar 16 08:35:46 CET 2011</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000120.html">[I18n-bel-svn] r202 - /
+</A></li>
+        <LI>Next message: <A HREF="000122.html">[I18n-bel-svn] r204 - in Android: glossary omegat	source/2.3/apps/MagnetLink/values-be
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#121">[ date ]</a>
+              <a href="thread.html#121">[ thread ]</a>
+              <a href="subject.html#121">[ subject ]</a>
+              <a href="author.html#121">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>Author: alex73
+Date: 2011-03-16 08:35:46 +0100 (Wed, 16 Mar 2011)
+New Revision: 203
+
+Modified:
+   Windows7/source/Windows/System32/fdprint.dll.rc
+   Windows7/source/Windows/System32/mblctr.exe.rc
+   Windows7/source/Windows/System32/oobe/msoobeui.dll.rc
+   Windows7/source/Windows/System32/wlanpref.dll.rc
+Log:
+win7: extract sources
+
+Modified: Windows7/source/Windows/System32/fdprint.dll.rc
+===================================================================
+--- Windows7/source/Windows/System32/fdprint.dll.rc	2011-03-16 07:25:39 UTC (rev 202)
++++ Windows7/source/Windows/System32/fdprint.dll.rc	2011-03-16 07:35:46 UTC (rev 203)
+@@ -1,184 +1,146 @@
+-1 MUI &quot;Data_585.bin&quot;
++#pragma code_page(65001)
++#include &lt;resources.h&gt;
+ 
+ 1400 DIALOGEX 10, 10, 225, 60
+-STYLE DS_FIXEDSYS | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+ CAPTION &quot;Select printer&quot;
+-LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+-FONT 8, &quot;MS Shell Dlg&quot;
++STYLE 0x80c800c8
++EXSTYLE 0x0
++FONT 8, &quot;MS Shell Dlg&quot;, 0, 0, 0
+ {
+-   CONTROL &quot;Select a printer:&quot;, 1401, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 7, 7, 211, 11 
+-   CONTROL &quot;&quot;, 1402, COMBOBOX, CBS_DROPDOWNLIST | WS_CHILD | WS_VISIBLE | WS_VSCROLL | WS_TABSTOP, 7, 18, 211, 120 
+-   CONTROL &quot;OK&quot;, 1, BUTTON, BS_DEFPUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 114, 39, 50, 14 
+-   CONTROL &quot;Cancel&quot;, 2, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 168, 39, 50, 14 
++  CONTROL &quot;Select a printer:&quot;, 1401, Static, 0x50020000, 7, 7, 211, 11, 0x0
++  CONTROL &quot;&quot;, 1402, ComboBox, 0x50210003, 7, 18, 211, 120, 0x0
++  CONTROL &quot;OK&quot;, 1, Button, 0x50010001, 114, 39, 50, 14, 0x0
++  CONTROL &quot;Cancel&quot;, 2, Button, 0x50010000, 168, 39, 50, 14, 0x0
+ }
+ 
+ 1410 DIALOGEX 10, 10, 140, 50
+-STYLE DS_FIXEDSYS | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+ CAPTION &quot;Loading device information...&quot;
+-LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+-FONT 8, &quot;MS Shell Dlg&quot;
++STYLE 0x80c000c8
++EXSTYLE 0x0
++FONT 8, &quot;MS Shell Dlg&quot;, 0, 0, 0
+ {
+-   CONTROL &quot;&quot;, 1411, &quot;msctls_progress32&quot;, WS_CHILD | WS_VISIBLE, 10, 10, 120, 12 
+-   CONTROL &quot;Cancel&quot;, 2, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 80, 30, 50, 14 
++  CONTROL &quot;&quot;, 1411, &quot;msctls_progress32&quot;, 0x50000008, 10, 10, 120, 12, 0x0
++  CONTROL &quot;Cancel&quot;, 2, Button, 0x50010000, 80, 30, 50, 14, 0x0
+ }
+ 
+-
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-1000, 	&quot;S&amp;ee what's printing&quot;
+-1001, 	&quot;Set &amp;as default printer&quot;
+-1002, 	&quot;Printin&amp;g preferences&quot;
+-1003, 	&quot;&amp;Update driver&quot;
+-1004, 	&quot;&amp;Printer properties&quot;
+-1005, 	&quot;De&amp;lete print queue&quot;
+-1006, 	&quot;Manage default printers&quot;
++  1000,  &quot;S&amp;ee what's printing&quot;
++  1001,  &quot;Set &amp;as default printer&quot;
++  1002,  &quot;Printin&amp;g preferences&quot;
++  1003,  &quot;&amp;Update driver&quot;
++  1004,  &quot;&amp;Printer properties&quot;
++  1005,  &quot;De&amp;lete print queue&quot;
++  1006,  &quot;Manage default printers&quot;
+ }
+ 
+-
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-1070, 	&quot;Print server properties&quot;
++  1070,  &quot;Print server properties&quot;
+ }
+ 
+-
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-1100, 	&quot;S&amp;tart scan&quot;
+-1101, 	&quot;Scan pro&amp;files...&quot;
+-1102, 	&quot;S&amp;can properties&quot;
++  1100,  &quot;S&amp;tart scan&quot;
++  1101,  &quot;Scan pro&amp;files...&quot;
++  1102,  &quot;S&amp;can properties&quot;
+ }
+ 
+-
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-1200, 	&quot;%1!u! document(s) in queue&quot;
+-1201, 	&quot;Printer:  %1&quot;
+-1202, 	&quot;Ready&quot;
+-1203, 	&quot;Busy&quot;
+-1204, 	&quot;Door open&quot;
+-1205, 	&quot;Error&quot;
+-1206, 	&quot;Initializing&quot;
+-1207, 	&quot;IO active&quot;
+-1208, 	&quot;Manual feed&quot;
+-1209, 	&quot;No toner/ink&quot;
+-1210, 	&quot;Not available&quot;
+-1211, 	&quot;Offline&quot;
+-1212, 	&quot;Out of memory&quot;
+-1213, 	&quot;Output bin full&quot;
+-1214, 	&quot;Page punt&quot;
+-1215, 	&quot;Paper jam&quot;
++  1200,  &quot;%1!u! document(s) in queue&quot;
++  1201,  &quot;Printer:  %1&quot;
++  1202,  &quot;Ready&quot;
++  1203,  &quot;Busy&quot;
++  1204,  &quot;Door open&quot;
++  1205,  &quot;Error&quot;
++  1206,  &quot;Initializing&quot;
++  1207,  &quot;IO active&quot;
++  1208,  &quot;Manual feed&quot;
++  1209,  &quot;No toner/ink&quot;
++  1210,  &quot;Not available&quot;
++  1211,  &quot;Offline&quot;
++  1212,  &quot;Out of memory&quot;
++  1213,  &quot;Output bin full&quot;
++  1214,  &quot;Page punt&quot;
++  1215,  &quot;Paper jam&quot;
+ }
+ 
+-
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-1216, 	&quot;Paper out&quot;
+-1217, 	&quot;Paper problem&quot;
+-1218, 	&quot;Paused&quot;
+-1219, 	&quot;Pending deletion&quot;
+-1220, 	&quot;Power save&quot;
+-1221, 	&quot;Printing&quot;
+-1222, 	&quot;Processing&quot;
+-1223, 	&quot;Server unknown&quot;
+-1224, 	&quot;Toner/ink low&quot;
+-1225, 	&quot;User intervention&quot;
+-1226, 	&quot;Waiting&quot;
+-1227, 	&quot;Warming up&quot;
+-1228, 	&quot;Location:  %1&quot;
+-1229, 	&quot;Comment:  %1&quot;
+-1230, 	&quot;Unable to connect&quot;
+-1231, 	&quot;Printer not found on server, unable to connect&quot;
++  1216,  &quot;Paper out&quot;
++  1217,  &quot;Paper problem&quot;
++  1218,  &quot;Paused&quot;
++  1219,  &quot;Pending deletion&quot;
++  1220,  &quot;Power save&quot;
++  1221,  &quot;Printing&quot;
++  1222,  &quot;Processing&quot;
++  1223,  &quot;Server unknown&quot;
++  1224,  &quot;Toner/ink low&quot;
++  1225,  &quot;User intervention&quot;
++  1226,  &quot;Waiting&quot;
++  1227,  &quot;Warming up&quot;
++  1228,  &quot;Location:  %1&quot;
++  1229,  &quot;Comment:  %1&quot;
++  1230,  &quot;Unable to connect&quot;
++  1231,  &quot;Printer not found on server, unable to connect&quot;
+ }
+ 
+-
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-1232, 	&quot;Access denied, unable to connect&quot;
+-1233, 	&quot;Needs new driver&quot;
+-1240, 	&quot;Are you sure you want to delete printer '%1'?&quot;
+-1245, 	&quot;Printers&quot;
++  1232,  &quot;Access denied, unable to connect&quot;
++  1233,  &quot;Needs new driver&quot;
++  1240,  &quot;Are you sure you want to delete printer '%1'?&quot;
++  1245,  &quot;Printers&quot;
+ }
+ 
+-
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-1253, 	&quot;Portrait&quot;
+-1254, 	&quot;Landscape&quot;
+-1260, 	&quot;Scan profile: %1&quot;
++  1253,  &quot;Portrait&quot;
++  1254,  &quot;Landscape&quot;
++  1260,  &quot;Scan profile: %1&quot;
+ }
+ 
+-
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-1270, 	&quot;Scanner&quot;
+-1271, 	&quot;Scan&quot;
++  1270,  &quot;Scanner&quot;
++  1271,  &quot;Scan&quot;
+ }
+ 
+-
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-1300, 	&quot;See what's printing on your printer.&quot;
+-1301, 	&quot;Update the local system driver when a new driver is available on the printer server.&quot;
+-1302, 	&quot;Open the manage default printers dialog box, where you can manage default printers for the networks you connect to.&quot;
+-1303, 	&quot;Start scanning a document or image on your scanner.&quot;
+-1304, 	&quot;Shows the properties for this print server.&quot;
++  1300,  &quot;See what's printing on your printer.&quot;
++  1301,  &quot;Update the local system driver when a new driver is available on the printer server.&quot;
++  1302,  &quot;Open the manage default printers dialog box, where you can manage default printers for the networks you connect to.&quot;
++  1303,  &quot;Start scanning a document or image on your scanner.&quot;
++  1304,  &quot;Shows the properties for this print server.&quot;
+ }
+ 
+-
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-1370, 	&quot;%1 on %2&quot;
+-1375, 	&quot;The default printer has been deleted.&quot;
++  1370,  &quot;%1 on %2&quot;
++  1375,  &quot;The default printer has been deleted.&quot;
+ }
+ 
+-
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-1376, 	&quot;Close&quot;
+-1377, 	&quot;The new default printer for this computer is '%1!ls!'.&quot;
+-1378, 	&quot;Change your default printer&quot;
+-1379, 	&quot;There are no printers set up on your computer.&quot;
+-1380, 	&quot;Add or remove a printer&quot;
+-1390, 	&quot;You are missing a necessary feature. Please install Desktop Experience from the Server Manager. Then restart the computer.&quot;
+-1391, 	&quot;You need a WIA driver to use this device.  Please install it from the installation CD or manufacturer's website and try again.&quot;
++  1376,  &quot;Close&quot;
++  1377,  &quot;The new default printer for this computer is '%1!ls!'.&quot;
++  1378,  &quot;Change your default printer&quot;
++  1379,  &quot;There are no printers set up on your computer.&quot;
++  1380,  &quot;Add or remove a printer&quot;
++  1390,  &quot;You are missing a necessary feature. Please install Desktop Experience from the Server Manager. Then restart the computer.&quot;
++  1391,  &quot;You need a WIA driver to use this device.  Please install it from the installation CD or manufacturer's website and try again.&quot;
+ }
+ 
+-
+-1 VERSIONINFO
+-FILEVERSION 6,1,7600,16385
+-PRODUCTVERSION 6,1,7600,16385
+-FILEOS 0x40004
+-FILETYPE 0x2
+-{
+-BLOCK &quot;StringFileInfo&quot;
+-{
+-	BLOCK &quot;040904B0&quot;
+-	{
+-		VALUE &quot;CompanyName&quot;, &quot;Microsoft Corporation&quot;
+-		VALUE &quot;FileDescription&quot;, &quot;Function Discovery Print Provider Dll&quot;
+-		VALUE &quot;FileVersion&quot;, &quot;6.1.7600.16385 (win7_rtm.090713-1255)&quot;
+-		VALUE &quot;InternalName&quot;, &quot;FDPrint&quot;
+-		VALUE &quot;LegalCopyright&quot;, &quot;&#169; Microsoft Corporation. All rights reserved.&quot;
+-		VALUE &quot;OriginalFilename&quot;, &quot;FDPrint.dll.mui&quot;
+-		VALUE &quot;ProductName&quot;, &quot;Microsoft&#174; Windows&#174; Operating System&quot;
+-		VALUE &quot;ProductVersion&quot;, &quot;6.1.7600.16385&quot;
+-	}
+-}
+-
+-BLOCK &quot;VarFileInfo&quot;
+-{
+-	VALUE &quot;Translation&quot;, 0x0409 0x04B0
+-}
+-}
+-
+
+Modified: Windows7/source/Windows/System32/mblctr.exe.rc
+===================================================================
+--- Windows7/source/Windows/System32/mblctr.exe.rc	2011-03-16 07:25:39 UTC (rev 202)
++++ Windows7/source/Windows/System32/mblctr.exe.rc	2011-03-16 07:35:46 UTC (rev 203)
+@@ -1,206 +1,162 @@
+-1 MUI &quot;Data_1030.bin&quot;
++#pragma code_page(65001)
++#include &lt;resources.h&gt;
+ 
+ 100 DIALOGEX 0, 0, 0, 0
+-STYLE WS_MINIMIZEBOX | WS_CAPTION | WS_VSCROLL | WS_HSCROLL | WS_SYSMENU
+ CAPTION &quot;Windows Mobility Center&quot;
+-CLASS  &quot;MobilityCenterApp&quot;
+-LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+-FONT 9, &quot;Segoe UI&quot;
++STYLE 0xfa0040
++EXSTYLE 0x0
++FONT 9, &quot;Segoe UI&quot;, 0, 0, 0
+ {
+ }
+ 
+ 101 DIALOGEX 0, 0, 0, 0
+-STYLE WS_CHILD
+-EXSTYLE WS_EX_CONTROLPARENT
+ CAPTION &quot;&quot;
+-CLASS  &quot;MobilityCenterTile&quot;
+-LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+-FONT 9, &quot;Segoe UI&quot;
++STYLE 0x40000040 | NOT WS_CAPTION
++EXSTYLE 0x10000
++FONT 9, &quot;Segoe UI&quot;, 0, 0, 0
+ {
+ }
+ 
+-
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-90, 	&quot;&amp;Brightness&quot;
+-91, 	&quot;&amp;Volume&quot;
+-92, 	&quot;B&amp;attery Status&quot;
+-93, 	&quot;&amp;Wireless Network&quot;
+-94, 	&quot;Screen &amp;Orientation&quot;
+-95, 	&quot;E&amp;xternal Display&quot;
++  90,  &quot;&amp;Brightness&quot;
++  91,  &quot;&amp;Volume&quot;
++  92,  &quot;B&amp;attery Status&quot;
++  93,  &quot;&amp;Wireless Network&quot;
++  94,  &quot;Screen &amp;Orientation&quot;
++  95,  &quot;E&amp;xternal Display&quot;
+ }
+ 
+-
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-96, 	&quot;Sy&amp;nc Center&quot;
+-97, 	&quot;&amp;Presentation Settings&quot;
++  96,  &quot;Sy&amp;nc Center&quot;
++  97,  &quot;&amp;Presentation Settings&quot;
+ }
+ 
+-
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-113, 	&quot;Select a power plan. Your current selection is %1!s!&quot;
+-120, 	&quot;Orientation not available&quot;
+-121, 	&quot;Primary portrait&quot;
+-122, 	&quot;Primary landscape&quot;
+-123, 	&quot;Secondary portrait&quot;
+-124, 	&quot;Secondary landscape&quot;
+-125, 	&quot;&amp;Rotate screen&quot;
++  113,  &quot;Select a power plan. Your current selection is %1!s!&quot;
++  120,  &quot;Orientation not available&quot;
++  121,  &quot;Primary portrait&quot;
++  122,  &quot;Primary landscape&quot;
++  123,  &quot;Secondary portrait&quot;
++  124,  &quot;Secondary landscape&quot;
++  125,  &quot;&amp;Rotate screen&quot;
+ }
+ 
+-
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-130, 	&quot;No display connected&quot;
+-131, 	&quot;&amp;Connect display&quot;
+-132, 	&quot;Dis&amp;connect display&quot;
+-133, 	&quot;Display connected&quot;
+-140, 	&quot;Display brightness&quot;
+-141, 	&quot;Display brightness is unavailable&quot;
+-142, 	&quot;Display Brightness&quot;
+-143, 	&quot;Are you trying to permanently change your screen brightness?&quot;
++  130,  &quot;No display connected&quot;
++  131,  &quot;&amp;Connect display&quot;
++  132,  &quot;Dis&amp;connect display&quot;
++  133,  &quot;Display connected&quot;
++  140,  &quot;Display brightness&quot;
++  141,  &quot;Display brightness is unavailable&quot;
++  142,  &quot;Display Brightness&quot;
++  143,  &quot;Are you trying to permanently change your screen brightness?&quot;
+ }
+ 
+-
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-144, 	&quot;Any screen brightness adjustments you make in Mobility Center are temporary.\n\nTo permanently change your screen brightness, click the icon on the Display Brightness tile, adjust the brightness level on the Change settings for the plan page, and then click Save changes.\n\nNote: Increasing the screen brightness decreases the life of your battery.&quot;
+-145, 	&quot;&amp;Don't show me this again&quot;
+-150, 	&quot;Wireless off&quot;
+-151, 	&quot;no signal&quot;
+-152, 	&quot;very poor&quot;
+-153, 	&quot;poor&quot;
+-154, 	&quot;medium&quot;
+-155, 	&quot;good&quot;
+-156, 	&quot;excellent&quot;
+-157, 	&quot;No wireless adapter found&quot;
+-158, 	&quot;Connected&quot;
+-159, 	&quot;Not connected&quot;
++  144,  &quot;Any screen brightness adjustments you make in Mobility Center are temporary.\n\nTo permanently change your screen brightness, click the icon on the Display Brightness tile, adjust the brightness level on the Change settings for the plan page, and then click Save changes.\n\nNote: Increasing the screen brightness decreases the life of your battery.&quot;
++  145,  &quot;&amp;Don't show me this again&quot;
++  150,  &quot;Wireless off&quot;
++  151,  &quot;no signal&quot;
++  152,  &quot;very poor&quot;
++  153,  &quot;poor&quot;
++  154,  &quot;medium&quot;
++  155,  &quot;good&quot;
++  156,  &quot;excellent&quot;
++  157,  &quot;No wireless adapter found&quot;
++  158,  &quot;Connected&quot;
++  159,  &quot;Not connected&quot;
+ }
+ 
+-
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-160, 	&quot;&amp;Turn wireless off&quot;
+-161, 	&quot;&amp;Turn wireless on&quot;
+-162, 	&quot; and connection strength is &quot;
+-163, 	&quot;Ne&amp;twork Center&quot;
+-172, 	&quot;No audio devices available&quot;
+-173, 	&quot;&amp;Mute&quot;
++  160,  &quot;&amp;Turn wireless off&quot;
++  161,  &quot;&amp;Turn wireless on&quot;
++  162,  &quot; and connection strength is &quot;
++  163,  &quot;Ne&amp;twork Center&quot;
++  172,  &quot;No audio devices available&quot;
++  173,  &quot;&amp;Mute&quot;
+ }
+ 
+-
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-180, 	&quot;No errors, no conflicts&quot;
+-181, 	&quot;Sync complete&quot;
+-182, 	&quot;%1!u! errors, %2!u! conflicts&quot;
+-184, 	&quot;No device connected&quot;
+-185, 	&quot;No sync partnerships&quot;
+-186, 	&quot;Syncing (%1!s!)&quot;
+-187, 	&quot;&amp;Sync&quot;
+-188, 	&quot;&amp;Stop&quot;
+-189, 	&quot;&amp;Sync settings&quot;
++  180,  &quot;No errors, no conflicts&quot;
++  181,  &quot;Sync complete&quot;
++  182,  &quot;%1!u! errors, %2!u! conflicts&quot;
++  184,  &quot;No device connected&quot;
++  185,  &quot;No sync partnerships&quot;
++  186,  &quot;Syncing (%1!s!)&quot;
++  187,  &quot;&amp;Sync&quot;
++  188,  &quot;&amp;Stop&quot;
++  189,  &quot;&amp;Sync settings&quot;
+ }
+ 
+-
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-200, 	&quot;Presenting&quot;
+-201, 	&quot;Not presenting&quot;
+-202, 	&quot;T&amp;urn off&quot;
+-203, 	&quot;T&amp;urn on&quot;
++  200,  &quot;Presenting&quot;
++  201,  &quot;Not presenting&quot;
++  202,  &quot;T&amp;urn off&quot;
++  203,  &quot;T&amp;urn on&quot;
+ }
+ 
+-
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-210, 	&quot;Brightness&quot;
+-211, 	&quot;Volume&quot;
++  210,  &quot;Brightness&quot;
++  211,  &quot;Volume&quot;
+ }
+ 
+-
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-500, 	&quot;Change display settings.&quot;
+-501, 	&quot;Change Tablet PC settings.&quot;
+-502, 	&quot;Change power settings.&quot;
+-503, 	&quot;Change synchronization settings.&quot;
+-504, 	&quot;Change wireless network settings.&quot;
+-505, 	&quot;Change audio settings.&quot;
+-506, 	&quot;Some settings are controlled by Group Policy. If a setting is unavailable, contact your system administrator.&quot;
+-507, 	&quot;Current status is&quot;
+-508, 	&quot;Change presentation settings.&quot;
+-509, 	&quot;No audio devices are recognized by your computer.&quot;
+-510, 	&quot;Change display brightness settings for your power plan.&quot;
+-511, 	&quot;%s: %s %s&quot;
++  500,  &quot;Change display settings.&quot;
++  501,  &quot;Change Tablet PC settings.&quot;
++  502,  &quot;Change power settings.&quot;
++  503,  &quot;Change synchronization settings.&quot;
++  504,  &quot;Change wireless network settings.&quot;
++  505,  &quot;Change audio settings.&quot;
++  506,  &quot;Some settings are controlled by Group Policy. If a setting is unavailable, contact your system administrator.&quot;
++  507,  &quot;Current status is&quot;
++  508,  &quot;Change presentation settings.&quot;
++  509,  &quot;No audio devices are recognized by your computer.&quot;
++  510,  &quot;Change display brightness settings for your power plan.&quot;
++  511,  &quot;%s: %s %s&quot;
+ }
+ 
+-
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-1001, 	&quot;Customized by &quot;
+-1002, 	&quot;Windows Mobility Center&quot;
+-1003, 	&quot;Adjust display brightness, volume, power options, and other commonly used mobile PC settings.&quot;
+-1004, 	&quot;Opens the Windows Mobility Center so you can adjust display brightness, volume, power options, and other mobile PC settings.&quot;
+-1005, 	&quot;Windows Mobility Center is available only on laptops.&quot;
+-1006, 	&quot;Windows Mobility Center&quot;
+-1007, 	&quot;Help&quot;
++  1001,  &quot;Customized by &quot;
++  1002,  &quot;Windows Mobility Center&quot;
++  1003,  &quot;Adjust display brightness, volume, power options, and other commonly used mobile PC settings.&quot;
++  1004,  &quot;Opens the Windows Mobility Center so you can adjust display brightness, volume, power options, and other mobile PC settings.&quot;
++  1005,  &quot;Windows Mobility Center is available only on laptops.&quot;
++  1006,  &quot;Windows Mobility Center&quot;
++  1007,  &quot;Help&quot;
+ }
+ 
+-
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-1008, 	&quot;Windows Mobility Center&quot;
++  1008,  &quot;Windows Mobility Center&quot;
+ }
+ 
+ 1 MESSAGETABLE
+ {
+-805306369,  	&quot;Start&quot;
+-805306370,  	&quot;Stop&quot;
+-1342177284,  	&quot;Information&quot;
+--1879048191,  	&quot;Microsoft-Windows-MobilityCenter&quot;
++  805306369,  &quot;Start\r\n&quot;
++  805306370,  &quot;Stop\r\n&quot;
++  1342177284,  &quot;Information\r\n&quot;
++  2415919105,  &quot;Microsoft-Windows-MobilityCenter\r\n&quot;
+ }
+-
+-
+-1 VERSIONINFO
+-FILEVERSION 6,1,7600,16385
+-PRODUCTVERSION 6,1,7600,16385
+-FILEOS 0x40004
+-FILETYPE 0x1
+-{
+-BLOCK &quot;StringFileInfo&quot;
+-{
+-	BLOCK &quot;040904B0&quot;
+-	{
+-		VALUE &quot;CompanyName&quot;, &quot;Microsoft Corporation&quot;
+-		VALUE &quot;FileDescription&quot;, &quot;Windows Mobility Center&quot;
+-		VALUE &quot;FileVersion&quot;, &quot;6.1.7600.16385 (win7_rtm.090713-1255)&quot;
+-		VALUE &quot;InternalName&quot;, &quot;MBLCTR.EXE&quot;
+-		VALUE &quot;LegalCopyright&quot;, &quot;Copyright &#169; 1998-2006 Microsoft Corp.&quot;
+-		VALUE &quot;OriginalFilename&quot;, &quot;MBLCTR.EXE.MUI&quot;
+-		VALUE &quot;ProductName&quot;, &quot;Microsoft&#174; Windows&#174; Operating System&quot;
+-		VALUE &quot;ProductVersion&quot;, &quot;6.1.7600.16385&quot;
+-		VALUE &quot;OleSelfRegister&quot;, &quot;&quot;
+-	}
+-}
+-
+-BLOCK &quot;VarFileInfo&quot;
+-{
+-	VALUE &quot;Translation&quot;, 0x0409 0x04B0
+-}
+-}
+-
+
+Modified: Windows7/source/Windows/System32/oobe/msoobeui.dll.rc
+===================================================================
+--- Windows7/source/Windows/System32/oobe/msoobeui.dll.rc	2011-03-16 07:25:39 UTC (rev 202)
++++ Windows7/source/Windows/System32/oobe/msoobeui.dll.rc	2011-03-16 07:35:46 UTC (rev 203)
+@@ -1,341 +1,293 @@
+-1 MUI &quot;Data_2136.bin&quot;
++#pragma code_page(65001)
++#include &lt;resources.h&gt;
+ 
+-
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-397, 	&quot;Type a password &amp;hint:&quot;
+-398, 	&quot;Type a password &amp;hint (required):&quot;
+-399, 	&quot;PC&quot;
++  397,  &quot;Type a password &amp;hint:&quot;
++  398,  &quot;Type a password &amp;hint (required):&quot;
++  399,  &quot;PC&quot;
+ }
+ 
+-
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-400, 	&quot;%s-%s&quot;
+-401, 	&quot;The computer name cannot contain these characters:\n{ | } ~ [ \\ ] ^ ' : ; &lt; = &gt; ? @ ! \&quot; # $ % ` ( ) + / . , *&quot;
+-402, 	&quot;Some characters are not valid&quot;
+-403, 	&quot;The new password and the confirmation password do not match. Type the same password in both boxes.&quot;
+-404, 	&quot;The passwords do not match&quot;
+-405, 	&quot;The product key is not valid&quot;
+-406, 	&quot;Please retype the product key.&quot;
+-409, 	&quot;Set Up Windows&quot;
+-410, 	&quot;The user name is already in use&quot;
+-411, 	&quot;Please type a different user name.&quot;
+-412, 	&quot;Error&quot;
+-413, 	&quot;An unknown error occurred.&quot;
+-414, 	&quot;Invalid parameter.&quot;
+-415, 	&quot;The domain you specified is not valid.&quot;
++  400,  &quot;%s-%s&quot;
++  401,  &quot;The computer name cannot contain these characters:\n{ | } ~ [ \\ ] ^ ' : ; &lt; = &gt; ? @ ! &quot;&quot; # $ % ` ( ) + / . , *&quot;
++  402,  &quot;Some characters are not valid&quot;
++  403,  &quot;The new password and the confirmation password do not match. Type the same password in both boxes.&quot;
++  404,  &quot;The passwords do not match&quot;
++  405,  &quot;The product key is not valid&quot;
++  406,  &quot;Please retype the product key.&quot;
++  409,  &quot;Set Up Windows&quot;
++  410,  &quot;The user name is already in use&quot;
++  411,  &quot;Please type a different user name.&quot;
++  412,  &quot;Error&quot;
++  413,  &quot;An unknown error occurred.&quot;
++  414,  &quot;Invalid parameter.&quot;
++  415,  &quot;The domain you specified is not valid.&quot;
+ }
+ 
+-
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-416, 	&quot;The computer is already joined to a domain.&quot;
+-417, 	&quot;Invalid workgroup name.&quot;
+-418, 	&quot;&amp;Start&quot;
++  416,  &quot;The computer is already joined to a domain.&quot;
++  417,  &quot;Invalid workgroup name.&quot;
++  418,  &quot;&amp;Start&quot;
+ }
+ 
+-
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-433, 	&quot;The user name cannot contain these characters:\n\&quot; / \\ [ ] : | &lt; &gt; + = ; , ? * %&quot;
+-434, 	&quot;Some characters are not valid&quot;
+-435, 	&quot;Help and Support&quot;
+-438, 	&quot;The product key does not match current Windows SKU&quot;
+-440, 	&quot;My language is %s&quot;
+-441, 	&quot;You cannot change your language later&quot;
+-443, 	&quot;Choose your formats...&quot;
+-444, 	&quot;Choose your location...&quot;
+-445, 	&quot;The computer name is not valid&quot;
+-446, 	&quot;The computer name cannot contain only numbers, cannot be the same as your user name, and cannot contain spaces.\nPlease retype the computer name.&quot;
+-447, 	&quot;Windows User&quot;
++  433,  &quot;The user name cannot contain these characters:\n&quot;&quot; / \\ [ ] : | &lt; &gt; + = ; , ? * %&quot;
++  434,  &quot;Some characters are not valid&quot;
++  435,  &quot;Help and Support&quot;
++  438,  &quot;The product key does not match current Windows SKU&quot;
++  440,  &quot;My language is %s&quot;
++  441,  &quot;You cannot change your language later&quot;
++  443,  &quot;Choose your formats...&quot;
++  444,  &quot;Choose your location...&quot;
++  445,  &quot;The computer name is not valid&quot;
++  446,  &quot;The computer name cannot contain only numbers, cannot be the same as your user name, and cannot contain spaces.\nPlease retype the computer name.&quot;
++  447,  &quot;Windows User&quot;
+ }
+ 
+-
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-451, 	&quot;9pt;;;Courier New Bold;ClearType&quot;
+-454, 	&quot;&amp;Next&quot;
+-455, 	&quot;The password is not valid&quot;
+-456, 	&quot;The password you typed does not meet the password complexity requirements set by the administrator for your network or group. Get the requirements from your administrator, and then type a new password.&quot;
+-457, 	&quot;Type a computer name&quot;
+-458, 	&quot;S&amp;kip&quot;
+-459, 	&quot;Invalid security key&quot;
+-460, 	&quot;Connection attempt failed&quot;
+-461, 	&quot;Share with other home computers running Windows 7&quot;
+-463, 	&quot;Windows detected a homegroup on your network.  When you join a homegroup, you can share files and printers with other computers running Windows 7.  To continue, get the homegroup password from %1 on %2 or another homegroup member.&quot;
++  451,  &quot;9pt;;;Courier New Bold;ClearType&quot;
++  454,  &quot;&amp;Next&quot;
++  455,  &quot;The password is not valid&quot;
++  456,  &quot;The password you typed does not meet the password complexity requirements set by the administrator for your network or group. Get the requirements from your administrator, and then type a new password.&quot;
++  457,  &quot;Type a computer name&quot;
++  458,  &quot;S&amp;kip&quot;
++  459,  &quot;Invalid security key&quot;
++  460,  &quot;Connection attempt failed&quot;
++  461,  &quot;Share with other home computers running Windows 7&quot;
++  463,  &quot;Windows detected a homegroup on your network.  When you join a homegroup, you can share files and printers with other computers running Windows 7.  To continue, get the homegroup password from %1 on %2 or another homegroup member.&quot;
+ }
+ 
+-
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-464, 	&quot;Windows detected a homegroup on your network.  When you join a homegroup, you can share files and printers with other computers running Windows 7.  To continue, get the homegroup password from a homegroup member.&quot;
+-467, 	&quot;Windows HomeGroup&quot;
+-468, 	&quot;The password must contain at least eight characters, not including leading or trailing spaces.&quot;
+-469, 	&quot;Windows cannot set up a homegroup on this computer.&quot;
+-470, 	&quot;The password is incorrect.\nPlease try again.  Passwords are case-sensitive.&quot;
+-471, 	&quot;Open&quot;
+-472, 	&quot;Shared&quot;
+-473, 	&quot;WPA&quot;
+-474, 	&quot;WPA-PSK&quot;
+-475, 	&quot;WPA2&quot;
+-476, 	&quot;WPA2-PSK&quot;
+-477, 	&quot;None&quot;
+-478, 	&quot;WEP&quot;
+-479, 	&quot;TKIP&quot;
++  464,  &quot;Windows detected a homegroup on your network.  When you join a homegroup, you can share files and printers with other computers running Windows 7.  To continue, get the homegroup password from a homegroup member.&quot;
++  467,  &quot;Windows HomeGroup&quot;
++  468,  &quot;The password must contain at least eight characters, not including leading or trailing spaces.&quot;
++  469,  &quot;Windows cannot set up a homegroup on this computer.&quot;
++  470,  &quot;The password is incorrect.\nPlease try again.  Passwords are case-sensitive.&quot;
++  471,  &quot;Open&quot;
++  472,  &quot;Shared&quot;
++  473,  &quot;WPA&quot;
++  474,  &quot;WPA-PSK&quot;
++  475,  &quot;WPA2&quot;
++  476,  &quot;WPA2-PSK&quot;
++  477,  &quot;None&quot;
++  478,  &quot;WEP&quot;
++  479,  &quot;TKIP&quot;
+ }
+ 
+-
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-480, 	&quot;AES&quot;
+-481, 	&quot;Connect to a Hidden Network&quot;
+-482, 	&quot;Signal strength: %1!u!&quot;
+-483, 	&quot;&amp;Finish&quot;
+-485, 	&quot;To get the password, ask %1 on %2 or another homegroup member to open HomeGroup in Control Panel on their PC.&quot;
+-486, 	&quot;To get the password, ask a homegroup member to open HomeGroup in Control Panel on their PC.&quot;
+-488, 	&quot;The homegroup no longer exists.\nTo create a homegroup, open Network and Sharing Center.&quot;
+-489, 	&quot;A homegroup has already been created on this network.&quot;
+-490, 	&quot;A homegroup can only be created on a Home network.\nTo change your network location, open Network and Sharing Center in Control Panel.&quot;
+-491, 	&quot;The homegroup service is starting.  Please try again.&quot;
+-492, 	&quot;Choose a user name for your account.  Your computer's name is managed by your organization's system administrator.&quot;
+-493, 	&quot;The clocks on all homegroup computers must be set no more than 24 hours apart. Make sure your computer clocks are synchronized, and then try joining the homegroup again.&quot;
+-494, 	&quot;Setup will continue after restarting your computer&quot;
+-495, 	&quot;Choose a computer name to distinguish it on the network. Your user account is managed by your organization's system administrator.&quot;
++  480,  &quot;AES&quot;
++  481,  &quot;Connect to a Hidden Network&quot;
++  482,  &quot;Signal strength: %1!u!&quot;
++  483,  &quot;&amp;Finish&quot;
++  485,  &quot;To get the password, ask %1 on %2 or another homegroup member to open HomeGroup in Control Panel on their PC.&quot;
++  486,  &quot;To get the password, ask a homegroup member to open HomeGroup in Control Panel on their PC.&quot;
++  488,  &quot;The homegroup no longer exists.\nTo create a homegroup, open Network and Sharing Center.&quot;
++  489,  &quot;A homegroup has already been created on this network.&quot;
++  490,  &quot;A homegroup can only be created on a Home network.\nTo change your network location, open Network and Sharing Center in Control Panel.&quot;
++  491,  &quot;The homegroup service is starting.  Please try again.&quot;
++  492,  &quot;Choose a user name for your account.  Your computer's name is managed by your organization's system administrator.&quot;
++  493,  &quot;The clocks on all homegroup computers must be set no more than 24 hours apart. Make sure your computer clocks are synchronized, and then try joining the homegroup again.&quot;
++  494,  &quot;Setup will continue after restarting your computer&quot;
++  495,  &quot;Choose a computer name to distinguish it on the network. Your user account is managed by your organization's system administrator.&quot;
+ }
+ 
+-
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-496, 	&quot;Network name: %1&quot;
+-500, 	&quot;privacy.rtf&quot;
+-501, 	&quot;OOBE_HELP_What_is_User_Account.rtf&quot;
+-502, 	&quot;OOBE_HELP_Change_Computer_Name.rtf&quot;
+-505, 	&quot;OOBE_HELP_Opt_in_Details.rtf&quot;
+-506, 	&quot;HELP_What_is_Activation.rtf&quot;
+-507, 	&quot;OOBE_HELP_What_is_HomeGroup.rtf&quot;
+-508, 	&quot;OOBE_HELP_Find_PassPhrase.rtf&quot;
+-509, 	&quot;Your network connection must have IPv6 enabled to create or join a homegroup. To enable IPv6, start the HomeGroup troubleshooter.&quot;
+-510, 	&quot;Administrator&quot;
+-511, 	&quot;Guest&quot;
++  496,  &quot;Network name: %1&quot;
++  500,  &quot;privacy.rtf&quot;
++  501,  &quot;OOBE_HELP_What_is_User_Account.rtf&quot;
++  502,  &quot;OOBE_HELP_Change_Computer_Name.rtf&quot;
++  505,  &quot;OOBE_HELP_Opt_in_Details.rtf&quot;
++  506,  &quot;HELP_What_is_Activation.rtf&quot;
++  507,  &quot;OOBE_HELP_What_is_HomeGroup.rtf&quot;
++  508,  &quot;OOBE_HELP_Find_PassPhrase.rtf&quot;
++  509,  &quot;Your network connection must have IPv6 enabled to create or join a homegroup. To enable IPv6, start the HomeGroup troubleshooter.&quot;
++  510,  &quot;Administrator&quot;
++  511,  &quot;Guest&quot;
+ }
+ 
+-
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-512, 	&quot;The specified computer name is too long.&quot;
++  512,  &quot;The specified computer name is too long.&quot;
+ }
+ 
+-
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-1100, 	&quot;&amp;Country or region:&quot;
+-1102, 	&quot;&amp;Time and currency:&quot;
+-1103, 	&quot;&amp;Keyboard layout:&quot;
++  1100,  &quot;&amp;Country or region:&quot;
++  1102,  &quot;&amp;Time and currency:&quot;
++  1103,  &quot;&amp;Keyboard layout:&quot;
+ }
+ 
+-
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-1104, 	&quot;Type your Windows product key&quot;
+-1105, 	&quot;You can find your Windows product key on a label included with the package that came with your copy of Windows. The label might also be on your computer case. Activation pairs your product key with your computer.&quot;
+-1106, 	&quot;The product key looks similar to this:&quot;
+-1107, 	&quot;(dashes will be added automatically)&quot;
+-1109, 	&quot;Please read the license terms&quot;
+-1110, 	&quot;I &amp;accept the license terms&quot;
+-1113, 	&quot;Please read the license terms&quot;
+-1114, 	&quot;I &amp;accept the license terms (required to use Windows)&quot;
+-1117, 	&quot;I accept the &amp;license terms (required to use your computer)&quot;
++  1104,  &quot;Type your Windows product key&quot;
++  1105,  &quot;You can find your Windows product key on a label included with the package that came with your copy of Windows. The label might also be on your computer case. Activation pairs your product key with your computer.&quot;
++  1106,  &quot;The product key looks similar to this:&quot;
++  1107,  &quot;(dashes will be added automatically)&quot;
++  1109,  &quot;Please read the license terms&quot;
++  1110,  &quot;I &amp;accept the license terms&quot;
++  1113,  &quot;Please read the license terms&quot;
++  1114,  &quot;I &amp;accept the license terms (required to use Windows)&quot;
++  1117,  &quot;I accept the &amp;license terms (required to use your computer)&quot;
+ }
+ 
+-
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-1120, 	&quot;Set a password for your account&quot;
+-1121, 	&quot;Creating a password is a smart security precaution that helps protect your user account from unwanted users. Be sure to remember your password or keep it in a safe place.&quot;
+-1122, 	&quot;Type a &amp;user name (for example, John):&quot;
+-1123, 	&quot;Type a &amp;password (recommended):&quot;
+-1124, 	&quot;&amp;Retype your password:&quot;
+-1125, 	&quot;Type a password &amp;hint:&quot;
+-1128, 	&quot;&amp;Type a &lt;a&gt;computer name&lt;/a&gt;:&quot;
+-1130, 	&quot;Help protect your computer and improve Windows automatically&quot;
+-1131, 	&quot;Use &amp;recommended settings&quot;
+-1132, 	&quot;&amp;Install important updates only&quot;
+-1133, 	&quot;&amp;Ask me later&quot;
+-1134, 	&quot;&lt;a&gt;Learn more about each option&lt;/a&gt;&quot;
++  1120,  &quot;Set a password for your account&quot;
++  1121,  &quot;Creating a password is a smart security precaution that helps protect your user account from unwanted users. Be sure to remember your password or keep it in a safe place.&quot;
++  1122,  &quot;Type a &amp;user name (for example, John):&quot;
++  1123,  &quot;Type a &amp;password (recommended):&quot;
++  1124,  &quot;&amp;Retype your password:&quot;
++  1125,  &quot;Type a password &amp;hint:&quot;
++  1128,  &quot;&amp;Type a &lt;a&gt;computer name&lt;/a&gt;:&quot;
++  1130,  &quot;Help protect your computer and improve Windows automatically&quot;
++  1131,  &quot;Use &amp;recommended settings&quot;
++  1132,  &quot;&amp;Install important updates only&quot;
++  1133,  &quot;&amp;Ask me later&quot;
++  1134,  &quot;&lt;a&gt;Learn more about each option&lt;/a&gt;&quot;
+ }
+ 
+-
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-1136, 	&quot;When you use recommended settings or install updates only, some information is sent to Microsoft.  The information is not used to identify you or contact you.  To turn off these settings later, search for 'Turn off recommended setting' in Help and Support.  &lt;a&gt;Read the privacy statement&lt;/a&gt;&quot;
+-1138, 	&quot;Review your time and date settings&quot;
+-1139, 	&quot;Time &amp;zone:&quot;
+-1140, 	&quot;&amp;Automatically adjust clock for Daylight Saving Time&quot;
+-1151, 	&quot;&amp;Automatically activate Windows when I'm online&quot;
++  1136,  &quot;When you use recommended settings or install updates only, some information is sent to Microsoft.  The information is not used to identify you or contact you.  To turn off these settings later, search for 'Turn off recommended setting' in Help and Support.  &lt;a&gt;Read the privacy statement&lt;/a&gt;&quot;
++  1138,  &quot;Review your time and date settings&quot;
++  1139,  &quot;Time &amp;zone:&quot;
++  1140,  &quot;&amp;Automatically adjust clock for Daylight Saving Time&quot;
++  1151,  &quot;&amp;Automatically activate Windows when I'm online&quot;
+ }
+ 
+-
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-1152, 	&quot;&lt;a&gt;What is activation?&lt;/a&gt;&quot;
+-1153, 	&quot;&lt;a&gt;Read our privacy statement&lt;/a&gt;&quot;
+-1154, 	&quot;&amp;Date:&quot;
+-1155, 	&quot;&amp;Time:&quot;
+-1156, 	&quot;Install important and recommended updates, help make Internet browsing safer, check online for solutions to problems, and help Microsoft improve Windows.&quot;
+-1157, 	&quot;Only install security updates and other important updates for Windows.&quot;
+-1158, 	&quot;Until you decide, your computer might be vulnerable to security threats.&quot;
+-1159, 	&quot;Windows Vista&quot;
+-1160, 	&quot;You can find your Windows product key on a label included with the package that came with your copy of Windows. The label might also be on your computer case. Activation pairs your product key with your computer.&quot;
+-1161, 	&quot;When you use recommended settings or install updates only, some information is sent to Microsoft.  The information is not used to identify you or contact you.  To turn off these settings later, search for 'Turn off recommended setting' in Help and Support.&quot;
+-1162, 	&quot;Type a user name (for example, John):&quot;
+-1163, 	&quot;Type a password (recommended):&quot;
+-1164, 	&quot;Retype your password:&quot;
+-1165, 	&quot;Type a password hint:&quot;
++  1152,  &quot;&lt;a&gt;What is activation?&lt;/a&gt;&quot;
++  1153,  &quot;&lt;a&gt;Read our privacy statement&lt;/a&gt;&quot;
++  1154,  &quot;&amp;Date:&quot;
++  1155,  &quot;&amp;Time:&quot;
++  1156,  &quot;Install important and recommended updates, help make Internet browsing safer, check online for solutions to problems, and help Microsoft improve Windows.&quot;
++  1157,  &quot;Only install security updates and other important updates for Windows.&quot;
++  1158,  &quot;Until you decide, your computer might be vulnerable to security threats.&quot;
++  1159,  &quot;Windows Vista&quot;
++  1160,  &quot;You can find your Windows product key on a label included with the package that came with your copy of Windows. The label might also be on your computer case. Activation pairs your product key with your computer.&quot;
++  1161,  &quot;When you use recommended settings or install updates only, some information is sent to Microsoft.  The information is not used to identify you or contact you.  To turn off these settings later, search for 'Turn off recommended setting' in Help and Support.&quot;
++  1162,  &quot;Type a user name (for example, John):&quot;
++  1163,  &quot;Type a password (recommended):&quot;
++  1164,  &quot;Retype your password:&quot;
++  1165,  &quot;Type a password hint:&quot;
+ }
+ 
+-
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-1169, 	&quot;Analog Clock&quot;
+-1170, 	&quot;Digital Clock&quot;
+-1171, 	&quot;Review your regional and keyboard settings&quot;
+-1172, 	&quot;To make sure your computer is set up correctly, check the regional, time and currency, and keyboard layout settings below.&quot;
+-1173, 	&quot;To make sure your computer is set up correctly, check the regional, time and currency, and keyboard layout settings below.&quot;
+-1174, 	&quot;Learn more about each option&quot;
+-1175, 	&quot;What is activation?&quot;
+-1176, 	&quot;Read our privacy statement&quot;
+-1177, 	&quot;Select your computer's current location&quot;
+-1178, 	&quot;This computer is connected to a network. Windows will automatically apply the correct network settings based on the network's location.&quot;
+-1179, 	&quot;&amp;Home network&quot;
+-1180, 	&quot;If all the computers on this network are at your home, and you recognize them, this is a trusted home network.  Don't choose this for public places such as coffee shops or airports.&quot;
+-1181, 	&quot;&amp;Work network&quot;
+-1182, 	&quot;If all the computers on this network are at your workplace, and you recognize them, this is a trusted work network.  Don't choose this for public places such as coffee shops or airports.&quot;
+-1183, 	&quot;&amp;Public network&quot;
++  1169,  &quot;Analog Clock&quot;
++  1170,  &quot;Digital Clock&quot;
++  1171,  &quot;Review your regional and keyboard settings&quot;
++  1172,  &quot;To make sure your computer is set up correctly, check the regional, time and currency, and keyboard layout settings below.&quot;
++  1173,  &quot;To make sure your computer is set up correctly, check the regional, time and currency, and keyboard layout settings below.&quot;
++  1174,  &quot;Learn more about each option&quot;
++  1175,  &quot;What is activation?&quot;
++  1176,  &quot;Read our privacy statement&quot;
++  1177,  &quot;Select your computer's current location&quot;
++  1178,  &quot;This computer is connected to a network. Windows will automatically apply the correct network settings based on the network's location.&quot;
++  1179,  &quot;&amp;Home network&quot;
++  1180,  &quot;If all the computers on this network are at your home, and you recognize them, this is a trusted home network.  Don't choose this for public places such as coffee shops or airports.&quot;
++  1181,  &quot;&amp;Work network&quot;
++  1182,  &quot;If all the computers on this network are at your workplace, and you recognize them, this is a trusted work network.  Don't choose this for public places such as coffee shops or airports.&quot;
++  1183,  &quot;&amp;Public network&quot;
+ }
+ 
+-
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-1184, 	&quot;If you don't recognize all the computers on the network (for example, you're in a coffee shop or airport, or you have mobile broadband), this is a public network and is not trusted.&quot;
+-1187, 	&quot;If you aren't sure, select Public network.&quot;
+-1191, 	&quot;Product key (dashes will be added automatically)&quot;
+-1193, 	&quot;Product key&quot;
+-1195, 	&quot;Join a wireless network&quot;
+-1196, 	&quot;Please choose your wireless network. If you don't know your wireless network details, you can skip this step and do it later.&quot;
+-1197, 	&quot;Refresh&quot;
+-1199, 	&quot;Security-enabled network&quot;
++  1184,  &quot;If you don't recognize all the computers on the network (for example, you're in a coffee shop or airport, or you have mobile broadband), this is a public network and is not trusted.&quot;
++  1187,  &quot;If you aren't sure, select Public network.&quot;
++  1191,  &quot;Product key (dashes will be added automatically)&quot;
++  1193,  &quot;Product key&quot;
++  1195,  &quot;Join a wireless network&quot;
++  1196,  &quot;Please choose your wireless network. If you don't know your wireless network details, you can skip this step and do it later.&quot;
++  1197,  &quot;Refresh&quot;
++  1199,  &quot;Security-enabled network&quot;
+ }
+ 
+-
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-1201, 	&quot;Security key:&quot;
+-1202, 	&quot;Type your security key&quot;
+-1203, 	&quot;Unsecured network&quot;
+-1204, 	&quot;Joining an unsecured network can put your computer at risk&quot;
+-1205, 	&quot;Refresh&quot;
+-1206, 	&quot;Signal strength&quot;
++  1201,  &quot;Security key:&quot;
++  1202,  &quot;Type your security key&quot;
++  1203,  &quot;Unsecured network&quot;
++  1204,  &quot;Joining an unsecured network can put your computer at risk&quot;
++  1205,  &quot;Refresh&quot;
++  1206,  &quot;Signal strength&quot;
+ }
+ 
+-
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-1218, 	&quot;Select what you want to share:&quot;
+-1219, 	&quot;&amp;Pictures&quot;
+-1220, 	&quot;&amp;Music&quot;
+-1221, 	&quot;&amp;Videos&quot;
+-1222, 	&quot;&amp;Documents&quot;
+-1223, 	&quot;P&amp;rinters&quot;
+-1227, 	&quot;&lt;a&gt;Tell me more about homegroups&lt;/a&gt;&quot;
+-1228, 	&quot;Learn more about HomeGroup&quot;
+-1229, 	&quot;Connection attempt failed&quot;
+-1230, 	&quot;&lt;a&gt;Connect to a hidden wireless network&lt;/a&gt;&quot;
+-1231, 	&quot;Enter information for the hidden wireless network&quot;
++  1218,  &quot;Select what you want to share:&quot;
++  1219,  &quot;&amp;Pictures&quot;
++  1220,  &quot;&amp;Music&quot;
++  1221,  &quot;&amp;Videos&quot;
++  1222,  &quot;&amp;Documents&quot;
++  1223,  &quot;P&amp;rinters&quot;
++  1227,  &quot;&lt;a&gt;Tell me more about homegroups&lt;/a&gt;&quot;
++  1228,  &quot;Learn more about HomeGroup&quot;
++  1229,  &quot;Connection attempt failed&quot;
++  1230,  &quot;&lt;a&gt;Connect to a hidden wireless network&lt;/a&gt;&quot;
++  1231,  &quot;Enter information for the hidden wireless network&quot;
+ }
+ 
+-
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-1232, 	&quot;Network name:&quot;
+-1233, 	&quot;Type the network name&quot;
+-1234, 	&quot;Security type:&quot;
+-1235, 	&quot;OK&quot;
+-1236, 	&quot;Cancel&quot;
+-1237, 	&quot;Encryption type:&quot;
+-1238, 	&quot;Choose a user name for your &lt;a&gt;account&lt;/a&gt; and name your computer to distinguish it on the network.&quot;
+-1239, 	&quot;Creating a password is a smart security precaution that helps protect your user account from unwanted users. Be sure to remember your password or keep it in a safe place.&quot;
+-1240, 	&quot;Connecting to your network and applying settings...&quot;
+-1241, 	&quot;Windows is finalizing your settings&quot;
+-1242, 	&quot;Type a computer name&quot;
+-1244, 	&quot;PRODUCT KEY: XXXXX-XXXXX-XXXXX-XXXXX-XXXXX&quot;
+-1245, 	&quot;Choose a word or phrase that helps you remember your password.\nIf you forget your password, Windows will show you your hint.&quot;
+-1247, 	&quot;Type your &amp;homegroup password:&quot;
++  1232,  &quot;Network name:&quot;
++  1233,  &quot;Type the network name&quot;
++  1234,  &quot;Security type:&quot;
++  1235,  &quot;OK&quot;
++  1236,  &quot;Cancel&quot;
++  1237,  &quot;Encryption type:&quot;
++  1238,  &quot;Choose a user name for your &lt;a&gt;account&lt;/a&gt; and name your computer to distinguish it on the network.&quot;
++  1239,  &quot;Creating a password is a smart security precaution that helps protect your user account from unwanted users. Be sure to remember your password or keep it in a safe place.&quot;
++  1240,  &quot;Connecting to your network and applying settings...&quot;
++  1241,  &quot;Windows is finalizing your settings&quot;
++  1242,  &quot;Type a computer name&quot;
++  1244,  &quot;PRODUCT KEY: XXXXX-XXXXX-XXXXX-XXXXX-XXXXX&quot;
++  1245,  &quot;Choose a word or phrase that helps you remember your password.\nIf you forget your password, Windows will show you your hint.&quot;
++  1247,  &quot;Type your &amp;homegroup password:&quot;
+ }
+ 
+-
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-1249, 	&quot;Start this connection automatically&quot;
+-1250, 	&quot;Start this connection automatically&quot;
+-1251, 	&quot;If you don't know the security key, you can skip this step and join the network later.&quot;
+-1252, 	&quot;Windows Vista Logo&quot;
++  1249,  &quot;Start this connection automatically&quot;
++  1250,  &quot;Start this connection automatically&quot;
++  1251,  &quot;If you don't know the security key, you can skip this step and join the network later.&quot;
++  1252,  &quot;Windows Vista Logo&quot;
+ }
+ 
+ 1 MESSAGETABLE
+ {
+-805306368,  	&quot;Info&quot;
+-805306369,  	&quot;Start&quot;
+-805306370,  	&quot;Stop&quot;
+-1342177284,  	&quot;Information&quot;
+--1879048191,  	&quot;Microsoft-Windows-OOBE-Machine-UI&quot;
++  805306368,  &quot;Info\r\n&quot;
++  805306369,  &quot;Start\r\n&quot;
++  805306370,  &quot;Stop\r\n&quot;
++  1342177284,  &quot;Information\r\n&quot;
++  2415919105,  &quot;Microsoft-Windows-OOBE-Machine-UI\r\n&quot;
+ }
+-
+-
+-1 VERSIONINFO
+-FILEVERSION 6,1,7600,16385
+-PRODUCTVERSION 6,1,7600,16385
+-FILEOS 0x40004
+-FILETYPE 0x2
+-{
+-BLOCK &quot;StringFileInfo&quot;
+-{
+-	BLOCK &quot;040904B0&quot;
+-	{
+-		VALUE &quot;CompanyName&quot;, &quot;Microsoft Corporation&quot;
+-		VALUE &quot;FileDescription&quot;, &quot;Windows Machine OOBE UI Layer&quot;
+-		VALUE &quot;FileVersion&quot;, &quot;6.1.7600.16385 (win7_rtm.090713-1255)&quot;
+-		VALUE &quot;InternalName&quot;, &quot;msoobeui&quot;
+-		VALUE &quot;LegalCopyright&quot;, &quot;&#169; Microsoft Corporation. All rights reserved.&quot;
+-		VALUE &quot;OriginalFilename&quot;, &quot;msoobeui.dll.mui&quot;
+-		VALUE &quot;ProductName&quot;, &quot;Microsoft&#174; Windows&#174; Operating System&quot;
+-		VALUE &quot;ProductVersion&quot;, &quot;6.1.7600.16385&quot;
+-	}
+-}
+-
+-BLOCK &quot;VarFileInfo&quot;
+-{
+-	VALUE &quot;Translation&quot;, 0x0409 0x04B0
+-}
+-}
+-
+
+Modified: Windows7/source/Windows/System32/wlanpref.dll.rc
+===================================================================
+--- Windows7/source/Windows/System32/wlanpref.dll.rc	2011-03-16 07:25:39 UTC (rev 202)
++++ Windows7/source/Windows/System32/wlanpref.dll.rc	2011-03-16 07:35:46 UTC (rev 203)
+@@ -1,580 +1,533 @@
+-1 MUI &quot;Data_1853.bin&quot;
++#pragma code_page(65001)
++#include &lt;resources.h&gt;
+ 
+ 200 DIALOGEX 0, 0, 317, 143
+-STYLE DS_FIXEDSYS | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+ CAPTION &quot;&quot;
+-LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+-FONT 9, &quot;Segoe UI&quot;
++STYLE 0x80c800c8
++EXSTYLE 0x0
++FONT 9, &quot;Segoe UI&quot;, 0, 0, 0
+ {
+-   CONTROL &quot;An ad hoc network (sometimes called a computer-to-computer network) is a temporary network used for sharing files, presentations, or an Internet connection among multiple computers and devices.&quot;, -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 0, 5, 270, 40 
+-   CONTROL &quot;Computers and devices in ad hoc networks must be within 30 feet of each other.&quot;, -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 0, 35, 270, 20 
+-   CONTROL &quot;If you're currently connected to a wireless network, you might be disconnected when you set up this network.&quot;, -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 0, 50, 270, 20 
+-   CONTROL &quot;&quot;, 1061, STATIC, SS_OWNERDRAW | WS_CHILD | WS_VISIBLE, 40, 75, 187, 68 , 0x00000020
+-   CONTROL &quot;&quot;, 1021, COMBOBOX, CBS_DROPDOWNLIST | WS_CHILD | WS_VISIBLE | WS_VSCROLL | WS_TABSTOP, 0, 75, 150, 60 
++  CONTROL &quot;An ad hoc network (sometimes called a computer-to-computer network) is a temporary network used for sharing files, presentations, or an Internet connection among multiple computers and devices.&quot;, 4294967295, Static, 0x50020000, 0, 5, 270, 40, 0x0
++  CONTROL &quot;Computers and devices in ad hoc networks must be within 30 feet of each other.&quot;, 4294967295, Static, 0x50020000, 0, 35, 270, 20, 0x0
++  CONTROL &quot;If you're currently connected to a wireless network, you might be disconnected when you set up this network.&quot;, 4294967295, Static, 0x50020000, 0, 50, 270, 20, 0x0
++  CONTROL &quot;&quot;, 1061, Static, 0x5000000d, 40, 75, 187, 68, 0x20
++  CONTROL &quot;&quot;, 1021, ComboBox, 0x50210003, 0, 75, 150, 60, 0x0
+ }
+ 
+ 201 DIALOGEX 0, 0, 317, 143
+-STYLE DS_FIXEDSYS | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+ CAPTION &quot;&quot;
+-LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+-FONT 9, &quot;Segoe UI&quot;
++STYLE 0x80c800c8
++EXSTYLE 0x0
++FONT 9, &quot;Segoe UI&quot;, 0, 0, 0
+ {
+-   CONTROL &quot;Ne&amp;twork name:&quot;, -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 0, 10, 60, 8 
+-   CONTROL &quot;&quot;, 1001, EDIT, ES_LEFT | ES_AUTOHSCROLL | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 90, 10, 100, 10 
+-   CONTROL &quot;&amp;Security type:&quot;, -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 0, 30, 60, 8 
+-   CONTROL &quot;&quot;, 1012, COMBOBOX, CBS_DROPDOWNLIST | CBS_SORT | WS_CHILD | WS_VISIBLE | WS_VSCROLL | WS_TABSTOP, 90, 30, 100, 60 
+-   CONTROL &quot;&lt;A&gt;Help me choose&lt;/A&gt;&quot;, 1027, &quot;SysLink&quot;, 0x50010000, 200, 30, 100, 10 
+-   CONTROL &quot;S&amp;ecurity key:&quot;, 1013, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 0, 50, 90, 8 
+-   CONTROL &quot;&quot;, 1002, EDIT, ES_LEFT | ES_PASSWORD | ES_AUTOHSCROLL | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 90, 50, 100, 10 
+-   CONTROL &quot;&amp;Hide characters&quot;, 1018, BUTTON, BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 200, 50, 100, 10 
+-   CONTROL &quot;&amp;Current location:&quot;, 1003, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 0, 70, 70, 8 
+-   CONTROL &quot;&quot;, 1004, COMBOBOX, CBS_DROPDOWNLIST | CBS_SORT | WS_CHILD | WS_VISIBLE | WS_VSCROLL | WS_TABSTOP, 90, 70, 100, 60 
+-   CONTROL &quot;&lt;A&gt;Why is my location important?&lt;/A&gt;&quot;, 1005, &quot;SysLink&quot;, 0x50010000, 200, 70, 110, 8 
+-   CONTROL &quot;Sa&amp;ve this network&quot;, 1006, BUTTON, BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 16, 88, 206, 10 
+-   CONTROL 236, 1061, STATIC, SS_ICON | SS_REALSIZEIMAGE | WS_CHILD | WS_VISIBLE, 0, 100, 16, 16 
+-   CONTROL &quot;Save this network for &amp;all users of this computer&quot;, 1058, BUTTON, BS_AUTORADIOBUTTON | WS_CHILD | WS_VISIBLE | WS_GROUP | WS_TABSTOP, 12, 99, 250, 10 
+-   CONTROL &quot;Save this network for &amp;me only&quot;, 1059, BUTTON, BS_AUTORADIOBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 12, 111, 250, 10 
+-   CONTROL &quot;D&amp;on't save this network&quot;, 1060, BUTTON, BS_AUTORADIOBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 12, 123, 250, 10 
++  CONTROL &quot;Ne&amp;twork name:&quot;, 4294967295, Static, 0x50020000, 0, 10, 60, 8, 0x0
++  CONTROL &quot;&quot;, 1001, Edit, 0x50810080, 90, 10, 100, 10, 0x0
++  CONTROL &quot;&amp;Security type:&quot;, 4294967295, Static, 0x50020000, 0, 30, 60, 8, 0x0
++  CONTROL &quot;&quot;, 1012, ComboBox, 0x50210103, 90, 30, 100, 60, 0x0
++  CONTROL &quot;&lt;A&gt;Help me choose&lt;/A&gt;&quot;, 1027, &quot;SysLink&quot;, 0x50010000, 200, 30, 100, 10, 0x0
++  CONTROL &quot;S&amp;ecurity key:&quot;, 1013, Static, 0x50020000, 0, 50, 90, 8, 0x0
++  CONTROL &quot;&quot;, 1002, Edit, 0x508100a0, 90, 50, 100, 10, 0x0
++  CONTROL &quot;&amp;Hide characters&quot;, 1018, Button, 0x50010003, 200, 50, 100, 10, 0x0
++  CONTROL &quot;&amp;Current location:&quot;, 1003, Static, 0x50020000, 0, 70, 70, 8, 0x0
++  CONTROL &quot;&quot;, 1004, ComboBox, 0x50210103, 90, 70, 100, 60, 0x0
++  CONTROL &quot;&lt;A&gt;Why is my location important?&lt;/A&gt;&quot;, 1005, &quot;SysLink&quot;, 0x50010000, 200, 70, 110, 8, 0x0
++  CONTROL &quot;Sa&amp;ve this network&quot;, 1006, Button, 0x50010003, 16, 88, 206, 10, 0x0
++  CONTROL 236, 1061, Static, 0x50000803, 0, 100, 16, 16, 0x0
++  CONTROL &quot;Save this network for &amp;all users of this computer&quot;, 1058, Button, 0x50030009, 12, 99, 250, 10, 0x0
++  CONTROL &quot;Save this network for &amp;me only&quot;, 1059, Button, 0x50010009, 12, 111, 250, 10, 0x0
++  CONTROL &quot;D&amp;on't save this network&quot;, 1060, Button, 0x50010009, 12, 123, 250, 10, 0x0
+ }
+ 
+ 203 DIALOGEX 0, 0, 317, 143
+-STYLE DS_FIXEDSYS | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+ CAPTION &quot;&quot;
+-LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+-FONT 9, &quot;Segoe UI&quot;
++STYLE 0x80c800c8
++EXSTYLE 0x0
++FONT 9, &quot;Segoe UI&quot;, 0, 0, 0
+ {
+-   CONTROL 1100, -1, STATIC, SS_ICON | SS_REALSIZEIMAGE | WS_CHILD | WS_VISIBLE, 56, 10, 48, 48 
+-   CONTROL 1101, -1, STATIC, SS_ICON | SS_REALSIZEIMAGE | WS_CHILD | WS_VISIBLE, 88, 10, 118, 48 
+-   CONTROL 1104, -1, STATIC, SS_ICON | SS_REALSIZEIMAGE | WS_CHILD | WS_VISIBLE, 210, 10, 48, 48 
+-   CONTROL &quot;&quot;, 1015, &quot;msctls_progress32&quot;, WS_CHILD | WS_VISIBLE | WS_BORDER, 74, 62, 152, 8 
++  CONTROL 1100, 4294967295, Static, 0x50000803, 56, 10, 48, 48, 0x0
++  CONTROL 1101, 4294967295, Static, 0x50000803, 88, 10, 118, 48, 0x0
++  CONTROL 1104, 4294967295, Static, 0x50000803, 210, 10, 48, 48, 0x0
++  CONTROL &quot;&quot;, 1015, &quot;msctls_progress32&quot;, 0x50800008, 74, 62, 152, 8, 0x0
+ }
+ 
+ 204 DIALOGEX 0, 0, 317, 143
+-STYLE DS_FIXEDSYS | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+ CAPTION &quot;&quot;
+-LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+-FONT 9, &quot;Segoe UI&quot;
++STYLE 0x80c800c8
++EXSTYLE 0x0
++FONT 9, &quot;Segoe UI&quot;, 0, 0, 0
+ {
+-   CONTROL &quot;This network will appear in the list of wireless networks and will stay active until everyone disconnects from it. Give the network name and security key (if any) to people you want to connect to this network.&quot;, -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 0, 0, 270, 30 
+-   CONTROL &quot;&quot;, -1, BUTTON, BS_GROUPBOX | WS_CHILD | WS_VISIBLE, 20, 30, 260, 40 
+-   CONTROL &quot;Wireless network name:&quot;, -1, STATIC, SS_RIGHT | WS_CHILD | WS_VISIBLE | WS_GROUP, 21, 40, 107, 10 
+-   CONTROL &quot;Name&quot;, 1009, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 134, 40, 140, 10 
+-   CONTROL &quot;Network security key:&quot;, 1014, STATIC, SS_RIGHT | WS_CHILD | WS_VISIBLE | WS_GROUP, 21, 53, 107, 10 
+-   CONTROL &quot;Name&quot;, 1011, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 134, 53, 124, 16 
+-   CONTROL &quot;Recommended options:&quot;, 1058, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 0, 91, 166, 10 
+-   CONTROL &quot;Turn on Internet connection sharing&quot;, 1016, BUTTON,  | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 0, 104, 280, 25 
+-   CONTROL &quot;&lt;A&gt;Share an Internet connection on an ad hoc network&lt;/A&gt;&quot;, 1063, &quot;SysLink&quot;, 0x50010000, 0, 133, 280, 10 
+-   CONTROL &quot;To share files, open &lt;A&gt;Network and Sharing Center&lt;/A&gt; in Control Panel and turn on file sharing.&quot;, 1062, &quot;SysLink&quot;, 0x50010000, 0, 76, 280, 10 
++  CONTROL &quot;This network will appear in the list of wireless networks and will stay active until everyone disconnects from it. Give the network name and security key (if any) to people you want to connect to this network.&quot;, 4294967295, Static, 0x50020000, 0, 0, 270, 30, 0x0
++  CONTROL &quot;&quot;, 4294967295, Button, 0x50000007, 20, 30, 260, 40, 0x0
++  CONTROL &quot;Wireless network name:&quot;, 4294967295, Static, 0x50020002, 21, 40, 107, 10, 0x0
++  CONTROL &quot;Name&quot;, 1009, Static, 0x50020000, 134, 40, 140, 10, 0x0
++  CONTROL &quot;Network security key:&quot;, 1014, Static, 0x50020002, 21, 53, 107, 10, 0x0
++  CONTROL &quot;Name&quot;, 1011, Static, 0x50020000, 134, 53, 124, 16, 0x0
++  CONTROL &quot;Recommended options:&quot;, 1058, Static, 0x50020000, 0, 91, 166, 10, 0x0
++  CONTROL &quot;Turn on Internet connection sharing&quot;, 1016, Button, 0x5001000e, 0, 104, 280, 25, 0x0
++  CONTROL &quot;&lt;A&gt;Share an Internet connection on an ad hoc network&lt;/A&gt;&quot;, 1063, &quot;SysLink&quot;, 0x50010000, 0, 133, 280, 10, 0x0
++  CONTROL &quot;To share files, open &lt;A&gt;Network and Sharing Center&lt;/A&gt; in Control Panel and turn on file sharing.&quot;, 1062, &quot;SysLink&quot;, 0x50010000, 0, 76, 280, 10, 0x0
+ }
+ 
+ 205 DIALOGEX 0, 0, 317, 143
+-STYLE DS_FIXEDSYS | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+ CAPTION &quot;&quot;
+-LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+-FONT 9, &quot;Segoe UI&quot;
++STYLE 0x80c800c8
++EXSTYLE 0x0
++FONT 9, &quot;Segoe UI&quot;, 0, 0, 0
+ {
+-   CONTROL 1100, -1, STATIC, SS_ICON | SS_REALSIZEIMAGE | WS_CHILD | WS_VISIBLE, 56, 10, 48, 48 
+-   CONTROL 1101, -1, STATIC, SS_ICON | SS_REALSIZEIMAGE | WS_CHILD | WS_VISIBLE, 88, 10, 118, 48 
+-   CONTROL 1105, -1, STATIC, SS_ICON | SS_REALSIZEIMAGE | WS_CHILD | WS_VISIBLE, 210, 10, 48, 48 
+-   CONTROL &quot;Available options&quot;, -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 30, 70, 60, 8 
+-   CONTROL &quot;&quot;, 1020, COMBOBOX, CBS_DROPDOWNLIST | WS_CHILD | WS_VISIBLE | WS_VSCROLL | WS_TABSTOP, 90, 70, 150, 60 
++  CONTROL 1100, 4294967295, Static, 0x50000803, 56, 10, 48, 48, 0x0
++  CONTROL 1101, 4294967295, Static, 0x50000803, 88, 10, 118, 48, 0x0
++  CONTROL 1105, 4294967295, Static, 0x50000803, 210, 10, 48, 48, 0x0
++  CONTROL &quot;Available options&quot;, 4294967295, Static, 0x50020000, 30, 70, 60, 8, 0x0
++  CONTROL &quot;&quot;, 1020, ComboBox, 0x50210003, 90, 70, 150, 60, 0x0
+ }
+ 
+ 206 DIALOGEX 0, 0, 317, 143
+-STYLE DS_FIXEDSYS | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+ CAPTION &quot;&quot;
+-LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+-FONT 9, &quot;Segoe UI&quot;
++STYLE 0x80c800c8
++EXSTYLE 0x0
++FONT 9, &quot;Segoe UI&quot;, 0, 0, 0
+ {
+-   CONTROL 1100, -1, STATIC, SS_ICON | SS_REALSIZEIMAGE | WS_CHILD | WS_VISIBLE, 56, 10, 48, 48 
+-   CONTROL 1101, -1, STATIC, SS_ICON | SS_REALSIZEIMAGE | WS_CHILD | WS_VISIBLE, 88, 10, 118, 48 
+-   CONTROL 1105, -1, STATIC, SS_ICON | SS_REALSIZEIMAGE | WS_CHILD | WS_VISIBLE, 210, 10, 48, 48 
+-   CONTROL &quot;&quot;, 1015, &quot;msctls_progress32&quot;, WS_CHILD | WS_VISIBLE | WS_BORDER, 74, 62, 152, 8 
++  CONTROL 1100, 4294967295, Static, 0x50000803, 56, 10, 48, 48, 0x0
++  CONTROL 1101, 4294967295, Static, 0x50000803, 88, 10, 118, 48, 0x0
++  CONTROL 1105, 4294967295, Static, 0x50000803, 210, 10, 48, 48, 0x0
++  CONTROL &quot;&quot;, 1015, &quot;msctls_progress32&quot;, 0x50800008, 74, 62, 152, 8, 0x0
+ }
+ 
+ 207 DIALOGEX 0, 0, 317, 143
+-STYLE DS_FIXEDSYS | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+ CAPTION &quot;&quot;
+-LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+-FONT 9, &quot;Segoe UI&quot;
++STYLE 0x80c800c8
++EXSTYLE 0x0
++FONT 9, &quot;Segoe UI&quot;, 0, 0, 0
+ {
+-   CONTROL 1100, -1, STATIC, SS_ICON | SS_REALSIZEIMAGE | WS_CHILD | WS_VISIBLE, 56, 10, 48, 48 
+-   CONTROL 1101, -1, STATIC, SS_ICON | SS_REALSIZEIMAGE | WS_CHILD | WS_VISIBLE, 88, 10, 118, 48 
+-   CONTROL 1105, 1056, STATIC, SS_ICON | SS_REALSIZEIMAGE | WS_CHILD | WS_VISIBLE, 210, 10, 48, 48 
+-   CONTROL 1106, 1057, STATIC, SS_ICON | SS_REALSIZEIMAGE | WS_CHILD | WS_VISIBLE, 210, 10, 48, 48 
++  CONTROL 1100, 4294967295, Static, 0x50000803, 56, 10, 48, 48, 0x0
++  CONTROL 1101, 4294967295, Static, 0x50000803, 88, 10, 118, 48, 0x0
++  CONTROL 1105, 1056, Static, 0x50000803, 210, 10, 48, 48, 0x0
++  CONTROL 1106, 1057, Static, 0x50000803, 210, 10, 48, 48, 0x0
+ }
+ 
+ 208 DIALOGEX 0, 0, 317, 143
+-STYLE DS_FIXEDSYS | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+ CAPTION &quot;&quot;
+-LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+-FONT 9, &quot;Segoe UI&quot;
++STYLE 0x80c800c8
++EXSTYLE 0x0
++FONT 9, &quot;Segoe UI&quot;, 0, 0, 0
+ {
+-   CONTROL &quot;&quot;, 1043, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 5, 0, 300, 27 
+-   CONTROL &quot;Choose a different name.\nReturn to the setup page and choose a different name.&quot;, 1055, BUTTON,  | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 15, 37, 300, 40 
++  CONTROL &quot;&quot;, 1043, Static, 0x50020000, 5, 0, 300, 27, 0x0
++  CONTROL &quot;Choose a different name.\nReturn to the setup page and choose a different name.&quot;, 1055, Button, 0x5001000e, 15, 37, 300, 40, 0x0
+ }
+ 
+ 400 DIALOGEX 0, 0, 317, 143
+-STYLE DS_FIXEDSYS | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+ CAPTION &quot;&quot;
+-LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+-FONT 9, &quot;Segoe UI&quot;
++STYLE 0x80c800c8
++EXSTYLE 0x0
++FONT 9, &quot;Segoe UI&quot;, 0, 0, 0
+ {
+-   CONTROL &quot;Diagnose the problem&quot;, 1023, BUTTON,  | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 0, 20, 280, 30 
+-   CONTROL &quot;&lt;A&gt;Tell me how to set up ICS on my own&lt;/A&gt;&quot;, 1059, &quot;SysLink&quot;, 0x50010000, 0, 125, 200, 10 
++  CONTROL &quot;Diagnose the problem&quot;, 1023, Button, 0x5001000e, 0, 20, 280, 30, 0x0
++  CONTROL &quot;&lt;A&gt;Tell me how to set up ICS on my own&lt;/A&gt;&quot;, 1059, &quot;SysLink&quot;, 0x50010000, 0, 125, 200, 10, 0x0
+ }
+ 
+ 10101 DIALOGEX 0, 0, 317, 143
+-STYLE DS_FIXEDSYS | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+ CAPTION &quot;&quot;
+-LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+-FONT 9, &quot;Segoe UI&quot;
++STYLE 0x80c800c8
++EXSTYLE 0x0
++FONT 9, &quot;Segoe UI&quot;, 0, 0, 0
+ {
+-   CONTROL &quot;N&amp;etwork name:&quot;, -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 0, 5, 60, 8 
+-   CONTROL &quot;&quot;, 10303, EDIT, ES_LEFT | ES_AUTOHSCROLL | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 90, 4, 100, 10 
+-   CONTROL &quot;&amp;Security type:&quot;, -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 0, 25, 60, 8 
+-   CONTROL &quot;&quot;, 10305, COMBOBOX, CBS_DROPDOWNLIST | WS_CHILD | WS_VISIBLE | WS_VSCROLL | WS_TABSTOP, 90, 25, 100, 60 
+-   CONTROL &quot;Enc&amp;ryption type:&quot;, -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 0, 45, 60, 8 
+-   CONTROL &quot;&quot;, 10306, COMBOBOX, CBS_DROPDOWNLIST | WS_CHILD | WS_VISIBLE | WS_VSCROLL | WS_TABSTOP, 90, 45, 100, 60 
+-   CONTROL &quot;Se&amp;curity Key:&quot;, -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 0, 65, 60, 8 
+-   CONTROL &quot;&quot;, 10304, EDIT, ES_LEFT | ES_PASSWORD | ES_AUTOHSCROLL | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 90, 64, 100, 10 
+-   CONTROL &quot;&amp;Hide characters&quot;, 10307, BUTTON, BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 200, 65, 75, 10 
+-   CONTROL 10407, 10335, STATIC, SS_ICON | SS_REALSIZEIMAGE | WS_CHILD | WS_VISIBLE, 0, 85, 16, 16 
+-   CONTROL &quot;Save this network for &amp;all users of this computer&quot;, 10336, BUTTON, BS_AUTORADIOBUTTON | WS_CHILD | WS_VISIBLE | WS_GROUP | WS_TABSTOP, 12, 84, 250, 10 
+-   CONTROL &quot;Save this network for &amp;me only&quot;, 10337, BUTTON, BS_AUTORADIOBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 12, 96, 250, 10 
+-   CONTROL &quot;S&amp;tart this connection automatically&quot;, 10328, BUTTON, BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 12, 113, 206, 10 
+-   CONTROL &quot;C&amp;onnect even if the network is not broadcasting&quot;, 10334, BUTTON, BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 12, 127, 250, 10 
+-   CONTROL &quot;Warning: If you select this option, your computer&#146;s privacy might be at risk.&quot;, 10339, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 22, 139, 250, 9 
++  CONTROL &quot;N&amp;etwork name:&quot;, 4294967295, Static, 0x50020000, 0, 5, 60, 8, 0x0
++  CONTROL &quot;&quot;, 10303, Edit, 0x50810080, 90, 4, 100, 10, 0x0
++  CONTROL &quot;&amp;Security type:&quot;, 4294967295, Static, 0x50020000, 0, 25, 60, 8, 0x0
++  CONTROL &quot;&quot;, 10305, ComboBox, 0x50210003, 90, 25, 100, 60, 0x0
++  CONTROL &quot;Enc&amp;ryption type:&quot;, 4294967295, Static, 0x50020000, 0, 45, 60, 8, 0x0
++  CONTROL &quot;&quot;, 10306, ComboBox, 0x50210003, 90, 45, 100, 60, 0x0
++  CONTROL &quot;Se&amp;curity Key:&quot;, 4294967295, Static, 0x50020000, 0, 65, 60, 8, 0x0
++  CONTROL &quot;&quot;, 10304, Edit, 0x508100a0, 90, 64, 100, 10, 0x0
++  CONTROL &quot;&amp;Hide characters&quot;, 10307, Button, 0x50010003, 200, 65, 75, 10, 0x0
++  CONTROL 10407, 10335, Static, 0x50000803, 0, 85, 16, 16, 0x0
++  CONTROL &quot;Save this network for &amp;all users of this computer&quot;, 10336, Button, 0x50030009, 12, 84, 250, 10, 0x0
++  CONTROL &quot;Save this network for &amp;me only&quot;, 10337, Button, 0x50010009, 12, 96, 250, 10, 0x0
++  CONTROL &quot;S&amp;tart this connection automatically&quot;, 10328, Button, 0x50010003, 12, 113, 206, 10, 0x0
++  CONTROL &quot;C&amp;onnect even if the network is not broadcasting&quot;, 10334, Button, 0x50010003, 12, 127, 250, 10, 0x0
++  CONTROL &quot;Warning: If you select this option, your computer&#226;&#128;&#153;s privacy might be at risk.&quot;, 10339, Static, 0x50020000, 22, 139, 250, 9, 0x0
+ }
+ 
+ 10102 DIALOGEX 0, 0, 317, 143
+-STYLE DS_FIXEDSYS | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+ CAPTION &quot;&quot;
+-LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+-FONT 9, &quot;Segoe UI&quot;
++STYLE 0x80c800c8
++EXSTYLE 0x0
++FONT 9, &quot;Segoe UI&quot;, 0, 0, 0
+ {
+-   CONTROL &quot;&amp;Manually create a network profile\nThis creates a new network profile or locates an existing network and saves a profile for the network on your computer. You need to know the network name (SSID) and security key (if applicable).&quot;, 10309, BUTTON,  | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 4, 0, 280, 52 
+-   CONTROL &quot;&amp;Create an ad hoc network\nThis creates a temporary network for sharing files or an Internet connection&quot;, 10310, BUTTON,  | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 4, 70, 280, 35 
++  CONTROL &quot;&amp;Manually create a network profile\nThis creates a new network profile or locates an existing network and saves a profile for the network on your computer. You need to know the network name (SSID) and security key (if applicable).&quot;, 10309, Button, 0x5001000e, 4, 0, 280, 52, 0x0
++  CONTROL &quot;&amp;Create an ad hoc network\nThis creates a temporary network for sharing files or an Internet connection&quot;, 10310, Button, 0x5001000e, 4, 70, 280, 35, 0x0
+ }
+ 
+ 10103 DIALOGEX 0, 0, 317, 143
+-STYLE DS_FIXEDSYS | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+ CAPTION &quot;&quot;
+-LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+-FONT 9, &quot;Segoe UI&quot;
++STYLE 0x80c800c8
++EXSTYLE 0x0
++FONT 9, &quot;Segoe UI&quot;, 0, 0, 0
+ {
+-   CONTROL 10404, -1, STATIC, SS_ICON | SS_REALSIZEIMAGE | WS_CHILD | WS_VISIBLE, 56, 10, 48, 48 
+-   CONTROL 10405, -1, STATIC, SS_ICON | SS_REALSIZEIMAGE | WS_CHILD | WS_VISIBLE, 88, 10, 118, 48 
+-   CONTROL 10406, -1, STATIC, SS_ICON | SS_REALSIZEIMAGE | WS_CHILD | WS_VISIBLE, 210, 10, 48, 48 
+-   CONTROL &quot;&quot;, 10301, &quot;msctls_progress32&quot;, WS_CHILD | WS_VISIBLE | WS_BORDER, 74, 62, 152, 8 
++  CONTROL 10404, 4294967295, Static, 0x50000803, 56, 10, 48, 48, 0x0
++  CONTROL 10405, 4294967295, Static, 0x50000803, 88, 10, 118, 48, 0x0
++  CONTROL 10406, 4294967295, Static, 0x50000803, 210, 10, 48, 48, 0x0
++  CONTROL &quot;&quot;, 10301, &quot;msctls_progress32&quot;, 0x50800008, 74, 62, 152, 8, 0x0
+ }
+ 
+ 10104 DIALOGEX 0, 0, 317, 143
+-STYLE DS_FIXEDSYS | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+ CAPTION &quot;&quot;
+-LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+-FONT 9, &quot;Segoe UI&quot;
++STYLE 0x80c800c8
++EXSTYLE 0x0
++FONT 9, &quot;Segoe UI&quot;, 0, 0, 0
+ {
+-   CONTROL &quot;C&amp;hange connection settings\nOpen the connection properties so that I can change the settings.&quot;, 10314, BUTTON,  | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 10, 10, 250, 35 
++  CONTROL &quot;C&amp;hange connection settings\nOpen the connection properties so that I can change the settings.&quot;, 10314, Button, 0x5001000e, 10, 10, 250, 35, 0x0
+ }
+ 
+ 10105 DIALOGEX 0, 0, 317, 143
+-STYLE DS_FIXEDSYS | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+ CAPTION &quot;&quot;
+-LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+-FONT 9, &quot;Segoe UI&quot;
++STYLE 0x80c800c8
++EXSTYLE 0x0
++FONT 9, &quot;Segoe UI&quot;, 0, 0, 0
+ {
+-   CONTROL &quot;&amp;Diagnose and check for solutions&quot;, 10315, BUTTON,  | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 0, 30, 280, 30 
++  CONTROL &quot;&amp;Diagnose and check for solutions&quot;, 10315, Button, 0x5001000e, 0, 30, 280, 30, 0x0
+ }
+ 
+ 10106 DIALOGEX 0, 0, 317, 143
+-STYLE DS_FIXEDSYS | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+ CAPTION &quot;&quot;
+-LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+-FONT 9, &quot;Segoe UI&quot;
++STYLE 0x80c800c8
++EXSTYLE 0x0
++FONT 9, &quot;Segoe UI&quot;, 0, 0, 0
+ {
+-   CONTROL &quot;&quot;, -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 1, 1, 1, 1 
+-   CONTROL &quot;&quot;, 10316, COMBOBOX, CBS_DROPDOWNLIST | WS_CHILD | WS_VISIBLE | WS_VSCROLL | WS_TABSTOP, 5, 10, 150, 60 
++  CONTROL &quot;&quot;, 4294967295, Static, 0x50020000, 1, 1, 1, 1, 0x0
++  CONTROL &quot;&quot;, 10316, ComboBox, 0x50210003, 5, 10, 150, 60, 0x0
+ }
+ 
+ 10107 DIALOGEX 0, 0, 317, 143
+-STYLE DS_FIXEDSYS | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+ CAPTION &quot;Connect to a network&quot;
+-LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+-FONT 9, &quot;Segoe UI&quot;
++STYLE 0x80c800c8
++EXSTYLE 0x0
++FONT 9, &quot;Segoe UI&quot;, 0, 0, 0
+ {
+-   CONTROL &quot;General options&quot;, -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 2, 10, 54, 10 
+-   CONTROL &quot;Display the SSIDs of saved networks&quot;, 10317, BUTTON, BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 2, 30, 237, 10 
+-   CONTROL &quot;Display hidden networks that I have connected to before&quot;, 10318, BUTTON, BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 2, 45, 237, 10 
+-   CONTROL &quot;Network detail options&quot;, -1, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 2, 65, 150, 10 
+-   CONTROL &quot;Display the MAC address of the access point&quot;, 10329, BUTTON, BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_DISABLED | WS_TABSTOP, 2, 80, 237, 10 
+-   CONTROL &quot;Display the Channel number being used to connect&quot;, 10330, BUTTON, BS_AUTOCHECKBOX | WS_CHILD | WS_VISIBLE | WS_DISABLED | WS_TABSTOP, 2, 95, 237, 10 
++  CONTROL &quot;General options&quot;, 4294967295, Static, 0x50020000, 2, 10, 54, 10, 0x0
++  CONTROL &quot;Display the SSIDs of saved networks&quot;, 10317, Button, 0x50010003, 2, 30, 237, 10, 0x0
++  CONTROL &quot;Display hidden networks that I have connected to before&quot;, 10318, Button, 0x50010003, 2, 45, 237, 10, 0x0
++  CONTROL &quot;Network detail options&quot;, 4294967295, Static, 0x50020000, 2, 65, 150, 10, 0x0
++  CONTROL &quot;Display the MAC address of the access point&quot;, 10329, Button, 0x58010003, 2, 80, 237, 10, 0x0
++  CONTROL &quot;Display the Channel number being used to connect&quot;, 10330, Button, 0x58010003, 2, 95, 237, 10, 0x0
+ }
+ 
+ 10108 DIALOGEX 0, 0, 317, 143
+-STYLE DS_FIXEDSYS | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+ CAPTION &quot;&quot;
+-LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+-FONT 9, &quot;Segoe UI&quot;
++STYLE 0x80c800c8
++EXSTYLE 0x0
++FONT 9, &quot;Segoe UI&quot;, 0, 0, 0
+ {
+-   CONTROL &quot;&quot;, 10321, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 5, 0, 250, 20 
+-   CONTROL &quot;&amp;Use the existing network\nOpen the \&quot;Connect to a network\&quot; dialog so I can connect.&quot;, 10323, BUTTON,  | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 15, 20, 250, 40 
+-   CONTROL &quot;&amp;Choose a different name.\nReturn to the setup page and choose a different name.&quot;, 10324, BUTTON,  | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 15, 65, 250, 45 
++  CONTROL &quot;&quot;, 10321, Static, 0x50020000, 5, 0, 250, 20, 0x0
++  CONTROL &quot;&amp;Use the existing network\nOpen the &quot;&quot;Connect to a network&quot;&quot; dialog so I can connect.&quot;, 10323, Button, 0x5001000e, 15, 20, 250, 40, 0x0
++  CONTROL &quot;&amp;Choose a different name.\nReturn to the setup page and choose a different name.&quot;, 10324, Button, 0x5001000e, 15, 65, 250, 45, 0x0
+ }
+ 
+ 20060 DIALOGEX 0, 0, 260, 79
+-STYLE DS_FIXEDSYS | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+ CAPTION &quot;Manage Wireless Networks&quot;
+-LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+-FONT 9, &quot;Segoe UI&quot;
++STYLE 0x80c800c8
++EXSTYLE 0x0
++FONT 9, &quot;Segoe UI&quot;, 0, 0, 0
+ {
+-   CONTROL 20061, -1, STATIC, SS_ICON | WS_CHILD | WS_VISIBLE, 5, 5, 25, 25 
+-   CONTROL &quot;Are you sure you want to remove this network?\n\nIf you remove it, you can't connect to it anymore unless you\ncreate a new profile.&quot;, 20062, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 30, 5, 250, 50 
+-   CONTROL &quot;Yes&quot;, 1, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 150, 60, 50, 14 
+-   CONTROL &quot;No&quot;, 2, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 205, 60, 50, 14 
++  CONTROL 20061, 4294967295, Static, 0x50000003, 5, 5, 25, 25, 0x0
++  CONTROL &quot;Are you sure you want to remove this network?\n\nIf you remove it, you can't connect to it anymore unless you\ncreate a new profile.&quot;, 20062, Static, 0x50020000, 30, 5, 250, 50, 0x0
++  CONTROL &quot;Yes&quot;, 1, Button, 0x50010000, 150, 60, 50, 14, 0x0
++  CONTROL &quot;No&quot;, 2, Button, 0x50010000, 205, 60, 50, 14, 0x0
+ }
+ 
+ 20063 DIALOGEX 0, 0, 260, 79
+-STYLE DS_FIXEDSYS | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+ CAPTION &quot;Manage Wireless Networks&quot;
+-LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+-FONT 9, &quot;Segoe UI&quot;
++STYLE 0x80c800c8
++EXSTYLE 0x0
++FONT 9, &quot;Segoe UI&quot;, 0, 0, 0
+ {
+-   CONTROL 20061, -1, STATIC, SS_ICON | WS_CHILD | WS_VISIBLE, 5, 5, 25, 25 
+-   CONTROL &quot;Are you sure you want to rename this network?\n\nThe network will be renamed for all users of this computer. This might make it difficult for other users to find and connect to this network in the future.&quot;, 20064, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 30, 5, 220, 50 
+-   CONTROL &quot;Yes&quot;, 1, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 150, 60, 50, 14 
+-   CONTROL &quot;No&quot;, 2, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 205, 60, 50, 14 
++  CONTROL 20061, 4294967295, Static, 0x50000003, 5, 5, 25, 25, 0x0
++  CONTROL &quot;Are you sure you want to rename this network?\n\nThe network will be renamed for all users of this computer. This might make it difficult for other users to find and connect to this network in the future.&quot;, 20064, Static, 0x50020000, 30, 5, 220, 50, 0x0
++  CONTROL &quot;Yes&quot;, 1, Button, 0x50010000, 150, 60, 50, 14, 0x0
++  CONTROL &quot;No&quot;, 2, Button, 0x50010000, 205, 60, 50, 14, 0x0
+ }
+ 
+ 20068 DIALOGEX 0, 0, 350, 149
+-STYLE DS_FIXEDSYS | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+ CAPTION &quot;Wireless Network Profile Type&quot;
+-LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+-FONT 9, &quot;Segoe UI&quot;
++STYLE 0x80c800c8
++EXSTYLE 0x0
++FONT 9, &quot;Segoe UI&quot;, 0, 0, 0
+ {
+-   CONTROL 20073, -1, STATIC, SS_ICON | WS_CHILD | WS_VISIBLE, 10, 10, 20, 20 
+-   CONTROL &quot;Choose the type of profile to assign to new wireless networks&quot;, 20069, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 40, 10, 300, 20 
+-   CONTROL &quot;By default, connections to wireless networks from your computer can be accessed by anyone with a user account on the computer (all-user). If you change this setting, users can create connections that can only be accessed and modified by them (per-user).&quot;, 20070, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 40, 35, 300, 25 
+-   CONTROL &quot;Use all-user profiles only (recommended)&quot;, 20075, BUTTON, BS_AUTORADIOBUTTON | WS_CHILD | WS_VISIBLE | WS_GROUP, 40, 65, 200, 10 
+-   CONTROL &quot;Use all-user and per-user profiles&quot;, 20076, BUTTON, BS_AUTORADIOBUTTON | WS_CHILD | WS_VISIBLE, 40, 79, 200, 10 
+-   CONTROL 20061, -1, STATIC, SS_ICON | WS_CHILD | WS_VISIBLE, 50, 92, 16, 16 
+-   CONTROL &quot;Using per-user profiles can cause a loss of network connectivity when logging off or switching between users&quot;, 20071, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 74, 92, 265, 30 
+-   CONTROL &quot;Save&quot;, 1, BUTTON, BS_DEFPUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 232, 127, 50, 14 
+-   CONTROL &quot;Cancel&quot;, 2, BUTTON, BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 292, 127, 50, 14 
++  CONTROL 20073, 4294967295, Static, 0x50000003, 10, 10, 20, 20, 0x0
++  CONTROL &quot;Choose the type of profile to assign to new wireless networks&quot;, 20069, Static, 0x50020000, 40, 10, 300, 20, 0x0
++  CONTROL &quot;By default, connections to wireless networks from your computer can be accessed by anyone with a user account on the computer (all-user). If you change this setting, users can create connections that can only be accessed and modified by them (per-user).&quot;, 20070, Static, 0x50020000, 40, 35, 300, 25, 0x0
++  CONTROL &quot;Use all-user profiles only (recommended)&quot;, 20075, Button, 0x50020009, 40, 65, 200, 10, 0x0
++  CONTROL &quot;Use all-user and per-user profiles&quot;, 20076, Button, 0x50000009, 40, 79, 200, 10, 0x0
++  CONTROL 20061, 4294967295, Static, 0x50000003, 50, 92, 16, 16, 0x0
++  CONTROL &quot;Using per-user profiles can cause a loss of network connectivity when logging off or switching between users&quot;, 20071, Static, 0x50020000, 74, 92, 265, 30, 0x0
++  CONTROL &quot;Save&quot;, 1, Button, 0x50010001, 232, 127, 50, 14, 0x0
++  CONTROL &quot;Cancel&quot;, 2, Button, 0x50010000, 292, 127, 50, 14, 0x0
+ }
+ 
+-
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-211, 	&quot;Setting up the %1 network...&quot;
+-212, 	&quot;Set Up an Ad Hoc Network&quot;
+-213, 	&quot;The network name must not be empty.&quot;
+-214, 	&quot;The network name '%1' is too long. It exceeds 32 characters.&quot;
+-215, 	&quot;The passphrase must be one of the following:\n8 to 63 case-sensitive characters\n64 characters using digits 0-9 and letters A-F.&quot;
+-216, 	&quot;Invalid passphrase&quot;
+-217, 	&quot;&amp;Set up&quot;
+-218, 	&quot;The %1 network is ready to use&quot;
+-219, 	&quot;Print settings ...&quot;
+-220, 	&quot;Give your network a name and choose security options&quot;
+-221, 	&quot;Invalid WEP key. The WEP key must be one of the following:\n5 or 13 case-sensitive characters.\n10 or 26 hexadecimal characters.&quot;
+-222, 	&quot;Network security key:&quot;
++  211,  &quot;Setting up the %1 network...&quot;
++  212,  &quot;Set Up an Ad Hoc Network&quot;
++  213,  &quot;The network name must not be empty.&quot;
++  214,  &quot;The network name '%1' is too long. It exceeds 32 characters.&quot;
++  215,  &quot;The passphrase must be one of the following:\n8 to 63 case-sensitive characters\n64 characters using digits 0-9 and letters A-F.&quot;
++  216,  &quot;Invalid passphrase&quot;
++  217,  &quot;&amp;Set up&quot;
++  218,  &quot;The %1 network is ready to use&quot;
++  219,  &quot;Print settings ...&quot;
++  220,  &quot;Give your network a name and choose security options&quot;
++  221,  &quot;Invalid WEP key. The WEP key must be one of the following:\n5 or 13 case-sensitive characters.\n10 or 26 hexadecimal characters.&quot;
++  222,  &quot;Network security key:&quot;
+ }
+ 
+-
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-225, 	&quot;Share my Internet connection with people on %1&quot;
+-226, 	&quot;The %1 network will stay active until everyone disconnects from it.&quot;
+-227, 	&quot;Select the Internet connection you want to share&quot;
+-228, 	&quot;Public&quot;
+-229, 	&quot;802.11 ad hoc connection public folder&quot;
+-230, 	&quot;Automatic (default)&quot;
+-231, 	&quot;Windows could not detect any wireless network interfaces&quot;
+-232, 	&quot;Windows could not set up %1&quot;
+-233, 	&quot;Windows could not set up Internet connection sharing (ICS)&quot;
+-234, 	&quot;unsecured&quot;
+-235, 	&quot;Sharing your Internet connection...&quot;
+-237, 	&quot;Internet connection sharing is enabled&quot;
+-238, 	&quot;A network called %1 already exists&quot;
+-239, 	&quot;The %1 network is controlled by group policy and cannot be modified&quot;
++  225,  &quot;Share my Internet connection with people on %1&quot;
++  226,  &quot;The %1 network will stay active until everyone disconnects from it.&quot;
++  227,  &quot;Select the Internet connection you want to share&quot;
++  228,  &quot;Public&quot;
++  229,  &quot;802.11 ad hoc connection public folder&quot;
++  230,  &quot;Automatic (default)&quot;
++  231,  &quot;Windows could not detect any wireless network interfaces&quot;
++  232,  &quot;Windows could not set up %1&quot;
++  233,  &quot;Windows could not set up Internet connection sharing (ICS)&quot;
++  234,  &quot;unsecured&quot;
++  235,  &quot;Sharing your Internet connection...&quot;
++  237,  &quot;Internet connection sharing is enabled&quot;
++  238,  &quot;A network called %1 already exists&quot;
++  239,  &quot;The %1 network is controlled by group policy and cannot be modified&quot;
+ }
+ 
+-
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-240, 	&quot;Replace the existing network&quot;
+-241, 	&quot;Overwrite the settings for the existing network&quot;
+-242, 	&quot;Select a different name&quot;
+-243, 	&quot;Return to the setup page and select a different name&quot;
+-244, 	&quot;Create a different network&quot;
+-245, 	&quot;Return to the setup page and create a different network&quot;
+-246, 	&quot;Try again&quot;
+-247, 	&quot;Start over from the beginning of the adhoc wizard&quot;
+-248, 	&quot;You don't have enough privileges to configure Internet connection sharing&quot;
+-249, 	&quot;Cleanup 802.11 adhoc settings after the adhoc network terminates.&quot;
++  240,  &quot;Replace the existing network&quot;
++  241,  &quot;Overwrite the settings for the existing network&quot;
++  242,  &quot;Select a different name&quot;
++  243,  &quot;Return to the setup page and select a different name&quot;
++  244,  &quot;Create a different network&quot;
++  245,  &quot;Return to the setup page and create a different network&quot;
++  246,  &quot;Try again&quot;
++  247,  &quot;Start over from the beginning of the adhoc wizard&quot;
++  248,  &quot;You don't have enough privileges to configure Internet connection sharing&quot;
++  249,  &quot;Cleanup 802.11 adhoc settings after the adhoc network terminates.&quot;
+ }
+ 
+-
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-259, 	&quot;Set up a wireless ad hoc (computer-to-computer) network&quot;
+-260, 	&quot;Set up a temporary network for sharing files or an Internet connection.&quot;
+-261, 	&quot;Set up a wireless ad hoc network&quot;
++  259,  &quot;Set up a wireless ad hoc (computer-to-computer) network&quot;
++  260,  &quot;Set up a temporary network for sharing files or an Internet connection.&quot;
++  261,  &quot;Set up a wireless ad hoc network&quot;
+ }
+ 
+-
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-420, 	&quot;&amp;Next&quot;
+-421, 	&quot;&amp;Close&quot;
++  420,  &quot;&amp;Next&quot;
++  421,  &quot;&amp;Close&quot;
+ }
+ 
+-
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-500, 	&quot;To protect your network, type a strong password&quot;
+-501, 	&quot;A WEP key is one of the following:\n5 case-sensitive characters\n13 case-sensitive characters\n10 hexadecimal [0-9a-f] case-insensitive characters\n26 hexadecimal [0-9a-f] case-insensitive characters&quot;
+-502, 	&quot;A WPA2-Personal password must be one of the following:\n8~63 case-sensitive characters\n64 characters using digits 0-9 and letters A-F&quot;
+-503, 	&quot;A network name contains 1~32 case-sensitive characters&quot;
+-504, 	&quot;Wrong password&quot;
+-505, 	&quot;The Windows wireless service is not running&quot;
+-506, 	&quot;Cannot create %1&quot;
+-507, 	&quot;An unexpected error occurred&quot;
+-508, 	&quot;Cancelling...&quot;
+-509, 	&quot; &quot;
+-510, 	&quot;Your system administrator does not allow you to create the %1 network. For more information, contact your system administrator.&quot;
+-511, 	&quot;The policies of your network are preventing you from creating the %1 network. For more information, contact your system administrator.&quot;
++  500,  &quot;To protect your network, type a strong password&quot;
++  501,  &quot;A WEP key is one of the following:\r\n5 case-sensitive characters\r\n13 case-sensitive characters\r\n10 hexadecimal [0-9a-f] case-insensitive characters\r\n26 hexadecimal [0-9a-f] case-insensitive characters&quot;
++  502,  &quot;A WPA2-Personal password must be one of the following:\n8~63 case-sensitive characters\n64 characters using digits 0-9 and letters A-F&quot;
++  503,  &quot;A network name contains 1~32 case-sensitive characters&quot;
++  504,  &quot;Wrong password&quot;
++  505,  &quot;The Windows wireless service is not running&quot;
++  506,  &quot;Cannot create %1&quot;
++  507,  &quot;An unexpected error occurred&quot;
++  508,  &quot;Cancelling...&quot;
++  509,  &quot; &quot;
++  510,  &quot;Your system administrator does not allow you to create the %1 network. For more information, contact your system administrator.&quot;
++  511,  &quot;The policies of your network are preventing you from creating the %1 network. For more information, contact your system administrator.&quot;
+ }
+ 
+-
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-512, 	&quot;Your system administrator does not allow you to create ad hoc (computer-to-computer) networks. For more information, contact your system administrator.&quot;
+-513, 	&quot;The policies of your network prevent the creation of ad hoc (computer-to-computer) networks. For more information, contact your system administrator.&quot;
+-514, 	&quot;Access is denied&quot;
++  512,  &quot;Your system administrator does not allow you to create ad hoc (computer-to-computer) networks. For more information, contact your system administrator.&quot;
++  513,  &quot;The policies of your network prevent the creation of ad hoc (computer-to-computer) networks. For more information, contact your system administrator.&quot;
++  514,  &quot;Access is denied&quot;
+ }
+ 
+-
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-1249, 	&quot;Close&quot;
++  1249,  &quot;Close&quot;
+ }
+ 
+-
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-5200, 	&quot;Manage Wireless Networks&quot;
+-5201, 	&quot;Adhoc Wireless Network&quot;
++  5200,  &quot;Manage Wireless Networks&quot;
++  5201,  &quot;Adhoc Wireless Network&quot;
+ }
+ 
+-
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-10902, 	&quot;Manually connect to a wireless network&quot;
+-10903, 	&quot;Connect to a hidden network or create a new wireless profile.&quot;
+-10904, 	&quot;No authentication (Open)&quot;
+-10905, 	&quot;WPA-Personal&quot;
+-10906, 	&quot;WPA2-Personal&quot;
+-10907, 	&quot;None&quot;
+-10908, 	&quot;WEP&quot;
+-10909, 	&quot;TKIP&quot;
+-10910, 	&quot;AES&quot;
+-10911, 	&quot;Enter information for the wireless network you want to add&quot;
++  10902,  &quot;Manually connect to a wireless network&quot;
++  10903,  &quot;Connect to a hidden network or create a new wireless profile.&quot;
++  10904,  &quot;No authentication (Open)&quot;
++  10905,  &quot;WPA-Personal&quot;
++  10906,  &quot;WPA2-Personal&quot;
++  10907,  &quot;None&quot;
++  10908,  &quot;WEP&quot;
++  10909,  &quot;TKIP&quot;
++  10910,  &quot;AES&quot;
++  10911,  &quot;Enter information for the wireless network you want to add&quot;
+ }
+ 
+-
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-10912, 	&quot;How do you want to add a network?&quot;
+-10913, 	&quot;Close&quot;
+-10914, 	&quot;An unexpected error occurred&quot;
+-10915, 	&quot;Choose a wireless adapter&quot;
+-10916, 	&quot;&amp;Advanced settings&quot;
+-10917, 	&quot;&amp;Next&quot;
+-10918, 	&quot;Invalid Network Name&quot;
+-10921, 	&quot;Select options for the Connect to a network dialog box&quot;
+-10922, 	&quot;Successfully added %1&quot;
+-10924, 	&quot;802.1x&quot;
+-10926, 	&quot;The %1 network is controlled by group policy and cannot be modified&quot;
+-10927, 	&quot;A network called %1 already exists&quot;
++  10912,  &quot;How do you want to add a network?&quot;
++  10913,  &quot;Close&quot;
++  10914,  &quot;An unexpected error occurred&quot;
++  10915,  &quot;Choose a wireless adapter&quot;
++  10916,  &quot;&amp;Advanced settings&quot;
++  10917,  &quot;&amp;Next&quot;
++  10918,  &quot;Invalid Network Name&quot;
++  10921,  &quot;Select options for the Connect to a network dialog box&quot;
++  10922,  &quot;Successfully added %1&quot;
++  10924,  &quot;802.1x&quot;
++  10926,  &quot;The %1 network is controlled by group policy and cannot be modified&quot;
++  10927,  &quot;A network called %1 already exists&quot;
+ }
+ 
+-
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-10928, 	&quot;Access is denied&quot;
+-10929, 	&quot;The Windows wireless service is not running&quot;
+-10930, 	&quot;Windows cannot detect any wireless network interfaces&quot;
+-10935, 	&quot;Adding %1...&quot;
+-10936, 	&quot;WPA-Enterprise&quot;
+-10937, 	&quot;WPA2-Enterprise&quot;
+-10938, 	&quot;A WPA-Personal password must be one of the following:\n8~63 case-sensitive characters\n64 characters using digits 0-9 and letters A-F&quot;
+-10939, 	&quot;[Choose an option]&quot;
+-10940, 	&quot;Choose a security type&quot;
+-10941, 	&quot; &quot;
++  10928,  &quot;Access is denied&quot;
++  10929,  &quot;The Windows wireless service is not running&quot;
++  10930,  &quot;Windows cannot detect any wireless network interfaces&quot;
++  10935,  &quot;Adding %1...&quot;
++  10936,  &quot;WPA-Enterprise&quot;
++  10937,  &quot;WPA2-Enterprise&quot;
++  10938,  &quot;A WPA-Personal password must be one of the following:\n8~63 case-sensitive characters\n64 characters using digits 0-9 and letters A-F&quot;
++  10939,  &quot;[Choose an option]&quot;
++  10940,  &quot;Choose a security type&quot;
++  10941,  &quot; &quot;
+ }
+ 
+-
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-19001, 	&quot;Unsecured&quot;
+-19002, 	&quot;Automatically connect&quot;
+-19003, 	&quot;Manually connect&quot;
+-19004, 	&quot;Any supported&quot;
+-19005, 	&quot;Default&quot;
+-19006, 	&quot;WEP&quot;
+-19007, 	&quot;WPA-Personal&quot;
++  19001,  &quot;Unsecured&quot;
++  19002,  &quot;Automatically connect&quot;
++  19003,  &quot;Manually connect&quot;
++  19004,  &quot;Any supported&quot;
++  19005,  &quot;Default&quot;
++  19006,  &quot;WEP&quot;
++  19007,  &quot;WPA-Personal&quot;
+ }
+ 
+-
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-19008, 	&quot;WPA-Enterprise&quot;
+-19009, 	&quot;WPA2-Personal&quot;
+-19010, 	&quot;WPA2-Enterprise&quot;
+-19011, 	&quot;802.1x&quot;
+-19012, 	&quot;Vendor defined&quot;
++  19008,  &quot;WPA-Enterprise&quot;
++  19009,  &quot;WPA2-Personal&quot;
++  19010,  &quot;WPA2-Enterprise&quot;
++  19011,  &quot;802.1x&quot;
++  19012,  &quot;Vendor defined&quot;
+ }
+ 
+-
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-20001, 	&quot;Manage Wireless Networks&quot;
+-20002, 	&quot;Set the order in which Windows connects to wireless networks&quot;
+-20003, 	&quot;Manage wireless networks that use (%1)&quot;
+-20004, 	&quot;Manage wireless networks&quot;
+-20005, 	&quot;Windows tries to connect to these networks in the order listed below. \n\nTo see networks that use a different wireless network adapter, click Change adapter below.&quot;
+-20006, 	&quot;Windows tries to connect to these networks in the order listed below. &quot;
+-20007, 	&quot;Wireless is not currently enabled.&quot;
+-20009, 	&quot;Name&quot;
+-20010, 	&quot;Priority&quot;
+-20011, 	&quot;Security&quot;
+-20012, 	&quot;Type&quot;
+-20013, 	&quot;Managed&quot;
+-20014, 	&quot;Mode&quot;
+-20015, 	&quot;Networks you can view&quot;
++  20001,  &quot;Manage Wireless Networks&quot;
++  20002,  &quot;Set the order in which Windows connects to wireless networks&quot;
++  20003,  &quot;Manage wireless networks that use (%1)&quot;
++  20004,  &quot;Manage wireless networks&quot;
++  20005,  &quot;Windows tries to connect to these networks in the order listed below. \n\nTo see networks that use a different wireless network adapter, click Change adapter below.&quot;
++  20006,  &quot;Windows tries to connect to these networks in the order listed below. &quot;
++  20007,  &quot;Wireless is not currently enabled.&quot;
++  20009,  &quot;Name&quot;
++  20010,  &quot;Priority&quot;
++  20011,  &quot;Security&quot;
++  20012,  &quot;Type&quot;
++  20013,  &quot;Managed&quot;
++  20014,  &quot;Mode&quot;
++  20015,  &quot;Networks you can view&quot;
+ }
+ 
+-
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-20016, 	&quot;Networks you can view, modify, and reorder&quot;
+-20017, 	&quot;Properties&quot;
+-20018, 	&quot;Edit this network's properties.&quot;
+-20019, 	&quot;Remove network&quot;
+-20020, 	&quot;Remove this network from the list.&quot;
+-20021, 	&quot;Rename&quot;
+-20022, 	&quot;Rename this network.&quot;
+-20023, 	&quot;Move up&quot;
+-20024, 	&quot;Move down&quot;
+-20025, 	&quot;Move this network up in the list.&quot;
+-20026, 	&quot;Move this network down in the list.&quot;
+-20027, 	&quot;This network's priority is locked and cannot be moved in the list&quot;
+-20028, 	&quot;To change this network's priority, move this item up in the list&quot;
+-20029, 	&quot;To change this network's priority, move this item down in the list&quot;
+-20030, 	&quot;To change this network's priority, move this item up or down in the list&quot;
+-20031, 	&quot;Manage Wireless Networks&quot;
++  20016,  &quot;Networks you can view, modify, and reorder&quot;
++  20017,  &quot;Properties&quot;
++  20018,  &quot;Edit this network's properties.&quot;
++  20019,  &quot;Remove network&quot;
++  20020,  &quot;Remove this network from the list.&quot;
++  20021,  &quot;Rename&quot;
++  20022,  &quot;Rename this network.&quot;
++  20023,  &quot;Move up&quot;
++  20024,  &quot;Move down&quot;
++  20025,  &quot;Move this network up in the list.&quot;
++  20026,  &quot;Move this network down in the list.&quot;
++  20027,  &quot;This network's priority is locked and cannot be moved in the list&quot;
++  20028,  &quot;To change this network's priority, move this item up in the list&quot;
++  20029,  &quot;To change this network's priority, move this item down in the list&quot;
++  20030,  &quot;To change this network's priority, move this item up or down in the list&quot;
++  20031,  &quot;Manage Wireless Networks&quot;
+ }
+ 
+-
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-20032, 	&quot;These tasks apply to the selected network&quot;
+-20033, 	&quot;Connect to&quot;
+-20034, 	&quot;Connect to an available wireless network&quot;
+-20035, 	&quot;Add&quot;
+-20036, 	&quot;Add a wireless network&quot;
+-20037, 	&quot;Remove&quot;
+-20038, 	&quot;Remove the selected network&quot;
+-20039, 	&quot;Change adapter&quot;
+-20040, 	&quot;View networks for a different wireless adapter&quot;
+-20041, 	&quot;Adapter properties&quot;
+-20042, 	&quot;View properties for the wireless adapter&quot;
+-20043, 	&quot;Network and Sharing Center&quot;
+-20044, 	&quot;Provides network status, and gives access to network settings&quot;
+-20045, 	&quot;Move up&quot;
+-20046, 	&quot;Increase the priority of this network&quot;
+-20047, 	&quot;Move down&quot;
++  20032,  &quot;These tasks apply to the selected network&quot;
++  20033,  &quot;Connect to&quot;
++  20034,  &quot;Connect to an available wireless network&quot;
++  20035,  &quot;Add&quot;
++  20036,  &quot;Add a wireless network&quot;
++  20037,  &quot;Remove&quot;
++  20038,  &quot;Remove the selected network&quot;
++  20039,  &quot;Change adapter&quot;
++  20040,  &quot;View networks for a different wireless adapter&quot;
++  20041,  &quot;Adapter properties&quot;
++  20042,  &quot;View properties for the wireless adapter&quot;
++  20043,  &quot;Network and Sharing Center&quot;
++  20044,  &quot;Provides network status, and gives access to network settings&quot;
++  20045,  &quot;Move up&quot;
++  20046,  &quot;Increase the priority of this network&quot;
++  20047,  &quot;Move down&quot;
+ }
+ 
+-
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-20048, 	&quot;Decrease the priority of this network&quot;
+-20049, 	&quot;wlanpref.dll,0&quot;
+-20050, 	&quot;wlanpref.dll,7&quot;
+-20051, 	&quot;wlanpref.dll,8&quot;
+-20052, 	&quot;wlanpref.dll,3&quot;
+-20053, 	&quot;wlanpref.dll,4&quot;
+-20054, 	&quot;wlanpref.dll,5&quot;
+-20055, 	&quot;wlanpref.dll,5&quot;
+-20056, 	&quot;wlanpref.dll,6&quot;
+-20057, 	&quot;netcenter.dll,0&quot;
+-20058, 	&quot;If you remove this network from the list\nyou will no longer be able to connect\nto it automatically.\n\nDo you wish to proceed?&quot;
+-20059, 	&quot;Warning&quot;
++  20048,  &quot;Decrease the priority of this network&quot;
++  20049,  &quot;wlanpref.dll,0&quot;
++  20050,  &quot;wlanpref.dll,7&quot;
++  20051,  &quot;wlanpref.dll,8&quot;
++  20052,  &quot;wlanpref.dll,3&quot;
++  20053,  &quot;wlanpref.dll,4&quot;
++  20054,  &quot;wlanpref.dll,5&quot;
++  20055,  &quot;wlanpref.dll,5&quot;
++  20056,  &quot;wlanpref.dll,6&quot;
++  20057,  &quot;netcenter.dll,0&quot;
++  20058,  &quot;If you remove this network from the list\nyou will no longer be able to connect\nto it automatically.\n\nDo you wish to proceed?&quot;
++  20059,  &quot;Warning&quot;
+ }
+ 
+-
+ STRINGTABLE
+ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+ {
+-20065, 	&quot;Profile types&quot;
+-20066, 	&quot;Enable or disable the ability to create Per User Profiles&quot;
+-20067, 	&quot;wlanpref.dll,9&quot;
+-20077, 	&quot;You do not have the permissions required to perform this task. Contact your network administrator.&quot;
++  20065,  &quot;Profile types&quot;
++  20066,  &quot;Enable or disable the ability to create Per User Profiles&quot;
++  20067,  &quot;wlanpref.dll,9&quot;
++  20077,  &quot;You do not have the permissions required to perform this task. Contact your network administrator.&quot;
+ }
+ 
+ 1 MESSAGETABLE
+ {
+-268435505,  	&quot;Response Time&quot;
+-805306370,  	&quot;Stop&quot;
+-1342177284,  	&quot;Information&quot;
+--1879048191,  	&quot;Microsoft-Windows-WlanPref&quot;
++  268435505,  &quot;Response Time\r\n&quot;
++  805306370,  &quot;Stop\r\n&quot;
++  1342177284,  &quot;Information\r\n&quot;
++  2415919105,  &quot;Microsoft-Windows-WlanPref\r\n&quot;
+ }
+-
+-
+-1 VERSIONINFO
+-FILEVERSION 6,1,7600,16385
+-PRODUCTVERSION 6,1,7600,16385
+-FILEOS 0x40004
+-FILETYPE 0x2
+-{
+-BLOCK &quot;StringFileInfo&quot;
+-{
+-	BLOCK &quot;040904B0&quot;
+-	{
+-		VALUE &quot;CompanyName&quot;, &quot;Microsoft Corporation&quot;
+-		VALUE &quot;FileDescription&quot;, &quot;Wireless Preferred Networks&quot;
+-		VALUE &quot;FileVersion&quot;, &quot;6.1.7600.16385 (win7_rtm.090713-1255)&quot;
+-		VALUE &quot;InternalName&quot;, &quot;wlanpref.dll&quot;
+-		VALUE &quot;LegalCopyright&quot;, &quot;&#169; Microsoft Corporation. All rights reserved.&quot;
+-		VALUE &quot;OriginalFilename&quot;, &quot;wlanpref.dll.mui&quot;
+-		VALUE &quot;ProductName&quot;, &quot;Microsoft&#174; Windows&#174; Operating System&quot;
+-		VALUE &quot;ProductVersion&quot;, &quot;6.1.7600.16385&quot;
+-	}
+-}
+-
+-BLOCK &quot;VarFileInfo&quot;
+-{
+-	VALUE &quot;Translation&quot;, 0x0409 0x04B0
+-}
+-}
+-
+
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000120.html">[I18n-bel-svn] r202 - /
+</A></li>
+	<LI>Next message: <A HREF="000122.html">[I18n-bel-svn] r204 - in Android: glossary omegat	source/2.3/apps/MagnetLink/values-be
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#121">[ date ]</a>
+              <a href="thread.html#121">[ thread ]</a>
+              <a href="subject.html#121">[ subject ]</a>
+              <a href="author.html#121">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/i18n-bel-svn">More information about the I18n-bel-svn
+mailing list</a><br>
+</body></html>

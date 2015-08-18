@@ -1,0 +1,2489 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [I18n-bel-svn] r185 - in Windows7: . omegat
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/i18n-bel-svn/2011-March/index.html" >
+   <LINK REL="made" HREF="mailto:i18n-bel-svn%40lists.berlios.de?Subject=Re%3A%20%5BI18n-bel-svn%5D%20r185%20-%20in%20Windows7%3A%20.%20omegat&In-Reply-To=%3C20110305210338.3A6604813B8%40sheep.berlios.de%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000102.html">
+   <LINK REL="Next"  HREF="000104.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[I18n-bel-svn] r185 - in Windows7: . omegat</H1>
+    <B>eratyk at mail.berlios.de</B> 
+    <A HREF="mailto:i18n-bel-svn%40lists.berlios.de?Subject=Re%3A%20%5BI18n-bel-svn%5D%20r185%20-%20in%20Windows7%3A%20.%20omegat&In-Reply-To=%3C20110305210338.3A6604813B8%40sheep.berlios.de%3E"
+       TITLE="[I18n-bel-svn] r185 - in Windows7: . omegat">eratyk at mail.berlios.de
+       </A><BR>
+    <I>Sat Mar  5 22:03:37 CET 2011</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000102.html">[I18n-bel-svn] r184 - Android-2.3/omegat
+</A></li>
+        <LI>Next message: <A HREF="000104.html">[I18n-bel-svn] r186 - Android-2.3/omegat
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#103">[ date ]</a>
+              <a href="thread.html#103">[ thread ]</a>
+              <a href="subject.html#103">[ subject ]</a>
+              <a href="author.html#103">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>Author: eratyk
+Date: 2011-03-05 22:03:37 +0100 (Sat, 05 Mar 2011)
+New Revision: 185
+
+Modified:
+   Windows7/dialog-sizes.txt
+   Windows7/omegat/learned_words.txt
+   Windows7/omegat/project_save.tmx
+Log:
+mspaint complete
+
+Modified: Windows7/dialog-sizes.txt
+===================================================================
+--- Windows7/dialog-sizes.txt	2011-03-04 15:25:58 UTC (rev 184)
++++ Windows7/dialog-sizes.txt	2011-03-05 21:03:37 UTC (rev 185)
+@@ -1,4 +1,4 @@
+-Windows/System32/taskmgr.exe.rc:
++&#65279;Windows/System32/taskmgr.exe.rc:
+     DIALOG/110
+         &quot;&#1055;&#1072;&#1082;&#1072;&#1079;&#1074;&#1072;&#1094;&#1100; &#1087;&#1088;&#1072;&#1094;&#1101;&#1089;&#1099; &#1118;&#1089;&#1110;&#1093; &#1082;&#1072;&#1088;&#1099;&#1089;&#1090;&#1072;&#1083;&#1100;&#1085;&#1110;&#1082;&#1072;&#1118;&quot;, 2040
+         10, 144, 120, 14 -&gt; 10, 144, 160, 14 
+@@ -23,4 +23,54 @@
+         263, 144, 52, 14 -&gt; 223, 144, 52, 14
+         &quot;&#1040;&#1076;&#1083;&#1091;&#1095;&#1099;&#1094;&#1100;&quot;, 3212
+         203, 144, 55, 14 -&gt; 163, 144, 55, 14
+-                        
+\ No newline at end of file
++                        
++Windows/System32/shell32.dll.rc:
++    DIALOG/1003
++        &quot;&#1040;&#1076;&#1095;&#1099;&#1085;&#1110;&#1094;&#1100;&quot;, 12305
++        7, 39, 24, 10 -&gt; 2, 39, 31, 10
++    DIALOG/1005
++        &quot;&#1040;&#1076;&#1095;&#1099;&#1085;&#1110;&#1094;&#1100;&quot;, 12305
++        7, 39, 24, 10 -&gt; 2, 39, 31, 10
++
++    DIALOG/1011
++        &quot;&#1040;&#1076;&#1095;&#1099;&#1085;&#1110;&#1094;&#1100;&quot;, 12305
++        7, 39, 24, 10 -&gt; 2, 39, 31, 10
++
++    DIALOG/1040
++        &quot;&#1047;&#1072;&#1087;&#1091;&#1089;&#1094;&#1110;&#1094;&#1100;&quot;, -1
++        7, 136, 31, 10 -&gt; 7, 136, 47, 10
++    DIALOG/1040
++        &quot;&#1040;&#1076;&#1095;&#1099;&#1085;&#1110;&#1094;&#1100; &#1082;&#1072;&#1090;&#1072;&#1083;&#1086;&#1075; &#1092;&#1072;&#1081;&#1083;&#1072;&quot;, 13318
++        9, 170, 80, 14 -&gt; 7, 170, 105, 14
++    DIALOG/1040
++        &quot;&#1047;&#1084;&#1103;&#1085;&#1110;&#1094;&#1100; &#1079;&#1085;&#1072;&#1095;&#1072;&#1082;...&quot;, 13319
++        93, 170, 62, 14 -&gt; 117, 170, 103, 14
++    DIALOG/1040
++        &quot;&#1044;&#1072;&#1076;&#1072;&#1090;&#1082;&#1086;&#1074;&#1072;...&quot;, 13154
++        159, 170, 61, 14 -&gt; 159, 188, 61, 14
++
++    DIALOG/1041
++        &quot;&quot;, 13108
++        56, 56, 11, 10 -&gt; 61, 56, 11, 10
++    DIALOG/1041
++        &quot;&#1040;&#1076;&#1095;&#1099;&#1085;&#1110;&#1094;&#1100; &#1087;&#1088;&#1072;&#1079;:&quot;, 13152
++        7, 56, 42, 9 -&gt; 7, 56, 52, 9
++    DIALOG/1041
++        &quot;&quot;, 13153
++        74, 56, 91, 14 -&gt; 74, 56, 95, 14
++    DIALOG/1041
++        &quot;&#1047;&#1084;&#1103;&#1085;&#1110;&#1094;&#1100;...&quot;, 13155
++        149, 54, 70, 14 -&gt; 171, 54, 48, 14
++
++    DIALOG/1041
++        &quot;&#1056;&#1072;&#1079;&#1084;&#1103;&#1096;&#1095;&#1101;&#1085;&#1085;&#1077;:&quot;, 13089
++        7, 80, 42, 9 -&gt; 
++    DIALOG/1041
++        &quot;&#1047;&#1084;&#1103;&#1085;&#1110;&#1094;&#1100;...&quot;, 13155
++        149, 54, 70, 14 -&gt; 171, 54, 48, 14
++    DIALOG/1041
++        &quot;&#1047;&#1084;&#1103;&#1085;&#1110;&#1094;&#1100;...&quot;, 13155
++        149, 54, 70, 14 -&gt; 171, 54, 48, 14
++    DIALOG/1041
++        &quot;&#1047;&#1084;&#1103;&#1085;&#1110;&#1094;&#1100;...&quot;, 13155
++        149, 54, 70, 14 -&gt; 171, 54, 48, 14
+\ No newline at end of file
+
+Modified: Windows7/omegat/learned_words.txt
+===================================================================
+--- Windows7/omegat/learned_words.txt	2011-03-04 15:25:58 UTC (rev 184)
++++ Windows7/omegat/learned_words.txt	2011-03-05 21:03:37 UTC (rev 185)
+@@ -450,3 +450,5 @@
+ &#1079;&#1072;&#1087;&#1072;&#1084;&#1087;&#1072;&#1074;&#1072;&#1085;&#1085;&#1077;
+ &#1087;&#1072;&#1079;&#1072;&#1089;&#1077;&#1094;&#1110;&#1118;&#1085;&#1099;&#1084;
+ &#1071;&#1087;&#1086;&#1085;&#1089;&#1082;&#1072;&#1103;
++&#1073;&#1083;&#1072;&#1082;&#1072;&#1074;&#1072;&#1085;&#1085;&#1103;
++&#1030;&#1084;&#1087;&#1072;&#1088;&#1090;&#1072;&#1074;&#1072;&#1094;&#1100;
+
+Modified: Windows7/omegat/project_save.tmx
+===================================================================
+--- Windows7/omegat/project_save.tmx	2011-03-04 15:25:58 UTC (rev 184)
++++ Windows7/omegat/project_save.tmx	2011-03-05 21:03:37 UTC (rev 185)
+@@ -294,6 +294,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;%1 DPI&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110305T195008Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;%1 &#1082;&#1088;&#1086;&#1087;&#1072;&#1082; &#1085;&#1072; &#1094;&#1072;&#1083;&#1102;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;%1 Library&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101130T141841Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -1526,6 +1534,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;%1%2%3%4%5&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110305T195138Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;%1%2%3%4%5&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;%1's Libraries&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100724T160458Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -1654,6 +1670,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;%1\n%2\n%3&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110305T195058Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;%1\n%2\n%3&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;%1\nCan&#146;t access this file.\nCheck security privileges over the network drive.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100912T132153Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -7200,24 +7224,24 @@
+       &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;&amp;Redo&lt;/seg&gt;
+       &lt;/tuv&gt;
+-      &lt;tuv lang=&quot;be&quot; changedate=&quot;20100924T124233Z&quot; changeid=&quot;eratyk&quot;&gt;
+-        &lt;seg&gt;&#1055;&#1077;&#1088;&#1072;&#1088;&#1072;&#1073;&#1110;&#1094;&#1100;&lt;/seg&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110305T210042Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1059;&#1079;&#1085;&#1072;&#1074;&#1110;&#1094;&#1100;&lt;/seg&gt;
+       &lt;/tuv&gt;
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;&amp;Redo %s\tCtrl+Y&lt;/seg&gt;
+       &lt;/tuv&gt;
+-      &lt;tuv lang=&quot;be&quot; changedate=&quot;20100924T124823Z&quot; changeid=&quot;eratyk&quot;&gt;
+-        &lt;seg&gt;&#1055;&#1077;&#1088;&#1072;&#1088;&#1072;&#1073;&#1110;&#1094;&#1100; %s\tCtrl+Y&lt;/seg&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110305T210018Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1059;&#1079;&#1085;&#1072;&#1074;&#1110;&#1094;&#1100; %s\tCtrl+Y&lt;/seg&gt;
+       &lt;/tuv&gt;
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;&amp;Redo\tCtrl+Y&lt;/seg&gt;
+       &lt;/tuv&gt;
+-      &lt;tuv lang=&quot;be&quot; changedate=&quot;20100924T124810Z&quot; changeid=&quot;eratyk&quot;&gt;
+-        &lt;seg&gt;&#1055;&#1077;&#1088;&#1072;&#1088;&#1072;&#1073;&#1110;&#1094;&#1100;\tCtrl+Y&lt;/seg&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110305T210010Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1059;&#1079;&#1085;&#1072;&#1074;&#1110;&#1094;&#1100;\tCtrl+Y&lt;/seg&gt;
+       &lt;/tuv&gt;
+     &lt;/tu&gt;
+     &lt;tu&gt;
+@@ -10014,6 +10038,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;00000000000000000&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110305T195059Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;00000000000000000&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;00:00:00&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110127T080907Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -10406,6 +10438,22 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;10px&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110305T192111Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;10 &#1087;&#1082;&#1089;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;11&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110305T204934Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;11&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;115%&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100722T175552Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -10550,6 +10598,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;16px&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110305T192114Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;16 &#1087;&#1082;&#1089;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;17 - 24 strokes&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101027T182138Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -10566,6 +10622,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;1px&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110305T192027Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;1 &#1087;&#1082;&#1089;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;2&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100723T090803Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -10710,6 +10774,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;24px&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110305T192118Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;24 &#1087;&#1082;&#1089;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;25 - 100 KB&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101124T080826Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -10774,6 +10846,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;2px&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110305T192033Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;2 &#1087;&#1082;&#1089;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;3&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101021T063303Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -10942,6 +11022,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;30px&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110305T192122Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;30 &#1087;&#1082;&#1089;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;32&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101106T175212Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -10982,6 +11070,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;3px&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110305T192037Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;3 &#1087;&#1082;&#1089;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;4&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101021T063303Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -11094,6 +11190,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;40px&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110305T192127Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;40 &#1087;&#1082;&#1089;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;43 lines&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100713T172529Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -11126,6 +11230,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;4px&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110305T192042Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;4 &#1087;&#1082;&#1089;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;5&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100723T090758Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -11302,6 +11414,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;5px&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110305T192055Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;5 &#1087;&#1082;&#1089;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;6&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101021T063305Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -11398,6 +11518,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;6px&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110305T192101Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;6 &#1087;&#1082;&#1089;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;7&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101021T063306Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -11566,6 +11694,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;8px&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110305T192104Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;8 &#1087;&#1082;&#1089;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;9&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101021T063309Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -14128,8 +14264,8 @@
+       &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Abou&amp;t Paint&lt;/seg&gt;
+       &lt;/tuv&gt;
+-      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110124T140122Z&quot; changeid=&quot;eratyk&quot;&gt;
+-        &lt;seg&gt;&#1055;&#1088;&#1072; &#1092;&#1072;&#1088;&#1073;&#1091;&lt;/seg&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110305T205601Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1055;&#1088;&#1072; &#1060;&#1072;&#1088;&#1073;&#1091;&lt;/seg&gt;
+       &lt;/tuv&gt;
+     &lt;/tu&gt;
+     &lt;tu&gt;
+@@ -14222,6 +14358,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Access denied.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110304T082505Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1040;&#1076;&#1084;&#1086;&#1118;&#1083;&#1077;&#1085;&#1072; &#1118; &#1076;&#1086;&#1089;&#1090;&#1091;&#1087;&#1077;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Access files and printers located on other network computers, or change sharing settings.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110107T215422Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -17574,6 +17718,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Any transparency will be lost if you save this picture. Do you want to continue?&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110304T083053Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1055;&#1088;&#1072;&#1079;&#1088;&#1099;&#1089;&#1090;&#1072;&#1089;&#1094;&#1100; &#1073;&#1091;&#1076;&#1079;&#1077; &#1089;&#1090;&#1088;&#1072;&#1095;&#1072;&#1085;&#1072;, &#1082;&#1072;&#1083;&#1110; &#1074;&#1099; &#1079;&#1072;&#1093;&#1072;&#1074;&#1072;&#1077;&#1094;&#1077; &#1075;&#1101;&#1090;&#1099; &#1074;&#1110;&#1076;&#1072;&#1088;&#1099;&#1089;. &#1055;&#1088;&#1072;&#1094;&#1103;&#1075;&#1085;&#1091;&#1094;&#1100;?&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Any type of formatted media that does not contain any of the other known content types.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100718T082458Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -19830,6 +19982,22 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Bad path.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110304T082433Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1044;&#1088;&#1101;&#1085;&#1085;&#1099; &#1096;&#1083;&#1103;&#1093;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Bad seek.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110304T082622Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1044;&#1088;&#1101;&#1085;&#1085;&#1099; &#1087;&#1086;&#1096;&#1091;&#1082;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Balanced&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101209T162249Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -20358,6 +20526,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Bitmap Image&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110305T205505Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1056;&#1072;&#1089;&#1090;&#1088;&#1072;&#1074;&#1072;&#1103; &#1074;&#1099;&#1103;&#1074;&#1072;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Bitmap image&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100723T135303Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -20366,6 +20542,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Bitmaps must be greater than one pixel on a side.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110304T082337Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1056;&#1072;&#1089;&#1090;&#1088;&#1072;&#1074;&#1099;&#1103; &#1074;&#1099;&#1103;&#1074;&#1099; &#1087;&#1072;&#1074;&#1110;&#1085;&#1085;&#1099; &#1073;&#1099;&#1094;&#1100; &#1073;&#1086;&#1083;&#1100;&#1096;&#1099;&#1084;&#1110; &#1079;&#1072; &#1087;&#1110;&#1082;&#1089;&#1077;&#1083;&#1100; &#1085;&#1072; &#1073;&#1086;&#1082;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Bl&amp;ue:&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100911T072520Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -22502,6 +22686,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Cannot save file.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110305T194906Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1053;&#1077;&#1084;&#1072;&#1075;&#1095;&#1099;&#1084;&#1072; &#1079;&#1072;&#1093;&#1072;&#1074;&#1072;&#1094;&#1100; &#1092;&#1072;&#1081;&#1083;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Cannot update the properties for this program.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100713T163629Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -22640,8 +22832,8 @@
+       &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Carries out the previously undone action.\nRedo&lt;/seg&gt;
+       &lt;/tuv&gt;
+-      &lt;tuv lang=&quot;be&quot; changedate=&quot;20100924T124940Z&quot; changeid=&quot;eratyk&quot;&gt;
+-        &lt;seg&gt;&#1055;&#1077;&#1088;&#1072;&#1088;&#1072;&#1073;&#1083;&#1103;&#1077; &#1072;&#1087;&#1086;&#1096;&#1085;&#1103;&#1077; &#1072;&#1076;&#1088;&#1086;&#1073;&#1083;&#1077;&#1085;&#1072;&#1077; &#1076;&#1079;&#1077;&#1103;&#1085;&#1085;&#1077;.\n&#1055;&#1077;&#1088;&#1072;&#1088;&#1072;&#1073;&#1110;&#1094;&#1100;&lt;/seg&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110305T210035Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1055;&#1077;&#1088;&#1072;&#1088;&#1072;&#1073;&#1083;&#1103;&#1077; &#1072;&#1087;&#1086;&#1096;&#1085;&#1103;&#1077; &#1072;&#1076;&#1088;&#1086;&#1073;&#1083;&#1077;&#1085;&#1072;&#1077; &#1076;&#1079;&#1077;&#1103;&#1085;&#1085;&#1077;.\n&#1059;&#1079;&#1085;&#1072;&#1074;&#1110;&#1094;&#1100;&lt;/seg&gt;
+       &lt;/tuv&gt;
+     &lt;/tu&gt;
+     &lt;tu&gt;
+@@ -22782,6 +22974,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Center the picture in the middle of the screen.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110304T085501Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1040;&#1076;&#1094;&#1101;&#1085;&#1090;&#1088;&#1072;&#1074;&#1072;&#1094;&#1100; &#1074;&#1110;&#1076;&#1072;&#1088;&#1099;&#1089; &#1087;&#1072; &#1094;&#1101;&#1085;&#1090;&#1088;&#1099; &#1101;&#1082;&#1088;&#1072;&#1085;&#1072;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Centering&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110121T170215Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -23710,6 +23910,22 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Change the layout of the picture.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110304T084929Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1047;&#1084;&#1103;&#1085;&#1110;&#1094;&#1100; &#1087;&#1072;&#1073;&#1091;&#1076;&#1086;&#1074;&#1091; &#1074;&#1110;&#1076;&#1072;&#1088;&#1099;&#1089;&#1072;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Change the magnification for a part of the picture.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110305T173217Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1047;&#1084;&#1103;&#1085;&#1110;&#1094;&#1100; &#1087;&#1072;&#1074;&#1077;&#1083;&#1110;&#1095;&#1101;&#1085;&#1085;&#1077; &#1076;&#1083;&#1103; &#1095;&#1072;&#1089;&#1090;&#1082;&#1110; &#1074;&#1110;&#1076;&#1072;&#1088;&#1099;&#1089;&#1072;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Change the mouse pointer display or speed&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101030T160946Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -23742,6 +23958,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Change the properties of the picture.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110304T090035Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1047;&#1084;&#1103;&#1085;&#1110;&#1094;&#1100; &#1091;&#1083;&#1072;&#1089;&#1094;&#1110;&#1074;&#1072;&#1089;&#1094;&#1110; &#1074;&#1110;&#1076;&#1072;&#1088;&#1099;&#1089;&#1072;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Change the search provider in Internet Explorer&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101030T160018Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -25718,6 +25942,30 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Click an area on the canvas to fill it with the foreground color, or right-click to fill it will the background color.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110305T172937Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1055;&#1089;&#1090;&#1088;&#1099;&#1082;&#1085;&#1110;&#1094;&#1077; &#1087;&#1083;&#1103;&#1094;&#1086;&#1118;&#1082;&#1091; &#1085;&#1072; &#1087;&#1072;&#1083;&#1072;&#1090;&#1085;&#1077;, &#1082;&#1072;&#1073; &#1079;&#1072;&#1087;&#1086;&#1118;&#1085;&#1110;&#1094;&#1100; &#1103;&#1077; &#1075;&#1072;&#1083;&#1086;&#1118;&#1085;&#1099;&#1084; &#1082;&#1086;&#1083;&#1077;&#1088;&#1072;&#1084;, &#1094;&#1110; &#1087;&#1089;&#1090;&#1088;&#1099;&#1082;&#1085;&#1110;&#1094;&#1077; &#1087;&#1088;&#1072;&#1074;&#1072;&#1081; &#1082;&#1083;&#1072;&#1074;&#1110;&#1096;&#1072;&#1081; - &#1082;&#1072;&#1073; &#1079;&#1072;&#1087;&#1086;&#1118;&#1085;&#1110;&#1094;&#1100; &#1103;&#1077; &#1092;&#1086;&#1085;&#1072;&#1074;&#1099;&#1084; &#1082;&#1086;&#1083;&#1077;&#1088;&#1072;&#1084;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Click here and then select a color from the color palette. This color is used with the eraser and for shape fills.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110305T181250Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1055;&#1089;&#1090;&#1088;&#1099;&#1082;&#1085;&#1110;&#1094;&#1077; &#1090;&#1091;&#1090; &#1110; &#1087;&#1086;&#1090;&#1099;&#1084; &#1072;&#1073;&#1103;&#1088;&#1099;&#1094;&#1077; &#1082;&#1086;&#1083;&#1077;&#1088; &#1079; &#1087;&#1072;&#1083;&#1110;&#1090;&#1088;&#1099;. &#1043;&#1101;&#1090;&#1099; &#1082;&#1086;&#1083;&#1077;&#1088; &#1074;&#1099;&#1082;&#1072;&#1088;&#1099;&#1089;&#1090;&#1086;&#1118;&#1074;&#1072;&#1077;&#1094;&#1094;&#1072; &#1076;&#1083;&#1103; &#1075;&#1091;&#1084;&#1082;&#1110; &#1110; &#1079;&#1072;&#1087;&#1072;&#1118;&#1085;&#1077;&#1085;&#1085;&#1103; &#1092;&#1086;&#1088;&#1084;&#1099;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Click here and then select a color from the color palette. This color is used with the pencil  and with brushes, as well as for shape outlines.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110305T181221Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1055;&#1089;&#1090;&#1088;&#1099;&#1082;&#1085;&#1110;&#1094;&#1077; &#1090;&#1091;&#1090; &#1110; &#1087;&#1086;&#1090;&#1099;&#1084; &#1072;&#1073;&#1103;&#1088;&#1099;&#1094;&#1077; &#1082;&#1086;&#1083;&#1077;&#1088; &#1079; &#1087;&#1072;&#1083;&#1110;&#1090;&#1088;&#1099;. &#1043;&#1101;&#1090;&#1099; &#1082;&#1086;&#1083;&#1077;&#1088; &#1074;&#1099;&#1082;&#1072;&#1088;&#1099;&#1089;&#1090;&#1086;&#1118;&#1074;&#1072;&#1077;&#1094;&#1094;&#1072; &#1076;&#1083;&#1103; &#1072;&#1083;&#1086;&#1118;&#1082;&#1072;, &#1087;&#1101;&#1085;&#1076;&#1079;&#1083;&#1103;, &#1072;&#1073;&#1088;&#1099;&#1089;&#1072;&#1118; &#1092;&#1086;&#1088;&#1084;&#1072;&#1118;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Click here for date and time format options.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100905T094653Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -25750,6 +25998,22 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Click here for more options, such as pasting contents from the Clipboard or from a file&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110304T090246Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1055;&#1089;&#1090;&#1088;&#1099;&#1082;&#1085;&#1110;&#1094;&#1077; &#1090;&#1091;&#1090; &#1076;&#1083;&#1103; &#1072;&#1073;&#1088;&#1072;&#1085;&#1085;&#1103; &#1076;&#1072;&#1076;&#1072;&#1090;&#1082;&#1086;&#1074;&#1099;&#1093; &#1084;&#1072;&#1075;&#1095;&#1099;&#1084;&#1072;&#1089;&#1094;&#1103;&#1118; &#1082;&#1096;&#1090;&#1072;&#1083;&#1090;&#1091; &#1118;&#1089;&#1090;&#1072;&#1118;&#1083;&#1103;&#1085;&#1085;&#1103; &#1079;&#1084;&#1077;&#1089;&#1094;&#1110;&#1074;&#1072; &#1079; &#1082;&#1110;&#1096;&#1101;&#1085;&#1110; &#1094;&#1110; &#1092;&#1072;&#1081;&#1083;&#1072;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Click here for selection shapes and options.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110305T171557Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1055;&#1089;&#1090;&#1088;&#1099;&#1082;&#1085;&#1110;&#1094;&#1077; &#1090;&#1091;&#1090; &#1076;&#1083;&#1103; &#1072;&#1073;&#1088;&#1072;&#1085;&#1085;&#1103; &#1092;&#1086;&#1088;&#1084;&#1072;&#1118; &#1110; &#1085;&#1072;&#1083;&#1072;&#1076;&#1072;&#1118;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Click here if this network is at home, work, or another safe location. By default, it is considered to be in a public location.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101205T184305Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -25774,6 +26038,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Click here to open, save, or print and to see everything else you can do with your picture.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110304T085700Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1055;&#1089;&#1090;&#1088;&#1099;&#1082;&#1085;&#1110;&#1094;&#1077; &#1090;&#1091;&#1090;, &#1082;&#1072;&#1073; &#1072;&#1076;&#1095;&#1099;&#1085;&#1110;&#1094;&#1100;, &#1079;&#1072;&#1093;&#1072;&#1074;&#1072;&#1094;&#1100;, &#1085;&#1072;&#1076;&#1088;&#1091;&#1082;&#1072;&#1074;&#1072;&#1094;&#1100; &#1094;&#1110; &#1074;&#1099;&#1082;&#1072;&#1085;&#1072;&#1094;&#1100; &#1110;&#1085;&#1096;&#1072;&#1077; &#1076;&#1079;&#1077;&#1103;&#1085;&#1085;&#1077; &#1118; &#1076;&#1072;&#1095;&#1099;&#1085;&#1077;&#1085;&#1085;&#1110; &#1076;&#1072; &#1074;&#1072;&#1096;&#1072;&#1075;&#1072; &#1074;&#1110;&#1076;&#1072;&#1088;&#1099;&#1089;&#1072;..&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Click here to open, save, or print, and to see everything else you can do with your document.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100902T195342Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -26214,6 +26486,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Close print preview and return to your picture.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110305T185700Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1047;&#1072;&#1095;&#1099;&#1085;&#1110;&#1094;&#1100; &#1087;&#1077;&#1088;&#1072;&#1076;&#1087;&#1088;&#1072;&#1075;&#1083;&#1103;&#1076; &#1076;&#1088;&#1091;&#1082;&#1091; &#1110; &#1074;&#1103;&#1088;&#1085;&#1091;&#1094;&#1094;&#1072; &#1076;&#1072; &#1074;&#1072;&#1096;&#1072;&#1075;&#1072; &#1074;&#1110;&#1076;&#1072;&#1088;&#1099;&#1089;&#1072;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Close programs and log off.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100721T095710Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -26862,6 +27142,22 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Commit Tool End\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110305T205937Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1050;&#1072;&#1085;&#1077;&#1094; &#1072;&#1076;&#1076;&#1072;&#1074;&#1072;&#1085;&#1085;&#1103; &#1110;&#1085;&#1089;&#1090;&#1088;&#1091;&#1084;&#1077;&#1085;&#1090;&#1072;\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Commit Tool(ID: %1)b Start\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110305T205927Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1040;&#1076;&#1076;&#1072;&#1074;&#1072;&#1085;&#1085;&#1077; &#1110;&#1085;&#1089;&#1090;&#1088;&#1091;&#1084;&#1077;&#1085;&#1090;&#1072;(ID: %1)b &#1055;&#1072;&#1095;&#1072;&#1090;&#1072;&#1082;\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Common Coverpages&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110101T170602Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -29086,6 +29382,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Copy the selection from the canvas and put it on the Clipboard.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110305T171514Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1057;&#1082;&#1072;&#1087;&#1110;&#1103;&#1074;&#1072;&#1094;&#1100; &#1074;&#1099;&#1083;&#1091;&#1095;&#1101;&#1085;&#1085;&#1077; &#1079; &#1087;&#1072;&#1083;&#1072;&#1090;&#1085;&#1072; &#1110; &#1079;&#1084;&#1103;&#1089;&#1094;&#1110;&#1094;&#1100; &#1103;&#1075;&#1086; &#1118; &#1082;&#1110;&#1096;&#1101;&#1085;&#1102;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Copy to %1&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101130T183728Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -29406,6 +29710,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Crayon&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110305T204923Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1050;&#1088;&#1101;&#1081;&#1076;&#1072;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Create&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110101T181104Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -29614,6 +29926,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Create a new picture.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110304T085710Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1057;&#1090;&#1074;&#1072;&#1088;&#1099;&#1094;&#1100; &#1085;&#1086;&#1074;&#1099; &#1074;&#1110;&#1076;&#1072;&#1088;&#1099;&#1089;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Create a new user...&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101130T143826Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -29798,6 +30118,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Creates a new color.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110304T083931Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1057;&#1090;&#1074;&#1072;&#1088;&#1072;&#1077; &#1085;&#1086;&#1074;&#1099; &#1082;&#1086;&#1083;&#1077;&#1088;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Creates a new, empty folder.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100710T173734Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -30030,6 +30358,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Crop the picture so it only contains the current selection.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110305T172308Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1040;&#1073;&#1088;&#1101;&#1079;&#1072;&#1094;&#1100; &#1074;&#1110;&#1076;&#1072;&#1088;&#1099;&#1089;, &#1082;&#1072;&#1073; &#1105;&#1085; &#1079;&#1084;&#1103;&#1096;&#1095;&#1072;&#1118; &#1090;&#1086;&#1083;&#1100;&#1082;&#1110; &#1076;&#1079;&#1077;&#1081;&#1085;&#1072;&#1077; &#1074;&#1099;&#1083;&#1091;&#1095;&#1101;&#1085;&#1085;&#1077;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Ctrl&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101021T062945Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -30518,6 +30854,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Cut the selection from the canvas and put it on the Clipboard.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110305T171500Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1042;&#1099;&#1085;&#1103;&#1094;&#1100; &#1074;&#1099;&#1083;&#1091;&#1095;&#1101;&#1085;&#1085;&#1077; &#1079; &#1087;&#1072;&#1083;&#1072;&#1090;&#1085;&#1072; &#1110; &#1079;&#1084;&#1103;&#1089;&#1094;&#1110;&#1094;&#1100; &#1103;&#1075;&#1086; &#1118; &#1082;&#1110;&#1096;&#1101;&#1085;&#1102;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Cut the selection from the document and put it on the Clipboard.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101107T165022Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -31822,6 +32166,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Delete the current selection from the canvas.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110305T172125Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1042;&#1099;&#1076;&#1072;&#1083;&#1110;&#1094;&#1100; &#1076;&#1079;&#1077;&#1081;&#1085;&#1072;&#1077; &#1074;&#1099;&#1083;&#1091;&#1095;&#1101;&#1085;&#1085;&#1077; &#1079; &#1087;&#1072;&#1083;&#1072;&#1090;&#1085;&#1072;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Delete the files or folders that contains the items or, for information on removing read-only permissions from files and folders, see Help and Support.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100707T115046Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -33438,6 +33790,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Disk full.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110304T082924Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1044;&#1099;&#1089;&#1082; &#1087;&#1086;&#1118;&#1085;&#1099;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Disk is not formatted&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100709T070415Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -35255,6 +35615,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Downloading picture&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110304T083539Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1057;&#1087;&#1072;&#1084;&#1087;&#1086;&#1118;&#1074;&#1072;&#1085;&#1085;&#1077; &#1074;&#1110;&#1076;&#1072;&#1088;&#1099;&#1089;&#1072;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Downloading...&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100727T085541Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -35311,6 +35679,22 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Draw a free-form line with the selected line width.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110305T172656Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1053;&#1072;&#1084;&#1072;&#1083;&#1103;&#1074;&#1072;&#1094;&#1100; &#1083;&#1110;&#1085;&#1110;&#1102; &#1072;&#1076;&#1074;&#1086;&#1083;&#1100;&#1085;&#1072;&#1081; &#1092;&#1086;&#1088;&#1084;&#1099; &#1079; &#1072;&#1073;&#1088;&#1072;&#1085;&#1072;&#1081; &#1096;&#1099;&#1088;&#1099;&#1085;&#1105;&#1081;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Draw with different kinds of brushes.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110305T173246Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1052;&#1072;&#1083;&#1103;&#1074;&#1072;&#1094;&#1100; &#1088;&#1086;&#1079;&#1085;&#1099;&#1084;&#1110; &#1090;&#1099;&#1087;&#1072;&#1084;&#1110; &#1087;&#1101;&#1085;&#1076;&#1079;&#1083;&#1103;&#1118;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Draws a cloud-shaped callout with the selected fill style.\nCloud callout&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110124T115030Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -36063,6 +36447,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Edit Colors&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110305T194931Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1056;&#1101;&#1076;&#1072;&#1075;&#1072;&#1074;&#1072;&#1094;&#1100; &#1082;&#1086;&#1083;&#1077;&#1088;&#1099;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Edit Favorites&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110223T092006Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -36799,6 +37191,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;End of file.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110304T082936Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1050;&#1072;&#1085;&#1077;&#1094; &#1092;&#1072;&#1081;&#1083;&#1072;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;End process&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101119T222404Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -37119,6 +37519,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Erase part of the picture and replace it with the background color.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110305T173050Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1057;&#1094;&#1077;&#1088;&#1094;&#1110; &#1095;&#1072;&#1089;&#1090;&#1082;&#1091; &#1074;&#1110;&#1076;&#1072;&#1088;&#1099;&#1089;&#1072; &#1110; &#1079;&#1072;&#1084;&#1103;&#1085;&#1110;&#1094;&#1100; &#1103;&#1077; &#1092;&#1086;&#1085;&#1072;&#1074;&#1099;&#1084; &#1082;&#1086;&#1083;&#1077;&#1088;&#1072;&#1084;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Erase t&amp;his disc&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100704T152831Z&quot; changeid=&quot;alex&quot;&gt;
+@@ -37807,6 +38215,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Exiting current Instance of the application\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110305T205658Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1047;&#1072;&#1095;&#1099;&#1085;&#1077;&#1085;&#1085;&#1077; &#1076;&#1079;&#1077;&#1081;&#1085;&#1072;&#1075;&#1072; &#1072;&#1089;&#1086;&#1073;&#1085;&#1110;&#1082;&#1072; &#1087;&#1088;&#1072;&#1075;&#1088;&#1072;&#1084;&#1099;\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Exits Task Manager&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101125T173457Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -39103,6 +39519,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;File not found.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110304T082421Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1060;&#1072;&#1081;&#1083; &#1085;&#1077; &#1079;&#1085;&#1086;&#1081;&#1076;&#1079;&#1077;&#1085;&#1099;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;File origin:&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100728T073415Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -39423,6 +39847,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Fill the entire screen with the picture.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110304T085519Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1047;&#1072;&#1087;&#1086;&#1118;&#1085;&#1110;&#1094;&#1100; &#1091;&#1074;&#1077;&#1089;&#1100; &#1101;&#1082;&#1088;&#1072;&#1085; &#1074;&#1110;&#1076;&#1072;&#1088;&#1099;&#1089;&#1072;&#1084;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Fill with color&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110124T140742Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -40055,6 +40487,22 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Flip the picture or selection horizontally.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110305T172553Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1055;&#1077;&#1088;&#1072;&#1082;&#1091;&#1083;&#1110;&#1094;&#1100; &#1074;&#1110;&#1076;&#1072;&#1088;&#1099;&#1089; &#1094;&#1110; &#1074;&#1099;&#1083;&#1091;&#1095;&#1101;&#1085;&#1085;&#1077; &#1075;&#1072;&#1088;&#1099;&#1079;&#1072;&#1085;&#1090;&#1072;&#1083;&#1100;&#1085;&#1072;..&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Flip the picture or selection vertically.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110305T172539Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1055;&#1077;&#1088;&#1072;&#1082;&#1091;&#1083;&#1110;&#1094;&#1100; &#1074;&#1110;&#1076;&#1072;&#1088;&#1099;&#1089; &#1094;&#1110; &#1074;&#1099;&#1083;&#1091;&#1095;&#1101;&#1085;&#1085;&#1077; &#1074;&#1077;&#1088;&#1090;&#1099;&#1082;&#1072;&#1083;&#1100;&#1085;&#1072;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Flip vertical&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101106T162705Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -40215,6 +40663,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Folder full.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110304T082542Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1050;&#1072;&#1090;&#1072;&#1083;&#1086;&#1075; &#1087;&#1086;&#1118;&#1085;&#1099;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Folder icons&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100905T070710Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -41559,6 +42015,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Generic error.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110304T082408Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1040;&#1075;&#1091;&#1083;&#1100;&#1085;&#1072;&#1103; &#1087;&#1072;&#1084;&#1099;&#1083;&#1082;&#1072;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Generic%0&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100313T065537Z&quot; changeid=&quot;Ales Koshal [icq#:706101]&quot;&gt;
+@@ -41623,6 +42087,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Get Colors&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110305T194916Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1040;&#1090;&#1088;&#1099;&#1084;&#1072;&#1094;&#1100; &#1082;&#1086;&#1083;&#1077;&#1088;&#1099;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Get genuine now&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100315T150302Z&quot; changeid=&quot;Ales Koshal [icq#:706101]&quot;&gt;
+@@ -41647,6 +42119,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Get help on using Paint.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110305T190242Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1040;&#1090;&#1088;&#1099;&#1084;&#1072;&#1094;&#1100; &#1076;&#1072;&#1087;&#1072;&#1084;&#1086;&#1075;&#1091; &#1118; &#1082;&#1072;&#1088;&#1099;&#1089;&#1090;&#1072;&#1085;&#1085;&#1110; &#1060;&#1072;&#1088;&#1073;&#1099;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Get help using WordPad.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100905T104546Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -41895,6 +42375,22 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Go to the next page in the picture.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110305T185606Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1055;&#1077;&#1088;&#1072;&#1081;&#1089;&#1094;&#1110; &#1076;&#1072; &#1085;&#1072;&#1089;&#1090;&#1091;&#1087;&#1085;&#1072;&#1081; &#1089;&#1090;&#1072;&#1088;&#1086;&#1085;&#1082;&#1110; &#1074;&#1110;&#1076;&#1072;&#1088;&#1099;&#1089;&#1072;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Go to the previous page in the picture.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110305T185627Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1055;&#1077;&#1088;&#1072;&#1081;&#1089;&#1094;&#1110; &#1076;&#1072; &#1087;&#1072;&#1087;&#1103;&#1088;&#1101;&#1076;&#1085;&#1103;&#1081; &#1089;&#1090;&#1072;&#1088;&#1086;&#1085;&#1082;&#1110; &#1074;&#1110;&#1076;&#1072;&#1088;&#1099;&#1089;&#1072;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Goes to the next page.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100910T145619Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -42463,6 +42959,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Hard IO error.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110304T082720Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1055;&#1072;&#1084;&#1099;&#1083;&#1082;&#1072; &#1072;&#1073;&#1089;&#1090;&#1072;&#1083;&#1103;&#1074;&#1072;&#1085;&#1085;&#1103; &#1059;/&#1042;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Hard disk&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101209T204947Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -45303,6 +45807,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Import from scanner or camera.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110304T085845Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1030;&#1084;&#1087;&#1072;&#1088;&#1090;&#1072;&#1074;&#1072;&#1094;&#1100; &#1089;&#1072; &#1089;&#1082;&#1072;&#1085;&#1077;&#1088;&#1072; &#1094;&#1110; &#1082;&#1072;&#1084;&#1077;&#1088;&#1099;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Import pictures and videos&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101029T174034Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -46095,6 +46607,22 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Insert ready-made shapes such as rectangles and circles, triangles, arrows, stars, and callouts.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110305T174337Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1059;&#1089;&#1090;&#1072;&#1074;&#1110;&#1094;&#1100; &#1075;&#1072;&#1090;&#1086;&#1074;&#1099;&#1103; &#1092;&#1086;&#1088;&#1084;&#1099; &#1082;&#1096;&#1090;&#1072;&#1083;&#1090;&#1091; &#1087;&#1088;&#1072;&#1084;&#1072;&#1074;&#1091;&#1075;&#1086;&#1083;&#1100;&#1085;&#1110;&#1082;&#1072;&#1118;, &#1082;&#1088;&#1091;&#1075;&#1086;&#1118;, &#1090;&#1088;&#1086;&#1093;&#1074;&#1091;&#1075;&#1086;&#1083;&#1100;&#1085;&#1110;&#1082;&#1072;&#1118;, &#1089;&#1090;&#1088;&#1101;&#1083;&#1072;&#1082;, &#1079;&#1086;&#1088;&#1072;&#1082; &#1110; &#1074;&#1099;&#1085;&#1103;&#1090;&#1072;&#1082;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Insert text into the picture.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110305T172952Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1059;&#1089;&#1090;&#1072;&#1074;&#1110;&#1094;&#1100; &#1090;&#1101;&#1082;&#1089;&#1090; &#1091; &#1074;&#1110;&#1076;&#1072;&#1088;&#1099;&#1089;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Inserts Clipboard contents and a link to its source.\nPaste Link&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101107T165056Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -46679,6 +47207,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Intializing current instance of the application\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110305T205644Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1030;&#1085;&#1110;&#1094;&#1099;&#1103;&#1083;&#1110;&#1079;&#1072;&#1094;&#1099;&#1103; &#1076;&#1079;&#1077;&#1081;&#1085;&#1072;&#1075;&#1072; &#1072;&#1089;&#1086;&#1073;&#1085;&#1110;&#1082;&#1072; &#1087;&#1088;&#1072;&#1075;&#1088;&#1072;&#1084;&#1099;\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Inuktitut - Latin&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110301T183555Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -46855,6 +47391,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Invalid file.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110304T082514Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1053;&#1077;&#1076;&#1072;&#1087;&#1091;&#1096;&#1095;&#1072;&#1083;&#1100;&#1085;&#1099; &#1092;&#1072;&#1081;&#1083;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Invalid gadget found&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100827T195434Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -46879,6 +47423,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Invert color (Ctrl+Shift+I)&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110304T085533Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1030;&#1085;&#1074;&#1077;&#1088;&#1090;&#1072;&#1074;&#1072;&#1094;&#1100; &#1082;&#1086;&#1083;&#1077;&#1088; (Ctrl+Shift+I)&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Invert selection&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110124T141335Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -49263,6 +49815,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Lock violation.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110304T082917Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1055;&#1072;&#1088;&#1091;&#1096;&#1101;&#1085;&#1085;&#1077; &#1073;&#1083;&#1072;&#1082;&#1072;&#1074;&#1072;&#1085;&#1085;&#1103;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Lock your computer and then unlock it using those credentials&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100927T183303Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -49927,6 +50487,38 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;MSPaint Exit End\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110305T205759Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1050;&#1072;&#1085;&#1077;&#1094; &#1074;&#1099;&#1081;&#1089;&#1094;&#1103; &#1079; MSPaint\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;MSPaint Exit Start\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110305T205750Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1055;&#1072;&#1095;&#1072;&#1090;&#1072;&#1082; &#1074;&#1099;&#1081;&#1089;&#1094;&#1103; &#1079; MSPaint\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;MSPaint Launch End\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110305T205737Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1050;&#1072;&#1085;&#1077;&#1094; &#1079;&#1072;&#1087;&#1091;&#1089;&#1082;&#1091; MSPaint\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;MSPaint Launch Start\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110305T205729Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1055;&#1072;&#1095;&#1072;&#1090;&#1072;&#1082; &#1079;&#1072;&#1087;&#1091;&#1089;&#1082;&#1091; MSPaint\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Ma&amp;ke a Copy...&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100909T132522Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -50287,6 +50879,22 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Make the background color in the selection transparent or opaque.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110305T172216Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1047;&#1088;&#1072;&#1073;&#1110;&#1094;&#1100; &#1092;&#1086;&#1085;&#1072;&#1074;&#1099; &#1082;&#1086;&#1083;&#1077;&#1088; &#1091; &#1074;&#1099;&#1083;&#1091;&#1095;&#1101;&#1085;&#1085;&#1110; &#1087;&#1088;&#1072;&#1079;&#1088;&#1099;&#1089;&#1090;&#1099;&#1084; &#1094;&#1110; &#1085;&#1077;&#1087;&#1088;&#1072;&#1079;&#1088;&#1099;&#1089;&#1090;&#1099;&#1084;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Makes the current selection either opaque or transparent.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110304T083911Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1056;&#1086;&#1073;&#1110;&#1094;&#1100; &#1076;&#1079;&#1077;&#1081;&#1085;&#1072;&#1077; &#1074;&#1099;&#1083;&#1091;&#1095;&#1101;&#1085;&#1085;&#1077; &#1087;&#1088;&#1072;&#1079;&#1088;&#1099;&#1089;&#1090;&#1099;&#1084; &#1094;&#1110; &#1085;&#1077;&#1087;&#1088;&#1072;&#1079;&#1088;&#1099;&#1089;&#1090;&#1099;&#1084;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Makes the selected items private so other people can&#8217;t access them.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101130T164842Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -50631,6 +51239,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Marker&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110305T204820Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1055;&#1072;&#1079;&#1085;&#1072;&#1095;&#1085;&#1110;&#1082;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Maroon&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100722T164814Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -51663,6 +52279,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Microsoft-Windows-MSPaint\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110305T205541Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;Microsoft-Windows-MSPaint\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Microsoft-Windows-NetShell\r\n&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101205T192205Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -53191,6 +53815,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Natural pencil&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110305T204846Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1053;&#1072;&#1090;&#1091;&#1088;&#1072;&#1083;&#1100;&#1085;&#1099; &#1072;&#1083;&#1086;&#1074;&#1072;&#1082;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Nature&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101006T054514Z&quot; changeid=&quot;alex&quot;&gt;
+@@ -53903,6 +54535,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;New Bitmap Image&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110305T204947Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1053;&#1086;&#1074;&#1072;&#1103; &#1088;&#1072;&#1089;&#1090;&#1088;&#1072;&#1074;&#1072;&#1103; &#1074;&#1099;&#1103;&#1074;&#1072;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;New Briefcase&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100712T202449Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -54439,6 +55079,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;No fill&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110305T204931Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1041;&#1077;&#1079; &#1079;&#1072;&#1087;&#1072;&#1118;&#1085;&#1077;&#1085;&#1085;&#1103;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;No filter matches.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100910T152742Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -54559,6 +55207,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;No outline&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110305T204450Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1041;&#1077;&#1079; &#1072;&#1073;&#1088;&#1099;&#1089;&#1091;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;No preview available.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100725T085450Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -55767,6 +56423,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Oil&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110305T204825Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1040;&#1083;&#1077;&#1081;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Ok&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100909T123419Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -56591,6 +57255,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Open an existing picture.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110304T085723Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1040;&#1076;&#1095;&#1099;&#1085;&#1110;&#1094;&#1100; &#1110;&#1089;&#1085;&#1091;&#1102;&#1095;&#1099; &#1074;&#1110;&#1076;&#1072;&#1088;&#1099;&#1089;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Open as &amp;read-only&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100912T111711Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -56719,6 +57391,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Open the Save As dialog box to select from all possible file types.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110304T084845Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1040;&#1076;&#1095;&#1099;&#1085;&#1110;&#1094;&#1100; &#1076;&#1099;&#1103;&#1083;&#1086;&#1075; &quot;&#1047;&#1072;&#1093;&#1072;&#1074;&#1072;&#1094;&#1100; &#1103;&#1082;&quot; &#1076;&#1083;&#1103; &#1072;&#1073;&#1088;&#1072;&#1085;&#1085;&#1103; &#1079; &#1091;&#1089;&#1110;&#1093; &#1084;&#1072;&#1075;&#1095;&#1099;&#1084;&#1099;&#1093; &#1092;&#1072;&#1081;&#1083;&#1072;&#1074;&#1099;&#1093; &#1090;&#1099;&#1087;&#1072;&#1118;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Open the Save as dialog box to select from all possible file types.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100902T200013Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -58279,14 +58959,30 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Paint Document&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110305T205516Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1044;&#1072;&#1082;&#1091;&#1084;&#1077;&#1085;&#1090; &#1060;&#1072;&#1088;&#1073;&#1099;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Paint Help (F1)&lt;/seg&gt;
+       &lt;/tuv&gt;
+-      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110124T141826Z&quot; changeid=&quot;eratyk&quot;&gt;
+-        &lt;seg&gt;&#1044;&#1072;&#1087;&#1072;&#1084;&#1086;&#1075;&#1072; &#1092;&#1072;&#1088;&#1073;&#1099; (F1)&lt;/seg&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110305T205612Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1044;&#1072;&#1087;&#1072;&#1084;&#1086;&#1075;&#1072; &#1060;&#1072;&#1088;&#1073;&#1099; (F1)&lt;/seg&gt;
+       &lt;/tuv&gt;
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Paint allows users to create and edit drawings by using a variety of shapes, brushes, and colors.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110305T204424Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1060;&#1072;&#1088;&#1073;&#1072; &#1076;&#1072;&#1079;&#1074;&#1072;&#1083;&#1103;&#1077; &#1082;&#1072;&#1088;&#1099;&#1089;&#1090;&#1072;&#1083;&#1100;&#1085;&#1110;&#1082;&#1072;&#1084; &#1089;&#1090;&#1074;&#1072;&#1088;&#1072;&#1094;&#1100; &#1110; &#1088;&#1101;&#1076;&#1072;&#1075;&#1072;&#1074;&#1072;&#1094;&#1100; &#1084;&#1072;&#1083;&#1102;&#1085;&#1082;&#1110; &#1079; &#1076;&#1072;&#1087;&#1072;&#1084;&#1086;&#1075;&#1072;&#1102; &#1088;&#1072;&#1079;&#1085;&#1072;&#1089;&#1090;&#1072;&#1081;&#1085;&#1099;&#1093; &#1092;&#1086;&#1088;&#1084;&#1072;&#1118;, &#1087;&#1101;&#1085;&#1076;&#1079;&#1083;&#1103;&#1118; &#1110; &#1082;&#1086;&#1083;&#1077;&#1088;&#1072;&#1118;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Paint cannot open this file.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110124T121030Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -58343,6 +59039,22 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Paintbrush Picture&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110305T205501Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1042;&#1110;&#1076;&#1072;&#1088;&#1099;&#1089; &#1055;&#1101;&#1085;&#1076;&#1079;&#1083;&#1103;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Painting&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110305T195015Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1052;&#1072;&#1083;&#1102;&#1085;&#1072;&#1082;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Paired&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101108T135440Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -58703,6 +59415,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Paste From&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110305T194938Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1059;&#1089;&#1090;&#1072;&#1074;&#1110;&#1094;&#1100; &#1079;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Paste from&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110124T141326Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -59511,6 +60231,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Pick a color from the picture and use it for drawing.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110305T173136Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1040;&#1073;&#1088;&#1072;&#1094;&#1100; &#1082;&#1086;&#1083;&#1077;&#1088; &#1079; &#1074;&#1110;&#1076;&#1072;&#1088;&#1099;&#1089;&#1072;, &#1082;&#1072;&#1073; &#1089;&#1082;&#1072;&#1088;&#1099;&#1089;&#1090;&#1072;&#1094;&#1100; &#1103;&#1075;&#1086; &#1076;&#1083;&#1103; &#1084;&#1072;&#1083;&#1103;&#1074;&#1072;&#1085;&#1085;&#1103;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Pick an icon for a network&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101205T191630Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -61159,6 +61887,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Preview and make changes before printing.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110304T085021Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1047;&#1088;&#1072;&#1073;&#1110;&#1094;&#1100; &#1087;&#1077;&#1088;&#1072;&#1076;&#1087;&#1088;&#1072;&#1075;&#1083;&#1103;&#1076; &#1110; &#1079;&#1088;&#1072;&#1073;&#1110;&#1094;&#1100; &#1079;&#1084;&#1077;&#1085;&#1099; &#1087;&#1077;&#1088;&#1072;&#1076; &#1076;&#1088;&#1091;&#1082;&#1072;&#1084;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Preview and make changes to pages before printing.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100902T195103Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -61471,6 +62207,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Print the current picture.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110304T085805Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1053;&#1072;&#1076;&#1088;&#1091;&#1082;&#1072;&#1074;&#1072;&#1094;&#1100; &#1076;&#1079;&#1077;&#1081;&#1085;&#1099; &#1074;&#1110;&#1076;&#1072;&#1088;&#1099;&#1089;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Print the speech reference card&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101028T083919Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -61815,6 +62559,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Processing data (%1!ld!%% complete)&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110304T083700Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1040;&#1087;&#1088;&#1072;&#1094;&#1086;&#1118;&#1074;&#1072;&#1085;&#1085;&#1077; &#1079;&#1074;&#1077;&#1089;&#1090;&#1072;&#1082; (%1!ld!%% &#1089;&#1082;&#1086;&#1085;&#1095;&#1072;&#1085;&#1072;)&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Processing;&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100918T145516Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -63255,6 +64007,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Reading data from the device (%1!ld!%% complete)&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110304T083613Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1063;&#1099;&#1090;&#1072;&#1085;&#1085;&#1077; &#1079;&#1074;&#1077;&#1089;&#1090;&#1072;&#1082; &#1079; &#1087;&#1088;&#1099;&#1083;&#1072;&#1076;&#1099; (%1!ld!%% &#1089;&#1082;&#1086;&#1085;&#1095;&#1072;&#1085;&#1072;)&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Readme location&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101106T142550Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -63665,32 +64425,40 @@
+       &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Redo&lt;/seg&gt;
+       &lt;/tuv&gt;
+-      &lt;tuv lang=&quot;be&quot; changedate=&quot;20100924T124212Z&quot; changeid=&quot;eratyk&quot;&gt;
+-        &lt;seg&gt;&#1055;&#1077;&#1088;&#1072;&#1088;&#1072;&#1073;&#1110;&#1094;&#1100;&lt;/seg&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110305T210001Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1059;&#1079;&#1085;&#1072;&#1074;&#1110;&#1094;&#1100;&lt;/seg&gt;
+       &lt;/tuv&gt;
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Redo %s&lt;/seg&gt;
+       &lt;/tuv&gt;
+-      &lt;tuv lang=&quot;be&quot; changedate=&quot;20100924T124742Z&quot; changeid=&quot;eratyk&quot;&gt;
+-        &lt;seg&gt;&#1055;&#1077;&#1088;&#1072;&#1088;&#1072;&#1073;&#1110;&#1094;&#1100; %s&lt;/seg&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110305T210053Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1059;&#1079;&#1085;&#1072;&#1074;&#1110;&#1094;&#1100; %s&lt;/seg&gt;
+       &lt;/tuv&gt;
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Redo (Ctrl+Y)&lt;/seg&gt;
+       &lt;/tuv&gt;
+-      &lt;tuv lang=&quot;be&quot; changedate=&quot;20100924T124836Z&quot; changeid=&quot;eratyk&quot;&gt;
+-        &lt;seg&gt;&#1055;&#1077;&#1088;&#1072;&#1088;&#1072;&#1073;&#1110;&#1094;&#1100; (Ctrl+Y)&lt;/seg&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110305T210024Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1059;&#1079;&#1085;&#1072;&#1074;&#1110;&#1094;&#1100; (Ctrl+Y)&lt;/seg&gt;
+       &lt;/tuv&gt;
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Redo last action.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110305T190216Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1059;&#1079;&#1085;&#1072;&#1074;&#1110;&#1094;&#1100; &#1072;&#1087;&#1086;&#1096;&#1085;&#1103;&#1077; &#1076;&#1079;&#1077;&#1103;&#1085;&#1085;&#1077;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Redo your last action.&lt;/seg&gt;
+       &lt;/tuv&gt;
+-      &lt;tuv lang=&quot;be&quot; changedate=&quot;20100928T140143Z&quot; changeid=&quot;eratyk&quot;&gt;
+-        &lt;seg&gt;&#1055;&#1077;&#1088;&#1072;&#1088;&#1072;&#1073;&#1110;&#1094;&#1100; &#1072;&#1076;&#1088;&#1086;&#1073;&#1083;&#1077;&#1085;&#1072;&#1077; &#1076;&#1079;&#1077;&#1103;&#1085;&#1085;&#1077;.&lt;/seg&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110305T210124Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1059;&#1079;&#1085;&#1072;&#1074;&#1110;&#1094;&#1100; &#1074;&#1072;&#1096;&#1072;&#1077; &#1072;&#1087;&#1086;&#1096;&#1085;&#1103;&#1077; &#1076;&#1079;&#1077;&#1103;&#1085;&#1085;&#1077;.&lt;/seg&gt;
+       &lt;/tuv&gt;
+     &lt;/tu&gt;
+     &lt;tu&gt;
+@@ -64079,6 +64847,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Remove current folder.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110304T082530Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1042;&#1099;&#1076;&#1072;&#1083;&#1110;&#1094;&#1100; &#1076;&#1079;&#1077;&#1081;&#1085;&#1099; &#1082;&#1072;&#1090;&#1072;&#1083;&#1086;&#1075;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Remove files immediately when deleted.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100705T044748Z&quot; changeid=&quot;alex&quot;&gt;
+@@ -64647,6 +65423,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Resets the text to be without any attributes.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110305T194730Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1057;&#1082;&#1110;&#1076;&#1074;&#1072;&#1077; &#1072;&#1090;&#1088;&#1099;&#1073;&#1091;&#1090;&#1099; &#1090;&#1101;&#1082;&#1089;&#1090;&#1091;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Resize&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100828T072814Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -64687,6 +65471,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Resize and skew the picture or selection.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110305T172350Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1047;&#1084;&#1103;&#1085;&#1110;&#1094;&#1100; &#1087;&#1072;&#1084;&#1077;&#1088; &#1110; &#1085;&#1072;&#1093;&#1110;&#1083; &#1074;&#1110;&#1076;&#1072;&#1088;&#1099;&#1089;&#1072; &#1094;&#1110; &#1074;&#1099;&#1083;&#1091;&#1095;&#1101;&#1085;&#1085;&#1103;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Resize picture&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100902T194052Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -65375,6 +66167,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Reverse the current selection.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110305T172111Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1030;&#1085;&#1074;&#1077;&#1088;&#1090;&#1072;&#1074;&#1072;&#1094;&#1100; &#1076;&#1079;&#1077;&#1081;&#1085;&#1072;&#1077; &#1074;&#1099;&#1083;&#1091;&#1095;&#1101;&#1085;&#1085;&#1077;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Reverses the last action.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100902T195140Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -65839,6 +66639,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Rotate or flip the picture or selection.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110305T172419Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1055;&#1077;&#1088;&#1072;&#1082;&#1088;&#1091;&#1094;&#1110;&#1094;&#1100; &#1094;&#1110; &#1087;&#1077;&#1088;&#1072;&#1082;&#1091;&#1083;&#1110;&#1094;&#1100; &#1074;&#1110;&#1076;&#1072;&#1088;&#1099;&#1089; &#1094;&#1110; &#1074;&#1099;&#1083;&#1091;&#1095;&#1101;&#1085;&#1085;&#1077;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Rotate right 90&#176;&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110124T141453Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -65847,6 +66655,30 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Rotate the picture or selection by 180 degrees.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110305T172516Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1055;&#1077;&#1088;&#1072;&#1082;&#1088;&#1091;&#1094;&#1110;&#1094;&#1100; &#1074;&#1110;&#1076;&#1072;&#1088;&#1099;&#1089; &#1094;&#1110; &#1074;&#1099;&#1083;&#1091;&#1095;&#1101;&#1085;&#1085;&#1077; &#1085;&#1072; 180 &#1075;&#1088;&#1072;&#1076;&#1091;&#1089;&#1072;&#1118;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Rotate the picture or selection by 90 degrees left.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110305T172505Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1055;&#1077;&#1088;&#1072;&#1082;&#1088;&#1091;&#1094;&#1110;&#1094;&#1100; &#1074;&#1110;&#1076;&#1072;&#1088;&#1099;&#1089; &#1094;&#1110; &#1074;&#1099;&#1083;&#1091;&#1095;&#1101;&#1085;&#1085;&#1077; &#1085;&#1072; 90 &#1075;&#1088;&#1072;&#1076;&#1091;&#1089;&#1072;&#1118; &#1091;&#1083;&#1077;&#1074;&#1072;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Rotate the picture or selection by 90 degrees right.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110305T172455Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1055;&#1077;&#1088;&#1072;&#1082;&#1088;&#1091;&#1094;&#1110;&#1094;&#1100; &#1074;&#1110;&#1076;&#1072;&#1088;&#1099;&#1089; &#1094;&#1110; &#1074;&#1099;&#1083;&#1091;&#1095;&#1101;&#1085;&#1085;&#1077; &#1085;&#1072; 90 &#1075;&#1088;&#1072;&#1076;&#1091;&#1089;&#1072;&#1118; &#1091;&#1087;&#1088;&#1072;&#1074;&#1072;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Ru&amp;n a quick scan on my computer multiple times per day&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100317T141729Z&quot; changeid=&quot;Ales Koshal [icq#:706101]&quot;&gt;
+@@ -66639,6 +67471,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Save Colors&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110305T194922Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1047;&#1072;&#1093;&#1072;&#1074;&#1072;&#1094;&#1100; &#1082;&#1086;&#1083;&#1077;&#1088;&#1099;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Save Copy As&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100722T163301Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -66711,6 +67551,38 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Save a photo or drawing with high quality and use it on your computer or on the web.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110304T084318Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1047;&#1072;&#1093;&#1072;&#1074;&#1072;&#1094;&#1100; &#1092;&#1086;&#1090;&#1072; &#1094;&#1110; &#1084;&#1072;&#1083;&#1102;&#1085;&#1072;&#1082; &#1079; &#1074;&#1103;&#1083;&#1110;&#1082;&#1072;&#1081; &#1103;&#1082;&#1072;&#1089;&#1094;&#1102; &#1110; &#1089;&#1082;&#1072;&#1088;&#1099;&#1089;&#1090;&#1072;&#1094;&#1100; &#1103;&#1075;&#1086; &#1085;&#1072; &#1082;&#1072;&#1084;&#1087;'&#1102;&#1090;&#1072;&#1088;&#1099; &#1094;&#1110; &#1118; &#1089;&#1077;&#1094;&#1110;&#1074;&#1077;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Save a photo with good quality and use it on your computer, in e-mail, or on the web.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110304T084428Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1047;&#1072;&#1093;&#1072;&#1074;&#1072;&#1094;&#1100; &#1092;&#1086;&#1090;&#1072; &#1079; &#1074;&#1103;&#1083;&#1110;&#1082;&#1072;&#1081; &#1103;&#1082;&#1072;&#1089;&#1094;&#1102; &#1110; &#1089;&#1082;&#1072;&#1088;&#1099;&#1089;&#1090;&#1072;&#1094;&#1100; &#1103;&#1075;&#1086; &#1085;&#1072; &#1074;&#1072;&#1096;&#1099;&#1084; &#1082;&#1072;&#1084;&#1087;'&#1102;&#1090;&#1072;&#1088;&#1099;, &#1091; &#1101;&#1083;. &#1087;&#1086;&#1096;&#1094;&#1077; &#1094;&#1110; &#1089;&#1077;&#1094;&#1110;&#1074;&#1077;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Save a simple drawing with lower quality and use it in e-mail or on the web.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110304T084736Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1047;&#1072;&#1093;&#1072;&#1074;&#1072;&#1094;&#1100; &#1087;&#1088;&#1086;&#1089;&#1090;&#1099; &#1084;&#1072;&#1083;&#1102;&#1085;&#1072;&#1082; &#1079; &#1084;&#1077;&#1085;&#1096;&#1072;&#1081; &#1103;&#1082;&#1072;&#1089;&#1094;&#1102; &#1110; &#1089;&#1082;&#1072;&#1088;&#1099;&#1089;&#1090;&#1072;&#1094;&#1100; &#1103;&#1075;&#1086; &#1118; &#1101;&#1083;. &#1087;&#1086;&#1096;&#1094;&#1077; &#1094;&#1110; &#1118; &#1089;&#1077;&#1094;&#1110;&#1074;&#1077;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Save any kind of picture with high quality and use it on your computer.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110304T084637Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1047;&#1072;&#1093;&#1072;&#1074;&#1072;&#1094;&#1100; &#1083;&#1102;&#1073;&#1099; &#1090;&#1099;&#1087; &#1074;&#1110;&#1076;&#1072;&#1088;&#1099;&#1089;&#1072; &#1079; &#1074;&#1103;&#1083;&#1110;&#1082;&#1072;&#1081; &#1103;&#1082;&#1072;&#1089;&#1094;&#1102; &#1110; &#1089;&#1082;&#1072;&#1088;&#1099;&#1089;&#1090;&#1072;&#1094;&#1100; &#1103;&#1075;&#1086; &#1085;&#1072; &#1074;&#1072;&#1096;&#1099;&#1084; &#1082;&#1072;&#1084;&#1087;'&#1102;&#1090;&#1072;&#1088;&#1099;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Save any open files and close all programs before you log off.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100725T173442Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -66831,6 +67703,22 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Save the current picture as a new file.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110304T085752Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1047;&#1072;&#1093;&#1072;&#1074;&#1072;&#1094;&#1100; &#1076;&#1079;&#1077;&#1081;&#1085;&#1099; &#1074;&#1110;&#1076;&#1072;&#1088;&#1099;&#1089; &#1091; &#1085;&#1086;&#1074;&#1099; &#1092;&#1072;&#1081;&#1083;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Save the current picture.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110304T085734Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1047;&#1072;&#1093;&#1072;&#1074;&#1072;&#1094;&#1100; &#1076;&#1079;&#1077;&#1081;&#1085;&#1099; &#1074;&#1110;&#1076;&#1072;&#1088;&#1099;&#1089;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Save the document as plain text without line breaks or formatting.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100902T195851Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -66951,6 +67839,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Saves the current palette of colors to a file.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110304T084049Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1047;&#1072;&#1093;&#1086;&#1118;&#1074;&#1072;&#1077; &#1076;&#1079;&#1077;&#1081;&#1085;&#1091;&#1102; &#1087;&#1072;&#1083;&#1110;&#1090;&#1088;&#1091; &#1082;&#1086;&#1083;&#1077;&#1088;&#1072;&#1118; &#1091; &#1092;&#1072;&#1081;&#1083;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Saves this search query.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100710T171411Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -68375,6 +69271,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Select Color&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110305T194951Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1040;&#1073;&#1088;&#1072;&#1094;&#1100; &#1082;&#1086;&#1083;&#1077;&#1088;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Select Computer&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100921T165928Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -68455,6 +69359,22 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Select Tool End\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110305T205845Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1050;&#1072;&#1085;&#1077;&#1094; &#1072;&#1073;&#1088;&#1072;&#1085;&#1085;&#1103; &#1110;&#1085;&#1089;&#1090;&#1088;&#1091;&#1084;&#1077;&#1085;&#1090;&#1072;\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Select Tool(ID: %1) Start\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110305T205834Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1040;&#1073;&#1088;&#1072;&#1085;&#1085;&#1077; &#1110;&#1085;&#1089;&#1090;&#1088;&#1091;&#1084;&#1077;&#1085;&#1090;&#1072;(ID: %1) &#1055;&#1072;&#1095;&#1072;&#1090;&#1072;&#1082;\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Select User Page Columns&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101118T081432Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -68503,6 +69423,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Select a color from the color palette.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110305T181304Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1040;&#1073;&#1088;&#1072;&#1094;&#1100; &#1082;&#1086;&#1083;&#1077;&#1088; &#1079; &#1087;&#1072;&#1083;&#1110;&#1090;&#1088;&#1099;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Select a date or date range:&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100715T130642Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -68535,6 +69463,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Select a part of the picture.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110305T171624Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1042;&#1099;&#1083;&#1091;&#1095;&#1099;&#1094;&#1100; &#1095;&#1072;&#1089;&#1090;&#1082;&#1091; &#1074;&#1110;&#1076;&#1072;&#1088;&#1099;&#1089;&#1072;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Select a photo or solid color to set as your background.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101006T061231Z&quot; changeid=&quot;alex&quot;&gt;
+@@ -68559,6 +69495,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Select a printer, number of copies, and other printing options before printing.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110304T085038Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1040;&#1073;&#1088;&#1072;&#1094;&#1100; &#1076;&#1088;&#1091;&#1082;&#1072;&#1088;&#1082;&#1091;, &#1082;&#1086;&#1083;&#1100;&#1082;&#1072;&#1089;&#1094;&#1100; &#1082;&#1086;&#1087;&#1110;&#1103;&#1118; &#1110; &#1110;&#1085;&#1096;&#1099;&#1103; &#1087;&#1072;&#1088;&#1072;&#1084;&#1077;&#1090;&#1088;&#1099; &#1076;&#1088;&#1091;&#1082;&#1091; &#1087;&#1077;&#1088;&#1072;&#1076; &#1076;&#1088;&#1091;&#1082;&#1072;&#1084;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Select a private network connection&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110216T090107Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -68567,6 +69511,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Select a rectangular area by drawing on the canvas.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110305T171721Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1042;&#1099;&#1083;&#1091;&#1095;&#1099;&#1094;&#1100; &#1087;&#1088;&#1072;&#1084;&#1072;&#1074;&#1091;&#1075;&#1086;&#1083;&#1100;&#1085;&#1091;&#1102; &#1087;&#1083;&#1103;&#1094;&#1086;&#1118;&#1082;&#1091; &#1084;&#1072;&#1083;&#1103;&#1074;&#1072;&#1085;&#1085;&#1077;&#1084; &#1085;&#1072; &#1087;&#1072;&#1083;&#1072;&#1090;&#1085;&#1077;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Select a session to reconnect to&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100727T075218Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -68623,6 +69575,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Select an area of any shape by drawing on the canvas.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110305T171750Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1042;&#1099;&#1083;&#1091;&#1095;&#1099;&#1094;&#1100; &#1087;&#1083;&#1103;&#1094;&#1086;&#1118;&#1082;&#1091; &#1083;&#1102;&#1073;&#1086;&#1081; &#1092;&#1086;&#1088;&#1084;&#1099; &#1084;&#1072;&#1083;&#1103;&#1074;&#1072;&#1085;&#1085;&#1077;&#1084; &#1085;&#1072; &#1087;&#1072;&#1083;&#1072;&#1090;&#1085;&#1077;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Select an icon or an image file&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101205T192025Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -68689,8 +69649,8 @@
+       &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Select printer, number of copies, and other printing options before printing.&lt;/seg&gt;
+       &lt;/tuv&gt;
+-      &lt;tuv lang=&quot;be&quot; changedate=&quot;20100902T200117Z&quot; changeid=&quot;eratyk&quot;&gt;
+-        &lt;seg&gt;&#1040;&#1073;&#1088;&#1072;&#1094;&#1100; &#1076;&#1088;&#1091;&#1082;&#1072;&#1088;&#1082;&#1091;, &#1082;&#1086;&#1083;&#1100;&#1082;&#1072;&#1089;&#1094;&#1100; &#1082;&#1086;&#1087;&#1110;&#1103;&#1118; &#1110; &#1110;&#1085;&#1096;&#1099;&#1103; &#1087;&#1072;&#1088;&#1072;&#1084;&#1077;&#1090;&#1088;&#1099; &#1076;&#1088;&#1091;&#1082;&#1091; &#1087;&#1077;&#1088;&#1072;&#1076; &#1087;&#1072;&#1095;&#1072;&#1090;&#1082;&#1072;&#1084; &#1076;&#1088;&#1091;&#1082;&#1091;.&lt;/seg&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110304T085055Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1040;&#1073;&#1088;&#1072;&#1094;&#1100; &#1076;&#1088;&#1091;&#1082;&#1072;&#1088;&#1082;&#1091;, &#1082;&#1086;&#1083;&#1100;&#1082;&#1072;&#1089;&#1094;&#1100; &#1082;&#1086;&#1087;&#1110;&#1103;&#1118; &#1110; &#1110;&#1085;&#1096;&#1099;&#1103; &#1087;&#1072;&#1088;&#1072;&#1084;&#1077;&#1090;&#1088;&#1099; &#1076;&#1088;&#1091;&#1082;&#1091; &#1087;&#1077;&#1088;&#1072;&#1076; &#1076;&#1088;&#1091;&#1082;&#1072;&#1084;.&lt;/seg&gt;
+       &lt;/tuv&gt;
+     &lt;/tu&gt;
+     &lt;tu&gt;
+@@ -68751,6 +69711,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Select the entire picture.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110305T171809Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1042;&#1099;&#1083;&#1091;&#1095;&#1099;&#1094;&#1100; &#1091;&#1074;&#1077;&#1089;&#1100; &#1074;&#1110;&#1076;&#1072;&#1088;&#1099;&#1089;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Select the folder containing the next cabinet file '%hs' from disk '%hs'.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100904T192900Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -68799,6 +69767,22 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Select the medium for the shape fill.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110305T174511Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1040;&#1073;&#1088;&#1072;&#1094;&#1100; &#1089;&#1103;&#1088;&#1101;&#1076;&#1079;&#1110;&#1085;&#1091; &#1076;&#1083;&#1103; &#1079;&#1072;&#1087;&#1072;&#1118;&#1085;&#1077;&#1085;&#1085;&#1103; &#1092;&#1086;&#1088;&#1084;&#1099;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Select the medium for the shape outline.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110305T174524Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1040;&#1073;&#1088;&#1072;&#1094;&#1100; &#1089;&#1103;&#1088;&#1101;&#1076;&#1079;&#1110;&#1085;&#1091; &#1076;&#1083;&#1103; &#1072;&#1073;&#1088;&#1099;&#1089;&#1091; &#1092;&#1086;&#1088;&#1084;&#1099;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Select the option that best describes why you want to shut down the computer&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100726T131434Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -68935,6 +69919,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Select the width for the selected tool.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110305T180932Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1040;&#1073;&#1088;&#1072;&#1094;&#1100; &#1096;&#1099;&#1088;&#1099;&#1085;&#1102; &#1076;&#1083;&#1103; &#1074;&#1099;&#1083;&#1091;&#1095;&#1072;&#1085;&#1072;&#1075;&#1072; &#1110;&#1085;&#1089;&#1090;&#1088;&#1091;&#1084;&#1077;&#1085;&#1090;&#1072;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Select users who can use remote desktop&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101118T073605Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -69145,8 +70137,8 @@
+       &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Selects a free-form part of the picture to move, copy, or edit.\nFree-form select&lt;/seg&gt;
+       &lt;/tuv&gt;
+-      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110121T172141Z&quot; changeid=&quot;eratyk&quot;&gt;
+-        &lt;seg&gt;&#1042;&#1099;&#1083;&#1091;&#1095;&#1072;&#1077; &#1072;&#1076;&#1074;&#1086;&#1083;&#1100;&#1085;&#1091;&#1102; &#1095;&#1072;&#1089;&#1090;&#1082;&#1091; &#1074;&#1110;&#1076;&#1072;&#1088;&#1099;&#1089;&#1072; &#1076;&#1083;&#1103; &#1087;&#1077;&#1088;&#1072;&#1084;&#1103;&#1096;&#1095;&#1101;&#1085;&#1085;&#1103;, &#1082;&#1072;&#1087;&#1110;&#1103;&#1074;&#1072;&#1085;&#1085;&#1103; &#1094;&#1110; &#1088;&#1101;&#1076;&#1072;&#1075;&#1072;&#1074;&#1072;&#1085;&#1085;&#1103;.\n&#1042;&#1099;&#1083;&#1091;&#1095;&#1099;&#1094;&#1100; &#1074;&#1086;&#1083;&#1100;&#1085;&#1072;&#1081; &#1092;&#1086;&#1088;&#1084;&#1072;&#1081;&lt;/seg&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110305T172710Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1042;&#1099;&#1083;&#1091;&#1095;&#1072;&#1077; &#1072;&#1076;&#1074;&#1086;&#1083;&#1100;&#1085;&#1091;&#1102; &#1095;&#1072;&#1089;&#1090;&#1082;&#1091; &#1074;&#1110;&#1076;&#1072;&#1088;&#1099;&#1089;&#1072; &#1076;&#1083;&#1103; &#1087;&#1077;&#1088;&#1072;&#1084;&#1103;&#1096;&#1095;&#1101;&#1085;&#1085;&#1103;, &#1082;&#1072;&#1087;&#1110;&#1103;&#1074;&#1072;&#1085;&#1085;&#1103; &#1094;&#1110; &#1088;&#1101;&#1076;&#1072;&#1075;&#1072;&#1074;&#1072;&#1085;&#1085;&#1103;.\n&#1042;&#1099;&#1083;&#1091;&#1095;&#1099;&#1094;&#1100; &#1072;&#1076;&#1074;&#1086;&#1083;&#1100;&#1085;&#1072;&#1081; &#1092;&#1086;&#1088;&#1084;&#1072;&#1081;&lt;/seg&gt;
+       &lt;/tuv&gt;
+     &lt;/tu&gt;
+     &lt;tu&gt;
+@@ -69183,6 +70175,22 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Selects the font used by the text.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110305T194806Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1042;&#1099;&#1083;&#1091;&#1095;&#1072;&#1077; &#1096;&#1088;&#1099;&#1092;&#1090;, &#1089;&#1082;&#1072;&#1088;&#1099;&#1089;&#1090;&#1072;&#1085;&#1099; &#1118; &#1090;&#1101;&#1082;&#1089;&#1094;&#1077;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Selects the point size of the text.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110305T194836Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1042;&#1099;&#1083;&#1091;&#1095;&#1072;&#1077; &#1087;&#1072;&#1084;&#1077;&#1088; &#1091; &#1082;&#1088;&#1086;&#1087;&#1082;&#1072;&#1093;, &#1089;&#1082;&#1072;&#1088;&#1099;&#1089;&#1090;&#1072;&#1085;&#1099; &#1118; &#1090;&#1101;&#1082;&#1089;&#1094;&#1077;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Self-propagating malicious code that can automatically distribute itself from one computer to another through network connections.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101119T061609Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -69231,6 +70239,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Send a copy of the picture in an e-mail message as an attachment.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110304T085937Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1044;&#1072;&#1089;&#1083;&#1072;&#1094;&#1100; &#1082;&#1086;&#1087;&#1110;&#1102; &#1074;&#1110;&#1076;&#1072;&#1088;&#1099;&#1089;&#1072; &#1087;&#1088;&#1099;&#1095;&#1101;&#1087;&#1082;&#1072;&#1084; &#1076;&#1072; &#1101;&#1083;. &#1083;&#1110;&#1089;&#1090;&#1072;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Send basic information to Microsoft about software it detects, including where the software came from, and actions that you apply or the program applies automatically.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100727T085434Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -69791,6 +70807,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Set the current picture as your desktop background.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110304T090018Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1055;&#1088;&#1099;&#1079;&#1085;&#1072;&#1095;&#1099;&#1094;&#1100; &#1076;&#1079;&#1077;&#1081;&#1085;&#1099; &#1074;&#1110;&#1076;&#1072;&#1088;&#1099;&#1089; &#1103;&#1082; &#1092;&#1086;&#1085; &#1089;&#1090;&#1072;&#1083;&#1100;&#1085;&#1110;&#1094;&#1099;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Set the date and time:&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110120T151316Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -69959,6 +70983,30 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Sets or clears the text bold attribute.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110305T194722Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1055;&#1088;&#1099;&#1079;&#1085;&#1072;&#1095;&#1072;&#1077; &#1094;&#1110; &#1087;&#1088;&#1099;&#1073;&#1110;&#1088;&#1072;&#1077; &#1072;&#1090;&#1088;&#1099;&#1073;&#1091;&#1090; &#1090;&#1086;&#1118;&#1089;&#1090;&#1072;&#1075;&#1072; &#1090;&#1101;&#1082;&#1089;&#1090;&#1091;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Sets or clears the text italic attribute.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110305T194710Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1055;&#1088;&#1099;&#1079;&#1085;&#1072;&#1095;&#1072;&#1077; &#1094;&#1110; &#1087;&#1088;&#1099;&#1073;&#1110;&#1074;&#1072;&#1077; &#1072;&#1090;&#1088;&#1099;&#1073;&#1091;&#1090; &#1082;&#1091;&#1088;&#1089;&#1110;&#1118;&#1085;&#1072;&#1075;&#1072; &#1090;&#1101;&#1082;&#1089;&#1090;&#1091;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Sets or clears the text underline attribute.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110305T194857Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1055;&#1088;&#1099;&#1079;&#1085;&#1072;&#1095;&#1072;&#1077; &#1094;&#1110; &#1087;&#1088;&#1099;&#1073;&#1110;&#1074;&#1072;&#1077; &#1072;&#1090;&#1088;&#1099;&#1073;&#1091;&#1090; &#1087;&#1072;&#1082;&#1088;&#1101;&#1089;&#1083;&#1077;&#1085;&#1072;&#1075;&#1072; &#1090;&#1101;&#1082;&#1089;&#1090;&#1091;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Sets process to the ABOVE NORMAL priority class&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101125T174350Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -70241,8 +71289,8 @@
+       &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Shape outline&lt;/seg&gt;
+       &lt;/tuv&gt;
+-      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110124T141509Z&quot; changeid=&quot;eratyk&quot;&gt;
+-        &lt;seg&gt;&#1060;&#1086;&#1088;&#1084;&#1072; &#1072;&#1073;&#1088;&#1099;&#1089;&#1091;&lt;/seg&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110305T174533Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1040;&#1073;&#1088;&#1099;&#1089; &#1092;&#1086;&#1088;&#1084;&#1099;&lt;/seg&gt;
+       &lt;/tuv&gt;
+     &lt;/tu&gt;
+     &lt;tu&gt;
+@@ -70383,6 +71431,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Sharing violation.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110304T082803Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1055;&#1072;&#1088;&#1091;&#1096;&#1101;&#1085;&#1085;&#1077; &#1072;&#1075;&#1091;&#1083;&#1100;&#1085;&#1072;&#1076;&#1072;&#1089;&#1090;&#1091;&#1087;&#1085;&#1072;&#1089;&#1094;&#1110;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Sharpness&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101028T180546Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -70991,6 +72047,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Show or hide the Thumbnail window.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110305T185252Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1055;&#1072;&#1082;&#1072;&#1079;&#1072;&#1094;&#1100; &#1094;&#1110; &#1089;&#1093;&#1072;&#1074;&#1072;&#1094;&#1100; &#1074;&#1072;&#1082;&#1085;&#1086; &#1072;&#1073;&#1088;&#1072;&#1079;&#1082;&#1086;&#1118;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Show or hide the color mixer.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101118T074445Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -71191,6 +72255,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Show the Paste From dialog box and pick a file to paste.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110304T090345Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1055;&#1072;&#1082;&#1072;&#1079;&#1072;&#1094;&#1100; &#1076;&#1099;&#1103;&#1083;&#1086;&#1075; &quot;&#1059;&#1089;&#1090;&#1072;&#1074;&#1110;&#1094;&#1100; &#1079;&quot; &#1110; &#1072;&#1073;&#1088;&#1072;&#1094;&#1100; &#1092;&#1072;&#1081;&#1083; &#1076;&#1083;&#1103; &#1118;&#1089;&#1090;&#1072;&#1118;&#1082;&#1110;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Show the compatibility files for this directory.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101118T074327Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -71399,6 +72471,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Shows or hides the thumbnail.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110305T195055Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1055;&#1072;&#1082;&#1072;&#1079;&#1074;&#1072;&#1077; &#1094;&#1110; &#1093;&#1072;&#1074;&#1072;&#1077; &#1072;&#1073;&#1088;&#1072;&#1079;&#1086;&#1082;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Shows or hides toolbars.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100910T145727Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -71903,6 +72983,22 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Size: %1%2&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110305T195136Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;Size: %1%2&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Size: None&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110305T195134Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1055;&#1072;&#1084;&#1077;&#1088;: &#1085;&#1110;&#1103;&#1082;&#1110;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Size: larger than %1!s!&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100715T060415Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -72239,6 +73335,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Solid color&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110305T204453Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1057;&#1091;&#1094;&#1101;&#1083;&#1100;&#1085;&#1099; &#1082;&#1086;&#1083;&#1077;&#1088;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Solitaire&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100719T122716Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -77919,6 +79023,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;The file is not in the correct format.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110305T195118Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1060;&#1072;&#1081;&#1083; &#1091; &#1085;&#1077;&#1082;&#1072;&#1088;&#1101;&#1082;&#1090;&#1085;&#1099;&#1084; &#1092;&#1072;&#1088;&#1084;&#1072;&#1094;&#1077;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;The file might have been moved or deleted.\n\nDo you want to create it?&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101119T223115Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -78527,6 +79639,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;The information on the Clipboard can't be inserted into Paint.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110304T083212Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1030;&#1085;&#1092;&#1072;&#1088;&#1084;&#1072;&#1094;&#1099;&#1103; &#1118; &#1082;&#1110;&#1096;&#1101;&#1085;&#1110; &#1085;&#1077; &#1084;&#1086;&#1078;&#1072; &#1073;&#1099;&#1094;&#1100; &#1091;&#1089;&#1090;&#1072;&#1118;&#1083;&#1077;&#1085;&#1072;&#1103; &#1118; &#1060;&#1072;&#1088;&#1073;&#1091;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;The information will be automatically collected and sent.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100727T090332Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -79623,6 +80743,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;The specified printer is invalid.\nPlease choose a valid printer.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110304T083138Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1040;&#1079;&#1085;&#1072;&#1095;&#1072;&#1085;&#1072;&#1103; &#1076;&#1088;&#1091;&#1082;&#1072;&#1088;&#1082;&#1072; &#1085;&#1077;&#1076;&#1072;&#1087;&#1091;&#1096;&#1095;&#1072;&#1083;&#1100;&#1085;&#1072;&#1103;.\n&#1050;&#1072;&#1083;&#1110; &#1083;&#1072;&#1089;&#1082;&#1072;, &#1072;&#1073;&#1103;&#1088;&#1099;&#1094;&#1077; &#1076;&#1072;&#1087;&#1091;&#1096;&#1095;&#1072;&#1083;&#1100;&#1085;&#1091;&#1102; &#1076;&#1088;&#1091;&#1082;&#1072;&#1088;&#1082;&#1091;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;The specified program was not designed to work with Windows or MS-DOS.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100713T054706Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -83663,6 +84791,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Tile the picture so it repeats and fills the entire screen.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110304T085430Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1047;&#1072;&#1082;&#1072;&#1092;&#1083;&#1103;&#1074;&#1072;&#1094;&#1100; &#1074;&#1110;&#1076;&#1072;&#1088;&#1099;&#1089;&#1072;&#1084; &#1091;&#1074;&#1077;&#1089;&#1100; &#1101;&#1082;&#1088;&#1072;&#1085;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Tile&amp;s&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101121T130256Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -84735,6 +85871,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Too many open files.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110304T082458Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1047;&#1072;&#1096;&#1084;&#1072;&#1090; &#1072;&#1076;&#1095;&#1099;&#1085;&#1077;&#1085;&#1099;&#1093; &#1092;&#1072;&#1081;&#1083;&#1072;&#1118;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Too many other files are currently in use by 16-bit programs.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100713T054035Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -84983,6 +86127,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Transferring data (%1!ld!%% complete)&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110304T083813Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1055;&#1077;&#1088;&#1072;&#1085;&#1086;&#1089; &#1079;&#1074;&#1077;&#1089;&#1090;&#1072;&#1082; (%1!ld!%% &#1089;&#1082;&#1086;&#1085;&#1095;&#1072;&#1085;&#1072;)&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Transparent&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110124T141231Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -86087,6 +87239,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Unable to communicate with the device. Verify the device is properly connected and try again.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110304T083350Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1053;&#1077;&#1084;&#1072;&#1075;&#1095;&#1099;&#1084;&#1072; &#1079;&#1085;&#1077;&#1089;&#1094;&#1110;&#1089;&#1103; &#1079; &#1087;&#1088;&#1099;&#1083;&#1072;&#1076;&#1072;&#1081;. &#1055;&#1088;&#1072;&#1074;&#1077;&#1088;&#1094;&#1077;, &#1096;&#1090;&#1086; &#1087;&#1088;&#1099;&#1083;&#1072;&#1076;&#1072; &#1087;&#1072;&#1076;&#1082;&#1083;&#1102;&#1095;&#1072;&#1085;&#1072;&#1103; &#1087;&#1088;&#1072;&#1074;&#1110;&#1083;&#1100;&#1085;&#1072;, &#1110; &#1087;&#1072;&#1118;&#1090;&#1072;&#1088;&#1099;&#1094;&#1077; &#1089;&#1087;&#1088;&#1086;&#1073;&#1091;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Unable to configure hibernation file\n&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101223T190446Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -86287,6 +87447,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Unable to retrieve picture from device. Verify the device is properly connected and try again.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110304T083525Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1053;&#1077;&#1084;&#1072;&#1075;&#1095;&#1099;&#1084;&#1072; &#1072;&#1090;&#1088;&#1099;&#1084;&#1072;&#1094;&#1100; &#1074;&#1110;&#1076;&#1072;&#1088;&#1099;&#1089; &#1079; &#1087;&#1088;&#1099;&#1083;&#1072;&#1076;&#1099;. &#1055;&#1088;&#1072;&#1074;&#1077;&#1088;&#1094;&#1077;, &#1096;&#1090;&#1086; &#1087;&#1088;&#1099;&#1083;&#1072;&#1076;&#1072; &#1087;&#1072;&#1076;&#1082;&#1083;&#1102;&#1095;&#1072;&#1085;&#1072;&#1103; &#1087;&#1088;&#1072;&#1074;&#1110;&#1083;&#1100;&#1085;&#1072; &#1110; &#1087;&#1072;&#1118;&#1090;&#1072;&#1088;&#1099;&#1094;&#1077; &#1089;&#1087;&#1088;&#1086;&#1073;&#1091;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Unable to run command.\nThe folder '%1' has been removed.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101122T124520Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -86479,6 +87647,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Undo last action.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110305T185708Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1040;&#1076;&#1088;&#1072;&#1073;&#1110;&#1094;&#1100; &#1072;&#1087;&#1086;&#1096;&#1085;&#1103;&#1077; &#1076;&#1079;&#1077;&#1103;&#1085;&#1085;&#1077;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Undo your last action.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100928T140052Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -88231,6 +89407,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Uses a previously saved palette of colors.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110304T084019Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1050;&#1072;&#1088;&#1099;&#1089;&#1090;&#1072;&#1077; &#1087;&#1072;&#1087;&#1103;&#1088;&#1101;&#1076;&#1085;&#1077; &#1079;&#1072;&#1093;&#1072;&#1074;&#1072;&#1085;&#1091;&#1102; &#1087;&#1072;&#1083;&#1110;&#1090;&#1088;&#1091; &#1082;&#1086;&#1083;&#1077;&#1088;&#1072;&#1118;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Utility Manager&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100719T123707Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -88735,6 +89919,22 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;View and use gridlines to align objects in your picture.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110305T181712Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1055;&#1088;&#1072;&#1075;&#1083;&#1077;&#1076;&#1079;&#1077;&#1094;&#1100; &#1110; &#1089;&#1082;&#1072;&#1088;&#1099;&#1089;&#1090;&#1072;&#1094;&#1100; &#1083;&#1110;&#1085;&#1110;&#1110; &#1089;&#1077;&#1090;&#1082;&#1110;, &#1082;&#1072;&#1073; &#1079;&#1088;&#1072;&#1118;&#1085;&#1072;&#1074;&#1072;&#1094;&#1100; &#1072;&#1073;'&#1077;&#1082;&#1090;&#1099; &#1091; &#1074;&#1072;&#1096;&#1099;&#1084; &#1074;&#1110;&#1076;&#1072;&#1088;&#1099;&#1089;&#1077;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;View and use rulers to line up and measure objects in your picture.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110305T181626Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1055;&#1088;&#1072;&#1075;&#1083;&#1077;&#1076;&#1079;&#1077;&#1094;&#1100; &#1110; &#1089;&#1082;&#1072;&#1088;&#1099;&#1089;&#1090;&#1072;&#1094;&#1100; &#1083;&#1110;&#1085;&#1077;&#1081;&#1082;&#1110;, &#1082;&#1072;&#1073; &#1074;&#1099;&#1088;&#1072;&#1118;&#1085;&#1072;&#1074;&#1072;&#1094;&#1100; &#1110; &#1074;&#1099;&#1084;&#1077;&#1088;&#1072;&#1094;&#1100; &#1072;&#1073;'&#1077;&#1082;&#1090;&#1099; &#1091; &#1074;&#1072;&#1096;&#1099;&#1084; &#1074;&#1110;&#1076;&#1072;&#1088;&#1099;&#1089;&#1077;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;View available gadgets&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101029T181348Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -89063,6 +90263,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;View the picture in full screen.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110305T185342Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1055;&#1088;&#1072;&#1075;&#1083;&#1077;&#1076;&#1079;&#1077;&#1094;&#1100; &#1074;&#1110;&#1076;&#1072;&#1088;&#1099;&#1089; &#1085;&#1072; &#1087;&#1086;&#1118;&#1085;&#1099;&#1084; &#1101;&#1082;&#1088;&#1072;&#1085;&#1077;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;View the properties of a wireless network.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110215T075519Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -89447,6 +90655,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Watercolor&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110305T204911Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1042;&#1072;&#1076;&#1079;&#1103;&#1085;&#1099; &#1082;&#1086;&#1083;&#1077;&#1088;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;We recommend scheduling a daily scan of your computer.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100713T172115Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -94703,6 +95919,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;You must save the file before choosing it as desktop background.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110304T084141Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1042;&#1099; &#1087;&#1072;&#1074;&#1110;&#1085;&#1085;&#1099; &#1079;&#1072;&#1093;&#1072;&#1074;&#1072;&#1094;&#1100; &#1092;&#1072;&#1081;&#1083;, &#1087;&#1077;&#1088;&#1096; &#1095;&#1099;&#1084; &#1072;&#1073;&#1110;&#1088;&#1072;&#1094;&#1100; &#1103;&#1075;&#1086; &#1092;&#1086;&#1085;&#1072;&#1084; &#1089;&#1090;&#1072;&#1083;&#1100;&#1085;&#1110;&#1094;&#1099;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;You must select Apply before making additional changes.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100922T103300Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -96039,6 +97263,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Zoom in on the current picture.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110305T181326Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1055;&#1072;&#1074;&#1103;&#1083;&#1110;&#1095;&#1099;&#1094;&#1100; &#1084;&#1072;&#1096;&#1090;&#1072;&#1073; &#1076;&#1079;&#1077;&#1081;&#1085;&#1072;&#1075;&#1072; &#1074;&#1110;&#1076;&#1072;&#1088;&#1099;&#1089;&#1072;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Zoom in on the document.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100905T100033Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -96071,6 +97303,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Zoom out on the current picture.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110305T181334Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1055;&#1072;&#1084;&#1077;&#1085;&#1096;&#1099;&#1094;&#1100; &#1084;&#1072;&#1096;&#1090;&#1072;&#1073; &#1076;&#1079;&#1077;&#1081;&#1085;&#1072;&#1075;&#1072; &#1074;&#1110;&#1076;&#1072;&#1088;&#1099;&#1089;&#1072;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Zoom out on the document.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100905T100042Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -96079,6 +97319,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Zoom slider&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110305T204427Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1055;&#1072;&#1118;&#1079;&#1091;&#1085;&#1086;&#1082; &#1084;&#1072;&#1096;&#1090;&#1072;&#1073;&#1091;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Zoom the document so that an entire page fits in the window.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100905T095517Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -96089,8 +97337,8 @@
+       &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Zoom the document so that two pages fit in the window.&lt;/seg&gt;
+       &lt;/tuv&gt;
+-      &lt;tuv lang=&quot;be&quot; changedate=&quot;20100905T095548Z&quot; changeid=&quot;eratyk&quot;&gt;
+-        &lt;seg&gt;&#1052;&#1072;&#1096;&#1090;&#1072;&#1073;&#1072;&#1074;&#1072;&#1094;&#1100; &#1076;&#1072;&#1082;&#1091;&#1084;&#1077;&#1085;&#1090; &#1076;&#1072; &#1089;&#1091;&#1087;&#1072;&#1076;&#1079;&#1077;&#1085;&#1085;&#1103; &#1096;&#1099;&#1088;&#1099;&#1085;&#1110; &#1076;&#1074;&#1091;&#1093; &#1089;&#1090;&#1072;&#1088;&#1086;&#1085;&#1072;&#1082; &#1110; &#1074;&#1072;&#1082;&#1085;&#1072;.&lt;/seg&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110305T185540Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1052;&#1072;&#1096;&#1090;&#1072;&#1073;&#1072;&#1074;&#1072;&#1094;&#1100; &#1076;&#1072;&#1082;&#1091;&#1084;&#1077;&#1085;&#1090; &#1076;&#1072; &#1089;&#1091;&#1087;&#1072;&#1076;&#1079;&#1077;&#1085;&#1085;&#1103; &#1096;&#1099;&#1088;&#1099;&#1085;&#1110; &#1076;&#1079;&#1074;&#1102;&#1093; &#1089;&#1090;&#1072;&#1088;&#1086;&#1085;&#1072;&#1082; &#1110; &#1074;&#1072;&#1082;&#1085;&#1072;.&lt;/seg&gt;
+       &lt;/tuv&gt;
+     &lt;/tu&gt;
+     &lt;tu&gt;
+@@ -96103,6 +97351,30 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Zoom the picture so that one page fits in the window.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110305T185456Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1052;&#1072;&#1096;&#1090;&#1072;&#1073;&#1072;&#1074;&#1072;&#1094;&#1100; &#1074;&#1110;&#1076;&#1072;&#1088;&#1099;&#1089; &#1076;&#1072; &#1089;&#1091;&#1087;&#1072;&#1076;&#1079;&#1077;&#1085;&#1085;&#1103; &#1096;&#1099;&#1088;&#1099;&#1085;&#1110; &#1089;&#1090;&#1072;&#1088;&#1086;&#1085;&#1082;&#1110; &#1110; &#1074;&#1072;&#1082;&#1085;&#1072;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Zoom the picture so that two pages fit in the window.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110305T185526Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1052;&#1072;&#1096;&#1090;&#1072;&#1073;&#1072;&#1074;&#1072;&#1094;&#1100; &#1074;&#1110;&#1076;&#1072;&#1088;&#1099;&#1089; &#1076;&#1072; &#1089;&#1091;&#1087;&#1072;&#1076;&#1079;&#1077;&#1085;&#1085;&#1103; &#1096;&#1099;&#1088;&#1099;&#1085;&#1110; &#1076;&#1079;&#1074;&#1102;&#1093; &#1089;&#1090;&#1072;&#1088;&#1086;&#1085;&#1072;&#1082; &#1110; &#1074;&#1072;&#1082;&#1085;&#1072;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Zoom to 100%.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110305T205534Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1040;&#1076;&#1084;&#1072;&#1096;&#1090;&#1072;&#1073;&#1072;&#1074;&#1072;&#1094;&#1100; &#1076;&#1072; 100%&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;[Date out of range]&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110120T153123Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -97999,6 +99271,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;px&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110305T195030Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1087;&#1082;&#1089;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;rank&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101106T185136Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -98687,6 +99967,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;&#215;&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110305T195020Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#215;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;&#1042;&#1112;&#1042;&#1029;&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101029T194734Z&quot; changeid=&quot;eratyk&quot;&gt;
+
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000102.html">[I18n-bel-svn] r184 - Android-2.3/omegat
+</A></li>
+	<LI>Next message: <A HREF="000104.html">[I18n-bel-svn] r186 - Android-2.3/omegat
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#103">[ date ]</a>
+              <a href="thread.html#103">[ thread ]</a>
+              <a href="subject.html#103">[ subject ]</a>
+              <a href="author.html#103">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/i18n-bel-svn">More information about the I18n-bel-svn
+mailing list</a><br>
+</body></html>

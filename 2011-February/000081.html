@@ -1,0 +1,1618 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [I18n-bel-svn] r163 - in Windows7: omegat source/Program Files	source/Program Files/Common Files source/Program Files/Common	Files/microsoft shared source/Program Files/Common	Files/microsoft shared/ink
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/i18n-bel-svn/2011-February/index.html" >
+   <LINK REL="made" HREF="mailto:i18n-bel-svn%40lists.berlios.de?Subject=Re%3A%20%5BI18n-bel-svn%5D%20r163%20-%20in%20Windows7%3A%20omegat%20source/Program%20Files%0A%09source/Program%20Files/Common%20Files%20source/Program%20Files/Common%0A%09Files/microsoft%20shared%20source/Program%20Files/Common%0A%09Files/microsoft%20shared/ink&In-Reply-To=%3C20110213180519.4F3D14813AB%40sheep.berlios.de%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000080.html">
+   <LINK REL="Next"  HREF="000082.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[I18n-bel-svn] r163 - in Windows7: omegat source/Program Files	source/Program Files/Common Files source/Program Files/Common	Files/microsoft shared source/Program Files/Common	Files/microsoft shared/ink</H1>
+    <B>eratyk at mail.berlios.de</B> 
+    <A HREF="mailto:i18n-bel-svn%40lists.berlios.de?Subject=Re%3A%20%5BI18n-bel-svn%5D%20r163%20-%20in%20Windows7%3A%20omegat%20source/Program%20Files%0A%09source/Program%20Files/Common%20Files%20source/Program%20Files/Common%0A%09Files/microsoft%20shared%20source/Program%20Files/Common%0A%09Files/microsoft%20shared/ink&In-Reply-To=%3C20110213180519.4F3D14813AB%40sheep.berlios.de%3E"
+       TITLE="[I18n-bel-svn] r163 - in Windows7: omegat source/Program Files	source/Program Files/Common Files source/Program Files/Common	Files/microsoft shared source/Program Files/Common	Files/microsoft shared/ink">eratyk at mail.berlios.de
+       </A><BR>
+    <I>Sun Feb 13 19:05:18 CET 2011</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000080.html">[I18n-bel-svn] r162 - Windows7/source/Windows/System32
+</A></li>
+        <LI>Next message: <A HREF="000082.html">[I18n-bel-svn] r164 - in Windows7/source: Program Files/Common	Files/microsoft shared/ink Windows/System32
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#81">[ date ]</a>
+              <a href="thread.html#81">[ thread ]</a>
+              <a href="subject.html#81">[ subject ]</a>
+              <a href="author.html#81">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>Author: eratyk
+Date: 2011-02-13 19:05:18 +0100 (Sun, 13 Feb 2011)
+New Revision: 163
+
+Added:
+   Windows7/source/Program Files/Common Files/
+   Windows7/source/Program Files/Common Files/microsoft shared/
+   Windows7/source/Program Files/Common Files/microsoft shared/ink/
+   Windows7/source/Program Files/Common Files/microsoft shared/ink/InputPersonalization.exe.rc
+   Windows7/source/Program Files/Common Files/microsoft shared/ink/mshwLatin.dll.rc
+   Windows7/source/Program Files/Common Files/microsoft shared/ink/rtscom.dll.rc
+   Windows7/source/Program Files/Common Files/microsoft shared/ink/tabskb.dll.mui.rc
+Modified:
+   Windows7/omegat/project_save.tmx
+Log:
+
+
+Modified: Windows7/omegat/project_save.tmx
+===================================================================
+--- Windows7/omegat/project_save.tmx	2011-02-13 10:41:27 UTC (rev 162)
++++ Windows7/omegat/project_save.tmx	2011-02-13 18:05:18 UTC (rev 163)
+@@ -1990,6 +1990,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;%1\r\nThe above filename is too long.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110213T105254Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;%1\r\n&#208;&#144;&#208;&#183;&#208;&#189;&#208;&#176;&#209;&#135;&#208;&#176;&#208;&#189;&#208;&#176;&#209;&#143; &#208;&#189;&#208;&#176;&#208;&#183;&#208;&#178;&#208;&#176; &#209;&#132;&#208;&#176;&#208;&#185;&#208;&#187;&#208;&#176; &#208;&#183;&#208;&#176;&#208;&#189;&#208;&#176;&#208;&#180;&#209;&#130;&#208;&#176; &#208;&#180;&#208;&#190;&#209;&#158;&#208;&#179;&#208;&#176;&#209;&#143;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;%2&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100922T074742Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -13142,6 +13150,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;A reboot is necessary before package %1 can be changed to the %2 state.\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110213T110533Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#157;&#208;&#181;&#208;&#176;&#208;&#177;&#209;&#133;&#208;&#190;&#208;&#180;&#208;&#189;&#208;&#176; &#208;&#191;&#208;&#181;&#209;&#128;&#208;&#176;&#208;&#183;&#208;&#176;&#208;&#191;&#209;&#131;&#209;&#129;&#209;&#134;&#209;&#150;&#209;&#134;&#209;&#140; &#208;&#186;&#208;&#176;&#208;&#188;&#208;&#191;'&#209;&#142;&#209;&#130;&#208;&#176;&#209;&#128;, &#208;&#191;&#208;&#181;&#209;&#128;&#209;&#136; &#209;&#135;&#209;&#139;&#208;&#188; &#209;&#129;&#209;&#130;&#208;&#176;&#208;&#189; &#208;&#191;&#208;&#176;&#208;&#186;&#209;&#131;&#208;&#189;&#208;&#186;&#208;&#176; %1 &#208;&#183;&#208;&#188;&#208;&#190;&#208;&#182;&#208;&#176; &#208;&#177;&#209;&#139;&#209;&#134;&#209;&#140; &#208;&#183;&#208;&#188;&#208;&#181;&#208;&#189;&#208;&#181;&#208;&#189;&#209;&#139; &#208;&#189;&#208;&#176; %2.\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;A reboot is necessary before the selectable update %1 of package %2 can be turned off.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101103T080011Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -13150,6 +13166,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;A reboot is necessary before the selectable update %1 of package %2 can be turned off.\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110213T110725Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#157;&#208;&#181;&#208;&#176;&#208;&#177;&#209;&#133;&#208;&#190;&#208;&#180;&#208;&#189;&#208;&#176; &#208;&#191;&#208;&#181;&#209;&#128;&#208;&#176;&#208;&#183;&#208;&#176;&#208;&#191;&#209;&#131;&#209;&#129;&#209;&#134;&#209;&#150;&#209;&#134;&#209;&#140; &#208;&#186;&#208;&#176;&#208;&#188;&#208;&#191;'&#209;&#142;&#209;&#130;&#208;&#176;&#209;&#128;, &#208;&#191;&#208;&#181;&#209;&#128;&#209;&#136; &#209;&#135;&#209;&#139;&#208;&#188; &#208;&#178;&#209;&#139;&#208;&#187;&#209;&#131;&#209;&#135;&#208;&#176;&#208;&#187;&#209;&#140;&#208;&#189;&#208;&#176;&#208;&#181; &#208;&#176;&#208;&#177;&#208;&#189;&#208;&#176;&#209;&#158;&#208;&#187;&#208;&#181;&#208;&#189;&#208;&#189;&#208;&#181; %1 &#208;&#191;&#208;&#176;&#208;&#186;&#209;&#131;&#208;&#189;&#208;&#186;&#208;&#176; %2 &#208;&#183;&#208;&#188;&#208;&#190;&#208;&#182;&#208;&#176; &#208;&#177;&#209;&#139;&#209;&#134;&#209;&#140; &#208;&#178;&#209;&#139;&#208;&#186;&#208;&#187;&#209;&#142;&#209;&#135;&#208;&#176;&#208;&#189;&#208;&#176;&#208;&#181;.\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;A reboot is necessary before the selectable update %1 of package %2 can be turned on.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101103T075914Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -13158,6 +13182,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;A reboot is necessary before the selectable update %1 of package %2 can be turned on.\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110213T110717Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#157;&#208;&#181;&#208;&#176;&#208;&#177;&#209;&#133;&#208;&#190;&#208;&#180;&#208;&#189;&#208;&#176; &#208;&#191;&#208;&#181;&#209;&#128;&#208;&#176;&#208;&#183;&#208;&#176;&#208;&#191;&#209;&#131;&#209;&#129;&#209;&#134;&#209;&#150;&#209;&#134;&#209;&#140; &#208;&#186;&#208;&#176;&#208;&#188;&#208;&#191;'&#209;&#142;&#209;&#130;&#208;&#176;&#209;&#128;, &#208;&#191;&#208;&#181;&#209;&#128;&#209;&#136; &#209;&#135;&#209;&#139;&#208;&#188; &#208;&#178;&#209;&#139;&#208;&#187;&#209;&#131;&#209;&#135;&#208;&#176;&#208;&#187;&#209;&#140;&#208;&#189;&#208;&#176;&#208;&#181; &#208;&#176;&#208;&#177;&#208;&#189;&#208;&#176;&#209;&#158;&#208;&#187;&#208;&#181;&#208;&#189;&#208;&#189;&#208;&#181; %1 &#208;&#191;&#208;&#176;&#208;&#186;&#209;&#131;&#208;&#189;&#208;&#186;&#208;&#176; %2 &#208;&#183;&#208;&#188;&#208;&#190;&#208;&#182;&#208;&#176; &#208;&#177;&#209;&#139;&#209;&#134;&#209;&#140; &#209;&#131;&#208;&#186;&#208;&#187;&#209;&#142;&#209;&#135;&#208;&#176;&#208;&#189;&#208;&#176;&#208;&#181;.\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;A restart or shutdown to begin or complete hardware installation.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101206T203735Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -13798,6 +13830,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Absent\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110213T111314Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#144;&#208;&#180;&#209;&#129;&#209;&#131;&#209;&#130;&#208;&#189;&#208;&#176;\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Accept&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100722T163047Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -13958,6 +13998,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Accessing Windows in Notification period.\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110213T124751Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#148;&#208;&#190;&#209;&#129;&#209;&#130;&#209;&#131;&#208;&#191; &#208;&#180;&#208;&#176; Windows &#209;&#131; &#208;&#191;&#208;&#181;&#209;&#128;&#209;&#139;&#209;&#143;&#208;&#180; &#208;&#176;&#208;&#191;&#208;&#176;&#208;&#178;&#209;&#143;&#209;&#136;&#209;&#135;&#209;&#141;&#208;&#189;&#208;&#189;&#209;&#143;&#209;&#158;.\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Accessing resource...&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100715T055856Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -21454,6 +21502,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Cancel\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110213T111717Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#161;&#208;&#186;&#208;&#176;&#209;&#129;&#208;&#176;&#208;&#178;&#208;&#176;&#209;&#134;&#209;&#140;\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Canceling...&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100724T130021Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -28174,6 +28230,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Copyright &#239;&#191;&#189; 2009 Microsoft Corporation.  All rights reserved.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110213T105546Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#144;&#209;&#133;&#208;&#190;&#208;&#178;&#208;&#176; &#208;&#176;&#209;&#158;&#209;&#130;&#208;&#176;&#209;&#128;&#209;&#129;&#208;&#186;&#209;&#150;&#209;&#133; &#208;&#191;&#209;&#128;&#208;&#176;&#208;&#178;&#208;&#190;&#209;&#158; &#194;&#169; 2009 &#208;&#154;&#208;&#176;&#209;&#128;&#208;&#191;&#208;&#176;&#209;&#128;&#208;&#176;&#209;&#134;&#209;&#139;&#209;&#143; Microsoft.  &#208;&#163;&#209;&#129;&#208;&#181; &#208;&#191;&#209;&#128;&#208;&#176;&#208;&#178;&#209;&#139; &#208;&#183;&#208;&#176;&#209;&#133;&#208;&#176;&#208;&#178;&#208;&#176;&#208;&#189;&#209;&#139;&#209;&#143;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Copyright:&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100722T165436Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -30278,6 +30342,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Default\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110213T111551Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#159;&#208;&#181;&#209;&#128;&#208;&#176;&#208;&#180;&#208;&#178;&#209;&#139;&#208;&#183;&#208;&#189;&#208;&#176;&#209;&#135;&#208;&#176;&#208;&#189;&#208;&#176;\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Defaults can always be changed later in Control Panel.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101107T171811Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -30966,6 +31038,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Detect\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110213T111702Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#146;&#209;&#139;&#209;&#143;&#208;&#178;&#209;&#150;&#209;&#134;&#209;&#140;\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Detected by:&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100315T135354Z&quot; changeid=&quot;Ales Koshal [icq#:706101]&quot;&gt;
+@@ -33815,6 +33895,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Download\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110213T111645Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#161;&#208;&#191;&#208;&#176;&#208;&#188;&#208;&#191;&#208;&#176;&#208;&#178;&#208;&#176;&#209;&#134;&#209;&#140;\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Downloaded from the Internet&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100721T100710Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -35999,6 +36087,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Error reporting was unable to report a dirty shutdown.\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110213T124433Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#157;&#208;&#181; &#209;&#158;&#208;&#180;&#208;&#176;&#208;&#187;&#208;&#190;&#209;&#129;&#209;&#143; &#208;&#191;&#208;&#176;&#208;&#178;&#208;&#181;&#208;&#180;&#208;&#176;&#208;&#188;&#209;&#150;&#209;&#134;&#209;&#140; &#208;&#176;&#208;&#177; &#208;&#189;&#208;&#181;&#208;&#186;&#208;&#176;&#209;&#128;&#209;&#141;&#208;&#186;&#209;&#130;&#208;&#189;&#209;&#139;&#208;&#188; &#208;&#178;&#209;&#139;&#208;&#186;&#208;&#187;&#209;&#142;&#209;&#135;&#209;&#141;&#208;&#189;&#208;&#189;&#209;&#150;.\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Error reporting was unable to report the bugcheck.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101021T135223Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -36007,6 +36103,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Error reporting was unable to report the bugcheck.\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110213T124428Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#157;&#208;&#181; &#209;&#158;&#208;&#180;&#208;&#176;&#208;&#187;&#208;&#190;&#209;&#129;&#209;&#143; &#208;&#191;&#208;&#176;&#208;&#178;&#208;&#181;&#208;&#180;&#208;&#176;&#208;&#188;&#209;&#150;&#209;&#134;&#209;&#140; &#208;&#176;&#208;&#177; &#208;&#186;&#209;&#128;&#209;&#139;&#209;&#130;&#209;&#139;&#209;&#135;&#208;&#189;&#208;&#176;&#208;&#185; &#208;&#191;&#208;&#176;&#208;&#188;&#209;&#139;&#208;&#187;&#209;&#134;&#209;&#139;.\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Error status&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101111T081239Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -37311,6 +37415,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;File Deltas\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110213T111624Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#151;&#208;&#188;&#209;&#143;&#208;&#189;&#208;&#181;&#208;&#189;&#208;&#189;&#209;&#150; &#209;&#132;&#208;&#176;&#208;&#185;&#208;&#187;&#208;&#176;\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;File Download&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100717T095748Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -43783,6 +43895,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Initiating changes for package %1. Current state is %2. Target state is %4. Client id: %6.\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110213T110512Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#134;&#208;&#189;&#209;&#150;&#209;&#134;&#209;&#139;&#209;&#143;&#208;&#178;&#208;&#176;&#208;&#189;&#208;&#189;&#208;&#181; &#208;&#183;&#208;&#188;&#208;&#181;&#208;&#189;&#208;&#176;&#209;&#158; &#208;&#180;&#208;&#187;&#209;&#143; &#208;&#191;&#208;&#176;&#208;&#186;&#209;&#131;&#208;&#189;&#208;&#186;&#208;&#176; %1. &#208;&#148;&#208;&#183;&#208;&#181;&#208;&#185;&#208;&#189;&#209;&#139; &#209;&#129;&#209;&#130;&#208;&#176;&#208;&#189;: %2. &#208;&#156;&#209;&#141;&#209;&#130;&#208;&#176;&#208;&#178;&#209;&#139; &#209;&#129;&#209;&#130;&#208;&#176;&#208;&#189;: %4. ID &#208;&#186;&#208;&#187;&#209;&#150;&#208;&#181;&#208;&#189;&#209;&#130;&#208;&#176;: %6.\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Initiating changes to turn off update %1 of package %2.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101103T075341Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -43799,6 +43919,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Initiating changes to turn off update %1 of package %2. Client id: %4.\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110213T110626Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#134;&#208;&#189;&#209;&#150;&#209;&#134;&#209;&#139;&#209;&#143;&#208;&#178;&#208;&#176;&#208;&#189;&#208;&#189;&#208;&#181; &#208;&#183;&#208;&#188;&#208;&#181;&#208;&#189;&#208;&#176;&#209;&#158; &#208;&#180;&#208;&#187;&#209;&#143; &#208;&#178;&#209;&#139;&#208;&#186;&#208;&#187;&#209;&#142;&#209;&#135;&#209;&#141;&#208;&#189;&#208;&#189;&#209;&#143; &#208;&#176;&#208;&#177;&#208;&#189;&#208;&#176;&#209;&#158;&#208;&#187;&#208;&#181;&#208;&#189;&#208;&#189;&#209;&#143; %1 &#208;&#191;&#208;&#176;&#208;&#186;&#209;&#131;&#208;&#189;&#208;&#186;&#208;&#176; \r\n%2.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Initiating changes to turn on update %1 of package %2.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101103T075328Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -43815,6 +43943,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Initiating changes to turn on update %1 of package %2. Client id: %4.\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110213T110552Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#134;&#208;&#189;&#209;&#150;&#209;&#134;&#209;&#139;&#209;&#143;&#208;&#178;&#208;&#176;&#208;&#189;&#208;&#189;&#208;&#181; &#208;&#183;&#208;&#188;&#208;&#181;&#208;&#189;&#208;&#176;&#209;&#158; &#208;&#180;&#208;&#187;&#209;&#143; &#209;&#158;&#208;&#186;&#208;&#187;&#209;&#142;&#209;&#135;&#209;&#141;&#208;&#189;&#208;&#189;&#209;&#143; &#208;&#176;&#208;&#177;&#208;&#189;&#208;&#176;&#209;&#158;&#208;&#187;&#208;&#181;&#208;&#189;&#208;&#189;&#209;&#143; %1 &#208;&#191;&#208;&#176;&#208;&#186;&#209;&#131;&#208;&#189;&#208;&#186;&#208;&#176; %2. ID &#208;&#186;&#208;&#187;&#209;&#150;&#208;&#181;&#208;&#189;&#209;&#130;&#208;&#176;: %4.\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;InkWatson.exe&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100722T162842Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -44039,6 +44175,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Install Pending\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110213T111112Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#167;&#208;&#176;&#208;&#186;&#208;&#176;&#208;&#189;&#208;&#189;&#208;&#181; &#209;&#158;&#209;&#129;&#209;&#130;&#208;&#176;&#208;&#187;&#209;&#143;&#208;&#178;&#208;&#176;&#208;&#189;&#208;&#189;&#209;&#143;\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Install Requested&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101102T152535Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -44191,6 +44335,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Installed\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110213T111201Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#163;&#209;&#129;&#209;&#130;&#208;&#176;&#208;&#187;&#209;&#143;&#208;&#178;&#208;&#176;&#208;&#189;&#208;&#176;\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Installing this type of gadget is restricted by your system administrator&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100729T113355Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -44583,6 +44735,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Invalid Installed\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110213T111514Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#157;&#208;&#181;&#208;&#180;&#208;&#176;&#208;&#191;&#209;&#131;&#209;&#136;&#209;&#135;&#208;&#176;&#208;&#187;&#209;&#140;&#208;&#189;&#208;&#176; &#209;&#158;&#209;&#129;&#209;&#130;&#208;&#176;&#208;&#187;&#209;&#143;&#208;&#178;&#208;&#176;&#208;&#189;&#208;&#176;\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Invalid MS-DOS function.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100711T065555Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -44607,6 +44767,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Invalid Permanent\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110213T111537Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#157;&#208;&#181;&#208;&#180;&#208;&#176;&#208;&#191;&#209;&#131;&#209;&#136;&#209;&#135;&#208;&#176;&#208;&#187;&#209;&#140;&#208;&#189;&#208;&#176; &#209;&#129;&#209;&#130;&#208;&#176;&#208;&#187;&#208;&#176;\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Invalid Picture File.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100829T224311Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -44623,6 +44791,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Invalid Resolved\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110213T111410Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#157;&#208;&#181;&#208;&#180;&#208;&#176;&#208;&#191;&#209;&#131;&#209;&#136;&#209;&#135;&#208;&#176;&#208;&#187;&#209;&#140;&#208;&#189;&#208;&#176; &#209;&#158;&#209;&#128;&#209;&#141;&#208;&#179;&#209;&#131;&#208;&#187;&#209;&#143;&#208;&#178;&#208;&#176;&#208;&#189;&#208;&#176;\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Invalid Staged&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101103T080629Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -44631,6 +44807,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Invalid Staged\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110213T111453Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#157;&#208;&#181;&#208;&#180;&#208;&#176;&#208;&#191;&#209;&#131;&#209;&#136;&#209;&#135;&#208;&#176;&#208;&#187;&#209;&#140;&#208;&#189;&#208;&#176; &#208;&#191;&#209;&#128;&#208;&#176;&#208;&#188;&#208;&#181;&#208;&#182;&#208;&#186;&#208;&#176;&#208;&#178;&#208;&#176; &#208;&#183;&#208;&#176;&#209;&#133;&#208;&#176;&#208;&#178;&#208;&#176;&#208;&#189;&#208;&#176;\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Invalid Windows folder.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100721T122437Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -49023,6 +49207,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Microsoft-Windows-AudioUI\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110213T123247Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;Microsoft-Windows-AudioUI\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Microsoft-Windows-Authentication User Interface&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100728T081411Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -49127,6 +49319,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Microsoft-Windows-DisplaySwitch\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110213T113436Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;Microsoft-Windows-DisplaySwitch\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Microsoft-Windows-Documents&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100927T200102Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -49223,6 +49423,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Microsoft-Windows-PowerCfg\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110213T122625Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;Microsoft-Windows-PowerCfg\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Microsoft-Windows-PowerCpl&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110101T181114Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -49255,6 +49463,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Microsoft-Windows-Servicing\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110213T110502Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;Microsoft-Windows-Servicing\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Microsoft-Windows-Sharing-Ntshrui\r\n&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101130T182911Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -55263,6 +55479,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Package %1 failed to be changed to the %2 state and is now partially installed. Status: %4.\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110213T110547Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#161;&#209;&#130;&#208;&#176;&#208;&#189; &#208;&#191;&#208;&#176;&#208;&#186;&#209;&#131;&#208;&#189;&#208;&#186;&#208;&#176; %1 &#208;&#189;&#208;&#181; &#209;&#158;&#208;&#180;&#208;&#176;&#208;&#187;&#208;&#190;&#209;&#129;&#209;&#143; &#208;&#183;&#208;&#188;&#209;&#143;&#208;&#189;&#209;&#150;&#209;&#134;&#209;&#140; &#208;&#189;&#208;&#176; &#208;&#189;&#208;&#176; %2. &#208;&#159;&#208;&#176;&#208;&#186;&#209;&#131;&#208;&#189;&#208;&#176;&#208;&#186; &#209;&#131;&#209;&#129;&#209;&#130;&#208;&#176;&#208;&#187;&#209;&#143;&#208;&#178;&#208;&#176;&#208;&#189;&#209;&#139; &#209;&#135;&#208;&#176;&#209;&#129;&#209;&#130;&#208;&#186;&#208;&#190;&#208;&#178;&#208;&#176;. &#208;&#161;&#209;&#130;&#208;&#176;&#208;&#189;: %4.\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Package %1 failed to be changed to the %2 state.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101106T153425Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -55279,6 +55503,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Package %1 failed to be changed to the %2 state. Status: %4.\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110213T110524Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#161;&#209;&#130;&#208;&#176;&#208;&#189; &#208;&#191;&#208;&#176;&#208;&#186;&#209;&#131;&#208;&#189;&#208;&#186;&#208;&#176; %1 &#208;&#189;&#208;&#181; &#209;&#158;&#208;&#180;&#208;&#176;&#208;&#187;&#208;&#190;&#209;&#129;&#209;&#143; &#208;&#183;&#208;&#188;&#209;&#143;&#208;&#189;&#209;&#150;&#209;&#134;&#209;&#140; &#208;&#189;&#208;&#176; &#208;&#189;&#208;&#176; %2. &#208;&#161;&#209;&#130;&#208;&#176;&#208;&#189;: %4.\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Package %1 was successfully changed to the %2 state.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101103T074412Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -55287,6 +55519,22 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Package %1 was successfully changed to the %2 state.\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110213T110519Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#161;&#209;&#130;&#208;&#176;&#208;&#189; &#208;&#191;&#208;&#176;&#208;&#186;&#209;&#131;&#208;&#189;&#208;&#186;&#208;&#176; %1 &#208;&#177;&#209;&#139;&#209;&#158; &#208;&#191;&#208;&#176;&#209;&#129;&#208;&#191;&#209;&#143;&#209;&#133;&#208;&#190;&#208;&#178;&#208;&#176; &#208;&#183;&#208;&#188;&#208;&#181;&#208;&#189;&#208;&#181;&#208;&#189;&#209;&#139; &#208;&#189;&#208;&#176; %2.\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Package\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110213T111601Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#159;&#208;&#176;&#208;&#186;&#209;&#131;&#208;&#189;&#208;&#176;&#208;&#186;\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Packets:&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110127T094612Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -55775,6 +56023,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Partially Installed\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110213T111149Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#167;&#208;&#176;&#209;&#129;&#209;&#130;&#208;&#186;&#208;&#190;&#208;&#178;&#208;&#176; &#209;&#158;&#209;&#129;&#209;&#130;&#208;&#176;&#208;&#187;&#209;&#143;&#208;&#178;&#208;&#176;&#208;&#189;&#208;&#176;\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Participants&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101030T202716Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -56447,6 +56703,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Permanent\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110213T111258Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#161;&#209;&#130;&#208;&#176;&#208;&#187;&#208;&#176;\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Permission Level&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101130T143803Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -62007,6 +62271,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Resolved\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110213T110930Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#163;&#209;&#128;&#209;&#141;&#208;&#179;&#209;&#131;&#208;&#187;&#209;&#143;&#208;&#178;&#208;&#176;&#208;&#189;&#208;&#176;\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Resolving&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101102T150911Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -62015,6 +62287,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Resolving\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110213T110919Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#163;&#209;&#128;&#209;&#141;&#208;&#179;&#209;&#131;&#208;&#187;&#209;&#143;&#208;&#178;&#208;&#176;&#208;&#189;&#208;&#189;&#208;&#181;\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Resource:&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100315T145133Z&quot; changeid=&quot;Ales Koshal [icq#:706101]&quot;&gt;
+@@ -66111,6 +66391,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Selectable update %1 of package %2 was successfully turned off.\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110213T110649Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#146;&#209;&#139;&#208;&#187;&#209;&#131;&#209;&#135;&#208;&#176;&#208;&#187;&#209;&#140;&#208;&#189;&#208;&#176;&#208;&#181; &#208;&#176;&#208;&#177;&#208;&#189;&#208;&#176;&#209;&#158;&#208;&#187;&#208;&#181;&#208;&#189;&#208;&#189;&#208;&#181; %1 &#208;&#191;&#208;&#176;&#208;&#186;&#209;&#131;&#208;&#189;&#208;&#186;&#208;&#176; %2 &#208;&#177;&#209;&#139;&#208;&#187;&#208;&#190; &#208;&#191;&#208;&#176;&#209;&#129;&#208;&#191;&#209;&#143;&#209;&#133;&#208;&#190;&#208;&#178;&#208;&#176; &#208;&#178;&#209;&#139;&#208;&#186;&#208;&#187;&#209;&#142;&#209;&#135;&#208;&#176;&#208;&#189;&#208;&#176;&#208;&#181;.\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Selectable update %1 of package %2 was successfully turned on.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101103T075545Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -66119,6 +66407,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Selectable update %1 of package %2 was successfully turned on.\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110213T110640Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#146;&#209;&#139;&#208;&#187;&#209;&#131;&#209;&#135;&#208;&#176;&#208;&#187;&#209;&#140;&#208;&#189;&#208;&#176;&#208;&#181; &#208;&#176;&#208;&#177;&#208;&#189;&#208;&#176;&#209;&#158;&#208;&#187;&#208;&#181;&#208;&#189;&#208;&#189;&#208;&#181; %1 &#208;&#191;&#208;&#176;&#208;&#186;&#209;&#131;&#208;&#189;&#208;&#186;&#208;&#176; %2 &#208;&#177;&#209;&#139;&#208;&#187;&#208;&#190; &#208;&#191;&#208;&#176;&#209;&#129;&#208;&#191;&#209;&#143;&#209;&#133;&#208;&#190;&#208;&#178;&#208;&#176; &#209;&#158;&#208;&#186;&#208;&#187;&#209;&#142;&#209;&#135;&#208;&#176;&#208;&#189;&#208;&#176;&#208;&#181;.\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Selected&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101011T155916Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -66543,6 +66839,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Servicing has required reboot to complete the operation of setting package %1(%2) into %3(%4) state\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110213T110423Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;Servicing has &#208;&#183;&#208;&#176;&#208;&#191;&#208;&#176;&#209;&#130;&#209;&#128;&#208;&#176;&#208;&#177;&#208;&#176;&#208;&#178;&#208;&#176;&#208;&#187;&#208;&#176; &#208;&#191;&#208;&#181;&#209;&#128;&#208;&#176;&#208;&#183;&#208;&#176;&#208;&#191;&#209;&#131;&#209;&#129;&#208;&#186; &#208;&#180;&#208;&#187;&#209;&#143; &#209;&#129;&#208;&#186;&#208;&#176;&#208;&#189;&#209;&#135;&#209;&#141;&#208;&#189;&#208;&#189;&#209;&#143; &#208;&#176;&#208;&#191;&#208;&#181;&#209;&#128;&#208;&#176;&#209;&#134;&#209;&#139;&#209;&#150; &#208;&#191;&#209;&#128;&#209;&#139;&#208;&#183;&#208;&#189;&#208;&#176;&#209;&#135;&#209;&#141;&#208;&#189;&#208;&#189;&#209;&#143; &#208;&#191;&#208;&#176;&#208;&#186;&#209;&#131;&#208;&#189;&#208;&#186;&#209;&#131; %1(%2) &#209;&#129;&#209;&#130;&#208;&#176;&#208;&#189;&#209;&#131; %3(%4)\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Sesotho sa Leboa&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101021T074852Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -70199,6 +70503,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Specify power management settings for your computer&#226;&#128;&#153;s processor.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110213T122910Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#144;&#208;&#183;&#208;&#189;&#208;&#176;&#209;&#135;&#209;&#134;&#208;&#181; &#208;&#189;&#208;&#176;&#208;&#187;&#208;&#176;&#208;&#180;&#209;&#139; &#208;&#186;&#209;&#150;&#209;&#128;&#208;&#176;&#208;&#178;&#208;&#176;&#208;&#189;&#208;&#189;&#209;&#143; &#209;&#129;&#209;&#150;&#208;&#187;&#208;&#186;&#208;&#176;&#208;&#178;&#208;&#176;&#208;&#189;&#208;&#189;&#208;&#181;&#208;&#188; &#208;&#180;&#208;&#187;&#209;&#143; &#208;&#191;&#209;&#128;&#208;&#176;&#209;&#134;&#209;&#141;&#209;&#129;&#208;&#176;&#209;&#128;&#208;&#176; &#208;&#178;&#208;&#176;&#209;&#136;&#208;&#176;&#208;&#179;&#208;&#176; &#208;&#186;&#208;&#176;&#208;&#188;&#208;&#191;'&#209;&#142;&#209;&#130;&#208;&#176;&#209;&#128;&#208;&#176;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Specify power management settings for your computer&#239;&#191;&#189;s processor.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101209T214913Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -70687,6 +70999,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Staged\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110213T111329Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#159;&#209;&#128;&#208;&#176;&#208;&#188;&#208;&#181;&#208;&#182;&#208;&#186;&#208;&#176;&#208;&#178;&#208;&#176; &#208;&#183;&#208;&#176;&#209;&#133;&#208;&#176;&#208;&#178;&#208;&#176;&#208;&#189;&#208;&#176;\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Staging&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101102T152435Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -70695,6 +71015,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Staging\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110213T110954Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#159;&#209;&#128;&#208;&#176;&#208;&#188;&#208;&#181;&#208;&#182;&#208;&#186;&#208;&#176;&#208;&#178;&#208;&#176;&#208;&#181; &#208;&#183;&#208;&#176;&#209;&#133;&#208;&#176;&#208;&#178;&#208;&#176;&#208;&#189;&#208;&#189;&#208;&#181;\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Standard Illuminant A&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101027T201342Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -71615,6 +71943,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Superseded\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110213T111335Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#151;&#208;&#176;&#208;&#188;&#208;&#181;&#208;&#189;&#208;&#181;&#208;&#189;&#208;&#176;\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Support Information&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110108T143644Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -73479,6 +73815,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;The Windows logon process has failed to disconnect the user session.\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110213T180044Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#159;&#209;&#128;&#208;&#176;&#209;&#134;&#209;&#141;&#209;&#129; &#209;&#131;&#208;&#178;&#208;&#176;&#209;&#133;&#208;&#190;&#208;&#180;&#208;&#176; &#209;&#158; Windows &#208;&#189;&#208;&#181; &#208;&#183;&#208;&#188;&#208;&#190;&#208;&#179; &#208;&#176;&#208;&#180;&#208;&#187;&#209;&#131;&#209;&#135;&#209;&#139;&#209;&#134;&#209;&#140; &#208;&#186;&#208;&#176;&#209;&#128;&#209;&#139;&#209;&#129;&#209;&#130;&#208;&#176;&#208;&#187;&#209;&#140;&#208;&#189;&#209;&#150;&#209;&#134;&#208;&#186;&#209;&#131;&#209;&#142; &#209;&#129;&#208;&#181;&#209;&#129;&#209;&#150;&#209;&#142;.\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;The Windows logon process has failed to spawn a user application.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100927T185640Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -73495,6 +73839,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;The Windows logon process has failed to spawn a user application. Application name: %1. Command line parameters: %2.\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110213T174857Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#159;&#209;&#128;&#208;&#176;&#209;&#134;&#209;&#141;&#209;&#129; &#209;&#131;&#208;&#178;&#208;&#176;&#209;&#133;&#208;&#190;&#208;&#180;&#209;&#131; &#209;&#158; Windows &#208;&#189;&#208;&#181; &#208;&#183;&#208;&#188;&#208;&#190;&#208;&#179; &#209;&#129;&#208;&#191;&#208;&#176;&#209;&#128;&#208;&#176;&#208;&#180;&#208;&#183;&#209;&#150;&#209;&#134;&#209;&#140; &#208;&#186;&#208;&#176;&#209;&#128;&#209;&#139;&#209;&#129;&#209;&#130;&#208;&#176;&#208;&#187;&#209;&#140;&#208;&#189;&#209;&#150;&#209;&#134;&#208;&#186;&#209;&#131;&#209;&#142; &#208;&#191;&#209;&#128;&#208;&#176;&#208;&#179;&#209;&#128;&#208;&#176;&#208;&#188;&#209;&#131;. &#208;&#157;&#208;&#176;&#208;&#183;&#208;&#178;&#208;&#176; &#208;&#191;&#209;&#128;&#208;&#176;&#208;&#179;&#209;&#128;&#208;&#176;&#208;&#188;&#209;&#139;: %1. &#208;&#159;&#208;&#176;&#209;&#128;&#208;&#176;&#208;&#188;&#208;&#181;&#209;&#130;&#209;&#128;&#209;&#139; &#208;&#183;&#208;&#176;&#208;&#179;&#208;&#176;&#208;&#180;&#208;&#189;&#208;&#176;&#208;&#179;&#208;&#176; &#209;&#128;&#208;&#176;&#208;&#180;&#208;&#186;&#208;&#176;: %2.\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;The Windows logon process has failed to switch the desktop.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100927T185717Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -73711,6 +74063,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;The computer has rebooted from a bugcheck.  A dump was not saved.\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110213T124424Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#154;&#208;&#176;&#208;&#188;&#208;&#191;'&#209;&#142;&#209;&#130;&#208;&#176;&#209;&#128; &#208;&#177;&#209;&#139;&#209;&#158; &#208;&#191;&#208;&#181;&#209;&#128;&#208;&#176;&#208;&#183;&#208;&#176;&#208;&#191;&#209;&#131;&#209;&#136;&#209;&#135;&#208;&#176;&#208;&#189;&#209;&#139; &#208;&#191;&#208;&#176;&#209;&#129;&#208;&#187;&#209;&#143; &#208;&#186;&#209;&#128;&#209;&#139;&#209;&#130;&#209;&#139;&#209;&#135;&#208;&#189;&#208;&#176;&#208;&#185; &#208;&#191;&#208;&#176;&#208;&#188;&#209;&#139;&#208;&#187;&#208;&#186;&#209;&#150;. &#208;&#144;&#208;&#180;&#208;&#177;&#209;&#150;&#209;&#130;&#208;&#176;&#208;&#186; &#208;&#189;&#208;&#181; &#208;&#177;&#209;&#139;&#209;&#158; &#208;&#183;&#208;&#176;&#209;&#133;&#208;&#176;&#208;&#178;&#208;&#176;&#208;&#189;&#209;&#139;.\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;The computer has rebooted from a bugcheck.  The bugcheck was: %1. A dump was saved in: %2. Report Id: %3.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101021T133137Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -73719,6 +74079,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;The computer has rebooted from a bugcheck.  The bugcheck was: %1. A dump was saved in: %2. Report Id: %3.\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110213T124358Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#154;&#208;&#176;&#208;&#188;&#208;&#191;'&#209;&#142;&#209;&#130;&#208;&#176;&#209;&#128; &#208;&#177;&#209;&#139;&#209;&#158; &#208;&#191;&#208;&#181;&#209;&#128;&#208;&#176;&#208;&#183;&#208;&#176;&#208;&#191;&#209;&#131;&#209;&#136;&#209;&#135;&#208;&#176;&#208;&#189;&#209;&#139; &#208;&#191;&#208;&#176;&#209;&#129;&#208;&#187;&#209;&#143; &#208;&#186;&#209;&#128;&#209;&#139;&#209;&#130;&#209;&#139;&#209;&#135;&#208;&#189;&#208;&#176;&#208;&#185; &#208;&#191;&#208;&#176;&#208;&#188;&#209;&#139;&#208;&#187;&#208;&#186;&#209;&#150;. &#208;&#159;&#208;&#176;&#208;&#188;&#209;&#139;&#208;&#187;&#208;&#186;&#208;&#176;: %1. &#208;&#144;&#208;&#180;&#208;&#177;&#209;&#150;&#209;&#130;&#208;&#176;&#208;&#186; &#208;&#183;&#208;&#176;&#209;&#133;&#208;&#176;&#208;&#178;&#208;&#176;&#208;&#189;&#209;&#139; &#209;&#158;: %2. &#208;&#134;&#208;&#180;&#209;&#141;&#208;&#189;&#209;&#130;&#209;&#139;&#209;&#132;&#209;&#150;&#208;&#186;&#208;&#176;&#209;&#130;&#208;&#176;&#209;&#128; &#209;&#129;&#208;&#191;&#209;&#128;&#208;&#176;&#208;&#178;&#208;&#176;&#208;&#183;&#208;&#180;&#208;&#176;&#209;&#135;&#209;&#139;: %3.\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;The computer has rebooted from a bugcheck.  The bugcheck was: %1. A full dump was not saved.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101021T132953Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -73727,6 +74095,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;The computer has rebooted from a bugcheck.  The bugcheck was: %1. A full dump was not saved.\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110213T124353Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#154;&#208;&#176;&#208;&#188;&#208;&#191;'&#209;&#142;&#209;&#130;&#208;&#176;&#209;&#128; &#208;&#177;&#209;&#139;&#209;&#158; &#208;&#191;&#208;&#181;&#209;&#128;&#208;&#176;&#208;&#183;&#208;&#176;&#208;&#191;&#209;&#131;&#209;&#136;&#209;&#135;&#208;&#176;&#208;&#189;&#209;&#139; &#208;&#191;&#208;&#176;&#209;&#129;&#208;&#187;&#209;&#143; &#208;&#186;&#209;&#128;&#209;&#139;&#209;&#130;&#209;&#139;&#209;&#135;&#208;&#189;&#208;&#176;&#208;&#185; &#208;&#191;&#208;&#176;&#208;&#188;&#209;&#139;&#208;&#187;&#208;&#186;&#209;&#150;. &#208;&#159;&#208;&#176;&#208;&#188;&#209;&#139;&#208;&#187;&#208;&#186;&#208;&#176;: %1. &#208;&#159;&#208;&#190;&#209;&#158;&#208;&#189;&#209;&#139; &#208;&#176;&#208;&#180;&#208;&#177;&#209;&#150;&#209;&#130;&#208;&#176;&#208;&#186; &#208;&#189;&#208;&#181; &#208;&#177;&#209;&#139;&#209;&#158; &#208;&#183;&#208;&#176;&#209;&#133;&#208;&#176;&#208;&#178;&#208;&#176;&#208;&#189;&#209;&#139;.\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;The computer needs to be shut down due to a network connectivity issue.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101206T210027Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -75167,6 +75543,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;The logon hours restriction policy is applied to the logged on user. The user's session has been locked, disconnected or logged off depending on the policy setting. User Name: %1 Domain Name: %2\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110213T124734Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;The logon hours restriction policy is applied to the logged on user. The user's session has been locked, disconnected or logged off depending on the policy setting. User Name: %1 Domain Name: %2\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;The logon process was unable to display security and logon options when CTRL+ALT+DELETE was pressed.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100926T184904Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -75959,6 +76343,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;The servicing request received for package %1 cannot be satisfied since the package is not applicable.\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110213T110542Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#151;&#208;&#176;&#208;&#191;&#209;&#139;&#209;&#130; &#208;&#176;&#208;&#177;&#209;&#129;&#208;&#187;&#209;&#131;&#208;&#179;&#208;&#190;&#209;&#158;&#208;&#178;&#208;&#176;&#208;&#189;&#208;&#189;&#209;&#143;, &#208;&#176;&#209;&#130;&#209;&#128;&#209;&#139;&#208;&#188;&#208;&#176;&#208;&#189;&#209;&#139; &#208;&#180;&#208;&#187;&#209;&#143; &#208;&#191;&#208;&#176;&#208;&#186;&#209;&#131;&#208;&#189;&#208;&#186;&#208;&#176; %1, &#208;&#189;&#208;&#181; &#208;&#188;&#208;&#190;&#208;&#182;&#208;&#176; &#208;&#177;&#209;&#139;&#209;&#134;&#209;&#140; &#208;&#183;&#208;&#176;&#208;&#180;&#208;&#176;&#208;&#178;&#208;&#190;&#208;&#187;&#208;&#181;&#208;&#189;&#209;&#139; &#208;&#183;-&#208;&#183;&#208;&#176; &#208;&#189;&#208;&#181;&#208;&#191;&#209;&#128;&#209;&#139;&#208;&#180;&#208;&#176;&#209;&#130;&#208;&#189;&#208;&#176;&#209;&#129;&#209;&#134;&#209;&#150; &#208;&#191;&#208;&#176;&#208;&#186;&#209;&#131;&#208;&#189;&#208;&#186;&#208;&#176;.\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;The settings that you selected may result in unexpected behavior.  Are you sure you want to keep these settings?&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101223T183558Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -76007,6 +76399,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;The shell stopped unexpectedly and %1 was restarted.\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110213T124727Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;The shell stopped unexpectedly and %1 was restarted.\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;The shortcut or .pif may be read-only, or another program may be modifying them.\nClose all copies of this program, and then try again.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100713T163629Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -76287,6 +76687,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;The system was unable to convert a saved dump to a minidump.\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110213T124404Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#161;&#209;&#150;&#209;&#129;&#209;&#130;&#209;&#141;&#208;&#188;&#208;&#176; &#208;&#189;&#208;&#181; &#208;&#183;&#208;&#188;&#208;&#176;&#208;&#179;&#208;&#187;&#208;&#176; &#208;&#191;&#208;&#181;&#209;&#128;&#208;&#176;&#209;&#158;&#209;&#130;&#208;&#178;&#208;&#176;&#209;&#128;&#209;&#139;&#209;&#134;&#209;&#140; &#208;&#183;&#208;&#176;&#209;&#133;&#208;&#176;&#208;&#178;&#208;&#176;&#208;&#189;&#209;&#139; &#208;&#176;&#208;&#180;&#208;&#177;&#209;&#150;&#209;&#130;&#208;&#176;&#208;&#186; &#209;&#131; &#208;&#188;&#209;&#150;&#208;&#189;&#209;&#150;&#208;&#176;&#208;&#180;&#208;&#177;&#209;&#150;&#209;&#130;&#208;&#176;&#208;&#186;.\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;The system will now shut down and restart.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101021T140817Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -82479,6 +82887,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Unable to move dump file from the temporary location to the final location.\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110213T124416Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#157;&#208;&#181;&#208;&#188;&#208;&#176;&#208;&#179;&#209;&#135;&#209;&#139;&#208;&#188;&#208;&#176; &#208;&#191;&#208;&#181;&#209;&#128;&#208;&#176;&#208;&#188;&#209;&#143;&#209;&#129;&#209;&#134;&#209;&#150;&#209;&#134;&#209;&#140; &#209;&#132;&#208;&#176;&#208;&#185;&#208;&#187; &#208;&#176;&#208;&#180;&#208;&#177;&#209;&#150;&#209;&#130;&#208;&#186;&#208;&#176; &#208;&#183; &#209;&#135;&#208;&#176;&#209;&#129;&#208;&#190;&#208;&#178;&#208;&#176;&#208;&#179;&#208;&#176; &#209;&#158; &#208;&#186;&#208;&#176;&#208;&#189;&#209;&#135;&#208;&#176;&#209;&#130;&#208;&#186;&#208;&#190;&#208;&#178;&#208;&#176;&#208;&#181; &#209;&#128;&#208;&#176;&#208;&#183;&#208;&#188;&#209;&#143;&#209;&#136;&#209;&#135;&#209;&#141;&#208;&#189;&#208;&#189;&#208;&#181;.\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Unable to open %1.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100828T083129Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -82503,6 +82919,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Unable to produce a minidump file from the full dump file.\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110213T124419Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#157;&#208;&#181;&#208;&#188;&#208;&#176;&#208;&#179;&#209;&#135;&#209;&#139;&#208;&#188;&#208;&#176; &#208;&#183;&#209;&#128;&#208;&#176;&#208;&#177;&#209;&#150;&#209;&#134;&#209;&#140; &#209;&#132;&#208;&#176;&#208;&#185;&#208;&#187; &#208;&#188;&#209;&#150;&#208;&#189;&#209;&#150;&#208;&#176;&#208;&#180;&#208;&#177;&#209;&#150;&#209;&#130;&#208;&#186;&#208;&#176; &#208;&#183; &#209;&#132;&#208;&#176;&#208;&#185;&#208;&#187;&#208;&#176; &#208;&#191;&#208;&#190;&#209;&#158;&#208;&#189;&#208;&#176;&#208;&#179;&#208;&#176; &#208;&#176;&#208;&#180;&#208;&#177;&#209;&#150;&#209;&#130;&#208;&#186;&#208;&#176;.\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Unable to read system shutdown configuration information from the registry.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101021T133353Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -82511,6 +82935,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Unable to read system shutdown configuration information from the registry.\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110213T124410Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#157;&#208;&#181;&#208;&#188;&#208;&#176;&#208;&#179;&#209;&#135;&#209;&#139;&#208;&#188;&#208;&#176; &#208;&#191;&#209;&#128;&#208;&#176;&#209;&#135;&#209;&#139;&#209;&#130;&#208;&#176;&#209;&#134;&#209;&#140; &#209;&#150;&#208;&#189;&#209;&#132;&#208;&#176;&#209;&#128;&#208;&#188;&#208;&#176;&#209;&#134;&#209;&#139;&#209;&#142; &#208;&#189;&#208;&#176;&#208;&#187;&#208;&#176;&#208;&#180;&#208;&#176;&#209;&#158; &#208;&#178;&#209;&#139;&#208;&#186;&#208;&#187;&#209;&#142;&#209;&#135;&#209;&#141;&#208;&#189;&#208;&#189;&#209;&#143; &#209;&#129;&#209;&#150;&#209;&#129;&#209;&#130;&#209;&#141;&#208;&#188;&#209;&#139; &#208;&#183; &#209;&#128;&#209;&#141;&#208;&#181;&#209;&#129;&#209;&#130;&#209;&#128;&#208;&#176;.\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Unable to run command.\nThe folder '%1' has been removed.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101122T124520Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -82911,6 +83343,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Uninstall Pending\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110213T111121Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#167;&#208;&#176;&#208;&#186;&#208;&#176;&#208;&#189;&#208;&#189;&#208;&#181; &#208;&#178;&#209;&#139;&#209;&#129;&#209;&#130;&#208;&#176;&#208;&#187;&#209;&#143;&#208;&#178;&#208;&#176;&#208;&#189;&#208;&#189;&#209;&#143;\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Uninstall Requested&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101102T152521Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -83447,6 +83887,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Update %1 of package %2 failed to be turned off. Status: %3.\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110213T110708Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#144;&#208;&#177;&#208;&#189;&#208;&#176;&#209;&#158;&#208;&#187;&#208;&#181;&#208;&#189;&#208;&#189;&#208;&#181; %1 &#208;&#191;&#208;&#176;&#208;&#186;&#209;&#131;&#208;&#189;&#208;&#186;&#208;&#176; %2 &#208;&#189;&#208;&#181; &#209;&#158;&#208;&#180;&#208;&#176;&#208;&#187;&#208;&#190;&#209;&#129;&#209;&#143; &#208;&#178;&#209;&#139;&#208;&#186;&#208;&#187;&#209;&#142;&#209;&#135;&#209;&#139;&#209;&#134;&#209;&#140;. &#208;&#161;&#209;&#130;&#208;&#176;&#208;&#189;: %3.\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Update %1 of package %2 failed to be turned on.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101106T153436Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -83463,6 +83911,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Update %1 of package %2 failed to be turned on. Status: %3.\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110213T110658Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#144;&#208;&#177;&#208;&#189;&#208;&#176;&#209;&#158;&#208;&#187;&#208;&#181;&#208;&#189;&#208;&#189;&#208;&#181; %1 &#208;&#191;&#208;&#176;&#208;&#186;&#209;&#131;&#208;&#189;&#208;&#186;&#208;&#176; %2 &#208;&#189;&#208;&#181; &#209;&#158;&#208;&#180;&#208;&#176;&#208;&#187;&#208;&#190;&#209;&#129;&#209;&#143; &#209;&#158;&#208;&#186;&#208;&#187;&#209;&#142;&#209;&#135;&#209;&#139;&#209;&#134;&#209;&#140;. &#208;&#161;&#209;&#130;&#208;&#176;&#208;&#189;: %3.\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Update &amp;all...&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100704T153219Z&quot; changeid=&quot;alex&quot;&gt;
+@@ -84159,6 +84615,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;User Logoff Notification for Customer Experience Improvement Program\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110213T124720Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;User Logoff Notification for Customer Experience Improvement Program\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;User Logon Notification for Customer Experience Improvement Program&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100927T185404Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -84167,6 +84631,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;User Logon Notification for Customer Experience Improvement Program\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110213T124712Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;User Logon Notification for Customer Experience Improvement Program\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;User Name&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101118T081455Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -85359,6 +85831,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;WDI Diag\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110213T124342Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;WDI-&#208;&#180;&#209;&#139;&#209;&#143;&#208;&#187;&#208;&#190;&#208;&#179;\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;WMV HD&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100718T072300Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -86663,6 +87143,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Windows Servicing completed the process of changing update %1 from package %2 (%3) into %4(%5) state\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110213T110305Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#144;&#208;&#177;&#209;&#129;&#208;&#187;&#209;&#131;&#208;&#179;&#208;&#190;&#209;&#158;&#208;&#178;&#208;&#176;&#208;&#189;&#208;&#189;&#208;&#181; Windows &#209;&#129;&#208;&#186;&#208;&#190;&#208;&#189;&#209;&#135;&#209;&#139;&#208;&#187;&#208;&#176; &#208;&#191;&#209;&#128;&#208;&#176;&#209;&#134;&#209;&#141;&#209;&#129; &#208;&#183;&#208;&#188;&#209;&#143;&#208;&#189;&#208;&#181;&#208;&#189;&#208;&#189;&#209;&#143; &#208;&#176;&#208;&#177;&#208;&#189;&#208;&#176;&#209;&#158;&#208;&#187;&#208;&#181;&#208;&#189;&#208;&#189;&#209;&#143; %1 &#208;&#183; &#208;&#191;&#208;&#176;&#208;&#186;&#209;&#131;&#208;&#189;&#208;&#186;&#208;&#176; %2 (%3) &#209;&#131; &#209;&#129;&#209;&#130;&#208;&#176;&#208;&#189; %4(%5)\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Windows Servicing disabled hotpatching for package %1(%2) because a file could not be replaced immediately.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101103T073003Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -86671,6 +87159,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Windows Servicing disabled hotpatching for package %1(%2) because a file could not be replaced immediately.\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110213T110437Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#144;&#208;&#177;&#209;&#129;&#208;&#187;&#209;&#131;&#208;&#179;&#208;&#190;&#209;&#158;&#208;&#178;&#208;&#176;&#208;&#189;&#208;&#189;&#208;&#181; Windows &#208;&#178;&#209;&#139;&#208;&#186;&#208;&#187;&#209;&#142;&#209;&#135;&#209;&#139;&#208;&#187;&#208;&#176; HotPatching &#208;&#180;&#208;&#187;&#209;&#143; &#208;&#191;&#208;&#176;&#208;&#186;&#209;&#131;&#208;&#189;&#208;&#186;&#208;&#176; %1(%2), &#208;&#177;&#208;&#190; &#209;&#132;&#208;&#176;&#208;&#185;&#208;&#187; &#208;&#189;&#208;&#181; &#208;&#188;&#208;&#190;&#208;&#182;&#208;&#176; &#208;&#177;&#209;&#139;&#209;&#134;&#209;&#140; &#208;&#183;&#208;&#176;&#208;&#188;&#208;&#181;&#208;&#189;&#208;&#181;&#208;&#189;&#209;&#139; &#209;&#150;&#208;&#188;&#208;&#179;&#208;&#189;&#208;&#181;&#208;&#189;&#208;&#189;&#208;&#176;.\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Windows Servicing disabled hotpatching for package %1(%2) because a reboot is required to complete a prior operation.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101103T072108Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -86679,6 +87175,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Windows Servicing disabled hotpatching for package %1(%2) because a reboot is required to complete a prior operation.\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110213T110350Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#144;&#208;&#177;&#209;&#129;&#208;&#187;&#209;&#131;&#208;&#179;&#208;&#190;&#209;&#158;&#208;&#178;&#208;&#176;&#208;&#189;&#208;&#189;&#208;&#181; Windows &#208;&#178;&#209;&#139;&#208;&#186;&#208;&#187;&#209;&#142;&#209;&#135;&#209;&#139;&#208;&#187;&#208;&#176; HotPatching &#208;&#180;&#208;&#187;&#209;&#143; &#208;&#191;&#208;&#176;&#208;&#186;&#209;&#131;&#208;&#189;&#208;&#186;&#208;&#176; %1(%2), &#208;&#177;&#208;&#190; &#208;&#180;&#208;&#187;&#209;&#143; &#209;&#129;&#208;&#186;&#208;&#176;&#208;&#189;&#209;&#135;&#209;&#141;&#208;&#189;&#208;&#189;&#209;&#143; &#208;&#191;&#208;&#176;&#208;&#191;&#209;&#143;&#209;&#128;&#209;&#141;&#208;&#180;&#208;&#189;&#209;&#143;&#208;&#185; &#208;&#176;&#208;&#191;&#208;&#181;&#209;&#128;&#208;&#176;&#209;&#134;&#209;&#139;&#209;&#150; &#208;&#191;&#208;&#176;&#209;&#130;&#209;&#128;&#209;&#141;&#208;&#177;&#208;&#189;&#209;&#139; &#208;&#191;&#208;&#181;&#209;&#128;&#208;&#176;&#208;&#183;&#208;&#176;&#208;&#191;&#209;&#131;&#209;&#129;&#208;&#186;.\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Windows Servicing disabled hotpatching for package %1(%2) because required files or custom actions are incompatible with hotpatching.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101103T073124Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -86687,6 +87191,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Windows Servicing disabled hotpatching for package %1(%2) because required files or custom actions are incompatible with hotpatching.\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110213T110441Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#144;&#208;&#177;&#209;&#129;&#208;&#187;&#209;&#131;&#208;&#179;&#208;&#190;&#209;&#158;&#208;&#178;&#208;&#176;&#208;&#189;&#208;&#189;&#208;&#181; Windows &#208;&#178;&#209;&#139;&#208;&#186;&#208;&#187;&#209;&#142;&#209;&#135;&#209;&#139;&#208;&#187;&#208;&#176; HotPatching &#208;&#180;&#208;&#187;&#209;&#143; &#208;&#191;&#208;&#176;&#208;&#186;&#209;&#131;&#208;&#189;&#208;&#186;&#208;&#176; %1(%2), &#208;&#177;&#208;&#190; &#208;&#191;&#208;&#176;&#209;&#130;&#209;&#128;&#209;&#141;&#208;&#177;&#208;&#189;&#209;&#139;&#209;&#143; &#209;&#132;&#208;&#176;&#208;&#185;&#208;&#187;&#209;&#139; &#209;&#134;&#209;&#150; &#208;&#180;&#208;&#176;&#208;&#191;&#208;&#176;&#209;&#129;&#208;&#176;&#208;&#178;&#208;&#176;&#208;&#189;&#209;&#139;&#209;&#143; &#208;&#180;&#208;&#183;&#208;&#181;&#209;&#143;&#208;&#189;&#208;&#189;&#209;&#150; &#208;&#189;&#208;&#181;&#209;&#129;&#209;&#131;&#208;&#188;&#209;&#143;&#209;&#136;&#209;&#135;&#208;&#176;&#208;&#187;&#209;&#140;&#208;&#189;&#209;&#139;&#209;&#143; &#208;&#183; HotPatching.\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Windows Servicing disabled hotpatching for package %1(%2) because servicing is being performed offline.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101103T071823Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -86695,6 +87207,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Windows Servicing disabled hotpatching for package %1(%2) because servicing is being performed offline.\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110213T110335Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#144;&#208;&#177;&#209;&#129;&#208;&#187;&#209;&#131;&#208;&#179;&#208;&#190;&#209;&#158;&#208;&#178;&#208;&#176;&#208;&#189;&#208;&#189;&#208;&#181; Windows &#208;&#178;&#209;&#139;&#208;&#186;&#208;&#187;&#209;&#142;&#209;&#135;&#209;&#139;&#208;&#187;&#208;&#176; HotPatching &#208;&#180;&#208;&#187;&#209;&#143; &#208;&#191;&#208;&#176;&#208;&#186;&#209;&#131;&#208;&#189;&#208;&#186;&#208;&#176; %1(%2), &#208;&#177;&#208;&#190; &#208;&#176;&#208;&#177;&#209;&#129;&#208;&#187;&#209;&#131;&#208;&#179;&#208;&#190;&#209;&#158;&#208;&#178;&#208;&#176;&#208;&#189;&#208;&#189;&#208;&#181; &#208;&#178;&#209;&#139;&#208;&#186;&#208;&#190;&#208;&#189;&#208;&#178;&#208;&#176;&#208;&#181;&#209;&#134;&#209;&#134;&#208;&#176; &#208;&#191;&#208;&#176;&#208;&#183;&#208;&#176;&#209;&#129;&#208;&#181;&#209;&#134;&#209;&#150;&#209;&#158;&#208;&#189;&#208;&#176;.\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Windows Servicing disabled hotpatching for package %2(%3) because hotpatch update %1 will not be installed.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101103T073837Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -86703,6 +87223,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Windows Servicing disabled hotpatching for package %2(%3) because hotpatch update %1 will not be installed.\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110213T110453Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#144;&#208;&#177;&#209;&#129;&#208;&#187;&#209;&#131;&#208;&#179;&#208;&#190;&#209;&#158;&#208;&#178;&#208;&#176;&#208;&#189;&#208;&#189;&#208;&#181; Windows &#208;&#178;&#209;&#139;&#208;&#186;&#208;&#187;&#209;&#142;&#209;&#135;&#209;&#139;&#208;&#187;&#208;&#176; HotPatching &#208;&#180;&#208;&#187;&#209;&#143; &#208;&#191;&#208;&#176;&#208;&#186;&#209;&#131;&#208;&#189;&#208;&#186;&#208;&#176; %2(%3), &#208;&#177;&#208;&#190; &#208;&#176;&#208;&#177;&#208;&#189;&#208;&#176;&#209;&#158;&#208;&#187;&#208;&#181;&#208;&#189;&#208;&#189;&#208;&#181; HotPatch %1 &#208;&#189;&#208;&#181; &#208;&#177;&#209;&#131;&#208;&#180;&#208;&#183;&#208;&#181; &#209;&#158;&#209;&#129;&#209;&#130;&#208;&#176;&#208;&#187;&#209;&#143;&#208;&#178;&#208;&#176;&#208;&#189;&#208;&#176;&#208;&#181;.\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Windows Servicing disabled hotpatching for package %2(%3) because update %1 is being set to state %4(%5).&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101103T072424Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -86711,6 +87239,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Windows Servicing disabled hotpatching for package %2(%3) because update %1 is being set to state %4(%5).\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110213T110403Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#144;&#208;&#177;&#209;&#129;&#208;&#187;&#209;&#131;&#208;&#179;&#208;&#190;&#209;&#158;&#208;&#178;&#208;&#176;&#208;&#189;&#208;&#189;&#208;&#181; Windows &#208;&#178;&#209;&#139;&#208;&#186;&#208;&#187;&#209;&#142;&#209;&#135;&#209;&#139;&#208;&#187;&#208;&#176; HotPatching &#208;&#180;&#208;&#187;&#209;&#143; &#208;&#191;&#208;&#176;&#208;&#186;&#209;&#131;&#208;&#189;&#208;&#186;&#208;&#176; %2(%3), &#208;&#177;&#208;&#190; &#208;&#176;&#208;&#177;&#208;&#189;&#208;&#176;&#209;&#158;&#208;&#187;&#208;&#181;&#208;&#189;&#208;&#189;&#209;&#142; %1 &#208;&#177;&#209;&#139;&#209;&#158; &#208;&#191;&#209;&#128;&#209;&#139;&#208;&#183;&#208;&#189;&#208;&#176;&#209;&#135;&#208;&#176;&#208;&#189;&#209;&#139; &#209;&#129;&#209;&#130;&#208;&#176;&#208;&#189; %4(%5).\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Windows Servicing disabled hotpatching for package %2(%3) because update %1 is not enabled for hotpatching.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101103T071923Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -86719,6 +87255,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Windows Servicing disabled hotpatching for package %2(%3) because update %1 is not enabled for hotpatching.\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110213T110323Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#144;&#208;&#177;&#209;&#129;&#208;&#187;&#209;&#131;&#208;&#179;&#208;&#190;&#209;&#158;&#208;&#178;&#208;&#176;&#208;&#189;&#208;&#189;&#208;&#181; Windows &#208;&#178;&#209;&#139;&#208;&#186;&#208;&#187;&#209;&#142;&#209;&#135;&#209;&#139;&#208;&#187;&#208;&#176; HotPatching &#208;&#180;&#208;&#187;&#209;&#143; &#208;&#191;&#208;&#176;&#208;&#186;&#209;&#131;&#208;&#189;&#208;&#186;&#208;&#176; %2(%3), &#208;&#177;&#208;&#190; &#208;&#176;&#208;&#177;&#208;&#189;&#208;&#176;&#209;&#158;&#208;&#187;&#208;&#181;&#208;&#189;&#208;&#189;&#208;&#181; %1 &#208;&#189;&#208;&#181; &#208;&#191;&#208;&#176;&#208;&#180;&#209;&#130;&#209;&#128;&#209;&#139;&#208;&#188;&#208;&#187;&#209;&#150;&#208;&#178;&#208;&#176;&#208;&#181; HotPatching.\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Windows Servicing disabled hotpatching for package %2(%3) to process regular update %1.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101103T074055Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -86727,6 +87271,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Windows Servicing disabled hotpatching for package %2(%3) to process regular update %1.\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110213T110457Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#144;&#208;&#177;&#209;&#129;&#208;&#187;&#209;&#131;&#208;&#179;&#208;&#190;&#209;&#158;&#208;&#178;&#208;&#176;&#208;&#189;&#208;&#189;&#208;&#181; Windows &#208;&#178;&#209;&#139;&#208;&#186;&#208;&#187;&#209;&#142;&#209;&#135;&#209;&#139;&#208;&#187;&#208;&#176; HotPatching &#208;&#180;&#208;&#187;&#209;&#143; &#208;&#191;&#208;&#176;&#208;&#186;&#209;&#131;&#208;&#189;&#208;&#186;&#208;&#176; %2(%3) &#208;&#180;&#208;&#187;&#209;&#143; &#208;&#176;&#208;&#191;&#209;&#128;&#208;&#176;&#209;&#134;&#208;&#190;&#209;&#158;&#208;&#186;&#209;&#150; &#208;&#183;&#208;&#178;&#209;&#139;&#209;&#135;&#208;&#176;&#208;&#185;&#208;&#189;&#208;&#176;&#208;&#179;&#208;&#176; &#208;&#176;&#208;&#177;&#208;&#189;&#208;&#176;&#209;&#158;&#208;&#187;&#208;&#181;&#208;&#189;&#208;&#189;&#209;&#143; %1.\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Windows Servicing failed to complete the process of changing update %1 from package %2(%3) into %4(%5) state&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101103T080233Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -86735,6 +87287,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Windows Servicing failed to complete the process of changing update %1 from package %2(%3) into %4(%5) state\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110213T110801Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#144;&#208;&#177;&#209;&#129;&#208;&#187;&#209;&#131;&#208;&#179;&#208;&#190;&#209;&#158;&#208;&#178;&#208;&#176;&#208;&#189;&#208;&#189;&#209;&#142; Windows &#208;&#189;&#208;&#181; &#209;&#158;&#208;&#180;&#208;&#176;&#208;&#187;&#208;&#190;&#209;&#129;&#209;&#143; &#209;&#129;&#208;&#186;&#208;&#190;&#208;&#189;&#209;&#135;&#209;&#139;&#209;&#134;&#209;&#140; &#208;&#191;&#209;&#128;&#208;&#176;&#209;&#134;&#209;&#141;&#209;&#129; &#208;&#183;&#208;&#188;&#209;&#143;&#208;&#189;&#208;&#181;&#208;&#189;&#208;&#189;&#209;&#143; &#208;&#176;&#208;&#177;&#208;&#189;&#208;&#176;&#209;&#158;&#208;&#187;&#208;&#181;&#208;&#189;&#208;&#189;&#209;&#143; %1 &#208;&#183; &#208;&#191;&#208;&#176;&#208;&#186;&#209;&#131;&#208;&#189;&#208;&#186;&#208;&#176; %2 (%3) &#209;&#131; &#209;&#129;&#209;&#130;&#208;&#176;&#208;&#189; %4(%5)\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Windows Servicing failed to complete the process of setting package %1 (%2) into %3(%4) state&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101103T080122Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -86743,6 +87303,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Windows Servicing failed to complete the process of setting package %1 (%2) into %3(%4) state\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110213T110729Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#144;&#208;&#177;&#209;&#129;&#208;&#187;&#209;&#131;&#208;&#179;&#208;&#190;&#209;&#158;&#208;&#178;&#208;&#176;&#208;&#189;&#208;&#189;&#209;&#142; Windows &#208;&#189;&#208;&#181; &#209;&#158;&#208;&#180;&#208;&#176;&#208;&#187;&#208;&#190;&#209;&#129;&#209;&#143; &#209;&#129;&#208;&#186;&#208;&#190;&#208;&#189;&#209;&#135;&#209;&#139;&#209;&#134;&#209;&#140; &#208;&#191;&#209;&#128;&#208;&#176;&#209;&#134;&#209;&#141;&#209;&#129; &#208;&#191;&#209;&#128;&#209;&#139;&#208;&#183;&#208;&#189;&#208;&#176;&#209;&#135;&#209;&#141;&#208;&#189;&#208;&#189;&#209;&#143; &#208;&#191;&#208;&#176;&#208;&#186;&#209;&#131;&#208;&#189;&#208;&#186;&#209;&#131; %1 (%2) &#209;&#129;&#209;&#130;&#208;&#176;&#208;&#189;&#209;&#131; %3(%4)\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Windows Servicing failed to perform hotpatching for package %1(%2) because of an error (%8).&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101103T073657Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -86751,6 +87319,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Windows Servicing failed to perform hotpatching for package %1(%2) because of an error (%8).\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110213T110449Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#144;&#208;&#177;&#209;&#129;&#208;&#187;&#209;&#131;&#208;&#179;&#208;&#190;&#209;&#158;&#208;&#178;&#208;&#176;&#208;&#189;&#208;&#189;&#209;&#142; Windows &#208;&#189;&#208;&#181; &#209;&#158;&#208;&#180;&#208;&#176;&#208;&#187;&#208;&#190;&#209;&#129;&#209;&#143; &#208;&#178;&#209;&#139;&#208;&#186;&#208;&#176;&#208;&#189;&#208;&#176;&#209;&#134;&#209;&#140; HotPatching &#208;&#180;&#208;&#187;&#209;&#143; &#208;&#191;&#208;&#176;&#208;&#186;&#209;&#131;&#208;&#189;&#208;&#186;&#208;&#176; %1(%2) &#208;&#183;-&#208;&#183;&#208;&#176; &#208;&#191;&#208;&#176;&#208;&#188;&#209;&#139;&#208;&#187;&#208;&#186;&#209;&#150; (%8).\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Windows Servicing failed to perform hotpatching for package %1(%2) because the hotpatch installer required a reboot.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101103T073610Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -86759,6 +87335,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Windows Servicing failed to perform hotpatching for package %1(%2) because the hotpatch installer required a reboot.\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110213T110445Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#144;&#208;&#177;&#209;&#129;&#208;&#187;&#209;&#131;&#208;&#179;&#208;&#190;&#209;&#158;&#208;&#178;&#208;&#176;&#208;&#189;&#208;&#189;&#209;&#142; Windows &#208;&#189;&#208;&#181; &#209;&#158;&#208;&#180;&#208;&#176;&#208;&#187;&#208;&#190;&#209;&#129;&#209;&#143; &#208;&#178;&#209;&#139;&#208;&#186;&#208;&#176;&#208;&#189;&#208;&#176;&#209;&#134;&#209;&#140; HotPatching &#208;&#180;&#208;&#187;&#209;&#143; &#208;&#191;&#208;&#176;&#208;&#186;&#209;&#131;&#208;&#189;&#208;&#186;&#208;&#176; %1(%2), &#208;&#177;&#208;&#190; &#209;&#158;&#209;&#129;&#209;&#130;&#208;&#176;&#208;&#187;&#209;&#145;&#209;&#158;&#208;&#189;&#209;&#150;&#208;&#186; HotPatch &#208;&#183;&#208;&#176;&#208;&#191;&#208;&#176;&#209;&#130;&#209;&#128;&#208;&#176;&#208;&#177;&#208;&#176;&#208;&#178;&#208;&#176;&#209;&#158; &#208;&#191;&#208;&#181;&#209;&#128;&#208;&#176;&#208;&#183;&#208;&#176;&#208;&#191;&#209;&#131;&#209;&#129;&#208;&#186;.\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Windows Servicing has required a reboot to complete the installation of hotpatching package %1(%2).&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101121T131106Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -86767,6 +87351,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Windows Servicing has required a reboot to complete the installation of hotpatching package %1(%2).\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110213T110400Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#144;&#208;&#177;&#209;&#129;&#208;&#187;&#209;&#131;&#208;&#179;&#208;&#190;&#209;&#158;&#208;&#178;&#208;&#176;&#208;&#189;&#208;&#189;&#208;&#181; Windows &#208;&#183;&#208;&#176;&#208;&#191;&#208;&#176;&#209;&#130;&#209;&#128;&#208;&#176;&#208;&#177;&#208;&#176;&#208;&#178;&#208;&#176;&#208;&#187;&#208;&#176; &#208;&#191;&#208;&#181;&#209;&#128;&#208;&#176;&#208;&#183;&#208;&#176;&#208;&#191;&#209;&#131;&#209;&#129;&#208;&#186; &#208;&#180;&#208;&#187;&#209;&#143; &#209;&#129;&#208;&#186;&#208;&#176;&#208;&#189;&#209;&#135;&#209;&#141;&#208;&#189;&#208;&#189;&#209;&#143; &#209;&#158;&#209;&#129;&#209;&#130;&#208;&#176;&#208;&#187;&#209;&#143;&#208;&#178;&#208;&#176;&#208;&#189;&#208;&#189;&#209;&#143; &#208;&#191;&#208;&#176;&#208;&#186;&#209;&#131;&#208;&#189;&#208;&#186;&#208;&#176; HotPatch %1(%2).\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Windows Servicing identified that package %1(%2) is not applicable for this system&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101103T072543Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -86775,6 +87367,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Windows Servicing identified that package %1(%2) is not applicable for this system\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110213T110413Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#144;&#208;&#177;&#209;&#129;&#208;&#187;&#209;&#131;&#208;&#179;&#208;&#190;&#209;&#158;&#208;&#178;&#208;&#176;&#208;&#189;&#208;&#189;&#208;&#181; Windows &#208;&#178;&#209;&#139;&#208;&#183;&#208;&#189;&#208;&#176;&#209;&#135;&#209;&#139;&#208;&#187;&#208;&#176;, &#209;&#136;&#209;&#130;&#208;&#190; &#208;&#191;&#208;&#176;&#208;&#186;&#209;&#131;&#208;&#189;&#208;&#176;&#208;&#186; %1(%2) &#208;&#189;&#208;&#181;&#208;&#191;&#209;&#128;&#209;&#139;&#208;&#180;&#208;&#176;&#209;&#130;&#208;&#189;&#209;&#139; &#208;&#180;&#208;&#187;&#209;&#143; &#208;&#179;&#209;&#141;&#209;&#130;&#208;&#176;&#208;&#181; &#209;&#129;&#209;&#150;&#209;&#129;&#209;&#130;&#209;&#141;&#208;&#188;&#209;&#139;\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Windows Servicing is processing hotpatch package %1(%2).&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101103T071916Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -86783,6 +87383,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Windows Servicing is processing hotpatch package %1(%2).\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110213T110310Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#144;&#208;&#177;&#209;&#129;&#208;&#187;&#209;&#131;&#208;&#179;&#208;&#190;&#209;&#158;&#208;&#178;&#208;&#176;&#208;&#189;&#208;&#189;&#208;&#181; Windows &#208;&#176;&#208;&#191;&#209;&#128;&#208;&#176;&#209;&#134;&#208;&#190;&#209;&#158;&#208;&#178;&#208;&#176;&#208;&#181; &#208;&#191;&#208;&#176;&#208;&#186;&#209;&#131;&#208;&#189;&#208;&#176;&#208;&#186; HotPatch %1(%2).&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Windows Servicing is setting package %1(%2) state to %3(%4)&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101103T071852Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -86791,6 +87399,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Windows Servicing is setting package %1(%2) state to %3(%4)\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110213T110234Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#144;&#208;&#177;&#209;&#129;&#208;&#187;&#209;&#131;&#208;&#179;&#208;&#190;&#209;&#158;&#208;&#178;&#208;&#176;&#208;&#189;&#208;&#189;&#208;&#181; Windows &#208;&#191;&#209;&#128;&#209;&#139;&#208;&#183;&#208;&#189;&#208;&#176;&#209;&#135;&#208;&#176;&#208;&#181; &#208;&#191;&#208;&#176;&#208;&#186;&#209;&#131;&#208;&#189;&#208;&#186;&#209;&#131; %1(%2) &#209;&#129;&#209;&#130;&#208;&#176;&#208;&#189; %3(%4)\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Windows Servicing required reboot to complete the process of changing update %1 from package %2(%3) into %4(%5) state&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101103T072913Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -86799,6 +87415,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Windows Servicing required reboot to complete the process of changing update %1 from package %2(%3) into %4(%5) state\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110213T110434Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#144;&#208;&#177;&#209;&#129;&#208;&#187;&#209;&#131;&#208;&#179;&#208;&#190;&#209;&#158;&#208;&#178;&#208;&#176;&#208;&#189;&#208;&#189;&#208;&#181; Windows &#208;&#183;&#208;&#176;&#208;&#191;&#208;&#176;&#209;&#130;&#209;&#128;&#208;&#176;&#208;&#177;&#208;&#176;&#208;&#178;&#208;&#176;&#208;&#187;&#208;&#176; &#208;&#191;&#208;&#181;&#209;&#128;&#208;&#176;&#208;&#183;&#208;&#176;&#208;&#191;&#209;&#131;&#209;&#129;&#208;&#186; &#208;&#180;&#208;&#187;&#209;&#143; &#209;&#129;&#208;&#186;&#208;&#176;&#208;&#189;&#209;&#135;&#209;&#141;&#208;&#189;&#208;&#189;&#209;&#143; &#208;&#191;&#209;&#128;&#208;&#176;&#209;&#134;&#209;&#141;&#209;&#129;&#209;&#131; &#208;&#183;&#208;&#188;&#209;&#143;&#208;&#189;&#208;&#181;&#208;&#189;&#208;&#189;&#209;&#143; &#208;&#176;&#208;&#177;&#208;&#189;&#208;&#176;&#209;&#158;&#208;&#187;&#208;&#181;&#208;&#189;&#208;&#189;&#209;&#143; %1 &#208;&#183; &#208;&#191;&#208;&#176;&#208;&#186;&#209;&#131;&#208;&#189;&#208;&#186;&#208;&#176; %2 (%3) &#209;&#131; &#209;&#129;&#209;&#130;&#208;&#176;&#208;&#189; %4(%5)\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Windows Servicing started a process of changing package %1(%2) state from %3(%4) to %5(%6)&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101103T071838Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -86807,6 +87431,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Windows Servicing started a process of changing package %1(%2) state from %3(%4) to %5(%6)\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110213T110225Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#144;&#208;&#177;&#209;&#129;&#208;&#187;&#209;&#131;&#208;&#179;&#208;&#190;&#209;&#158;&#208;&#178;&#208;&#176;&#208;&#189;&#208;&#189;&#208;&#181; Windows &#208;&#191;&#208;&#176;&#209;&#135;&#208;&#176;&#208;&#187;&#208;&#190; &#208;&#191;&#209;&#128;&#208;&#176;&#209;&#134;&#209;&#141;&#209;&#129; &#208;&#183;&#208;&#188;&#209;&#143;&#208;&#189;&#208;&#181;&#208;&#189;&#208;&#189;&#209;&#143; &#208;&#191;&#208;&#176;&#208;&#186;&#209;&#131;&#208;&#189;&#208;&#186;&#208;&#176; %1(%2) &#209;&#129;&#209;&#130;&#208;&#176;&#208;&#189;&#209;&#131; %3(%4) &#209;&#131; &#209;&#129;&#209;&#130;&#208;&#176;&#208;&#189; %5(%6)\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Windows Servicing successfully installed hotpatching package %1(%2).&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101103T072142Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -86815,6 +87447,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Windows Servicing successfully installed hotpatching package %1(%2).\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110213T110356Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#144;&#208;&#177;&#209;&#129;&#208;&#187;&#209;&#131;&#208;&#179;&#208;&#190;&#209;&#158;&#208;&#178;&#208;&#176;&#208;&#189;&#208;&#189;&#208;&#181; Windows &#208;&#191;&#208;&#176;&#209;&#129;&#208;&#191;&#209;&#143;&#209;&#133;&#208;&#190;&#208;&#178;&#208;&#176; &#209;&#158;&#209;&#129;&#209;&#130;&#208;&#176;&#208;&#187;&#209;&#143;&#208;&#178;&#208;&#176;&#208;&#187;&#208;&#176; &#208;&#191;&#208;&#176;&#208;&#186;&#209;&#131;&#208;&#189;&#208;&#176;&#208;&#186; HotPatch %1(%2).\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Windows Servicing successfully set package %1(%2) state to %3(%4)&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101103T071904Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -86823,6 +87463,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Windows Servicing successfully set package %1(%2) state to %3(%4)\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110213T110252Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#144;&#208;&#177;&#209;&#129;&#208;&#187;&#209;&#131;&#208;&#179;&#208;&#190;&#209;&#158;&#208;&#178;&#208;&#176;&#208;&#189;&#208;&#189;&#208;&#181; Windows &#208;&#191;&#208;&#176;&#209;&#129;&#208;&#191;&#209;&#143;&#209;&#133;&#208;&#190;&#208;&#178;&#208;&#176; &#208;&#191;&#209;&#128;&#209;&#139;&#208;&#183;&#208;&#189;&#208;&#176;&#209;&#135;&#209;&#139;&#208;&#187;&#208;&#176; &#208;&#191;&#208;&#176;&#208;&#186;&#209;&#131;&#208;&#189;&#208;&#186;&#209;&#131; %1(%2) &#209;&#129;&#209;&#130;&#208;&#176;&#208;&#189; %3(%4)\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Windows Setup has not changed the requested settings.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100921T193728Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -87871,6 +88519,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Windows is in Notification period.\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110213T132131Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;Windows &#209;&#131; &#208;&#191;&#208;&#181;&#209;&#128;&#209;&#139;&#209;&#143;&#208;&#180;&#208;&#183;&#208;&#181; &#208;&#176;&#208;&#191;&#208;&#176;&#208;&#178;&#209;&#143;&#209;&#136;&#209;&#135;&#209;&#141;&#208;&#189;&#208;&#189;&#209;&#143;&#209;&#158;.\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Windows is preparing to shut down...&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100728T123611Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -87983,6 +88639,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Windows license validated.\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110213T124745Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#155;&#209;&#150;&#209;&#134;&#209;&#141;&#208;&#189;&#208;&#183;&#209;&#150;&#209;&#143; Windows &#208;&#191;&#208;&#176;&#209;&#134;&#208;&#178;&#208;&#181;&#209;&#128;&#208;&#180;&#208;&#182;&#208;&#176;&#208;&#189;&#208;&#176;&#209;&#143;.\r\n&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Windows needs different credentials&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100927T183409Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -88399,6 +89063,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;WordPad can&#239;&#191;&#189;t insert the picture.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110213T105203Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;WordPad &#208;&#189;&#208;&#181; &#208;&#188;&#208;&#190;&#208;&#182;&#208;&#176; &#209;&#158;&#209;&#129;&#209;&#130;&#208;&#176;&#208;&#178;&#209;&#150;&#209;&#134;&#209;&#140; &#208;&#178;&#209;&#150;&#208;&#180;&#208;&#176;&#209;&#128;&#209;&#139;&#209;&#129;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;WordPad does not support all of the features of this document&#194;&#146;s format.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100905T124319Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -88415,6 +89087,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;WordPad does not support all of the features of this document&#239;&#191;&#189;s format. Some content might be missing or displayed improperly.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110213T105238Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;WordPad &#208;&#189;&#208;&#181; &#208;&#191;&#208;&#176;&#208;&#180;&#209;&#130;&#209;&#128;&#209;&#139;&#208;&#188;&#208;&#187;&#209;&#150;&#208;&#178;&#208;&#176;&#208;&#181; &#209;&#158;&#209;&#129;&#208;&#181; &#209;&#132;&#209;&#131;&#208;&#189;&#208;&#186;&#209;&#134;&#209;&#139;&#209;&#150; &#208;&#179;&#209;&#141;&#209;&#130;&#208;&#176;&#208;&#179;&#208;&#176; &#209;&#132;&#208;&#176;&#209;&#128;&#208;&#188;&#208;&#176;&#209;&#130;&#209;&#131; &#208;&#180;&#208;&#176;&#208;&#186;&#209;&#131;&#208;&#188;&#208;&#181;&#208;&#189;&#209;&#130;&#208;&#176;. &#208;&#157;&#208;&#181;&#208;&#186;&#208;&#176;&#209;&#130;&#208;&#190;&#209;&#128;&#208;&#176;&#208;&#181; &#208;&#183;&#208;&#188;&#208;&#181;&#209;&#129;&#209;&#134;&#209;&#150;&#208;&#178;&#208;&#176; &#208;&#188;&#208;&#190;&#208;&#182;&#208;&#176; &#208;&#177;&#209;&#139;&#209;&#134;&#209;&#140; &#208;&#191;&#209;&#128;&#208;&#176;&#208;&#191;&#209;&#131;&#209;&#136;&#209;&#135;&#208;&#176;&#208;&#189;&#208;&#176; &#208;&#176;&#208;&#187;&#209;&#140;&#208;&#177;&#208;&#190; &#208;&#176;&#208;&#180;&#208;&#187;&#209;&#142;&#209;&#129;&#209;&#130;&#209;&#128;&#208;&#176;&#208;&#178;&#208;&#176;&#208;&#189;&#208;&#176; &#208;&#189;&#209;&#143;&#208;&#191;&#209;&#128;&#208;&#176;&#208;&#178;&#209;&#150;&#208;&#187;&#209;&#140;&#208;&#189;&#208;&#176;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;WordPad has finished searching the document.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101130T184422Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -88919,6 +89599,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;You are attempting to shut down another computer to which you and other users are connected. As a result, nobody will be able to use this computer until it is manually restarted.\r\n\r\nDo you want to continue?&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110213T124627Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#146;&#209;&#139; &#208;&#191;&#208;&#176;&#209;&#129;&#208;&#191;&#209;&#128;&#208;&#176;&#208;&#177;&#208;&#176;&#208;&#178;&#208;&#176;&#208;&#187;&#209;&#150; &#208;&#178;&#209;&#139;&#208;&#186;&#208;&#187;&#209;&#142;&#209;&#135;&#209;&#139;&#209;&#134;&#209;&#140; &#209;&#150;&#208;&#189;&#209;&#136;&#209;&#139; &#208;&#186;&#208;&#176;&#208;&#188;&#208;&#191;'&#209;&#142;&#209;&#130;&#208;&#176;&#209;&#128;, &#208;&#183; &#209;&#143;&#208;&#186;&#209;&#150;&#208;&#188; &#208;&#183;&#208;&#187;&#209;&#131;&#209;&#135;&#208;&#176;&#208;&#189;&#209;&#139;&#209;&#143; &#208;&#178;&#209;&#139; &#209;&#150; &#209;&#150;&#208;&#189;&#209;&#136;&#209;&#139;&#209;&#143; &#208;&#186;&#208;&#176;&#209;&#128;&#209;&#139;&#209;&#129;&#209;&#130;&#208;&#176;&#208;&#187;&#209;&#140;&#208;&#189;&#209;&#150;&#208;&#186;&#209;&#150;. &#208;&#175;&#208;&#186; &#208;&#178;&#209;&#139;&#208;&#189;&#209;&#150;&#208;&#186;, &#208;&#189;&#209;&#150;&#209;&#133;&#209;&#130;&#208;&#190; &#208;&#189;&#208;&#181; &#208;&#183;&#208;&#188;&#208;&#190;&#208;&#182;&#208;&#176; &#208;&#186;&#208;&#176;&#209;&#128;&#209;&#139;&#209;&#129;&#209;&#130;&#208;&#176;&#209;&#134;&#209;&#134;&#208;&#176; &#208;&#179;&#209;&#141;&#209;&#130;&#209;&#139;&#208;&#188; &#208;&#186;&#208;&#176;&#208;&#188;&#208;&#191;'&#209;&#142;&#209;&#130;&#208;&#176;&#209;&#128;&#208;&#176;&#208;&#188; &#208;&#180;&#208;&#176; &#209;&#143;&#208;&#179;&#208;&#190; &#209;&#128;&#209;&#131;&#209;&#135;&#208;&#189;&#208;&#190;&#208;&#179;&#208;&#176; &#208;&#191;&#208;&#181;&#209;&#128;&#208;&#176;&#208;&#183;&#208;&#176;&#208;&#191;&#209;&#131;&#209;&#129;&#208;&#186;&#209;&#131;.\r\n\r\n&#208;&#150;&#208;&#176;&#208;&#180;&#208;&#176;&#208;&#181;&#209;&#134;&#208;&#181; &#208;&#191;&#209;&#128;&#208;&#176;&#209;&#134;&#209;&#143;&#208;&#179;&#208;&#189;&#209;&#131;&#209;&#134;&#209;&#140;?&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;You are attempting to shut down another computer to which you are connected.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100926T062322Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -88935,6 +89623,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;You are attempting to shut down another computer to which you are connected. As a result nobody will be able to use this computer until it is manually restarted.\r\n\r\nDo you want to continue?&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110213T124613Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#146;&#209;&#139; &#208;&#191;&#208;&#176;&#209;&#129;&#208;&#191;&#209;&#128;&#208;&#176;&#208;&#177;&#208;&#176;&#208;&#178;&#208;&#176;&#208;&#187;&#209;&#150; &#208;&#178;&#209;&#139;&#208;&#186;&#208;&#187;&#209;&#142;&#209;&#135;&#209;&#139;&#209;&#134;&#209;&#140; &#209;&#150;&#208;&#189;&#209;&#136;&#209;&#139; &#208;&#186;&#208;&#176;&#208;&#188;&#208;&#191;'&#209;&#142;&#209;&#130;&#208;&#176;&#209;&#128;, &#208;&#183; &#209;&#143;&#208;&#186;&#209;&#150;&#208;&#188; &#208;&#178;&#209;&#139; &#208;&#183;&#208;&#187;&#209;&#131;&#209;&#135;&#208;&#176;&#208;&#189;&#209;&#139;&#209;&#143;. &#208;&#175;&#208;&#186; &#208;&#178;&#209;&#139;&#208;&#189;&#209;&#150;&#208;&#186;, &#208;&#189;&#209;&#150;&#209;&#133;&#209;&#130;&#208;&#190; &#208;&#189;&#208;&#181; &#208;&#183;&#208;&#188;&#208;&#190;&#208;&#182;&#208;&#176; &#208;&#186;&#208;&#176;&#209;&#128;&#209;&#139;&#209;&#129;&#209;&#130;&#208;&#176;&#209;&#134;&#209;&#134;&#208;&#176; &#208;&#179;&#209;&#141;&#209;&#130;&#209;&#139;&#208;&#188; &#208;&#186;&#208;&#176;&#208;&#188;&#208;&#191;'&#209;&#142;&#209;&#130;&#208;&#176;&#209;&#128;&#208;&#176;&#208;&#188; &#208;&#180;&#208;&#176; &#209;&#143;&#208;&#179;&#208;&#190; &#209;&#128;&#209;&#131;&#209;&#135;&#208;&#189;&#208;&#190;&#208;&#179;&#208;&#176; &#208;&#191;&#208;&#181;&#209;&#128;&#208;&#176;&#208;&#183;&#208;&#176;&#208;&#191;&#209;&#131;&#209;&#129;&#208;&#186;&#209;&#131;.\r\n\r\n&#208;&#150;&#208;&#176;&#208;&#180;&#208;&#176;&#208;&#181;&#209;&#134;&#208;&#181; &#208;&#191;&#209;&#128;&#208;&#176;&#209;&#134;&#209;&#143;&#208;&#179;&#208;&#189;&#209;&#131;&#209;&#134;&#209;&#140;?&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;You are currently not connected to any networks.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101205T183420Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -88975,6 +89671,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;You are restarting this computer while there are other users still using it. Those users may lose data.\r\n\r\nDo you want to continue?&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110213T124701Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#146;&#209;&#139; &#208;&#191;&#208;&#181;&#209;&#128;&#208;&#176;&#208;&#183;&#208;&#176;&#208;&#191;&#209;&#131;&#209;&#129;&#208;&#186;&#208;&#176;&#208;&#181;&#209;&#134;&#208;&#181; &#208;&#179;&#209;&#141;&#209;&#130;&#209;&#139; &#208;&#186;&#208;&#176;&#208;&#188;&#208;&#191;'&#209;&#142;&#209;&#130;&#208;&#176;&#209;&#128;, &#209;&#143;&#208;&#186;&#209;&#150; &#209;&#143;&#209;&#136;&#209;&#135;&#209;&#141; &#208;&#178;&#209;&#139;&#208;&#186;&#208;&#176;&#209;&#128;&#209;&#139;&#209;&#129;&#209;&#130;&#208;&#190;&#209;&#158;&#208;&#178;&#208;&#176;&#208;&#181;&#209;&#134;&#209;&#134;&#208;&#176; &#209;&#150;&#208;&#189;&#209;&#136;&#209;&#139;&#208;&#188;&#209;&#150; &#208;&#186;&#208;&#176;&#209;&#128;&#209;&#139;&#209;&#129;&#209;&#130;&#208;&#176;&#208;&#187;&#209;&#140;&#208;&#189;&#209;&#150;&#208;&#186;&#208;&#176;&#208;&#188;&#209;&#150;. &#208;&#175;&#208;&#189;&#209;&#139; &#208;&#188;&#208;&#190;&#208;&#179;&#209;&#131;&#209;&#134;&#209;&#140; &#209;&#129;&#209;&#130;&#209;&#128;&#208;&#176;&#209;&#134;&#209;&#150;&#209;&#134;&#209;&#140; &#208;&#183;&#208;&#178;&#208;&#181;&#209;&#129;&#209;&#130;&#208;&#186;&#209;&#150;.\r\n\r\n&#208;&#150;&#208;&#176;&#208;&#180;&#208;&#176;&#208;&#181;&#209;&#134;&#208;&#181; &#208;&#191;&#209;&#128;&#208;&#176;&#209;&#134;&#209;&#143;&#208;&#179;&#208;&#189;&#209;&#131;&#209;&#134;&#209;&#140;?&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;You are running out of disk space on %s.\nClick here to see if you can free space on this drive.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100713T161122Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -89023,6 +89727,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;You are shutting down this computer while there are other users still using it. Those users may lose data.\r\n\r\nDo you want to continue?&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110213T124644Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#208;&#146;&#209;&#139; &#208;&#178;&#209;&#139;&#208;&#186;&#208;&#187;&#209;&#142;&#209;&#135;&#208;&#176;&#208;&#181;&#209;&#134;&#208;&#181; &#208;&#179;&#209;&#141;&#209;&#130;&#209;&#139; &#208;&#186;&#208;&#176;&#208;&#188;&#208;&#191;'&#209;&#142;&#209;&#130;&#208;&#176;&#209;&#128;, &#209;&#143;&#208;&#186;&#209;&#150; &#209;&#143;&#209;&#136;&#209;&#135;&#209;&#141; &#208;&#178;&#209;&#139;&#208;&#186;&#208;&#176;&#209;&#128;&#209;&#139;&#209;&#129;&#209;&#130;&#208;&#190;&#209;&#158;&#208;&#178;&#208;&#176;&#208;&#181;&#209;&#134;&#209;&#134;&#208;&#176; &#209;&#150;&#208;&#189;&#209;&#136;&#209;&#139;&#208;&#188;&#209;&#150; &#208;&#186;&#208;&#176;&#209;&#128;&#209;&#139;&#209;&#129;&#209;&#130;&#208;&#176;&#208;&#187;&#209;&#140;&#208;&#189;&#209;&#150;&#208;&#186;&#208;&#176;&#208;&#188;&#209;&#150;. &#208;&#175;&#208;&#189;&#209;&#139; &#208;&#188;&#208;&#190;&#208;&#179;&#209;&#131;&#209;&#134;&#209;&#140; &#209;&#129;&#209;&#130;&#209;&#128;&#208;&#176;&#209;&#134;&#209;&#150;&#209;&#134;&#209;&#140; &#208;&#183;&#208;&#178;&#208;&#181;&#209;&#129;&#209;&#130;&#208;&#186;&#209;&#150;.\r\n\r\n&#208;&#150;&#208;&#176;&#208;&#180;&#208;&#176;&#208;&#181;&#209;&#134;&#208;&#181; &#208;&#191;&#209;&#128;&#208;&#176;&#209;&#134;&#209;&#143;&#208;&#179;&#208;&#189;&#209;&#131;&#209;&#134;&#209;&#140;?&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;You can &lt;A href=&quot;EmailLinks&quot;&gt;e-mail&lt;/A&gt; someone links to these shared items, or &lt;A href=&quot;CopyLinks&quot;&gt;copy&lt;/A&gt; and paste the links into another program.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101130T152848Z&quot; changeid=&quot;eratyk&quot;&gt;
+
+Added: Windows7/source/Program Files/Common Files/microsoft shared/ink/InputPersonalization.exe.rc
+===================================================================
+--- Windows7/source/Program Files/Common Files/microsoft shared/ink/InputPersonalization.exe.rc	                        (rev 0)
++++ Windows7/source/Program Files/Common Files/microsoft shared/ink/InputPersonalization.exe.rc	2011-02-13 18:05:18 UTC (rev 163)
+@@ -0,0 +1,38 @@
++1 MUI &quot;Data_4.bin&quot;
++
++1 MESSAGETABLE
++{
++805306369,  	&quot;Start&quot;
++805306370,  	&quot;Stop&quot;
++1342177284,  	&quot;Information&quot;
++-1879048191,  	&quot;Microsoft-Windows-TabletPC-InputPersonalization&quot;
++}
++
++
++1 VERSIONINFO
++FILEVERSION 6,1,7600,16385
++PRODUCTVERSION 6,1,7600,16385
++FILEOS 0x40004
++FILETYPE 0x1
++{
++BLOCK &quot;StringFileInfo&quot;
++{
++	BLOCK &quot;040904B0&quot;
++	{
++		VALUE &quot;CompanyName&quot;, &quot;Microsoft Corporation&quot;
++		VALUE &quot;FileDescription&quot;, &quot;Input Personalization Server&quot;
++		VALUE &quot;FileVersion&quot;, &quot;6.1.7600.16385 (win7_rtm.090713-1255)&quot;
++		VALUE &quot;InternalName&quot;, &quot;InputPersonalization.exe&quot;
++		VALUE &quot;LegalCopyright&quot;, &quot;&#169; Microsoft Corporation. All rights reserved.&quot;
++		VALUE &quot;OriginalFilename&quot;, &quot;InputPersonalization.exe.mui&quot;
++		VALUE &quot;ProductName&quot;, &quot;Microsoft&#174; Windows&#174; Operating System&quot;
++		VALUE &quot;ProductVersion&quot;, &quot;6.1.7600.16385&quot;
++	}
++}
++
++BLOCK &quot;VarFileInfo&quot;
++{
++	VALUE &quot;Translation&quot;, 0x0409 0x04B0
++}
++}
++
+
+Added: Windows7/source/Program Files/Common Files/microsoft shared/ink/mshwLatin.dll.rc
+===================================================================
+--- Windows7/source/Program Files/Common Files/microsoft shared/ink/mshwLatin.dll.rc	                        (rev 0)
++++ Windows7/source/Program Files/Common Files/microsoft shared/ink/mshwLatin.dll.rc	2011-02-13 18:05:18 UTC (rev 163)
+@@ -0,0 +1,38 @@
++1 MUI &quot;Data_9.bin&quot;
++
++1 MESSAGETABLE
++{
++805306369,  	&quot;Start&quot;
++805306370,  	&quot;Stop&quot;
++1342177284,  	&quot;Information&quot;
++-1879048191,  	&quot;Microsoft-Windows-TabletPC-CoreInkRecognition&quot;
++}
++
++
++1 VERSIONINFO
++FILEVERSION 6,1,7600,16385
++PRODUCTVERSION 6,1,7600,16385
++FILEOS 0x40004
++FILETYPE 0x2
++{
++BLOCK &quot;StringFileInfo&quot;
++{
++	BLOCK &quot;040904B0&quot;
++	{
++		VALUE &quot;CompanyName&quot;, &quot;Microsoft Corporation&quot;
++		VALUE &quot;FileDescription&quot;, &quot;Microsoft Generic Latin Handwriting Recognizer&quot;
++		VALUE &quot;FileVersion&quot;, &quot;6.1.7600.16385 (win7_rtm.090713-1255)&quot;
++		VALUE &quot;InternalName&quot;, &quot;MSHWLATIN.DLL&quot;
++		VALUE &quot;LegalCopyright&quot;, &quot;&#169; Microsoft Corporation. All rights reserved.&quot;
++		VALUE &quot;OriginalFilename&quot;, &quot;MSHWLATIN.DLL.MUI&quot;
++		VALUE &quot;ProductName&quot;, &quot;Microsoft&#174; Windows&#174; Operating System&quot;
++		VALUE &quot;ProductVersion&quot;, &quot;6.1.7600.16385&quot;
++	}
++}
++
++BLOCK &quot;VarFileInfo&quot;
++{
++	VALUE &quot;Translation&quot;, 0x0409 0x04B0
++}
++}
++
+
+Added: Windows7/source/Program Files/Common Files/microsoft shared/ink/rtscom.dll.rc
+===================================================================
+--- Windows7/source/Program Files/Common Files/microsoft shared/ink/rtscom.dll.rc	                        (rev 0)
++++ Windows7/source/Program Files/Common Files/microsoft shared/ink/rtscom.dll.rc	2011-02-13 18:05:18 UTC (rev 163)
+@@ -0,0 +1,38 @@
++1 MUI &quot;Data_10.bin&quot;
++
++1 MESSAGETABLE
++{
++805306369,  	&quot;Start&quot;
++805306370,  	&quot;Stop&quot;
++1342177284,  	&quot;Information&quot;
++-1879048191,  	&quot;Microsoft-Windows-TabletPC-Platform-Manipulations&quot;
++}
++
++
++1 VERSIONINFO
++FILEVERSION 6,1,7600,16385
++PRODUCTVERSION 6,1,7600,16385
++FILEOS 0x40004
++FILETYPE 0x2
++{
++BLOCK &quot;StringFileInfo&quot;
++{
++	BLOCK &quot;040904B0&quot;
++	{
++		VALUE &quot;CompanyName&quot;, &quot;Microsoft Corporation&quot;
++		VALUE &quot;FileDescription&quot;, &quot;Microsoft Tablet PC Real Time Stylus Platform Component&quot;
++		VALUE &quot;FileVersion&quot;, &quot;6.1.7600.16385 (win7_rtm.090713-1255)&quot;
++		VALUE &quot;InternalName&quot;, &quot;RTSCom.dll&quot;
++		VALUE &quot;LegalCopyright&quot;, &quot;Copyright (c) Microsoft Corp.  All rights reserved.&quot;
++		VALUE &quot;OriginalFilename&quot;, &quot;RTSCom.dll.mui&quot;
++		VALUE &quot;ProductName&quot;, &quot;Microsoft&#174; Windows&#174; Operating System&quot;
++		VALUE &quot;ProductVersion&quot;, &quot;6.1.7600.16385&quot;
++	}
++}
++
++BLOCK &quot;VarFileInfo&quot;
++{
++	VALUE &quot;Translation&quot;, 0x0409 0x04B0
++}
++}
++
+
+Added: Windows7/source/Program Files/Common Files/microsoft shared/ink/tabskb.dll.mui.rc
+===================================================================
+--- Windows7/source/Program Files/Common Files/microsoft shared/ink/tabskb.dll.mui.rc	                        (rev 0)
++++ Windows7/source/Program Files/Common Files/microsoft shared/ink/tabskb.dll.mui.rc	2011-02-13 18:05:18 UTC (rev 163)
+@@ -0,0 +1,69 @@
++1 MUI &quot;Data_12.bin&quot;
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++15030, 	&quot;Keyboard&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++15051, 	&quot;Keyboard&quot;
++15053, 	&quot;Keypad&quot;
++15054, 	&quot;Numbers&quot;
++15055, 	&quot;Symbols&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++15056, 	&quot;Web&quot;
++15057, 	&quot;AuxPad&quot;
++15058, 	&quot;OSKMenu&quot;
++15059, 	&quot;OSKPred&quot;
++15060, 	&quot;OSKNumPad&quot;
++}
++
++1 MESSAGETABLE
++{
++268435505,  	&quot;Response Time&quot;
++805306368,  	&quot;Info&quot;
++805306369,  	&quot;Start&quot;
++805306370,  	&quot;Stop&quot;
++1342177284,  	&quot;Information&quot;
++-1879048191,  	&quot;Microsoft-Windows-TabletPC-TabletInputPanel&quot;
++}
++
++
++1 VERSIONINFO
++FILEVERSION 6,1,7600,16385
++PRODUCTVERSION 6,1,7600,16385
++FILEOS 0x40004
++FILETYPE 0x2
++{
++BLOCK &quot;StringFileInfo&quot;
++{
++	BLOCK &quot;040904B0&quot;
++	{
++		VALUE &quot;CompanyName&quot;, &quot;Microsoft Corporation&quot;
++		VALUE &quot;FileDescription&quot;, &quot;Tablet PC Input Panel On-Screen Keyboard&quot;
++		VALUE &quot;FileVersion&quot;, &quot;6.1.7600.16385 (win7_rtm.090713-1255)&quot;
++		VALUE &quot;InternalName&quot;, &quot;tabskb.dll&quot;
++		VALUE &quot;LegalCopyright&quot;, &quot;&#169; Microsoft Corporation. All rights reserved.&quot;
++		VALUE &quot;OriginalFilename&quot;, &quot;tabskb.dll.mui&quot;
++		VALUE &quot;ProductName&quot;, &quot;Microsoft&#174; Windows&#174; Operating System&quot;
++		VALUE &quot;ProductVersion&quot;, &quot;6.1.7600.16385&quot;
++		VALUE &quot;OleSelfRegister&quot;, &quot;&quot;
++	}
++}
++
++BLOCK &quot;VarFileInfo&quot;
++{
++	VALUE &quot;Translation&quot;, 0x0409 0x04B0
++}
++}
++
+
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000080.html">[I18n-bel-svn] r162 - Windows7/source/Windows/System32
+</A></li>
+	<LI>Next message: <A HREF="000082.html">[I18n-bel-svn] r164 - in Windows7/source: Program Files/Common	Files/microsoft shared/ink Windows/System32
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#81">[ date ]</a>
+              <a href="thread.html#81">[ thread ]</a>
+              <a href="subject.html#81">[ subject ]</a>
+              <a href="author.html#81">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/i18n-bel-svn">More information about the I18n-bel-svn
+mailing list</a><br>
+</body></html>

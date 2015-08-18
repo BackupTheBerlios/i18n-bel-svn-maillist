@@ -1,0 +1,807 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [I18n-bel-svn] r94 - Windows7/source/x32/Windows/System32/en-US
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/i18n-bel-svn/2010-November/index.html" >
+   <LINK REL="made" HREF="mailto:i18n-bel-svn%40lists.berlios.de?Subject=Re%3A%20%5BI18n-bel-svn%5D%20r94%20-%20Windows7/source/x32/Windows/System32/en-US&In-Reply-To=%3C20101117085334.C735E480F4E%40sheep.berlios.de%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000011.html">
+   <LINK REL="Next"  HREF="000013.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[I18n-bel-svn] r94 - Windows7/source/x32/Windows/System32/en-US</H1>
+    <B>eratyk at mail.berlios.de</B> 
+    <A HREF="mailto:i18n-bel-svn%40lists.berlios.de?Subject=Re%3A%20%5BI18n-bel-svn%5D%20r94%20-%20Windows7/source/x32/Windows/System32/en-US&In-Reply-To=%3C20101117085334.C735E480F4E%40sheep.berlios.de%3E"
+       TITLE="[I18n-bel-svn] r94 - Windows7/source/x32/Windows/System32/en-US">eratyk at mail.berlios.de
+       </A><BR>
+    <I>Wed Nov 17 09:53:34 CET 2010</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000011.html">[I18n-bel-svn] r93 - Windows7/source/x32/Windows
+</A></li>
+        <LI>Next message: <A HREF="000013.html">[I18n-bel-svn] r95 - Windows7/omegat
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#12">[ date ]</a>
+              <a href="thread.html#12">[ thread ]</a>
+              <a href="subject.html#12">[ subject ]</a>
+              <a href="author.html#12">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>Author: eratyk
+Date: 2010-11-17 09:53:34 +0100 (Wed, 17 Nov 2010)
+New Revision: 94
+
+Added:
+   Windows7/source/x32/Windows/System32/en-US/explorerframe.dll.rc
+Log:
+missed file
+
+Added: Windows7/source/x32/Windows/System32/en-US/explorerframe.dll.rc
+===================================================================
+--- Windows7/source/x32/Windows/System32/en-US/explorerframe.dll.rc	                        (rev 0)
++++ Windows7/source/x32/Windows/System32/en-US/explorerframe.dll.rc	2010-11-17 08:53:34 UTC (rev 94)
+@@ -0,0 +1,731 @@
++1 MUI &quot;Data_578.bin&quot;
++
++256 MENUEX
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++POPUP &quot;&quot;, 0, MFT_STRING, MFS_ENABLED, 0
++{
++	MENUITEM &quot;Sho&amp;w title&quot;, 2, MFT_STRING, MFS_ENABLED
++}
++}
++
++257 MENUEX
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++POPUP &quot;&quot;, 0, MFT_STRING, MFS_ENABLED, 0
++{
++	MENUITEM &quot;&amp;Close toolbar&quot;, 1, MFT_STRING, MFS_ENABLED
++	MENUITEM &quot;Disable add, close, drag and drop (IEAK)&quot;, 3, MFT_STRING, MFS_ENABLED
++	MENUITEM &quot;Disable resizing (IEAK)&quot;, 4, MFT_STRING, MFS_ENABLED
++}
++}
++
++259 MENUEX
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++POPUP &quot;&quot;, 0, MFT_STRING, MFS_ENABLED, 0
++{
++	MENUITEM &quot;&amp;Always on top&quot;, 6, MFT_STRING, MFS_ENABLED
++	MENUITEM &quot;A&amp;uto-hide&quot;, 8, MFT_STRING, MFS_ENABLED
++}
++}
++
++263 MENUEX
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++POPUP &quot;&amp;File&quot;, 32768, MFT_STRING, MFS_ENABLED, 0
++{
++	MENUITEM &quot;Create &amp;shortcut&quot;, 41029, MFT_STRING, MFS_GRAYED
++	MENUITEM &quot;&amp;Delete&quot;, 40995, MFT_STRING, MFS_ENABLED
++	MENUITEM &quot;Rena&amp;me&quot;, 40996, MFT_STRING, MFS_ENABLED
++	MENUITEM &quot;P&amp;roperties&quot;, 40997, MFT_STRING, MFS_ENABLED
++	MENUITEM &quot;&quot;, 65535, MFT_SEPARATOR, MFS_ENABLED
++	MENUITEM &quot;&amp;Close&quot;, 40993, MFT_STRING, MFS_ENABLED
++}
++POPUP &quot;&amp;Edit&quot;, 32832, MFT_STRING, MFS_ENABLED, 0
++{
++	MENUITEM &quot;Cu&amp;t\tCtrl+X&quot;, 41025, MFT_STRING, MFS_GRAYED
++	MENUITEM &quot;&amp;Copy\tCtrl+C&quot;, 41026, MFT_STRING, MFS_GRAYED
++}
++POPUP &quot;&amp;View&quot;, 32896, MFT_STRING, MFS_ENABLED, 0
++{
++	MENUITEM &quot;Status &amp;bar&quot;, 41474, MFT_STRING, MFS_ENABLED
++	POPUP &quot;&amp;Explorer Bar&quot;, 41520, MFT_STRING, MFS_ENABLED, 0
++	{
++		MENUITEM &quot;Placeholder&quot;, 41531, MFT_STRING, MFS_ENABLED
++		MENUITEM &quot;&quot;, 65535, MFT_SEPARATOR, MFS_ENABLED
++		MENUITEM &quot;Placeholder&quot;, 41532, MFT_STRING, MFS_ENABLED
++	}
++	MENUITEM &quot;&quot;, 32897, MFT_SEPARATOR, MFS_ENABLED
++	POPUP &quot;&amp;Go To&quot;, 33104, MFT_STRING, MFS_ENABLED, 0
++	{
++		MENUITEM &quot;&amp;Back\tAlt+Left Arrow&quot;, 41249, MFT_STRING, MFS_ENABLED
++		MENUITEM &quot;&amp;Forward\tAlt+Right Arrow&quot;, 41250, MFT_STRING, MFS_ENABLED
++		MENUITEM &quot;&amp;Up one level\tAlt+Up Arrow&quot;, 40994, MFT_STRING, MFS_ENABLED
++	}
++	MENUITEM &quot;&amp;Refresh&quot;, 41504, MFT_STRING, MFS_ENABLED
++}
++POPUP &quot;&amp;Tools&quot;, 32960, MFT_STRING, MFS_ENABLED, 0
++{
++	MENUITEM &quot;Map &amp;network drive...&quot;, 41089, MFT_STRING, MFS_ENABLED
++	MENUITEM &quot;&amp;Disconnect network drive...&quot;, 41090, MFT_STRING, MFS_ENABLED
++	MENUITEM &quot;Open &amp;Sync Center...&quot;, 41096, MFT_STRING, MFS_ENABLED
++	MENUITEM &quot;&quot;, 65535, MFT_SEPARATOR, MFS_ENABLED
++	MENUITEM &quot;Folder &amp;options...&quot;, 41251, MFT_STRING, MFS_ENABLED
++	MENUITEM &quot;&amp;Internet options...&quot;, 41329, MFT_STRING, MFS_ENABLED
++}
++POPUP &quot;&amp;Help&quot;, 33024, MFT_STRING, MFS_ENABLED, 0
++{
++	MENUITEM &quot;Is this copy of Windows &amp;legal?&quot;, 41220, MFT_STRING, MFS_ENABLED
++	MENUITEM &quot;&amp;About Windows&quot;, 41218, MFT_STRING, MFS_ENABLED
++}
++}
++
++264 MENUEX
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++POPUP &quot;&amp;Toolbars&quot;, 41473, MFT_STRING, MFS_ENABLED, 0
++{
++	MENUITEM &quot;&quot;, 41480, MFT_SEPARATOR, MFS_ENABLED
++	MENUITEM &quot;Lock the tool&amp;bars&quot;, 41484, MFT_STRING, MFS_ENABLED
++}
++}
++
++265 MENUEX
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++POPUP &quot;&quot;, 0, MFT_STRING, MFS_ENABLED, 0
++{
++	MENUITEM &quot;&amp;Close&quot;, 1, MFT_STRING, MFS_ENABLED | MFS_DEFAULT
++}
++}
++
++266 MENUEX
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++POPUP &quot;&amp;File&quot;, 32768, MFT_STRING, MFS_ENABLED, 0
++{
++	MENUITEM &quot;&quot;, 65535, MFT_SEPARATOR, MFS_ENABLED
++	MENUITEM &quot;&amp;Close&quot;, 40993, MFT_STRING, MFS_ENABLED
++}
++POPUP &quot;&amp;Edit&quot;, 32832, MFT_STRING, MFS_ENABLED, 0
++{
++	MENUITEM &quot;&quot;, 65535, MFT_SEPARATOR, MFS_ENABLED
++}
++POPUP &quot;&amp;View&quot;, 32896, MFT_STRING, MFS_ENABLED, 0
++{
++	POPUP &quot;&amp;Toolbars&quot;, 41473, MFT_STRING, MFS_ENABLED, 0
++	{
++		MENUITEM &quot;&quot;, 65535, MFT_SEPARATOR, MFS_ENABLED
++	}
++	MENUITEM &quot;Status &amp;bar&quot;, 41474, MFT_STRING, MFS_ENABLED
++	POPUP &quot;&amp;Explorer Bar&quot;, 41520, MFT_STRING, MFS_ENABLED, 0
++	{
++		MENUITEM &quot;Placeholder&quot;, 41531, MFT_STRING, MFS_ENABLED
++		MENUITEM &quot;&quot;, 65535, MFT_SEPARATOR, MFS_ENABLED
++		MENUITEM &quot;Placeholder&quot;, 41532, MFT_STRING, MFS_ENABLED
++	}
++	MENUITEM &quot;&quot;, 32897, MFT_SEPARATOR, MFS_ENABLED
++	POPUP &quot;&amp;Go To&quot;, 33104, MFT_STRING, MFS_ENABLED, 0
++	{
++		MENUITEM &quot;&amp;Back\tAlt+Left Arrow&quot;, 41249, MFT_STRING, MFS_ENABLED
++		MENUITEM &quot;&amp;Forward\tAlt+Right Arrow&quot;, 41250, MFT_STRING, MFS_ENABLED
++		MENUITEM &quot;&amp;Up one level\tAlt+Up Arrow&quot;, 40994, MFT_STRING, MFS_ENABLED
++	}
++	MENUITEM &quot;&amp;Refresh&quot;, 41504, MFT_STRING, MFS_ENABLED
++}
++POPUP &quot;&amp;Tools&quot;, 32960, MFT_STRING, MFS_ENABLED, 0
++{
++	MENUITEM &quot;Map &amp;network drive...&quot;, 41089, MFT_STRING, MFS_ENABLED
++	MENUITEM &quot;&amp;Disconnect network drive...&quot;, 41090, MFT_STRING, MFS_ENABLED
++	MENUITEM &quot;Open &amp;Sync Center...&quot;, 41096, MFT_STRING, MFS_ENABLED
++	MENUITEM &quot;&quot;, 65535, MFT_SEPARATOR, MFS_ENABLED
++	MENUITEM &quot;Folder &amp;options...&quot;, 41251, MFT_STRING, MFS_ENABLED
++	MENUITEM &quot;&amp;Internet options...&quot;, 41329, MFT_STRING, MFS_ENABLED
++}
++POPUP &quot;&amp;Help&quot;, 33024, MFT_STRING, MFS_ENABLED, 0
++{
++	MENUITEM &quot;Is this copy of Windows &amp;legal?&quot;, 41220, MFT_STRING, MFS_ENABLED
++	MENUITEM &quot;&amp;About Windows&quot;, 41218, MFT_STRING, MFS_ENABLED
++}
++}
++
++268 MENUEX
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++POPUP &quot;&quot;, 0, MFT_STRING, MFS_ENABLED, 0
++{
++	POPUP &quot;&amp;Toolbars&quot;, 65535, MFT_STRING, MFS_ENABLED, 0
++	{
++		MENUITEM &quot;&amp;Desktop&quot;, 3, MFT_STRING, MFS_ENABLED
++		MENUITEM &quot;&quot;, 65535, MFT_SEPARATOR, MFS_ENABLED
++		MENUITEM &quot;&amp;New toolbar...&quot;, 1, MFT_STRING, MFS_ENABLED
++	}
++}
++}
++
++272 MENUEX
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++POPUP &quot;&quot;, 272, MFT_STRING, MFS_ENABLED, 0
++{
++	MENUITEM &quot;&amp;Copy address&quot;, 1281, MFT_STRING, MFS_ENABLED
++	MENUITEM &quot;&amp;Copy address as text&quot;, 1282, MFT_STRING, MFS_ENABLED
++	MENUITEM &quot;&amp;Edit address&quot;, 1280, MFT_STRING, MFS_ENABLED
++	MENUITEM &quot;&amp;Delete history&quot;, 1283, MFT_STRING, MFS_ENABLED
++}
++}
++
++273 MENUEX
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++POPUP &quot;&quot;, 273, MFT_STRING, MFS_ENABLED, 0
++{
++	MENUITEM &quot;Cu&amp;t&quot;, 1284, MFT_STRING, MFS_ENABLED
++	MENUITEM &quot;&amp;Copy&quot;, 1285, MFT_STRING, MFS_ENABLED
++	MENUITEM &quot;&amp;Paste&quot;, 1286, MFT_STRING, MFS_ENABLED
++	MENUITEM &quot;&amp;Delete&quot;, 1287, MFT_STRING, MFS_ENABLED
++	MENUITEM &quot;&quot;, 65535, MFT_SEPARATOR, MFS_ENABLED
++	MENUITEM &quot;&amp;Select All&quot;, 1288, MFT_STRING, MFS_ENABLED
++}
++}
++
++275 MENUEX
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++MENUITEM &quot;Auto-&amp;hide&quot;, 1538, MFT_STRING, MFS_ENABLED
++}
++
++3400 MENUEX
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++POPUP &quot;&quot;, 0, MFT_STRING, MFS_ENABLED, 0
++{
++	MENUITEM &quot;Exp&amp;and&quot;, 8, MFT_STRING, MFS_ENABLED
++	MENUITEM &quot;Coll&amp;apse&quot;, 9, MFT_STRING, MFS_ENABLED
++	MENUITEM &quot;&amp;Open&quot;, 1, MFT_STRING, MFS_ENABLED
++	MENUITEM &quot;Sort &amp;by name&quot;, 10, MFT_STRING, MFS_ENABLED
++}
++}
++
++41728 MENUEX
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++POPUP &quot;&quot;, 0, MFT_STRING, MFS_ENABLED, 0
++{
++	MENUITEM &quot;Co&amp;llapse group\tLeft Arrow&quot;, 28757, MFT_STRING, MFS_ENABLED
++	MENUITEM &quot;Expan&amp;d group\tRight Arrow&quot;, 28758, MFT_STRING, MFS_ENABLED
++	MENUITEM &quot;&quot;, 65535, MFT_SEPARATOR, MFS_ENABLED
++	MENUITEM &quot;Expand all &amp;groups&quot;, 28755, MFT_STRING, MFS_ENABLED
++	MENUITEM &quot;Collapse all gro&amp;ups&quot;, 28756, MFT_STRING, MFS_ENABLED
++}
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++724, 	&quot;Cannot find '%1!ws!'. Make sure the path or Internet address is correct.&quot;
++726, 	&quot;Windows Explorer&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++748, 	&quot;Click the folder that you want to move the selected files to.&quot;
++750, 	&quot;(empty)&quot;
++751, 	&quot;%s-NEW&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++800, 	&quot;Contains commands for working with the selected items.&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++864, 	&quot;Contains edit commands.&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++928, 	&quot;Contains commands for manipulating the view.&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++992, 	&quot;Contains tools commands.&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++1030, 	&quot;Folder Options&quot;
++1031, 	&quot;Internet Options&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++1056, 	&quot;Contains commands for displaying Help.&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++1136, 	&quot;Contains commands for browsing to various pages.&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++3004, 	&quot;Favorites&quot;
++3005, 	&quot;History&quot;
++3006, 	&quot;Feeds&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++3009, 	&quot;Namespace Tree Control&quot;
++3010, 	&quot;Tree View&quot;
++3011, 	&quot;Move here&quot;
++3014, 	&quot;Open in new tab&quot;
++3015, 	&quot;Open '%s' in a Tab Group&quot;
++3016, 	&quot;Delete this page from Favorites&quot;
++3017, 	&quot;Refresh this feed&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++8192, 	&quot;User canceled a hung navigation.&quot;
++8193, 	&quot;The user cancelled the navigation after %d seconds.&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++9025, 	&quot;Closes the window.&quot;
++9026, 	&quot;Goes up one level.&quot;
++9027, 	&quot;Deletes the selected items.&quot;
++9028, 	&quot;Renames the selected item.&quot;
++9029, 	&quot;Displays the properties of the selected items.&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++9057, 	&quot;Removes the current selection and copies it onto the Clipboard.&quot;
++9058, 	&quot;Copies the current selection onto the Clipboard.&quot;
++9059, 	&quot;Inserts the items you have copied or cut into the selected location.&quot;
++9060, 	&quot;Selects all items on this page.&quot;
++9061, 	&quot;Creates shortcuts to the selected items.&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++9121, 	&quot;Connects to a network drive.&quot;
++9122, 	&quot;Disconnects from a network drive.&quot;
++9128, 	&quot;Updates all offline content.&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++9250, 	&quot;Displays program information, version number, and copyright.&quot;
++9252, 	&quot;Displays instructions and information to determine if Microsoft software is genuine.&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++9281, 	&quot;Goes to the previous page.&quot;
++9282, 	&quot;Goes to the next page.&quot;
++9283, 	&quot;Enables you to change settings.&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++9361, 	&quot;Enables you to change settings.&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++9505, 	&quot;Shows or hides toolbars.&quot;
++9506, 	&quot;Shows or hides the status bar.&quot;
++9516, 	&quot;Locks the sizes and positions of the toolbars.&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++9530, 	&quot;Stops the current page from loading.&quot;
++9531, 	&quot;Maximizes window to full screen.&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++9536, 	&quot;Refreshes the contents of the current page.&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++9552, 	&quot;Shows or hides an Explorer bar.&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++12352, 	&quot;Address Bar&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++12387, 	&quot;New Toolbar - Choose a folder&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++12545, 	&quot;'%1!ls!' is currently unavailable.&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++12608, 	&quot;Desktop&quot;
++12609, 	&quot;Windows&quot;
++12614, 	&quot;%1 - %2&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++12624, 	&quot;|Back|Forward|Stop|Refresh|Home|Search|Favorites|Print|Size|Edit|Tools|Media|History|Mail|Full Screen||&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++12656, 	&quot;|Go      |Stop    |Refresh||&quot;
++12657, 	&quot;Go to \&quot;%s\&quot;&quot;
++12658, 	&quot;|Auto-hide|Close||&quot;
++12661, 	&quot;Stop loading \&quot;%s\&quot;&quot;
++12662, 	&quot;Refresh \&quot;%s\&quot;&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++12675, 	&quot;Previous Locations&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++12896, 	&quot;A&amp;ddress&quot;
++12897, 	&quot;Search&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++12915, 	&quot;Internet &amp;options...&quot;
++12916, 	&quot; (Mixed)&quot;
++12917, 	&quot;Unknown Zone&quot;
++12919, 	&quot;Folders&quot;
++12921, 	&quot;Folder Options...&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++12936, 	&quot;<A HREF="http://www.%s.com">http://www.%s.com</A>&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++13120, 	&quot;...&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++13137, 	&quot;&amp;Address&quot;
++13138, 	&quot;&amp;Links&quot;
++13140, 	&quot;&amp;Desktop&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++13169, 	&quot;History \tCtrl+H&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++13824, 	&quot; Search&quot;
++13825, 	&quot;Computing items...&quot;
++13826, 	&quot;Type to search the current view&quot;
++13827, 	&quot;See other options&quot;
++13829, 	&quot;Address: %s&quot;
++13830, 	&quot; Search %1&quot;
++13831, 	&quot;No filter matches.&quot;
++13832, 	&quot;Add a search filter&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++14337, 	&quot;Recent Pages&quot;
++14338, 	&quot;|Search|Clear||&quot;
++14339, 	&quot;Microsoft Windows&quot;
++14340, 	&quot;The %s toolbar isn't compatible with this version of Windows&quot;
++14341, 	&quot;If you continue, the toolbar might appear incorrectly. To check for an updated version, go to the software publisher's website.\n\nDo you want this toolbar on your taskbar?&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++24320, 	&quot;%1 parent list&quot;
++24321, 	&quot;%1 sibling list&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++28672, 	&quot;You have chosen to close the \&quot;%1\&quot; toolbar.&quot;
++28673, 	&quot;You have chosen to close a toolbar window.&quot;
++28674, 	&quot;Confirm Toolbar Close&quot;
++28675, 	&quot;%1\n\nTo add a toolbar to your desktop, right-click an existing toolbar, click Toolbars, and then click an item.&quot;
++28676, 	&quot;A toolbar is already hidden on this side of your screen.\nYou can have only one auto-hide toolbar per side.&quot;
++28677, 	&quot;Toolbar&quot;
++28679, 	&quot;Disconnect Net Drive&quot;
++28680, 	&quot;The network provider %2 reported the following error: %3(%1!d!).&quot;
++28681, 	&quot;Windows Explorer&quot;
++28683, 	&quot;<A HREF="http://go.microsoft.com/fwlink/?LinkId=3448&amp;clcid=%#04lx">http://go.microsoft.com/fwlink/?LinkId=3448&amp;clcid=%#04lx</A>&quot;
++28684, 	&quot;Cannot create toolbar.&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++28690, 	&quot;Toolbars&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++34304, 	&quot;Search Box&quot;
++34305, 	&quot;Search&quot;
++34306, 	&quot;Clear&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++41216, 	&quot;Fetching...&quot;
++41217, 	&quot;Horizontal Scroll Bar&quot;
++41218, 	&quot;Vertical Scroll Bar&quot;
++41219, 	&quot;Items View&quot;
++41220, 	&quot;Expand Group&quot;
++41221, 	&quot;Collapse Group&quot;
++41222, 	&quot;Header&quot;
++41223, 	&quot;Filter dropdown&quot;
++41224, 	&quot;Filter dropdown (filtered)&quot;
++41225, 	&quot;Count&quot;
++41226, 	&quot;Overflow button&quot;
++41227, 	&quot;Filtered&quot;
++41228, 	&quot;Sorted (Ascending)&quot;
++41229, 	&quot;Sorted (Ascending), Filtered&quot;
++41230, 	&quot;Sorted (Descending)&quot;
++41231, 	&quot;Sorted (Descending), Filtered&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++41232, 	&quot;%1!d! items&quot;
++41233, 	&quot;%1!d! item&quot;
++41234, 	&quot;%1!d! items selected&quot;
++41235, 	&quot;%1!d! item selected&quot;
++41236, 	&quot;%1!s!, %2!s!&quot;
++41237, 	&quot;item %1!d! of %2!d!&quot;
++41238, 	&quot;Group Header&quot;
++41239, 	&quot;%1!s! %2!s!&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++41473, 	&quot;Search again in:&quot;
++41474, 	&quot;%1:&quot;
++41475, 	&quot;(%1!u!)&quot;
++41476, 	&quot;(Empty)&quot;
++41477, 	&quot;(Show all %1!d!)&quot;
++41478, 	&quot;This folder is empty.&quot;
++41479, 	&quot;Unspecified&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++41728, 	&quot;Extra Large Icons&quot;
++41729, 	&quot;Large Icons&quot;
++41730, 	&quot;Medium Icons&quot;
++41731, 	&quot;Small Icons&quot;
++41732, 	&quot;List&quot;
++41733, 	&quot;Details&quot;
++41734, 	&quot;Tiles&quot;
++41735, 	&quot;Content&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++41744, 	&quot;File and folder view reentrancy&quot;
++41745, 	&quot;The file and folder view encountered an unexpected state&quot;
++}
++
++
++ACCEL_MERGEEXPLORER ACCELERATORS
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++	VK_X, 41025, NOINVERT, CONTROL, VIRTKEY
++	VK_C, 41026, NOINVERT, CONTROL, VIRTKEY
++	VK_V, 41027, NOINVERT, CONTROL, VIRTKEY
++	VK_F2, 40996, NOINVERT, VIRTKEY
++	VK_INSERT, 41026, NOINVERT, CONTROL, VIRTKEY
++	VK_INSERT, 41027, NOINVERT, SHIFT, VIRTKEY
++	VK_DELETE, 40995, NOINVERT, VIRTKEY
++	VK_DELETE, 40995, NOINVERT, SHIFT, VIRTKEY
++	VK_D, 40995, NOINVERT, CONTROL, VIRTKEY
++	VK_RETURN, 40997, NOINVERT, ALT, VIRTKEY
++}
++
++
++256 ACCELERATORS
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++	VK_F6, 41008, NOINVERT, VIRTKEY
++	VK_F5, 41504, NOINVERT, VIRTKEY
++	VK_F5, 41504, NOINVERT, CONTROL, VIRTKEY
++	VK_R, 41504, NOINVERT, CONTROL, VIRTKEY
++	VK_TAB, 41008, NOINVERT, VIRTKEY
++	VK_TAB, 41008, NOINVERT, SHIFT, VIRTKEY
++	VK_TAB, 41008, NOINVERT, CONTROL, VIRTKEY
++	VK_TAB, 41008, NOINVERT, CONTROL, SHIFT, VIRTKEY
++	VK_LEFT, 41249, ALT, VIRTKEY
++	VK_RIGHT, 41250, ALT, VIRTKEY
++	VK_UP, 40994, NOINVERT, ALT, VIRTKEY
++	VK_BACK, 41010, NOINVERT, VIRTKEY
++	VK_W, 40993, NOINVERT, CONTROL, VIRTKEY
++	VK_F4, 40993, NOINVERT, CONTROL, VIRTKEY
++	VK_ESCAPE, 41498, NOINVERT, VIRTKEY
++	VK_E, 40998, NOINVERT, CONTROL, SHIFT, VIRTKEY
++	VK_N, 40999, NOINVERT, CONTROL, SHIFT, VIRTKEY
++}
++
++
++259 ACCELERATORS
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++	VK_F3, 4100, NOINVERT, VIRTKEY
++	VK_E, 4100, NOINVERT, CONTROL, VIRTKEY
++	VK_F, 4100, NOINVERT, CONTROL, VIRTKEY
++}
++
++
++260 ACCELERATORS
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++	VK_Z, 28699, NOINVERT, CONTROL, VIRTKEY
++	VK_Y, 28704, NOINVERT, CONTROL, VIRTKEY
++}
++
++
++1 VERSIONINFO
++FILEVERSION 6,1,7600,16385
++PRODUCTVERSION 6,1,7600,16385
++FILEOS 0x40004
++FILETYPE 0x1
++{
++BLOCK &quot;StringFileInfo&quot;
++{
++	BLOCK &quot;040904B0&quot;
++	{
++		VALUE &quot;CompanyName&quot;, &quot;Microsoft Corporation&quot;
++		VALUE &quot;FileDescription&quot;, &quot;ExplorerFrame&quot;
++		VALUE &quot;FileVersion&quot;, &quot;6.1.7600.16385 (win7_rtm.090713-1255)&quot;
++		VALUE &quot;InternalName&quot;, &quot;ExplorerFrame&quot;
++		VALUE &quot;LegalCopyright&quot;, &quot;&#169; Microsoft Corporation. All rights reserved.&quot;
++		VALUE &quot;OriginalFilename&quot;, &quot;ExplorerFrame.dll.mui&quot;
++		VALUE &quot;ProductName&quot;, &quot;Microsoft&#174; Windows&#174; Operating System&quot;
++		VALUE &quot;ProductVersion&quot;, &quot;6.1.7600.16385&quot;
++	}
++}
++
++BLOCK &quot;VarFileInfo&quot;
++{
++	VALUE &quot;Translation&quot;, 0x0409 0x04B0
++}
++}
++
+
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000011.html">[I18n-bel-svn] r93 - Windows7/source/x32/Windows
+</A></li>
+	<LI>Next message: <A HREF="000013.html">[I18n-bel-svn] r95 - Windows7/omegat
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#12">[ date ]</a>
+              <a href="thread.html#12">[ thread ]</a>
+              <a href="subject.html#12">[ subject ]</a>
+              <a href="author.html#12">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/i18n-bel-svn">More information about the I18n-bel-svn
+mailing list</a><br>
+</body></html>

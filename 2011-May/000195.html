@@ -1,0 +1,2578 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [I18n-bel-svn] r277 - in Windows7: omegat	source/Windows/System32/en-US
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/i18n-bel-svn/2011-May/index.html" >
+   <LINK REL="made" HREF="mailto:i18n-bel-svn%40lists.berlios.de?Subject=Re%3A%20%5BI18n-bel-svn%5D%20r277%20-%20in%20Windows7%3A%20omegat%0A%09source/Windows/System32/en-US&In-Reply-To=%3C20110504110151.740B44813BB%40sheep.berlios.de%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000194.html">
+   <LINK REL="Next"  HREF="000196.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[I18n-bel-svn] r277 - in Windows7: omegat	source/Windows/System32/en-US</H1>
+    <B>eratyk at mail.berlios.de</B> 
+    <A HREF="mailto:i18n-bel-svn%40lists.berlios.de?Subject=Re%3A%20%5BI18n-bel-svn%5D%20r277%20-%20in%20Windows7%3A%20omegat%0A%09source/Windows/System32/en-US&In-Reply-To=%3C20110504110151.740B44813BB%40sheep.berlios.de%3E"
+       TITLE="[I18n-bel-svn] r277 - in Windows7: omegat	source/Windows/System32/en-US">eratyk at mail.berlios.de
+       </A><BR>
+    <I>Wed May  4 13:01:50 CEST 2011</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000194.html">[I18n-bel-svn] r276 - in Windows7: . omegat
+</A></li>
+        <LI>Next message: <A HREF="000196.html">[I18n-bel-svn] r278 - in Windows7: . source/Windows/System32/en-US
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#195">[ date ]</a>
+              <a href="thread.html#195">[ thread ]</a>
+              <a href="subject.html#195">[ subject ]</a>
+              <a href="author.html#195">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>Author: eratyk
+Date: 2011-05-04 13:01:50 +0200 (Wed, 04 May 2011)
+New Revision: 277
+
+Added:
+   Windows7/source/Windows/System32/en-US/fontext.dll_x32sp0.mui.rc
+   Windows7/source/Windows/System32/en-US/fontview.exe_x32sp0.mui.rc
+Modified:
+   Windows7/omegat/learned_words.txt
+   Windows7/omegat/project_save.tmx
+Log:
+font viewer add
+
+Modified: Windows7/omegat/learned_words.txt
+===================================================================
+--- Windows7/omegat/learned_words.txt	2011-05-02 21:31:56 UTC (rev 276)
++++ Windows7/omegat/learned_words.txt	2011-05-04 11:01:50 UTC (rev 277)
+@@ -507,3 +507,5 @@
+ &#208;&#191;&#208;&#176;&#208;&#180;&#208;&#186;&#208;&#176;&#209;&#130;&#208;&#176;&#208;&#187;&#208;&#190;&#208;&#179;&#208;&#176;&#208;&#188;
+ &#208;&#175;&#208;&#189;&#208;&#190;
+ &#208;&#186;&#208;&#176;&#209;&#128;&#209;&#139;&#209;&#129;&#209;&#130;&#208;&#176;&#208;&#187;&#209;&#140;&#208;&#189;&#209;&#150;&#209;&#134;&#208;&#186;&#208;&#176;&#209;&#143;
++&#208;&#191;&#209;&#128;&#208;&#176;&#208;&#179;&#208;&#187;&#209;&#143;&#208;&#180;&#208;&#176;&#208;&#187;&#209;&#140;&#208;&#189;&#209;&#150;&#208;&#186;&#209;&#131;
++&#208;&#178;&#208;&#176;&#208;&#186;&#208;&#189;&#208;&#181;
+
+Modified: Windows7/omegat/project_save.tmx
+===================================================================
+--- Windows7/omegat/project_save.tmx	2011-05-02 21:31:56 UTC (rev 276)
++++ Windows7/omegat/project_save.tmx	2011-05-04 11:01:50 UTC (rev 277)
+@@ -1,4 +1,4 @@
+-&#239;&#187;&#191;&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
++&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+ &lt;!DOCTYPE tmx SYSTEM &quot;tmx11.dtd&quot;&gt;
+ &lt;tmx version=&quot;1.1&quot;&gt;
+ &lt;header datatype=&quot;plaintext&quot; srclang=&quot;en&quot; adminlang=&quot;EN-US&quot; o-tmf=&quot;OmegaT TMX&quot; segtype=&quot;paragraph&quot; creationtoolversion=&quot;2.5.0&quot; creationtool=&quot;OmegaT&quot;/&gt;
+@@ -114,8 +114,8 @@
+     &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;%%\n This file contains characters in Unicode format which will be lost if you save this file as an ANSI encoded text file. To keep the Unicode information, click Cancel below and then select one of the Unicode options from the Encoding drop down list. Continue?&lt;/seg&gt;
+     &lt;/tuv&gt;
+-    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110210T123524Z&quot;&gt;
+-        &lt;seg&gt;%%\n &#208;&#147;&#209;&#141;&#209;&#130;&#209;&#139; &#209;&#132;&#208;&#176;&#208;&#185;&#208;&#187; &#208;&#183;&#208;&#188;&#209;&#143;&#209;&#136;&#209;&#135;&#208;&#176;&#208;&#181; &#209;&#129;&#209;&#150;&#208;&#188;&#208;&#178;&#208;&#176;&#208;&#187;&#209;&#139; &#209;&#158; &#209;&#132;&#208;&#176;&#209;&#128;&#208;&#188;&#208;&#176;&#209;&#134;&#208;&#181; Unicode, &#209;&#143;&#208;&#186;&#209;&#150;&#209;&#143; &#209;&#129;&#209;&#130;&#209;&#128;&#208;&#176;&#209;&#134;&#209;&#143;&#209;&#134;&#209;&#134;&#208;&#176;, &#208;&#186;&#208;&#176;&#208;&#187;&#209;&#150; &#208;&#178;&#209;&#139; &#208;&#183;&#208;&#176;&#209;&#133;&#208;&#176;&#208;&#178;&#208;&#176;&#208;&#181;&#209;&#134;&#208;&#181; &#209;&#130;&#209;&#141;&#208;&#186;&#209;&#129;&#209;&#130; &#209;&#131; &#209;&#132;&#208;&#176;&#208;&#185;&#208;&#187;&#208;&#181; &#208;&#183; &#208;&#186;&#208;&#176;&#208;&#180;&#208;&#176;&#208;&#178;&#208;&#176;&#208;&#189;&#208;&#189;&#208;&#181;&#208;&#188; ANSI. &#208;&#154;&#208;&#176;&#208;&#177; &#208;&#183;&#208;&#176;&#209;&#133;&#208;&#176;&#208;&#178;&#208;&#176;&#209;&#134;&#209;&#140; Unicode-&#209;&#150;&#208;&#189;&#209;&#132;&#208;&#176;&#209;&#128;&#208;&#188;&#208;&#176;&#209;&#134;&#209;&#139;&#209;&#142;, &#208;&#191;&#209;&#129;&#209;&#130;&#209;&#128;&#209;&#139;&#208;&#186;&#208;&#189;&#209;&#150;&#209;&#134;&#208;&#181; &quot;&#208;&#161;&#208;&#186;&#208;&#176;&#209;&#129;&#208;&#176;&#208;&#178;&#208;&#176;&#209;&#134;&#209;&#140;&quot; &#209;&#150; &#208;&#191;&#208;&#190;&#209;&#130;&#209;&#139;&#208;&#188; &#208;&#176;&#208;&#177;&#209;&#143;&#209;&#128;&#209;&#139;&#209;&#134;&#208;&#181; &#208;&#176;&#208;&#180;&#208;&#183;&#209;&#150;&#208;&#189; &#208;&#183; &#208;&#178;&#208;&#176;&#209;&#128;&#209;&#139;&#209;&#143;&#208;&#189;&#209;&#130;&#208;&#176;&#209;&#158; Unicode. &#208;&#159;&#209;&#128;&#208;&#176;&#209;&#134;&#209;&#143;&#208;&#179;&#208;&#189;&#209;&#131;&#209;&#134;&#209;&#140;?&lt;/seg&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T105452Z&quot;&gt;
++        &lt;seg&gt;%%\n &#208;&#147;&#209;&#141;&#209;&#130;&#209;&#139; &#209;&#132;&#208;&#176;&#208;&#185;&#208;&#187; &#208;&#183;&#208;&#188;&#209;&#143;&#209;&#136;&#209;&#135;&#208;&#176;&#208;&#181; &#208;&#183;&#208;&#189;&#208;&#176;&#208;&#186;&#209;&#150; &#209;&#158; &#209;&#132;&#208;&#176;&#209;&#128;&#208;&#188;&#208;&#176;&#209;&#134;&#208;&#181; Unicode, &#209;&#143;&#208;&#186;&#209;&#150;&#209;&#143; &#209;&#129;&#209;&#130;&#209;&#128;&#208;&#176;&#209;&#134;&#209;&#143;&#209;&#134;&#209;&#134;&#208;&#176;, &#208;&#186;&#208;&#176;&#208;&#187;&#209;&#150; &#208;&#178;&#209;&#139; &#208;&#183;&#208;&#176;&#209;&#133;&#208;&#176;&#208;&#178;&#208;&#176;&#208;&#181;&#209;&#134;&#208;&#181; &#209;&#130;&#209;&#141;&#208;&#186;&#209;&#129;&#209;&#130; &#209;&#131; &#209;&#132;&#208;&#176;&#208;&#185;&#208;&#187;&#208;&#181; &#208;&#183; &#208;&#186;&#208;&#176;&#208;&#180;&#208;&#176;&#208;&#178;&#208;&#176;&#208;&#189;&#208;&#189;&#208;&#181;&#208;&#188; ANSI. &#208;&#154;&#208;&#176;&#208;&#177; &#208;&#183;&#208;&#176;&#209;&#133;&#208;&#176;&#208;&#178;&#208;&#176;&#209;&#134;&#209;&#140; Unicode-&#209;&#150;&#208;&#189;&#209;&#132;&#208;&#176;&#209;&#128;&#208;&#188;&#208;&#176;&#209;&#134;&#209;&#139;&#209;&#142;, &#208;&#191;&#209;&#129;&#209;&#130;&#209;&#128;&#209;&#139;&#208;&#186;&#208;&#189;&#209;&#150;&#209;&#134;&#208;&#181; &quot;&#208;&#161;&#208;&#186;&#208;&#176;&#209;&#129;&#208;&#176;&#208;&#178;&#208;&#176;&#209;&#134;&#209;&#140;&quot; &#209;&#150; &#208;&#191;&#208;&#190;&#209;&#130;&#209;&#139;&#208;&#188; &#208;&#176;&#208;&#177;&#209;&#143;&#209;&#128;&#209;&#139;&#209;&#134;&#208;&#181; &#208;&#176;&#208;&#180;&#208;&#183;&#209;&#150;&#208;&#189; &#208;&#183; &#208;&#178;&#208;&#176;&#209;&#128;&#209;&#139;&#209;&#143;&#208;&#189;&#209;&#130;&#208;&#176;&#209;&#158; Unicode. &#208;&#159;&#209;&#128;&#208;&#176;&#209;&#134;&#209;&#143;&#208;&#179;&#208;&#189;&#209;&#131;&#209;&#134;&#209;&#140;?&lt;/seg&gt;
+     &lt;/tuv&gt;
+ &lt;/tu&gt;
+ &lt;tu&gt;
+@@ -184,6 +184,14 @@
+ &lt;/tu&gt;
+ &lt;tu&gt;
+     &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;%1 &amp; %2&lt;/seg&gt;
++    &lt;/tuv&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T103328Z&quot;&gt;
++        &lt;seg&gt;%1 &amp; %2&lt;/seg&gt;
++    &lt;/tuv&gt;
++&lt;/tu&gt;
++&lt;tu&gt;
++    &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;%1 (%2 bytes)&lt;/seg&gt;
+     &lt;/tuv&gt;
+     &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110224T065125Z&quot;&gt;
+@@ -240,6 +248,14 @@
+ &lt;/tu&gt;
+ &lt;tu&gt;
+     &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;%1 (OpenType)&lt;/seg&gt;
++    &lt;/tuv&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T103346Z&quot;&gt;
++        &lt;seg&gt;%1 (OpenType)&lt;/seg&gt;
++    &lt;/tuv&gt;
++&lt;/tu&gt;
++&lt;tu&gt;
++    &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;%1 (Recovered)&lt;/seg&gt;
+     &lt;/tuv&gt;
+     &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110323T103408Z&quot;&gt;
+@@ -248,6 +264,22 @@
+ &lt;/tu&gt;
+ &lt;tu&gt;
+     &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;%1 (TrueType)&lt;/seg&gt;
++    &lt;/tuv&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T103226Z&quot;&gt;
++        &lt;seg&gt;%1 (TrueType)&lt;/seg&gt;
++    &lt;/tuv&gt;
++&lt;/tu&gt;
++&lt;tu&gt;
++    &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;%1 (Type1)&lt;/seg&gt;
++    &lt;/tuv&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T103347Z&quot;&gt;
++        &lt;seg&gt;%1 (Type1)&lt;/seg&gt;
++    &lt;/tuv&gt;
++&lt;/tu&gt;
++&lt;tu&gt;
++    &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;%1 (USB): %2!d!%%&lt;/seg&gt;
+     &lt;/tuv&gt;
+     &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20101009T162526Z&quot;&gt;
+@@ -1752,6 +1784,22 @@
+ &lt;/tu&gt;
+ &lt;tu&gt;
+     &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;%1, Multiple Master&lt;/seg&gt;
++    &lt;/tuv&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T104545Z&quot;&gt;
++        &lt;seg&gt;%1, &#208;&#189;&#208;&#181;&#208;&#186;&#208;&#176;&#208;&#187;&#209;&#140;&#208;&#186;&#209;&#150; &#208;&#179;&#208;&#176;&#209;&#129;&#208;&#191;&#208;&#176;&#208;&#180;&#208;&#176;&#209;&#128;&#208;&#190;&#209;&#158;&lt;/seg&gt;
++    &lt;/tuv&gt;
++&lt;/tu&gt;
++&lt;tu&gt;
++    &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;%1, Single Master&lt;/seg&gt;
++    &lt;/tuv&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T104533Z&quot;&gt;
++        &lt;seg&gt;%1, &#208;&#176;&#208;&#180;&#208;&#183;&#209;&#150;&#208;&#189; &#208;&#179;&#208;&#176;&#209;&#129;&#208;&#191;&#208;&#176;&#208;&#180;&#208;&#176;&#209;&#128;&lt;/seg&gt;
++    &lt;/tuv&gt;
++&lt;/tu&gt;
++&lt;tu&gt;
++    &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;%1.&lt;/seg&gt;
+     &lt;/tuv&gt;
+     &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20100922T091339Z&quot;&gt;
+@@ -1816,6 +1864,46 @@
+ &lt;/tu&gt;
+ &lt;tu&gt;
+     &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;%1Digitally Signed,&lt;/seg&gt;
++    &lt;/tuv&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T103531Z&quot;&gt;
++        &lt;seg&gt;%1&#208;&#183; &#208;&#187;&#209;&#150;&#209;&#135;&#208;&#177;&#208;&#176;&#208;&#178;&#209;&#139;&#208;&#188; &#208;&#191;&#208;&#190;&#208;&#180;&#208;&#191;&#209;&#150;&#209;&#129;&#208;&#176;&#208;&#188;,&lt;/seg&gt;
++    &lt;/tuv&gt;
++&lt;/tu&gt;
++&lt;tu&gt;
++    &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;%1OpenType Layout,&lt;/seg&gt;
++    &lt;/tuv&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T103500Z&quot;&gt;
++        &lt;seg&gt;&#208;&#159;&#208;&#176;&#208;&#177;&#209;&#131;&#208;&#180;&#208;&#190;&#208;&#178;&#208;&#176; %1OpenType,&lt;/seg&gt;
++    &lt;/tuv&gt;
++&lt;/tu&gt;
++&lt;tu&gt;
++    &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;%1Outlines&lt;/seg&gt;
++    &lt;/tuv&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T103627Z&quot;&gt;
++        &lt;seg&gt;&#208;&#144;&#208;&#177;&#209;&#128;&#209;&#139;&#209;&#129;&#209;&#139; %1&lt;/seg&gt;
++    &lt;/tuv&gt;
++&lt;/tu&gt;
++&lt;tu&gt;
++    &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;%1PostScript&lt;/seg&gt;
++    &lt;/tuv&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T103535Z&quot;&gt;
++        &lt;seg&gt;%1PostScript&lt;/seg&gt;
++    &lt;/tuv&gt;
++&lt;/tu&gt;
++&lt;tu&gt;
++    &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;%1TrueType&lt;/seg&gt;
++    &lt;/tuv&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T103533Z&quot;&gt;
++        &lt;seg&gt;%1TrueType&lt;/seg&gt;
++    &lt;/tuv&gt;
++&lt;/tu&gt;
++&lt;tu&gt;
++    &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;%1\0%2\0%3\0%4\0%5\0%6&lt;/seg&gt;
+     &lt;/tuv&gt;
+     &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20101029T195324Z&quot;&gt;
+@@ -2842,8 +2930,8 @@
+     &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;%s Line: %ld Character: %ld&lt;/seg&gt;
+     &lt;/tuv&gt;
+-    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20100722T164134Z&quot;&gt;
+-        &lt;seg&gt;%s &#208;&#160;&#208;&#176;&#208;&#180;&#208;&#190;&#208;&#186;: %ld &#208;&#161;&#209;&#150;&#208;&#188;&#208;&#178;&#208;&#176;&#208;&#187;: %ld&lt;/seg&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T104934Z&quot;&gt;
++        &lt;seg&gt;%s &#208;&#160;&#208;&#176;&#208;&#180;&#208;&#190;&#208;&#186;: %ld &#208;&#151;&#208;&#189;&#208;&#176;&#208;&#186;: %ld&lt;/seg&gt;
+     &lt;/tuv&gt;
+ &lt;/tu&gt;
+ &lt;tu&gt;
+@@ -2888,6 +2976,22 @@
+ &lt;/tu&gt;
+ &lt;tu&gt;
+     &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;%s cannot be deleted because it is a protected system font&lt;/seg&gt;
++    &lt;/tuv&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T101230Z&quot;&gt;
++        &lt;seg&gt;%s &#208;&#189;&#208;&#181; &#208;&#188;&#208;&#190;&#208;&#182;&#208;&#176; &#208;&#177;&#209;&#139;&#209;&#134;&#209;&#140; &#208;&#178;&#209;&#139;&#208;&#180;&#208;&#176;&#208;&#187;&#208;&#181;&#208;&#189;&#209;&#139;, &#208;&#177;&#208;&#190; &#209;&#145;&#208;&#189; &#209;&#145;&#209;&#129;&#209;&#134;&#209;&#140; &#208;&#176;&#208;&#177;&#208;&#176;&#209;&#128;&#208;&#190;&#208;&#189;&#208;&#181;&#208;&#189;&#209;&#139;&#208;&#188; &#209;&#129;&#209;&#150;&#209;&#129;&#209;&#130;&#209;&#141;&#208;&#188;&#208;&#189;&#209;&#139;&#208;&#188; &#209;&#132;&#208;&#176;&#208;&#185;&#208;&#187;&#208;&#176;&#208;&#188;&lt;/seg&gt;
++    &lt;/tuv&gt;
++&lt;/tu&gt;
++&lt;tu&gt;
++    &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;%s cannot be deleted because it's in use&lt;/seg&gt;
++    &lt;/tuv&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T101049Z&quot;&gt;
++        &lt;seg&gt;%s &#208;&#189;&#208;&#181; &#208;&#188;&#208;&#190;&#208;&#182;&#208;&#176; &#208;&#177;&#209;&#139;&#209;&#134;&#209;&#140; &#208;&#178;&#209;&#139;&#208;&#180;&#208;&#176;&#208;&#187;&#208;&#181;&#208;&#189;&#208;&#176;&#209;&#143; &#208;&#183; &#208;&#189;&#208;&#176;&#208;&#179;&#208;&#190;&#208;&#180;&#209;&#139; &#209;&#143;&#208;&#181; &#208;&#178;&#209;&#139;&#208;&#186;&#208;&#176;&#209;&#128;&#209;&#139;&#209;&#129;&#209;&#130;&#208;&#176;&#208;&#189;&#208;&#189;&#209;&#143;&lt;/seg&gt;
++    &lt;/tuv&gt;
++&lt;/tu&gt;
++&lt;tu&gt;
++    &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;%s can&#194;&#146;t be included in the library.&lt;/seg&gt;
+     &lt;/tuv&gt;
+     &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20100724T182021Z&quot;&gt;
+@@ -2992,6 +3096,14 @@
+ &lt;/tu&gt;
+ &lt;tu&gt;
+     &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;%s is a font collection and deleting it will delete all fonts that are part of it.&lt;/seg&gt;
++    &lt;/tuv&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T091226Z&quot;&gt;
++        &lt;seg&gt;%s &#209;&#145;&#209;&#129;&#209;&#134;&#209;&#140; &#208;&#186;&#208;&#176;&#208;&#187;&#208;&#181;&#208;&#186;&#209;&#134;&#209;&#139;&#209;&#143;&#208;&#185; &#209;&#136;&#209;&#128;&#209;&#139;&#209;&#132;&#209;&#130;&#208;&#190;&#209;&#158;, &#209;&#150; &#209;&#143;&#208;&#181; &#208;&#178;&#209;&#139;&#208;&#180;&#208;&#176;&#208;&#187;&#208;&#181;&#208;&#189;&#208;&#189;&#208;&#181; &#208;&#178;&#209;&#139;&#208;&#180;&#208;&#176;&#208;&#187;&#209;&#150;&#209;&#134;&#209;&#140; &#209;&#131;&#209;&#129;&#208;&#181; &#209;&#136;&#209;&#128;&#209;&#139;&#209;&#132;&#209;&#130;&#209;&#139;, &#209;&#143;&#208;&#186;&#209;&#150;&#209;&#143; &#208;&#183;'&#209;&#143;&#209;&#158;&#208;&#187;&#209;&#143;&#209;&#142;&#209;&#134;&#209;&#134;&#208;&#176; &#209;&#143;&#208;&#181; &#209;&#135;&#208;&#176;&#209;&#129;&#209;&#130;&#208;&#186;&#208;&#176;&#208;&#185;.&lt;/seg&gt;
++    &lt;/tuv&gt;
++&lt;/tu&gt;
++&lt;tu&gt;
++    &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;%s is already included in the library.&lt;/seg&gt;
+     &lt;/tuv&gt;
+     &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110409T170551Z&quot;&gt;
+@@ -3216,6 +3328,14 @@
+ &lt;/tu&gt;
+ &lt;tu&gt;
+     &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;%s\n\nIf you delete this font, some text might not appear as you intended.&lt;/seg&gt;
++    &lt;/tuv&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T091114Z&quot;&gt;
++        &lt;seg&gt;%s\n\n&#208;&#154;&#208;&#176;&#208;&#187;&#209;&#150; &#208;&#178;&#209;&#139; &#208;&#178;&#209;&#139;&#208;&#180;&#208;&#176;&#208;&#187;&#209;&#150;&#209;&#134;&#208;&#181; &#208;&#179;&#209;&#141;&#209;&#130;&#209;&#139; &#209;&#136;&#209;&#128;&#209;&#139;&#209;&#132;&#209;&#130;, &#208;&#189;&#208;&#181;&#208;&#186;&#208;&#176;&#209;&#130;&#208;&#190;&#209;&#128;&#209;&#139;&#209;&#143; &#209;&#130;&#209;&#141;&#208;&#186;&#209;&#129;&#209;&#130;&#209;&#139; &#208;&#188;&#208;&#190;&#208;&#179;&#209;&#131;&#209;&#134;&#209;&#140; &#208;&#176;&#208;&#180;&#208;&#187;&#209;&#142;&#209;&#129;&#209;&#130;&#209;&#128;&#208;&#190;&#209;&#158;&#208;&#178;&#208;&#176;&#209;&#134;&#209;&#134;&#208;&#176; &#208;&#189;&#208;&#181;&#208;&#183;&#208;&#176;&#208;&#191;&#208;&#187;&#208;&#176;&#208;&#189;&#208;&#176;&#208;&#178;&#208;&#176;&#208;&#189;&#209;&#139;&#208;&#188; &#209;&#135;&#209;&#139;&#208;&#189;&#208;&#176;&#208;&#188;..&lt;/seg&gt;
++    &lt;/tuv&gt;
++&lt;/tu&gt;
++&lt;tu&gt;
++    &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;%size%&lt;/seg&gt;
+     &lt;/tuv&gt;
+     &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110404T133801Z&quot;&gt;
+@@ -3352,6 +3472,14 @@
+ &lt;/tu&gt;
+ &lt;tu&gt;
+     &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;&amp;&lt;/seg&gt;
++    &lt;/tuv&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T081905Z&quot;&gt;
++        &lt;seg&gt;&amp;&lt;/seg&gt;
++    &lt;/tuv&gt;
++&lt;/tu&gt;
++&lt;tu&gt;
++    &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;&amp;100%&lt;/seg&gt;
+     &lt;/tuv&gt;
+     &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20100722T175555Z&quot;&gt;
+@@ -3680,6 +3808,14 @@
+ &lt;/tu&gt;
+ &lt;tu&gt;
+     &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;&amp;Allow fonts to be installed using a shortcut (advanced)&lt;/seg&gt;
++    &lt;/tuv&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T085916Z&quot;&gt;
++        &lt;seg&gt;&#208;&#148;&#208;&#176;&#208;&#183;&#208;&#178;&#208;&#176;&#208;&#187;&#209;&#143;&#209;&#134;&#209;&#140; &#209;&#136;&#209;&#128;&#209;&#139;&#209;&#132;&#209;&#130;&#208;&#176;&#208;&#188; &#209;&#131;&#209;&#129;&#209;&#130;&#208;&#176;&#208;&#187;&#209;&#145;&#209;&#158;&#208;&#178;&#208;&#176;&#209;&#134;&#209;&#134;&#208;&#176; &#208;&#191;&#209;&#128;&#208;&#176;&#208;&#183; &#208;&#191;&#209;&#131;&#209;&#129;&#208;&#186;&#208;&#176;&#208;&#187;&#209;&#140;&#208;&#189;&#209;&#150;&#208;&#186;&#209;&#150; (&#208;&#180;&#208;&#176;&#208;&#180;&#208;&#176;&#209;&#130;&#208;&#186;&#208;&#190;&#208;&#178;&#208;&#176;)&lt;/seg&gt;
++    &lt;/tuv&gt;
++&lt;/tu&gt;
++&lt;tu&gt;
++    &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;&amp;Alt&lt;/seg&gt;
+     &lt;/tuv&gt;
+     &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20101118T081939Z&quot;&gt;
+@@ -3704,6 +3840,14 @@
+ &lt;/tu&gt;
+ &lt;tu&gt;
+     &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;&amp;Always Skip&lt;/seg&gt;
++    &lt;/tuv&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T101057Z&quot;&gt;
++        &lt;seg&gt;&#208;&#151;&#208;&#176;&#209;&#158;&#209;&#129;&#209;&#145;&#208;&#180;&#209;&#139; &#208;&#191;&#209;&#128;&#208;&#176;&#208;&#191;&#209;&#131;&#209;&#129;&#208;&#186;&#208;&#176;&#209;&#134;&#209;&#140;&lt;/seg&gt;
++    &lt;/tuv&gt;
++&lt;/tu&gt;
++&lt;tu&gt;
++    &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;&amp;Always convert to Rich Text&lt;/seg&gt;
+     &lt;/tuv&gt;
+     &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20100828T073847Z&quot;&gt;
+@@ -5344,6 +5488,22 @@
+ &lt;/tu&gt;
+ &lt;tu&gt;
+     &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;&amp;Do this for all current items&lt;/seg&gt;
++    &lt;/tuv&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T101840Z&quot;&gt;
++        &lt;seg&gt;&#208;&#160;&#208;&#176;&#208;&#177;&#209;&#150;&#209;&#134;&#209;&#140; &#208;&#179;&#209;&#141;&#209;&#130;&#208;&#176; &#208;&#180;&#208;&#187;&#209;&#143; &#209;&#158;&#209;&#129;&#209;&#150;&#209;&#133; &#208;&#180;&#208;&#183;&#208;&#181;&#208;&#185;&#208;&#189;&#209;&#139;&#209;&#133; &#209;&#141;&#208;&#187;&#208;&#181;&#208;&#188;&#208;&#181;&#208;&#189;&#209;&#130;&#208;&#176;&#209;&#158;&lt;/seg&gt;
++    &lt;/tuv&gt;
++&lt;/tu&gt;
++&lt;tu&gt;
++    &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;&amp;Do this for all selected font collections&lt;/seg&gt;
++    &lt;/tuv&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T101912Z&quot;&gt;
++        &lt;seg&gt;&#208;&#160;&#208;&#176;&#208;&#177;&#209;&#150;&#209;&#134;&#209;&#140; &#208;&#179;&#209;&#141;&#209;&#130;&#208;&#176; &#208;&#180;&#208;&#187;&#209;&#143; &#209;&#158;&#209;&#129;&#209;&#150;&#209;&#133; &#208;&#178;&#209;&#139;&#208;&#187;&#209;&#131;&#209;&#135;&#208;&#176;&#208;&#189;&#209;&#139;&#209;&#133; &#208;&#186;&#208;&#176;&#208;&#187;&#208;&#181;&#208;&#186;&#209;&#134;&#209;&#139;&#209;&#143;&#209;&#158; &#209;&#136;&#209;&#128;&#209;&#139;&#209;&#132;&#209;&#130;&#208;&#190;&#209;&#158;&lt;/seg&gt;
++    &lt;/tuv&gt;
++&lt;/tu&gt;
++&lt;tu&gt;
++    &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;&amp;Do this for the next %1!d!&lt;/seg&gt;
+     &lt;/tuv&gt;
+     &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20100717T112042Z&quot;&gt;
+@@ -5424,6 +5584,14 @@
+ &lt;/tu&gt;
+ &lt;tu&gt;
+     &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;&amp;Don't show for remaining items&lt;/seg&gt;
++    &lt;/tuv&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T101259Z&quot;&gt;
++        &lt;seg&gt;&#208;&#157;&#208;&#181; &#208;&#191;&#208;&#176;&#208;&#186;&#208;&#176;&#208;&#183;&#208;&#178;&#208;&#176;&#209;&#134;&#209;&#140; &#208;&#180;&#208;&#187;&#209;&#143; &#208;&#176;&#209;&#129;&#209;&#130;&#208;&#176;&#209;&#130;&#208;&#189;&#209;&#150;&#209;&#133; &#209;&#141;&#208;&#187;&#208;&#181;&#208;&#188;&#208;&#181;&#208;&#189;&#209;&#130;&#208;&#176;&#209;&#158;&lt;/seg&gt;
++    &lt;/tuv&gt;
++&lt;/tu&gt;
++&lt;tu&gt;
++    &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;&amp;Don't show me this again&lt;/seg&gt;
+     &lt;/tuv&gt;
+     &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110316T071542Z&quot;&gt;
+@@ -6298,8 +6466,8 @@
+     &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;&amp;Hide characters&lt;/seg&gt;
+     &lt;/tuv&gt;
+-    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110312T194718Z&quot;&gt;
+-        &lt;seg&gt;&#208;&#161;&#209;&#133;&#208;&#176;&#208;&#178;&#208;&#176;&#209;&#134;&#209;&#140; &#209;&#129;&#209;&#150;&#208;&#188;&#208;&#178;&#208;&#176;&#208;&#187;&#209;&#139;&lt;/seg&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T105941Z&quot;&gt;
++        &lt;seg&gt;&#208;&#161;&#209;&#133;&#208;&#176;&#208;&#178;&#208;&#176;&#209;&#134;&#209;&#140; &#208;&#183;&#208;&#189;&#208;&#176;&#208;&#186;&#209;&#150;&lt;/seg&gt;
+     &lt;/tuv&gt;
+ &lt;/tu&gt;
+ &lt;tu&gt;
+@@ -6312,6 +6480,14 @@
+ &lt;/tu&gt;
+ &lt;tu&gt;
+     &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;&amp;Hide fonts based on language settings&lt;/seg&gt;
++    &lt;/tuv&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T090249Z&quot;&gt;
++        &lt;seg&gt;&#208;&#165;&#208;&#176;&#208;&#178;&#208;&#176;&#209;&#134;&#209;&#140; &#209;&#136;&#209;&#128;&#209;&#139;&#209;&#132;&#209;&#130;&#209;&#139;, &#209;&#143;&#208;&#186;&#209;&#150;&#209;&#143; &#208;&#176;&#208;&#177;&#208;&#176;&#208;&#191;&#209;&#150;&#209;&#128;&#208;&#176;&#209;&#142;&#209;&#134;&#209;&#134;&#208;&#176; &#208;&#189;&#208;&#176; &#208;&#188;&#208;&#190;&#209;&#158;&#208;&#189;&#209;&#139;&#209;&#143; &#208;&#189;&#208;&#176;&#208;&#187;&#208;&#176;&#208;&#180;&#209;&#139;&lt;/seg&gt;
++    &lt;/tuv&gt;
++&lt;/tu&gt;
++&lt;tu&gt;
++    &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;&amp;Hide pointer while typing&lt;/seg&gt;
+     &lt;/tuv&gt;
+     &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110316T091943Z&quot;&gt;
+@@ -6554,8 +6730,8 @@
+     &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;&amp;Insert Unicode control character&lt;/seg&gt;
+     &lt;/tuv&gt;
+-    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20101206T113638Z&quot;&gt;
+-        &lt;seg&gt;&#208;&#163;&#209;&#129;&#209;&#130;&#208;&#176;&#208;&#178;&#209;&#150;&#209;&#134;&#209;&#140; &#208;&#186;&#209;&#150;&#209;&#128;&#209;&#131;&#209;&#142;&#209;&#135;&#209;&#139; &#209;&#129;&#209;&#150;&#208;&#188;&#208;&#178;&#208;&#176;&#208;&#187; Unicode&lt;/seg&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T105855Z&quot;&gt;
++        &lt;seg&gt;&#208;&#163;&#209;&#129;&#209;&#130;&#208;&#176;&#208;&#178;&#209;&#150;&#209;&#134;&#209;&#140; &#208;&#186;&#209;&#150;&#209;&#128;&#209;&#131;&#209;&#142;&#209;&#135;&#209;&#139; &#208;&#183;&#208;&#189;&#208;&#176;&#208;&#186; Unicode&lt;/seg&gt;
+     &lt;/tuv&gt;
+ &lt;/tu&gt;
+ &lt;tu&gt;
+@@ -7536,6 +7712,14 @@
+ &lt;/tu&gt;
+ &lt;tu&gt;
+     &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;&amp;Next &gt;&lt;/seg&gt;
++    &lt;/tuv&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T103344Z&quot;&gt;
++        &lt;seg&gt;&#208;&#157;&#208;&#176;&#209;&#129;&#209;&#130;&#209;&#131;&#208;&#191;&#208;&#189;&#209;&#139; &gt;&lt;/seg&gt;
++    &lt;/tuv&gt;
++&lt;/tu&gt;
++&lt;tu&gt;
++    &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;&amp;Next desktop background&lt;/seg&gt;
+     &lt;/tuv&gt;
+     &lt;tuv lang=&quot;be&quot; changeid=&quot;alex&quot; changedate=&quot;20101006T070856Z&quot;&gt;
+@@ -7576,6 +7760,14 @@
+ &lt;/tu&gt;
+ &lt;tu&gt;
+     &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;&amp;No, I don&#239;&#191;&#189;t want to delete the font collection&lt;/seg&gt;
++    &lt;/tuv&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T100916Z&quot;&gt;
++        &lt;seg&gt;&#208;&#157;&#208;&#181;, &#209;&#143; &#208;&#189;&#208;&#181; &#208;&#182;&#208;&#176;&#208;&#180;&#208;&#176;&#209;&#142; &#208;&#178;&#209;&#139;&#208;&#180;&#208;&#176;&#208;&#187;&#209;&#143;&#209;&#134;&#209;&#140; &#208;&#186;&#208;&#176;&#208;&#187;&#208;&#181;&#208;&#186;&#209;&#134;&#209;&#139;&#209;&#142; &#209;&#136;&#209;&#128;&#209;&#139;&#209;&#132;&#209;&#130;&#208;&#190;&#209;&#158;&lt;/seg&gt;
++    &lt;/tuv&gt;
++&lt;/tu&gt;
++&lt;tu&gt;
++    &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;&amp;No, do not dial&lt;/seg&gt;
+     &lt;/tuv&gt;
+     &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110108T152257Z&quot;&gt;
+@@ -8776,6 +8968,14 @@
+ &lt;/tu&gt;
+ &lt;tu&gt;
+     &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;&amp;Restore default font settings&lt;/seg&gt;
++    &lt;/tuv&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T085837Z&quot;&gt;
++        &lt;seg&gt;&#208;&#144;&#208;&#180;&#208;&#189;&#208;&#176;&#208;&#178;&#209;&#150;&#209;&#134;&#209;&#140; &#209;&#129;&#209;&#130;&#208;&#176;&#208;&#189;&#208;&#180;&#208;&#176;&#209;&#128;&#209;&#130;&#208;&#189;&#209;&#139;&#209;&#143; &#208;&#189;&#208;&#176;&#208;&#187;&#208;&#176;&#208;&#180;&#209;&#139; &#209;&#136;&#209;&#128;&#209;&#139;&#209;&#132;&#209;&#130;&#209;&#131;&lt;/seg&gt;
++    &lt;/tuv&gt;
++&lt;/tu&gt;
++&lt;tu&gt;
++    &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;&amp;Restore default libraries&lt;/seg&gt;
+     &lt;/tuv&gt;
+     &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20100920T072637Z&quot;&gt;
+@@ -9402,8 +9602,8 @@
+     &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;&amp;Show Unicode control characters&lt;/seg&gt;
+     &lt;/tuv&gt;
+-    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20101118T074528Z&quot;&gt;
+-        &lt;seg&gt;&#208;&#159;&#208;&#176;&#208;&#186;&#208;&#176;&#208;&#183;&#208;&#176;&#209;&#134;&#209;&#140; &#208;&#186;&#209;&#150;&#209;&#128;&#209;&#131;&#209;&#142;&#209;&#135;&#209;&#139;&#209;&#143; &#209;&#129;&#209;&#150;&#208;&#188;&#208;&#178;&#208;&#176;&#208;&#187;&#209;&#139; Unicode&lt;/seg&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T105844Z&quot;&gt;
++        &lt;seg&gt;&#208;&#159;&#208;&#176;&#208;&#186;&#208;&#176;&#208;&#183;&#208;&#176;&#209;&#134;&#209;&#140; &#208;&#186;&#209;&#150;&#209;&#128;&#209;&#131;&#209;&#142;&#209;&#135;&#209;&#139;&#209;&#143; &#208;&#183;&#208;&#189;&#208;&#176;&#208;&#186;&#209;&#150; Unicode&lt;/seg&gt;
+     &lt;/tuv&gt;
+ &lt;/tu&gt;
+ &lt;tu&gt;
+@@ -10832,6 +11032,14 @@
+ &lt;/tu&gt;
+ &lt;tu&gt;
+     &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;&amp;Yes, I want to delete this entire font collection from my computer&lt;/seg&gt;
++    &lt;/tuv&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T100855Z&quot;&gt;
++        &lt;seg&gt;&#208;&#162;&#208;&#176;&#208;&#186;, &#209;&#143; &#208;&#182;&#208;&#176;&#208;&#180;&#208;&#176;&#209;&#142; &#208;&#178;&#209;&#139;&#208;&#180;&#208;&#176;&#208;&#187;&#209;&#150;&#209;&#134;&#209;&#140; &#209;&#131;&#209;&#129;&#209;&#142; &#208;&#179;&#209;&#141;&#209;&#130;&#209;&#131;&#209;&#142; &#208;&#186;&#208;&#176;&#208;&#187;&#208;&#181;&#208;&#186;&#209;&#134;&#209;&#139;&#209;&#142; &#209;&#136;&#209;&#128;&#209;&#139;&#209;&#132;&#209;&#130;&#208;&#190;&#209;&#158; &#208;&#183; &#208;&#188;&#208;&#176;&#208;&#185;&#208;&#179;&#208;&#190; &#208;&#186;&#208;&#176;&#208;&#188;&#208;&#191;'&#209;&#142;&#209;&#130;&#208;&#176;&#209;&#128;&#208;&#176;&lt;/seg&gt;
++    &lt;/tuv&gt;
++&lt;/tu&gt;
++&lt;tu&gt;
++    &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;&amp;Yes, share the items.&lt;/seg&gt;
+     &lt;/tuv&gt;
+     &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110502T110700Z&quot;&gt;
+@@ -11272,10 +11480,18 @@
+ &lt;/tu&gt;
+ &lt;tu&gt;
+     &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;(OpenType)&lt;/seg&gt;
++    &lt;/tuv&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T083823Z&quot;&gt;
++        &lt;seg&gt;(OpenType)&lt;/seg&gt;
++    &lt;/tuv&gt;
++&lt;/tu&gt;
++&lt;tu&gt;
++    &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;(Private Characters)&lt;/seg&gt;
+     &lt;/tuv&gt;
+-    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110301T172525Z&quot;&gt;
+-        &lt;seg&gt;(&#208;&#159;&#209;&#128;&#209;&#139;&#208;&#178;&#208;&#176;&#209;&#130;&#208;&#189;&#209;&#139;&#209;&#143; &#209;&#129;&#209;&#150;&#208;&#188;&#208;&#178;&#208;&#176;&#208;&#187;&#209;&#139;)&lt;/seg&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T104849Z&quot;&gt;
++        &lt;seg&gt;(&#208;&#159;&#209;&#128;&#209;&#139;&#208;&#178;&#208;&#176;&#209;&#130;&#208;&#189;&#209;&#139;&#209;&#143; &#208;&#183;&#208;&#189;&#208;&#176;&#208;&#186;&#209;&#150;)&lt;/seg&gt;
+     &lt;/tuv&gt;
+ &lt;/tu&gt;
+ &lt;tu&gt;
+@@ -11320,6 +11536,22 @@
+ &lt;/tu&gt;
+ &lt;tu&gt;
+     &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;(TrueType)&lt;/seg&gt;
++    &lt;/tuv&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T082920Z&quot;&gt;
++        &lt;seg&gt;(TrueType)&lt;/seg&gt;
++    &lt;/tuv&gt;
++&lt;/tu&gt;
++&lt;tu&gt;
++    &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;(Type 1)&lt;/seg&gt;
++    &lt;/tuv&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T082927Z&quot;&gt;
++        &lt;seg&gt;(Type 1)&lt;/seg&gt;
++    &lt;/tuv&gt;
++&lt;/tu&gt;
++&lt;tu&gt;
++    &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;(Uninstall:) %s&lt;/seg&gt;
+     &lt;/tuv&gt;
+     &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110306T165804Z&quot;&gt;
+@@ -12384,6 +12616,22 @@
+ &lt;/tu&gt;
+ &lt;tu&gt;
+     &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;1234567890.:,; '  (!?) +-*/=&lt;/seg&gt;
++    &lt;/tuv&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T084117Z&quot;&gt;
++        &lt;seg&gt;1234567890.:,; '  (!?) +-*/=&lt;/seg&gt;
++    &lt;/tuv&gt;
++&lt;/tu&gt;
++&lt;tu&gt;
++    &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;1234567890.:,; ' &quot; (!?) +-*/=&lt;/seg&gt;
++    &lt;/tuv&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T103307Z&quot;&gt;
++        &lt;seg&gt;1234567890.:,; ' &quot; (!?) +-*/=&lt;/seg&gt;
++    &lt;/tuv&gt;
++&lt;/tu&gt;
++&lt;tu&gt;
++    &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;128&lt;/seg&gt;
+     &lt;/tuv&gt;
+     &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20101106T175245Z&quot;&gt;
+@@ -13256,6 +13504,14 @@
+ &lt;/tu&gt;
+ &lt;tu&gt;
+     &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;5,6,7&lt;/seg&gt;
++    &lt;/tuv&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T081833Z&quot;&gt;
++        &lt;seg&gt;5,6,7&lt;/seg&gt;
++    &lt;/tuv&gt;
++&lt;/tu&gt;
++&lt;tu&gt;
++    &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;5.25&quot;, 1.2MB,  512 bytes/sector&lt;/seg&gt;
+     &lt;/tuv&gt;
+     &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20101124T081038Z&quot;&gt;
+@@ -13472,6 +13728,14 @@
+ &lt;/tu&gt;
+ &lt;tu&gt;
+     &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;68,148,182&lt;/seg&gt;
++    &lt;/tuv&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T081832Z&quot;&gt;
++        &lt;seg&gt;68,148,182&lt;/seg&gt;
++    &lt;/tuv&gt;
++&lt;/tu&gt;
++&lt;tu&gt;
++    &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;6px&lt;/seg&gt;
+     &lt;/tuv&gt;
+     &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110305T192101Z&quot;&gt;
+@@ -13808,6 +14072,14 @@
+ &lt;/tu&gt;
+ &lt;tu&gt;
+     &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;&lt; P&amp;revious&lt;/seg&gt;
++    &lt;/tuv&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T103339Z&quot;&gt;
++        &lt;seg&gt;&lt; &#208;&#159;&#208;&#176;&#208;&#191;&#209;&#143;&#209;&#128;&#209;&#141;&#208;&#180;&#208;&#189;&#209;&#150;&lt;/seg&gt;
++    &lt;/tuv&gt;
++&lt;/tu&gt;
++&lt;tu&gt;
++    &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;&lt;&lt; &amp;Details&lt;/seg&gt;
+     &lt;/tuv&gt;
+     &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20100724T080721Z&quot;&gt;
+@@ -14296,6 +14568,14 @@
+ &lt;/tu&gt;
+ &lt;tu&gt;
+     &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;&lt;A&gt;Help me choose font settings&lt;/A&gt;&lt;/seg&gt;
++    &lt;/tuv&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T090335Z&quot;&gt;
++        &lt;seg&gt;&lt;A&gt;&#208;&#148;&#208;&#176;&#208;&#191;&#208;&#176;&#208;&#188;&#208;&#176;&#208;&#182;&#209;&#139;&#209;&#134;&#208;&#181; &#208;&#189;&#208;&#176;&#208;&#187;&#208;&#176;&#208;&#180;&#208;&#183;&#209;&#150;&#209;&#134;&#209;&#140; &#209;&#136;&#209;&#128;&#209;&#139;&#209;&#132;&#209;&#130;&#209;&#139;&lt;/A&gt;&lt;/seg&gt;
++    &lt;/tuv&gt;
++&lt;/tu&gt;
++&lt;tu&gt;
++    &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;&lt;A&gt;Help me choose&lt;/A&gt;&lt;/seg&gt;
+     &lt;/tuv&gt;
+     &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20101204T170709Z&quot;&gt;
+@@ -14530,8 +14810,8 @@
+     &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;&lt;No Connections Found&gt;&lt;/seg&gt;
+     &lt;/tuv&gt;
+-    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110216T093524Z&quot;&gt;
+-        &lt;seg&gt;&lt;&#208;&#151;&#208;&#187;&#209;&#131;&#209;&#135;&#209;&#141;&#208;&#189;&#208;&#189;&#209;&#150; &#208;&#189;&#208;&#181; &#208;&#183;&#208;&#189;&#208;&#190;&#208;&#185;&#208;&#180;&#208;&#183;&#208;&#181;&#208;&#189;&#209;&#139;&gt;&lt;/seg&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T082846Z&quot;&gt;
++        &lt;seg&gt;&lt;&#208;&#151;&#208;&#187;&#209;&#131;&#209;&#135;&#209;&#141;&#208;&#189;&#208;&#189;&#209;&#150; &#208;&#189;&#208;&#181; &#208;&#183;&#208;&#189;&#208;&#190;&#208;&#185;&#208;&#180;&#208;&#183;&#208;&#181;&#208;&#189;&#209;&#139;&#209;&#143;&gt;&lt;/seg&gt;
+     &lt;/tuv&gt;
+ &lt;/tu&gt;
+ &lt;tu&gt;
+@@ -14984,6 +15264,30 @@
+ &lt;/tu&gt;
+ &lt;tu&gt;
+     &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;?0?1?2&lt;/seg&gt;
++    &lt;/tuv&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T081709Z&quot;&gt;
++        &lt;seg&gt;?0?1?2&lt;/seg&gt;
++    &lt;/tuv&gt;
++&lt;/tu&gt;
++&lt;tu&gt;
++    &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;?0?3?4&lt;/seg&gt;
++    &lt;/tuv&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T081713Z&quot;&gt;
++        &lt;seg&gt;?0?3?4&lt;/seg&gt;
++    &lt;/tuv&gt;
++&lt;/tu&gt;
++&lt;tu&gt;
++    &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;?0?6?0&lt;/seg&gt;
++    &lt;/tuv&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T081714Z&quot;&gt;
++        &lt;seg&gt;?0?6?0&lt;/seg&gt;
++    &lt;/tuv&gt;
++&lt;/tu&gt;
++&lt;tu&gt;
++    &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;?1/%s sec.&lt;/seg&gt;
+     &lt;/tuv&gt;
+     &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20101027T180447Z&quot;&gt;
+@@ -15000,6 +15304,14 @@
+ &lt;/tu&gt;
+ &lt;tu&gt;
+     &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;???&lt;/seg&gt;
++    &lt;/tuv&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T081704Z&quot;&gt;
++        &lt;seg&gt;???&lt;/seg&gt;
++    &lt;/tuv&gt;
++&lt;/tu&gt;
++&lt;tu&gt;
++    &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;????&lt;/seg&gt;
+     &lt;/tuv&gt;
+     &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20100918T202302Z&quot;&gt;
+@@ -15032,6 +15344,30 @@
+ &lt;/tu&gt;
+ &lt;tu&gt;
+     &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;?C?5?6&lt;/seg&gt;
++    &lt;/tuv&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T081711Z&quot;&gt;
++        &lt;seg&gt;?C?5?6&lt;/seg&gt;
++    &lt;/tuv&gt;
++&lt;/tu&gt;
++&lt;tu&gt;
++    &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;?E?2?0&lt;/seg&gt;
++    &lt;/tuv&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T081712Z&quot;&gt;
++        &lt;seg&gt;?E?2?0&lt;/seg&gt;
++    &lt;/tuv&gt;
++&lt;/tu&gt;
++&lt;tu&gt;
++    &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;?v?&lt;/seg&gt;
++    &lt;/tuv&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T081707Z&quot;&gt;
++        &lt;seg&gt;?v?&lt;/seg&gt;
++    &lt;/tuv&gt;
++&lt;/tu&gt;
++&lt;tu&gt;
++    &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;@%SystemRoot%\\System32\\msutb.dll,-328&lt;/seg&gt;
+     &lt;/tuv&gt;
+     &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20100927T203611Z&quot;&gt;
+@@ -15314,8 +15650,8 @@
+     &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;A file extension cannot contain any of \\/:&quot;&lt;&gt;| characters.&lt;/seg&gt;
+     &lt;/tuv&gt;
+-    &lt;tuv lang=&quot;be&quot; changeid=&quot;Ales Koshal [icq#:706101]&quot; changedate=&quot;20100318T170642Z&quot;&gt;
+-        &lt;seg&gt;&#208;&#159;&#208;&#176;&#209;&#136;&#209;&#139;&#209;&#128;&#209;&#141;&#208;&#189;&#208;&#189;&#208;&#181; &#209;&#132;&#208;&#176;&#208;&#185;&#208;&#187;&#208;&#176; &#208;&#189;&#208;&#181; &#208;&#191;&#208;&#176;&#208;&#178;&#209;&#150;&#208;&#189;&#208;&#189;&#208;&#176; &#208;&#183;&#208;&#188;&#209;&#143;&#209;&#136;&#209;&#135;&#208;&#176;&#209;&#134;&#209;&#140; \\/:&quot;&lt;&gt;.&lt;/seg&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T104641Z&quot;&gt;
++        &lt;seg&gt;&#208;&#159;&#208;&#176;&#209;&#136;&#209;&#139;&#209;&#128;&#209;&#141;&#208;&#189;&#208;&#189;&#208;&#181; &#209;&#132;&#208;&#176;&#208;&#185;&#208;&#187;&#208;&#176; &#208;&#189;&#208;&#181; &#208;&#191;&#208;&#176;&#208;&#178;&#209;&#150;&#208;&#189;&#208;&#189;&#208;&#176; &#208;&#183;&#208;&#188;&#209;&#143;&#209;&#136;&#209;&#135;&#208;&#176;&#209;&#134;&#209;&#140; &#208;&#183;&#208;&#189;&#208;&#176;&#208;&#186;&#208;&#176;&#209;&#158; \\/:&quot;&lt;&gt;.&lt;/seg&gt;
+     &lt;/tuv&gt;
+ &lt;/tu&gt;
+ &lt;tu&gt;
+@@ -15338,8 +15674,8 @@
+     &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;A file name can't contain any of the following characters:\n\t %1&lt;/seg&gt;
+     &lt;/tuv&gt;
+-    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110502T111341Z&quot;&gt;
+-        &lt;seg&gt;&#208;&#157;&#208;&#176;&#208;&#183;&#208;&#178;&#208;&#176; &#209;&#132;&#208;&#176;&#208;&#185;&#208;&#187;&#208;&#176; &#208;&#189;&#208;&#181; &#208;&#191;&#208;&#176;&#208;&#178;&#209;&#150;&#208;&#189;&#208;&#189;&#208;&#176; &#208;&#183;&#208;&#188;&#209;&#143;&#209;&#136;&#209;&#135;&#208;&#176;&#209;&#134;&#209;&#140; &#208;&#189;&#208;&#176;&#209;&#129;&#209;&#130;&#209;&#131;&#208;&#191;&#208;&#189;&#209;&#139;&#209;&#143; &#209;&#129;&#209;&#150;&#208;&#188;&#208;&#178;&#208;&#176;&#208;&#187;&#209;&#139;:\n\t %1&lt;/seg&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T105638Z&quot;&gt;
++        &lt;seg&gt;&#208;&#157;&#208;&#176;&#208;&#183;&#208;&#178;&#208;&#176; &#209;&#132;&#208;&#176;&#208;&#185;&#208;&#187;&#208;&#176; &#208;&#189;&#208;&#181; &#208;&#191;&#208;&#176;&#208;&#178;&#209;&#150;&#208;&#189;&#208;&#189;&#208;&#176; &#208;&#183;&#208;&#188;&#209;&#143;&#209;&#136;&#209;&#135;&#208;&#176;&#209;&#134;&#209;&#140; &#208;&#189;&#208;&#176;&#209;&#129;&#209;&#130;&#209;&#131;&#208;&#191;&#208;&#189;&#209;&#139;&#209;&#143; &#208;&#183;&#208;&#189;&#208;&#176;&#208;&#186;&#209;&#150;:\n\t %1&lt;/seg&gt;
+     &lt;/tuv&gt;
+ &lt;/tu&gt;
+ &lt;tu&gt;
+@@ -15354,16 +15690,16 @@
+     &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;A file name can't contain any of the following characters:\n\t \\ / :  * ? &quot; &lt; &gt; |&lt;/seg&gt;
+     &lt;/tuv&gt;
+-    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110502T111309Z&quot;&gt;
+-        &lt;seg&gt;&#208;&#157;&#208;&#176;&#208;&#183;&#208;&#178;&#208;&#176; &#209;&#132;&#208;&#176;&#208;&#185;&#208;&#187;&#208;&#176; &#208;&#189;&#208;&#181; &#208;&#188;&#208;&#190;&#208;&#182;&#208;&#176; &#208;&#183;&#208;&#188;&#209;&#143;&#209;&#136;&#209;&#135;&#208;&#176;&#209;&#134;&#209;&#140; &#208;&#189;&#208;&#176;&#209;&#129;&#209;&#130;&#209;&#131;&#208;&#191;&#208;&#189;&#209;&#139;&#209;&#143; &#209;&#129;&#209;&#150;&#208;&#188;&#208;&#178;&#208;&#176;&#208;&#187;&#209;&#139;:\n\t \\ / :  * ? &quot; &lt; &gt; |&lt;/seg&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T105617Z&quot;&gt;
++        &lt;seg&gt;&#208;&#157;&#208;&#176;&#208;&#183;&#208;&#178;&#208;&#176; &#209;&#132;&#208;&#176;&#208;&#185;&#208;&#187;&#208;&#176; &#208;&#189;&#208;&#181; &#208;&#188;&#208;&#190;&#208;&#182;&#208;&#176; &#208;&#183;&#208;&#188;&#209;&#143;&#209;&#136;&#209;&#135;&#208;&#176;&#209;&#134;&#209;&#140; &#208;&#189;&#208;&#176;&#209;&#129;&#209;&#130;&#209;&#131;&#208;&#191;&#208;&#189;&#209;&#139;&#209;&#143; &#208;&#183;&#208;&#189;&#208;&#176;&#208;&#186;&#209;&#150;:\n\t \\ / :  * ? &quot; &lt; &gt; |&lt;/seg&gt;
+     &lt;/tuv&gt;
+ &lt;/tu&gt;
+ &lt;tu&gt;
+     &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;A file name must contain only the following characters:\n\t %1&lt;/seg&gt;
+     &lt;/tuv&gt;
+-    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110502T111346Z&quot;&gt;
+-        &lt;seg&gt;&#208;&#157;&#208;&#176;&#208;&#183;&#208;&#178;&#208;&#176; &#209;&#132;&#208;&#176;&#208;&#185;&#208;&#187;&#208;&#176; &#208;&#191;&#208;&#176;&#208;&#178;&#209;&#150;&#208;&#189;&#208;&#189;&#208;&#176; &#208;&#183;&#208;&#188;&#209;&#143;&#209;&#136;&#209;&#135;&#208;&#176;&#209;&#134;&#209;&#140; &#209;&#130;&#208;&#190;&#208;&#187;&#209;&#140;&#208;&#186;&#209;&#150; &#208;&#189;&#208;&#176;&#209;&#129;&#209;&#130;&#209;&#131;&#208;&#191;&#208;&#189;&#209;&#139;&#209;&#143; &#209;&#129;&#209;&#150;&#208;&#188;&#208;&#178;&#208;&#176;&#208;&#187;&#209;&#139;:\n\t %1&lt;/seg&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T105649Z&quot;&gt;
++        &lt;seg&gt;&#208;&#157;&#208;&#176;&#208;&#183;&#208;&#178;&#208;&#176; &#209;&#132;&#208;&#176;&#208;&#185;&#208;&#187;&#208;&#176; &#208;&#191;&#208;&#176;&#208;&#178;&#209;&#150;&#208;&#189;&#208;&#189;&#208;&#176; &#208;&#183;&#208;&#188;&#209;&#143;&#209;&#136;&#209;&#135;&#208;&#176;&#209;&#134;&#209;&#140; &#209;&#130;&#208;&#190;&#208;&#187;&#209;&#140;&#208;&#186;&#209;&#150; &#208;&#189;&#208;&#176;&#209;&#129;&#209;&#130;&#209;&#131;&#208;&#191;&#208;&#189;&#209;&#139;&#209;&#143; &#208;&#183;&#208;&#189;&#208;&#176;&#208;&#186;&#209;&#150;:\n\t %1&lt;/seg&gt;
+     &lt;/tuv&gt;
+ &lt;/tu&gt;
+ &lt;tu&gt;
+@@ -15450,8 +15786,8 @@
+     &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;A network name cannot contain \\, /, :, *, ?, &lt;, &gt;, |, &quot;, spaces only or tab characters.&lt;/seg&gt;
+     &lt;/tuv&gt;
+-    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20101205T190817Z&quot;&gt;
+-        &lt;seg&gt;&#208;&#161;&#208;&#181;&#209;&#130;&#208;&#186;&#208;&#176;&#208;&#178;&#208;&#176;&#209;&#143; &#208;&#189;&#208;&#176;&#208;&#183;&#208;&#178;&#208;&#176; &#208;&#189;&#208;&#181; &#208;&#188;&#208;&#190;&#208;&#182;&#208;&#176; &#208;&#183;&#208;&#188;&#209;&#143;&#209;&#136;&#209;&#135;&#208;&#176;&#209;&#134;&#209;&#140; \\, /, :, *, ?, &lt;, &gt;, |, &quot;, &#209;&#130;&#208;&#190;&#208;&#187;&#209;&#140;&#208;&#186;&#209;&#150; &#208;&#191;&#209;&#128;&#208;&#176;&#208;&#179;&#208;&#176;&#208;&#187;&#209;&#139; &#209;&#134;&#209;&#150; &#209;&#129;&#209;&#150;&#208;&#188;&#208;&#178;&#208;&#176;&#208;&#187;&#209;&#139; &#209;&#130;&#208;&#176;&#208;&#177;&#209;&#131;&#208;&#187;&#209;&#143;&#209;&#134;&#209;&#139;&#209;&#150;.&lt;/seg&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T105542Z&quot;&gt;
++        &lt;seg&gt;&#208;&#161;&#208;&#181;&#209;&#130;&#208;&#186;&#208;&#176;&#208;&#178;&#208;&#176;&#209;&#143; &#208;&#189;&#208;&#176;&#208;&#183;&#208;&#178;&#208;&#176; &#208;&#189;&#208;&#181; &#208;&#188;&#208;&#190;&#208;&#182;&#208;&#176; &#208;&#183;&#208;&#188;&#209;&#143;&#209;&#136;&#209;&#135;&#208;&#176;&#209;&#134;&#209;&#140; \\, /, :, *, ?, &lt;, &gt;, |, &quot;, &#209;&#130;&#208;&#190;&#208;&#187;&#209;&#140;&#208;&#186;&#209;&#150; &#208;&#191;&#209;&#128;&#208;&#176;&#208;&#179;&#208;&#176;&#208;&#187;&#209;&#139; &#209;&#134;&#209;&#150; &#208;&#183;&#208;&#189;&#208;&#176;&#208;&#186;&#209;&#150; &#209;&#130;&#208;&#176;&#208;&#177;&#209;&#131;&#208;&#187;&#209;&#143;&#209;&#134;&#209;&#139;&#209;&#150;.&lt;/seg&gt;
+     &lt;/tuv&gt;
+ &lt;/tu&gt;
+ &lt;tu&gt;
+@@ -15922,8 +16258,8 @@
+     &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;A share name can't contain any of the following characters:\n\t %1&lt;/seg&gt;
+     &lt;/tuv&gt;
+-    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110502T111254Z&quot;&gt;
+-        &lt;seg&gt;&#208;&#157;&#208;&#176;&#208;&#183;&#208;&#178;&#208;&#176; &#208;&#176;&#208;&#177;&#208;&#176;&#208;&#179;&#209;&#131;&#208;&#187;&#208;&#181;&#208;&#189;&#208;&#189;&#209;&#143; &#208;&#189;&#208;&#181; &#208;&#191;&#208;&#176;&#208;&#178;&#209;&#150;&#208;&#189;&#208;&#189;&#208;&#176; &#208;&#183;&#208;&#188;&#209;&#143;&#209;&#136;&#209;&#135;&#208;&#176;&#209;&#134;&#209;&#140; &#208;&#189;&#208;&#176;&#209;&#129;&#209;&#130;&#209;&#131;&#208;&#191;&#208;&#189;&#209;&#139;&#209;&#143; &#209;&#129;&#209;&#150;&#208;&#188;&#208;&#178;&#208;&#176;&#208;&#187;&#209;&#139;:\n\t %1&lt;/seg&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T105458Z&quot;&gt;
++        &lt;seg&gt;&#208;&#157;&#208;&#176;&#208;&#183;&#208;&#178;&#208;&#176; &#208;&#176;&#208;&#177;&#208;&#176;&#208;&#179;&#209;&#131;&#208;&#187;&#208;&#181;&#208;&#189;&#208;&#189;&#209;&#143; &#208;&#189;&#208;&#181; &#208;&#191;&#208;&#176;&#208;&#178;&#209;&#150;&#208;&#189;&#208;&#189;&#208;&#176; &#208;&#183;&#208;&#188;&#209;&#143;&#209;&#136;&#209;&#135;&#208;&#176;&#209;&#134;&#209;&#140; &#208;&#189;&#208;&#176;&#209;&#129;&#209;&#130;&#209;&#131;&#208;&#191;&#208;&#189;&#209;&#139;&#209;&#143; &#208;&#183;&#208;&#189;&#208;&#176;&#208;&#186;&#209;&#150;:\n\t %1&lt;/seg&gt;
+     &lt;/tuv&gt;
+ &lt;/tu&gt;
+ &lt;tu&gt;
+@@ -15984,6 +16320,22 @@
+ &lt;/tu&gt;
+ &lt;tu&gt;
+     &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;A#*.fon;*.fo_#&lt;/seg&gt;
++    &lt;/tuv&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T082825Z&quot;&gt;
++        &lt;seg&gt;A#*.fon;*.fo_#&lt;/seg&gt;
++    &lt;/tuv&gt;
++&lt;/tu&gt;
++&lt;tu&gt;
++    &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;A#*.otf;*.ttf;*.tt_;*.fon;*.fo_;*.inf;*.ttc;*.pfm#&lt;/seg&gt;
++    &lt;/tuv&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T082823Z&quot;&gt;
++        &lt;seg&gt;A#*.otf;*.ttf;*.tt_;*.fon;*.fo_;*.inf;*.ttc;*.pfm#&lt;/seg&gt;
++    &lt;/tuv&gt;
++&lt;/tu&gt;
++&lt;tu&gt;
++    &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;A&amp;M symbol:&lt;/seg&gt;
+     &lt;/tuv&gt;
+     &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20100924T165238Z&quot;&gt;
+@@ -16432,6 +16784,14 @@
+ &lt;/tu&gt;
+ &lt;tu&gt;
+     &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Abg&lt;/seg&gt;
++    &lt;/tuv&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T081823Z&quot;&gt;
++        &lt;seg&gt;Abg&lt;/seg&gt;
++    &lt;/tuv&gt;
++&lt;/tu&gt;
++&lt;tu&gt;
++    &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Abou&amp;t Paint&lt;/seg&gt;
+     &lt;/tuv&gt;
+     &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110305T205601Z&quot;&gt;
+@@ -21384,6 +21744,14 @@
+ &lt;/tu&gt;
+ &lt;tu&gt;
+     &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Are you sure you want to delete these %d fonts permanently?&lt;/seg&gt;
++    &lt;/tuv&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T090809Z&quot;&gt;
++        &lt;seg&gt;&#208;&#146;&#209;&#139; &#209;&#129;&#208;&#176;&#208;&#191;&#209;&#128;&#208;&#176;&#209;&#158;&#208;&#180;&#209;&#139; &#208;&#182;&#208;&#176;&#208;&#180;&#208;&#176;&#208;&#181;&#209;&#134;&#208;&#181; &#208;&#183;&#208;&#189;&#209;&#150;&#209;&#136;&#209;&#135;&#209;&#139;&#209;&#134;&#209;&#140; &#208;&#179;&#209;&#141;&#209;&#130;&#209;&#139;&#209;&#143; %d &#209;&#136;&#209;&#128;&#209;&#139;&#209;&#132;&#209;&#130;&#208;&#190;&#209;&#158;?&lt;/seg&gt;
++    &lt;/tuv&gt;
++&lt;/tu&gt;
++&lt;tu&gt;
++    &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Are you sure you want to delete these %u items?  \n(Deleting a folder will delete all of its contents)&lt;/seg&gt;
+     &lt;/tuv&gt;
+     &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110223T091224Z&quot;&gt;
+@@ -21408,6 +21776,22 @@
+ &lt;/tu&gt;
+ &lt;tu&gt;
+     &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Are you sure you want to delete this font collection?&lt;/seg&gt;
++    &lt;/tuv&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T100940Z&quot;&gt;
++        &lt;seg&gt;&#208;&#146;&#209;&#139; &#209;&#129;&#208;&#176;&#208;&#191;&#209;&#128;&#208;&#176;&#209;&#158;&#208;&#180;&#209;&#139; &#208;&#182;&#208;&#176;&#208;&#180;&#208;&#176;&#208;&#181;&#209;&#134;&#208;&#181; &#208;&#178;&#209;&#139;&#208;&#180;&#208;&#176;&#208;&#187;&#209;&#150;&#209;&#134;&#209;&#140; &#208;&#179;&#209;&#141;&#209;&#130;&#209;&#131;&#209;&#142; &#208;&#186;&#208;&#176;&#208;&#187;&#208;&#181;&#208;&#186;&#209;&#134;&#209;&#139;&#209;&#142; &#209;&#136;&#209;&#128;&#209;&#139;&#209;&#132;&#209;&#130;&#208;&#190;&#209;&#158;?&lt;/seg&gt;
++    &lt;/tuv&gt;
++&lt;/tu&gt;
++&lt;tu&gt;
++    &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Are you sure you want to delete this font permanently?&lt;/seg&gt;
++    &lt;/tuv&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T091055Z&quot;&gt;
++        &lt;seg&gt;&#208;&#146;&#209;&#139; &#209;&#129;&#208;&#176;&#208;&#191;&#209;&#128;&#208;&#176;&#209;&#158;&#208;&#180;&#209;&#139; &#208;&#182;&#208;&#176;&#208;&#180;&#208;&#176;&#208;&#181;&#209;&#134;&#208;&#181; &#208;&#183;&#208;&#189;&#209;&#150;&#209;&#136;&#209;&#135;&#209;&#139;&#209;&#134;&#209;&#140; &#208;&#179;&#209;&#141;&#209;&#130;&#209;&#139; &#209;&#136;&#209;&#128;&#209;&#139;&#209;&#132;&#209;&#130;?&lt;/seg&gt;
++    &lt;/tuv&gt;
++&lt;/tu&gt;
++&lt;tu&gt;
++    &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Are you sure you want to disconnect the selected user(s)?&lt;/seg&gt;
+     &lt;/tuv&gt;
+     &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20101119T200735Z&quot;&gt;
+@@ -23632,6 +24016,14 @@
+ &lt;/tu&gt;
+ &lt;tu&gt;
+     &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Bitmap embedding only&lt;/seg&gt;
++    &lt;/tuv&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T085615Z&quot;&gt;
++        &lt;seg&gt;&#208;&#162;&#208;&#190;&#208;&#187;&#209;&#140;&#208;&#186;&#209;&#150; &#209;&#128;&#208;&#176;&#209;&#129;&#209;&#130;&#209;&#128;&#208;&#176;&#208;&#178;&#208;&#176;&#208;&#181; &#209;&#158;&#208;&#186;&#208;&#176;&#209;&#128;&#208;&#176;&#208;&#189;&#208;&#181;&#208;&#189;&#208;&#189;&#208;&#181;&lt;/seg&gt;
++    &lt;/tuv&gt;
++&lt;/tu&gt;
++&lt;tu&gt;
++    &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Bitmap image&lt;/seg&gt;
+     &lt;/tuv&gt;
+     &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20100723T135303Z&quot;&gt;
+@@ -25840,6 +26232,14 @@
+ &lt;/tu&gt;
+ &lt;tu&gt;
+     &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Cannot install %1!s!&lt;/seg&gt;
++    &lt;/tuv&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T082243Z&quot;&gt;
++        &lt;seg&gt;&#208;&#157;&#208;&#181;&#208;&#188;&#208;&#176;&#208;&#179;&#209;&#135;&#209;&#139;&#208;&#188;&#208;&#176; &#209;&#158;&#209;&#129;&#209;&#130;&#208;&#176;&#208;&#187;&#209;&#143;&#208;&#178;&#208;&#176;&#209;&#134;&#209;&#140; %1!s!&lt;/seg&gt;
++    &lt;/tuv&gt;
++&lt;/tu&gt;
++&lt;tu&gt;
++    &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Cannot name a connection as Incoming Connections&lt;/seg&gt;
+     &lt;/tuv&gt;
+     &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110127T094206Z&quot;&gt;
+@@ -25954,8 +26354,8 @@
+     &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Cannot rename this connection. A connection name cannot contain tabs, only spaces, or any of the following characters: \\/:*?&lt;&gt;|&quot;&lt;/seg&gt;
+     &lt;/tuv&gt;
+-    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110127T094134Z&quot;&gt;
+-        &lt;seg&gt;&#208;&#157;&#208;&#181;&#208;&#188;&#208;&#176;&#208;&#179;&#209;&#135;&#209;&#139;&#208;&#188;&#208;&#176; &#208;&#191;&#208;&#181;&#209;&#128;&#208;&#176;&#208;&#189;&#208;&#176;&#208;&#183;&#208;&#178;&#208;&#176;&#209;&#134;&#209;&#140; &#208;&#179;&#209;&#141;&#209;&#130;&#208;&#176;&#208;&#181; &#208;&#183;&#208;&#187;&#209;&#131;&#209;&#135;&#209;&#141;&#208;&#189;&#208;&#189;&#208;&#181;. &#208;&#157;&#208;&#176;&#208;&#183;&#208;&#178;&#208;&#176; &#208;&#183;&#208;&#187;&#209;&#131;&#209;&#135;&#209;&#141;&#208;&#189;&#208;&#189;&#209;&#143; &#208;&#189;&#208;&#181; &#208;&#188;&#208;&#190;&#208;&#182;&#208;&#176; &#209;&#158;&#209;&#130;&#209;&#128;&#209;&#139;&#208;&#188;&#208;&#187;&#209;&#150;&#208;&#178;&#208;&#176;&#209;&#134;&#209;&#140; &#208;&#191;&#209;&#128;&#208;&#176;&#208;&#179;&#208;&#176;&#208;&#187;&#209;&#139;, &#209;&#129;&#209;&#150;&#208;&#188;&#208;&#178;&#208;&#176;&#208;&#187;&#209;&#139; &#209;&#130;&#208;&#176;&#208;&#177;&#209;&#131;&#208;&#187;&#209;&#143;&#209;&#134;&#209;&#139;&#209;&#150; &#209;&#134;&#209;&#150; &#208;&#189;&#208;&#176;&#209;&#129;&#209;&#130;&#209;&#131;&#208;&#191;&#208;&#189;&#209;&#139;&#209;&#143;: \\/:*?&lt;&gt;|&quot;&lt;/seg&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T105443Z&quot;&gt;
++        &lt;seg&gt;&#208;&#157;&#208;&#181;&#208;&#188;&#208;&#176;&#208;&#179;&#209;&#135;&#209;&#139;&#208;&#188;&#208;&#176; &#208;&#191;&#208;&#181;&#209;&#128;&#208;&#176;&#208;&#189;&#208;&#176;&#208;&#183;&#208;&#178;&#208;&#176;&#209;&#134;&#209;&#140; &#208;&#179;&#209;&#141;&#209;&#130;&#208;&#176;&#208;&#181; &#208;&#183;&#208;&#187;&#209;&#131;&#209;&#135;&#209;&#141;&#208;&#189;&#208;&#189;&#208;&#181;. &#208;&#157;&#208;&#176;&#208;&#183;&#208;&#178;&#208;&#176; &#208;&#183;&#208;&#187;&#209;&#131;&#209;&#135;&#209;&#141;&#208;&#189;&#208;&#189;&#209;&#143; &#208;&#189;&#208;&#181; &#208;&#188;&#208;&#190;&#208;&#182;&#208;&#176; &#209;&#158;&#209;&#130;&#209;&#128;&#209;&#139;&#208;&#188;&#208;&#187;&#209;&#150;&#208;&#178;&#208;&#176;&#209;&#134;&#209;&#140; &#208;&#191;&#209;&#128;&#208;&#176;&#208;&#179;&#208;&#176;&#208;&#187;&#209;&#139;, &#208;&#183;&#208;&#189;&#208;&#176;&#208;&#186;&#209;&#150; &#209;&#130;&#208;&#176;&#208;&#177;&#209;&#131;&#208;&#187;&#209;&#143;&#209;&#134;&#209;&#139;&#209;&#150; &#209;&#134;&#209;&#150; &#208;&#189;&#208;&#176;&#209;&#129;&#209;&#130;&#209;&#131;&#208;&#191;&#208;&#189;&#209;&#139;&#209;&#143;: \\/:*?&lt;&gt;|&quot;&lt;/seg&gt;
+     &lt;/tuv&gt;
+ &lt;/tu&gt;
+ &lt;tu&gt;
+@@ -26912,6 +27312,14 @@
+ &lt;/tu&gt;
+ &lt;tu&gt;
+     &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Change font size&lt;/seg&gt;
++    &lt;/tuv&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T085756Z&quot;&gt;
++        &lt;seg&gt;&#208;&#151;&#208;&#188;&#209;&#143;&#208;&#189;&#209;&#150;&#209;&#134;&#209;&#140; &#208;&#191;&#208;&#176;&#208;&#188;&#208;&#181;&#209;&#128; &#209;&#136;&#209;&#128;&#209;&#139;&#209;&#132;&#209;&#130;&#209;&#131;&lt;/seg&gt;
++    &lt;/tuv&gt;
++&lt;/tu&gt;
++&lt;tu&gt;
++    &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Change how Windows searches&lt;/seg&gt;
+     &lt;/tuv&gt;
+     &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20101028T083706Z&quot;&gt;
+@@ -28010,32 +28418,32 @@
+     &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Charac&amp;ter set :&lt;/seg&gt;
+     &lt;/tuv&gt;
+-    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110301T172101Z&quot;&gt;
+-        &lt;seg&gt;&#208;&#154;&#208;&#176;&#208;&#188;&#208;&#191;&#208;&#187;&#208;&#181;&#208;&#186;&#209;&#130; &#209;&#129;&#209;&#150;&#208;&#188;&#208;&#178;&#208;&#176;&#208;&#187;&#208;&#176;&#209;&#158;:&lt;/seg&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T104714Z&quot;&gt;
++        &lt;seg&gt;&#208;&#151;&#208;&#189;&#208;&#176;&#208;&#186;&#208;&#176;&#208;&#183;&#208;&#177;&#208;&#190;&#209;&#128;:&lt;/seg&gt;
+     &lt;/tuv&gt;
+ &lt;/tu&gt;
+ &lt;tu&gt;
+     &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Character Code&lt;/seg&gt;
+     &lt;/tuv&gt;
+-    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110301T172506Z&quot;&gt;
+-        &lt;seg&gt;&#208;&#154;&#208;&#190;&#208;&#180; &#209;&#129;&#209;&#150;&#208;&#188;&#208;&#178;&#208;&#176;&#208;&#187;&#208;&#176;&lt;/seg&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T104839Z&quot;&gt;
++        &lt;seg&gt;&#208;&#154;&#208;&#190;&#208;&#180; &#208;&#183;&#208;&#189;&#208;&#176;&#208;&#186;&#208;&#176;&lt;/seg&gt;
+     &lt;/tuv&gt;
+ &lt;/tu&gt;
+ &lt;tu&gt;
+     &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Character Map&lt;/seg&gt;
+     &lt;/tuv&gt;
+-    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20100719T120211Z&quot;&gt;
+-        &lt;seg&gt;&#208;&#162;&#208;&#176;&#208;&#177;&#208;&#187;&#209;&#150;&#209;&#134;&#208;&#176; &#209;&#129;&#209;&#150;&#208;&#188;&#208;&#178;&#208;&#176;&#208;&#187;&#208;&#176;&#209;&#158;&lt;/seg&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T104617Z&quot;&gt;
++        &lt;seg&gt;&#208;&#162;&#208;&#176;&#208;&#177;&#208;&#187;&#209;&#150;&#209;&#134;&#208;&#176; &#208;&#183;&#208;&#189;&#208;&#176;&#208;&#186;&#208;&#176;&#209;&#158;&lt;/seg&gt;
+     &lt;/tuv&gt;
+ &lt;/tu&gt;
+ &lt;tu&gt;
+     &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Character count&lt;/seg&gt;
+     &lt;/tuv&gt;
+-    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20101030T181645Z&quot;&gt;
+-        &lt;seg&gt;&#208;&#155;&#209;&#150;&#208;&#186; &#209;&#129;&#209;&#150;&#208;&#188;&#208;&#178;&#208;&#176;&#208;&#187;&#208;&#176;&#209;&#158;&lt;/seg&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T105555Z&quot;&gt;
++        &lt;seg&gt;&#208;&#155;&#209;&#150;&#208;&#186; &#208;&#183;&#208;&#189;&#208;&#176;&#208;&#186;&#208;&#176;&#209;&#158;&lt;/seg&gt;
+     &lt;/tuv&gt;
+ &lt;/tu&gt;
+ &lt;tu&gt;
+@@ -30584,6 +30992,14 @@
+ &lt;/tu&gt;
+ &lt;tu&gt;
+     &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Close any open programs, and then click Try Again.&lt;/seg&gt;
++    &lt;/tuv&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T101152Z&quot;&gt;
++        &lt;seg&gt;&#208;&#151;&#208;&#176;&#209;&#135;&#209;&#139;&#208;&#189;&#209;&#150;&#209;&#134;&#208;&#181; &#209;&#158;&#209;&#129;&#208;&#181; &#208;&#176;&#208;&#180;&#209;&#135;&#209;&#139;&#208;&#189;&#208;&#181;&#208;&#189;&#209;&#139;&#209;&#143; &#208;&#191;&#209;&#128;&#208;&#176;&#208;&#179;&#209;&#128;&#208;&#176;&#208;&#188;&#209;&#139; &#209;&#150; &#208;&#191;&#209;&#129;&#209;&#130;&#209;&#128;&#209;&#139;&#208;&#186;&#208;&#189;&#209;&#150;&#209;&#134;&#208;&#181; &quot;&#208;&#159;&#208;&#176;&#209;&#158;&#209;&#130;&#208;&#176;&#209;&#128;&#209;&#139;&#209;&#134;&#209;&#140;&quot;.&lt;/seg&gt;
++    &lt;/tuv&gt;
++&lt;/tu&gt;
++&lt;tu&gt;
++    &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Close button&lt;/seg&gt;
+     &lt;/tuv&gt;
+     &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20101019T150331Z&quot;&gt;
+@@ -36808,6 +37224,14 @@
+ &lt;/tu&gt;
+ &lt;tu&gt;
+     &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Delete Collection&lt;/seg&gt;
++    &lt;/tuv&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T100948Z&quot;&gt;
++        &lt;seg&gt;&#208;&#146;&#209;&#139;&#208;&#180;&#208;&#176;&#208;&#187;&#209;&#150;&#209;&#134;&#209;&#140; &#208;&#186;&#208;&#176;&#208;&#187;&#208;&#181;&#208;&#186;&#209;&#134;&#209;&#139;&#209;&#142;&lt;/seg&gt;
++    &lt;/tuv&gt;
++&lt;/tu&gt;
++&lt;tu&gt;
++    &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Delete File&lt;/seg&gt;
+     &lt;/tuv&gt;
+     &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20100717T095535Z&quot;&gt;
+@@ -36832,6 +37256,22 @@
+ &lt;/tu&gt;
+ &lt;tu&gt;
+     &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Delete Font&lt;/seg&gt;
++    &lt;/tuv&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T091031Z&quot;&gt;
++        &lt;seg&gt;&#208;&#146;&#209;&#139;&#208;&#180;&#208;&#176;&#208;&#187;&#209;&#150;&#209;&#134;&#209;&#140; &#209;&#136;&#209;&#128;&#209;&#139;&#209;&#132;&#209;&#130;&lt;/seg&gt;
++    &lt;/tuv&gt;
++&lt;/tu&gt;
++&lt;tu&gt;
++    &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Delete Fonts&lt;/seg&gt;
++    &lt;/tuv&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T091024Z&quot;&gt;
++        &lt;seg&gt;&#208;&#146;&#209;&#139;&#208;&#180;&#208;&#176;&#208;&#187;&#209;&#150;&#209;&#134;&#209;&#140; &#209;&#136;&#209;&#128;&#209;&#139;&#209;&#132;&#209;&#130;&#209;&#139;&lt;/seg&gt;
++    &lt;/tuv&gt;
++&lt;/tu&gt;
++&lt;tu&gt;
++    &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Delete Group and Contacts&lt;/seg&gt;
+     &lt;/tuv&gt;
+     &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20101014T142856Z&quot;&gt;
+@@ -36936,6 +37376,14 @@
+ &lt;/tu&gt;
+ &lt;tu&gt;
+     &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Delete selected fonts&lt;/seg&gt;
++    &lt;/tuv&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T084405Z&quot;&gt;
++        &lt;seg&gt;&#208;&#146;&#209;&#139;&#208;&#180;&#208;&#176;&#208;&#187;&#209;&#150;&#209;&#134;&#209;&#140; &#208;&#178;&#209;&#139;&#208;&#187;&#209;&#131;&#209;&#135;&#208;&#176;&#208;&#189;&#209;&#139;&#209;&#143; &#209;&#136;&#209;&#128;&#209;&#139;&#209;&#132;&#209;&#130;&#209;&#139;&lt;/seg&gt;
++    &lt;/tuv&gt;
++&lt;/tu&gt;
++&lt;tu&gt;
++    &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Delete selection&lt;/seg&gt;
+     &lt;/tuv&gt;
+     &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110124T141343Z&quot;&gt;
+@@ -39506,8 +39954,8 @@
+     &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Do this for &amp;all current items&lt;/seg&gt;
+     &lt;/tuv&gt;
+-    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20101107T171818Z&quot;&gt;
+-        &lt;seg&gt;&#208;&#146;&#209;&#139;&#208;&#186;&#208;&#190;&#208;&#189;&#208;&#178;&#208;&#176;&#209;&#134;&#209;&#140; &#208;&#179;&#209;&#141;&#209;&#130;&#208;&#176; &#208;&#180;&#208;&#187;&#209;&#143; &#209;&#158;&#209;&#129;&#209;&#150;&#209;&#133; &#208;&#180;&#208;&#183;&#208;&#181;&#208;&#185;&#208;&#189;&#209;&#139;&#209;&#133; &#209;&#141;&#208;&#187;&#208;&#181;&#208;&#188;&#208;&#181;&#208;&#189;&#209;&#130;&#208;&#176;&#209;&#158;&lt;/seg&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T101859Z&quot;&gt;
++        &lt;seg&gt;&#208;&#160;&#208;&#176;&#208;&#177;&#209;&#150;&#209;&#134;&#209;&#140; &#208;&#179;&#209;&#141;&#209;&#130;&#208;&#176; &#208;&#180;&#208;&#187;&#209;&#143; &#209;&#158;&#209;&#129;&#209;&#150;&#209;&#133; &#208;&#180;&#208;&#183;&#208;&#181;&#208;&#185;&#208;&#189;&#209;&#139;&#209;&#133; &#209;&#141;&#208;&#187;&#208;&#181;&#208;&#188;&#208;&#181;&#208;&#189;&#209;&#130;&#208;&#176;&#209;&#158;&lt;/seg&gt;
+     &lt;/tuv&gt;
+ &lt;/tu&gt;
+ &lt;tu&gt;
+@@ -39522,8 +39970,8 @@
+     &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Do this for &amp;all current items (%1!u! found)&lt;/seg&gt;
+     &lt;/tuv&gt;
+-    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20100717T101517Z&quot;&gt;
+-        &lt;seg&gt;&#208;&#151;&#209;&#128;&#208;&#176;&#208;&#177;&#209;&#150;&#209;&#134;&#209;&#140; &#208;&#179;&#209;&#141;&#209;&#130;&#208;&#176; &#208;&#180;&#208;&#187;&#209;&#143; &#209;&#158;&#209;&#129;&#209;&#150;&#209;&#133; &#208;&#177;&#209;&#143;&#208;&#179;&#209;&#131;&#209;&#135;&#209;&#139;&#209;&#133; &#209;&#141;&#208;&#187;&#208;&#181;&#208;&#188;&#208;&#181;&#208;&#189;&#209;&#130;&#208;&#176;&#209;&#158; (%1!u! &#208;&#183;&#208;&#189;&#208;&#190;&#208;&#185;&#208;&#180;&#208;&#183;&#208;&#181;&#208;&#189;&#208;&#176;)
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T101934Z&quot;&gt;
++        &lt;seg&gt;&#208;&#160;&#208;&#176;&#208;&#177;&#209;&#150;&#209;&#134;&#209;&#140; &#208;&#179;&#209;&#141;&#209;&#130;&#208;&#176; &#208;&#180;&#208;&#187;&#209;&#143; &#209;&#158;&#209;&#129;&#209;&#150;&#209;&#133; &#208;&#180;&#208;&#183;&#208;&#181;&#208;&#185;&#208;&#189;&#209;&#139;&#209;&#133; &#209;&#141;&#208;&#187;&#208;&#181;&#208;&#188;&#208;&#181;&#208;&#189;&#209;&#130;&#208;&#176;&#209;&#158; (%1!u! &#208;&#183;&#208;&#189;&#208;&#190;&#208;&#185;&#208;&#180;&#208;&#183;&#208;&#181;&#208;&#189;&#208;&#176;)
+ &lt;/seg&gt;
+     &lt;/tuv&gt;
+ &lt;/tu&gt;
+@@ -39993,6 +40441,14 @@
+ &lt;/tu&gt;
+ &lt;tu&gt;
+     &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Do you want to open %1!d! font windows?&lt;/seg&gt;
++    &lt;/tuv&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T102819Z&quot;&gt;
++        &lt;seg&gt;&#208;&#144;&#208;&#180;&#209;&#135;&#209;&#139;&#208;&#189;&#209;&#150;&#209;&#134;&#209;&#140; &#208;&#178;&#208;&#190;&#208;&#186;&#208;&#189;&#209;&#139; &#209;&#136;&#209;&#128;&#209;&#139;&#209;&#132;&#209;&#130;&#208;&#190;&#209;&#158; %1!d!?&lt;/seg&gt;
++    &lt;/tuv&gt;
++&lt;/tu&gt;
++&lt;tu&gt;
++    &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Do you want to open these files anyway?&lt;/seg&gt;
+     &lt;/tuv&gt;
+     &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20101119T223937Z&quot;&gt;
+@@ -41635,12 +42091,20 @@
+     &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Each character is:&lt;/seg&gt;
+     &lt;/tuv&gt;
+-    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20100707T122545Z&quot;&gt;
+-        &lt;seg&gt;&#208;&#154;&#208;&#190;&#208;&#182;&#208;&#189;&#209;&#139; &#209;&#129;&#209;&#150;&#208;&#188;&#208;&#178;&#208;&#176;&#208;&#187;:&lt;/seg&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T105609Z&quot;&gt;
++        &lt;seg&gt;&#208;&#154;&#208;&#190;&#208;&#182;&#208;&#189;&#209;&#139; &#208;&#183;&#208;&#189;&#208;&#176;&#208;&#186; &#209;&#145;&#209;&#129;&#209;&#134;&#209;&#140;:&lt;/seg&gt;
+     &lt;/tuv&gt;
+ &lt;/tu&gt;
+ &lt;tu&gt;
+     &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Each font currently selected will open in its own window. Opening many windows may take a long time and might impact your system performance.&lt;/seg&gt;
++    &lt;/tuv&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T103018Z&quot;&gt;
++        &lt;seg&gt;&#208;&#154;&#208;&#190;&#208;&#182;&#208;&#189;&#209;&#139; &#208;&#178;&#209;&#139;&#208;&#187;&#209;&#131;&#209;&#135;&#208;&#176;&#208;&#189;&#209;&#139; &#208;&#183;&#208;&#176;&#209;&#128;&#208;&#176;&#208;&#183; &#209;&#136;&#209;&#128;&#209;&#139;&#209;&#132;&#209;&#130; &#208;&#177;&#209;&#131;&#208;&#180;&#208;&#183;&#208;&#181; &#208;&#176;&#208;&#180;&#209;&#135;&#209;&#139;&#208;&#189;&#208;&#181;&#208;&#189;&#209;&#139; &#209;&#158; &#208;&#176;&#209;&#129;&#208;&#190;&#208;&#177;&#208;&#189;&#209;&#139;&#208;&#188; &#208;&#178;&#208;&#176;&#208;&#186;&#208;&#189;&#208;&#181;. &#208;&#144;&#208;&#180;&#209;&#135;&#209;&#139;&#208;&#189;&#208;&#181;&#208;&#189;&#208;&#189;&#208;&#181; &#209;&#136;&#208;&#188;&#208;&#176;&#209;&#130;&#208;&#187;&#209;&#150;&#208;&#186;&#209;&#150;&#209;&#133; &#208;&#178;&#208;&#190;&#208;&#186;&#208;&#189;&#208;&#176;&#209;&#158; &#208;&#188;&#208;&#190;&#208;&#182;&#208;&#176; &#208;&#183;&#208;&#176;&#208;&#189;&#209;&#143;&#209;&#134;&#209;&#140; &#209;&#136;&#208;&#188;&#208;&#176;&#209;&#130; &#209;&#135;&#208;&#176;&#209;&#129;&#209;&#131; &#209;&#150; &#208;&#191;&#208;&#176;&#209;&#158;&#208;&#191;&#208;&#187;&#209;&#139;&#208;&#178;&#208;&#176;&#209;&#134;&#209;&#140; &#208;&#189;&#208;&#176; &#208;&#191;&#209;&#128;&#208;&#176;&#208;&#180;&#209;&#131;&#208;&#186;&#209;&#134;&#209;&#139;&#208;&#185;&#208;&#189;&#208;&#176;&#209;&#129;&#209;&#134;&#209;&#140; &#209;&#129;&#209;&#150;&#209;&#129;&#209;&#130;&#209;&#141;&#208;&#188;&#209;&#139;.&lt;/seg&gt;
++    &lt;/tuv&gt;
++&lt;/tu&gt;
++&lt;tu&gt;
++    &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Earlier&lt;/seg&gt;
+     &lt;/tuv&gt;
+     &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20101027T175843Z&quot;&gt;
+@@ -45433,6 +45897,14 @@
+ &lt;/tu&gt;
+ &lt;tu&gt;
+     &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;File size: %1!d! KB&lt;/seg&gt;
++    &lt;/tuv&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T103255Z&quot;&gt;
++        &lt;seg&gt;&#208;&#159;&#208;&#176;&#208;&#188;&#208;&#181;&#209;&#128; &#209;&#132;&#208;&#176;&#208;&#185;&#208;&#187;&#208;&#176;: %1!d! &#208;&#186;&#208;&#145;&lt;/seg&gt;
++    &lt;/tuv&gt;
++&lt;/tu&gt;
++&lt;tu&gt;
++    &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;File system&lt;/seg&gt;
+     &lt;/tuv&gt;
+     &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20101104T065051Z&quot;&gt;
+@@ -45897,6 +46369,14 @@
+ &lt;/tu&gt;
+ &lt;tu&gt;
+     &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Find a character&lt;/seg&gt;
++    &lt;/tuv&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T085746Z&quot;&gt;
++        &lt;seg&gt;&#208;&#151;&#208;&#189;&#208;&#176;&#208;&#185;&#209;&#129;&#209;&#134;&#209;&#150; &#208;&#183;&#208;&#189;&#208;&#176;&#208;&#186;&lt;/seg&gt;
++    &lt;/tuv&gt;
++&lt;/tu&gt;
++&lt;tu&gt;
++    &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Find and fix audio playback problems&lt;/seg&gt;
+     &lt;/tuv&gt;
+     &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110316T073258Z&quot;&gt;
+@@ -46841,6 +47321,14 @@
+ &lt;/tu&gt;
+ &lt;tu&gt;
+     &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Font family details&lt;/seg&gt;
++    &lt;/tuv&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T084736Z&quot;&gt;
++        &lt;seg&gt;&#208;&#148;&#209;&#141;&#209;&#130;&#208;&#176;&#208;&#187;&#209;&#150; &#208;&#179;&#208;&#176;&#209;&#128;&#208;&#189;&#209;&#150;&#209;&#130;&#209;&#131;&#209;&#128;&#209;&#139; &#209;&#136;&#209;&#128;&#209;&#139;&#209;&#132;&#209;&#130;&#209;&#131;&lt;/seg&gt;
++    &lt;/tuv&gt;
++&lt;/tu&gt;
++&lt;tu&gt;
++    &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Font file&lt;/seg&gt;
+     &lt;/tuv&gt;
+     &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20101111T144426Z&quot;&gt;
+@@ -46857,6 +47345,14 @@
+ &lt;/tu&gt;
+ &lt;tu&gt;
+     &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Font name: %1&lt;/seg&gt;
++    &lt;/tuv&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T103240Z&quot;&gt;
++        &lt;seg&gt;&#208;&#157;&#208;&#176;&#208;&#183;&#208;&#178;&#208;&#176; &#209;&#136;&#209;&#128;&#209;&#139;&#209;&#132;&#209;&#130;&#208;&#176;: %1&lt;/seg&gt;
++    &lt;/tuv&gt;
++&lt;/tu&gt;
++&lt;tu&gt;
++    &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Font preview:&lt;/seg&gt;
+     &lt;/tuv&gt;
+     &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20101111T144415Z&quot;&gt;
+@@ -46865,6 +47361,14 @@
+ &lt;/tu&gt;
+ &lt;tu&gt;
+     &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Font settings&lt;/seg&gt;
++    &lt;/tuv&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T085820Z&quot;&gt;
++        &lt;seg&gt;&#208;&#157;&#208;&#176;&#208;&#187;&#208;&#176;&#208;&#180;&#209;&#139; &#209;&#136;&#209;&#128;&#209;&#139;&#209;&#132;&#209;&#130;&#209;&#131;&lt;/seg&gt;
++    &lt;/tuv&gt;
++&lt;/tu&gt;
++&lt;tu&gt;
++    &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Font si&amp;ze:&lt;/seg&gt;
+     &lt;/tuv&gt;
+     &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20101111T144410Z&quot;&gt;
+@@ -48345,6 +48849,14 @@
+ &lt;/tu&gt;
+ &lt;tu&gt;
+     &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Get more font information online&lt;/seg&gt;
++    &lt;/tuv&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T090727Z&quot;&gt;
++        &lt;seg&gt;&#208;&#144;&#209;&#130;&#209;&#128;&#209;&#139;&#208;&#188;&#208;&#176;&#209;&#134;&#209;&#140; &#208;&#177;&#208;&#190;&#208;&#187;&#209;&#140;&#209;&#136; &#209;&#150;&#208;&#189;&#209;&#132;&#208;&#176;&#209;&#128;&#208;&#188;&#208;&#176;&#209;&#134;&#209;&#139;&#209;&#150; &#209;&#129;&#208;&#181;&#209;&#134;&#209;&#150;&#208;&#178;&#208;&#181;&lt;/seg&gt;
++    &lt;/tuv&gt;
++&lt;/tu&gt;
++&lt;tu&gt;
++    &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Get more gadgets online&lt;/seg&gt;
+     &lt;/tuv&gt;
+     &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20100720T101245Z&quot;&gt;
+@@ -49099,8 +49611,8 @@
+     &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Halfwidth Character&lt;/seg&gt;
+     &lt;/tuv&gt;
+-    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110301T203243Z&quot;&gt;
+-        &lt;seg&gt;&#208;&#159;&#208;&#176;&#209;&#158;&#209;&#136;&#209;&#139;&#209;&#128;&#208;&#190;&#208;&#186;&#209;&#150; &#209;&#129;&#209;&#150;&#208;&#188;&#208;&#178;&#208;&#176;&#208;&#187;&lt;/seg&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T104906Z&quot;&gt;
++        &lt;seg&gt;&#208;&#159;&#208;&#176;&#209;&#158;&#209;&#136;&#209;&#139;&#209;&#128;&#208;&#190;&#208;&#186;&#209;&#150; &#208;&#183;&#208;&#189;&#208;&#176;&#208;&#186;&lt;/seg&gt;
+     &lt;/tuv&gt;
+ &lt;/tu&gt;
+ &lt;tu&gt;
+@@ -49833,6 +50345,14 @@
+ &lt;/tu&gt;
+ &lt;tu&gt;
+     &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Hide the selected fonts in your programs&lt;/seg&gt;
++    &lt;/tuv&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T085044Z&quot;&gt;
++        &lt;seg&gt;&#208;&#161;&#209;&#133;&#208;&#176;&#208;&#178;&#208;&#176;&#209;&#134;&#209;&#140; &#208;&#178;&#209;&#139;&#208;&#187;&#209;&#131;&#209;&#135;&#208;&#176;&#208;&#189;&#209;&#139;&#209;&#143; &#209;&#136;&#209;&#128;&#209;&#139;&#209;&#132;&#209;&#130;&#209;&#139; &#209;&#158; &#208;&#178;&#208;&#176;&#209;&#136;&#209;&#139;&#209;&#133; &#208;&#191;&#209;&#128;&#208;&#176;&#208;&#179;&#209;&#128;&#208;&#176;&#208;&#188;&#208;&#176;&#209;&#133;&lt;/seg&gt;
++    &lt;/tuv&gt;
++&lt;/tu&gt;
++&lt;tu&gt;
++    &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Hides the items in all groups.&lt;/seg&gt;
+     &lt;/tuv&gt;
+     &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20100723T115739Z&quot;&gt;
+@@ -51611,8 +52131,8 @@
+     &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;If the share name is longer than 12 characters, this folder cannot be accessed by computers running Windows 98SE, Windows Millennium Edition, Windows NT 4.0, or earlier operating systems. To make the folder fully accessible, name it using 12 characters or fewer.\r\n\r\nDo you want to use the share name &quot;%1&quot; anyway?\r\n&lt;/seg&gt;
+     &lt;/tuv&gt;
+-    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110502T123711Z&quot;&gt;
+-        &lt;seg&gt;&#208;&#154;&#208;&#176;&#208;&#187;&#209;&#150; &#208;&#189;&#208;&#176;&#208;&#183;&#208;&#178;&#208;&#176; &#208;&#176;&#208;&#177;&#208;&#176;&#208;&#179;&#209;&#131;&#208;&#187;&#209;&#140;&#208;&#189;&#208;&#181;&#208;&#189;&#208;&#189;&#209;&#143; &#208;&#180;&#208;&#176;&#209;&#158;&#208;&#182;&#209;&#141;&#208;&#185; &#208;&#183;&#208;&#176; 12 &#209;&#129;&#209;&#150;&#208;&#188;&#208;&#178;&#208;&#176;&#208;&#187;&#208;&#176;&#209;&#158;, &#208;&#179;&#209;&#141;&#209;&#130;&#209;&#139; &#208;&#186;&#208;&#176;&#209;&#130;&#208;&#176;&#208;&#187;&#208;&#190;&#208;&#179; &#208;&#189;&#208;&#181; &#208;&#177;&#209;&#131;&#208;&#180;&#208;&#183;&#208;&#181; &#208;&#180;&#208;&#176;&#209;&#129;&#209;&#130;&#209;&#131;&#208;&#191;&#208;&#189;&#209;&#139;&#208;&#188; &#208;&#180;&#208;&#187;&#209;&#143; &#208;&#186;&#208;&#176;&#208;&#188;&#208;&#191;'&#209;&#142;&#209;&#130;&#208;&#176;&#209;&#128;&#208;&#176;&#209;&#158; &#208;&#183; Windows 98SE, Windows Millennium Edition, Windows NT 4.0 &#209;&#134;&#209;&#150; &#209;&#128;&#208;&#176;&#208;&#189;&#208;&#181;&#208;&#185;&#209;&#136;&#209;&#139;&#208;&#188;&#209;&#150; &#208;&#176;&#208;&#191;&#208;&#181;&#209;&#128;&#208;&#176;&#209;&#134;&#209;&#139;&#208;&#185;&#208;&#189;&#209;&#139;&#208;&#188;&#209;&#150; &#209;&#129;&#209;&#150;&#209;&#129;&#209;&#130;&#209;&#141;&#208;&#188;&#208;&#176;&#208;&#188;&#209;&#150;. &#208;&#154;&#208;&#176;&#208;&#177; &#208;&#183;&#209;&#128;&#208;&#176;&#208;&#177;&#209;&#150;&#209;&#134;&#209;&#140; &#208;&#186;&#208;&#176;&#209;&#130;&#208;&#176;&#208;&#187;&#208;&#190;&#208;&#179; &#208;&#191;&#208;&#190;&#209;&#158;&#208;&#189;&#208;&#176;&#208;&#180;&#208;&#176;&#209;&#129;&#209;&#130;&#209;&#131;&#208;&#191;&#208;&#189;&#209;&#139;&#208;&#188;, &#208;&#189;&#208;&#176;&#208;&#183;&#208;&#178;&#208;&#176; &#208;&#191;&#208;&#176;&#208;&#178;&#209;&#150;&#208;&#189;&#208;&#189;&#208;&#176; &#208;&#183;&#208;&#188;&#209;&#143;&#209;&#136;&#209;&#135;&#208;&#176;&#209;&#134;&#209;&#140; 12 &#209;&#129;&#209;&#150;&#208;&#188;&#208;&#178;&#208;&#176;&#208;&#187;&#208;&#176;&#209;&#158; &#209;&#134;&#209;&#150; &#208;&#188;&#208;&#181;&#208;&#189;&#209;&#136;.\r\n\r\n&#208;&#163;&#209;&#129;&#209;&#145; &#209;&#128;&#208;&#190;&#209;&#158;&#208;&#189;&#208;&#176; &#209;&#129;&#208;&#186;&#208;&#176;&#209;&#128;&#209;&#139;&#209;&#129;&#209;&#130;&#208;&#176;&#209;&#134;&#209;&#140; &#208;&#189;&#208;&#176;&#208;&#183;&#208;&#178;&#209;&#131; &quot;%1&quot;?\r\n&lt;/seg&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T105520Z&quot;&gt;
++        &lt;seg&gt;&#208;&#154;&#208;&#176;&#208;&#187;&#209;&#150; &#208;&#189;&#208;&#176;&#208;&#183;&#208;&#178;&#208;&#176; &#208;&#176;&#208;&#177;&#208;&#176;&#208;&#179;&#209;&#131;&#208;&#187;&#209;&#140;&#208;&#189;&#208;&#181;&#208;&#189;&#208;&#189;&#209;&#143; &#208;&#180;&#208;&#176;&#209;&#158;&#208;&#182;&#209;&#141;&#208;&#185; &#208;&#183;&#208;&#176; 12 &#208;&#183;&#208;&#189;&#208;&#176;&#208;&#186;&#208;&#176;&#209;&#158;, &#208;&#179;&#209;&#141;&#209;&#130;&#209;&#139; &#208;&#186;&#208;&#176;&#209;&#130;&#208;&#176;&#208;&#187;&#208;&#190;&#208;&#179; &#208;&#189;&#208;&#181; &#208;&#177;&#209;&#131;&#208;&#180;&#208;&#183;&#208;&#181; &#208;&#180;&#208;&#176;&#209;&#129;&#209;&#130;&#209;&#131;&#208;&#191;&#208;&#189;&#209;&#139;&#208;&#188; &#208;&#180;&#208;&#187;&#209;&#143; &#208;&#186;&#208;&#176;&#208;&#188;&#208;&#191;'&#209;&#142;&#209;&#130;&#208;&#176;&#209;&#128;&#208;&#176;&#209;&#158; &#208;&#183; Windows 98SE, Windows Millennium Edition, Windows NT 4.0 &#209;&#134;&#209;&#150; &#209;&#128;&#208;&#176;&#208;&#189;&#208;&#181;&#208;&#185;&#209;&#136;&#209;&#139;&#208;&#188;&#209;&#150; &#208;&#176;&#208;&#191;&#208;&#181;&#209;&#128;&#208;&#176;&#209;&#134;&#209;&#139;&#208;&#185;&#208;&#189;&#209;&#139;&#208;&#188;&#209;&#150; &#209;&#129;&#209;&#150;&#209;&#129;&#209;&#130;&#209;&#141;&#208;&#188;&#208;&#176;&#208;&#188;&#209;&#150;. &#208;&#154;&#208;&#176;&#208;&#177; &#208;&#183;&#209;&#128;&#208;&#176;&#208;&#177;&#209;&#150;&#209;&#134;&#209;&#140; &#208;&#186;&#208;&#176;&#209;&#130;&#208;&#176;&#208;&#187;&#208;&#190;&#208;&#179; &#208;&#191;&#208;&#190;&#209;&#158;&#208;&#189;&#208;&#176;&#208;&#180;&#208;&#176;&#209;&#129;&#209;&#130;&#209;&#131;&#208;&#191;&#208;&#189;&#209;&#139;&#208;&#188;, &#208;&#189;&#208;&#176;&#208;&#183;&#208;&#178;&#208;&#176; &#208;&#191;&#208;&#176;&#208;&#178;&#209;&#150;&#208;&#189;&#208;&#189;&#208;&#176; &#208;&#183;&#208;&#188;&#209;&#143;&#209;&#136;&#209;&#135;&#208;&#176;&#209;&#134;&#209;&#140; 12 &#208;&#183;&#208;&#189;&#208;&#176;&#208;&#186;&#208;&#176;&#209;&#158; &#209;&#134;&#209;&#150; &#208;&#188;&#208;&#181;&#208;&#189;&#209;&#136;.\r\n\r\n&#208;&#163;&#209;&#129;&#209;&#145; &#209;&#128;&#208;&#190;&#209;&#158;&#208;&#189;&#208;&#176; &#209;&#129;&#208;&#186;&#208;&#176;&#209;&#128;&#209;&#139;&#209;&#129;&#209;&#130;&#208;&#176;&#209;&#134;&#209;&#140; &#208;&#189;&#208;&#176;&#208;&#183;&#208;&#178;&#209;&#131; &quot;%1&quot;?\r\n&lt;/seg&gt;
+     &lt;/tuv&gt;
+ &lt;/tu&gt;
+ &lt;tu&gt;
+@@ -51873,6 +52393,14 @@
+ &lt;/tu&gt;
+ &lt;tu&gt;
+     &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;If you delete these fonts, some text might not appear as you intended.&lt;/seg&gt;
++    &lt;/tuv&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T091017Z&quot;&gt;
++        &lt;seg&gt;&#208;&#154;&#208;&#176;&#208;&#187;&#209;&#150; &#208;&#178;&#209;&#139; &#208;&#178;&#209;&#139;&#208;&#180;&#208;&#176;&#208;&#187;&#209;&#150;&#209;&#134;&#208;&#181; &#208;&#179;&#209;&#141;&#209;&#130;&#209;&#139;&#209;&#143; &#209;&#136;&#209;&#128;&#209;&#139;&#209;&#132;&#209;&#130;&#209;&#139;, &#208;&#189;&#208;&#181;&#208;&#186;&#208;&#176;&#209;&#130;&#208;&#190;&#209;&#128;&#209;&#139;&#209;&#143; &#209;&#130;&#209;&#141;&#208;&#186;&#209;&#129;&#209;&#130;&#209;&#139; &#208;&#188;&#208;&#190;&#208;&#179;&#209;&#131;&#209;&#134;&#209;&#140; &#208;&#176;&#208;&#180;&#208;&#187;&#209;&#142;&#209;&#129;&#209;&#130;&#209;&#128;&#208;&#190;&#209;&#158;&#208;&#178;&#208;&#176;&#209;&#134;&#209;&#134;&#208;&#176; &#208;&#189;&#208;&#181;&#208;&#183;&#208;&#176;&#208;&#191;&#208;&#187;&#208;&#176;&#208;&#189;&#208;&#176;&#208;&#178;&#208;&#176;&#208;&#189;&#209;&#139;&#208;&#188; &#209;&#135;&#209;&#139;&#208;&#189;&#208;&#176;&#208;&#188;.&lt;/seg&gt;
++    &lt;/tuv&gt;
++&lt;/tu&gt;
++&lt;tu&gt;
++    &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;If you delete this folder, it will no longer be shared.&lt;/seg&gt;
+     &lt;/tuv&gt;
+     &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110502T111507Z&quot;&gt;
+@@ -53393,6 +53921,14 @@
+ &lt;/tu&gt;
+ &lt;tu&gt;
+     &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Install Font&lt;/seg&gt;
++    &lt;/tuv&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T101748Z&quot;&gt;
++        &lt;seg&gt;&#208;&#163;&#209;&#129;&#209;&#130;&#208;&#176;&#208;&#187;&#209;&#143;&#208;&#178;&#208;&#176;&#209;&#134;&#209;&#140; &#209;&#136;&#209;&#128;&#209;&#139;&#209;&#132;&#209;&#130;&lt;/seg&gt;
++    &lt;/tuv&gt;
++&lt;/tu&gt;
++&lt;tu&gt;
++    &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Install Homegroup Printer&lt;/seg&gt;
+     &lt;/tuv&gt;
+     &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20101205T185306Z&quot;&gt;
+@@ -53457,6 +53993,14 @@
+ &lt;/tu&gt;
+ &lt;tu&gt;
+     &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Install as &amp;shortcut&lt;/seg&gt;
++    &lt;/tuv&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T085151Z&quot;&gt;
++        &lt;seg&gt;&#208;&#163;&#209;&#129;&#209;&#130;&#208;&#176;&#208;&#187;&#209;&#143;&#208;&#178;&#208;&#176;&#209;&#134;&#209;&#140; &#209;&#143;&#208;&#186; &#208;&#191;&#209;&#131;&#209;&#129;&#208;&#186;&#208;&#176;&#208;&#187;&#209;&#140;&#208;&#189;&#209;&#150;&#208;&#186;&lt;/seg&gt;
++    &lt;/tuv&gt;
++&lt;/tu&gt;
++&lt;tu&gt;
++    &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Install location&lt;/seg&gt;
+     &lt;/tuv&gt;
+     &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20101106T142256Z&quot;&gt;
+@@ -53609,6 +54153,14 @@
+ &lt;/tu&gt;
+ &lt;tu&gt;
+     &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Installation settings&lt;/seg&gt;
++    &lt;/tuv&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T090307Z&quot;&gt;
++        &lt;seg&gt;&#208;&#157;&#208;&#176;&#208;&#187;&#208;&#176;&#208;&#180;&#209;&#139; &#209;&#158;&#209;&#129;&#209;&#130;&#208;&#176;&#208;&#187;&#209;&#143;&#208;&#178;&#208;&#176;&#208;&#189;&#208;&#189;&#209;&#143;&lt;/seg&gt;
++    &lt;/tuv&gt;
++&lt;/tu&gt;
++&lt;tu&gt;
++    &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Installation status:&lt;/seg&gt;
+     &lt;/tuv&gt;
+     &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110311T111205Z&quot;&gt;
+@@ -53673,6 +54225,22 @@
+ &lt;/tu&gt;
+ &lt;tu&gt;
+     &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Installing %1!s! (%2!u! of %3!u! fonts)&lt;/seg&gt;
++    &lt;/tuv&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T082814Z&quot;&gt;
++        &lt;seg&gt;&#208;&#163;&#209;&#129;&#209;&#130;&#208;&#176;&#208;&#187;&#209;&#145;&#209;&#158;&#208;&#178;&#208;&#176;&#208;&#189;&#208;&#189;&#208;&#181; %1!s! (%2!u! &#208;&#183; %3!u! &#209;&#136;&#209;&#128;&#209;&#139;&#209;&#132;&#209;&#130;&#208;&#190;&#209;&#158;)&lt;/seg&gt;
++    &lt;/tuv&gt;
++&lt;/tu&gt;
++&lt;tu&gt;
++    &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Installing Fonts&lt;/seg&gt;
++    &lt;/tuv&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T081637Z&quot;&gt;
++        &lt;seg&gt;&#208;&#163;&#209;&#129;&#209;&#130;&#208;&#176;&#208;&#187;&#209;&#145;&#209;&#158;&#208;&#178;&#208;&#176;&#208;&#189;&#208;&#189;&#208;&#181; &#209;&#136;&#209;&#128;&#209;&#139;&#209;&#132;&#209;&#130;&#208;&#190;&#209;&#158;&lt;/seg&gt;
++    &lt;/tuv&gt;
++&lt;/tu&gt;
++&lt;tu&gt;
++    &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Installing Windows...&lt;/seg&gt;
+     &lt;/tuv&gt;
+     &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110421T123213Z&quot;&gt;
+@@ -53681,6 +54249,14 @@
+ &lt;/tu&gt;
+ &lt;tu&gt;
+     &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Installing fonts...&lt;/seg&gt;
++    &lt;/tuv&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T081640Z&quot;&gt;
++        &lt;seg&gt;&#208;&#163;&#209;&#129;&#209;&#130;&#208;&#176;&#208;&#187;&#209;&#145;&#209;&#158;&#208;&#178;&#208;&#176;&#208;&#189;&#208;&#189;&#208;&#181; &#209;&#136;&#209;&#128;&#209;&#139;&#209;&#132;&#209;&#130;&#208;&#190;&#209;&#158;...&lt;/seg&gt;
++    &lt;/tuv&gt;
++&lt;/tu&gt;
++&lt;tu&gt;
++    &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Installing this type of gadget is restricted by your system administrator&lt;/seg&gt;
+     &lt;/tuv&gt;
+     &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20100729T113355Z&quot;&gt;
+@@ -53721,6 +54297,22 @@
+ &lt;/tu&gt;
+ &lt;tu&gt;
+     &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Installs selected fonts&lt;/seg&gt;
++    &lt;/tuv&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T083821Z&quot;&gt;
++        &lt;seg&gt;&#208;&#163;&#209;&#129;&#209;&#130;&#208;&#176;&#208;&#187;&#209;&#143;&#208;&#178;&#208;&#176;&#209;&#134;&#209;&#140; &#208;&#178;&#209;&#139;&#208;&#187;&#209;&#131;&#209;&#135;&#208;&#176;&#208;&#189;&#209;&#139;&#209;&#143; &#209;&#136;&#209;&#128;&#209;&#139;&#209;&#132;&#209;&#130;&#209;&#139;&lt;/seg&gt;
++    &lt;/tuv&gt;
++&lt;/tu&gt;
++&lt;tu&gt;
++    &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Installs selected fonts as shortcuts&lt;/seg&gt;
++    &lt;/tuv&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T085203Z&quot;&gt;
++        &lt;seg&gt;&#208;&#163;&#209;&#129;&#209;&#130;&#208;&#176;&#208;&#187;&#209;&#143;&#208;&#178;&#208;&#176;&#209;&#134;&#209;&#140; &#208;&#178;&#209;&#139;&#208;&#187;&#209;&#131;&#209;&#135;&#208;&#176;&#208;&#189;&#209;&#139;&#209;&#143; &#209;&#136;&#209;&#128;&#209;&#139;&#209;&#132;&#209;&#130;&#209;&#139; &#209;&#143;&#208;&#186; &#208;&#191;&#209;&#131;&#209;&#129;&#208;&#186;&#208;&#176;&#208;&#187;&#209;&#140;&#208;&#189;&#209;&#150;&#208;&#186;&#209;&#150;&lt;/seg&gt;
++    &lt;/tuv&gt;
++&lt;/tu&gt;
++&lt;tu&gt;
++    &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Installs updates and then shuts down your computer.&lt;/seg&gt;
+     &lt;/tuv&gt;
+     &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20100726T132833Z&quot;&gt;
+@@ -54307,8 +54899,8 @@
+     &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Invalid character&lt;/seg&gt;
+     &lt;/tuv&gt;
+-    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20101205T190342Z&quot;&gt;
+-        &lt;seg&gt;&#208;&#157;&#208;&#181;&#208;&#180;&#208;&#176;&#208;&#191;&#209;&#131;&#209;&#136;&#209;&#135;&#208;&#176;&#208;&#187;&#209;&#140;&#208;&#189;&#209;&#139; &#209;&#129;&#209;&#150;&#208;&#188;&#208;&#178;&#208;&#176;&#208;&#187;&lt;/seg&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T105532Z&quot;&gt;
++        &lt;seg&gt;&#208;&#157;&#208;&#181;&#208;&#180;&#208;&#176;&#208;&#191;&#209;&#131;&#209;&#136;&#209;&#135;&#208;&#176;&#208;&#187;&#209;&#140;&#208;&#189;&#209;&#139; &#208;&#183;&#208;&#189;&#208;&#176;&#208;&#186;&lt;/seg&gt;
+     &lt;/tuv&gt;
+ &lt;/tu&gt;
+ &lt;tu&gt;
+@@ -63011,8 +63603,8 @@
+     &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;No Character Available&lt;/seg&gt;
+     &lt;/tuv&gt;
+-    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110301T172616Z&quot;&gt;
+-        &lt;seg&gt;&#208;&#157;&#209;&#143;&#208;&#188;&#208;&#176; &#208;&#180;&#208;&#176;&#209;&#129;&#209;&#130;&#209;&#131;&#208;&#191;&#208;&#189;&#209;&#139;&#209;&#133; &#209;&#129;&#209;&#150;&#208;&#188;&#208;&#178;&#208;&#176;&#208;&#187;&#208;&#176;&#209;&#158;&lt;/seg&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T104854Z&quot;&gt;
++        &lt;seg&gt;&#208;&#157;&#209;&#143;&#208;&#188;&#208;&#176; &#208;&#180;&#208;&#176;&#209;&#129;&#209;&#130;&#209;&#131;&#208;&#191;&#208;&#189;&#209;&#139;&#209;&#133; &#208;&#183;&#208;&#189;&#208;&#176;&#208;&#186;&#208;&#176;&#209;&#158;&lt;/seg&gt;
+     &lt;/tuv&gt;
+ &lt;/tu&gt;
+ &lt;tu&gt;
+@@ -63337,6 +63929,22 @@
+ &lt;/tu&gt;
+ &lt;tu&gt;
+     &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;No font sample available&lt;/seg&gt;
++    &lt;/tuv&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T083305Z&quot;&gt;
++        &lt;seg&gt;&#208;&#157;&#209;&#143;&#208;&#188;&#208;&#176; &#208;&#180;&#208;&#176;&#209;&#129;&#209;&#130;&#209;&#131;&#208;&#191;&#208;&#189;&#209;&#139;&#209;&#133; &#209;&#131;&#208;&#183;&#208;&#190;&#209;&#128;&#208;&#176;&#209;&#158; &#209;&#136;&#209;&#128;&#209;&#139;&#209;&#132;&#209;&#130;&#208;&#190;&#209;&#158;&lt;/seg&gt;
++    &lt;/tuv&gt;
++&lt;/tu&gt;
++&lt;tu&gt;
++    &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;No fonts found.&lt;/seg&gt;
++    &lt;/tuv&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T082842Z&quot;&gt;
++        &lt;seg&gt;&#208;&#168;&#209;&#128;&#209;&#139;&#209;&#132;&#209;&#130;&#209;&#139; &#208;&#189;&#208;&#181; &#208;&#183;&#208;&#189;&#208;&#190;&#208;&#185;&#208;&#180;&#208;&#183;&#208;&#181;&#208;&#189;&#209;&#139;&#209;&#143;.&lt;/seg&gt;
++    &lt;/tuv&gt;
++&lt;/tu&gt;
++&lt;tu&gt;
++    &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;No important updates available&lt;/seg&gt;
+     &lt;/tuv&gt;
+     &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110311T101153Z&quot;&gt;
+@@ -63473,6 +64081,14 @@
+ &lt;/tu&gt;
+ &lt;tu&gt;
+     &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;No subsetting&lt;/seg&gt;
++    &lt;/tuv&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T085434Z&quot;&gt;
++        &lt;seg&gt;&#208;&#157;&#209;&#143;&#208;&#188;&#208;&#176; &#208;&#191;&#208;&#176;&#208;&#180;&#208;&#188;&#208;&#189;&#208;&#190;&#208;&#182;&#208;&#189;&#208;&#176;&#209;&#129;&#209;&#134;&#209;&#150;&lt;/seg&gt;
++    &lt;/tuv&gt;
++&lt;/tu&gt;
++&lt;tu&gt;
++    &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;No sync partnerships&lt;/seg&gt;
+     &lt;/tuv&gt;
+     &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110316T073626Z&quot;&gt;
+@@ -65953,6 +66569,14 @@
+ &lt;/tu&gt;
+ &lt;tu&gt;
+     &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Open the selected files in the Font Viewer&lt;/seg&gt;
++    &lt;/tuv&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T084353Z&quot;&gt;
++        &lt;seg&gt;&#208;&#144;&#208;&#180;&#209;&#135;&#209;&#139;&#208;&#189;&#209;&#150;&#209;&#134;&#209;&#140; &#208;&#178;&#209;&#139;&#208;&#187;&#209;&#131;&#209;&#135;&#208;&#176;&#208;&#189;&#209;&#139;&#209;&#143; &#209;&#132;&#208;&#176;&#208;&#185;&#208;&#187;&#209;&#139; &#209;&#158; &#208;&#191;&#209;&#128;&#208;&#176;&#208;&#179;&#208;&#187;&#209;&#143;&#208;&#180;&#208;&#176;&#208;&#187;&#209;&#140;&#208;&#189;&#209;&#150;&#208;&#186;&#209;&#131; &#209;&#136;&#209;&#128;&#209;&#139;&#209;&#132;&#209;&#130;&#208;&#190;&#209;&#158;&lt;/seg&gt;
++    &lt;/tuv&gt;
++&lt;/tu&gt;
++&lt;tu&gt;
++    &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Open the website to view all search results.&lt;/seg&gt;
+     &lt;/tuv&gt;
+     &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20101029T202059Z&quot;&gt;
+@@ -66057,6 +66681,14 @@
+ &lt;/tu&gt;
+ &lt;tu&gt;
+     &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;OpenType&lt;/seg&gt;
++    &lt;/tuv&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T085724Z&quot;&gt;
++        &lt;seg&gt;OpenType&lt;/seg&gt;
++    &lt;/tuv&gt;
++&lt;/tu&gt;
++&lt;tu&gt;
++    &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;OpenType font file&lt;/seg&gt;
+     &lt;/tuv&gt;
+     &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20101111T144419Z&quot;&gt;
+@@ -68251,8 +68883,8 @@
+     &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Path: %1!s!\nFile: %2!s!\nLine: %3!ld!\nChar: %4!ld!\nError: %5!s!&lt;/seg&gt;
+     &lt;/tuv&gt;
+-    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20100827T195806Z&quot;&gt;
+-        &lt;seg&gt;&#208;&#168;&#208;&#187;&#209;&#143;&#209;&#133;: %1!s!\n&#208;&#164;&#208;&#176;&#208;&#185;&#208;&#187;: %2!s!\n&#208;&#160;&#208;&#176;&#208;&#180;&#208;&#190;&#208;&#186;: %3!ld!\n&#208;&#161;&#209;&#150;&#208;&#188;&#208;&#178;&#208;&#176;&#208;&#187;: %4!ld!\n&#208;&#159;&#208;&#176;&#208;&#188;&#209;&#139;&#208;&#187;&#208;&#186;&#208;&#176;: %5!s!&lt;/seg&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T104655Z&quot;&gt;
++        &lt;seg&gt;&#208;&#168;&#208;&#187;&#209;&#143;&#209;&#133;: %1!s!\n&#208;&#164;&#208;&#176;&#208;&#185;&#208;&#187;: %2!s!\n&#208;&#160;&#208;&#176;&#208;&#180;&#208;&#190;&#208;&#186;: %3!ld!\n&#208;&#151;&#208;&#189;&#208;&#176;&#208;&#186;: %4!ld!\n&#208;&#159;&#208;&#176;&#208;&#188;&#209;&#139;&#208;&#187;&#208;&#186;&#208;&#176;: %5!s!&lt;/seg&gt;
+     &lt;/tuv&gt;
+ &lt;/tu&gt;
+ &lt;tu&gt;
+@@ -70825,6 +71457,14 @@
+ &lt;/tu&gt;
+ &lt;tu&gt;
+     &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Preview Fonts&lt;/seg&gt;
++    &lt;/tuv&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T102052Z&quot;&gt;
++        &lt;seg&gt;&#208;&#159;&#208;&#181;&#209;&#128;&#208;&#176;&#208;&#180;&#208;&#191;&#209;&#128;&#208;&#176;&#208;&#179;&#208;&#187;&#209;&#143;&#208;&#180; &#209;&#136;&#209;&#128;&#209;&#139;&#209;&#132;&#209;&#130;&#208;&#190;&#209;&#158;&lt;/seg&gt;
++    &lt;/tuv&gt;
++&lt;/tu&gt;
++&lt;tu&gt;
++    &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Preview Pane&lt;/seg&gt;
+     &lt;/tuv&gt;
+     &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20100722T200842Z&quot;&gt;
+@@ -70961,6 +71601,22 @@
+ &lt;/tu&gt;
+ &lt;tu&gt;
+     &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Preview, delete, or show and hide the fonts installed on your computer&lt;/seg&gt;
++    &lt;/tuv&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T084249Z&quot;&gt;
++        &lt;seg&gt;&#208;&#159;&#209;&#128;&#208;&#176;&#208;&#179;&#208;&#187;&#208;&#181;&#208;&#180;&#208;&#183;&#208;&#181;&#209;&#134;&#209;&#140;, &#208;&#178;&#209;&#139;&#208;&#180;&#208;&#176;&#208;&#187;&#209;&#150;&#209;&#134;&#209;&#140;, &#208;&#191;&#208;&#176;&#208;&#186;&#208;&#176;&#208;&#183;&#208;&#176;&#209;&#134;&#209;&#140; &#209;&#134;&#209;&#150; &#209;&#129;&#209;&#133;&#208;&#176;&#208;&#178;&#208;&#176;&#209;&#134;&#209;&#140; &#209;&#136;&#209;&#128;&#209;&#139;&#209;&#132;&#209;&#130;&#209;&#139;, &#209;&#131;&#209;&#129;&#209;&#130;&#208;&#176;&#208;&#187;&#209;&#143;&#208;&#178;&#208;&#176;&#208;&#189;&#209;&#139;&#209;&#143; &#208;&#189;&#208;&#176; &#208;&#178;&#208;&#176;&#209;&#136;&#209;&#139;&#208;&#188; &#208;&#186;&#208;&#176;&#208;&#188;&#208;&#191;'&#209;&#142;&#209;&#130;&#208;&#176;&#209;&#128;&#209;&#139;&lt;/seg&gt;
++    &lt;/tuv&gt;
++&lt;/tu&gt;
++&lt;tu&gt;
++    &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Preview, delete, or show and hide the individual fonts in this font family.&lt;/seg&gt;
++    &lt;/tuv&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T085004Z&quot;&gt;
++        &lt;seg&gt;&#208;&#159;&#209;&#128;&#208;&#176;&#208;&#179;&#208;&#187;&#208;&#181;&#208;&#180;&#208;&#183;&#208;&#181;&#209;&#134;&#209;&#140;, &#208;&#178;&#209;&#139;&#208;&#180;&#208;&#176;&#208;&#187;&#209;&#150;&#209;&#134;&#209;&#140;, &#208;&#191;&#208;&#176;&#208;&#186;&#208;&#176;&#208;&#183;&#208;&#176;&#209;&#134;&#209;&#140; &#209;&#134;&#209;&#150; &#209;&#129;&#209;&#133;&#208;&#176;&#208;&#178;&#208;&#176;&#209;&#134;&#209;&#140; &#208;&#176;&#209;&#129;&#208;&#190;&#208;&#177;&#208;&#189;&#209;&#139;&#209;&#143; &#209;&#136;&#209;&#128;&#209;&#139;&#209;&#132;&#209;&#130;&#209;&#139; &#209;&#158; &#208;&#179;&#209;&#141;&#209;&#130;&#208;&#176;&#208;&#185; &#208;&#179;&#208;&#176;&#209;&#128;&#208;&#189;&#209;&#150;&#209;&#130;&#209;&#131;&#209;&#128;&#209;&#139; &#209;&#136;&#209;&#128;&#209;&#139;&#209;&#132;&#209;&#130;&#209;&#131;.&lt;/seg&gt;
++    &lt;/tuv&gt;
++&lt;/tu&gt;
++&lt;tu&gt;
++    &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Preview/Print&lt;/seg&gt;
+     &lt;/tuv&gt;
+     &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20100718T220332Z&quot;&gt;
+@@ -71067,8 +71723,8 @@
+     &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Previously selected characters may not be displayed correctly when font is changed. Do you want to change font?&lt;/seg&gt;
+     &lt;/tuv&gt;
+-    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110301T172411Z&quot;&gt;
+-        &lt;seg&gt;&#208;&#159;&#208;&#176;&#208;&#191;&#209;&#143;&#209;&#128;&#209;&#141;&#208;&#180;&#208;&#189;&#208;&#181; &#208;&#178;&#209;&#139;&#208;&#187;&#209;&#131;&#209;&#135;&#208;&#176;&#208;&#189;&#209;&#139;&#209;&#143; &#209;&#129;&#209;&#150;&#208;&#188;&#208;&#178;&#208;&#176;&#208;&#187;&#209;&#139; &#208;&#188;&#208;&#190;&#208;&#179;&#209;&#131;&#209;&#134;&#209;&#140; &#208;&#176;&#208;&#180;&#208;&#187;&#209;&#142;&#209;&#129;&#209;&#130;&#209;&#128;&#208;&#190;&#209;&#158;&#208;&#178;&#208;&#176;&#209;&#134;&#209;&#134;&#208;&#176; &#208;&#189;&#208;&#181;&#208;&#186;&#208;&#176;&#209;&#128;&#209;&#141;&#208;&#186;&#209;&#130;&#208;&#189;&#208;&#176; &#208;&#191;&#208;&#176;&#209;&#129;&#208;&#187;&#209;&#143; &#208;&#183;&#208;&#188;&#209;&#143;&#208;&#189;&#208;&#181;&#208;&#189;&#208;&#189;&#209;&#143; &#209;&#136;&#209;&#128;&#209;&#139;&#209;&#132;&#209;&#130;&#209;&#131;. &#208;&#151;&#208;&#188;&#209;&#143;&#208;&#189;&#209;&#150;&#209;&#134;&#209;&#140; &#209;&#136;&#209;&#128;&#209;&#139;&#209;&#132;&#209;&#130;?&lt;/seg&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T104723Z&quot;&gt;
++        &lt;seg&gt;&#208;&#159;&#208;&#176;&#208;&#191;&#209;&#143;&#209;&#128;&#209;&#141;&#208;&#180;&#208;&#189;&#208;&#181; &#208;&#178;&#209;&#139;&#208;&#187;&#209;&#131;&#209;&#135;&#208;&#176;&#208;&#189;&#209;&#139;&#209;&#143; &#208;&#183;&#208;&#189;&#208;&#176;&#208;&#186;&#209;&#150; &#208;&#188;&#208;&#190;&#208;&#179;&#209;&#131;&#209;&#134;&#209;&#140; &#208;&#176;&#208;&#180;&#208;&#187;&#209;&#142;&#209;&#129;&#209;&#130;&#209;&#128;&#208;&#190;&#209;&#158;&#208;&#178;&#208;&#176;&#209;&#134;&#209;&#134;&#208;&#176; &#208;&#189;&#208;&#181;&#208;&#186;&#208;&#176;&#209;&#128;&#209;&#141;&#208;&#186;&#209;&#130;&#208;&#189;&#208;&#176; &#208;&#191;&#208;&#176;&#209;&#129;&#208;&#187;&#209;&#143; &#208;&#183;&#208;&#188;&#209;&#143;&#208;&#189;&#208;&#181;&#208;&#189;&#208;&#189;&#209;&#143; &#209;&#136;&#209;&#128;&#209;&#139;&#209;&#132;&#209;&#130;&#209;&#131;. &#208;&#151;&#208;&#188;&#209;&#143;&#208;&#189;&#209;&#150;&#209;&#134;&#209;&#140; &#209;&#136;&#209;&#128;&#209;&#139;&#209;&#132;&#209;&#130;?&lt;/seg&gt;
+     &lt;/tuv&gt;
+ &lt;/tu&gt;
+ &lt;tu&gt;
+@@ -71273,6 +71929,14 @@
+ &lt;/tu&gt;
+ &lt;tu&gt;
+     &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Print Fonts&lt;/seg&gt;
++    &lt;/tuv&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T102104Z&quot;&gt;
++        &lt;seg&gt;&#208;&#148;&#209;&#128;&#209;&#131;&#208;&#186; &#209;&#136;&#209;&#128;&#209;&#139;&#209;&#132;&#209;&#130;&#208;&#190;&#209;&#158;&lt;/seg&gt;
++    &lt;/tuv&gt;
++&lt;/tu&gt;
++&lt;tu&gt;
++    &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Print Page &amp;Numbers&lt;/seg&gt;
+     &lt;/tuv&gt;
+     &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20100828T073918Z&quot;&gt;
+@@ -71297,6 +71961,14 @@
+ &lt;/tu&gt;
+ &lt;tu&gt;
+     &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Print and preview&lt;/seg&gt;
++    &lt;/tuv&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T085249Z&quot;&gt;
++        &lt;seg&gt;&#208;&#148;&#209;&#128;&#209;&#131;&#208;&#186; &#209;&#150; &#208;&#191;&#208;&#181;&#209;&#128;&#208;&#176;&#208;&#180;&#208;&#191;&#209;&#128;&#208;&#176;&#208;&#179;&#208;&#187;&#209;&#143;&#208;&#180;&lt;/seg&gt;
++    &lt;/tuv&gt;
++&lt;/tu&gt;
++&lt;tu&gt;
++    &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Print pre&amp;view&lt;/seg&gt;
+     &lt;/tuv&gt;
+     &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110422T064949Z&quot;&gt;
+@@ -71611,16 +72283,16 @@
+     &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Private Character Editor&lt;/seg&gt;
+     &lt;/tuv&gt;
+-    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20101106T175542Z&quot;&gt;
+-        &lt;seg&gt;&#208;&#160;&#209;&#141;&#208;&#180;&#208;&#176;&#208;&#186;&#209;&#130;&#208;&#176;&#209;&#128; &#208;&#191;&#209;&#128;&#209;&#139;&#208;&#178;&#208;&#176;&#209;&#130;&#208;&#189;&#209;&#139;&#209;&#133; &#209;&#129;&#209;&#150;&#208;&#188;&#208;&#178;&#208;&#176;&#208;&#187;&#208;&#176;&#209;&#158;&lt;/seg&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T104624Z&quot;&gt;
++        &lt;seg&gt;&#208;&#160;&#209;&#141;&#208;&#180;&#208;&#176;&#208;&#186;&#209;&#130;&#208;&#176;&#209;&#128; &#208;&#191;&#209;&#128;&#209;&#139;&#208;&#178;&#208;&#176;&#209;&#130;&#208;&#189;&#209;&#139;&#209;&#133; &#208;&#183;&#208;&#189;&#208;&#176;&#208;&#186;&#208;&#176;&#209;&#158;&lt;/seg&gt;
+     &lt;/tuv&gt;
+ &lt;/tu&gt;
+ &lt;tu&gt;
+     &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Private Use Characters&lt;/seg&gt;
+     &lt;/tuv&gt;
+-    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110301T202839Z&quot;&gt;
+-        &lt;seg&gt;&#208;&#161;&#209;&#150;&#208;&#188;&#208;&#178;&#208;&#176;&#208;&#187;&#209;&#139; &#208;&#191;&#209;&#128;&#209;&#139;&#208;&#178;&#208;&#176;&#209;&#130;&#208;&#189;&#208;&#176;&#208;&#179;&#208;&#176; &#208;&#186;&#208;&#176;&#209;&#128;&#209;&#139;&#209;&#129;&#209;&#130;&#208;&#176;&#208;&#189;&#208;&#189;&#209;&#143;&lt;/seg&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T104900Z&quot;&gt;
++        &lt;seg&gt;&#208;&#151;&#208;&#189;&#208;&#176;&#208;&#186;&#209;&#150; &#208;&#191;&#209;&#128;&#209;&#139;&#208;&#178;&#208;&#176;&#209;&#130;&#208;&#189;&#208;&#176;&#208;&#179;&#208;&#176; &#208;&#186;&#208;&#176;&#209;&#128;&#209;&#139;&#209;&#129;&#209;&#130;&#208;&#176;&#208;&#189;&#208;&#189;&#209;&#143;&lt;/seg&gt;
+     &lt;/tuv&gt;
+ &lt;/tu&gt;
+ &lt;tu&gt;
+@@ -73177,6 +73849,14 @@
+ &lt;/tu&gt;
+ &lt;tu&gt;
+     &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Raster&lt;/seg&gt;
++    &lt;/tuv&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T085657Z&quot;&gt;
++        &lt;seg&gt;&#208;&#160;&#208;&#176;&#209;&#129;&#209;&#130;&#209;&#128;&lt;/seg&gt;
++    &lt;/tuv&gt;
++&lt;/tu&gt;
++&lt;tu&gt;
++    &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Raster Fonts&lt;/seg&gt;
+     &lt;/tuv&gt;
+     &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20100724T145743Z&quot;&gt;
+@@ -75785,6 +76465,14 @@
+ &lt;/tu&gt;
+ &lt;tu&gt;
+     &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Restricted license&lt;/seg&gt;
++    &lt;/tuv&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T085238Z&quot;&gt;
++        &lt;seg&gt;&#208;&#144;&#208;&#177;&#208;&#188;&#208;&#181;&#208;&#182;&#208;&#176;&#208;&#178;&#208;&#176;&#208;&#189;&#208;&#176;&#209;&#143; &#208;&#187;&#209;&#150;&#209;&#134;&#209;&#141;&#208;&#189;&#208;&#183;&#209;&#150;&#209;&#143;&lt;/seg&gt;
++    &lt;/tuv&gt;
++&lt;/tu&gt;
++&lt;tu&gt;
++    &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Restrictions&lt;/seg&gt;
+     &lt;/tuv&gt;
+     &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20100713T132213Z&quot;&gt;
+@@ -75841,6 +76529,14 @@
+ &lt;/tu&gt;
+ &lt;tu&gt;
+     &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Retrieving font names: %02d%%&lt;/seg&gt;
++    &lt;/tuv&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T082916Z&quot;&gt;
++        &lt;seg&gt;&#208;&#146;&#209;&#143;&#209;&#128;&#209;&#130;&#208;&#176;&#208;&#189;&#208;&#189;&#208;&#181; &#208;&#189;&#208;&#176;&#208;&#183;&#208;&#178;&#208;&#176;&#209;&#158; &#209;&#136;&#209;&#128;&#209;&#139;&#209;&#132;&#209;&#130;&#208;&#190;&#209;&#158;: %02d%%&lt;/seg&gt;
++    &lt;/tuv&gt;
++&lt;/tu&gt;
++&lt;tu&gt;
++    &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Retrieving libraries...&lt;/seg&gt;
+     &lt;/tuv&gt;
+     &lt;tuv lang=&quot;be&quot; changeid=&quot;alex&quot; changedate=&quot;20100704T153913Z&quot;&gt;
+@@ -80635,8 +81331,8 @@
+     &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Selects special characters and copies them to your document.&lt;/seg&gt;
+     &lt;/tuv&gt;
+-    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20100719T140655Z&quot;&gt;
+-        &lt;seg&gt;&#208;&#144;&#208;&#177;&#209;&#150;&#209;&#128;&#208;&#176;&#208;&#181; &#209;&#129;&#208;&#191;&#208;&#181;&#209;&#134;&#209;&#139;&#209;&#143;&#208;&#187;&#209;&#140;&#208;&#189;&#209;&#139;&#209;&#143; &#209;&#129;&#209;&#150;&#208;&#188;&#208;&#178;&#208;&#176;&#208;&#187;&#209;&#139; &#209;&#150; &#208;&#186;&#208;&#176;&#208;&#191;&#209;&#150;&#209;&#142;&#208;&#181; &#209;&#150;&#209;&#133; &#209;&#131; &#208;&#178;&#208;&#176;&#209;&#136; &#208;&#180;&#208;&#176;&#208;&#186;&#209;&#131;&#208;&#188;&#208;&#181;&#208;&#189;&#209;&#130;.&lt;/seg&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T105656Z&quot;&gt;
++        &lt;seg&gt;&#208;&#144;&#208;&#177;&#209;&#150;&#209;&#128;&#208;&#176;&#208;&#181; &#209;&#129;&#208;&#191;&#208;&#181;&#209;&#134;&#209;&#139;&#209;&#143;&#208;&#187;&#209;&#140;&#208;&#189;&#209;&#139;&#209;&#143; &#208;&#183;&#208;&#189;&#208;&#176;&#208;&#186;&#209;&#150; &#209;&#150; &#208;&#186;&#208;&#176;&#208;&#191;&#209;&#150;&#209;&#142;&#208;&#181; &#209;&#150;&#209;&#133; &#209;&#131; &#208;&#178;&#208;&#176;&#209;&#136; &#208;&#180;&#208;&#176;&#208;&#186;&#209;&#131;&#208;&#188;&#208;&#181;&#208;&#189;&#209;&#130;.&lt;/seg&gt;
+     &lt;/tuv&gt;
+ &lt;/tu&gt;
+ &lt;tu&gt;
+@@ -82537,6 +83233,14 @@
+ &lt;/tu&gt;
+ &lt;tu&gt;
+     &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Show and hide fonts (These settings might not apply to all of your programs)&lt;/seg&gt;
++    &lt;/tuv&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T090451Z&quot;&gt;
++        &lt;seg&gt;&#208;&#159;&#208;&#176;&#208;&#186;&#208;&#176;&#208;&#183;&#208;&#176;&#209;&#134;&#209;&#140; &#209;&#150; &#209;&#129;&#209;&#133;&#208;&#176;&#208;&#178;&#208;&#176;&#209;&#134;&#209;&#140; &#209;&#136;&#209;&#128;&#209;&#139;&#209;&#132;&#209;&#130;&#209;&#139; (&#208;&#179;&#209;&#141;&#209;&#130;&#209;&#139;&#209;&#143; &#208;&#189;&#208;&#176;&#208;&#187;&#208;&#176;&#208;&#180;&#209;&#139;, &#208;&#188;&#208;&#176;&#208;&#179;&#209;&#135;&#209;&#139;&#208;&#188;&#208;&#176;, &#208;&#189;&#208;&#181; &#209;&#158;&#208;&#182;&#209;&#139;&#208;&#178;&#209;&#131;&#209;&#134;&#209;&#134;&#208;&#176; &#208;&#180;&#208;&#176; &#209;&#158;&#209;&#129;&#209;&#150;&#209;&#133; &#208;&#178;&#208;&#176;&#209;&#136;&#209;&#139;&#209;&#133; &#208;&#191;&#209;&#128;&#208;&#176;&#208;&#179;&#209;&#128;&#208;&#176;&#208;&#188;&#208;&#176;&#209;&#158;)&lt;/seg&gt;
++    &lt;/tuv&gt;
++&lt;/tu&gt;
++&lt;tu&gt;
++    &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Show color mi&amp;xer&lt;/seg&gt;
+     &lt;/tuv&gt;
+     &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20101118T074450Z&quot;&gt;
+@@ -83049,6 +83753,14 @@
+ &lt;/tu&gt;
+ &lt;tu&gt;
+     &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Show the selected fonts in your programs&lt;/seg&gt;
++    &lt;/tuv&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T085026Z&quot;&gt;
++        &lt;seg&gt;&#208;&#159;&#208;&#176;&#208;&#186;&#208;&#176;&#208;&#183;&#208;&#176;&#209;&#134;&#209;&#140; &#208;&#178;&#209;&#139;&#208;&#187;&#209;&#131;&#209;&#135;&#208;&#176;&#208;&#189;&#209;&#139;&#209;&#143; &#209;&#136;&#209;&#128;&#209;&#139;&#209;&#132;&#209;&#130;&#209;&#139; &#209;&#158; &#208;&#178;&#208;&#176;&#209;&#136;&#209;&#139;&#209;&#133; &#208;&#191;&#209;&#128;&#208;&#176;&#208;&#179;&#209;&#128;&#208;&#176;&#208;&#188;&#208;&#176;&#209;&#133;&lt;/seg&gt;
++    &lt;/tuv&gt;
++&lt;/tu&gt;
++&lt;tu&gt;
++    &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Show thumbnails instead of icons&lt;/seg&gt;
+     &lt;/tuv&gt;
+     &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20101118T074146Z&quot;&gt;
+@@ -84283,8 +84995,8 @@
+     &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Some characters are not valid&lt;/seg&gt;
+     &lt;/tuv&gt;
+-    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110312T174730Z&quot;&gt;
+-        &lt;seg&gt;&#208;&#157;&#208;&#181;&#208;&#186;&#208;&#176;&#209;&#130;&#208;&#190;&#209;&#128;&#209;&#139;&#209;&#143; &#209;&#129;&#209;&#150;&#208;&#188;&#208;&#178;&#208;&#176;&#208;&#187;&#209;&#139; &#208;&#189;&#208;&#181;&#208;&#180;&#208;&#176;&#208;&#191;&#209;&#131;&#209;&#136;&#209;&#135;&#208;&#176;&#208;&#187;&#209;&#140;&#208;&#189;&#209;&#139;&#209;&#143;&lt;/seg&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T110005Z&quot;&gt;
++        &lt;seg&gt;&#208;&#157;&#208;&#181;&#208;&#186;&#208;&#176;&#209;&#130;&#208;&#190;&#209;&#128;&#209;&#139;&#209;&#143; &#208;&#183;&#208;&#189;&#208;&#176;&#208;&#186;&#209;&#150; &#208;&#189;&#208;&#181;&#208;&#180;&#208;&#176;&#208;&#191;&#209;&#131;&#209;&#136;&#209;&#135;&#208;&#176;&#208;&#187;&#209;&#140;&#208;&#189;&#209;&#139;&#209;&#143;&lt;/seg&gt;
+     &lt;/tuv&gt;
+ &lt;/tu&gt;
+ &lt;tu&gt;
+@@ -85195,8 +85907,8 @@
+     &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Special Character&lt;/seg&gt;
+     &lt;/tuv&gt;
+-    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110301T203434Z&quot;&gt;
+-        &lt;seg&gt;&#208;&#161;&#208;&#191;&#208;&#181;&#209;&#134;&#209;&#139;&#209;&#143;&#208;&#187;&#209;&#140;&#208;&#189;&#209;&#139; &#209;&#129;&#209;&#150;&#208;&#188;&#208;&#178;&#208;&#176;&#208;&#187;&lt;/seg&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T104919Z&quot;&gt;
++        &lt;seg&gt;&#208;&#161;&#208;&#191;&#208;&#181;&#209;&#134;&#209;&#139;&#209;&#143;&#208;&#187;&#209;&#140;&#208;&#189;&#209;&#139; &#208;&#183;&#208;&#189;&#208;&#176;&#208;&#186;&lt;/seg&gt;
+     &lt;/tuv&gt;
+ &lt;/tu&gt;
+ &lt;tu&gt;
+@@ -88753,6 +89465,14 @@
+ &lt;/tu&gt;
+ &lt;tu&gt;
+     &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Text Services and Input Language&lt;/seg&gt;
++    &lt;/tuv&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T085813Z&quot;&gt;
++        &lt;seg&gt;&#208;&#162;&#209;&#141;&#208;&#186;&#209;&#129;&#209;&#130;&#208;&#176;&#208;&#178;&#209;&#139;&#209;&#143; &#209;&#129;&#208;&#187;&#209;&#131;&#208;&#182;&#208;&#177;&#209;&#139; &#209;&#150; &#208;&#188;&#208;&#190;&#208;&#178;&#208;&#176; &#209;&#158;&#208;&#178;&#208;&#190;&#208;&#180;&#209;&#131;&lt;/seg&gt;
++    &lt;/tuv&gt;
++&lt;/tu&gt;
++&lt;tu&gt;
++    &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Text Services and Input Languages&lt;/seg&gt;
+     &lt;/tuv&gt;
+     &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20101021T060823Z&quot;&gt;
+@@ -88945,6 +89665,14 @@
+ &lt;/tu&gt;
+ &lt;tu&gt;
+     &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;The '%s' font is already installed. Do you want to replace it?&lt;/seg&gt;
++    &lt;/tuv&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T082225Z&quot;&gt;
++        &lt;seg&gt;&#208;&#168;&#209;&#128;&#209;&#139;&#209;&#132;&#209;&#130; '%s' &#209;&#131;&#208;&#182;&#208;&#190; &#209;&#158;&#209;&#129;&#209;&#130;&#208;&#176;&#208;&#187;&#209;&#143;&#208;&#178;&#208;&#176;&#208;&#189;&#209;&#139;. &#208;&#151;&#208;&#176;&#208;&#188;&#209;&#143;&#208;&#189;&#209;&#150;&#209;&#134;&#209;&#140; &#209;&#143;&#208;&#179;&#208;&#190;?&lt;/seg&gt;
++    &lt;/tuv&gt;
++&lt;/tu&gt;
++&lt;tu&gt;
++    &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;The 'Copies' value cannot be empty and must be a positive value.&lt;/seg&gt;
+     &lt;/tuv&gt;
+     &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20100918T113115Z&quot;&gt;
+@@ -89923,8 +90651,8 @@
+     &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;The computer name cannot contain these characters:\n{ | } ~ [ \\ ] ^ ' : ; &lt; = &gt; ? @ ! &quot; # $ % ` ( ) + / . , *&lt;/seg&gt;
+     &lt;/tuv&gt;
+-    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110312T174713Z&quot;&gt;
+-        &lt;seg&gt;&#208;&#157;&#208;&#176;&#208;&#183;&#208;&#178;&#208;&#176; &#208;&#186;&#208;&#176;&#208;&#188;&#208;&#191;'&#209;&#142;&#209;&#130;&#208;&#176;&#209;&#128;&#208;&#176; &#208;&#189;&#208;&#181; &#208;&#188;&#208;&#190;&#208;&#182;&#208;&#176; &#208;&#183;&#208;&#188;&#209;&#143;&#209;&#136;&#209;&#135;&#208;&#176;&#209;&#134;&#209;&#140; &#208;&#179;&#209;&#141;&#209;&#130;&#209;&#139;&#209;&#143; &#209;&#129;&#209;&#150;&#208;&#188;&#208;&#178;&#208;&#176;&#208;&#187;&#209;&#139;:\n{  } ~ [ \\ ] ^ ' : ; &lt; = &gt; ? @ ! &quot; # $ % ` ( ) + / . , *&lt;/seg&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T105957Z&quot;&gt;
++        &lt;seg&gt;&#208;&#157;&#208;&#176;&#208;&#183;&#208;&#178;&#208;&#176; &#208;&#186;&#208;&#176;&#208;&#188;&#208;&#191;'&#209;&#142;&#209;&#130;&#208;&#176;&#209;&#128;&#208;&#176; &#208;&#189;&#208;&#181; &#208;&#188;&#208;&#190;&#208;&#182;&#208;&#176; &#208;&#183;&#208;&#188;&#209;&#143;&#209;&#136;&#209;&#135;&#208;&#176;&#209;&#134;&#209;&#140; &#208;&#179;&#209;&#141;&#209;&#130;&#209;&#139;&#209;&#143; &#208;&#183;&#208;&#189;&#208;&#176;&#208;&#186;&#209;&#150;:\n{  } ~ [ \\ ] ^ ' : ; &lt; = &gt; ? @ ! &quot; # $ % ` ( ) + / . , *&lt;/seg&gt;
+     &lt;/tuv&gt;
+ &lt;/tu&gt;
+ &lt;tu&gt;
+@@ -90435,8 +91163,8 @@
+     &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;The drive label is either too long, or contains invalid characters.&lt;/seg&gt;
+     &lt;/tuv&gt;
+-    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110127T090622Z&quot;&gt;
+-        &lt;seg&gt;&#208;&#166;&#209;&#141;&#209;&#130;&#208;&#187;&#209;&#150;&#208;&#186; &#208;&#180;&#209;&#139;&#209;&#129;&#208;&#186;&#208;&#176; &#208;&#176;&#208;&#187;&#209;&#140;&#208;&#177;&#208;&#190; &#208;&#189;&#208;&#176;&#208;&#180;&#209;&#130;&#208;&#176; &#208;&#180;&#208;&#190;&#209;&#158;&#208;&#179;&#209;&#150;, &#208;&#176;&#208;&#187;&#209;&#140;&#208;&#177;&#208;&#190; &#208;&#183;&#208;&#188;&#209;&#143;&#209;&#136;&#209;&#135;&#208;&#176;&#208;&#181; &#208;&#189;&#208;&#181;&#208;&#180;&#208;&#176;&#208;&#191;&#209;&#131;&#209;&#136;&#209;&#135;&#208;&#176;&#208;&#187;&#209;&#140;&#208;&#189;&#209;&#139;&#209;&#143; &#209;&#129;&#209;&#150;&#208;&#188;&#208;&#178;&#208;&#176;&#208;&#187;&#209;&#139;.&lt;/seg&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T105629Z&quot;&gt;
++        &lt;seg&gt;&#208;&#166;&#209;&#141;&#209;&#130;&#208;&#187;&#209;&#150;&#208;&#186; &#208;&#180;&#209;&#139;&#209;&#129;&#208;&#186;&#208;&#176; &#208;&#176;&#208;&#187;&#209;&#140;&#208;&#177;&#208;&#190; &#208;&#189;&#208;&#176;&#208;&#180;&#209;&#130;&#208;&#176; &#208;&#180;&#208;&#190;&#209;&#158;&#208;&#179;&#209;&#150;, &#208;&#176;&#208;&#187;&#209;&#140;&#208;&#177;&#208;&#190; &#208;&#183;&#208;&#188;&#209;&#143;&#209;&#136;&#209;&#135;&#208;&#176;&#208;&#181; &#208;&#189;&#208;&#181;&#208;&#180;&#208;&#176;&#208;&#191;&#209;&#131;&#209;&#136;&#209;&#135;&#208;&#176;&#208;&#187;&#209;&#140;&#208;&#189;&#209;&#139;&#209;&#143; &#208;&#183;&#208;&#189;&#208;&#176;&#208;&#186;&#209;&#150;.&lt;/seg&gt;
+     &lt;/tuv&gt;
+ &lt;/tu&gt;
+ &lt;tu&gt;
+@@ -90483,8 +91211,8 @@
+     &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;The drive that this file or folder is stored on does not allow long file names, or names containing blanks or any of the following characters:\n\t \\ / : , ; * ? &quot; &lt; &gt; |&lt;/seg&gt;
+     &lt;/tuv&gt;
+-    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110502T111333Z&quot;&gt;
+-        &lt;seg&gt;&#208;&#148;&#209;&#139;&#209;&#129;&#208;&#186;, &#208;&#189;&#208;&#176; &#209;&#143;&#208;&#186;&#209;&#150;&#208;&#188; &#208;&#183;&#208;&#176;&#209;&#133;&#208;&#190;&#209;&#158;&#208;&#178;&#208;&#176;&#208;&#181;&#209;&#134;&#209;&#134;&#208;&#176; &#208;&#179;&#209;&#141;&#209;&#130;&#209;&#139; &#208;&#186;&#208;&#176;&#209;&#130;&#208;&#176;&#208;&#187;&#208;&#190;&#208;&#179;, &#208;&#189;&#208;&#181; &#208;&#191;&#208;&#176;&#208;&#180;&#209;&#130;&#209;&#128;&#209;&#139;&#208;&#188;&#208;&#187;&#209;&#150;&#208;&#178;&#208;&#176;&#208;&#181; &#208;&#180;&#208;&#190;&#209;&#158;&#208;&#179;&#209;&#150;&#209;&#143; &#208;&#189;&#208;&#176;&#208;&#183;&#208;&#178;&#209;&#139; &#209;&#132;&#208;&#176;&#208;&#185;&#208;&#187;&#208;&#176;&#209;&#158; &#209;&#150; &#208;&#189;&#208;&#176;&#208;&#183;&#208;&#178;&#209;&#139;, &#209;&#143;&#208;&#186;&#209;&#150;&#209;&#143; &#208;&#183;&#208;&#188;&#209;&#143;&#209;&#136;&#209;&#135;&#208;&#176;&#209;&#142;&#209;&#134;&#209;&#140; &#208;&#189;&#208;&#176;&#209;&#129;&#209;&#130;&#209;&#131;&#208;&#191;&#208;&#189;&#209;&#139;&#209;&#143; &#209;&#129;&#209;&#150;&#208;&#188;&#208;&#178;&#208;&#176;&#208;&#187;&#209;&#139;:\n\t \\ / : , ; * ? &quot; &lt; &gt; |&lt;/seg&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T105622Z&quot;&gt;
++        &lt;seg&gt;&#208;&#148;&#209;&#139;&#209;&#129;&#208;&#186;, &#208;&#189;&#208;&#176; &#209;&#143;&#208;&#186;&#209;&#150;&#208;&#188; &#208;&#183;&#208;&#176;&#209;&#133;&#208;&#190;&#209;&#158;&#208;&#178;&#208;&#176;&#208;&#181;&#209;&#134;&#209;&#134;&#208;&#176; &#208;&#179;&#209;&#141;&#209;&#130;&#209;&#139; &#208;&#186;&#208;&#176;&#209;&#130;&#208;&#176;&#208;&#187;&#208;&#190;&#208;&#179;, &#208;&#189;&#208;&#181; &#208;&#191;&#208;&#176;&#208;&#180;&#209;&#130;&#209;&#128;&#209;&#139;&#208;&#188;&#208;&#187;&#209;&#150;&#208;&#178;&#208;&#176;&#208;&#181; &#208;&#180;&#208;&#190;&#209;&#158;&#208;&#179;&#209;&#150;&#209;&#143; &#208;&#189;&#208;&#176;&#208;&#183;&#208;&#178;&#209;&#139; &#209;&#132;&#208;&#176;&#208;&#185;&#208;&#187;&#208;&#176;&#209;&#158; &#209;&#150; &#208;&#189;&#208;&#176;&#208;&#183;&#208;&#178;&#209;&#139;, &#209;&#143;&#208;&#186;&#209;&#150;&#209;&#143; &#208;&#183;&#208;&#188;&#209;&#143;&#209;&#136;&#209;&#135;&#208;&#176;&#209;&#142;&#209;&#134;&#209;&#140; &#208;&#189;&#208;&#176;&#209;&#129;&#209;&#130;&#209;&#131;&#208;&#191;&#208;&#189;&#209;&#139;&#209;&#143; &#208;&#183;&#208;&#189;&#208;&#176;&#208;&#186;&#209;&#150;:\n\t \\ / : , ; * ? &quot; &lt; &gt; |&lt;/seg&gt;
+     &lt;/tuv&gt;
+ &lt;/tu&gt;
+ &lt;tu&gt;
+@@ -90529,6 +91257,22 @@
+ &lt;/tu&gt;
+ &lt;tu&gt;
+     &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;The file '%1!s!' does not appear to be a valid font.&lt;/seg&gt;
++    &lt;/tuv&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T082650Z&quot;&gt;
++        &lt;seg&gt;&#208;&#164;&#208;&#176;&#208;&#185;&#208;&#187; '%1!s!' &#208;&#189;&#208;&#181; &#208;&#183;'&#209;&#143;&#209;&#158;&#208;&#187;&#209;&#143;&#208;&#181;&#209;&#134;&#209;&#134;&#208;&#176; &#208;&#180;&#208;&#176;&#208;&#191;&#209;&#131;&#209;&#136;&#209;&#135;&#208;&#176;&#208;&#187;&#209;&#140;&#208;&#189;&#209;&#139;&#208;&#188; &#209;&#136;&#209;&#128;&#209;&#139;&#209;&#132;&#209;&#130;&#208;&#176;&#208;&#188;.&lt;/seg&gt;
++    &lt;/tuv&gt;
++&lt;/tu&gt;
++&lt;tu&gt;
++    &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;The file '%1!s!' is a 'PFB' file for a Type 1 font and cannot be installed directly. Please install the associated 'PFM' file.&lt;/seg&gt;
++    &lt;/tuv&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T082452Z&quot;&gt;
++        &lt;seg&gt;&#208;&#164;&#208;&#176;&#208;&#185;&#208;&#187; '%1!s!' &#209;&#145;&#209;&#129;&#209;&#134;&#209;&#140; PFB-&#209;&#132;&#208;&#176;&#208;&#185;&#208;&#187;&#208;&#176;&#208;&#188; &#208;&#180;&#208;&#187;&#209;&#143; &#209;&#136;&#209;&#128;&#209;&#139;&#209;&#132;&#209;&#130;&#209;&#131; Type 1 &#209;&#150; &#208;&#189;&#208;&#181; &#208;&#188;&#208;&#190;&#208;&#182;&#208;&#176; &#208;&#177;&#209;&#139;&#209;&#134;&#209;&#140; &#209;&#131;&#209;&#129;&#209;&#130;&#208;&#176;&#208;&#187;&#209;&#143;&#208;&#178;&#208;&#176;&#208;&#189;&#209;&#139; &#208;&#189;&#208;&#176;&#209;&#158;&#208;&#191;&#209;&#128;&#208;&#190;&#209;&#129;&#209;&#130;. &#208;&#154;&#208;&#176;&#208;&#187;&#209;&#150; &#208;&#187;&#208;&#176;&#209;&#129;&#208;&#186;&#208;&#176;, &#209;&#131;&#209;&#129;&#209;&#130;&#208;&#176;&#208;&#187;&#209;&#142;&#208;&#185;&#209;&#134;&#208;&#181; &#208;&#176;&#209;&#129;&#208;&#176;&#209;&#134;&#209;&#139;&#209;&#143;&#208;&#178;&#208;&#176;&#208;&#189;&#209;&#139; PFM-&#209;&#132;&#208;&#176;&#208;&#185;&#208;&#187;.&lt;/seg&gt;
++    &lt;/tuv&gt;
++&lt;/tu&gt;
++&lt;tu&gt;
++    &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;The file '%1' contains secondary properties that the destination volume does not support.&lt;/seg&gt;
+     &lt;/tuv&gt;
+     &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20101119T223355Z&quot;&gt;
+@@ -91643,8 +92387,8 @@
+     &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;The name of this disc can't contain any of the following characters:\n:&lt;/seg&gt;
+     &lt;/tuv&gt;
+-    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20100725T115117Z&quot;&gt;
+-        &lt;seg&gt;&#208;&#157;&#208;&#176;&#208;&#183;&#208;&#178;&#208;&#176; &#208;&#180;&#209;&#139;&#209;&#129;&#208;&#186;&#208;&#176; &#208;&#189;&#208;&#181; &#208;&#191;&#208;&#176;&#208;&#178;&#209;&#150;&#208;&#189;&#208;&#189;&#208;&#176; &#208;&#183;&#208;&#188;&#209;&#143;&#209;&#136;&#209;&#135;&#208;&#176;&#209;&#134;&#209;&#140; &#208;&#189;&#208;&#176;&#209;&#129;&#209;&#130;&#209;&#131;&#208;&#191;&#208;&#189;&#209;&#139;&#209;&#143; &#209;&#129;&#209;&#150;&#208;&#188;&#208;&#178;&#208;&#176;&#208;&#187;&#209;&#139;:\n:&lt;/seg&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T105812Z&quot;&gt;
++        &lt;seg&gt;&#208;&#157;&#208;&#176;&#208;&#183;&#208;&#178;&#208;&#176; &#208;&#180;&#209;&#139;&#209;&#129;&#208;&#186;&#208;&#176; &#208;&#189;&#208;&#181; &#208;&#191;&#208;&#176;&#208;&#178;&#209;&#150;&#208;&#189;&#208;&#189;&#208;&#176; &#208;&#183;&#208;&#188;&#209;&#143;&#209;&#136;&#209;&#135;&#208;&#176;&#209;&#134;&#209;&#140; &#208;&#189;&#208;&#176;&#209;&#129;&#209;&#130;&#209;&#131;&#208;&#191;&#208;&#189;&#209;&#139;&#209;&#143; &#208;&#183;&#208;&#189;&#208;&#176;&#208;&#186;&#209;&#150;:\n:&lt;/seg&gt;
+     &lt;/tuv&gt;
+ &lt;/tu&gt;
+ &lt;tu&gt;
+@@ -91659,8 +92403,8 @@
+     &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;The name of this disc can't contain any of the following characters:\n\\ / : * ? | &lt; &gt; ;&lt;/seg&gt;
+     &lt;/tuv&gt;
+-    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20100725T115142Z&quot;&gt;
+-        &lt;seg&gt;&#208;&#157;&#208;&#176;&#208;&#183;&#208;&#178;&#208;&#176; &#208;&#180;&#209;&#139;&#209;&#129;&#208;&#186;&#208;&#176; &#208;&#189;&#208;&#181; &#208;&#191;&#208;&#176;&#208;&#178;&#209;&#150;&#208;&#189;&#208;&#189;&#208;&#176; &#208;&#183;&#208;&#188;&#209;&#143;&#209;&#136;&#209;&#135;&#208;&#176;&#209;&#134;&#209;&#140; &#208;&#189;&#208;&#176;&#209;&#129;&#209;&#130;&#209;&#131;&#208;&#191;&#208;&#189;&#209;&#139;&#209;&#143; &#209;&#129;&#209;&#150;&#208;&#188;&#208;&#178;&#208;&#176;&#208;&#187;&#209;&#139;:\n\\ / : * ?  &lt; &gt; ;&lt;/seg&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T105836Z&quot;&gt;
++        &lt;seg&gt;&#208;&#157;&#208;&#176;&#208;&#183;&#208;&#178;&#208;&#176; &#208;&#180;&#209;&#139;&#209;&#129;&#208;&#186;&#208;&#176; &#208;&#189;&#208;&#181; &#208;&#191;&#208;&#176;&#208;&#178;&#209;&#150;&#208;&#189;&#208;&#189;&#208;&#176; &#208;&#183;&#208;&#188;&#209;&#143;&#209;&#136;&#209;&#135;&#208;&#176;&#209;&#134;&#209;&#140; &#208;&#189;&#208;&#176;&#209;&#129;&#209;&#130;&#209;&#131;&#208;&#191;&#208;&#189;&#209;&#139;&#209;&#143; &#208;&#183;&#208;&#189;&#208;&#176;&#208;&#186;&#209;&#150;:\n\\ / : * ?  &lt; &gt; ;&lt;/seg&gt;
+     &lt;/tuv&gt;
+ &lt;/tu&gt;
+ &lt;tu&gt;
+@@ -91955,8 +92699,8 @@
+     &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;The password must contain at least eight characters, not including leading or trailing spaces.&lt;/seg&gt;
+     &lt;/tuv&gt;
+-    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110312T185858Z&quot;&gt;
+-        &lt;seg&gt;&#208;&#159;&#208;&#176;&#209;&#128;&#208;&#190;&#208;&#187;&#209;&#140; &#208;&#191;&#208;&#176;&#208;&#178;&#209;&#150;&#208;&#189;&#208;&#181;&#208;&#189; &#209;&#131;&#209;&#130;&#209;&#128;&#209;&#139;&#208;&#188;&#208;&#187;&#209;&#150;&#208;&#178;&#208;&#176;&#209;&#134;&#209;&#140; &#208;&#191;&#209;&#128;&#209;&#139;&#208;&#189;&#208;&#176;&#208;&#188;&#209;&#129;&#209;&#150; &#208;&#178;&#208;&#190;&#209;&#129;&#208;&#181;&#208;&#188; &#209;&#129;&#209;&#150;&#208;&#188;&#208;&#178;&#208;&#176;&#208;&#187;&#208;&#176;&#209;&#158;, &#208;&#177;&#208;&#181;&#208;&#183; &#208;&#191;&#209;&#143;&#209;&#128;&#209;&#141;&#208;&#180;&#208;&#189;&#209;&#150;&#209;&#133; &#209;&#150; &#208;&#183;&#208;&#176;&#208;&#188;&#209;&#139;&#208;&#186;&#208;&#176;&#208;&#187;&#209;&#140;&#208;&#189;&#209;&#139;&#209;&#133; &#208;&#191;&#209;&#128;&#208;&#176;&#208;&#179;&#208;&#176;&#208;&#187;&#208;&#176;&#209;&#158;.&lt;/seg&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T110024Z&quot;&gt;
++        &lt;seg&gt;&#208;&#159;&#208;&#176;&#209;&#128;&#208;&#190;&#208;&#187;&#209;&#140; &#208;&#191;&#208;&#176;&#208;&#178;&#209;&#150;&#208;&#189;&#208;&#181;&#208;&#189; &#209;&#131;&#209;&#130;&#209;&#128;&#209;&#139;&#208;&#188;&#208;&#187;&#209;&#150;&#208;&#178;&#208;&#176;&#209;&#134;&#209;&#140; &#208;&#191;&#209;&#128;&#209;&#139;&#208;&#189;&#208;&#176;&#208;&#188;&#209;&#129;&#209;&#150; &#208;&#178;&#208;&#190;&#209;&#129;&#208;&#181;&#208;&#188; &#208;&#183;&#208;&#189;&#208;&#176;&#208;&#186;&#208;&#176;&#209;&#158;, &#208;&#177;&#208;&#181;&#208;&#183; &#208;&#191;&#209;&#143;&#209;&#128;&#209;&#141;&#208;&#180;&#208;&#189;&#209;&#150;&#209;&#133; &#209;&#150; &#208;&#183;&#208;&#176;&#208;&#188;&#209;&#139;&#208;&#186;&#208;&#176;&#208;&#187;&#209;&#140;&#208;&#189;&#209;&#139;&#209;&#133; &#208;&#191;&#209;&#128;&#208;&#176;&#208;&#179;&#208;&#176;&#208;&#187;&#208;&#176;&#209;&#158;.&lt;/seg&gt;
+     &lt;/tuv&gt;
+ &lt;/tu&gt;
+ &lt;tu&gt;
+@@ -92273,6 +93017,22 @@
+ &lt;/tu&gt;
+ &lt;tu&gt;
+     &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;The quick brown fox&lt;/seg&gt;
++    &lt;/tuv&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T083806Z&quot;&gt;
++        &lt;seg&gt;&#208;&#161;&#208;&#186;&#209;&#128;&#209;&#139;&#208;&#182;&#208;&#176;&#208;&#178;&#208;&#176;&#208;&#189;&#208;&#189;&#209;&#150; &#208;&#180;&#208;&#176;&#209;&#128;&#208;&#190;&#208;&#179;&#208;&#176;&#209;&#158;&lt;/seg&gt;
++    &lt;/tuv&gt;
++&lt;/tu&gt;
++&lt;tu&gt;
++    &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;The quick brown fox jumps over the lazy dog. 1234567890&lt;/seg&gt;
++    &lt;/tuv&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T084138Z&quot;&gt;
++        &lt;seg&gt;&#208;&#161;&#208;&#186;&#209;&#128;&#209;&#139;&#208;&#182;&#208;&#176;&#208;&#178;&#208;&#176;&#208;&#189;&#208;&#189;&#209;&#150; &#208;&#180;&#208;&#176;&#209;&#128;&#208;&#190;&#208;&#179;&#208;&#176;&#209;&#158; &#209;&#131;&#208;&#191;&#209;&#150;&#209;&#128;&#208;&#176;&#209;&#142;&#209;&#134;&#209;&#134;&#208;&#176; &#209;&#158; &#208;&#189;&#208;&#181;&#208;&#177;&#208;&#176;. 1234567890&lt;/seg&gt;
++    &lt;/tuv&gt;
++&lt;/tu&gt;
++&lt;tu&gt;
++    &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;The reason supplied by user %6 for the last unexpected shutdown of this computer is: %1%n\r\nReason Code: %2%n\r\nProblem ID: %3%n\r\nBugcheck String: %4%n\r\nComment: %5\r\n&lt;/seg&gt;
+     &lt;/tuv&gt;
+     &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110203T101908Z&quot;&gt;
+@@ -92345,6 +93105,14 @@
+ &lt;/tu&gt;
+ &lt;tu&gt;
+     &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;The requested file %1 is not a valid font file.&lt;/seg&gt;
++    &lt;/tuv&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T103118Z&quot;&gt;
++        &lt;seg&gt;&#208;&#151;&#208;&#176;&#208;&#191;&#209;&#139;&#209;&#130;&#208;&#176;&#208;&#189;&#209;&#139; &#209;&#132;&#208;&#176;&#208;&#185;&#208;&#187; %1 &#208;&#189;&#208;&#181;&#208;&#180;&#208;&#176;&#208;&#191;&#209;&#131;&#209;&#136;&#209;&#135;&#208;&#176;&#208;&#187;&#209;&#140;&#208;&#189;&#209;&#139;.&lt;/seg&gt;
++    &lt;/tuv&gt;
++&lt;/tu&gt;
++&lt;tu&gt;
++    &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;The required 'name' tag is empty or missing from the gadget manifest file.&lt;/seg&gt;
+     &lt;/tuv&gt;
+     &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20100827T193938Z&quot;&gt;
+@@ -92571,8 +93339,8 @@
+     &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;The share name contains invalid characters.\r\n&lt;/seg&gt;
+     &lt;/tuv&gt;
+-    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110502T124315Z&quot;&gt;
+-        &lt;seg&gt;&#208;&#157;&#208;&#176;&#208;&#183;&#208;&#178;&#208;&#176; &#208;&#176;&#208;&#177;&#208;&#176;&#208;&#179;&#209;&#131;&#208;&#187;&#208;&#181;&#208;&#189;&#208;&#189;&#209;&#143; &#208;&#183;&#208;&#188;&#209;&#143;&#209;&#136;&#209;&#135;&#208;&#176;&#208;&#181; &#208;&#189;&#208;&#181;&#208;&#180;&#208;&#176;&#208;&#191;&#209;&#131;&#209;&#136;&#209;&#135;&#208;&#176;&#208;&#187;&#209;&#140;&#208;&#189;&#209;&#139;&#209;&#143; &#209;&#129;&#209;&#150;&#208;&#188;&#208;&#178;&#208;&#176;&#208;&#187;&#209;&#139;.\r\n&lt;/seg&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T105526Z&quot;&gt;
++        &lt;seg&gt;&#208;&#157;&#208;&#176;&#208;&#183;&#208;&#178;&#208;&#176; &#208;&#176;&#208;&#177;&#208;&#176;&#208;&#179;&#209;&#131;&#208;&#187;&#208;&#181;&#208;&#189;&#208;&#189;&#209;&#143; &#208;&#183;&#208;&#188;&#209;&#143;&#209;&#136;&#209;&#135;&#208;&#176;&#208;&#181; &#208;&#189;&#208;&#181;&#208;&#180;&#208;&#176;&#208;&#191;&#209;&#131;&#209;&#136;&#209;&#135;&#208;&#176;&#208;&#187;&#209;&#140;&#208;&#189;&#209;&#139;&#209;&#143; &#208;&#183;&#208;&#189;&#208;&#176;&#208;&#186;&#209;&#150;.\r\n&lt;/seg&gt;
+     &lt;/tuv&gt;
+ &lt;/tu&gt;
+ &lt;tu&gt;
+@@ -92659,8 +93427,8 @@
+     &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;The specified account name is not valid, because account names cannot contain the following characters: /\\[]&quot;:;|&lt;&gt;+=,?*\n\nPlease type a different name.&lt;/seg&gt;
+     &lt;/tuv&gt;
+-    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110407T173014Z&quot;&gt;
+-        &lt;seg&gt;&#208;&#144;&#208;&#183;&#208;&#189;&#208;&#176;&#209;&#135;&#208;&#176;&#208;&#189;&#208;&#176;&#209;&#143; &#208;&#189;&#208;&#176;&#208;&#183;&#208;&#178;&#208;&#176; &#209;&#128;&#208;&#176;&#209;&#133;&#209;&#131;&#208;&#189;&#208;&#186;&#208;&#176; &#208;&#189;&#208;&#181;&#208;&#180;&#208;&#176;&#208;&#191;&#209;&#131;&#209;&#136;&#209;&#135;&#208;&#176;&#208;&#187;&#209;&#140;&#208;&#189;&#208;&#176;&#209;&#143;, &#208;&#177;&#208;&#190; &#208;&#189;&#208;&#176;&#208;&#183;&#208;&#178;&#209;&#139; &#209;&#128;&#208;&#176;&#209;&#133;&#209;&#131;&#208;&#189;&#208;&#186;&#208;&#176;&#209;&#158; &#208;&#189;&#208;&#181; &#208;&#188;&#208;&#190;&#208;&#179;&#209;&#131;&#209;&#134;&#209;&#140; &#208;&#183;&#208;&#188;&#209;&#143;&#209;&#136;&#209;&#135;&#208;&#176;&#209;&#134;&#209;&#140; &#208;&#189;&#208;&#176;&#209;&#129;&#209;&#130;&#209;&#131;&#208;&#191;&#208;&#189;&#209;&#139;&#209;&#143; &#209;&#129;&#209;&#150;&#208;&#188;&#208;&#178;&#208;&#176;&#208;&#187;&#209;&#139;: /\\[]&quot;:;&lt;&gt;+=,?*\n\n&#208;&#154;&#208;&#176;&#208;&#187;&#209;&#150; &#208;&#187;&#208;&#176;&#209;&#129;&#208;&#186;&#208;&#176;, &#209;&#158;&#208;&#178;&#209;&#143;&#208;&#180;&#208;&#183;&#209;&#150;&#209;&#134;&#208;&#181; &#209;&#150;&#208;&#189;&#209;&#136;&#209;&#131;&#209;&#142; &#208;&#189;&#208;&#176;&#208;&#183;&#208;&#178;&#209;&#131;.&lt;/seg&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T105930Z&quot;&gt;
++        &lt;seg&gt;&#208;&#144;&#208;&#183;&#208;&#189;&#208;&#176;&#209;&#135;&#208;&#176;&#208;&#189;&#208;&#176;&#209;&#143; &#208;&#189;&#208;&#176;&#208;&#183;&#208;&#178;&#208;&#176; &#209;&#128;&#208;&#176;&#209;&#133;&#209;&#131;&#208;&#189;&#208;&#186;&#208;&#176; &#208;&#189;&#208;&#181;&#208;&#180;&#208;&#176;&#208;&#191;&#209;&#131;&#209;&#136;&#209;&#135;&#208;&#176;&#208;&#187;&#209;&#140;&#208;&#189;&#208;&#176;&#209;&#143;, &#208;&#177;&#208;&#190; &#208;&#189;&#208;&#176;&#208;&#183;&#208;&#178;&#209;&#139; &#209;&#128;&#208;&#176;&#209;&#133;&#209;&#131;&#208;&#189;&#208;&#186;&#208;&#176;&#209;&#158; &#208;&#189;&#208;&#181; &#208;&#188;&#208;&#190;&#208;&#179;&#209;&#131;&#209;&#134;&#209;&#140; &#208;&#183;&#208;&#188;&#209;&#143;&#209;&#136;&#209;&#135;&#208;&#176;&#209;&#134;&#209;&#140; &#208;&#189;&#208;&#176;&#209;&#129;&#209;&#130;&#209;&#131;&#208;&#191;&#208;&#189;&#209;&#139;&#209;&#143; &#208;&#183;&#208;&#189;&#208;&#176;&#208;&#186;&#209;&#150;: /\\[]&quot;:;&lt;&gt;+=,?*\n\n&#208;&#154;&#208;&#176;&#208;&#187;&#209;&#150; &#208;&#187;&#208;&#176;&#209;&#129;&#208;&#186;&#208;&#176;, &#209;&#158;&#208;&#178;&#209;&#143;&#208;&#180;&#208;&#183;&#209;&#150;&#209;&#134;&#208;&#181; &#209;&#150;&#208;&#189;&#209;&#136;&#209;&#131;&#209;&#142; &#208;&#189;&#208;&#176;&#208;&#183;&#208;&#178;&#209;&#131;.&lt;/seg&gt;
+     &lt;/tuv&gt;
+ &lt;/tu&gt;
+ &lt;tu&gt;
+@@ -92681,6 +93449,14 @@
+ &lt;/tu&gt;
+ &lt;tu&gt;
+     &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;The specified path points to a font file that may not be available during later Windows sessions.\n\nDo you want to continue?&lt;/seg&gt;
++    &lt;/tuv&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T082149Z&quot;&gt;
++        &lt;seg&gt;&#208;&#144;&#208;&#183;&#208;&#189;&#208;&#176;&#209;&#135;&#208;&#176;&#208;&#189;&#209;&#139; &#209;&#136;&#208;&#187;&#209;&#143;&#209;&#133; &#208;&#191;&#208;&#176;&#208;&#186;&#208;&#176;&#208;&#183;&#208;&#178;&#208;&#176;&#208;&#181; &#208;&#189;&#208;&#176; &#209;&#132;&#208;&#176;&#208;&#185;&#208;&#187; &#209;&#136;&#209;&#128;&#209;&#139;&#209;&#132;&#209;&#130;&#209;&#131;, &#209;&#143;&#208;&#186;&#209;&#150; &#208;&#188;&#208;&#190;&#208;&#182;&#208;&#176; &#208;&#177;&#209;&#139;&#209;&#134;&#209;&#140; &#208;&#189;&#208;&#181;&#208;&#180;&#208;&#176;&#209;&#129;&#209;&#130;&#209;&#131;&#208;&#191;&#208;&#189;&#209;&#139;&#208;&#188; &#209;&#134;&#209;&#143;&#208;&#179;&#208;&#176;&#208;&#188; &#208;&#191;&#208;&#176;&#208;&#183;&#208;&#189;&#208;&#181;&#208;&#185;&#209;&#136;&#209;&#139;&#209;&#133; &#209;&#129;&#208;&#181;&#209;&#129;&#209;&#150;&#209;&#143;&#209;&#158; Windows.\n\n&#208;&#159;&#209;&#128;&#208;&#176;&#209;&#134;&#209;&#143;&#208;&#179;&#208;&#189;&#209;&#131;&#209;&#134;&#209;&#140;?&lt;/seg&gt;
++    &lt;/tuv&gt;
++&lt;/tu&gt;
++&lt;tu&gt;
++    &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;The specified picture is an unknown type or is not valid. Select a different picture.&lt;/seg&gt;
+     &lt;/tuv&gt;
+     &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110407T175137Z&quot;&gt;
+@@ -93171,8 +93947,8 @@
+     &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;The user name cannot contain these characters:\n&quot; / \\ [ ] : | &lt; &gt; + = ; , ? * %&lt;/seg&gt;
+     &lt;/tuv&gt;
+-    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110312T181412Z&quot;&gt;
+-        &lt;seg&gt;&#208;&#134;&#208;&#188;&#209;&#143; &#208;&#186;&#208;&#176;&#209;&#128;&#209;&#139;&#209;&#129;&#209;&#130;&#208;&#176;&#208;&#187;&#209;&#140;&#208;&#189;&#209;&#150;&#208;&#186;&#208;&#176; &#208;&#189;&#208;&#181; &#208;&#188;&#208;&#190;&#208;&#182;&#208;&#176; &#208;&#183;&#208;&#188;&#209;&#143;&#209;&#136;&#209;&#135;&#208;&#176;&#209;&#134;&#209;&#140; &#208;&#179;&#209;&#141;&#209;&#130;&#209;&#139;&#209;&#143; &#209;&#129;&#209;&#150;&#208;&#188;&#208;&#178;&#208;&#176;&#208;&#187;&#209;&#139;:\n&quot; / \\ [ ] : | &lt; &gt; + = ; , ? * %&lt;/seg&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T110012Z&quot;&gt;
++        &lt;seg&gt;&#208;&#134;&#208;&#188;&#209;&#143; &#208;&#186;&#208;&#176;&#209;&#128;&#209;&#139;&#209;&#129;&#209;&#130;&#208;&#176;&#208;&#187;&#209;&#140;&#208;&#189;&#209;&#150;&#208;&#186;&#208;&#176; &#208;&#189;&#208;&#181; &#208;&#188;&#208;&#190;&#208;&#182;&#208;&#176; &#208;&#183;&#208;&#188;&#209;&#143;&#209;&#136;&#209;&#135;&#208;&#176;&#209;&#134;&#209;&#140; &#208;&#179;&#209;&#141;&#209;&#130;&#209;&#139;&#209;&#143; &#208;&#183;&#208;&#189;&#208;&#176;&#208;&#186;&#209;&#150;:\n&quot; / \\ [ ] : | &lt; &gt; + = ; , ? * %&lt;/seg&gt;
+     &lt;/tuv&gt;
+ &lt;/tu&gt;
+ &lt;tu&gt;
+@@ -93323,8 +94099,8 @@
+     &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;The volume name for a FAT or FAT32 volume cannot contain the following characters:\n* ? / \\ | , ; : + = &lt; &gt; [ ] &quot; .&lt;/seg&gt;
+     &lt;/tuv&gt;
+-    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20101124T081843Z&quot;&gt;
+-        &lt;seg&gt;&#208;&#157;&#208;&#176;&#208;&#183;&#208;&#178;&#208;&#176; &#209;&#128;&#208;&#176;&#208;&#183;&#208;&#180;&#208;&#183;&#208;&#181;&#208;&#187;&#208;&#176; FAT &#209;&#134;&#209;&#150; FAT32 &#208;&#189;&#208;&#181; &#208;&#188;&#208;&#190;&#208;&#182;&#208;&#176; &#208;&#183;&#208;&#188;&#209;&#143;&#209;&#136;&#209;&#135;&#208;&#176;&#209;&#134;&#209;&#140; &#208;&#189;&#208;&#176;&#209;&#129;&#209;&#130;&#209;&#131;&#208;&#191;&#208;&#189;&#209;&#139;&#209;&#143; &#209;&#129;&#209;&#150;&#208;&#188;&#208;&#178;&#208;&#176;&#208;&#187;&#209;&#139;:\n* ? / \\ | , ; : + = &lt; &gt; [ ] &quot; .&lt;/seg&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T105807Z&quot;&gt;
++        &lt;seg&gt;&#208;&#157;&#208;&#176;&#208;&#183;&#208;&#178;&#208;&#176; &#209;&#128;&#208;&#176;&#208;&#183;&#208;&#180;&#208;&#183;&#208;&#181;&#208;&#187;&#208;&#176; FAT &#209;&#134;&#209;&#150; FAT32 &#208;&#189;&#208;&#181; &#208;&#188;&#208;&#190;&#208;&#182;&#208;&#176; &#208;&#183;&#208;&#188;&#209;&#143;&#209;&#136;&#209;&#135;&#208;&#176;&#209;&#134;&#209;&#140; &#208;&#189;&#208;&#176;&#209;&#129;&#209;&#130;&#209;&#131;&#208;&#191;&#208;&#189;&#209;&#139;&#209;&#143; &#208;&#183;&#208;&#189;&#208;&#176;&#208;&#186;&#209;&#150;:\n* ? / \\ | , ; : + = &lt; &gt; [ ] &quot; .&lt;/seg&gt;
+     &lt;/tuv&gt;
+ &lt;/tu&gt;
+ &lt;tu&gt;
+@@ -93849,6 +94625,14 @@
+ &lt;/tu&gt;
+ &lt;tu&gt;
+     &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;There is not enough free memory for this operation.&lt;/seg&gt;
++    &lt;/tuv&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T103159Z&quot;&gt;
++        &lt;seg&gt;&#208;&#145;&#209;&#128;&#208;&#176;&#208;&#186;&#209;&#131;&#208;&#181; djkmyfq &#208;&#191;&#208;&#176;&#208;&#188;&#209;&#143;&#209;&#134;&#209;&#150; &#208;&#180;&#208;&#187;&#209;&#143; &#208;&#179;&#209;&#141;&#209;&#130;&#208;&#176;&#208;&#185; &#208;&#176;&#208;&#191;&#208;&#181;&#209;&#128;&#208;&#176;&#209;&#134;&#209;&#139;&#209;&#150;.&lt;/seg&gt;
++    &lt;/tuv&gt;
++&lt;/tu&gt;
++&lt;tu&gt;
++    &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;There is not enough free memory to run this program.&lt;/seg&gt;
+     &lt;/tuv&gt;
+     &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20100712T202724Z&quot;&gt;
+@@ -94723,8 +95507,8 @@
+     &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;This device cannot be stopped because one of its components (%s) was unplugged when a program was still using it. Close that program and then attempt to stop this device again.&lt;/seg&gt;
+     &lt;/tuv&gt;
+-    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110330T081149Z&quot;&gt;
+-        &lt;seg&gt;&#208;&#147;&#209;&#141;&#209;&#130;&#208;&#176;&#209;&#143; &#208;&#191;&#209;&#128;&#209;&#139;&#208;&#187;&#208;&#176;&#208;&#180;&#208;&#176; &#208;&#189;&#208;&#181; &#208;&#188;&#208;&#190;&#208;&#182;&#208;&#176; &#208;&#177;&#209;&#139;&#209;&#134;&#209;&#140; &#209;&#129;&#208;&#191;&#209;&#139;&#208;&#189;&#208;&#181;&#208;&#189;&#208;&#176;&#209;&#143;, &#208;&#177;&#208;&#190; &#208;&#176;&#208;&#180;&#208;&#183;&#209;&#150;&#208;&#189; &#208;&#183; &#209;&#143;&#208;&#181; &#208;&#186;&#208;&#176;&#208;&#188;&#208;&#191;&#208;&#176;&#208;&#189;&#208;&#181;&#208;&#189;&#208;&#184;&#208;&#176;&#209;&#158; (%s) &#208;&#177;&#209;&#139;&#209;&#158; &#208;&#176;&#208;&#180;&#208;&#186;&#208;&#187;&#209;&#142;&#209;&#135;&#208;&#176;&#208;&#189;&#209;&#139; &#208;&#191;&#208;&#176;&#208;&#180;&#209;&#135;&#208;&#176;&#209;&#129; &#209;&#143;&#208;&#179;&#208;&#190; &#208;&#178;&#209;&#139;&#208;&#186;&#208;&#176;&#209;&#128;&#209;&#139;&#209;&#129;&#209;&#130;&#208;&#176;&#208;&#189;&#208;&#189;&#209;&#143; &#208;&#191;&#209;&#128;&#208;&#176;&#208;&#179;&#209;&#128;&#208;&#176;&#208;&#188;&#208;&#176;&#208;&#185;. &#208;&#151;&#208;&#176;&#209;&#135;&#209;&#139;&#208;&#189;&#209;&#150;&#209;&#134;&#208;&#181; &#208;&#179;&#209;&#141;&#209;&#130;&#209;&#131;&#209;&#142; &#208;&#191;&#209;&#128;&#208;&#176;&#208;&#179;&#209;&#128;&#208;&#176;&#208;&#188;&#209;&#131; &#208;&#191;&#208;&#176;&#209;&#129;&#208;&#191;&#209;&#128;&#208;&#176;&#208;&#177;&#209;&#131;&#208;&#185;&#209;&#134;&#208;&#181; &#209;&#129;&#208;&#191;&#209;&#139;&#208;&#189;&#209;&#150;&#209;&#134;&#209;&#140; &#208;&#191;&#209;&#128;&#209;&#139;&#208;&#187;&#208;&#176;&#208;&#180;&#209;&#131; &#208;&#183;&#208;&#189;&#208;&#190;&#209;&#158;.&lt;/seg&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T110045Z&quot;&gt;
++        &lt;seg&gt;&#208;&#147;&#209;&#141;&#209;&#130;&#208;&#176;&#209;&#143; &#208;&#191;&#209;&#128;&#209;&#139;&#208;&#187;&#208;&#176;&#208;&#180;&#208;&#176; &#208;&#189;&#208;&#181; &#208;&#188;&#208;&#190;&#208;&#182;&#208;&#176; &#208;&#177;&#209;&#139;&#209;&#134;&#209;&#140; &#209;&#129;&#208;&#191;&#209;&#139;&#208;&#189;&#208;&#181;&#208;&#189;&#208;&#176;&#209;&#143;, &#208;&#177;&#208;&#190; &#208;&#176;&#208;&#180;&#208;&#183;&#209;&#150;&#208;&#189; &#208;&#183; &#209;&#143;&#208;&#181; &#208;&#186;&#208;&#176;&#208;&#188;&#208;&#191;&#208;&#176;&#208;&#189;&#208;&#181;&#208;&#189;&#209;&#130;&#208;&#176;&#209;&#158; (%s) &#208;&#177;&#209;&#139;&#209;&#158; &#208;&#176;&#208;&#180;&#208;&#186;&#208;&#187;&#209;&#142;&#209;&#135;&#208;&#176;&#208;&#189;&#209;&#139; &#208;&#191;&#208;&#176;&#208;&#180;&#209;&#135;&#208;&#176;&#209;&#129; &#209;&#143;&#208;&#179;&#208;&#190; &#208;&#178;&#209;&#139;&#208;&#186;&#208;&#176;&#209;&#128;&#209;&#139;&#209;&#129;&#209;&#130;&#208;&#176;&#208;&#189;&#208;&#189;&#209;&#143; &#208;&#191;&#209;&#128;&#208;&#176;&#208;&#179;&#209;&#128;&#208;&#176;&#208;&#188;&#208;&#176;&#208;&#185;. &#208;&#151;&#208;&#176;&#209;&#135;&#209;&#139;&#208;&#189;&#209;&#150;&#209;&#134;&#208;&#181; &#208;&#179;&#209;&#141;&#209;&#130;&#209;&#131;&#209;&#142; &#208;&#191;&#209;&#128;&#208;&#176;&#208;&#179;&#209;&#128;&#208;&#176;&#208;&#188;&#209;&#131; &#208;&#191;&#208;&#176;&#209;&#129;&#208;&#191;&#209;&#128;&#208;&#176;&#208;&#177;&#209;&#131;&#208;&#185;&#209;&#134;&#208;&#181; &#209;&#129;&#208;&#191;&#209;&#139;&#208;&#189;&#209;&#150;&#209;&#134;&#209;&#140; &#208;&#191;&#209;&#128;&#209;&#139;&#208;&#187;&#208;&#176;&#208;&#180;&#209;&#131; &#208;&#183;&#208;&#189;&#208;&#190;&#209;&#158;.&lt;/seg&gt;
+     &lt;/tuv&gt;
+ &lt;/tu&gt;
+ &lt;tu&gt;
+@@ -95675,8 +96459,8 @@
+     &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;This operation could not be completed because some characters in the file name are not allowed on the FTP Server.&lt;/seg&gt;
+     &lt;/tuv&gt;
+-    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110224T201253Z&quot;&gt;
+-        &lt;seg&gt;&#208;&#144;&#208;&#191;&#208;&#181;&#209;&#128;&#208;&#176;&#209;&#134;&#209;&#139;&#209;&#143; &#208;&#189;&#208;&#181; &#208;&#188;&#208;&#190;&#208;&#182;&#208;&#176; &#208;&#177;&#209;&#139;&#209;&#134;&#209;&#140; &#209;&#129;&#208;&#186;&#208;&#190;&#208;&#189;&#209;&#135;&#208;&#176;&#208;&#189;&#208;&#176;&#209;&#143;, &#208;&#177;&#208;&#190; &#208;&#189;&#208;&#181;&#208;&#186;&#208;&#176;&#209;&#130;&#208;&#190;&#209;&#128;&#209;&#139;&#209;&#143; &#209;&#129;&#209;&#150;&#208;&#188;&#208;&#178;&#208;&#176;&#208;&#187;&#209;&#139; &#209;&#158; &#208;&#189;&#208;&#176;&#208;&#183;&#208;&#178;&#208;&#181; &#209;&#132;&#208;&#176;&#208;&#185;&#208;&#187;&#208;&#176; &#208;&#189;&#208;&#181; &#208;&#191;&#208;&#176;&#208;&#180;&#209;&#130;&#209;&#128;&#209;&#139;&#208;&#188;&#208;&#176;&#208;&#189;&#209;&#139;&#209;&#143; FTP-&#209;&#129;&#208;&#181;&#209;&#128;&#208;&#178;&#208;&#181;&#209;&#128;&#208;&#176;&#208;&#188;.&lt;/seg&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T105429Z&quot;&gt;
++        &lt;seg&gt;&#208;&#144;&#208;&#191;&#208;&#181;&#209;&#128;&#208;&#176;&#209;&#134;&#209;&#139;&#209;&#143; &#208;&#189;&#208;&#181; &#208;&#188;&#208;&#190;&#208;&#182;&#208;&#176; &#208;&#177;&#209;&#139;&#209;&#134;&#209;&#140; &#209;&#129;&#208;&#186;&#208;&#190;&#208;&#189;&#209;&#135;&#208;&#176;&#208;&#189;&#208;&#176;&#209;&#143;, &#208;&#177;&#208;&#190; &#208;&#189;&#208;&#181;&#208;&#186;&#208;&#176;&#209;&#130;&#208;&#190;&#209;&#128;&#209;&#139;&#209;&#143; &#208;&#183;&#208;&#189;&#208;&#176;&#208;&#186;&#209;&#150; &#209;&#158; &#208;&#189;&#208;&#176;&#208;&#183;&#208;&#178;&#208;&#181; &#209;&#132;&#208;&#176;&#208;&#185;&#208;&#187;&#208;&#176; &#208;&#189;&#208;&#181; &#208;&#191;&#208;&#176;&#208;&#180;&#209;&#130;&#209;&#128;&#209;&#139;&#208;&#188;&#208;&#176;&#208;&#189;&#209;&#139;&#209;&#143; FTP-&#209;&#129;&#208;&#181;&#209;&#128;&#208;&#178;&#208;&#181;&#209;&#128;&#208;&#176;&#208;&#188;.&lt;/seg&gt;
+     &lt;/tuv&gt;
+ &lt;/tu&gt;
+ &lt;tu&gt;
+@@ -97809,6 +98593,14 @@
+ &lt;/tu&gt;
+ &lt;tu&gt;
+     &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;To save space on your computer, you can choose to install a shortcut to a font file instead of the file itself. If the font file becomes unavailable, you might not be able to use the font.&lt;/seg&gt;
++    &lt;/tuv&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T090710Z&quot;&gt;
++        &lt;seg&gt;&#208;&#154;&#208;&#176;&#208;&#177; &#208;&#183;&#208;&#176;&#209;&#133;&#208;&#176;&#208;&#178;&#208;&#176;&#209;&#134;&#209;&#140; &#208;&#191;&#209;&#128;&#208;&#176;&#209;&#129;&#209;&#130;&#208;&#190;&#209;&#128;&#209;&#131; &#208;&#189;&#208;&#176; &#208;&#178;&#208;&#176;&#209;&#136;&#209;&#139;&#208;&#188; &#208;&#186;&#208;&#176;&#208;&#188;&#208;&#191;'&#209;&#142;&#209;&#130;&#208;&#176;&#209;&#128;&#209;&#139;, &#208;&#178;&#209;&#139; &#208;&#188;&#208;&#190;&#208;&#182;&#208;&#176;&#209;&#134;&#208;&#181; &#208;&#176;&#208;&#177;&#209;&#128;&#208;&#176;&#209;&#134;&#209;&#140; &#209;&#131;&#209;&#129;&#209;&#130;&#208;&#176;&#208;&#187;&#209;&#143;&#208;&#178;&#208;&#176;&#208;&#189;&#208;&#189;&#208;&#181; &#208;&#191;&#209;&#131;&#209;&#129;&#208;&#186;&#208;&#176;&#208;&#187;&#209;&#140;&#208;&#189;&#209;&#150;&#208;&#186;&#208;&#176; &#208;&#180;&#208;&#187;&#209;&#143; &#209;&#136;&#209;&#128;&#209;&#139;&#209;&#132;&#209;&#130;&#208;&#176; &#208;&#183;&#208;&#176;&#208;&#188;&#208;&#181;&#209;&#129;&#209;&#130; &#209;&#129;&#208;&#176;&#208;&#188;&#208;&#190;&#208;&#179;&#208;&#176; &#209;&#132;&#208;&#176;&#208;&#185;&#208;&#187;&#208;&#176;. &#208;&#154;&#208;&#176;&#208;&#187;&#209;&#150; &#209;&#132;&#208;&#176;&#208;&#185;&#208;&#187; &#209;&#129;&#209;&#130;&#208;&#176;&#208;&#189;&#208;&#190;&#208;&#178;&#209;&#150;&#209;&#134;&#209;&#134;&#208;&#176; &#208;&#189;&#208;&#181;&#208;&#180;&#208;&#176;&#209;&#129;&#209;&#130;&#209;&#131;&#208;&#191;&#208;&#189;&#209;&#139;&#208;&#188;, &#208;&#178;&#209;&#139; &#208;&#189;&#208;&#181; &#208;&#183;&#208;&#188;&#208;&#190;&#208;&#182;&#208;&#176;&#209;&#134;&#208;&#181; &#209;&#129;&#208;&#186;&#208;&#176;&#209;&#128;&#209;&#139;&#209;&#129;&#209;&#130;&#208;&#176;&#209;&#134;&#209;&#140; &#209;&#136;&#209;&#128;&#209;&#139;&#209;&#132;&#209;&#130;.&lt;/seg&gt;
++    &lt;/tuv&gt;
++&lt;/tu&gt;
++&lt;tu&gt;
++    &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;To see how to finish removing spyware and other potentially unwanted software, see this support article on the Microsoft Security website.&lt;/seg&gt;
+     &lt;/tuv&gt;
+     &lt;tuv lang=&quot;be&quot; changeid=&quot;Ales Koshal [icq#:706101]&quot; changedate=&quot;20100312T112733Z&quot;&gt;
+@@ -98729,6 +99521,22 @@
+ &lt;/tu&gt;
+ &lt;tu&gt;
+     &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;TrueType&lt;/seg&gt;
++    &lt;/tuv&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T085701Z&quot;&gt;
++        &lt;seg&gt;TrueType&lt;/seg&gt;
++    &lt;/tuv&gt;
++&lt;/tu&gt;
++&lt;tu&gt;
++    &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;TrueType Collection&lt;/seg&gt;
++    &lt;/tuv&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T085721Z&quot;&gt;
++        &lt;seg&gt;&#208;&#154;&#208;&#176;&#208;&#187;&#208;&#181;&#208;&#186;&#209;&#134;&#209;&#139;&#209;&#143; TrueType&lt;/seg&gt;
++    &lt;/tuv&gt;
++&lt;/tu&gt;
++&lt;tu&gt;
++    &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;TrueType collection font file&lt;/seg&gt;
+     &lt;/tuv&gt;
+     &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20100715T055254Z&quot;&gt;
+@@ -99281,6 +100089,14 @@
+ &lt;/tu&gt;
+ &lt;tu&gt;
+     &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Type 1&lt;/seg&gt;
++    &lt;/tuv&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T085700Z&quot;&gt;
++        &lt;seg&gt;Type 1&lt;/seg&gt;
++    &lt;/tuv&gt;
++&lt;/tu&gt;
++&lt;tu&gt;
++    &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Type a &amp;description that you want to use for this kind of file:&lt;/seg&gt;
+     &lt;/tuv&gt;
+     &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20100705T090655Z&quot;&gt;
+@@ -101545,6 +102361,14 @@
+ &lt;/tu&gt;
+ &lt;tu&gt;
+     &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Use &amp;shortcut&lt;/seg&gt;
++    &lt;/tuv&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T103326Z&quot;&gt;
++        &lt;seg&gt;&#208;&#161;&#208;&#186;&#208;&#176;&#209;&#128;&#209;&#139;&#209;&#129;&#209;&#130;&#208;&#176;&#209;&#134;&#209;&#140; &#208;&#191;&#209;&#131;&#209;&#129;&#208;&#186;&#208;&#176;&#208;&#187;&#209;&#140;&#208;&#189;&#209;&#150;&#208;&#186;&lt;/seg&gt;
++    &lt;/tuv&gt;
++&lt;/tu&gt;
++&lt;tu&gt;
++    &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Use Aero &amp;Peek to preview the desktop&lt;/seg&gt;
+     &lt;/tuv&gt;
+     &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20101005T155251Z&quot;&gt;
+@@ -101555,8 +102379,8 @@
+     &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Use Character Editor to modify how a character is shown on the screen.&lt;/seg&gt;
+     &lt;/tuv&gt;
+-    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20101118T073501Z&quot;&gt;
+-        &lt;seg&gt;&#208;&#146;&#209;&#139;&#208;&#186;&#208;&#176;&#209;&#128;&#209;&#139;&#209;&#129;&#209;&#130;&#208;&#176;&#208;&#189;&#208;&#189;&#208;&#181; &#209;&#128;&#209;&#141;&#208;&#180;&#208;&#176;&#208;&#186;&#209;&#130;&#208;&#176;&#209;&#128;&#208;&#176; &#209;&#129;&#209;&#150;&#208;&#188;&#208;&#178;&#208;&#176;&#208;&#187;&#208;&#176;&#209;&#158; &#208;&#180;&#208;&#187;&#209;&#143; &#208;&#183;&#208;&#188;&#209;&#143;&#208;&#189;&#208;&#181;&#208;&#189;&#208;&#189;&#209;&#143; &#208;&#191;&#208;&#176;&#208;&#186;&#208;&#176;&#208;&#183;&#208;&#178;&#208;&#176;&#208;&#189;&#208;&#189;&#209;&#143; &#209;&#129;&#209;&#150;&#208;&#188;&#208;&#178;&#208;&#176;&#208;&#187;&#208;&#176; &#208;&#189;&#208;&#176; &#209;&#141;&#208;&#186;&#209;&#128;&#208;&#176;&#208;&#189;&#208;&#181;.&lt;/seg&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T105706Z&quot;&gt;
++        &lt;seg&gt;&#208;&#146;&#209;&#139;&#208;&#186;&#208;&#176;&#209;&#128;&#209;&#139;&#209;&#129;&#209;&#130;&#208;&#176;&#208;&#189;&#208;&#189;&#208;&#181; &#209;&#128;&#209;&#141;&#208;&#180;&#208;&#176;&#208;&#186;&#209;&#130;&#208;&#176;&#209;&#128;&#208;&#176; &#208;&#183;&#208;&#189;&#208;&#176;&#208;&#186;&#208;&#176;&#209;&#158; &#208;&#180;&#208;&#187;&#209;&#143; &#208;&#183;&#208;&#188;&#209;&#143;&#208;&#189;&#208;&#181;&#208;&#189;&#208;&#189;&#209;&#143; &#208;&#191;&#208;&#176;&#208;&#186;&#208;&#176;&#208;&#183;&#208;&#178;&#208;&#176;&#208;&#189;&#208;&#189;&#209;&#143; &#209;&#129;&#209;&#150;&#208;&#188;&#208;&#178;&#208;&#176;&#208;&#187;&#208;&#176; &#208;&#189;&#208;&#176; &#209;&#141;&#208;&#186;&#209;&#128;&#208;&#176;&#208;&#189;&#208;&#181;.&lt;/seg&gt;
+     &lt;/tuv&gt;
+ &lt;/tu&gt;
+ &lt;tu&gt;
+@@ -102489,6 +103313,14 @@
+ &lt;/tu&gt;
+ &lt;tu&gt;
+     &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Version: %1&lt;/seg&gt;
++    &lt;/tuv&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T103303Z&quot;&gt;
++        &lt;seg&gt;&#208;&#146;&#208;&#181;&#209;&#128;&#209;&#129;&#209;&#150;&#209;&#143;: %1&lt;/seg&gt;
++    &lt;/tuv&gt;
++&lt;/tu&gt;
++&lt;tu&gt;
++    &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Vertical&lt;/seg&gt;
+     &lt;/tuv&gt;
+     &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110311T112515Z&quot;&gt;
+@@ -104985,6 +105817,30 @@
+ &lt;/tu&gt;
+ &lt;tu&gt;
+     &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Windows Font Folder&lt;/seg&gt;
++    &lt;/tuv&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T081904Z&quot;&gt;
++        &lt;seg&gt;&#208;&#154;&#208;&#176;&#209;&#130;&#208;&#176;&#208;&#187;&#208;&#190;&#208;&#179; &#209;&#136;&#209;&#128;&#209;&#139;&#209;&#132;&#209;&#130;&#208;&#190;&#209;&#158; Windows&lt;/seg&gt;
++    &lt;/tuv&gt;
++&lt;/tu&gt;
++&lt;tu&gt;
++    &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Windows Font Previewer&lt;/seg&gt;
++    &lt;/tuv&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T081853Z&quot;&gt;
++        &lt;seg&gt;&#208;&#159;&#208;&#181;&#209;&#128;&#208;&#176;&#208;&#180;&#208;&#191;&#209;&#128;&#208;&#176;&#208;&#179;&#208;&#187;&#209;&#143;&#208;&#180; &#209;&#136;&#209;&#128;&#209;&#139;&#209;&#132;&#209;&#130;&#208;&#190;&#209;&#158; Windows&lt;/seg&gt;
++    &lt;/tuv&gt;
++&lt;/tu&gt;
++&lt;tu&gt;
++    &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Windows Font Viewer&lt;/seg&gt;
++    &lt;/tuv&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T103142Z&quot;&gt;
++        &lt;seg&gt;&#208;&#159;&#209;&#128;&#208;&#176;&#208;&#179;&#208;&#187;&#209;&#143;&#208;&#180;&#208;&#176;&#208;&#187;&#209;&#140;&#208;&#189;&#209;&#150;&#208;&#186; &#209;&#136;&#209;&#128;&#209;&#139;&#209;&#132;&#209;&#130;&#208;&#190;&#209;&#158; Windows&lt;/seg&gt;
++    &lt;/tuv&gt;
++&lt;/tu&gt;
++&lt;tu&gt;
++    &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Windows Gadget&lt;/seg&gt;
+     &lt;/tuv&gt;
+     &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20100714T093526Z&quot;&gt;
+@@ -106161,6 +107017,14 @@
+ &lt;/tu&gt;
+ &lt;tu&gt;
+     &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Windows can hide fonts that are not designed for your input language settings. If you choose this option, only fonts that are designed for your language settings will be listed in your programs.&lt;/seg&gt;
++    &lt;/tuv&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T090219Z&quot;&gt;
++        &lt;seg&gt;Windows &#208;&#188;&#208;&#190;&#208;&#182;&#208;&#176; &#209;&#133;&#208;&#176;&#208;&#178;&#208;&#176;&#209;&#134;&#209;&#140; &#209;&#136;&#209;&#128;&#209;&#139;&#209;&#132;&#209;&#130;&#209;&#139;, &#209;&#143;&#208;&#186;&#209;&#150;&#209;&#143; &#208;&#189;&#208;&#181; &#208;&#191;&#209;&#128;&#209;&#139;&#208;&#183;&#208;&#189;&#208;&#176;&#209;&#135;&#208;&#176;&#208;&#189;&#209;&#139;&#209;&#143; &#208;&#180;&#208;&#187;&#209;&#143; &#208;&#189;&#208;&#176;&#208;&#187;&#208;&#176;&#208;&#180;&#208;&#176;&#209;&#158; &#208;&#178;&#208;&#176;&#209;&#136;&#208;&#176;&#208;&#181; &#208;&#188;&#208;&#190;&#208;&#178;&#209;&#139; &#209;&#158;&#208;&#178;&#208;&#190;&#208;&#180;&#209;&#131;. &#208;&#154;&#208;&#176;&#208;&#187;&#209;&#150; &#208;&#178;&#209;&#139; &#209;&#129;&#208;&#186;&#208;&#176;&#209;&#128;&#209;&#139;&#209;&#129;&#209;&#130;&#208;&#176;&#208;&#181;&#209;&#134;&#208;&#181; &#208;&#179;&#209;&#141;&#209;&#130;&#209;&#131;&#209;&#142; &#208;&#188;&#208;&#176;&#208;&#179;&#209;&#135;&#209;&#139;&#208;&#188;&#208;&#176;&#209;&#129;&#209;&#134;&#209;&#140;, &#209;&#131; &#208;&#178;&#208;&#176;&#209;&#136;&#209;&#139;&#209;&#133; &#208;&#191;&#209;&#128;&#208;&#176;&#208;&#179;&#209;&#128;&#208;&#176;&#208;&#188;&#208;&#176;&#209;&#133; &#208;&#177;&#209;&#131;&#208;&#180;&#209;&#131;&#209;&#134;&#209;&#140; &#208;&#191;&#208;&#181;&#209;&#128;&#208;&#176;&#208;&#187;&#209;&#150;&#209;&#135;&#208;&#176;&#208;&#189;&#209;&#139;&#209;&#143; &#209;&#130;&#208;&#190;&#208;&#187;&#209;&#140;&#208;&#186;&#209;&#150; &#209;&#136;&#209;&#128;&#209;&#139;&#209;&#132;&#209;&#130;&#209;&#139;, &#208;&#191;&#209;&#128;&#209;&#139;&#208;&#183;&#208;&#189;&#208;&#176;&#209;&#135;&#208;&#176;&#208;&#189;&#209;&#139;&#209;&#143; &#208;&#180;&#208;&#187;&#209;&#143; &#208;&#178;&#208;&#176;&#209;&#136;&#209;&#139;&#209;&#133; &#208;&#188;&#208;&#190;&#209;&#158;&#208;&#189;&#209;&#139;&#209;&#133; &#208;&#189;&#208;&#176;&#208;&#187;&#208;&#176;&#208;&#180;&#208;&#176;&#209;&#158;.&lt;/seg&gt;
++    &lt;/tuv&gt;
++&lt;/tu&gt;
++&lt;tu&gt;
++    &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Windows can now play sounds from this device&lt;/seg&gt;
+     &lt;/tuv&gt;
+     &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20101009T163007Z&quot;&gt;
+@@ -109745,6 +110609,14 @@
+ &lt;/tu&gt;
+ &lt;tu&gt;
+     &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;You do not have permission to install a font from this network.\nCopy the font file to your computer and install it from there.&lt;/seg&gt;
++    &lt;/tuv&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T082605Z&quot;&gt;
++        &lt;seg&gt;&#208;&#146;&#209;&#139; &#208;&#189;&#208;&#181; &#208;&#188;&#208;&#176;&#208;&#181;&#209;&#134;&#208;&#181; &#208;&#180;&#208;&#176;&#208;&#183;&#208;&#178;&#208;&#190;&#208;&#187;&#209;&#131; &#208;&#189;&#208;&#176; &#209;&#158;&#209;&#129;&#209;&#130;&#208;&#176;&#208;&#187;&#209;&#143;&#208;&#178;&#208;&#176;&#208;&#189;&#208;&#189;&#208;&#181; &#209;&#136;&#209;&#128;&#209;&#139;&#209;&#132;&#209;&#130;&#209;&#131; &#208;&#183; &#208;&#179;&#209;&#141;&#209;&#130;&#208;&#176;&#208;&#185; &#209;&#129;&#208;&#181;&#209;&#130;&#208;&#186;&#209;&#150;.\n&#208;&#161;&#208;&#186;&#208;&#176;&#208;&#191;&#209;&#150;&#209;&#142;&#208;&#185;&#209;&#134;&#208;&#181; &#209;&#132;&#208;&#176;&#208;&#185;&#208;&#187; &#209;&#136;&#209;&#128;&#209;&#139;&#209;&#132;&#209;&#130;&#209;&#131; &#208;&#189;&#208;&#176; &#208;&#178;&#208;&#176;&#209;&#136; &#208;&#186;&#208;&#176;&#208;&#188;&#208;&#191;'&#209;&#142;&#209;&#130;&#208;&#176;&#209;&#128; &#209;&#150; &#209;&#158;&#209;&#129;&#209;&#130;&#208;&#176;&#208;&#187;&#209;&#142;&#208;&#185;&#209;&#134;&#208;&#181; &#209;&#143;&#208;&#179;&#208;&#190; &#208;&#176;&#208;&#180;&#208;&#179;&#209;&#141;&#209;&#130;&#209;&#131;&#208;&#187;&#209;&#140;.&lt;/seg&gt;
++    &lt;/tuv&gt;
++&lt;/tu&gt;
++&lt;tu&gt;
++    &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;You do not have permission to open the Network Connections folder.&lt;/seg&gt;
+     &lt;/tuv&gt;
+     &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110203T102126Z&quot;&gt;
+@@ -110355,8 +111227,8 @@
+     &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;You need a WIA driver to use this device.  Please install it from the installation CD or manufacturer's website and try again.&lt;/seg&gt;
+     &lt;/tuv&gt;
+-    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110314T122256Z&quot;&gt;
+-        &lt;seg&gt;&#208;&#146;&#208;&#176;&#208;&#188; &#208;&#189;&#208;&#181;&#208;&#176;&#208;&#177;&#209;&#133;&#208;&#190;&#208;&#180;&#208;&#189;&#209;&#139; &#208;&#180;&#209;&#128;&#208;&#176;&#208;&#185;&#208;&#178;&#208;&#181;&#209;&#128; WIA, &#208;&#186;&#208;&#176;&#208;&#177; &#208;&#186;&#208;&#176;&#209;&#128;&#209;&#139;&#209;&#129;&#209;&#130;&#208;&#176;&#209;&#134;&#209;&#134;&#208;&#176; &#208;&#179;&#209;&#141;&#209;&#130;&#208;&#176;&#208;&#185; &#208;&#191;&#209;&#128;&#209;&#139;&#208;&#187;&#208;&#176;&#208;&#180;&#208;&#176;&#208;&#185;. &#208;&#154;&#208;&#176;&#208;&#187;&#209;&#150; &#208;&#187;&#208;&#176;&#209;&#129;&#208;&#186;&#208;&#176;, &#209;&#131;&#209;&#129;&#209;&#130;&#208;&#176;&#208;&#187;&#209;&#142;&#208;&#185;&#209;&#134;&#208;&#181; &#209;&#143;&#208;&#179;&#208;&#190; &#208;&#183; &#209;&#131;&#209;&#129;&#209;&#130;&#208;&#176;&#208;&#187;&#209;&#143;&#208;&#178;&#208;&#176;&#208;&#187;&#209;&#140;&#208;&#189;&#208;&#176;&#208;&#185; &#208;&#186;&#209;&#128;&#209;&#131;&#208;&#182;&#209;&#141;&#208;&#187;&#208;&#186;&#209;&#150; &#209;&#134;&#209;&#150; &#209;&#129;&#208;&#176;&#208;&#185;&#208;&#184;&#208;&#176; &#208;&#178;&#209;&#139;&#209;&#130;&#208;&#178;&#208;&#190;&#209;&#128;&#209;&#134;&#209;&#139; &#209;&#150; &#208;&#191;&#208;&#176;&#209;&#158;&#209;&#130;&#208;&#176;&#209;&#128;&#209;&#139;&#209;&#134;&#208;&#181; &#209;&#129;&#208;&#191;&#209;&#128;&#208;&#190;&#208;&#177;&#209;&#131;.&lt;/seg&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T110034Z&quot;&gt;
++        &lt;seg&gt;&#208;&#146;&#208;&#176;&#208;&#188; &#208;&#189;&#208;&#181;&#208;&#176;&#208;&#177;&#209;&#133;&#208;&#190;&#208;&#180;&#208;&#189;&#209;&#139; &#208;&#180;&#209;&#128;&#208;&#176;&#208;&#185;&#208;&#178;&#208;&#181;&#209;&#128; WIA, &#208;&#186;&#208;&#176;&#208;&#177; &#208;&#186;&#208;&#176;&#209;&#128;&#209;&#139;&#209;&#129;&#209;&#130;&#208;&#176;&#209;&#134;&#209;&#134;&#208;&#176; &#208;&#179;&#209;&#141;&#209;&#130;&#208;&#176;&#208;&#185; &#208;&#191;&#209;&#128;&#209;&#139;&#208;&#187;&#208;&#176;&#208;&#180;&#208;&#176;&#208;&#185;. &#208;&#154;&#208;&#176;&#208;&#187;&#209;&#150; &#208;&#187;&#208;&#176;&#209;&#129;&#208;&#186;&#208;&#176;, &#209;&#131;&#209;&#129;&#209;&#130;&#208;&#176;&#208;&#187;&#209;&#142;&#208;&#185;&#209;&#134;&#208;&#181; &#209;&#143;&#208;&#179;&#208;&#190; &#208;&#183; &#209;&#131;&#209;&#129;&#209;&#130;&#208;&#176;&#208;&#187;&#209;&#143;&#208;&#178;&#208;&#176;&#208;&#187;&#209;&#140;&#208;&#189;&#208;&#176;&#208;&#185; &#208;&#186;&#209;&#128;&#209;&#131;&#208;&#182;&#209;&#141;&#208;&#187;&#208;&#186;&#209;&#150; &#209;&#134;&#209;&#150; &#209;&#129;&#208;&#176;&#208;&#185;&#209;&#130;&#208;&#176; &#208;&#178;&#209;&#139;&#209;&#130;&#208;&#178;&#208;&#190;&#209;&#128;&#209;&#134;&#209;&#139; &#209;&#150; &#208;&#191;&#208;&#176;&#209;&#158;&#209;&#130;&#208;&#176;&#209;&#128;&#209;&#139;&#209;&#134;&#208;&#181; &#209;&#129;&#208;&#191;&#209;&#128;&#208;&#190;&#208;&#177;&#209;&#131;.&lt;/seg&gt;
+     &lt;/tuv&gt;
+ &lt;/tu&gt;
+ &lt;tu&gt;
+@@ -112153,6 +113025,14 @@
+ &lt;/tu&gt;
+ &lt;tu&gt;
+     &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ&lt;/seg&gt;
++    &lt;/tuv&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T103431Z&quot;&gt;
++        &lt;seg&gt;&#208;&#176;&#208;&#177;&#208;&#178;&#208;&#179;&#210;&#145;&#208;&#180;&#208;&#181;&#209;&#145;&#208;&#182;&#208;&#183;&#209;&#150;&#208;&#185;&#208;&#186;&#208;&#187;&#208;&#188;&#208;&#189;&#208;&#190;&#208;&#191;&#209;&#128;&#209;&#129;&#209;&#130;&#209;&#131;&#209;&#158;&#209;&#132;&#209;&#133;&#209;&#134;&#209;&#135;&#209;&#136;&#209;&#139;&#209;&#140;&#209;&#141;&#209;&#142;&#209;&#143; abcdefghijklmnopqrstuvwxyz &#208;&#144;&#208;&#145;&#208;&#146;&#208;&#147;&#210;&#144;&#208;&#148;&#208;&#149;&#208;&#129;&#208;&#150;&#208;&#151;&#208;&#134;&#208;&#153;&#208;&#154;&#208;&#155;&#208;&#156;&#208;&#157;&#208;&#158;&#208;&#159;&#208;&#160;&#208;&#161;&#208;&#162;&#208;&#163;&#208;&#142;&#208;&#164;&#208;&#165;&#208;&#166;&#208;&#167;&#208;&#168;&#208;&#171;&#208;&#172;&#208;&#173;&#208;&#174;&#208;&#175; ABCDEFGHIJKLMNOPQRSTUVWXYZ&lt;/seg&gt;
++    &lt;/tuv&gt;
++&lt;/tu&gt;
++&lt;tu&gt;
++    &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;accessed&lt;/seg&gt;
+     &lt;/tuv&gt;
+     &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20101111T091648Z&quot;&gt;
+@@ -113123,8 +114003,8 @@
+     &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;character spacing&lt;/seg&gt;
+     &lt;/tuv&gt;
+-    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20101016T184738Z&quot;&gt;
+-        &lt;seg&gt;&#209;&#150;&#208;&#189;&#209;&#130;&#209;&#141;&#209;&#128;&#208;&#178;&#208;&#176;&#208;&#187; &#208;&#191;&#208;&#176;&#208;&#188;&#209;&#150;&#208;&#182; &#209;&#129;&#209;&#150;&#208;&#188;&#208;&#178;&#208;&#176;&#208;&#187;&#208;&#176;&#208;&#188;&#209;&#150;&lt;/seg&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T104606Z&quot;&gt;
++        &lt;seg&gt;&#209;&#150;&#208;&#189;&#209;&#130;&#209;&#141;&#209;&#128;&#208;&#178;&#208;&#176;&#208;&#187; &#208;&#191;&#208;&#176;&#208;&#188;&#209;&#150;&#208;&#182; &#208;&#183;&#208;&#189;&#208;&#176;&#208;&#186;&#208;&#176;&#208;&#188;&#209;&#150;&lt;/seg&gt;
+     &lt;/tuv&gt;
+ &lt;/tu&gt;
+ &lt;tu&gt;
+@@ -115651,8 +116531,8 @@
+     &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;neutral character&lt;/seg&gt;
+     &lt;/tuv&gt;
+-    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20101017T094159Z&quot;&gt;
+-        &lt;seg&gt;&#208;&#189;&#208;&#181;&#208;&#185;&#209;&#130;&#209;&#128;&#208;&#176;&#208;&#187;&#209;&#140;&#208;&#189;&#209;&#139; &#209;&#129;&#209;&#150;&#208;&#188;&#208;&#178;&#208;&#176;&#208;&#187;&lt;/seg&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T104611Z&quot;&gt;
++        &lt;seg&gt;&#208;&#189;&#208;&#181;&#208;&#185;&#209;&#130;&#209;&#128;&#208;&#176;&#208;&#187;&#209;&#140;&#208;&#189;&#209;&#139; &#208;&#183;&#208;&#189;&#208;&#176;&#208;&#186;&lt;/seg&gt;
+     &lt;/tuv&gt;
+ &lt;/tu&gt;
+ &lt;tu&gt;
+@@ -118479,6 +119359,14 @@
+         &lt;seg&gt;&#226;&#128;&#162;&lt;/seg&gt;
+     &lt;/tuv&gt;
+ &lt;/tu&gt;
++&lt;tu&gt;
++    &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;&#239;&#191;&#189;&#239;&#191;&#189;&#239;&#191;&#189;&lt;/seg&gt;
++    &lt;/tuv&gt;
++    &lt;tuv lang=&quot;be&quot; changeid=&quot;eratyk&quot; changedate=&quot;20110504T081706Z&quot;&gt;
++        &lt;seg&gt;&#239;&#191;&#189;&#239;&#191;&#189;&#239;&#191;&#189;&lt;/seg&gt;
++    &lt;/tuv&gt;
++&lt;/tu&gt;
+ 
+ &lt;!-- Alternative translations --&gt;
+ &lt;tu&gt;
+
+Added: Windows7/source/Windows/System32/en-US/fontext.dll_x32sp0.mui.rc
+===================================================================
+--- Windows7/source/Windows/System32/en-US/fontext.dll_x32sp0.mui.rc	                        (rev 0)
++++ Windows7/source/Windows/System32/en-US/fontext.dll_x32sp0.mui.rc	2011-05-04 11:01:50 UTC (rev 277)
+@@ -0,0 +1,380 @@
++1 MUI &quot;Data_599.bin&quot;
++
++501 MENU
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++POPUP &quot;&quot;
++{
++	MENUITEM &quot;Pre&amp;view&quot;,  1
++	MENUITEM &quot;&amp;Print&quot;,  2
++	MENUITEM &quot;&amp;Show&quot;,  3
++}
++}
++
++502 MENU
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++POPUP &quot;&quot;
++{
++	MENUITEM &quot;Pre&amp;view&quot;,  1
++	MENUITEM &quot;&amp;Print&quot;,  2
++	MENUITEM &quot;&amp;Hide&quot;,  4
++}
++}
++
++503 MENU
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++POPUP &quot;&quot;
++{
++	MENUITEM &quot;Pre&amp;view&quot;,  1
++	MENUITEM &quot;&amp;Print&quot;,  2
++	MENUITEM &quot;&amp;Show&quot;,  3
++	MENUITEM &quot;&amp;Hide&quot;,  4
++}
++}
++
++1004 DIALOGEX 0, 0, 200, 71
++STYLE DS_MODALFRAME | DS_SETFOREGROUND | DS_CENTER | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
++CAPTION &quot;Installing Fonts&quot;
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++FONT 9, &quot;Segoe UI&quot;
++{
++   CONTROL &quot;Installing fonts...&quot;, 1006, STATIC, SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 7, 7, 186, 8 
++   CONTROL &quot;&quot;, 1005, &quot;msctls_progress32&quot;, PBS_SMOOTH | WS_CHILD | WS_VISIBLE | WS_BORDER, 7, 19, 186, 8 
++   CONTROL &quot;Stop&quot;, 2, BUTTON, BS_DEFPUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 150, 54, 43, 12 
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++7, 	&quot;???&quot;
++8, 	&quot;???&quot;
++9, 	&quot;&#192;&#225;&#244;&quot;
++10, 	&quot;???&quot;
++11, 	&quot;???&quot;
++13, 	&quot;?????&quot;
++14, 	&quot;?????&quot;
++15, 	&quot;???&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++16, 	&quot;???&quot;
++17, 	&quot;???&quot;
++18, 	&quot;???&quot;
++19, 	&quot;???&quot;
++20, 	&quot;???&quot;
++21, 	&quot;???&quot;
++22, 	&quot;???&quot;
++23, 	&quot;???&quot;
++24, 	&quot;???&quot;
++25, 	&quot;??&quot;
++26, 	&quot;???&quot;
++27, 	&quot;???&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++38, 	&quot;?v?&quot;
++47, 	&quot;???&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++49, 	&quot;???&quot;
++50, 	&quot;???&quot;
++51, 	&quot;???&quot;
++53, 	&quot;???&quot;
++56, 	&quot;??&quot;
++58, 	&quot;?0?1?2&quot;
++59, 	&quot;???&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++70, 	&quot;???&quot;
++71, 	&quot;?????&quot;
++72, 	&quot;???&quot;
++73, 	&quot;???&quot;
++74, 	&quot;???&quot;
++75, 	&quot;???&quot;
++76, 	&quot;???&quot;
++77, 	&quot;???&quot;
++78, 	&quot;???&quot;
++79, 	&quot;???&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++80, 	&quot;???&quot;
++81, 	&quot;?????&quot;
++82, 	&quot;???&quot;
++83, 	&quot;??&quot;
++84, 	&quot;???&quot;
++85, 	&quot;?0?1?2&quot;
++86, 	&quot;?0?1?2&quot;
++87, 	&quot;?C?5?6&quot;
++88, 	&quot;?E?2?0&quot;
++93, 	&quot;???&quot;
++94, 	&quot;???&quot;
++95, 	&quot;???&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++96, 	&quot;???&quot;
++97, 	&quot;???&quot;
++98, 	&quot;???&quot;
++99, 	&quot;???&quot;
++100, 	&quot;???&quot;
++103, 	&quot;?0?1?2&quot;
++104, 	&quot;?0?3?4&quot;
++105, 	&quot;?0?1?2&quot;
++106, 	&quot;?0?1?2&quot;
++108, 	&quot;?0?6?0&quot;
++109, 	&quot;?0?1?2&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++130, 	&quot;Abg&quot;
++131, 	&quot;??&quot;
++132, 	&quot;???&quot;
++133, 	&quot;???&quot;
++135, 	&quot;???&quot;
++136, 	&quot;???&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++150, 	&quot;68,148,182&quot;
++151, 	&quot;5,6,7&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++199, 	&quot;Windows Font Previewer&quot;
++200, 	&quot;Windows Font Folder&quot;
++201, 	&quot; &amp; &quot;
++205, 	&quot;The specified path points to a font file that may not be available during later Windows sessions.\n\nDo you want to continue?&quot;
++206, 	&quot;The '%s' font is already installed. Do you want to replace it?&quot;
++207, 	&quot;Cannot install %1!s!&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++208, 	&quot;The file '%1!s!' is a 'PFB' file for a Type 1 font and cannot be installed directly. Please install the associated 'PFM' file.&quot;
++209, 	&quot;Fonts&quot;
++210, 	&quot;You do not have permission to install a font from this network.\nCopy the font file to your computer and install it from there.&quot;
++211, 	&quot;The file '%1!s!' does not appear to be a valid font.&quot;
++212, 	&quot;Installing Fonts&quot;
++213, 	&quot;Stop&quot;
++214, 	&quot;Installing %1!s! (%2!u! of %3!u! fonts)&quot;
++215, 	&quot;Fonts&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++330, 	&quot;A#*.otf;*.ttf;*.tt_;*.fon;*.fo_;*.inf;*.ttc;*.pfm#&quot;
++331, 	&quot;A#*.fon;*.fo_#&quot;
++332, 	&quot;No fonts found.&quot;
++333, 	&quot;Retrieving font names: %02d%%&quot;
++334, 	&quot;(TrueType)&quot;
++335, 	&quot;(Type 1)&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++336, 	&quot;No font sample available&quot;
++337, 	&quot;The quick brown fox&quot;
++338, 	&quot;12&quot;
++340, 	&quot;&amp;Install&quot;
++341, 	&quot;Installs selected fonts&quot;
++342, 	&quot;(OpenType)&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++1283, 	&quot;abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ&quot;
++1284, 	&quot;1234567890.:,; '  (!?) +-*/=&quot;
++1285, 	&quot;The quick brown fox jumps over the lazy dog. 1234567890&quot;
++1286, 	&quot;Preview, delete, or show and hide the fonts installed on your computer&quot;
++1288, 	&quot;Preview&quot;
++1289, 	&quot;Open the selected files in the Font Viewer&quot;
++1290, 	&quot;&amp;Delete&quot;
++1291, 	&quot;Delete&quot;
++1292, 	&quot;Delete selected fonts&quot;
++1293, 	&quot;Font family details&quot;
++1294, 	&quot;Preview, delete, or show and hide the individual fonts in this font family.&quot;
++1295, 	&quot;Show&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++1296, 	&quot;Hide&quot;
++1297, 	&quot;Show the selected fonts in your programs&quot;
++1298, 	&quot;Hide the selected fonts in your programs&quot;
++1299, 	&quot;Install as &amp;shortcut&quot;
++1300, 	&quot;Installs selected fonts as shortcuts&quot;
++1301, 	&quot;Installable&quot;
++1302, 	&quot;Restricted license&quot;
++1303, 	&quot;Print and preview&quot;
++1304, 	&quot;Editable&quot;
++1305, 	&quot;No subsetting&quot;
++1306, 	&quot;Bitmap embedding only&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++1500, 	&quot;Unknown&quot;
++1501, 	&quot;Raster&quot;
++1502, 	&quot;Type 1&quot;
++1503, 	&quot;TrueType&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++1504, 	&quot;TrueType Collection&quot;
++1505, 	&quot;OpenType&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++7000, 	&quot;Show&quot;
++7001, 	&quot;Hide&quot;
++7002, 	&quot;Mixed&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++8001, 	&quot;Preview, delete, or show and hide fonts&quot;
++8002, 	&quot;Find a character&quot;
++8003, 	&quot;Change font size&quot;
++8004, 	&quot;Text Services and Input Language&quot;
++8005, 	&quot;Personalization&quot;
++8007, 	&quot;Font settings&quot;
++8015, 	&quot;&amp;Restore default font settings&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++8018, 	&quot;Font settings&quot;
++8019, 	&quot;&amp;Allow fonts to be installed using a shortcut (advanced)&quot;
++8020, 	&quot;Adjust ClearType text&quot;
++8021, 	&quot;Font settings&quot;
++8022, 	&quot;Windows can hide fonts that are not designed for your input language settings. If you choose this option, only fonts that are designed for your language settings will be listed in your programs.&quot;
++8023, 	&quot;&amp;Hide fonts based on language settings&quot;
++8025, 	&quot;Installation settings&quot;
++8026, 	&quot;&lt;A&gt;Help me choose font settings&lt;/A&gt;&quot;
++8027, 	&quot;OK&quot;
++8028, 	&quot;Show and hide fonts (These settings might not apply to all of your programs)&quot;
++8029, 	&quot;To save space on your computer, you can choose to install a shortcut to a font file instead of the file itself. If the font file becomes unavailable, you might not be able to use the font.&quot;
++8030, 	&quot;Get more font information online&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++8100, 	&quot;Are you sure you want to delete these %d fonts permanently?&quot;
++8101, 	&quot;If you delete these fonts, some text might not appear as you intended.&quot;
++8102, 	&quot;Delete Fonts&quot;
++8103, 	&quot;Delete Font&quot;
++8104, 	&quot;Are you sure you want to delete this font permanently?&quot;
++8105, 	&quot;%s\n\nIf you delete this font, some text might not appear as you intended.&quot;
++8106, 	&quot;%s is a font collection and deleting it will delete all fonts that are part of it.&quot;
++8107, 	&quot;&amp;Yes, I want to delete this entire font collection from my computer&quot;
++8108, 	&quot;&amp;No, I don&#146;t want to delete the font collection&quot;
++8109, 	&quot;Are you sure you want to delete this font collection?&quot;
++8110, 	&quot;Delete Collection&quot;
++8111, 	&quot;&amp;Do this for all selected font collections&quot;
++}
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++8112, 	&quot;%s cannot be deleted because it's in use&quot;
++8113, 	&quot;&amp;Try Again&quot;
++8114, 	&quot;&amp;Skip&quot;
++8115, 	&quot;&amp;Always Skip&quot;
++8116, 	&quot;Close any open programs, and then click Try Again.&quot;
++8117, 	&quot;%s cannot be deleted because it is a protected system font&quot;
++8118, 	&quot;&amp;Don't show for remaining items&quot;
++8119, 	&quot;Install Font&quot;
++8120, 	&quot;&amp;Do this for all current items&quot;
++8121, 	&quot;Preview Fonts&quot;
++8122, 	&quot;Print Fonts&quot;
++8123, 	&quot;Do you want to open %1!d! font windows?&quot;
++8124, 	&quot;Each font currently selected will open in its own window. Opening many windows may take a long time and might impact your system performance.&quot;
++8125, 	&quot;&amp;Don't show this message again&quot;
++}
++
++
++1 VERSIONINFO
++FILEVERSION 6,1,7600,16385
++PRODUCTVERSION 6,1,7600,16385
++FILEOS 0x40004
++FILETYPE 0x2
++{
++BLOCK &quot;StringFileInfo&quot;
++{
++	BLOCK &quot;040904B0&quot;
++	{
++		VALUE &quot;CompanyName&quot;, &quot;Microsoft Corporation&quot;
++		VALUE &quot;FileDescription&quot;, &quot;Windows Font Folder&quot;
++		VALUE &quot;FileVersion&quot;, &quot;6.1.7600.16385 (win7_rtm.090713-1255)&quot;
++		VALUE &quot;InternalName&quot;, &quot;FontExt&quot;
++		VALUE &quot;LegalCopyright&quot;, &quot;&#169; Microsoft Corporation. All rights reserved.&quot;
++		VALUE &quot;OriginalFilename&quot;, &quot;FontExt.dll.mui&quot;
++		VALUE &quot;ProductName&quot;, &quot;Microsoft&#174; Windows&#174; Operating System&quot;
++		VALUE &quot;ProductVersion&quot;, &quot;6.1.7600.16385&quot;
++	}
++}
++
++BLOCK &quot;VarFileInfo&quot;
++{
++	VALUE &quot;Translation&quot;, 0x0409 0x04B0
++}
++}
++
+
+Added: Windows7/source/Windows/System32/en-US/fontview.exe_x32sp0.mui.rc
+===================================================================
+--- Windows7/source/Windows/System32/en-US/fontview.exe_x32sp0.mui.rc	                        (rev 0)
++++ Windows7/source/Windows/System32/en-US/fontview.exe_x32sp0.mui.rc	2011-05-04 11:01:50 UTC (rev 277)
+@@ -0,0 +1,92 @@
++1 MUI &quot;Data_600.bin&quot;
++
++
++STRINGTABLE
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++100, 	&quot;Segoe UI&quot;
++}
++
++
++100 ACCELERATORS
++LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
++{
++	VK_I, 201, ALT, VIRTKEY
++	&quot;I&quot;, 201
++	&quot;i&quot;, 201
++	VK_S, 204, ALT, VIRTKEY
++	&quot;S&quot;, 204
++	&quot;s&quot;, 204
++	VK_P, 200, ALT, VIRTKEY
++	&quot;P&quot;, 200
++	&quot;p&quot;, 200
++	VK_R, 202, ALT, VIRTKEY
++	&quot;R&quot;, 202
++	&quot;r&quot;, 202
++	VK_N, 203, ALT, VIRTKEY
++	&quot;N&quot;, 203
++	&quot;n&quot;, 203
++	VK_UP, 300, VIRTKEY
++	VK_DOWN, 301, VIRTKEY
++	VK_PRIOR, 302, VIRTKEY
++	VK_NEXT, 303, VIRTKEY
++}
++
++1 MESSAGETABLE
++{
++1,  	&quot;The requested file %1 is not a valid font file.&quot;
++2,  	&quot;Windows Font Viewer&quot;
++3,  	&quot;There is not enough free memory for this operation.&quot;
++4,  	&quot;%1 (TrueType)&quot;
++5,  	&quot;Font name: %1&quot;
++6,  	&quot;File size: %1!d! KB&quot;
++7,  	&quot;Version: %1&quot;
++8,  	&quot;%1&quot;
++9,  	&quot;abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ &quot;
++10,  	&quot;1234567890.:,; ' \&quot; (!?) +-*/=&quot;
++11,  	&quot;The quick brown fox jumps over the lazy dog. 1234567890&quot;
++12,  	&quot;&amp;Install&quot;
++13,  	&quot;Use &amp;shortcut&quot;
++14,  	&quot;&amp;Print&quot;
++15,  	&quot;%1 &amp; %2&quot;
++16,  	&quot;&lt; P&amp;revious&quot;
++17,  	&quot;&amp;Next &gt;&quot;
++18,  	&quot;%1 (OpenType)&quot;
++19,  	&quot;%1 (Type1)&quot;
++20,  	&quot;%1OpenType Layout,&quot;
++21,  	&quot;%1Digitally Signed,&quot;
++22,  	&quot;%1TrueType&quot;
++23,  	&quot;%1PostScript&quot;
++24,  	&quot;%1Outlines&quot;
++25,  	&quot;%1, Single Master&quot;
++26,  	&quot;%1, Multiple Master&quot;
++}
++
++
++1 VERSIONINFO
++FILEVERSION 6,1,7600,16385
++PRODUCTVERSION 6,1,7600,16385
++FILEOS 0x40004
++FILETYPE 0x1
++{
++BLOCK &quot;StringFileInfo&quot;
++{
++	BLOCK &quot;040904B0&quot;
++	{
++		VALUE &quot;CompanyName&quot;, &quot;Microsoft Corporation&quot;
++		VALUE &quot;FileDescription&quot;, &quot;Windows Font Viewer&quot;
++		VALUE &quot;FileVersion&quot;, &quot;6.1.7600.16385 (win7_rtm.090713-1255)&quot;
++		VALUE &quot;InternalName&quot;, &quot;fontview&quot;
++		VALUE &quot;LegalCopyright&quot;, &quot;&#169; Microsoft Corporation. All rights reserved.&quot;
++		VALUE &quot;OriginalFilename&quot;, &quot;FONTVIEW.EXE.MUI&quot;
++		VALUE &quot;ProductName&quot;, &quot;Microsoft&#174; Windows&#174; Operating System&quot;
++		VALUE &quot;ProductVersion&quot;, &quot;6.1.7600.16385&quot;
++	}
++}
++
++BLOCK &quot;VarFileInfo&quot;
++{
++	VALUE &quot;Translation&quot;, 0x0409 0x04B0
++}
++}
++
+
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000194.html">[I18n-bel-svn] r276 - in Windows7: . omegat
+</A></li>
+	<LI>Next message: <A HREF="000196.html">[I18n-bel-svn] r278 - in Windows7: . source/Windows/System32/en-US
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#195">[ date ]</a>
+              <a href="thread.html#195">[ thread ]</a>
+              <a href="subject.html#195">[ subject ]</a>
+              <a href="author.html#195">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/i18n-bel-svn">More information about the I18n-bel-svn
+mailing list</a><br>
+</body></html>

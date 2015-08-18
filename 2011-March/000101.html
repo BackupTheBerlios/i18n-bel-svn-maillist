@@ -1,0 +1,540 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [I18n-bel-svn] r183 - / Windows7/omegat
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/i18n-bel-svn/2011-March/index.html" >
+   <LINK REL="made" HREF="mailto:i18n-bel-svn%40lists.berlios.de?Subject=Re%3A%20%5BI18n-bel-svn%5D%20r183%20-%20/%20Windows7/omegat&In-Reply-To=%3C20110303090504.41D85481320%40sheep.berlios.de%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000100.html">
+   <LINK REL="Next"  HREF="000102.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[I18n-bel-svn] r183 - / Windows7/omegat</H1>
+    <B>eratyk at mail.berlios.de</B> 
+    <A HREF="mailto:i18n-bel-svn%40lists.berlios.de?Subject=Re%3A%20%5BI18n-bel-svn%5D%20r183%20-%20/%20Windows7/omegat&In-Reply-To=%3C20110303090504.41D85481320%40sheep.berlios.de%3E"
+       TITLE="[I18n-bel-svn] r183 - / Windows7/omegat">eratyk at mail.berlios.de
+       </A><BR>
+    <I>Thu Mar  3 10:05:03 CET 2011</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000100.html">[I18n-bel-svn] r182 - Android-2.3/omegat
+</A></li>
+        <LI>Next message: <A HREF="000102.html">[I18n-bel-svn] r184 - Android-2.3/omegat
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#101">[ date ]</a>
+              <a href="thread.html#101">[ thread ]</a>
+              <a href="subject.html#101">[ subject ]</a>
+              <a href="author.html#101">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>Author: eratyk
+Date: 2011-03-03 10:05:02 +0100 (Thu, 03 Mar 2011)
+New Revision: 183
+
+Modified:
+   Windows7/omegat/project_save.tmx
+   slovy_na_abmerkavan'ne.txt
+Log:
+
+
+Modified: Windows7/omegat/project_save.tmx
+===================================================================
+--- Windows7/omegat/project_save.tmx	2011-03-02 12:14:24 UTC (rev 182)
++++ Windows7/omegat/project_save.tmx	2011-03-03 09:05:02 UTC (rev 183)
+@@ -7928,8 +7928,8 @@
+       &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;&amp;Shortcut key:&lt;/seg&gt;
+       &lt;/tuv&gt;
+-      &lt;tuv lang=&quot;be&quot; changedate=&quot;20101021T060752Z&quot; changeid=&quot;eratyk&quot;&gt;
+-        &lt;seg&gt;&#1050;&#1083;&#1072;&#1074;&#1110;&#1103;&#1090;&#1091;&#1088;&#1085;&#1099; &#1089;&#1082;&#1072;&#1088;&#1086;&#1090;:&lt;/seg&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110303T062334Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1057;&#1082;&#1072;&#1088;&#1086;&#1090;:&lt;/seg&gt;
+       &lt;/tuv&gt;
+     &lt;/tu&gt;
+     &lt;tu&gt;
+@@ -16782,6 +16782,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;An error occurred getting the status of the last synchronization.  %1!s!&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110303T090340Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1040;&#1076;&#1073;&#1099;&#1083;&#1072;&#1089;&#1103; &#1087;&#1072;&#1084;&#1099;&#1083;&#1082;&#1072; &#1087;&#1072;&#1076;&#1095;&#1072;&#1089; &#1072;&#1090;&#1088;&#1099;&#1084;&#1072;&#1085;&#1085;&#1103; &#1089;&#1090;&#1072;&#1085;&#1091; &#1072;&#1087;&#1086;&#1096;&#1085;&#1103;&#1081; &#1089;&#1110;&#1085;&#1093;&#1088;&#1072;&#1085;&#1110;&#1079;&#1072;&#1094;&#1099;&#1110;. %1!s!&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;An error occurred opening that folder on the FTP Server.  Make sure you have permission to access that folder.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110224T195659Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -16878,6 +16886,22 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;An error occurred while Windows was synchronizing with %1!s!.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110303T085545Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1040;&#1076;&#1073;&#1099;&#1083;&#1072;&#1089;&#1103; &#1087;&#1072;&#1084;&#1099;&#1083;&#1082;&#1072; &#1087;&#1072;&#1076;&#1095;&#1072;&#1089; &#1089;&#1110;&#1085;&#1093;&#1088;&#1072;&#1085;&#1110;&#1079;&#1072;&#1094;&#1099;&#1110; Windows &#1079; %1!s!.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;An error occurred while Windows was synchronizing with %1!s!.  %2!s!&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110303T085535Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1040;&#1076;&#1073;&#1099;&#1083;&#1072;&#1089;&#1103; &#1087;&#1072;&#1084;&#1099;&#1083;&#1082;&#1072; &#1087;&#1072;&#1076;&#1095;&#1072;&#1089; &#1089;&#1110;&#1085;&#1093;&#1088;&#1072;&#1085;&#1110;&#1079;&#1072;&#1094;&#1099;&#1110; Windows &#1079; %1!s!.  %2!s!&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;An error occurred while copying the file.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110215T122802Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -21902,6 +21926,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Calendar Control&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110303T083313Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1050;&#1110;&#1088;&#1072;&#1074;&#1072;&#1085;&#1085;&#1077; &#1082;&#1072;&#1083;&#1077;&#1085;&#1076;&#1072;&#1088;&#1086;&#1084;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Calibrate color&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100921T193213Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -26102,6 +26134,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Clock Control&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110303T083327Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1050;&#1110;&#1088;&#1072;&#1074;&#1072;&#1085;&#1085;&#1077; &#1075;&#1072;&#1076;&#1079;&#1110;&#1085;&#1085;&#1110;&#1082;&#1072;&#1084;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Clock, Language, and Region&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100724T114729Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -31102,6 +31142,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Date and Time Information&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110303T083348Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1030;&#1085;&#1092;&#1072;&#1088;&#1084;&#1072;&#1094;&#1099;&#1103; &#1076;&#1072;&#1090;&#1099; &#1110; &#1095;&#1072;&#1089;&#1091;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Date and Time Properties&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110101T155755Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -31118,6 +31166,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Date and Time Tooltip&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110303T083256Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1055;&#1072;&#1076;&#1082;&#1072;&#1079;&#1082;&#1072; &#1076;&#1072;&#1090;&#1099; &#1110; &#1095;&#1072;&#1089;&#1091;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Date and time&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100831T093048Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -31278,6 +31334,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Daylight Saving Time began on %1!s! at %2!s!.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110303T082914Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1055;&#1077;&#1088;&#1072;&#1093;&#1086;&#1076; &#1085;&#1072; &#1083;&#1077;&#1090;&#1085;&#1110; &#1095;&#1072;&#1089; &#1087;&#1072;&#1095;&#1072;&#1118;&#1089;&#1103; %1!s! &#1072; %2!s!.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Daylight Saving Time begins on %1!s! at %2!s!.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110120T153733Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -31286,6 +31350,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Daylight Saving Time ended on %1!s! at %2!s!.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110303T082925Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1055;&#1077;&#1088;&#1072;&#1093;&#1086;&#1076; &#1085;&#1072; &#1083;&#1077;&#1090;&#1085;&#1110; &#1095;&#1072;&#1089; &#1089;&#1082;&#1086;&#1085;&#1095;&#1099;&#1118;&#1089;&#1103; %1!s! &#1072; %2!s!.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Daylight Saving Time ends on %1!s! at %2!s!.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110120T153727Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -41815,6 +41887,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Go to Today&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110303T083404Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1055;&#1077;&#1088;&#1072;&#1081;&#1089;&#1094;&#1110; &#1085;&#1072; &#1089;&#1105;&#1085;&#1085;&#1103;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Goes to the next page.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100910T145619Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -43527,6 +43607,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Hyperlink which launches the Date and Time control panel&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110303T084805Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1043;&#1110;&#1087;&#1077;&#1088;&#1089;&#1087;&#1072;&#1089;&#1099;&#1083;&#1082;&#1072;, &#1103;&#1082;&#1072;&#1103; &#1079;&#1072;&#1087;&#1091;&#1089;&#1082;&#1072;&#1077; &#1087;&#1072;&#1085;&#1101;&#1083;&#1100; &#1082;&#1110;&#1088;&#1072;&#1074;&#1072;&#1085;&#1085;&#1103; &#1076;&#1072;&#1090;&#1099; &#1110; &#1095;&#1072;&#1089;&#1091;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;I don't know where this program is from or what it's for.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100728T073107Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -49047,6 +49135,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Local time&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110303T083303Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1051;&#1072;&#1082;&#1072;&#1083;&#1100;&#1085;&#1099; &#1095;&#1072;&#1089;&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Location&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100713T072105Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -60239,6 +60335,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Please wait while Windows synchronizes with %1!s!&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110303T085421Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1050;&#1072;&#1083;&#1110; &#1083;&#1072;&#1089;&#1082;&#1072;, &#1087;&#1072;&#1095;&#1072;&#1082;&#1072;&#1081;&#1094;&#1077;, &#1087;&#1072;&#1082;&#1091;&#1083;&#1100; Windows &#1089;&#1110;&#1085;&#1093;&#1088;&#1072;&#1085;&#1110;&#1079;&#1091;&#1077;&#1094;&#1094;&#1072; &#1079; %1!s!&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Please wait while Wordpad converts the document.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100828T073559Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -70425,8 +70529,8 @@
+       &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Shortcut &amp;key:&lt;/seg&gt;
+       &lt;/tuv&gt;
+-      &lt;tuv lang=&quot;be&quot; changedate=&quot;20101021T060730Z&quot; changeid=&quot;eratyk&quot;&gt;
+-        &lt;seg&gt;&#1050;&#1083;&#1072;&#1074;&#1110;&#1103;&#1090;&#1091;&#1088;&#1085;&#1099; &#1089;&#1082;&#1072;&#1088;&#1086;&#1090;:&lt;/seg&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110303T062305Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1057;&#1082;&#1072;&#1088;&#1086;&#1090;:&lt;/seg&gt;
+       &lt;/tuv&gt;
+     &lt;/tu&gt;
+     &lt;tu&gt;
+@@ -76911,6 +77015,110 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;The clock does not require adjustment.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110303T082848Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1043;&#1072;&#1076;&#1079;&#1110;&#1085;&#1085;&#1110;&#1082; &#1085;&#1077; &#1087;&#1072;&#1090;&#1088;&#1072;&#1073;&#1091;&#1077; &#1085;&#1072;&#1074;&#1103;&#1076;&#1079;&#1077;&#1085;&#1085;&#1103;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;The clock is not set to adjust for this change.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110303T060638Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1043;&#1072;&#1076;&#1079;&#1110;&#1085;&#1085;&#1110;&#1082; &#1085;&#1077; &#1087;&#1088;&#1099;&#1079;&#1085;&#1072;&#1095;&#1072;&#1085;&#1099; &#1076;&#1083;&#1103; &#1088;&#1101;&#1075;&#1091;&#1083;&#1103;&#1074;&#1072;&#1085;&#1085;&#1103; &#1075;&#1101;&#1090;&#1072;&#1075;&#1072; &#1079;&#1084;&#1103;&#1085;&#1077;&#1085;&#1085;&#1103;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;The clock is set to go back %1!u! minutes at that time.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110303T082637Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1043;&#1072;&#1076;&#1079;&#1110;&#1085;&#1085;&#1110;&#1082;&#1091; &#1087;&#1088;&#1099;&#1079;&#1085;&#1072;&#1095;&#1072;&#1085;&#1072; &#1087;&#1077;&#1088;&#1072;&#1074;&#1077;&#1089;&#1094;&#1110; &#1095;&#1072;&#1089; &#1085;&#1072; %1!u! &#1093;&#1074;&#1110;&#1083;&#1110;&#1085;&#1072;&#1118; &#1085;&#1072;&#1079;&#1072;&#1076;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;The clock is set to go back 1 hour at that time.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110303T082556Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1043;&#1072;&#1076;&#1079;&#1110;&#1085;&#1085;&#1110;&#1082;&#1091; &#1087;&#1088;&#1099;&#1079;&#1085;&#1072;&#1095;&#1072;&#1085;&#1072; &#1087;&#1077;&#1088;&#1072;&#1074;&#1077;&#1089;&#1094;&#1110; &#1095;&#1072;&#1089; &#1085;&#1072; 1 &#1075;&#1072;&#1076;&#1079;&#1110;&#1085;&#1091; &#1085;&#1072;&#1079;&#1072;&#1076;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;The clock is set to go forward %1!u! minutes at that time.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110303T082628Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1043;&#1072;&#1076;&#1079;&#1110;&#1085;&#1085;&#1110;&#1082;&#1091; &#1087;&#1088;&#1099;&#1079;&#1085;&#1072;&#1095;&#1072;&#1085;&#1072; &#1087;&#1077;&#1088;&#1072;&#1074;&#1077;&#1089;&#1094;&#1110; &#1095;&#1072;&#1089; &#1085;&#1072; %1!u! &#1093;&#1074;&#1110;&#1083;&#1110;&#1085;&#1072;&#1118; &#1085;&#1072;&#1087;&#1077;&#1088;&#1072;&#1076;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;The clock is set to go forward 1 hour at that time.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110303T082545Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1043;&#1072;&#1076;&#1079;&#1110;&#1085;&#1085;&#1110;&#1082;&#1091; &#1087;&#1088;&#1099;&#1079;&#1085;&#1072;&#1095;&#1072;&#1085;&#1072; &#1087;&#1077;&#1088;&#1072;&#1074;&#1077;&#1089;&#1094;&#1110; &#1095;&#1072;&#1089; &#1085;&#1072; 1 &#1075;&#1072;&#1076;&#1079;&#1110;&#1085;&#1091; &#1085;&#1072;&#1087;&#1077;&#1088;&#1072;&#1076;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;The clock was most recently synchronized on %1!s! at %2!s!.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110303T085958Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1043;&#1072;&#1076;&#1079;&#1110;&#1085;&#1085;&#1110;&#1082; &#1073;&#1099;&#1118; &#1085;&#1103;&#1076;&#1072;&#1118;&#1085;&#1072; &#1089;&#1110;&#1085;&#1093;&#1088;&#1072;&#1085;&#1110;&#1079;&#1072;&#1074;&#1072;&#1085;&#1099; &#1085;&#1072; %1!s! &#1072; %2!s!.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;The clock was successfully synchronized on %1!s! at %2!s!.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110303T085456Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1043;&#1072;&#1076;&#1079;&#1110;&#1085;&#1085;&#1110;&#1082; &#1087;&#1072;&#1089;&#1087;&#1103;&#1093;&#1086;&#1074;&#1072; &#1089;&#1110;&#1085;&#1093;&#1088;&#1072;&#1085;&#1110;&#1079;&#1072;&#1074;&#1072;&#1085;&#1099; &#1085;&#1072; %1!s! &#1072; %2!s!.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;The clock was successfully synchronized with %3!s! on %1!s! at %2!s!.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110303T085438Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1043;&#1072;&#1076;&#1079;&#1110;&#1085;&#1085;&#1110;&#1082; &#1087;&#1072;&#1089;&#1087;&#1103;&#1093;&#1086;&#1074;&#1072; &#1089;&#1110;&#1085;&#1093;&#1088;&#1072;&#1085;&#1110;&#1079;&#1072;&#1074;&#1072;&#1085;&#1099; &#1079; %3!s! &#1085;&#1072; %1!s! &#1072; %2!s!.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;The clock went back %1!u! minutes at that time.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110303T083102Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1043;&#1072;&#1076;&#1079;&#1110;&#1085;&#1085;&#1110;&#1082; &#1073;&#1099;&#1118; &#1087;&#1077;&#1088;&#1072;&#1074;&#1077;&#1076;&#1079;&#1077;&#1085;&#1099; &#1085;&#1072; %1!u! &#1093;&#1074;&#1110;&#1083;&#1110;&#1085;&#1072;&#1118; &#1085;&#1072;&#1079;&#1072;&#1076;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;The clock went back 1 hour at that time.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110303T083051Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1043;&#1072;&#1076;&#1079;&#1110;&#1085;&#1085;&#1110;&#1082; &#1073;&#1099;&#1118; &#1087;&#1077;&#1088;&#1072;&#1074;&#1077;&#1076;&#1079;&#1077;&#1085;&#1099; &#1085;&#1072; 1 &#1075;&#1072;&#1076;&#1079;&#1110;&#1085;&#1091; &#1085;&#1072;&#1079;&#1072;&#1076;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;The clock went forward %1!u! minutes at that time.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110303T083057Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1043;&#1072;&#1076;&#1079;&#1110;&#1085;&#1085;&#1110;&#1082; &#1073;&#1099;&#1118; &#1087;&#1077;&#1088;&#1072;&#1074;&#1077;&#1076;&#1079;&#1077;&#1085;&#1099; &#1085;&#1072; %1!u! &#1093;&#1074;&#1110;&#1083;&#1110;&#1085;&#1072;&#1118; &#1085;&#1072;&#1087;&#1077;&#1088;&#1072;&#1076;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;The clock went forward 1 hour at that time.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110303T083046Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1043;&#1072;&#1076;&#1079;&#1110;&#1085;&#1085;&#1110;&#1082; &#1073;&#1099;&#1118; &#1087;&#1077;&#1088;&#1072;&#1074;&#1077;&#1076;&#1079;&#1077;&#1085;&#1099; &#1085;&#1072; 1 &#1075;&#1072;&#1076;&#1079;&#1110;&#1085;&#1091; &#1085;&#1072;&#1087;&#1077;&#1088;&#1072;&#1076;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;The closest matching printer font will be used for printing.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100915T180110Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -80279,6 +80487,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;There are no upcoming Daylight Saving Time changes.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110303T062156Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1053;&#1103;&#1084;&#1072; &#1085;&#1072;&#1076;&#1099;&#1093;&#1086;&#1076;&#1079;&#1103;&#1095;&#1099;&#1093; &#1079;&#1084;&#1103;&#1085;&#1077;&#1085;&#1085;&#1103;&#1118; &#1087;&#1077;&#1088;&#1072;&#1093;&#1086;&#1076;&#1091; &#1085;&#1072; &#1083;&#1077;&#1090;&#1085;&#1110; &#1095;&#1072;&#1089;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;There are problems with some PnP devices. Windows will take additional steps to further troubleshoot these devices.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110104T084757Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -81031,6 +81247,70 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;This clock went back %1!u! minutes at that time.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110303T083203Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1043;&#1101;&#1090;&#1099; &#1075;&#1072;&#1076;&#1079;&#1110;&#1085;&#1085;&#1110;&#1082; &#1073;&#1099;&#1118; &#1087;&#1077;&#1088;&#1072;&#1074;&#1077;&#1076;&#1079;&#1077;&#1085;&#1099; &#1085;&#1072; %1!u! &#1093;&#1074;&#1110;&#1083;&#1110;&#1085;&#1072;&#1118; &#1085;&#1072;&#1079;&#1072;&#1076;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;This clock went back 1 hour at that time.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110303T083140Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1043;&#1101;&#1090;&#1099; &#1075;&#1072;&#1076;&#1079;&#1110;&#1085;&#1085;&#1110;&#1082; &#1073;&#1099;&#1118; &#1087;&#1077;&#1088;&#1072;&#1074;&#1077;&#1076;&#1079;&#1077;&#1085;&#1099; &#1085;&#1072; 1 &#1075;&#1072;&#1076;&#1079;&#1110;&#1085;&#1091; &#1085;&#1072;&#1079;&#1072;&#1076;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;This clock went forward %1!u! minutes at that time.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110303T083151Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1043;&#1101;&#1090;&#1099; &#1075;&#1072;&#1076;&#1079;&#1110;&#1085;&#1085;&#1110;&#1082; &#1073;&#1099;&#1118; &#1087;&#1077;&#1088;&#1072;&#1074;&#1077;&#1076;&#1079;&#1077;&#1085;&#1099; &#1085;&#1072; %1!u! &#1093;&#1074;&#1110;&#1083;&#1110;&#1085;&#1072;&#1118; &#1085;&#1072;&#1087;&#1077;&#1088;&#1072;&#1076;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;This clock went forward 1 hour at that time.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110303T083130Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1043;&#1101;&#1090;&#1099; &#1075;&#1072;&#1076;&#1079;&#1110;&#1085;&#1085;&#1110;&#1082; &#1073;&#1099;&#1118; &#1087;&#1077;&#1088;&#1072;&#1074;&#1077;&#1076;&#1079;&#1077;&#1085;&#1099; &#1085;&#1072; 1 &#1075;&#1072;&#1076;&#1079;&#1110;&#1085;&#1091; &#1085;&#1072;&#1087;&#1077;&#1088;&#1072;&#1076;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;This clock will go back %1!u! minutes at that time.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110303T082807Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1043;&#1101;&#1090;&#1099; &#1075;&#1072;&#1076;&#1079;&#1110;&#1085;&#1085;&#1110;&#1082; &#1073;&#1091;&#1076;&#1079;&#1077; &#1087;&#1077;&#1088;&#1072;&#1074;&#1077;&#1076;&#1079;&#1077;&#1085;&#1099; &#1085;&#1072; %1!u! &#1093;&#1074;&#1110;&#1083;&#1110;&#1085;&#1072;&#1118; &#1085;&#1072;&#1079;&#1072;&#1076;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;This clock will go back 1 hour at that time.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110303T082734Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1043;&#1101;&#1090;&#1099; &#1075;&#1072;&#1076;&#1079;&#1110;&#1085;&#1085;&#1110;&#1082; &#1073;&#1091;&#1076;&#1079;&#1077; &#1087;&#1077;&#1088;&#1072;&#1074;&#1077;&#1076;&#1079;&#1077;&#1085;&#1099; &#1085;&#1072; 1 &#1075;&#1072;&#1076;&#1079;&#1110;&#1085;&#1091; &#1085;&#1072;&#1079;&#1072;&#1076;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;This clock will go forward %1!u! minutes at that time.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110303T082800Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1043;&#1101;&#1090;&#1099; &#1075;&#1072;&#1076;&#1079;&#1110;&#1085;&#1085;&#1110;&#1082; &#1073;&#1091;&#1076;&#1079;&#1077; &#1087;&#1077;&#1088;&#1072;&#1074;&#1077;&#1076;&#1079;&#1077;&#1085;&#1099; &#1085;&#1072; %1!u! &#1093;&#1074;&#1110;&#1083;&#1110;&#1085;&#1072;&#1118; &#1085;&#1072;&#1087;&#1077;&#1088;&#1072;&#1076;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;This clock will go forward 1 hour at that time.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110303T082725Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1043;&#1101;&#1090;&#1099; &#1075;&#1072;&#1076;&#1079;&#1110;&#1085;&#1085;&#1110;&#1082; &#1073;&#1091;&#1076;&#1079;&#1077; &#1087;&#1077;&#1088;&#1072;&#1074;&#1077;&#1076;&#1079;&#1077;&#1085;&#1099; &#1085;&#1072; 1 &#1075;&#1072;&#1076;&#1079;&#1110;&#1085;&#1091; &#1085;&#1072;&#1087;&#1077;&#1088;&#1072;&#1076;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;This computer %1 is connected to network %2 and the Internet.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20110107T221948Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -91087,6 +91367,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Windows can't synchronize automatically with the time server because the time difference is too great. Please update your time manually.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110303T090200Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;Windows &#1085;&#1077; &#1084;&#1086;&#1078;&#1072; &#1089;&#1089;&#1110;&#1085;&#1093;&#1088;&#1072;&#1085;&#1110;&#1079;&#1072;&#1074;&#1072;&#1094;&#1094;&#1072; &#1079; &#1089;&#1077;&#1088;&#1074;&#1077;&#1088;&#1072;&#1084; &#1095;&#1072;&#1089;&#1091;, &#1073;&#1086; &#1088;&#1086;&#1079;&#1085;&#1110;&#1094;&#1072; &#1118; &#1095;&#1072;&#1089;&#1077; &#1085;&#1072;&#1076;&#1090;&#1072; &#1074;&#1103;&#1083;&#1110;&#1082;&#1072;&#1103;. &#1050;&#1072;&#1083;&#1110; &#1083;&#1072;&#1089;&#1082;&#1072;, &#1072;&#1073;&#1085;&#1072;&#1074;&#1110;&#1094;&#1077; &#1074;&#1072;&#1096; &#1095;&#1072;&#1089; &#1091;&#1088;&#1091;&#1095;&#1085;&#1091;&#1102;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Windows cannot access %s&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100722T133048Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -95103,6 +95391,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Your computer's date is outside the display range for this calendar.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110303T084913Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1044;&#1072;&#1090;&#1072; &#1074;&#1072;&#1075;&#1072; &#1082;&#1072;&#1084;&#1087;'&#1102;&#1090;&#1072;&#1088;&#1072; &#1079;&#1085;&#1072;&#1093;&#1086;&#1076;&#1079;&#1110;&#1094;&#1094;&#1072; &#1087;&#1072;-&#1079;&#1072; &#1072;&#1073;&#1089;&#1103;&#1075;&#1072;&#1084; &#1072;&#1076;&#1083;&#1102;&#1089;&#1090;&#1088;&#1072;&#1074;&#1072;&#1085;&#1085;&#1103; &#1075;&#1101;&#1090;&#1072;&#1075;&#1072; &#1082;&#1072;&#1083;&#1077;&#1085;&#1076;&#1072;&#1088;&#1072;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Your current brightness setting might reduce battery life.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20101107T172335Z&quot; changeid=&quot;eratyk&quot;&gt;
+@@ -95135,6 +95431,14 @@
+     &lt;/tu&gt;
+     &lt;tu&gt;
+       &lt;tuv lang=&quot;en&quot;&gt;
++        &lt;seg&gt;Your current time zone is not recognized. Please select a valid time zone using the link below.&lt;/seg&gt;
++      &lt;/tuv&gt;
++      &lt;tuv lang=&quot;be&quot; changedate=&quot;20110303T085028Z&quot; changeid=&quot;eratyk&quot;&gt;
++        &lt;seg&gt;&#1042;&#1072;&#1096; &#1076;&#1079;&#1077;&#1081;&#1085;&#1099; &#1095;&#1072;&#1089;&#1072;&#1074;&#1099; &#1072;&#1073;&#1089;&#1103;&#1075; &#1085;&#1077; &#1088;&#1072;&#1089;&#1087;&#1072;&#1079;&#1085;&#1072;&#1085;&#1099;. &#1050;&#1072;&#1083;&#1110; &#1083;&#1072;&#1089;&#1082;&#1072;, &#1072;&#1073;&#1103;&#1088;&#1099;&#1094;&#1077; &#1076;&#1072;&#1087;&#1091;&#1096;&#1095;&#1072;&#1083;&#1100;&#1085;&#1099; &#1095;&#1072;&#1089;&#1072;&#1074;&#1099; &#1072;&#1073;&#1089;&#1103;&#1075; &#1087;&#1088;&#1072;&#1079; &#1089;&#1087;&#1072;&#1089;&#1099;&#1083;&#1082;&#1091; &#1085;&#1110;&#1078;&#1101;&#1081;.&lt;/seg&gt;
++      &lt;/tuv&gt;
++    &lt;/tu&gt;
++    &lt;tu&gt;
++      &lt;tuv lang=&quot;en&quot;&gt;
+         &lt;seg&gt;Your default action will occur or other options will become available.&lt;/seg&gt;
+       &lt;/tuv&gt;
+       &lt;tuv lang=&quot;be&quot; changedate=&quot;20100920T064853Z&quot; changeid=&quot;eratyk&quot;&gt;
+
+Modified: slovy_na_abmerkavan'ne.txt
+===================================================================
+--- slovy_na_abmerkavan'ne.txt	2011-03-02 12:14:24 UTC (rev 182)
++++ slovy_na_abmerkavan'ne.txt	2011-03-03 09:05:02 UTC (rev 183)
+@@ -51,3 +51,5 @@
+ character+synbol
+ superscript/subscript
+ dingbat
++link
++hyperlink
+\ No newline at end of file
+
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000100.html">[I18n-bel-svn] r182 - Android-2.3/omegat
+</A></li>
+	<LI>Next message: <A HREF="000102.html">[I18n-bel-svn] r184 - Android-2.3/omegat
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#101">[ date ]</a>
+              <a href="thread.html#101">[ thread ]</a>
+              <a href="subject.html#101">[ subject ]</a>
+              <a href="author.html#101">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/i18n-bel-svn">More information about the I18n-bel-svn
+mailing list</a><br>
+</body></html>
